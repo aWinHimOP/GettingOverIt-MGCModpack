@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  15,
+    "rev":  16,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-26T11:38:20Z",
+    "updatedAt":  "2026-09-26T11:41:08Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "80da96214be8cf27b0122cf2f541e2c9d2ba19aa67b75aa7459b12bf8c8366c3",
+                         "sha256":  "2a6312b28657c86926f9783cf8d832c67dc11de940a071ceb925564cbbce929b",
                          "size":  293888,
-                         "notes":  "热力图改为记录通关次数(50次最绿/0次纯白) 12周 GitHub风格；左区下方放通关次数与今日最佳；游玩参数字号18",
+                         "notes":  "热力图记录通关次数(50最绿/0纯白)12周；面板高度收缩不留空背景；右列四行全部还原不动；参数字号18",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-26T11:38:18Z"
+                         "publishedAt":  "2026-09-26T11:41:06Z"
                      }
                  ]
 }
