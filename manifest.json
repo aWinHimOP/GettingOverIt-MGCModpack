@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  8,
+    "rev":  9,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-26T11:02:06Z",
+    "updatedAt":  "2026-09-26T11:04:04Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "577caeceacbf594f6dcbfff621a9993206835e220a04f07ebc5f2c2895ca9d20",
-                         "size":  290304,
-                         "notes":  "服务器配置权威（本地 XML 不再覆盖）+ 版本号后缀留空即不显示",
+                         "sha256":  "eb5c2974285a3d97e78cd79980844af88877ad820ac0209dab4a0e5271da639f",
+                         "size":  292864,
+                         "notes":  "诊断版：导出 PlayStatistics 布局（playstats_layout.txt）",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-26T11:02:04Z"
+                         "publishedAt":  "2026-09-26T11:04:00Z"
                      }
                  ]
 }
