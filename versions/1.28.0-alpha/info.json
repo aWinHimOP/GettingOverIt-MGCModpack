@@ -1,7 +1,0 @@
-{
-    "version":  "1.28.0-alpha",
-    "sha256":  "577caeceacbf594f6dcbfff621a9993206835e220a04f07ebc5f2c2895ca9d20",
-    "size":  290304,
-    "notes":  "服务器配置权威（本地 XML 不再覆盖）+ 版本号后缀留空即不显示",
-    "publishedAt":  "2026-09-26T11:02:04Z"
-}
