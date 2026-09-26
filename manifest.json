@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  55,
+    "rev":  56,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-26T18:44:23Z",
+    "updatedAt":  "2026-09-26T18:48:57Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "0dcbec4404dfc3fc5e75820deb419bfce3ba98500ade4363ef2ef856453eea2b",
-                         "size":  334336,
-                         "notes":  "关于页槽位诊断",
+                         "sha256":  "4b84d25b4acd21d14e2827aa6fb2a5736fae5bea11f9104a9719a0d6c8387587",
+                         "size":  334848,
+                         "notes":  "关于页新增 aboutURL 字段（项目地址行），修复 prefab 里被截断的 github 链接",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-26T18:44:21Z"
+                         "publishedAt":  "2026-09-26T18:48:55Z"
                      }
                  ]
 }
