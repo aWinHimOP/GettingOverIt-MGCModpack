@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  48,
+    "rev":  49,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-26T15:52:46Z",
+    "updatedAt":  "2026-09-26T16:15:59Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "25be26f04532d87a783d683493d850582b47e196c4c0cfe0b04766a38d237039",
-                         "size":  328704,
-                         "notes":  "修复昵称输入不保存(改onEndEdit提交)；关于页文案+主页图片面板服务器可配；等MainMenu用真实时间(不受帧率/timeScale影响)",
+                         "sha256":  "0b8907b51662995ab65bf92fbec97ac4ec063482fb54dbbc3b6e2ec828087a29",
+                         "size":  330240,
+                         "notes":  "修复玩家设置昵称输入不保存(改用onEndEdit提交)；关于页文案+主页图片面板服务器可配(等MainMenu就绪后再应用)",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-26T15:52:43Z"
+                         "publishedAt":  "2026-09-26T16:15:57Z"
                      }
                  ]
 }
