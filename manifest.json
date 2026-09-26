@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  44,
+    "rev":  45,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-26T14:16:44Z",
+    "updatedAt":  "2026-09-26T14:34:48Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "2f6eb233bd1b425ea54365d9663a6c91eb02c4e3122da4cedab1b6bf1b81cfb2",
-                         "size":  318464,
-                         "notes":  "默认昵称改Player;删掉UIInitializer里硬编码的SetUserInfo(fwwh)和测试弹窗",
+                         "sha256":  "07a6f429e8e322f34d1105c24d750241e38b4f6ae1327a96cd49f7a2f07bea9e",
+                         "size":  319488,
+                         "notes":  "玩家设置:补「恢复预设昵称」按钮;两个恢复按钮改名为恢复预设昵称/恢复预设头像",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-26T14:16:41Z"
+                         "publishedAt":  "2026-09-26T14:34:45Z"
                      }
                  ]
 }
