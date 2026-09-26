@@ -1,0 +1,7 @@
+{
+    "version":  "1.28.0-alpha",
+    "sha256":  "b4d664403fc82af1606da27da79b11f48233f8af87da1c6b3b4053d34cfed96f",
+    "size":  308736,
+    "notes":  "主页热力图下线,改为CGOIRankList云端排行榜(复现其时间排序逻辑,本机PB插入并高亮名次)",
+    "publishedAt":  "2026-09-26T13:15:36Z"
+}
