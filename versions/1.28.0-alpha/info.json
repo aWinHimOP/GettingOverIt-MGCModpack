@@ -1,0 +1,7 @@
+{
+    "version":  "1.28.0-alpha",
+    "sha256":  "151906dedea3e19d33b52ac422c93943f277b1ddecb9bda9398bc1c0959b4c2b",
+    "size":  309760,
+    "notes":  "排行榜改用多镜像下载(Pages优先,raw国内超时)",
+    "publishedAt":  "2026-09-26T13:19:53Z"
+}
