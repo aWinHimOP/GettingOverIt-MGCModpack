@@ -1,7 +1,0 @@
-{
-    "version":  "1.28.0-alpha",
-    "sha256":  "8507aa45dba0ad3f90fa3ac090bf53f00fa614a9d26a8a51b2bb262da4472bf3",
-    "size":  294912,
-    "notes":  "格子底图改纯白无边框(修灰边)+渐变改sqrt+位置补偿(收缩高度不再下移)+字号28",
-    "publishedAt":  "2026-09-26T11:58:23Z"
-}
