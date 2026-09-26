@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  58,
+    "rev":  59,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-26T18:57:55Z",
+    "updatedAt":  "2026-09-26T19:18:26Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "4b84d25b4acd21d14e2827aa6fb2a5736fae5bea11f9104a9719a0d6c8387587",
-                         "size":  334848,
-                         "notes":  "关于页新增 aboutURL 字段（项目地址行），修复 prefab 里被截断的 github 链接",
+                         "sha256":  "66ef29cae9a62e3f32a3022bcb8cbf8d9ffedafd61ee6ea6021b19f8730a667d",
+                         "size":  328704,
+                         "notes":  "白名单改为只在内存（去掉可编辑的本地 MGCConfig.xml 兜底）；移除 playstats_layout.txt 调试导出",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-26T18:48:55Z"
+                         "publishedAt":  "2026-09-26T19:18:22Z"
                      }
                  ],
     "bundles":  [
