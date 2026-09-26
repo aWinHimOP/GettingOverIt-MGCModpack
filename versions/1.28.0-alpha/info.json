@@ -1,7 +1,0 @@
-{
-    "version":  "1.28.0-alpha",
-    "sha256":  "861d7f034c9ca75b560f8870edb2f95b15093ae6bf2fcf3ae6a730e42151f9cc",
-    "size":  333312,
-    "notes":  "关于页文案合并为一个Text显示（原本8个分开写，改文案要填7个字段）；关于页支持从服务器下载顶部图标(aboutIcon)",
-    "publishedAt":  "2026-09-26T16:49:18Z"
-}
