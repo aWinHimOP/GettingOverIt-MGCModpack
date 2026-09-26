@@ -1,8 +1,8 @@
 {
     "schemaVersion":  1,
-    "rev":  56,
+    "rev":  57,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-26T18:48:57Z",
+    "updatedAt":  "2026-09-26T18:56:31Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
@@ -12,5 +12,25 @@
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
                          "publishedAt":  "2026-09-26T18:48:55Z"
                      }
-                 ]
+                 ],
+    "bundles":  [
+                    {
+                        "name":  "ui_mainmenu.unity3d",
+                        "sha256":  "da496ddbb3d801653f980f51a116c0c3ff1eb531c5950ed69983804b8d6552e9",
+                        "size":  925894,
+                        "url":  "https://aWinHimOP.github.io/aWinHimOP/GettingOverIt-MGCModpack/bundle/ui_mainmenu.unity3d"
+                    },
+                    {
+                        "name":  "ui_pause.unity3d",
+                        "sha256":  "a9b8db2e8482e65a090ff60c192c964c12e2b80ff41514cfb1d25aacae8d17a0",
+                        "size":  10658,
+                        "url":  "https://aWinHimOP.github.io/aWinHimOP/GettingOverIt-MGCModpack/bundle/ui_pause.unity3d"
+                    },
+                    {
+                        "name":  "ui_uicontrols.unity3d",
+                        "sha256":  "21504fb640c443cc28c099c4e1c6c3aac5b0f8d9c47ff6953a3ca76b31c2af36",
+                        "size":  18966,
+                        "url":  "https://aWinHimOP.github.io/aWinHimOP/GettingOverIt-MGCModpack/bundle/ui_uicontrols.unity3d"
+                    }
+                ]
 }
