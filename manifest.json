@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  24,
+    "rev":  25,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-26T12:15:13Z",
+    "updatedAt":  "2026-09-26T12:23:02Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "d9a8e098ab28019099003de5977614b922bd495c1ef1963afa51d525866022ed",
+                         "sha256":  "360d1cd81f87800af710d680ac1f8330bed608577f3b8d4153232da07068a002",
                          "size":  294912,
-                         "notes":  "热力图尺寸计算全部参数化(不再写死12周/64px上限):8周格子80px网格698x610填满面板,面板每次启动恢复699x642",
+                         "notes":  "热力图8周格子79.6px网格696x608完全装进面板699x642(只调左右留白)",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-26T12:15:09Z"
+                         "publishedAt":  "2026-09-26T12:22:59Z"
                      }
                  ]
 }
