@@ -1,0 +1,7 @@
+{
+    "version":  "1.28.0-alpha",
+    "sha256":  "b900453c7154a70cbbe0c289ade17551849130ccf98cd18c9cfb264d3ae97af7",
+    "size":  332288,
+    "notes":  "修复昵称输入不保存(改onEndEdit提交)；关于页文案+主页图片面板生效(改用GameObject.Find定位MainMenu，之前SceneManager返回null)",
+    "publishedAt":  "2026-09-26T16:31:23Z"
+}
