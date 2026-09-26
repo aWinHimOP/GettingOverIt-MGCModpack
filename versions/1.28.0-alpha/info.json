@@ -1,0 +1,7 @@
+{
+    "version":  "1.28.0-alpha",
+    "sha256":  "5d6bf38c5dbc4253fddf8463327ba419d857a4c1ed8d3875ba2d22bd1cf0b7d3",
+    "size":  294400,
+    "notes":  "面板尺寸位置完全不动(用prefab默认);格子79.6px;渐变纯白天蓝50次最蓝;字号28",
+    "publishedAt":  "2026-09-26T12:52:17Z"
+}
