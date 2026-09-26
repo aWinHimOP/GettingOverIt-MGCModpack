@@ -1,7 +1,0 @@
-{
-    "version":  "1.28.0-alpha",
-    "sha256":  "66ef29cae9a62e3f32a3022bcb8cbf8d9ffedafd61ee6ea6021b19f8730a667d",
-    "size":  328704,
-    "notes":  "白名单改为只在内存（去掉可编辑的本地 MGCConfig.xml 兜底）；移除 playstats_layout.txt 调试导出",
-    "publishedAt":  "2026-09-26T19:18:22Z"
-}
