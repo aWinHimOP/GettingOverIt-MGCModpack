@@ -1,7 +1,0 @@
-{
-    "version":  "1.28.0-alpha",
-    "sha256":  "5bbb23a6a9340c3849a389923d2d1fba648dd2b53a63a8c5d36552f93fd7a747",
-    "size":  310272,
-    "notes":  "排行榜:PB改用BestRunTotal(原BestTime恒为0);移动端合并后去重",
-    "publishedAt":  "2026-09-26T13:22:37Z"
-}
