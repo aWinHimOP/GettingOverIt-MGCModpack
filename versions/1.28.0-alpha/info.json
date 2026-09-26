@@ -1,0 +1,7 @@
+{
+    "version":  "1.28.0-alpha",
+    "sha256":  "0b8907b51662995ab65bf92fbec97ac4ec063482fb54dbbc3b6e2ec828087a29",
+    "size":  330240,
+    "notes":  "修复玩家设置昵称输入不保存(改用onEndEdit提交)；关于页文案+主页图片面板服务器可配(等MainMenu就绪后再应用)",
+    "publishedAt":  "2026-09-26T16:15:57Z"
+}
