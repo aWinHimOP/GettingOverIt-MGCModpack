@@ -1,0 +1,7 @@
+{
+    "version":  "1.28.0-alpha",
+    "sha256":  "4b84d25b4acd21d14e2827aa6fb2a5736fae5bea11f9104a9719a0d6c8387587",
+    "size":  334848,
+    "notes":  "关于页新增 aboutURL 字段（项目地址行），修复 prefab 里被截断的 github 链接",
+    "publishedAt":  "2026-09-26T18:48:55Z"
+}
