@@ -1,7 +1,0 @@
-{
-    "version":  "1.28.0-alpha",
-    "sha256":  "2f6eb233bd1b425ea54365d9663a6c91eb02c4e3122da4cedab1b6bf1b81cfb2",
-    "size":  318464,
-    "notes":  "默认昵称改Player;删掉UIInitializer里硬编码的SetUserInfo(fwwh)和测试弹窗",
-    "publishedAt":  "2026-09-26T14:16:41Z"
-}
