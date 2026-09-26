@@ -1,0 +1,7 @@
+{
+    "version":  "1.28.0-alpha",
+    "sha256":  "b6171a6eca038635ec6ca358d499c1bc709a413ebe7c95e05ceb30186574d0bd",
+    "size":  322048,
+    "notes":  "诊断:UIInitializer.Initialize 逐步打点+异常捕获",
+    "publishedAt":  "2026-09-26T14:01:48Z"
+}
