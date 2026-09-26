@@ -1,7 +1,0 @@
-{
-    "version":  "1.28.0-alpha",
-    "sha256":  "d6265d471521dfe54024a9aa694028be97a6e4b1b95240b05085c6f2258a855a",
-    "size":  319488,
-    "notes":  "玩家设置:头像支持安装包内异步读取(UnityWebRequest)+公有目录同步读取",
-    "publishedAt":  "2026-09-26T13:47:31Z"
-}
