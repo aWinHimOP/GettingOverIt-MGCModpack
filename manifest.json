@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  35,
+    "rev":  36,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-26T13:25:31Z",
+    "updatedAt":  "2026-09-26T13:37:29Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "3a4c43e1257191485d6769c8f70afb8c95066cda7c6e3d37ac4e88717560d348",
-                         "size":  311808,
-                         "notes":  "新增玩家设置页(改昵称/头像);排行榜完成(PB+名次);热力图下线",
+                         "sha256":  "d4f729b65c8b3ef64864888977a981b20bee032832b0e5f986b4e036b7481835",
+                         "size":  312832,
+                         "notes":  "修暂停键:通关奖励场景(Reward Loader Mobile)自动隐藏,并留HideOnRewardScreen/ForceHide开关;玩家设置页",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-26T13:25:28Z"
+                         "publishedAt":  "2026-09-26T13:37:27Z"
                      }
                  ]
 }
