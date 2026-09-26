@@ -1,0 +1,7 @@
+{
+    "version":  "1.28.0-alpha",
+    "sha256":  "3d39e1fd25a442f6ea06ec5af5da9f775c55fd1a0119c6bea3843abd087697d4",
+    "size":  329216,
+    "notes":  "AssetBundleLoader 优先读 HotUpdate/bundles 热更资源包",
+    "publishedAt":  "2026-09-26T19:26:02Z"
+}
