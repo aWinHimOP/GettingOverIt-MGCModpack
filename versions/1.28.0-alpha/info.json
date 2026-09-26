@@ -1,7 +1,0 @@
-{
-    "version":  "1.28.0-alpha",
-    "sha256":  "da1a44cbbdc638e7fc57b2680c02dfb6857727f7a693fb3830d61991f34344c7",
-    "size":  335360,
-    "notes":  "关于页新增 aboutURL 字段（项目地址行），修复槽位索引",
-    "publishedAt":  "2026-09-26T18:36:57Z"
-}
