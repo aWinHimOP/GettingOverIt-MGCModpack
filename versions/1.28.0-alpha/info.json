@@ -1,0 +1,7 @@
+{
+    "version":  "1.28.0-alpha",
+    "sha256":  "b95ece169e0133f74732e6843f957963ce2c5c7ef9732a4aeccef905bfba74bc",
+    "size":  293376,
+    "notes":  "热力图重做：12周/关掉 GridLayoutGroup/颜色写到 Background；左区下方放通关次数与今日最佳",
+    "publishedAt":  "2026-09-26T11:24:35Z"
+}
