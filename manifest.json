@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  37,
+    "rev":  38,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-26T13:47:34Z",
+    "updatedAt":  "2026-09-26T13:54:50Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "d6265d471521dfe54024a9aa694028be97a6e4b1b95240b05085c6f2258a855a",
+                         "sha256":  "a17f6b64811bcd571cc68db8a37da8e9055208c9e6bc88f04f1f7d594e3e56ad",
                          "size":  319488,
-                         "notes":  "玩家设置:头像支持安装包内异步读取(UnityWebRequest)+公有目录同步读取",
+                         "notes":  "玩家设置:启动即建头像目录并异步扫安装包头像(挂UIInitializer)",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-26T13:47:31Z"
+                         "publishedAt":  "2026-09-26T13:54:47Z"
                      }
                  ]
 }
