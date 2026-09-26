@@ -1,7 +1,0 @@
-{
-    "version":  "1.28.0-alpha",
-    "sha256":  "56df258ddad2d3cabda554ed6da6c92258dfc1caf0b6d1313d9287c823d35729",
-    "size":  322048,
-    "notes":  "头像:候选名单只留实测存在的userHead,过滤null/GameSetting等非头像资源",
-    "publishedAt":  "2026-09-26T14:04:45Z"
-}
