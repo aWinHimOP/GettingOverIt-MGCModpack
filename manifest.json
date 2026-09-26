@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  60,
+    "rev":  61,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-26T19:26:13Z",
+    "updatedAt":  "2026-09-26T19:34:29Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "3d39e1fd25a442f6ea06ec5af5da9f775c55fd1a0119c6bea3843abd087697d4",
+                         "sha256":  "4376f7509d4c0eebe094ce61f38b12a5cdd8159038c752bd02b88174044b5d0f",
                          "size":  329216,
-                         "notes":  "AssetBundleLoader 优先读 HotUpdate/bundles 热更资源包",
+                         "notes":  "修日志滚动条错位（改成钳制锚点，sizeDelta 对 ScrollView 驱动无效）",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-26T19:26:02Z"
+                         "publishedAt":  "2026-09-26T19:34:23Z"
                      }
                  ],
     "bundles":  [
