@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  41,
+    "rev":  42,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-26T14:04:49Z",
+    "updatedAt":  "2026-09-26T14:07:17Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "56df258ddad2d3cabda554ed6da6c92258dfc1caf0b6d1313d9287c823d35729",
+                         "sha256":  "7c16a2d3f81312eac32525a43985c773fa9bef06981b1a87eece43bfd4e142ae",
                          "size":  322048,
-                         "notes":  "头像:候选名单只留实测存在的userHead,过滤null/GameSetting等非头像资源",
+                         "notes":  "头像:公有目录改启动即扫+自检日志;安装包扫描只留实测存在的userHead",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-26T14:04:45Z"
+                         "publishedAt":  "2026-09-26T14:07:14Z"
                      }
                  ]
 }
