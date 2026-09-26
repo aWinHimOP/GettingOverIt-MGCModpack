@@ -1,7 +1,0 @@
-{
-    "version":  "1.28.0-alpha",
-    "sha256":  "c94be2b0ba9016115013f181e98cfb7cf207db2895b79acb77a989e09ca7678c",
-    "size":  331776,
-    "notes":  "关于页文案与主页图片面板改为服务器可配(等MainMenu异步加载完再应用)；修复玩家设置昵称输入不保存(改用onEndEdit提交)；loader提示内置副本后缀应写成.disabled",
-    "publishedAt":  "2026-09-26T15:45:12Z"
-}
