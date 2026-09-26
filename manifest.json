@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  43,
+    "rev":  44,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-26T14:12:18Z",
+    "updatedAt":  "2026-09-26T14:16:44Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "682b9c76662a4f4d5bc9e87494ae0b9cb78dd3f65b781b14e02075a971645fc8",
-                         "size":  317440,
-                         "notes":  "玩家设置精简:只有昵称+切换头像/恢复默认两个按钮;头像读公有目录Avatar文件夹",
+                         "sha256":  "2f6eb233bd1b425ea54365d9663a6c91eb02c4e3122da4cedab1b6bf1b81cfb2",
+                         "size":  318464,
+                         "notes":  "默认昵称改Player;删掉UIInitializer里硬编码的SetUserInfo(fwwh)和测试弹窗",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-26T14:12:15Z"
+                         "publishedAt":  "2026-09-26T14:16:41Z"
                      }
                  ]
 }
