@@ -1,7 +1,0 @@
-{
-    "version":  "1.28.0-alpha",
-    "sha256":  "43c918938a1fa52b20dedb0b029047be95f4fa79d2b6eba71b0c0d717bff09de",
-    "size":  294912,
-    "notes":  "热力图8周/格子79px填满面板(尺寸不动故不错位)+纯白无边框+sqrt渐变+字号28+日志改常量",
-    "publishedAt":  "2026-09-26T12:09:17Z"
-}
