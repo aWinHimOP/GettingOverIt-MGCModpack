@@ -1,7 +1,0 @@
-{
-    "version":  "1.28.0-alpha",
-    "sha256":  "87b700af736ce369480d0b0c2c7035c5399dc14e68123d528303f6deb8682d03",
-    "size":  321024,
-    "notes":  "头像:改用AssetManager.list()列安装包目录再加载,不再瞎猜文件名",
-    "publishedAt":  "2026-09-26T13:57:57Z"
-}
