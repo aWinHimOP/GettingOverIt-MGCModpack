@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  52,
+    "rev":  53,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-26T16:49:20Z",
+    "updatedAt":  "2026-09-26T18:00:21Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "861d7f034c9ca75b560f8870edb2f95b15093ae6bf2fcf3ae6a730e42151f9cc",
-                         "size":  333312,
-                         "notes":  "关于页文案合并为一个Text显示（原本8个分开写，改文案要填7个字段）；关于页支持从服务器下载顶部图标(aboutIcon)",
+                         "sha256":  "f207445adb200c5ab31e4009b10e14e24a24b70120e3acd1dd572a63c9085e86",
+                         "size":  334848,
+                         "notes":  "关于页回退为一文案一个Text的原始分行版式（合并成一个会把固定120高的框撑破导致文字压到图标上）；图标下载功能保留",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-26T16:49:18Z"
+                         "publishedAt":  "2026-09-26T18:00:19Z"
                      }
                  ]
 }
