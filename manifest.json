@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  83,
+    "rev":  84,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-27T19:37:06Z",
+    "updatedAt":  "2026-09-27T19:59:28Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "b62c61700f60e3ddc7d1983fb9eb09191a026a08fb0321cc860c66dbdecee168",
-                         "size":  361984,
-                         "notes":  "修 LoadPause 的 Camera.main 判空；InitializeCore 逐步兜异常（原来一步崩就中断整条初始化）",
+                         "sha256":  "a8ccd8217093508fb7796058460c70d76e609602a210f5541d16e199a6766920",
+                         "size":  390656,
+                         "notes":  "新增 PackDownloader（mod包按需下载）+ ModPanelTabs（Mod管理页加载/下载切换）；加载遮罩等帧率稳定后再渐变",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-27T19:17:33Z"
+                         "publishedAt":  "2026-09-27T19:59:23Z"
                      }
                  ],
     "bundles":  [
