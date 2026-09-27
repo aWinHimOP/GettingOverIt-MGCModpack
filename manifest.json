@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  62,
+    "rev":  63,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-26T19:39:24Z",
+    "updatedAt":  "2026-09-27T06:17:12Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "cfae9599301e96e2463a04894f7a91761d1051ef0291b94e9a71afa01a1c560e",
-                         "size":  330240,
-                         "notes":  "游玩统计字号 24 -\u003e 34（原来 STAT_FONT_SIZE=35 是废常量，实际被写死 24 覆盖）",
+                         "sha256":  "13bfa320af5a5b13796f55bdfa6be3f379ed5165b570a9a096b29ca070271c2b",
+                         "size":  334336,
+                         "notes":  "新增公告栏（内容走独立 announcements.json，加载器预取到 HotUpdate）",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-26T19:39:20Z"
+                         "publishedAt":  "2026-09-27T06:17:07Z"
                      }
                  ],
     "bundles":  [
