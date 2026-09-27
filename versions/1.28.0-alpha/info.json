@@ -1,7 +1,0 @@
-{
-    "version":  "1.28.0-alpha",
-    "sha256":  "74ee0a8a35d29ffb177948df52647272f33a8f3a23d6f4ce0dfb221e98bf9d4f",
-    "size":  354304,
-    "notes":  "顶栏加「公告」按钮（SelectPanelManager.RegisterPanel，支持图标）；内容支持 tabIcon",
-    "publishedAt":  "2026-09-27T08:52:18Z"
-}
