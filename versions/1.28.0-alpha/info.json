@@ -1,7 +1,0 @@
-{
-    "version":  "1.28.0-alpha",
-    "sha256":  "a9fcf18fadb216b1e58445b5eac9e29dde72dc7f545074485b04913a7c5a6e2b",
-    "size":  354304,
-    "notes":  "真因：主页面板 Image.enabled=False，赋 sprite 也不会渲染。已打开；并注册 AnnounceMentPanel 到 UIRegistry",
-    "publishedAt":  "2026-09-27T08:44:34Z"
-}
