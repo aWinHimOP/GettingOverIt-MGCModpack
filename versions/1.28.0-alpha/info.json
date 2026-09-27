@@ -1,7 +1,0 @@
-{
-    "version":  "1.28.0-alpha",
-    "sha256":  "ffd5e078ba5be7913c14d5e09e8bb7b3d443122a9e72e52465c15dc3f9279fcd",
-    "size":  355328,
-    "notes":  "顶栏按钮改建在 TopPanel/Panel；常驻轮询修第二次打不开；图片内存缓存；自动弹出只做一次",
-    "publishedAt":  "2026-09-27T09:31:08Z"
-}
