@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  74,
+    "rev":  75,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-27T09:31:12Z",
+    "updatedAt":  "2026-09-27T09:35:52Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "ffd5e078ba5be7913c14d5e09e8bb7b3d443122a9e72e52465c15dc3f9279fcd",
-                         "size":  355328,
-                         "notes":  "顶栏按钮改建在 TopPanel/Panel；常驻轮询修第二次打不开；图片内存缓存；自动弹出只做一次",
+                         "sha256":  "c11d4512be14584efbc88d480f8646d97818cdcc68adbca932477db73f27d659",
+                         "size":  363520,
+                         "notes":  "顶栏按钮定位修正：TopPanel 在主菜单 MainPanel 下，不在公告面板里",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-27T09:31:08Z"
+                         "publishedAt":  "2026-09-27T09:35:38Z"
                      }
                  ],
     "bundles":  [
