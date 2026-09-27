@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  64,
+    "rev":  65,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-27T07:48:16Z",
+    "updatedAt":  "2026-09-27T08:00:49Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "13bfa320af5a5b13796f55bdfa6be3f379ed5165b570a9a096b29ca070271c2b",
-                         "size":  334336,
-                         "notes":  "新增公告栏（内容走独立 announcements.json，加载器预取到 HotUpdate）",
+                         "sha256":  "2aff5c9c4b4c5e5c8f933c68eb7795fabd1f99cf36b9d6d0c5e031d4b85d39b9",
+                         "size":  343552,
+                         "notes":  "公告栏修复：路径改为递归查找+关闭按钮+结构诊断；图片落盘缓存",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-27T06:17:07Z"
+                         "publishedAt":  "2026-09-27T08:00:45Z"
                      }
                  ],
     "bundles":  [
