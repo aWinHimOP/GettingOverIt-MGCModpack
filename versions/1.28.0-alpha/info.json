@@ -1,0 +1,7 @@
+{
+    "version":  "1.28.0-alpha",
+    "sha256":  "8dc093b3b4c90640af553826c4e9dacb6c0b246c6b1f8ec655f4870a3aa778c2",
+    "size":  351744,
+    "notes":  "加图片渲染状态诊断；UIInitializer 创建时就关闭 AnnouncementPanel",
+    "publishedAt":  "2026-09-27T08:35:12Z"
+}
