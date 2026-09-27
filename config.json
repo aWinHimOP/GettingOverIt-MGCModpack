@@ -11,16 +11,16 @@
                       "自定义背景",
                       "自定义皮肤",
                       "光标美化",
-                      "触摸可视化",
-                      "联机"
+                      "触摸可视化"
                   ],
     "neutral":  [
                     "地图加载器"
                 ],
-    "updatedAt":  "2026-09-26T18:18:34Z",
+    "updatedAt":  "2026-09-27T07:45:19Z",
     "aboutTitle":  "MGCModpack",
     "aboutDesc":  "MGCModpack是一个《和班尼特福迪一起攻克难关》的扩展插件包，使用dnSpy和Unity2017.4.24f1开发",
     "aboutQQ":  "推荐加入掘地求升Modpack QQ 交流群以获得帮助和更多资源",
+    "aboutURL":  "作者 Bilibili 账号：@aWinHimOP\n掘地求升Modpack QQ 交流群：549361403\nGithub：https://github.com/aWinHimOP/GettingOverIt-MGCModpack/",
     "aboutStaffLabel":  "工作人员名单",
     "aboutStaff":  "开发\naWinHimOP，Zonakkis",
     "aboutLogLabel":  "更新日志",
@@ -28,7 +28,7 @@
     "aboutContent":  "",
     "aboutIcon":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/about-icon.png",
     "panelImage":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/panel-placeholder.png",
-    "panelColor":  "#000000",
+    "panelColor":  "#FFFFFF",
     "panelAlpha":  0.392,
     "panelPreserveAspect":  true
 }
