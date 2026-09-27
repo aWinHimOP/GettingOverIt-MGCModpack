@@ -1,0 +1,7 @@
+{
+    "version":  "1.28.0-alpha",
+    "sha256":  "a1f19d5978a356c04a8b0270f7645988921ee81a61d3aa1d78225cf1cf6a435a",
+    "size":  363520,
+    "notes":  "修 RemoteUI 等不到 MainMenu：改用 UIRegistry 权威引用（MainMenu 是 SetActive(false) 加载的，GameObject.Find 找不到）",
+    "publishedAt":  "2026-09-27T08:56:55Z"
+}
