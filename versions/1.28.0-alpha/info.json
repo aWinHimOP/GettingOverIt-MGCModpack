@@ -1,7 +1,0 @@
-{
-    "version":  "1.28.0-alpha",
-    "sha256":  "13bfa320af5a5b13796f55bdfa6be3f379ed5165b570a9a096b29ca070271c2b",
-    "size":  334336,
-    "notes":  "新增公告栏（内容走独立 announcements.json，加载器预取到 HotUpdate）",
-    "publishedAt":  "2026-09-27T06:17:07Z"
-}
