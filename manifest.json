@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  76,
+    "rev":  77,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-27T09:40:48Z",
+    "updatedAt":  "2026-09-27T09:45:26Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
                          "sha256":  "c11d4512be14584efbc88d480f8646d97818cdcc68adbca932477db73f27d659",
                          "size":  363520,
-                         "notes":  "按面板实例记录填充状态：换场景重建内容与顶栏按钮；图片内存缓存按文件戳失效",
+                         "notes":  "主页面板图片在面板创建时即贴（消除场景重置的空窗）；按实例记录填充状态",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-27T09:40:44Z"
+                         "publishedAt":  "2026-09-27T09:45:22Z"
                      }
                  ],
     "bundles":  [
