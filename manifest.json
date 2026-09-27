@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  67,
+    "rev":  68,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-27T08:26:22Z",
+    "updatedAt":  "2026-09-27T08:35:17Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "b1d2b3fbf0b369bd2fe6c33f1b026dba8d5769d03e0fb331b065fa98e3d4d5f8",
-                         "size":  350720,
-                         "notes":  "修默认主题下公告文字变全透明（TextPrimary 未设=全透明）；面板透明度 0.392-\u003e1.0",
+                         "sha256":  "8dc093b3b4c90640af553826c4e9dacb6c0b246c6b1f8ec655f4870a3aa778c2",
+                         "size":  351744,
+                         "notes":  "加图片渲染状态诊断；UIInitializer 创建时就关闭 AnnouncementPanel",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-27T08:26:19Z"
+                         "publishedAt":  "2026-09-27T08:35:12Z"
                      }
                  ],
     "bundles":  [
