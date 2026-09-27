@@ -1,7 +1,0 @@
-{
-    "version":  "1.28.0-alpha",
-    "sha256":  "cfae9599301e96e2463a04894f7a91761d1051ef0291b94e9a71afa01a1c560e",
-    "size":  330240,
-    "notes":  "游玩统计字号 24 -\u003e 34（原来 STAT_FONT_SIZE=35 是废常量，实际被写死 24 覆盖）",
-    "publishedAt":  "2026-09-26T19:39:20Z"
-}
