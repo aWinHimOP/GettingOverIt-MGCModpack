@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  77,
+    "rev":  78,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-27T09:45:26Z",
+    "updatedAt":  "2026-09-27T09:46:19Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
                          "sha256":  "c11d4512be14584efbc88d480f8646d97818cdcc68adbca932477db73f27d659",
                          "size":  363520,
-                         "notes":  "主页面板图片在面板创建时即贴（消除场景重置的空窗）；按实例记录填充状态",
+                         "notes":  "MainMenu 创建时即应用远程 UI：消除场景重置后图片消失又重出现的空窗",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-27T09:45:22Z"
+                         "publishedAt":  "2026-09-27T09:46:14Z"
                      }
                  ],
     "bundles":  [
