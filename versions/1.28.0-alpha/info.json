@@ -1,7 +1,0 @@
-{
-    "version":  "1.28.0-alpha",
-    "sha256":  "d349df477113b4fdb26c7f7af40309f0cf56d9ebe60264b11689ad99133ef77c",
-    "size":  361984,
-    "notes":  "新增 MGC.Managers.TopPanelManager（与 SelectPanelManager 对称的顶栏管理器）；公告按钮改为委托它",
-    "publishedAt":  "2026-09-27T10:49:30Z"
-}
