@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  80,
+    "rev":  81,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-27T10:37:48Z",
+    "updatedAt":  "2026-09-27T10:49:35Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "7f566ae16ce82d1c2ac576d86d3217981886350a208f8b79ac164ef967f8f007",
-                         "size":  366080,
-                         "notes":  "移除侧边栏公告按钮（用户不要）；公告按钮只在 TopPanel；面板图同步贴图；扩音器图标",
+                         "sha256":  "d349df477113b4fdb26c7f7af40309f0cf56d9ebe60264b11689ad99133ef77c",
+                         "size":  361984,
+                         "notes":  "新增 MGC.Managers.TopPanelManager（与 SelectPanelManager 对称的顶栏管理器）；公告按钮改为委托它",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-27T10:37:37Z"
+                         "publishedAt":  "2026-09-27T10:49:30Z"
                      }
                  ],
     "bundles":  [
