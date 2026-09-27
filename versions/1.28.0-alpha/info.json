@@ -1,0 +1,7 @@
+{
+    "version":  "1.28.0-alpha",
+    "sha256":  "b62c61700f60e3ddc7d1983fb9eb09191a026a08fb0321cc860c66dbdecee168",
+    "size":  361984,
+    "notes":  "修 LoadPause 的 Camera.main 判空；InitializeCore 逐步兜异常（原来一步崩就中断整条初始化）",
+    "publishedAt":  "2026-09-27T19:17:33Z"
+}
