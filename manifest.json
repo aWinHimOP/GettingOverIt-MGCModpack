@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  71,
+    "rev":  72,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-27T08:52:22Z",
+    "updatedAt":  "2026-09-27T08:57:01Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "74ee0a8a35d29ffb177948df52647272f33a8f3a23d6f4ce0dfb221e98bf9d4f",
-                         "size":  354304,
-                         "notes":  "顶栏加「公告」按钮（SelectPanelManager.RegisterPanel，支持图标）；内容支持 tabIcon",
+                         "sha256":  "a1f19d5978a356c04a8b0270f7645988921ee81a61d3aa1d78225cf1cf6a435a",
+                         "size":  363520,
+                         "notes":  "修 RemoteUI 等不到 MainMenu：改用 UIRegistry 权威引用（MainMenu 是 SetActive(false) 加载的，GameObject.Find 找不到）",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-27T08:52:18Z"
+                         "publishedAt":  "2026-09-27T08:56:55Z"
                      }
                  ],
     "bundles":  [
