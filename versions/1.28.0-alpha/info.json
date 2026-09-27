@@ -1,7 +1,0 @@
-{
-    "version":  "1.28.0-alpha",
-    "sha256":  "b1d2b3fbf0b369bd2fe6c33f1b026dba8d5769d03e0fb331b065fa98e3d4d5f8",
-    "size":  350720,
-    "notes":  "修默认主题下公告文字变全透明（TextPrimary 未设=全透明）；面板透明度 0.392-\u003e1.0",
-    "publishedAt":  "2026-09-27T08:26:19Z"
-}
