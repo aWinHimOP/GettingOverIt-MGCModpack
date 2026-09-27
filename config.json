@@ -16,7 +16,7 @@
     "neutral":  [
                     "地图加载器"
                 ],
-    "updatedAt":  "2026-09-27T08:25:37Z",
+    "updatedAt":  "2026-09-27T19:36:28Z",
     "aboutTitle":  "MGCModpack",
     "aboutDesc":  "MGCModpack是一个《和班尼特福迪一起攻克难关》的扩展插件包，使用dnSpy和Unity2017.4.24f1开发",
     "aboutQQ":  "推荐加入掘地求升Modpack QQ 交流群以获得帮助和更多资源",
@@ -26,8 +26,8 @@
     "aboutLogLabel":  "更新日志",
     "aboutLog":  "1.28.0-alpha：新增玩家设置页（改昵称/换头像）\n修复通关奖励界面显示暂停键\n关于页文案改为服务器可配",
     "aboutContent":  "",
-    "aboutIcon":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/about-icon.png",
-    "panelImage":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/panel-placeholder.png",
+    "aboutIcon":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/icon/about-icon.png",
+    "panelImage":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/icon/panel-placeholder.png",
     "panelColor":  "#FFFFFF",
     "panelAlpha":  1.0,
     "panelPreserveAspect":  true
