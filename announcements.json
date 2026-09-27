@@ -37,7 +37,7 @@
         {
           "title": "关于配图",
           "body": "公告正文支持插图：在条目里写 image 字段填图片地址即可。\n\n下面就是一张示例图。",
-          "image": "https://awinhimop.github.io/GettingOverIt-MGCModpack/about-icon.png",
+          "image": "https://awinhimop.github.io/GettingOverIt-MGCModpack/icon/about-icon.png",
           "publishedAt": "2026-09-27"
         }
       ]
