@@ -1,7 +1,0 @@
-{
-    "version":  "1.28.0-alpha",
-    "sha256":  "3bd11c74d666ab0dc0a9c8e0d55dfb468ec953fd2b82fa6ed354e58fdcbde3d4",
-    "size":  352256,
-    "notes":  "图片诊断改成单行日志（DebugLogger 会截断多行）+ 列出所有 Panel 候选",
-    "publishedAt":  "2026-09-27T08:39:53Z"
-}
