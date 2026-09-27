@@ -1,0 +1,7 @@
+{
+    "version":  "1.28.0-alpha",
+    "sha256":  "c11d4512be14584efbc88d480f8646d97818cdcc68adbca932477db73f27d659",
+    "size":  363520,
+    "notes":  "MainMenu 创建时即应用远程 UI：消除场景重置后图片消失又重出现的空窗",
+    "publishedAt":  "2026-09-27T09:46:14Z"
+}
