@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  69,
+    "rev":  70,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-27T08:40:01Z",
+    "updatedAt":  "2026-09-27T08:44:38Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "3bd11c74d666ab0dc0a9c8e0d55dfb468ec953fd2b82fa6ed354e58fdcbde3d4",
-                         "size":  352256,
-                         "notes":  "图片诊断改成单行日志（DebugLogger 会截断多行）+ 列出所有 Panel 候选",
+                         "sha256":  "a9fcf18fadb216b1e58445b5eac9e29dde72dc7f545074485b04913a7c5a6e2b",
+                         "size":  354304,
+                         "notes":  "真因：主页面板 Image.enabled=False，赋 sprite 也不会渲染。已打开；并注册 AnnounceMentPanel 到 UIRegistry",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-27T08:39:53Z"
+                         "publishedAt":  "2026-09-27T08:44:34Z"
                      }
                  ],
     "bundles":  [
