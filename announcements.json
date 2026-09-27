@@ -1,23 +1,46 @@
 {
   "title": "唯呵的公告栏",
-  "announcements": [
+  "categories": [
     {
-      "title": "MGCModpack 已更新",
-      "body": "本次更新把白名单改成只在内存里生效，去掉了本地那份可以被随便改的配置文件。\nUI 资源包现在支持热更了，以后改界面不用重装。",
-      "level": "info",
-      "publishedAt": "2026-09-27"
+      "name": "公告",
+      "items": [
+        {
+          "title": "MGCModpack 已更新",
+          "body": "本次更新内容：\n\n· 白名单改成只在内存里生效，去掉了本地那份可以被随便改的配置文件\n· UI 资源包支持热更了，以后改界面不用重装\n· 公告栏上线\n\n有问题去 B 站找我：@aWinHimOP",
+          "publishedAt": "2026-09-27"
+        },
+        {
+          "title": "游玩统计字号调大了",
+          "body": "游玩时长 / 重开 / 通关 / 最佳记录四行字都从 24 调到了 34，看着更清楚。\n\n觉得还不够大或者太大，跟我说。",
+          "publishedAt": "2026-09-27"
+        }
+      ]
     },
     {
-      "title": "游玩统计字号调大了",
-      "body": "游玩时长/重开/通关/最佳记录四行字都从 24 调到了 34，看着更清楚。",
-      "level": "info",
-      "publishedAt": "2026-09-27"
+      "name": "活动",
+      "items": [
+        {
+          "title": "壶天杯 120 帧省电版推荐",
+          "body": "比赛建议用省电 120 帧那个包，帧数稳、发热低。\n\n已经放在群文件里了。",
+          "publishedAt": "2026-09-27"
+        }
+      ]
     },
     {
-      "title": "欢迎使用 MGCModpack",
-      "body": "有问题或者想反馈，去 B 站找我：@aWinHimOP\n交流群：549361403",
-      "level": "info",
-      "publishedAt": "2026-09-27"
+      "name": "通知",
+      "items": [
+        {
+          "title": "交流群",
+          "body": "掘地求升 Modpack QQ 交流群：549361403\n\n反馈 bug、要地图、问问题都可以来。",
+          "publishedAt": "2026-09-27"
+        },
+        {
+          "title": "关于配图",
+          "body": "公告正文支持插图：在条目里写 image 字段填图片地址即可。\n\n下面就是一张示例图。",
+          "image": "https://awinhimop.github.io/GettingOverIt-MGCModpack/about-icon.png",
+          "publishedAt": "2026-09-27"
+        }
+      ]
     }
   ]
 }
