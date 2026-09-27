@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  66,
+    "rev":  67,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-27T08:14:00Z",
+    "updatedAt":  "2026-09-27T08:26:22Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "019626d686e8324e54c71ce71446fe6fe0d02054c26609a876d02eb493117ac9",
-                         "size":  344064,
-                         "notes":  "公告栏改成分类/条目/正文三级结构（SelectPanel=分类, subView=条目, contentView=正文）；关闭按钮；跟随主题色",
+                         "sha256":  "b1d2b3fbf0b369bd2fe6c33f1b026dba8d5769d03e0fb331b065fa98e3d4d5f8",
+                         "size":  350720,
+                         "notes":  "修默认主题下公告文字变全透明（TextPrimary 未设=全透明）；面板透明度 0.392-\u003e1.0",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-27T08:13:56Z"
+                         "publishedAt":  "2026-09-27T08:26:19Z"
                      }
                  ],
     "bundles":  [
