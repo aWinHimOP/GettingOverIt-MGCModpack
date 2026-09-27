@@ -1,7 +1,0 @@
-{
-    "version":  "1.28.0-alpha",
-    "sha256":  "019626d686e8324e54c71ce71446fe6fe0d02054c26609a876d02eb493117ac9",
-    "size":  344064,
-    "notes":  "公告栏改成分类/条目/正文三级结构（SelectPanel=分类, subView=条目, contentView=正文）；关闭按钮；跟随主题色",
-    "publishedAt":  "2026-09-27T08:13:56Z"
-}
