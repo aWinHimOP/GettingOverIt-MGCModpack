@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  68,
+    "rev":  69,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-27T08:35:17Z",
+    "updatedAt":  "2026-09-27T08:40:01Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "8dc093b3b4c90640af553826c4e9dacb6c0b246c6b1f8ec655f4870a3aa778c2",
-                         "size":  351744,
-                         "notes":  "加图片渲染状态诊断；UIInitializer 创建时就关闭 AnnouncementPanel",
+                         "sha256":  "3bd11c74d666ab0dc0a9c8e0d55dfb468ec953fd2b82fa6ed354e58fdcbde3d4",
+                         "size":  352256,
+                         "notes":  "图片诊断改成单行日志（DebugLogger 会截断多行）+ 列出所有 Panel 候选",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-27T08:35:12Z"
+                         "publishedAt":  "2026-09-27T08:39:53Z"
                      }
                  ],
     "bundles":  [
