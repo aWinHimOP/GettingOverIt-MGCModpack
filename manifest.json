@@ -1,8 +1,8 @@
 {
     "schemaVersion":  1,
-    "rev":  82,
+    "rev":  83,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-27T19:17:37Z",
+    "updatedAt":  "2026-09-27T19:37:06Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
@@ -18,22 +18,27 @@
                         "name":  "ui_mainmenu.unity3d",
                         "sha256":  "4caebbf20d2f975cf0cb23c4059779006bc6cafe0b80b74df8865cb4c9d43056",
                         "size":  933613,
-                        "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/bundles/ui_mainmenu.unity3d"
+                        "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/bundle/ui_mainmenu.unity3d"
                     },
                     {
                         "name":  "ui_pause.unity3d",
                         "sha256":  "a9b8db2e8482e65a090ff60c192c964c12e2b80ff41514cfb1d25aacae8d17a0",
                         "size":  10658,
-                        "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/bundles/ui_pause.unity3d"
+                        "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/bundle/ui_pause.unity3d"
                     },
                     {
                         "name":  "ui_uicontrols.unity3d",
                         "sha256":  "21504fb640c443cc28c099c4e1c6c3aac5b0f8d9c47ff6953a3ca76b31c2af36",
                         "size":  18966,
-                        "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/bundles/ui_uicontrols.unity3d"
+                        "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/bundle/ui_uicontrols.unity3d"
                     }
                 ],
     "resources":  [
-
+                      {
+                          "name":  "README.txt",
+                          "sha256":  "81bd9e89cabf66447918bff9125392dc3d60d2478a1b79ac353738251b11ac2d",
+                          "size":  2474,
+                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/resources/README.txt"
+                      }
                   ]
 }
