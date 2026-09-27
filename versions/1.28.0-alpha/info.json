@@ -1,7 +1,0 @@
-{
-    "version":  "1.28.0-alpha",
-    "sha256":  "2aff5c9c4b4c5e5c8f933c68eb7795fabd1f99cf36b9d6d0c5e031d4b85d39b9",
-    "size":  343552,
-    "notes":  "公告栏修复：路径改为递归查找+关闭按钮+结构诊断；图片落盘缓存",
-    "publishedAt":  "2026-09-27T08:00:45Z"
-}
