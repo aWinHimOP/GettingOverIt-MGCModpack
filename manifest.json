@@ -1,23 +1,23 @@
 {
     "schemaVersion":  1,
-    "rev":  79,
+    "rev":  80,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-27T10:22:31Z",
+    "updatedAt":  "2026-09-27T10:37:48Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "761037222eb68fe82402f72baec5b761e514a21a6fac2f92efec0a5b6892876f",
+                         "sha256":  "7f566ae16ce82d1c2ac576d86d3217981886350a208f8b79ac164ef967f8f007",
                          "size":  366080,
-                         "notes":  "面板图同步贴图（不再绕协程）；顶栏按钮扩音器图标；创建时即应用远程UI",
+                         "notes":  "移除侧边栏公告按钮（用户不要）；公告按钮只在 TopPanel；面板图同步贴图；扩音器图标",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-27T10:22:27Z"
+                         "publishedAt":  "2026-09-27T10:37:37Z"
                      }
                  ],
     "bundles":  [
                     {
                         "name":  "ui_mainmenu.unity3d",
-                        "sha256":  "d193b13118db947d26419d82d8dc06680df0afb352d025c99405c7a3bdd29e11",
-                        "size":  933619,
+                        "sha256":  "4caebbf20d2f975cf0cb23c4059779006bc6cafe0b80b74df8865cb4c9d43056",
+                        "size":  933613,
                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/bundles/ui_mainmenu.unity3d"
                     },
                     {
