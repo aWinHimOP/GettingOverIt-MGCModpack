@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  73,
+    "rev":  74,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-27T09:25:52Z",
+    "updatedAt":  "2026-09-27T09:31:12Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "a1f19d5978a356c04a8b0270f7645988921ee81a61d3aa1d78225cf1cf6a435a",
-                         "size":  363520,
-                         "notes":  "修 RemoteUI 等不到 MainMenu：改用 UIRegistry 权威引用（MainMenu 是 SetActive(false) 加载的，GameObject.Find 找不到）",
+                         "sha256":  "ffd5e078ba5be7913c14d5e09e8bb7b3d443122a9e72e52465c15dc3f9279fcd",
+                         "size":  355328,
+                         "notes":  "顶栏按钮改建在 TopPanel/Panel；常驻轮询修第二次打不开；图片内存缓存；自动弹出只做一次",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-27T08:56:55Z"
+                         "publishedAt":  "2026-09-27T09:31:08Z"
                      }
                  ],
     "bundles":  [
