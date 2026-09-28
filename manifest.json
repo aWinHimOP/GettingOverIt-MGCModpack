@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  86,
+    "rev":  87,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-28T03:53:55Z",
+    "updatedAt":  "2026-09-28T04:05:33Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "fadc17cf876001a1ab343db94bdafddb5b82787dd48c6f7aa883896e70856d89",
-                         "size":  414208,
-                         "notes":  "修 UserInfoManager 里的第二份 WaitMainMenuThenApply 改用 UIRegistry（原来 FindRootObject 找不到 SetActive(false) 的 MainMenu）",
+                         "sha256":  "87e9f3b8738c026923f4ac40d0702636f1dd1ba688254896a66049b44a71b568",
+                         "size":  418304,
+                         "notes":  "修公告栏下落动画消失（改成帧数驱动，原来启动期单帧0.3-0.5秒导致第一帧就结束）",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-28T03:53:49Z"
+                         "publishedAt":  "2026-09-28T04:05:26Z"
                      }
                  ],
     "bundles":  [
