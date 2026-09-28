@@ -1,0 +1,7 @@
+{
+    "version":  "1.28.0-alpha",
+    "sha256":  "fadc17cf876001a1ab343db94bdafddb5b82787dd48c6f7aa883896e70856d89",
+    "size":  414208,
+    "notes":  "修 UserInfoManager 里的第二份 WaitMainMenuThenApply 改用 UIRegistry（原来 FindRootObject 找不到 SetActive(false) 的 MainMenu）",
+    "publishedAt":  "2026-09-28T03:53:49Z"
+}
