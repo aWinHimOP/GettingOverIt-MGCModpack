@@ -1,7 +1,0 @@
-{
-    "version":  "1.28.0-alpha",
-    "sha256":  "a8ccd8217093508fb7796058460c70d76e609602a210f5541d16e199a6766920",
-    "size":  390656,
-    "notes":  "新增 PackDownloader（mod包按需下载）+ ModPanelTabs（Mod管理页加载/下载切换）；加载遮罩等帧率稳定后再渐变",
-    "publishedAt":  "2026-09-27T19:59:23Z"
-}
