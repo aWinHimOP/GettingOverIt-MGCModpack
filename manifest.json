@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  85,
+    "rev":  86,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-28T03:46:22Z",
+    "updatedAt":  "2026-09-28T03:53:55Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "3652d425866d044b8547104d0c61506095a672d344fd93688056049a4b3b6501",
-                         "size":  416256,
-                         "notes":  "修公告栏弹出后被二次调用关掉（ApplyAnnouncement 不再无条件隐藏）；修动画重复启动常驻轮询",
+                         "sha256":  "fadc17cf876001a1ab343db94bdafddb5b82787dd48c6f7aa883896e70856d89",
+                         "size":  414208,
+                         "notes":  "修 UserInfoManager 里的第二份 WaitMainMenuThenApply 改用 UIRegistry（原来 FindRootObject 找不到 SetActive(false) 的 MainMenu）",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-28T03:46:18Z"
+                         "publishedAt":  "2026-09-28T03:53:49Z"
                      }
                  ],
     "bundles":  [
