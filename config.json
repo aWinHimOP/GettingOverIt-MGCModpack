@@ -26,8 +26,8 @@
     "aboutLogLabel":  "更新日志",
     "aboutLog":  "1.28.0-alpha：新增玩家设置页（改昵称/换头像）\n修复通关奖励界面显示暂停键\n关于页文案改为服务器可配",
     "aboutContent":  "",
-    "aboutIcon":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/icon/about-icon.png",
-    "panelImage":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/icon/panel-placeholder.png",
+    "aboutIcon":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/about-icon.png",
+    "panelImage":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/panel-placeholder.png",
     "panelColor":  "#FFFFFF",
     "panelAlpha":  1.0,
     "panelPreserveAspect":  true
