@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  84,
+    "rev":  85,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-27T19:59:28Z",
+    "updatedAt":  "2026-09-28T03:46:22Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "a8ccd8217093508fb7796058460c70d76e609602a210f5541d16e199a6766920",
-                         "size":  390656,
-                         "notes":  "新增 PackDownloader（mod包按需下载）+ ModPanelTabs（Mod管理页加载/下载切换）；加载遮罩等帧率稳定后再渐变",
+                         "sha256":  "3652d425866d044b8547104d0c61506095a672d344fd93688056049a4b3b6501",
+                         "size":  416256,
+                         "notes":  "修公告栏弹出后被二次调用关掉（ApplyAnnouncement 不再无条件隐藏）；修动画重复启动常驻轮询",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-27T19:59:23Z"
+                         "publishedAt":  "2026-09-28T03:46:18Z"
                      }
                  ],
     "bundles":  [
