@@ -1,7 +1,0 @@
-{
-    "version":  "1.28.0-alpha",
-    "sha256":  "c1d4c4584376b84a453287ec3c27621a40531897d5a360f471d36732ec3dd496",
-    "size":  371712,
-    "notes":  "修复类型重复：清理 12 个 __N 重复类型（ModPanelTabs__2/PackDownloader__3/TopPanelManager__4 保留为活版本并改回正名），254 -\u003e 227 类型；桥接新增编译前守卫防止复发",
-    "publishedAt":  "2026-09-29T10:16:32Z"
-}
