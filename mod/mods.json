@@ -1,8 +1,17 @@
 {
-    "schemaVersion":  1,
-    "updatedAt":  "2026-09-27T19:30:01Z",
-    "count":  0,
-    "items":  [
-
-              ]
+    "schemaVersion": 1,
+    "updatedAt": "2026-09-29T20:25:11Z",
+    "count": 1,
+    "items": [
+        {
+            "name": "MGCModpack",
+            "file": "MGCModpack.modpack",
+            "type": "mod",
+            "sha256": "5a63f5381b624e4e0e82b5ea60a0ac429086c53042268e1ac785b628008bb6a7",
+            "size": 109928,
+            "version": "1.0.0",
+            "desc": "MGCModpack内置的Mod整合包，集合了大部分常见Mod",
+            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack"
+        }
+    ]
 }
