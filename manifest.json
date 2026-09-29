@@ -1,44 +1,58 @@
 {
-    "schemaVersion":  1,
-    "rev":  90,
-    "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-29T10:57:44Z",
-    "versions":  [
-                     {
-                         "version":  "1.28.0-alpha",
-                         "sha256":  "b2b84ca6f4082d6af483b5ee41da861b9391d298ebf60f6f60ecc0bbc7f44b5b",
-                         "size":  373760,
-                         "notes":  "修复 mod 关闭不生效：HotReload=false 的 mod（Sideways/无背景）关闭时现在会真正 Unload 并复原重力与旋转；ModBase.Unload 各步加 try 保证 OnUnload 一定执行；Publish 记录无人订阅事件",
-                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-29T10:57:38Z"
-                     }
-                 ],
-    "bundles":  [
-                    {
-                        "name":  "ui_mainmenu.unity3d",
-                        "sha256":  "81122837b9ab3eacd5cedd78a9200fcd4a23407d57039015acef28aad671ed44",
-                        "size":  933138,
-                        "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/bundle/ui_mainmenu.unity3d"
-                    },
-                    {
-                        "name":  "ui_pause.unity3d",
-                        "sha256":  "a9b8db2e8482e65a090ff60c192c964c12e2b80ff41514cfb1d25aacae8d17a0",
-                        "size":  10658,
-                        "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/bundle/ui_pause.unity3d"
-                    },
-                    {
-                        "name":  "ui_uicontrols.unity3d",
-                        "sha256":  "21504fb640c443cc28c099c4e1c6c3aac5b0f8d9c47ff6953a3ca76b31c2af36",
-                        "size":  18966,
-                        "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/bundle/ui_uicontrols.unity3d"
-                    }
-                ],
-    "resources":  [
-                      {
-                          "name":  "README.txt",
-                          "sha256":  "81bd9e89cabf66447918bff9125392dc3d60d2478a1b79ac353738251b11ac2d",
-                          "size":  2474,
-                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/resources/README.txt"
-                      }
-                  ]
+    "schemaVersion": 1,
+    "rev": 91,
+    "latest": "1.28.0-alpha.2",
+    "updatedAt": "2026-09-29T20:28:11Z",
+    "versions": [
+        {
+            "version": "1.28.0-alpha.2",
+            "sha256": "533de7dc556f0729ab114203c76b5a0990c359512c7e9b9ac8fc1d71ba26e8f6",
+            "size": 385536,
+            "notes": "修复 Mod 下载页：入口按钮不再被自己隐藏（SetPage 不再关 ModList）；下载列表改挂设置内容区；新增 OnSettingsCleared 处理 Destroy 延迟导致的死引用。修复重置场景后公告按钮失效：Coroutine 非 UnityObject，改判 _annPollerHost 让轮询可重启。",
+            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.2/MGCModpack.dll",
+            "publishedAt": "2026-09-29T20:27:56Z"
+        },
+        {
+            "version": "1.28.0-alpha",
+            "sha256": "b2b84ca6f4082d6af483b5ee41da861b9391d298ebf60f6f60ecc0bbc7f44b5b",
+            "size": 373760,
+            "notes": "修复 mod 关闭不生效：HotReload=false 的 mod（Sideways/无背景）关闭时现在会真正 Unload 并复原重力与旋转；ModBase.Unload 各步加 try 保证 OnUnload 一定执行；Publish 记录无人订阅事件",
+            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
+            "publishedAt": "2026-09-29T10:57:38Z"
+        }
+    ],
+    "bundles": [
+        {
+            "name": "ui_mainmenu.unity3d",
+            "sha256": "81122837b9ab3eacd5cedd78a9200fcd4a23407d57039015acef28aad671ed44",
+            "size": 933138,
+            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/bundle/ui_mainmenu.unity3d"
+        },
+        {
+            "name": "ui_pause.unity3d",
+            "sha256": "a9b8db2e8482e65a090ff60c192c964c12e2b80ff41514cfb1d25aacae8d17a0",
+            "size": 10658,
+            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/bundle/ui_pause.unity3d"
+        },
+        {
+            "name": "ui_uicontrols.unity3d",
+            "sha256": "21504fb640c443cc28c099c4e1c6c3aac5b0f8d9c47ff6953a3ca76b31c2af36",
+            "size": 18966,
+            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/bundle/ui_uicontrols.unity3d"
+        }
+    ],
+    "resources": [
+        {
+            "name": "README.txt",
+            "sha256": "81bd9e89cabf66447918bff9125392dc3d60d2478a1b79ac353738251b11ac2d",
+            "size": 2474,
+            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/resources/README.txt"
+        },
+        {
+            "name": "announcement-icon.png",
+            "sha256": "894e5e20e2a24c216a3fef3f34b06e91d405e8314ba99ea0174b2139e00cf8d6",
+            "size": 3855,
+            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/icon/announcement-icon.png"
+        }
+    ]
 }
