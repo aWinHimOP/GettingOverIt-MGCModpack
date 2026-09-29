@@ -1,16 +1,16 @@
 {
     "schemaVersion":  1,
-    "rev":  89,
+    "rev":  90,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-29T10:22:12Z",
+    "updatedAt":  "2026-09-29T10:57:44Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "c1d4c4584376b84a453287ec3c27621a40531897d5a360f471d36732ec3dd496",
-                         "size":  371712,
-                         "notes":  "修复类型重复：清理 12 个 __N 重复类型（ModPanelTabs__2/PackDownloader__3/TopPanelManager__4 保留为活版本并改回正名），254 -\u003e 227 类型；桥接新增编译前守卫防止复发",
+                         "sha256":  "b2b84ca6f4082d6af483b5ee41da861b9391d298ebf60f6f60ecc0bbc7f44b5b",
+                         "size":  373760,
+                         "notes":  "修复 mod 关闭不生效：HotReload=false 的 mod（Sideways/无背景）关闭时现在会真正 Unload 并复原重力与旋转；ModBase.Unload 各步加 try 保证 OnUnload 一定执行；Publish 记录无人订阅事件",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-29T10:16:32Z"
+                         "publishedAt":  "2026-09-29T10:57:38Z"
                      }
                  ],
     "bundles":  [
