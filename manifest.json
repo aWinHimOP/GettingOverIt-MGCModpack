@@ -1,8 +1,8 @@
 {
     "schemaVersion":  1,
-    "rev":  88,
+    "rev":  89,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-29T10:16:37Z",
+    "updatedAt":  "2026-09-29T10:22:12Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
@@ -16,8 +16,8 @@
     "bundles":  [
                     {
                         "name":  "ui_mainmenu.unity3d",
-                        "sha256":  "d6dd125c30417d768298fd369e97609077661779e61b681dfe549e6ae0dbd77d",
-                        "size":  933133,
+                        "sha256":  "81122837b9ab3eacd5cedd78a9200fcd4a23407d57039015acef28aad671ed44",
+                        "size":  933138,
                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/bundle/ui_mainmenu.unity3d"
                     },
                     {
