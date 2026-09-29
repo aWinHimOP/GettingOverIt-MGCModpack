@@ -1,0 +1,7 @@
+{
+    "version":  "1.28.0-alpha",
+    "sha256":  "b2b84ca6f4082d6af483b5ee41da861b9391d298ebf60f6f60ecc0bbc7f44b5b",
+    "size":  373760,
+    "notes":  "修复 mod 关闭不生效：HotReload=false 的 mod（Sideways/无背景）关闭时现在会真正 Unload 并复原重力与旋转；ModBase.Unload 各步加 try 保证 OnUnload 一定执行；Publish 记录无人订阅事件",
+    "publishedAt":  "2026-09-29T10:57:38Z"
+}
