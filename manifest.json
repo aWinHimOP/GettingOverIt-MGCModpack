@@ -1,23 +1,23 @@
 {
     "schemaVersion":  1,
-    "rev":  87,
+    "rev":  88,
     "latest":  "1.28.0-alpha",
-    "updatedAt":  "2026-09-28T04:05:33Z",
+    "updatedAt":  "2026-09-29T10:16:37Z",
     "versions":  [
                      {
                          "version":  "1.28.0-alpha",
-                         "sha256":  "87e9f3b8738c026923f4ac40d0702636f1dd1ba688254896a66049b44a71b568",
-                         "size":  418304,
-                         "notes":  "修公告栏下落动画消失（改成帧数驱动，原来启动期单帧0.3-0.5秒导致第一帧就结束）",
+                         "sha256":  "c1d4c4584376b84a453287ec3c27621a40531897d5a360f471d36732ec3dd496",
+                         "size":  371712,
+                         "notes":  "修复类型重复：清理 12 个 __N 重复类型（ModPanelTabs__2/PackDownloader__3/TopPanelManager__4 保留为活版本并改回正名），254 -\u003e 227 类型；桥接新增编译前守卫防止复发",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-                         "publishedAt":  "2026-09-28T04:05:26Z"
+                         "publishedAt":  "2026-09-29T10:16:32Z"
                      }
                  ],
     "bundles":  [
                     {
                         "name":  "ui_mainmenu.unity3d",
-                        "sha256":  "4caebbf20d2f975cf0cb23c4059779006bc6cafe0b80b74df8865cb4c9d43056",
-                        "size":  933613,
+                        "sha256":  "d6dd125c30417d768298fd369e97609077661779e61b681dfe549e6ae0dbd77d",
+                        "size":  933133,
                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/bundle/ui_mainmenu.unity3d"
                     },
                     {
