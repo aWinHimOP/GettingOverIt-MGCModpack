@@ -1,17 +1,9 @@
 {
     "schemaVersion":  1,
-    "rev":  5,
+    "rev":  6,
     "latest":  "",
-    "updatedAt":  "2026-09-30T14:18:57Z",
+    "updatedAt":  "2026-09-30T14:19:36Z",
     "versions":  [
-                     {
-                         "version":  "1.29.0-debug.4",
-                         "sha256":  "3f380049a524a16734725b520c01cc58f8aa7b3bc81eff128ec77fe98866aea6",
-                         "size":  373248,
-                         "notes":  "开发通道调试验证版：含通关页跳过、公告插图、日志去重、mod 退订全部修复。",
-                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/debug/versions/1.29.0-debug.4/MGCModpack.dll",
-                         "publishedAt":  "2026-09-30T14:11:48Z"
-                     },
                      {
                          "version":  "1.29.0-debug.3",
                          "sha256":  "f21b1a5f71b46f54e9b9a81da712b961f6db4c8f1e3619e26b23edb0fef67c8f",
