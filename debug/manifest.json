@@ -1,17 +1,9 @@
 {
     "schemaVersion":  1,
-    "rev":  7,
+    "rev":  8,
     "latest":  "",
-    "updatedAt":  "2026-09-30T14:19:57Z",
+    "updatedAt":  "2026-09-30T14:20:14Z",
     "versions":  [
-                     {
-                         "version":  "1.29.0-debug.2",
-                         "sha256":  "3f419f58954c05fff6f2534f601b13ec8bab614e58bc6cc21a29afc79f9d8c99",
-                         "size":  366592,
-                         "notes":  "开发通道隔离验证：故意放一份与正式版不同的 DLL。",
-                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/debug/versions/1.29.0-debug.2/MGCModpack.dll",
-                         "publishedAt":  "2026-09-30T13:03:03Z"
-                     },
                      {
                          "version":  "1.29.0-debug.1",
                          "sha256":  "f21b1a5f71b46f54e9b9a81da712b961f6db4c8f1e3619e26b23edb0fef67c8f",
