@@ -1,0 +1,8 @@
+{
+    "version": "1.28.0-alpha.18",
+    "sha256": "addc28cfe70472b688201f87a5b3c2771c55a42f7ebc04ac8a39accbd26c6920",
+    "size": 444928,
+    "notes": "修复 mod 实例泄漏（快速出罐失效 / PoseControl 事件失灵的根因）。IServices 事件表改为弱引用保存实例委托：MGCInitializer 没有 DontDestroyOnLoad，每局场景重建都会新建一整套 mod 实例；原来实例委托被静态表强引用，旧 mod 永远退不出去，其 Enabled/WillBeEnabled 停在 true → 关掉开关也不生效，且订阅者随每局 +1。静态方法委托仍走强引用（无宿主，弱引用会被立刻回收）。去掉日志限流与去重（MaxPerSecond/MaxPerCategoryPerSecond/DedupeWindowSeconds 全 0），EchoToUnityConsole=true，日志全部落盘不再丢证据。",
+    "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.18/MGCModpack.dll",
+    "publishedAt": "2026-09-30T06:02:02Z"
+}
