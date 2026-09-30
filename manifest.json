@@ -1,9 +1,17 @@
 {
     "schemaVersion": 1,
-    "rev": 99,
-    "latest": "1.28.0-alpha.9",
-    "updatedAt": "2026-09-30T03:00:30Z",
+    "rev": 100,
+    "latest": "1.28.0-alpha.10",
+    "updatedAt": "2026-09-30T03:07:39Z",
     "versions": [
+        {
+            "version": "1.28.0-alpha.10",
+            "sha256": "68f48589845679c5a5db2b43da975d8abc674a5e26ec855037167f999fea2951",
+            "size": 402432,
+            "notes": "① 首次安装地图页默认地图不框选：MapManager.LoadEnabledMap 兜底选第一个时把 willbeenabled 落上（地图页是按它找高亮的）。② 移除 Mod 管理 / 密钥管理 / Mod 下载页的「← 返回」按钮。",
+            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.10/MGCModpack.dll",
+            "publishedAt": "2026-09-30T03:07:37Z"
+        },
         {
             "version": "1.28.0-alpha.9",
             "sha256": "6bb79c184a45e12f4a3d6618edce8a36a32ed039d61dcd7044692977d66bb831",
