@@ -1,0 +1,8 @@
+{
+    "version": "1.28.0-alpha.8",
+    "sha256": "4fde1a48d782be92f8e477423437af27901c3582e7e2c5f5f3b58f742acc63ea",
+    "size": 401920,
+    "notes": "整合包状态清理：Mods 里已不存在的 .modpack，其 ModpackState 会自动清除（重新下载即为关闭态，需手动开启）；各 mod 自身配置保留不动。新增 ConfigService.Keys。",
+    "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.8/MGCModpack.dll",
+    "publishedAt": "2026-09-30T02:55:46Z"
+}
