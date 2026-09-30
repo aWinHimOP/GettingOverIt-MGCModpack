@@ -1,0 +1,8 @@
+{
+    "version": "1.28.0-alpha.16",
+    "sha256": "9f1559004e93ceb01cb7a8a03c9e0b96a9cb8007f35c021b12c53f6437bbcc62",
+    "size": 438784,
+    "notes": "公告栏动画真正事件驱动：观察点放在 MainMenuController（启动即创建、常驻全程），Update 里做可见性边沿检测并发布 MenuToggledEvent；MGCSettingManager 订阅后于菜单打开时播动画。修正 alpha.15 把观察点放在 PauseButtonManager 的失误——那个组件挂在暂停键上，主菜单阶段未启用，Update 不跑。",
+    "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.16/MGCModpack.dll",
+    "publishedAt": "2026-09-30T04:26:58Z"
+}
