@@ -1,0 +1,8 @@
+{
+    "version": "1.28.0-dbg.6",
+    "sha256": "b5d4ba94f716e1aec746cf3aef79d7ee5a0ff23ae75f004fb33a47decc7f5b3f",
+    "size": 444416,
+    "notes": "去掉日志限流与去重（MaxPerSecond/MaxPerCategoryPerSecond/DedupeWindowSeconds 全 0），EchoToUnityConsole=true；日志全部落盘，不再丢证据。",
+    "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.6/MGCModpack.dll",
+    "publishedAt": "2026-09-30T05:28:34Z"
+}
