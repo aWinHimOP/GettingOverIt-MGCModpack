@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "rev": 118,
+  "rev": 117,
   "latest": "1.28.0-alpha.20-dbg",
-  "updatedAt": "2026-09-30T08:05:47Z",
+  "updatedAt": "2026-09-30T08:06:35Z",
   "versions": [
     {
       "version": "1.28.0-alpha.20-dbg",
@@ -167,12 +167,6 @@
       "sha256": "21504fb640c443cc28c099c4e1c6c3aac5b0f8d9c47ff6953a3ca76b31c2af36",
       "size": 18966,
       "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/bundle/ui_uicontrols.unity3d"
-    },
-    {
-      "name": "_selftest_probe.unity3d",
-      "sha256": "81122837b9ab3eacd5cedd78a9200fcd4a23407d57039015acef28aad671ed44",
-      "size": 933138,
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/bundle/_selftest_probe.unity3d"
     }
   ],
   "resources": [
