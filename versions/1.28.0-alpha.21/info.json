@@ -1,0 +1,7 @@
+{
+    "version":  "1.28.0-alpha.21",
+    "sha256":  "2470bc782e6b82b09aa0afd9b37dc10bba1f000014224cacf4a84c69fd29a044",
+    "size":  366080,
+    "notes":  "1.28.0-alpha.21 鈥斺€?浠ｇ爜缁撴瀯閲嶆瀯鐗?\n鈶?MGCSettingManager 浠?7204 琛屽崟鏂囦欢鎷嗘垚 8 涓亴璐ｅ崟涓€鐨勭被锛堝悓 MGC.Managers 鍛藉悕绌洪棿锛夛細\n   鍏憡 鈫?AnnouncementManager锛屽ご鍍?鈫?AvatarManager锛屽叧浜庨〉 鈫?AboutPageManager锛?   涓婚潰鏉?鈫?HomePanelManager锛屽浘鐗囩紦瀛?鈫?ImageCache锛孞SON 鈫?JsonHelper锛孶I 宸ュ叿 鈫?UiHelper銆?   瀵瑰琛屼负涓嶅彉锛?02 涓柟娉曢€愪竴瀵归綈锛岄浂涓㈠け锛夈€?鈶?MGCLoader / MGCModpack 鏀逛负鐪熸鐨?C# 宸ョ▼锛圫cripts/MGCLoader銆丼cripts/MGCModpack锛夛紝\n   涓嶅啀渚濊禆 dnSpy 妗ユ墦琛ヤ竵锛宒otnet build 鍗冲彲鍑哄寘銆?鈶?鍏憡鏍?/ 鍏充簬椤?/ 涓婚潰鏉?/ 鍥剧墖缂撳瓨閫昏緫鍘熸牱淇濈暀銆",
+    "publishedAt":  "2026-09-30T09:46:38Z"
+}
