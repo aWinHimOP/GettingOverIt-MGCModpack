@@ -1,0 +1,8 @@
+{
+    "version": "1.28.0-alpha.13",
+    "sha256": "e6941767f74bf328b601dbfde61da71f43e8321607efd9bb34bb2c1a556ba66d",
+    "size": 415744,
+    "notes": "① 公告栏首次自动弹出也有动画：动画改用独立协程 _annAnimCoroutine 发起，不再 yield 嵌套进 AnnouncementRoutine —— 之前 ApplyAnnouncement 第二次执行会 StopCoroutine 把正在播的动画掐断。② 自动/手动两条路径统一走 PlayAnnouncementAnimation。③ 补上缺失的公告按钮图标 icon/announcement-icon.png（之前 404）。",
+    "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.13/MGCModpack.dll",
+    "publishedAt": "2026-09-30T03:54:46Z"
+}
