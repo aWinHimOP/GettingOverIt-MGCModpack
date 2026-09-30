@@ -1,8 +1,8 @@
 {
     "schemaVersion":  1,
-    "rev":  119,
-    "latest":  "1.28.0-alpha.6-diag",
-    "updatedAt":  "2026-09-30T09:49:09Z",
+    "rev":  120,
+    "latest":  "1.28.0-alpha.21",
+    "updatedAt":  "2026-09-30T09:50:40Z",
     "versions":  [
                      {
                          "version":  "1.28.0-dbg.7",
@@ -61,12 +61,12 @@
                          "publishedAt":  "2026-09-30T04:35:42Z"
                      },
                      {
-                         "version":  "1.28.0-alpha.6-diag",
-                         "sha256":  "fcd1c7034eb1322130c60cfb8ffdb5f9dbc09aa6ac2e64867df66fd21cd51c3c",
-                         "size":  400896,
-                         "notes":  "临时诊断版：打印 ModsDir / 目录内容 / 匹配数",
-                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.6-diag/MGCModpack.dll",
-                         "publishedAt":  "2026-09-30T02:33:36Z"
+                         "version":  "1.28.0-alpha.21",
+                         "sha256":  "2470bc782e6b82b09aa0afd9b37dc10bba1f000014224cacf4a84c69fd29a044",
+                         "size":  366080,
+                         "notes":  "1.28.0-alpha.21 鈥斺€?浠ｇ爜缁撴瀯閲嶆瀯鐗?\n鈶?MGCSettingManager 浠?7204 琛屽崟鏂囦欢鎷嗘垚 8 涓亴璐ｅ崟涓€鐨勭被锛堝悓 MGC.Managers 鍛藉悕绌洪棿锛夛細\n   鍏憡 鈫?AnnouncementManager锛屽ご鍍?鈫?AvatarManager锛屽叧浜庨〉 鈫?AboutPageManager锛?   涓婚潰鏉?鈫?HomePanelManager锛屽浘鐗囩紦瀛?鈫?ImageCache锛孞SON 鈫?JsonHelper锛孶I 宸ュ叿 鈫?UiHelper銆?   瀵瑰琛屼负涓嶅彉锛?02 涓柟娉曢€愪竴瀵归綈锛岄浂涓㈠け锛夈€?鈶?MGCLoader / MGCModpack 鏀逛负鐪熸鐨?C# 宸ョ▼锛圫cripts/MGCLoader銆丼cripts/MGCModpack锛夛紝\n   涓嶅啀渚濊禆 dnSpy 妗ユ墦琛ヤ竵锛宒otnet build 鍗冲彲鍑哄寘銆?鈶?鍏憡鏍?/ 鍏充簬椤?/ 涓婚潰鏉?/ 鍥剧墖缂撳瓨閫昏緫鍘熸牱淇濈暀銆",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.21/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T09:46:38Z"
                      },
                      {
                          "version":  "1.28.0-alpha.20-dbg",
@@ -75,14 +75,6 @@
                          "notes":  "【调试版】回退 IServices 事件表为强引用（修复快速出罐失效：弱引用导致 mod 实例被 GC 后事件静默，实测 40 次调用 → 0 次）。【调试版】加场景切换入口：F9=进 Reward Loader Mobile，F10=回 Mian，或三指长按 1.2 秒弹面板。用于排查通关页 mod 残留 / 场景重置实例泄漏。发布版会去掉这个入口。",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.20-dbg/MGCModpack.dll",
                          "publishedAt":  "2026-09-30T07:39:41Z"
-                     },
-                     {
-                         "version":  "1.28.0-alpha.21",
-                         "sha256":  "2470bc782e6b82b09aa0afd9b37dc10bba1f000014224cacf4a84c69fd29a044",
-                         "size":  366080,
-                         "notes":  "1.28.0-alpha.21 鈥斺€?浠ｇ爜缁撴瀯閲嶆瀯鐗?\n鈶?MGCSettingManager 浠?7204 琛屽崟鏂囦欢鎷嗘垚 8 涓亴璐ｅ崟涓€鐨勭被锛堝悓 MGC.Managers 鍛藉悕绌洪棿锛夛細\n   鍏憡 鈫?AnnouncementManager锛屽ご鍍?鈫?AvatarManager锛屽叧浜庨〉 鈫?AboutPageManager锛?   涓婚潰鏉?鈫?HomePanelManager锛屽浘鐗囩紦瀛?鈫?ImageCache锛孞SON 鈫?JsonHelper锛孶I 宸ュ叿 鈫?UiHelper銆?   瀵瑰琛屼负涓嶅彉锛?02 涓柟娉曢€愪竴瀵归綈锛岄浂涓㈠け锛夈€?鈶?MGCLoader / MGCModpack 鏀逛负鐪熸鐨?C# 宸ョ▼锛圫cripts/MGCLoader銆丼cripts/MGCModpack锛夛紝\n   涓嶅啀渚濊禆 dnSpy 妗ユ墦琛ヤ竵锛宒otnet build 鍗冲彲鍑哄寘銆?鈶?鍏憡鏍?/ 鍏充簬椤?/ 涓婚潰鏉?/ 鍥剧墖缂撳瓨閫昏緫鍘熸牱淇濈暀銆",
-                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.21/MGCModpack.dll",
-                         "publishedAt":  "2026-09-30T09:46:38Z"
                      },
                      {
                          "version":  "1.28.0-alpha.19",
@@ -187,6 +179,14 @@
                          "notes":  "修复下载后不自动加载：RefreshScan 补 LoadEnabledModpacks（之前只扫描+缓存，DLL 不注册，必须重启）。含 alpha.6 的 UTF-8 条目名兜底（缺 UTF-8 标志的包不再报 Encoding 936）。",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.7/MGCModpack.dll",
                          "publishedAt":  "2026-09-30T02:50:48Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.6-diag",
+                         "sha256":  "fcd1c7034eb1322130c60cfb8ffdb5f9dbc09aa6ac2e64867df66fd21cd51c3c",
+                         "size":  400896,
+                         "notes":  "临时诊断版：打印 ModsDir / 目录内容 / 匹配数",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.6-diag/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T02:33:36Z"
                      },
                      {
                          "version":  "1.28.0-alpha.6",
