@@ -1,0 +1,8 @@
+{
+    "version": "1.28.0-alpha.19",
+    "sha256": "8d9a8d9f276504fba740624849706c0edbe375bd52893beccccfbf839bb2350b",
+    "size": 444928,
+    "notes": "把事件桥的安装从 MGCStorage.EnsureDirs 移到 MGCInitializer.Start。EnsureDirs 只建目录；桥的安装属于初始化编排，归 MGCInitializer 管。顺带解掉隐患：EnsureDirs 若被别处提前调用，桥会跟着装上（那时 DebugLogger 可能还没 Init）。行为不变：桥仍是过渡层（11 个游戏事件 + 2 个名字钩子），static 守卫 + Subscribe 内部 Contains 去重保证幂等。",
+    "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.19/MGCModpack.dll",
+    "publishedAt": "2026-09-30T07:12:12Z"
+}
