@@ -1,8 +1,8 @@
 {
     "schemaVersion":  1,
-    "rev":  4,
+    "rev":  5,
     "latest":  "",
-    "updatedAt":  "2026-09-30T14:12:14Z",
+    "updatedAt":  "2026-09-30T14:18:57Z",
     "versions":  [
                      {
                          "version":  "1.29.0-debug.4",
@@ -35,6 +35,14 @@
                          "notes":  "开发通道首个版本：验证 debug/ 资源隔离与特征码灰度。",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/debug/versions/1.29.0-debug.1/MGCModpack.dll",
                          "publishedAt":  "2026-09-30T12:52:10Z"
+                     },
+                     {
+                         "version":  "1.28.0-debug.1",
+                         "sha256":  "f21b1a5f71b46f54e9b9a81da712b961f6db4c8f1e3619e26b23edb0fef67c8f",
+                         "size":  368128,
+                         "notes":  "开发通道版本（1.28.0 基版本）：公告插图 / 通关页跳过 / 日志去重 / mod 退订",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/debug/versions/1.28.0-debug.1/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T14:18:44Z"
                      }
                  ],
     "bundles":  [
