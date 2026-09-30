@@ -1,0 +1,8 @@
+{
+    "version": "1.28.0-dbg.7",
+    "sha256": "ce19dcb59e28efe9c496c30934946f672760c5b240fef7f1ce8cba5ff7a8c664",
+    "size": 445440,
+    "notes": "自检：启动时查 IServices 订阅者数并直接发一个 GameStartPreparingEvent，验证 mod 处理器是否真被调用。",
+    "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.7/MGCModpack.dll",
+    "publishedAt": "2026-09-30T05:36:41Z"
+}
