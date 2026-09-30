@@ -1,9 +1,17 @@
 {
     "schemaVersion": 1,
-    "rev": 94,
-    "latest": "1.28.0-alpha.5",
-    "updatedAt": "2026-09-30T02:20:23Z",
+    "rev": 95,
+    "latest": "1.28.0-alpha.6-diag",
+    "updatedAt": "2026-09-30T02:33:38Z",
     "versions": [
+        {
+            "version": "1.28.0-alpha.6-diag",
+            "sha256": "fcd1c7034eb1322130c60cfb8ffdb5f9dbc09aa6ac2e64867df66fd21cd51c3c",
+            "size": 400896,
+            "notes": "临时诊断版：打印 ModsDir / 目录内容 / 匹配数",
+            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.6-diag/MGCModpack.dll",
+            "publishedAt": "2026-09-30T02:33:36Z"
+        },
         {
             "version": "1.28.0-alpha.5",
             "sha256": "a725c78bf449b5b6a75817609dd884e229de9e03816718becf414bdc1eeff899",
