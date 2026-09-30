@@ -1,0 +1,7 @@
+{
+    "version":  "1.29.0-debug.2",
+    "sha256":  "3f419f58954c05fff6f2534f601b13ec8bab614e58bc6cc21a29afc79f9d8c99",
+    "size":  366592,
+    "notes":  "开发通道隔离验证：故意放一份与正式版不同的 DLL。",
+    "publishedAt":  "2026-09-30T13:03:03Z"
+}
