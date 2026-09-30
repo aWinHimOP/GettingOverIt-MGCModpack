@@ -1,0 +1,8 @@
+{
+    "version": "1.28.0-alpha.6-diag",
+    "sha256": "fcd1c7034eb1322130c60cfb8ffdb5f9dbc09aa6ac2e64867df66fd21cd51c3c",
+    "size": 400896,
+    "notes": "临时诊断版：打印 ModsDir / 目录内容 / 匹配数",
+    "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.6-diag/MGCModpack.dll",
+    "publishedAt": "2026-09-30T02:33:36Z"
+}
