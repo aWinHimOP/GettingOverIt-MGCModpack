@@ -1,0 +1,8 @@
+{
+    "version": "1.28.0-alpha.11",
+    "sha256": "a02c2570190513b0642f5c4cba910c26da6856779080075ffc2e9adabd7c9cf6",
+    "size": 402432,
+    "notes": "地图默认框选（真正的修复）：兜底选中第一个地图时同时 SaveConfig 落盘。之前只设内存，紧接着 map.Load()->LoadConfig() 会从磁盘读回 false 覆盖掉，导致首次安装地图页一项都不高亮。",
+    "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.11/MGCModpack.dll",
+    "publishedAt": "2026-09-30T03:20:49Z"
+}
