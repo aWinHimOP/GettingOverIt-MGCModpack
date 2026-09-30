@@ -1,0 +1,8 @@
+{
+    "version": "1.28.0-alpha.20-dbg",
+    "sha256": "4adf216b815471e479933f41bfae21f434e6b651adc74f3c8f4f481f5717fdac",
+    "size": 446464,
+    "notes": "【调试版】回退 IServices 事件表为强引用（修复快速出罐失效：弱引用导致 mod 实例被 GC 后事件静默，实测 40 次调用 → 0 次）。【调试版】加场景切换入口：F9=进 Reward Loader Mobile，F10=回 Mian，或三指长按 1.2 秒弹面板。用于排查通关页 mod 残留 / 场景重置实例泄漏。发布版会去掉这个入口。",
+    "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.20-dbg/MGCModpack.dll",
+    "publishedAt": "2026-09-30T07:39:41Z"
+}
