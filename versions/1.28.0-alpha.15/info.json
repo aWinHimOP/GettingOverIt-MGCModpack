@@ -1,0 +1,8 @@
+{
+    "version": "1.28.0-alpha.15",
+    "sha256": "c047ba4f7ef7317a50ac2b8aebe4c86fc8beaaf3155715e5c9bbf95def410796",
+    "size": 438784,
+    "notes": "公告栏动画改为事件驱动（不再轮询）：MenuToggledEvent 此前无人发布，现由 PauseButtonManager.DetectMenuVisibilityChange（复用已有 Update 做边沿检测，零额外开销）+ 两处 ToggleMenu 发布；MGCSettingManager 订阅后在菜单打开时播动画。移除 WaitMainPanelThenAnimate 轮询协程。",
+    "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.15/MGCModpack.dll",
+    "publishedAt": "2026-09-30T04:22:01Z"
+}
