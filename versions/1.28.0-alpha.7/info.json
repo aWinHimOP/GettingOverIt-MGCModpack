@@ -1,0 +1,8 @@
+{
+    "version": "1.28.0-alpha.7",
+    "sha256": "a53f2844f462b12cf670736a61c6a3e0347f62ba028f9a6df32d47c779046ba9",
+    "size": 400384,
+    "notes": "修复下载后不自动加载：RefreshScan 补 LoadEnabledModpacks（之前只扫描+缓存，DLL 不注册，必须重启）。含 alpha.6 的 UTF-8 条目名兜底（缺 UTF-8 标志的包不再报 Encoding 936）。",
+    "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.7/MGCModpack.dll",
+    "publishedAt": "2026-09-30T02:50:48Z"
+}
