@@ -1,16 +1,16 @@
 {
     "schemaVersion": 1,
-    "rev": 115,
-    "latest": "1.28.0-alpha.18",
-    "updatedAt": "2026-09-30T06:02:04Z",
+    "rev": 116,
+    "latest": "1.28.0-alpha.19",
+    "updatedAt": "2026-09-30T07:12:14Z",
     "versions": [
         {
-            "version": "1.28.0-alpha.18",
-            "sha256": "addc28cfe70472b688201f87a5b3c2771c55a42f7ebc04ac8a39accbd26c6920",
+            "version": "1.28.0-alpha.19",
+            "sha256": "8d9a8d9f276504fba740624849706c0edbe375bd52893beccccfbf839bb2350b",
             "size": 444928,
-            "notes": "修复 mod 实例泄漏（快速出罐失效 / PoseControl 事件失灵的根因）。IServices 事件表改为弱引用保存实例委托：MGCInitializer 没有 DontDestroyOnLoad，每局场景重建都会新建一整套 mod 实例；原来实例委托被静态表强引用，旧 mod 永远退不出去，其 Enabled/WillBeEnabled 停在 true → 关掉开关也不生效，且订阅者随每局 +1。静态方法委托仍走强引用（无宿主，弱引用会被立刻回收）。去掉日志限流与去重（MaxPerSecond/MaxPerCategoryPerSecond/DedupeWindowSeconds 全 0），EchoToUnityConsole=true，日志全部落盘不再丢证据。",
-            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.18/MGCModpack.dll",
-            "publishedAt": "2026-09-30T06:02:02Z"
+            "notes": "把事件桥的安装从 MGCStorage.EnsureDirs 移到 MGCInitializer.Start。EnsureDirs 只建目录；桥的安装属于初始化编排，归 MGCInitializer 管。顺带解掉隐患：EnsureDirs 若被别处提前调用，桥会跟着装上（那时 DebugLogger 可能还没 Init）。行为不变：桥仍是过渡层（11 个游戏事件 + 2 个名字钩子），static 守卫 + Subscribe 内部 Contains 去重保证幂等。",
+            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.19/MGCModpack.dll",
+            "publishedAt": "2026-09-30T07:12:12Z"
         },
         {
             "version": "1.28.0-alpha.17",
