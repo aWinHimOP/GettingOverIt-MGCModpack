@@ -1,0 +1,7 @@
+{
+    "version":  "1.28.0-alpha.26",
+    "sha256":  "3f419f58954c05fff6f2534f601b13ec8bab614e58bc6cc21a29afc79f9d8c99",
+    "size":  366592,
+    "notes":  "1.28.0-alpha.26\n\n鈶?淇銆屽揩閫熷嚭缃愬叧涓嶆帀 / 鍑虹綈鏃堕棿琚烦杩?/ 璁℃椂鍣ㄤ粠 0 寮€濮嬨€嶇殑鐪熸鏍瑰洜锛?   ModManager.OnDestroy 浠庢潵涓嶉€€璁?mod 浜嬩欢銆侷Services 鐨勪簨浠惰〃鏄?static锛?   鑰?mod 瀹炰緥姣忎釜鍦烘櫙閲嶅缓 鈥斺€?鏃у疄渚嬫案杩滅暀鍦ㄨ〃閲岋紝Enabled 鍋滃湪 true锛?   鐜╁鍏虫帀寮€鍏冲悗瀹冪収鏍锋妸 evt.FastStart 鏀规垚 true銆?   鐜板湪 OnDestroy 浼氬厛 UnloadAllMods() 鍐嶆竻寮曠敤銆?鈶?浠ｇ爜缁撴瀯閲嶆瀯锛歁GCSettingManager 浠?7204 琛屾媶鎴?8 涓亴璐ｅ崟涓€鐨勭被銆?鈶?MGCLoader / MGCModpack 鏀逛负鐪熸鐨?C# 宸ョ▼锛屼笉鍐嶄緷璧?dnSpy 鎵撹ˉ涓併€",
+    "publishedAt":  "2026-09-30T10:28:01Z"
+}
