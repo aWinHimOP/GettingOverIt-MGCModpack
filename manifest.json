@@ -1,9 +1,17 @@
 {
     "schemaVersion": 1,
-    "rev": 91,
-    "latest": "1.28.0-alpha.2",
-    "updatedAt": "2026-09-29T20:28:11Z",
+    "rev": 92,
+    "latest": "1.28.0-alpha.3",
+    "updatedAt": "2026-09-30T01:51:12Z",
     "versions": [
+        {
+            "version": "1.28.0-alpha.3",
+            "sha256": "36aa82e7cfbbdd81a9486ff015a22051eae3734c71ec04ee71621e7333452b72",
+            "size": 398336,
+            "notes": "重构 Mod 下载页：从 ModPanelTabs 搬到 ModpackUIManager，改用 UIControls 真按钮（不再手搓射线轮询）；行状态用嵌套类 DownloadRow 收拢（原来散在三个平行 List）；PollClicks/PollLabels 保留为空壳（编译器生成的状态机仍引用）。",
+            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.3/MGCModpack.dll",
+            "publishedAt": "2026-09-30T01:51:10Z"
+        },
         {
             "version": "1.28.0-alpha.2",
             "sha256": "533de7dc556f0729ab114203c76b5a0990c359512c7e9b9ac8fc1d71ba26e8f6",
