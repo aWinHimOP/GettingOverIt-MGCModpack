@@ -1,0 +1,8 @@
+{
+    "version": "1.28.0-alpha.17",
+    "sha256": "3755913704aefc6afe1f4b35865ff4e2f25f3471481d847f61c9f1a621405db9",
+    "size": 442880,
+    "notes": "公告栏动画收尾：① OnMenuToggled 加 _annAutoShowConsumed 闸门——启动首次主菜单可见时自动弹出一次，之后菜单再开合不再自动弹（只能手动点顶栏）。② 移除 PauseButtonManager 里重复的 MenuToggledEvent 发布（与 MainMenuController 重复，会让动画播两遍）。③ 清理调试日志。",
+    "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.17/MGCModpack.dll",
+    "publishedAt": "2026-09-30T04:40:21Z"
+}
