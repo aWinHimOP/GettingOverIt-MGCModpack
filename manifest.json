@@ -1,9 +1,17 @@
 {
     "schemaVersion": 1,
-    "rev": 111,
-    "latest": "1.28.0-dbg.4",
-    "updatedAt": "2026-09-30T05:13:41Z",
+    "rev": 112,
+    "latest": "1.28.0-dbg.5",
+    "updatedAt": "2026-09-30T05:20:29Z",
     "versions": [
+        {
+            "version": "1.28.0-dbg.5",
+            "sha256": "02350e46130579059eeeffc738bdfc04b2ea5f9293ea7e0db7a074b7e466ae88",
+            "size": 443904,
+            "notes": "诊断：Publish 订阅者数量 + 桥转发，走 logcat 不限流。",
+            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.5/MGCModpack.dll",
+            "publishedAt": "2026-09-30T05:20:27Z"
+        },
         {
             "version": "1.28.0-dbg.4",
             "sha256": "61ee09b319071407b56f8f04ac2e66dbd45bbba3a400f9b7ea070b7834d71765",
