@@ -1,0 +1,8 @@
+{
+    "version": "1.28.0-dbg.2",
+    "sha256": "8eda8ae4ebfb0b40d89b55eb87784dc56fb570afc266ca3cb60164306fd5e873",
+    "size": 446976,
+    "notes": "诊断版2：PlayAnnouncementAnimationWhenVisible 加主面板可见性日志 + 订阅后即时兜底。",
+    "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.2/MGCModpack.dll",
+    "publishedAt": "2026-09-30T04:44:12Z"
+}
