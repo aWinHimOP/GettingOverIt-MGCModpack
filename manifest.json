@@ -1,40 +1,16 @@
 {
     "schemaVersion": 1,
-    "rev": 112,
-    "latest": "1.28.0-dbg.5",
-    "updatedAt": "2026-09-30T05:20:29Z",
+    "rev": 113,
+    "latest": "1.28.0-dbg.6",
+    "updatedAt": "2026-09-30T05:28:37Z",
     "versions": [
         {
-            "version": "1.28.0-dbg.5",
-            "sha256": "02350e46130579059eeeffc738bdfc04b2ea5f9293ea7e0db7a074b7e466ae88",
-            "size": 443904,
-            "notes": "诊断：Publish 订阅者数量 + 桥转发，走 logcat 不限流。",
-            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.5/MGCModpack.dll",
-            "publishedAt": "2026-09-30T05:20:27Z"
-        },
-        {
-            "version": "1.28.0-dbg.4",
-            "sha256": "61ee09b319071407b56f8f04ac2e66dbd45bbba3a400f9b7ea070b7834d71765",
-            "size": 443392,
-            "notes": "诊断：游戏事件转发桥内部加日志。",
-            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.4/MGCModpack.dll",
-            "publishedAt": "2026-09-30T05:13:39Z"
-        },
-        {
-            "version": "1.28.0-dbg.3",
-            "sha256": "9c8d22ec417296317030710fca5d84da1dd171f1d9100e362fa55072757eb296",
-            "size": 442880,
-            "notes": "诊断：InstallBridgeCompat / GameStartPreparingEvent 桥加 DebugLogger。",
-            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.3/MGCModpack.dll",
-            "publishedAt": "2026-09-30T04:52:44Z"
-        },
-        {
-            "version": "1.28.0-dbg.2",
-            "sha256": "8eda8ae4ebfb0b40d89b55eb87784dc56fb570afc266ca3cb60164306fd5e873",
-            "size": 446976,
-            "notes": "诊断版2：PlayAnnouncementAnimationWhenVisible 加主面板可见性日志 + 订阅后即时兜底。",
-            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.2/MGCModpack.dll",
-            "publishedAt": "2026-09-30T04:44:12Z"
+            "version": "1.28.0-dbg.6",
+            "sha256": "b5d4ba94f716e1aec746cf3aef79d7ee5a0ff23ae75f004fb33a47decc7f5b3f",
+            "size": 444416,
+            "notes": "去掉日志限流与去重（MaxPerSecond/MaxPerCategoryPerSecond/DedupeWindowSeconds 全 0），EchoToUnityConsole=true；日志全部落盘，不再丢证据。",
+            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.6/MGCModpack.dll",
+            "publishedAt": "2026-09-30T05:28:34Z"
         },
         {
             "version": "1.28.0-alpha.17",
