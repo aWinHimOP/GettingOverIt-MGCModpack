@@ -1,8 +1,8 @@
 {
     "schemaVersion":  1,
-    "rev":  126,
-    "latest":  "1.28.0-alpha.26",
-    "updatedAt":  "2026-09-30T10:28:18Z",
+    "rev":  127,
+    "latest":  "1.28.0-alpha.27-scenetest",
+    "updatedAt":  "2026-09-30T10:33:59Z",
     "versions":  [
                      {
                          "version":  "1.28.0-dbg.7",
@@ -59,6 +59,14 @@
                          "notes":  "诊断版：MainMenuController.Update / UIInitializer.EnsureMainMenuController 加了 MenuDbg 日志，用于定位 Update 是否执行。",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.1/MGCModpack.dll",
                          "publishedAt":  "2026-09-30T04:35:42Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.27-scenetest",
+                         "sha256":  "67a48261ffd036979be94ef5683680026de1504964bbe4346c253e23e4be84e8",
+                         "size":  371712,
+                         "notes":  "銆愯瘖鏂増銆戣嚜鍔ㄥ満鏅祴璇曪細鍚姩 8 绉掑悗鑷姩杩涢€氬叧椤碉紝鍐嶅洖涓昏彍鍗曪紝璁板綍鍦烘櫙鍚?璁㈤槄鑰呮暟/瀛樻椿瀵硅薄銆",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.27-scenetest/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T10:33:24Z"
                      },
                      {
                          "version":  "1.28.0-alpha.26",
