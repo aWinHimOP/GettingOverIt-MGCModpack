@@ -1,285 +1,293 @@
 {
-  "schemaVersion": 1,
-  "rev": 122,
-  "latest": "1.28.0-alpha.22-diag",
-  "updatedAt": "2026-09-30T10:05:22Z",
-  "versions": [
-    {
-      "version": "1.28.0-dbg.7",
-      "sha256": "ce19dcb59e28efe9c496c30934946f672760c5b240fef7f1ce8cba5ff7a8c664",
-      "size": 445440,
-      "notes": "自检：启动时查 IServices 订阅者数并直接发一个 GameStartPreparingEvent，验证 mod 处理器是否真被调用。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.7/MGCModpack.dll",
-      "publishedAt": "2026-09-30T05:36:41Z"
-    },
-    {
-      "version": "1.28.0-dbg.6",
-      "sha256": "b5d4ba94f716e1aec746cf3aef79d7ee5a0ff23ae75f004fb33a47decc7f5b3f",
-      "size": 444416,
-      "notes": "去掉日志限流与去重（MaxPerSecond/MaxPerCategoryPerSecond/DedupeWindowSeconds 全 0），EchoToUnityConsole=true；日志全部落盘，不再丢证据。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.6/MGCModpack.dll",
-      "publishedAt": "2026-09-30T05:28:34Z"
-    },
-    {
-      "version": "1.28.0-dbg.5",
-      "sha256": "02350e46130579059eeeffc738bdfc04b2ea5f9293ea7e0db7a074b7e466ae88",
-      "size": 443904,
-      "notes": "诊断：Publish 订阅者数量 + 桥转发，走 logcat 不限流。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.5/MGCModpack.dll",
-      "publishedAt": "2026-09-30T05:20:27Z"
-    },
-    {
-      "version": "1.28.0-dbg.4",
-      "sha256": "61ee09b319071407b56f8f04ac2e66dbd45bbba3a400f9b7ea070b7834d71765",
-      "size": 443392,
-      "notes": "诊断：游戏事件转发桥内部加日志。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.4/MGCModpack.dll",
-      "publishedAt": "2026-09-30T05:13:39Z"
-    },
-    {
-      "version": "1.28.0-dbg.3",
-      "sha256": "9c8d22ec417296317030710fca5d84da1dd171f1d9100e362fa55072757eb296",
-      "size": 442880,
-      "notes": "诊断：InstallBridgeCompat / GameStartPreparingEvent 桥加 DebugLogger。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.3/MGCModpack.dll",
-      "publishedAt": "2026-09-30T04:52:44Z"
-    },
-    {
-      "version": "1.28.0-dbg.2",
-      "sha256": "8eda8ae4ebfb0b40d89b55eb87784dc56fb570afc266ca3cb60164306fd5e873",
-      "size": 446976,
-      "notes": "诊断版2：PlayAnnouncementAnimationWhenVisible 加主面板可见性日志 + 订阅后即时兜底。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.2/MGCModpack.dll",
-      "publishedAt": "2026-09-30T04:44:12Z"
-    },
-    {
-      "version": "1.28.0-dbg.1",
-      "sha256": "883ee53e263e155536deb20ce339a36651f6f86bfc0777b7179256a608c04b61",
-      "size": 439296,
-      "notes": "诊断版：MainMenuController.Update / UIInitializer.EnsureMainMenuController 加了 MenuDbg 日志，用于定位 Update 是否执行。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.1/MGCModpack.dll",
-      "publishedAt": "2026-09-30T04:35:42Z"
-    },
-    {
-      "version": "1.28.0-alpha.22-diag",
-      "sha256": "9f1c0736209aa64857ee2d7aeeaad0b69e90a353403fb667b7c3fdd60e2fa1cc",
-      "size": 369152,
-      "notes": "銆愯瘖鏂増銆戝姞涓ゆ鑷锛氣憼 IServices.Publish 鈶?MGCBridge.Publish锛岀敤鏉ュ畾浣嶅揩閫熷嚭缃愰摼鏉℃柇鍦ㄥ摢涓€娈点€備粎渚涙祴璇曟満鍨嬨€",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.22-diag/MGCModpack.dll",
-      "publishedAt": "2026-09-30T10:04:25Z"
-    },
-    {
-      "version": "1.28.0-alpha.21",
-      "sha256": "2470bc782e6b82b09aa0afd9b37dc10bba1f000014224cacf4a84c69fd29a044",
-      "size": 366080,
-      "notes": "1.28.0-alpha.21 鈥斺€?浠ｇ爜缁撴瀯閲嶆瀯鐗?\n鈶?MGCSettingManager 浠?7204 琛屽崟鏂囦欢鎷嗘垚 8 涓亴璐ｅ崟涓€鐨勭被锛堝悓 MGC.Managers 鍛藉悕绌洪棿锛夛細\n   鍏憡 鈫?AnnouncementManager锛屽ご鍍?鈫?AvatarManager锛屽叧浜庨〉 鈫?AboutPageManager锛?   涓婚潰鏉?鈫?HomePanelManager锛屽浘鐗囩紦瀛?鈫?ImageCache锛孞SON 鈫?JsonHelper锛孶I 宸ュ叿 鈫?UiHelper銆?   瀵瑰琛屼负涓嶅彉锛?02 涓柟娉曢€愪竴瀵归綈锛岄浂涓㈠け锛夈€?鈶?MGCLoader / MGCModpack 鏀逛负鐪熸鐨?C# 宸ョ▼锛圫cripts/MGCLoader銆丼cripts/MGCModpack锛夛紝\n   涓嶅啀渚濊禆 dnSpy 妗ユ墦琛ヤ竵锛宒otnet build 鍗冲彲鍑哄寘銆?鈶?鍏憡鏍?/ 鍏充簬椤?/ 涓婚潰鏉?/ 鍥剧墖缂撳瓨閫昏緫鍘熸牱淇濈暀銆",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.21/MGCModpack.dll",
-      "publishedAt": "2026-09-30T09:46:38Z"
-    },
-    {
-      "version": "1.28.0-alpha.20-dbg",
-      "sha256": "4adf216b815471e479933f41bfae21f434e6b651adc74f3c8f4f481f5717fdac",
-      "size": 446464,
-      "notes": "【调试版】回退 IServices 事件表为强引用（修复快速出罐失效：弱引用导致 mod 实例被 GC 后事件静默，实测 40 次调用 → 0 次）。【调试版】加场景切换入口：F9=进 Reward Loader Mobile，F10=回 Mian，或三指长按 1.2 秒弹面板。用于排查通关页 mod 残留 / 场景重置实例泄漏。发布版会去掉这个入口。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.20-dbg/MGCModpack.dll",
-      "publishedAt": "2026-09-30T07:39:41Z"
-    },
-    {
-      "version": "1.28.0-alpha.19",
-      "sha256": "8d9a8d9f276504fba740624849706c0edbe375bd52893beccccfbf839bb2350b",
-      "size": 444928,
-      "notes": "把事件桥的安装从 MGCStorage.EnsureDirs 移到 MGCInitializer.Start。EnsureDirs 只建目录；桥的安装属于初始化编排，归 MGCInitializer 管。顺带解掉隐患：EnsureDirs 若被别处提前调用，桥会跟着装上（那时 DebugLogger 可能还没 Init）。行为不变：桥仍是过渡层（11 个游戏事件 + 2 个名字钩子），static 守卫 + Subscribe 内部 Contains 去重保证幂等。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.19/MGCModpack.dll",
-      "publishedAt": "2026-09-30T07:12:12Z"
-    },
-    {
-      "version": "1.28.0-alpha.18",
-      "sha256": "addc28cfe70472b688201f87a5b3c2771c55a42f7ebc04ac8a39accbd26c6920",
-      "size": 444928,
-      "notes": "修复 mod 实例泄漏（快速出罐失效 / PoseControl 事件失灵的根因）。IServices 事件表改为弱引用保存实例委托：MGCInitializer 没有 DontDestroyOnLoad，每局场景重建都会新建一整套 mod 实例；原来实例委托被静态表强引用，旧 mod 永远退不出去，其 Enabled/WillBeEnabled 停在 true → 关掉开关也不生效，且订阅者随每局 +1。静态方法委托仍走强引用（无宿主，弱引用会被立刻回收）。去掉日志限流与去重（MaxPerSecond/MaxPerCategoryPerSecond/DedupeWindowSeconds 全 0），EchoToUnityConsole=true，日志全部落盘不再丢证据。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.18/MGCModpack.dll",
-      "publishedAt": "2026-09-30T06:02:02Z"
-    },
-    {
-      "version": "1.28.0-alpha.17",
-      "sha256": "3755913704aefc6afe1f4b35865ff4e2f25f3471481d847f61c9f1a621405db9",
-      "size": 442880,
-      "notes": "公告栏动画收尾：① OnMenuToggled 加 _annAutoShowConsumed 闸门——启动首次主菜单可见时自动弹出一次，之后菜单再开合不再自动弹（只能手动点顶栏）。② 移除 PauseButtonManager 里重复的 MenuToggledEvent 发布（与 MainMenuController 重复，会让动画播两遍）。③ 清理调试日志。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.17/MGCModpack.dll",
-      "publishedAt": "2026-09-30T04:40:21Z"
-    },
-    {
-      "version": "1.28.0-alpha.16",
-      "sha256": "9f1559004e93ceb01cb7a8a03c9e0b96a9cb8007f35c021b12c53f6437bbcc62",
-      "size": 438784,
-      "notes": "公告栏动画真正事件驱动：观察点放在 MainMenuController（启动即创建、常驻全程），Update 里做可见性边沿检测并发布 MenuToggledEvent；MGCSettingManager 订阅后于菜单打开时播动画。修正 alpha.15 把观察点放在 PauseButtonManager 的失误——那个组件挂在暂停键上，主菜单阶段未启用，Update 不跑。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.16/MGCModpack.dll",
-      "publishedAt": "2026-09-30T04:26:58Z"
-    },
-    {
-      "version": "1.28.0-alpha.15",
-      "sha256": "c047ba4f7ef7317a50ac2b8aebe4c86fc8beaaf3155715e5c9bbf95def410796",
-      "size": 438784,
-      "notes": "公告栏动画改为事件驱动（不再轮询）：MenuToggledEvent 此前无人发布，现由 PauseButtonManager.DetectMenuVisibilityChange（复用已有 Update 做边沿检测，零额外开销）+ 两处 ToggleMenu 发布；MGCSettingManager 订阅后在菜单打开时播动画。移除 WaitMainPanelThenAnimate 轮询协程。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.15/MGCModpack.dll",
-      "publishedAt": "2026-09-30T04:22:01Z"
-    },
-    {
-      "version": "1.28.0-alpha.14",
-      "sha256": "b46766bbacc58656326112e3040cfa8c4187d825644aa5f9587756f3f76f207e",
-      "size": 432640,
-      "notes": "公告栏动画改为「等主面板真正可见后」再播：新增 IsMainPanelVisible / PlayAnnouncementAnimationWhenVisible / WaitMainPanelThenAnimate。之前固定等 1.5 秒，与主面板何时显示无关，动画在用户看到主面板前就跑完了（表现为直接出现）。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.14/MGCModpack.dll",
-      "publishedAt": "2026-09-30T04:05:21Z"
-    },
-    {
-      "version": "1.28.0-alpha.13",
-      "sha256": "e6941767f74bf328b601dbfde61da71f43e8321607efd9bb34bb2c1a556ba66d",
-      "size": 415744,
-      "notes": "① 公告栏首次自动弹出也有动画：动画改用独立协程 _annAnimCoroutine 发起，不再 yield 嵌套进 AnnouncementRoutine —— 之前 ApplyAnnouncement 第二次执行会 StopCoroutine 把正在播的动画掐断。② 自动/手动两条路径统一走 PlayAnnouncementAnimation。③ 补上缺失的公告按钮图标 icon/announcement-icon.png（之前 404）。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.13/MGCModpack.dll",
-      "publishedAt": "2026-09-30T03:54:46Z"
-    },
-    {
-      "version": "1.28.0-alpha.12",
-      "sha256": "4111a29dc62af6429585bbea45373d245237346c3b3bf10edcb32918b9bea614",
-      "size": 412672,
-      "notes": "① Mod 下载共用按键三态：未装=下载 / 有旧版本(哈希不同)=更新 / 已最新=删除（新增 IsUpdateAvailable、HasLocalFile）。② 下载页「共 N 个包」移到刷新按钮上方。③ 公告栏下滑动画抽到 PanelTransition.PlaySlideDown，手动打开也重放；AnnouncementEnterAnimation 委托同一实现。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.12/MGCModpack.dll",
-      "publishedAt": "2026-09-30T03:40:38Z"
-    },
-    {
-      "version": "1.28.0-alpha.11",
-      "sha256": "a02c2570190513b0642f5c4cba910c26da6856779080075ffc2e9adabd7c9cf6",
-      "size": 402432,
-      "notes": "地图默认框选（真正的修复）：兜底选中第一个地图时同时 SaveConfig 落盘。之前只设内存，紧接着 map.Load()->LoadConfig() 会从磁盘读回 false 覆盖掉，导致首次安装地图页一项都不高亮。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.11/MGCModpack.dll",
-      "publishedAt": "2026-09-30T03:20:49Z"
-    },
-    {
-      "version": "1.28.0-alpha.10",
-      "sha256": "68f48589845679c5a5db2b43da975d8abc674a5e26ec855037167f999fea2951",
-      "size": 402432,
-      "notes": "① 首次安装地图页默认地图不框选：MapManager.LoadEnabledMap 兜底选第一个时把 willbeenabled 落上（地图页是按它找高亮的）。② 移除 Mod 管理 / 密钥管理 / Mod 下载页的「← 返回」按钮。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.10/MGCModpack.dll",
-      "publishedAt": "2026-09-30T03:07:37Z"
-    },
-    {
-      "version": "1.28.0-alpha.9",
-      "sha256": "6bb79c184a45e12f4a3d6618edce8a36a32ed039d61dcd7044692977d66bb831",
-      "size": 401920,
-      "notes": "整合包状态清理补上启动路径：Initialize 也调用 PruneMissingModpackState（之前只在 RefreshScan/UI 刷新时清，启动时漏了，所以删除 .modpack 后状态一直残留）。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.9/MGCModpack.dll",
-      "publishedAt": "2026-09-30T03:00:28Z"
-    },
-    {
-      "version": "1.28.0-alpha.8",
-      "sha256": "4fde1a48d782be92f8e477423437af27901c3582e7e2c5f5f3b58f742acc63ea",
-      "size": 401920,
-      "notes": "整合包状态清理：Mods 里已不存在的 .modpack，其 ModpackState 会自动清除（重新下载即为关闭态，需手动开启）；各 mod 自身配置保留不动。新增 ConfigService.Keys。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.8/MGCModpack.dll",
-      "publishedAt": "2026-09-30T02:55:46Z"
-    },
-    {
-      "version": "1.28.0-alpha.7",
-      "sha256": "a53f2844f462b12cf670736a61c6a3e0347f62ba028f9a6df32d47c779046ba9",
-      "size": 400384,
-      "notes": "修复下载后不自动加载：RefreshScan 补 LoadEnabledModpacks（之前只扫描+缓存，DLL 不注册，必须重启）。含 alpha.6 的 UTF-8 条目名兜底（缺 UTF-8 标志的包不再报 Encoding 936）。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.7/MGCModpack.dll",
-      "publishedAt": "2026-09-30T02:50:48Z"
-    },
-    {
-      "version": "1.28.0-alpha.6-diag",
-      "sha256": "fcd1c7034eb1322130c60cfb8ffdb5f9dbc09aa6ac2e64867df66fd21cd51c3c",
-      "size": 400896,
-      "notes": "临时诊断版：打印 ModsDir / 目录内容 / 匹配数",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.6-diag/MGCModpack.dll",
-      "publishedAt": "2026-09-30T02:33:36Z"
-    },
-    {
-      "version": "1.28.0-alpha.6",
-      "sha256": "369cd448f72f13c554d738396194a9984a9802ad74598f6d8cd113c3ab697ee8",
-      "size": 399872,
-      "notes": "修复下载的 .modpack 无法加载：ZipHelper.ExtractToMemory 强制 UTF-8 解码条目名（缺 UTF-8 标志位的包不再回退到 Encoding 936/GBK 而抛异常）。含：Mod 管理改用 CreateToggle、ModpackDownloader 改名迁移、移除 ModPanelTabs。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.6/MGCModpack.dll",
-      "publishedAt": "2026-09-30T02:43:18Z"
-    },
-    {
-      "version": "1.28.0-alpha.5",
-      "sha256": "a725c78bf449b5b6a75817609dd884e229de9e03816718becf414bdc1eeff899",
-      "size": 399872,
-      "notes": "Mod 管理的启用/禁用改用 CreateToggle（复用 UIControls 的激活色/默认色反馈，与 ModUIManager 一致），去掉多余的启用/禁用两个按键。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.5/MGCModpack.dll",
-      "publishedAt": "2026-09-30T02:20:21Z"
-    },
-    {
-      "version": "1.28.0-alpha.4",
-      "sha256": "e5de51d24d076c92f5331840d7643e693728c3d0a10d1eec9bdee5b17d2546f0",
-      "size": 399360,
-      "notes": "PackDownloader → MGC.ModSystem.ModpackDownloader（改名并移入 ModSystem）；移除 ModPanelTabs（连同孤儿状态机）；修下载完成后整页 UI 被清空（不再调 RefreshModList）；下载行改垂直视图自适应文字。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.4/MGCModpack.dll",
-      "publishedAt": "2026-09-30T02:08:55Z"
-    },
-    {
-      "version": "1.28.0-alpha.3",
-      "sha256": "36aa82e7cfbbdd81a9486ff015a22051eae3734c71ec04ee71621e7333452b72",
-      "size": 398336,
-      "notes": "重构 Mod 下载页：从 ModPanelTabs 搬到 ModpackUIManager，改用 UIControls 真按钮（不再手搓射线轮询）；行状态用嵌套类 DownloadRow 收拢（原来散在三个平行 List）；PollClicks/PollLabels 保留为空壳（编译器生成的状态机仍引用）。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.3/MGCModpack.dll",
-      "publishedAt": "2026-09-30T01:51:10Z"
-    },
-    {
-      "version": "1.28.0-alpha.2",
-      "sha256": "533de7dc556f0729ab114203c76b5a0990c359512c7e9b9ac8fc1d71ba26e8f6",
-      "size": 385536,
-      "notes": "修复 Mod 下载页：入口按钮不再被自己隐藏（SetPage 不再关 ModList）；下载列表改挂设置内容区；新增 OnSettingsCleared 处理 Destroy 延迟导致的死引用。修复重置场景后公告按钮失效：Coroutine 非 UnityObject，改判 _annPollerHost 让轮询可重启。",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.2/MGCModpack.dll",
-      "publishedAt": "2026-09-29T20:27:56Z"
-    },
-    {
-      "version": "1.28.0-alpha",
-      "sha256": "b2b84ca6f4082d6af483b5ee41da861b9391d298ebf60f6f60ecc0bbc7f44b5b",
-      "size": 373760,
-      "notes": "修复 mod 关闭不生效：HotReload=false 的 mod（Sideways/无背景）关闭时现在会真正 Unload 并复原重力与旋转；ModBase.Unload 各步加 try 保证 OnUnload 一定执行；Publish 记录无人订阅事件",
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-      "publishedAt": "2026-09-29T10:57:38Z"
-    }
-  ],
-  "bundles": [
-    {
-      "name": "ui_mainmenu.unity3d",
-      "sha256": "81122837b9ab3eacd5cedd78a9200fcd4a23407d57039015acef28aad671ed44",
-      "size": 933138,
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/bundle/ui_mainmenu.unity3d"
-    },
-    {
-      "name": "ui_pause.unity3d",
-      "sha256": "a9b8db2e8482e65a090ff60c192c964c12e2b80ff41514cfb1d25aacae8d17a0",
-      "size": 10658,
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/bundle/ui_pause.unity3d"
-    },
-    {
-      "name": "ui_uicontrols.unity3d",
-      "sha256": "21504fb640c443cc28c099c4e1c6c3aac5b0f8d9c47ff6953a3ca76b31c2af36",
-      "size": 18966,
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/bundle/ui_uicontrols.unity3d"
-    }
-  ],
-  "resources": [
-    {
-      "name": "README.txt",
-      "sha256": "81bd9e89cabf66447918bff9125392dc3d60d2478a1b79ac353738251b11ac2d",
-      "size": 2474,
-      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/resources/README.txt"
-    }
-  ],
-  "channels": {
-    "test": {
-      "devices": [
-        "8ab8901b",
-        "model:jason"
-      ],
-      "version": "1.28.0-alpha.22-diag"
-    }
-  }
+    "schemaVersion":  1,
+    "rev":  123,
+    "latest":  "1.28.0-alpha.21",
+    "updatedAt":  "2026-09-30T10:14:03Z",
+    "versions":  [
+                     {
+                         "version":  "1.28.0-dbg.7",
+                         "sha256":  "ce19dcb59e28efe9c496c30934946f672760c5b240fef7f1ce8cba5ff7a8c664",
+                         "size":  445440,
+                         "notes":  "自检：启动时查 IServices 订阅者数并直接发一个 GameStartPreparingEvent，验证 mod 处理器是否真被调用。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.7/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T05:36:41Z"
+                     },
+                     {
+                         "version":  "1.28.0-dbg.6",
+                         "sha256":  "b5d4ba94f716e1aec746cf3aef79d7ee5a0ff23ae75f004fb33a47decc7f5b3f",
+                         "size":  444416,
+                         "notes":  "去掉日志限流与去重（MaxPerSecond/MaxPerCategoryPerSecond/DedupeWindowSeconds 全 0），EchoToUnityConsole=true；日志全部落盘，不再丢证据。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.6/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T05:28:34Z"
+                     },
+                     {
+                         "version":  "1.28.0-dbg.5",
+                         "sha256":  "02350e46130579059eeeffc738bdfc04b2ea5f9293ea7e0db7a074b7e466ae88",
+                         "size":  443904,
+                         "notes":  "诊断：Publish 订阅者数量 + 桥转发，走 logcat 不限流。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.5/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T05:20:27Z"
+                     },
+                     {
+                         "version":  "1.28.0-dbg.4",
+                         "sha256":  "61ee09b319071407b56f8f04ac2e66dbd45bbba3a400f9b7ea070b7834d71765",
+                         "size":  443392,
+                         "notes":  "诊断：游戏事件转发桥内部加日志。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.4/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T05:13:39Z"
+                     },
+                     {
+                         "version":  "1.28.0-dbg.3",
+                         "sha256":  "9c8d22ec417296317030710fca5d84da1dd171f1d9100e362fa55072757eb296",
+                         "size":  442880,
+                         "notes":  "诊断：InstallBridgeCompat / GameStartPreparingEvent 桥加 DebugLogger。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.3/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T04:52:44Z"
+                     },
+                     {
+                         "version":  "1.28.0-dbg.2",
+                         "sha256":  "8eda8ae4ebfb0b40d89b55eb87784dc56fb570afc266ca3cb60164306fd5e873",
+                         "size":  446976,
+                         "notes":  "诊断版2：PlayAnnouncementAnimationWhenVisible 加主面板可见性日志 + 订阅后即时兜底。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.2/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T04:44:12Z"
+                     },
+                     {
+                         "version":  "1.28.0-dbg.1",
+                         "sha256":  "883ee53e263e155536deb20ce339a36651f6f86bfc0777b7179256a608c04b61",
+                         "size":  439296,
+                         "notes":  "诊断版：MainMenuController.Update / UIInitializer.EnsureMainMenuController 加了 MenuDbg 日志，用于定位 Update 是否执行。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.1/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T04:35:42Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.23-diag",
+                         "sha256":  "6cfbaa574e0b25f3212d1e3f9a7a02487ff9ca47ca15b556ebb3e598beeba2dd",
+                         "size":  369664,
+                         "notes":  "銆愯瘖鏂増銆戝姞 UnsubscribedEventCounts 杈撳嚭锛氬垽鏂揩閫熷嚭缃愭槸鍚﹀洜涓恒€屾父鎴忓彂浜嬩欢鏃╀簬 mod 璁㈤槄銆嶈€屾紡鎺夈€",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.23-diag/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T10:13:44Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.22-diag",
+                         "sha256":  "9f1c0736209aa64857ee2d7aeeaad0b69e90a353403fb667b7c3fdd60e2fa1cc",
+                         "size":  369152,
+                         "notes":  "銆愯瘖鏂増銆戝姞涓ゆ鑷锛氣憼 IServices.Publish 鈶?MGCBridge.Publish锛岀敤鏉ュ畾浣嶅揩閫熷嚭缃愰摼鏉℃柇鍦ㄥ摢涓€娈点€備粎渚涙祴璇曟満鍨嬨€",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.22-diag/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T10:04:25Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.21",
+                         "sha256":  "2470bc782e6b82b09aa0afd9b37dc10bba1f000014224cacf4a84c69fd29a044",
+                         "size":  366080,
+                         "notes":  "1.28.0-alpha.21 鈥斺€?浠ｇ爜缁撴瀯閲嶆瀯鐗?\n鈶?MGCSettingManager 浠?7204 琛屽崟鏂囦欢鎷嗘垚 8 涓亴璐ｅ崟涓€鐨勭被锛堝悓 MGC.Managers 鍛藉悕绌洪棿锛夛細\n   鍏憡 鈫?AnnouncementManager锛屽ご鍍?鈫?AvatarManager锛屽叧浜庨〉 鈫?AboutPageManager锛?   涓婚潰鏉?鈫?HomePanelManager锛屽浘鐗囩紦瀛?鈫?ImageCache锛孞SON 鈫?JsonHelper锛孶I 宸ュ叿 鈫?UiHelper銆?   瀵瑰琛屼负涓嶅彉锛?02 涓柟娉曢€愪竴瀵归綈锛岄浂涓㈠け锛夈€?鈶?MGCLoader / MGCModpack 鏀逛负鐪熸鐨?C# 宸ョ▼锛圫cripts/MGCLoader銆丼cripts/MGCModpack锛夛紝\n   涓嶅啀渚濊禆 dnSpy 妗ユ墦琛ヤ竵锛宒otnet build 鍗冲彲鍑哄寘銆?鈶?鍏憡鏍?/ 鍏充簬椤?/ 涓婚潰鏉?/ 鍥剧墖缂撳瓨閫昏緫鍘熸牱淇濈暀銆",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.21/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T09:46:38Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.20-dbg",
+                         "sha256":  "4adf216b815471e479933f41bfae21f434e6b651adc74f3c8f4f481f5717fdac",
+                         "size":  446464,
+                         "notes":  "【调试版】回退 IServices 事件表为强引用（修复快速出罐失效：弱引用导致 mod 实例被 GC 后事件静默，实测 40 次调用 → 0 次）。【调试版】加场景切换入口：F9=进 Reward Loader Mobile，F10=回 Mian，或三指长按 1.2 秒弹面板。用于排查通关页 mod 残留 / 场景重置实例泄漏。发布版会去掉这个入口。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.20-dbg/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T07:39:41Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.19",
+                         "sha256":  "8d9a8d9f276504fba740624849706c0edbe375bd52893beccccfbf839bb2350b",
+                         "size":  444928,
+                         "notes":  "把事件桥的安装从 MGCStorage.EnsureDirs 移到 MGCInitializer.Start。EnsureDirs 只建目录；桥的安装属于初始化编排，归 MGCInitializer 管。顺带解掉隐患：EnsureDirs 若被别处提前调用，桥会跟着装上（那时 DebugLogger 可能还没 Init）。行为不变：桥仍是过渡层（11 个游戏事件 + 2 个名字钩子），static 守卫 + Subscribe 内部 Contains 去重保证幂等。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.19/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T07:12:12Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.18",
+                         "sha256":  "addc28cfe70472b688201f87a5b3c2771c55a42f7ebc04ac8a39accbd26c6920",
+                         "size":  444928,
+                         "notes":  "修复 mod 实例泄漏（快速出罐失效 / PoseControl 事件失灵的根因）。IServices 事件表改为弱引用保存实例委托：MGCInitializer 没有 DontDestroyOnLoad，每局场景重建都会新建一整套 mod 实例；原来实例委托被静态表强引用，旧 mod 永远退不出去，其 Enabled/WillBeEnabled 停在 true → 关掉开关也不生效，且订阅者随每局 +1。静态方法委托仍走强引用（无宿主，弱引用会被立刻回收）。去掉日志限流与去重（MaxPerSecond/MaxPerCategoryPerSecond/DedupeWindowSeconds 全 0），EchoToUnityConsole=true，日志全部落盘不再丢证据。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.18/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T06:02:02Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.17",
+                         "sha256":  "3755913704aefc6afe1f4b35865ff4e2f25f3471481d847f61c9f1a621405db9",
+                         "size":  442880,
+                         "notes":  "公告栏动画收尾：① OnMenuToggled 加 _annAutoShowConsumed 闸门——启动首次主菜单可见时自动弹出一次，之后菜单再开合不再自动弹（只能手动点顶栏）。② 移除 PauseButtonManager 里重复的 MenuToggledEvent 发布（与 MainMenuController 重复，会让动画播两遍）。③ 清理调试日志。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.17/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T04:40:21Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.16",
+                         "sha256":  "9f1559004e93ceb01cb7a8a03c9e0b96a9cb8007f35c021b12c53f6437bbcc62",
+                         "size":  438784,
+                         "notes":  "公告栏动画真正事件驱动：观察点放在 MainMenuController（启动即创建、常驻全程），Update 里做可见性边沿检测并发布 MenuToggledEvent；MGCSettingManager 订阅后于菜单打开时播动画。修正 alpha.15 把观察点放在 PauseButtonManager 的失误——那个组件挂在暂停键上，主菜单阶段未启用，Update 不跑。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.16/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T04:26:58Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.15",
+                         "sha256":  "c047ba4f7ef7317a50ac2b8aebe4c86fc8beaaf3155715e5c9bbf95def410796",
+                         "size":  438784,
+                         "notes":  "公告栏动画改为事件驱动（不再轮询）：MenuToggledEvent 此前无人发布，现由 PauseButtonManager.DetectMenuVisibilityChange（复用已有 Update 做边沿检测，零额外开销）+ 两处 ToggleMenu 发布；MGCSettingManager 订阅后在菜单打开时播动画。移除 WaitMainPanelThenAnimate 轮询协程。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.15/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T04:22:01Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.14",
+                         "sha256":  "b46766bbacc58656326112e3040cfa8c4187d825644aa5f9587756f3f76f207e",
+                         "size":  432640,
+                         "notes":  "公告栏动画改为「等主面板真正可见后」再播：新增 IsMainPanelVisible / PlayAnnouncementAnimationWhenVisible / WaitMainPanelThenAnimate。之前固定等 1.5 秒，与主面板何时显示无关，动画在用户看到主面板前就跑完了（表现为直接出现）。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.14/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T04:05:21Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.13",
+                         "sha256":  "e6941767f74bf328b601dbfde61da71f43e8321607efd9bb34bb2c1a556ba66d",
+                         "size":  415744,
+                         "notes":  "① 公告栏首次自动弹出也有动画：动画改用独立协程 _annAnimCoroutine 发起，不再 yield 嵌套进 AnnouncementRoutine —— 之前 ApplyAnnouncement 第二次执行会 StopCoroutine 把正在播的动画掐断。② 自动/手动两条路径统一走 PlayAnnouncementAnimation。③ 补上缺失的公告按钮图标 icon/announcement-icon.png（之前 404）。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.13/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T03:54:46Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.12",
+                         "sha256":  "4111a29dc62af6429585bbea45373d245237346c3b3bf10edcb32918b9bea614",
+                         "size":  412672,
+                         "notes":  "① Mod 下载共用按键三态：未装=下载 / 有旧版本(哈希不同)=更新 / 已最新=删除（新增 IsUpdateAvailable、HasLocalFile）。② 下载页「共 N 个包」移到刷新按钮上方。③ 公告栏下滑动画抽到 PanelTransition.PlaySlideDown，手动打开也重放；AnnouncementEnterAnimation 委托同一实现。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.12/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T03:40:38Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.11",
+                         "sha256":  "a02c2570190513b0642f5c4cba910c26da6856779080075ffc2e9adabd7c9cf6",
+                         "size":  402432,
+                         "notes":  "地图默认框选（真正的修复）：兜底选中第一个地图时同时 SaveConfig 落盘。之前只设内存，紧接着 map.Load()-\u003eLoadConfig() 会从磁盘读回 false 覆盖掉，导致首次安装地图页一项都不高亮。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.11/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T03:20:49Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.10",
+                         "sha256":  "68f48589845679c5a5db2b43da975d8abc674a5e26ec855037167f999fea2951",
+                         "size":  402432,
+                         "notes":  "① 首次安装地图页默认地图不框选：MapManager.LoadEnabledMap 兜底选第一个时把 willbeenabled 落上（地图页是按它找高亮的）。② 移除 Mod 管理 / 密钥管理 / Mod 下载页的「← 返回」按钮。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.10/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T03:07:37Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.9",
+                         "sha256":  "6bb79c184a45e12f4a3d6618edce8a36a32ed039d61dcd7044692977d66bb831",
+                         "size":  401920,
+                         "notes":  "整合包状态清理补上启动路径：Initialize 也调用 PruneMissingModpackState（之前只在 RefreshScan/UI 刷新时清，启动时漏了，所以删除 .modpack 后状态一直残留）。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.9/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T03:00:28Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.8",
+                         "sha256":  "4fde1a48d782be92f8e477423437af27901c3582e7e2c5f5f3b58f742acc63ea",
+                         "size":  401920,
+                         "notes":  "整合包状态清理：Mods 里已不存在的 .modpack，其 ModpackState 会自动清除（重新下载即为关闭态，需手动开启）；各 mod 自身配置保留不动。新增 ConfigService.Keys。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.8/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T02:55:46Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.7",
+                         "sha256":  "a53f2844f462b12cf670736a61c6a3e0347f62ba028f9a6df32d47c779046ba9",
+                         "size":  400384,
+                         "notes":  "修复下载后不自动加载：RefreshScan 补 LoadEnabledModpacks（之前只扫描+缓存，DLL 不注册，必须重启）。含 alpha.6 的 UTF-8 条目名兜底（缺 UTF-8 标志的包不再报 Encoding 936）。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.7/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T02:50:48Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.6-diag",
+                         "sha256":  "fcd1c7034eb1322130c60cfb8ffdb5f9dbc09aa6ac2e64867df66fd21cd51c3c",
+                         "size":  400896,
+                         "notes":  "临时诊断版：打印 ModsDir / 目录内容 / 匹配数",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.6-diag/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T02:33:36Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.6",
+                         "sha256":  "369cd448f72f13c554d738396194a9984a9802ad74598f6d8cd113c3ab697ee8",
+                         "size":  399872,
+                         "notes":  "修复下载的 .modpack 无法加载：ZipHelper.ExtractToMemory 强制 UTF-8 解码条目名（缺 UTF-8 标志位的包不再回退到 Encoding 936/GBK 而抛异常）。含：Mod 管理改用 CreateToggle、ModpackDownloader 改名迁移、移除 ModPanelTabs。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.6/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T02:43:18Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.5",
+                         "sha256":  "a725c78bf449b5b6a75817609dd884e229de9e03816718becf414bdc1eeff899",
+                         "size":  399872,
+                         "notes":  "Mod 管理的启用/禁用改用 CreateToggle（复用 UIControls 的激活色/默认色反馈，与 ModUIManager 一致），去掉多余的启用/禁用两个按键。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.5/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T02:20:21Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.4",
+                         "sha256":  "e5de51d24d076c92f5331840d7643e693728c3d0a10d1eec9bdee5b17d2546f0",
+                         "size":  399360,
+                         "notes":  "PackDownloader → MGC.ModSystem.ModpackDownloader（改名并移入 ModSystem）；移除 ModPanelTabs（连同孤儿状态机）；修下载完成后整页 UI 被清空（不再调 RefreshModList）；下载行改垂直视图自适应文字。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.4/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T02:08:55Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.3",
+                         "sha256":  "36aa82e7cfbbdd81a9486ff015a22051eae3734c71ec04ee71621e7333452b72",
+                         "size":  398336,
+                         "notes":  "重构 Mod 下载页：从 ModPanelTabs 搬到 ModpackUIManager，改用 UIControls 真按钮（不再手搓射线轮询）；行状态用嵌套类 DownloadRow 收拢（原来散在三个平行 List）；PollClicks/PollLabels 保留为空壳（编译器生成的状态机仍引用）。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.3/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T01:51:10Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.2",
+                         "sha256":  "533de7dc556f0729ab114203c76b5a0990c359512c7e9b9ac8fc1d71ba26e8f6",
+                         "size":  385536,
+                         "notes":  "修复 Mod 下载页：入口按钮不再被自己隐藏（SetPage 不再关 ModList）；下载列表改挂设置内容区；新增 OnSettingsCleared 处理 Destroy 延迟导致的死引用。修复重置场景后公告按钮失效：Coroutine 非 UnityObject，改判 _annPollerHost 让轮询可重启。",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.2/MGCModpack.dll",
+                         "publishedAt":  "2026-09-29T20:27:56Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha",
+                         "sha256":  "b2b84ca6f4082d6af483b5ee41da861b9391d298ebf60f6f60ecc0bbc7f44b5b",
+                         "size":  373760,
+                         "notes":  "修复 mod 关闭不生效：HotReload=false 的 mod（Sideways/无背景）关闭时现在会真正 Unload 并复原重力与旋转；ModBase.Unload 各步加 try 保证 OnUnload 一定执行；Publish 记录无人订阅事件",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
+                         "publishedAt":  "2026-09-29T10:57:38Z"
+                     }
+                 ],
+    "bundles":  [
+                    {
+                        "name":  "ui_mainmenu.unity3d",
+                        "sha256":  "81122837b9ab3eacd5cedd78a9200fcd4a23407d57039015acef28aad671ed44",
+                        "size":  933138,
+                        "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/bundle/ui_mainmenu.unity3d"
+                    },
+                    {
+                        "name":  "ui_pause.unity3d",
+                        "sha256":  "a9b8db2e8482e65a090ff60c192c964c12e2b80ff41514cfb1d25aacae8d17a0",
+                        "size":  10658,
+                        "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/bundle/ui_pause.unity3d"
+                    },
+                    {
+                        "name":  "ui_uicontrols.unity3d",
+                        "sha256":  "21504fb640c443cc28c099c4e1c6c3aac5b0f8d9c47ff6953a3ca76b31c2af36",
+                        "size":  18966,
+                        "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/bundle/ui_uicontrols.unity3d"
+                    }
+                ],
+    "resources":  [
+                      {
+                          "name":  "README.txt",
+                          "sha256":  "81bd9e89cabf66447918bff9125392dc3d60d2478a1b79ac353738251b11ac2d",
+                          "size":  2474,
+                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/resources/README.txt"
+                      }
+                  ],
+    "channels":  {
+                     "test":  {
+                                  "devices":  [
+                                                  "8ab8901b",
+                                                  "model:jason"
+                                              ],
+                                  "version":  "1.28.0-alpha.22-diag"
+                              }
+                 }
 }
