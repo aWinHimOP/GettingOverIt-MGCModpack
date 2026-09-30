@@ -1,9 +1,17 @@
 {
     "schemaVersion": 1,
-    "rev": 110,
-    "latest": "1.28.0-dbg.3",
-    "updatedAt": "2026-09-30T04:52:46Z",
+    "rev": 111,
+    "latest": "1.28.0-dbg.4",
+    "updatedAt": "2026-09-30T05:13:41Z",
     "versions": [
+        {
+            "version": "1.28.0-dbg.4",
+            "sha256": "61ee09b319071407b56f8f04ac2e66dbd45bbba3a400f9b7ea070b7834d71765",
+            "size": 443392,
+            "notes": "诊断：游戏事件转发桥内部加日志。",
+            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.4/MGCModpack.dll",
+            "publishedAt": "2026-09-30T05:13:39Z"
+        },
         {
             "version": "1.28.0-dbg.3",
             "sha256": "9c8d22ec417296317030710fca5d84da1dd171f1d9100e362fa55072757eb296",
