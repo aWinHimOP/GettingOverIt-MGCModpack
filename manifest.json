@@ -1,9 +1,17 @@
 {
     "schemaVersion": 1,
-    "rev": 108,
-    "latest": "1.28.0-alpha.17",
-    "updatedAt": "2026-09-30T04:40:24Z",
+    "rev": 109,
+    "latest": "1.28.0-dbg.2",
+    "updatedAt": "2026-09-30T04:44:13Z",
     "versions": [
+        {
+            "version": "1.28.0-dbg.2",
+            "sha256": "8eda8ae4ebfb0b40d89b55eb87784dc56fb570afc266ca3cb60164306fd5e873",
+            "size": 446976,
+            "notes": "诊断版2：PlayAnnouncementAnimationWhenVisible 加主面板可见性日志 + 订阅后即时兜底。",
+            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.2/MGCModpack.dll",
+            "publishedAt": "2026-09-30T04:44:12Z"
+        },
         {
             "version": "1.28.0-alpha.17",
             "sha256": "3755913704aefc6afe1f4b35865ff4e2f25f3471481d847f61c9f1a621405db9",
