@@ -1,9 +1,17 @@
 {
     "schemaVersion": 1,
-    "rev": 98,
-    "latest": "1.28.0-alpha.8",
-    "updatedAt": "2026-09-30T02:55:49Z",
+    "rev": 99,
+    "latest": "1.28.0-alpha.9",
+    "updatedAt": "2026-09-30T03:00:30Z",
     "versions": [
+        {
+            "version": "1.28.0-alpha.9",
+            "sha256": "6bb79c184a45e12f4a3d6618edce8a36a32ed039d61dcd7044692977d66bb831",
+            "size": 401920,
+            "notes": "整合包状态清理补上启动路径：Initialize 也调用 PruneMissingModpackState（之前只在 RefreshScan/UI 刷新时清，启动时漏了，所以删除 .modpack 后状态一直残留）。",
+            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.9/MGCModpack.dll",
+            "publishedAt": "2026-09-30T03:00:28Z"
+        },
         {
             "version": "1.28.0-alpha.8",
             "sha256": "4fde1a48d782be92f8e477423437af27901c3582e7e2c5f5f3b58f742acc63ea",
