@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "rev": 127,
-  "latest": "1.28.0-alpha.27-scenetest",
+  "latest": "1.28.0-alpha.26",
   "updatedAt": "2026-09-30T10:33:59Z",
   "versions": [
     {
@@ -319,7 +319,7 @@
         "8ab8901b",
         "model:jason"
       ],
-      "version": "1.28.0-alpha.27-scenetest"
+      "version": "1.28.0-alpha.26"
     }
   }
 }
