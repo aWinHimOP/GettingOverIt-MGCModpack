@@ -1,8 +1,8 @@
 {
     "schemaVersion":  1,
-    "rev":  130,
-    "latest":  "1.28.0-alpha.28-golddiag",
-    "updatedAt":  "2026-09-30T12:01:11Z",
+    "rev":  131,
+    "latest":  "1.28.0-alpha.29-goldnative",
+    "updatedAt":  "2026-09-30T12:05:32Z",
     "versions":  [
                      {
                          "version":  "1.28.0-dbg.7",
@@ -59,6 +59,14 @@
                          "notes":  "诊断版：MainMenuController.Update / UIInitializer.EnsureMainMenuController 加了 MenuDbg 日志，用于定位 Update 是否执行。",
                          "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.1/MGCModpack.dll",
                          "publishedAt":  "2026-09-30T04:35:42Z"
+                     },
+                     {
+                         "version":  "1.28.0-alpha.29-goldnative",
+                         "sha256":  "e07e08c5d25ab6eb1824672f516245f4fec9a6fe072572e6c36ec86055a034fc",
+                         "size":  373760,
+                         "notes":  "銆愯瘖鏂増銆戠洿鎺ヨ皟 SetProceduralFloat/RebuildTextures锛岀湅 native 鏄惁鎶涘紓甯搞€",
+                         "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.29-goldnative/MGCModpack.dll",
+                         "publishedAt":  "2026-09-30T12:04:49Z"
                      },
                      {
                          "version":  "1.28.0-alpha.28-golddiag",
