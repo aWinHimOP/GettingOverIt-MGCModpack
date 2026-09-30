@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "rev": 125,
-  "latest": "1.28.0-alpha.25-diag",
+  "latest": "1.28.0-alpha.21",
   "updatedAt": "2026-09-30T10:21:55Z",
   "versions": [
     {
@@ -303,7 +303,7 @@
         "8ab8901b",
         "model:jason"
       ],
-      "version": "1.28.0-alpha.25-diag"
+      "version": "1.28.0-alpha.21"
     }
   }
 }
