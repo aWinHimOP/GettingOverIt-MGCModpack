@@ -1,0 +1,8 @@
+{
+    "version": "1.28.0-dbg.3",
+    "sha256": "9c8d22ec417296317030710fca5d84da1dd171f1d9100e362fa55072757eb296",
+    "size": 442880,
+    "notes": "诊断：InstallBridgeCompat / GameStartPreparingEvent 桥加 DebugLogger。",
+    "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.3/MGCModpack.dll",
+    "publishedAt": "2026-09-30T04:52:44Z"
+}
