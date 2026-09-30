@@ -1,9 +1,17 @@
 {
     "schemaVersion": 1,
-    "rev": 93,
-    "latest": "1.28.0-alpha.4",
-    "updatedAt": "2026-09-30T02:08:57Z",
+    "rev": 94,
+    "latest": "1.28.0-alpha.5",
+    "updatedAt": "2026-09-30T02:20:23Z",
     "versions": [
+        {
+            "version": "1.28.0-alpha.5",
+            "sha256": "a725c78bf449b5b6a75817609dd884e229de9e03816718becf414bdc1eeff899",
+            "size": 399872,
+            "notes": "Mod 管理的启用/禁用改用 CreateToggle（复用 UIControls 的激活色/默认色反馈，与 ModUIManager 一致），去掉多余的启用/禁用两个按键。",
+            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.5/MGCModpack.dll",
+            "publishedAt": "2026-09-30T02:20:21Z"
+        },
         {
             "version": "1.28.0-alpha.4",
             "sha256": "e5de51d24d076c92f5331840d7643e693728c3d0a10d1eec9bdee5b17d2546f0",
