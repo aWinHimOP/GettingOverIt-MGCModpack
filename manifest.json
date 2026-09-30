@@ -1,9 +1,17 @@
 {
     "schemaVersion": 1,
-    "rev": 103,
-    "latest": "1.28.0-alpha.13",
-    "updatedAt": "2026-09-30T03:54:48Z",
+    "rev": 104,
+    "latest": "1.28.0-alpha.14",
+    "updatedAt": "2026-09-30T04:05:23Z",
     "versions": [
+        {
+            "version": "1.28.0-alpha.14",
+            "sha256": "b46766bbacc58656326112e3040cfa8c4187d825644aa5f9587756f3f76f207e",
+            "size": 432640,
+            "notes": "公告栏动画改为「等主面板真正可见后」再播：新增 IsMainPanelVisible / PlayAnnouncementAnimationWhenVisible / WaitMainPanelThenAnimate。之前固定等 1.5 秒，与主面板何时显示无关，动画在用户看到主面板前就跑完了（表现为直接出现）。",
+            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.14/MGCModpack.dll",
+            "publishedAt": "2026-09-30T04:05:21Z"
+        },
         {
             "version": "1.28.0-alpha.13",
             "sha256": "e6941767f74bf328b601dbfde61da71f43e8321607efd9bb34bb2c1a556ba66d",
