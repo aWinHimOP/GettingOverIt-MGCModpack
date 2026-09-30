@@ -1,0 +1,8 @@
+{
+    "version": "1.28.0-dbg.1",
+    "sha256": "883ee53e263e155536deb20ce339a36651f6f86bfc0777b7179256a608c04b61",
+    "size": 439296,
+    "notes": "诊断版：MainMenuController.Update / UIInitializer.EnsureMainMenuController 加了 MenuDbg 日志，用于定位 Update 是否执行。",
+    "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.1/MGCModpack.dll",
+    "publishedAt": "2026-09-30T04:35:42Z"
+}
