@@ -1,16 +1,16 @@
 {
     "schemaVersion": 1,
-    "rev": 113,
-    "latest": "1.28.0-dbg.6",
-    "updatedAt": "2026-09-30T05:28:37Z",
+    "rev": 114,
+    "latest": "1.28.0-dbg.7",
+    "updatedAt": "2026-09-30T05:36:43Z",
     "versions": [
         {
-            "version": "1.28.0-dbg.6",
-            "sha256": "b5d4ba94f716e1aec746cf3aef79d7ee5a0ff23ae75f004fb33a47decc7f5b3f",
-            "size": 444416,
-            "notes": "去掉日志限流与去重（MaxPerSecond/MaxPerCategoryPerSecond/DedupeWindowSeconds 全 0），EchoToUnityConsole=true；日志全部落盘，不再丢证据。",
-            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.6/MGCModpack.dll",
-            "publishedAt": "2026-09-30T05:28:34Z"
+            "version": "1.28.0-dbg.7",
+            "sha256": "ce19dcb59e28efe9c496c30934946f672760c5b240fef7f1ce8cba5ff7a8c664",
+            "size": 445440,
+            "notes": "自检：启动时查 IServices 订阅者数并直接发一个 GameStartPreparingEvent，验证 mod 处理器是否真被调用。",
+            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.7/MGCModpack.dll",
+            "publishedAt": "2026-09-30T05:36:41Z"
         },
         {
             "version": "1.28.0-alpha.17",
