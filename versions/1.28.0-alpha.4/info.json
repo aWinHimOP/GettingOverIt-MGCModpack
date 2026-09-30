@@ -1,0 +1,8 @@
+{
+    "version": "1.28.0-alpha.4",
+    "sha256": "e5de51d24d076c92f5331840d7643e693728c3d0a10d1eec9bdee5b17d2546f0",
+    "size": 399360,
+    "notes": "PackDownloader → MGC.ModSystem.ModpackDownloader（改名并移入 ModSystem）；移除 ModPanelTabs（连同孤儿状态机）；修下载完成后整页 UI 被清空（不再调 RefreshModList）；下载行改垂直视图自适应文字。",
+    "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.4/MGCModpack.dll",
+    "publishedAt": "2026-09-30T02:08:55Z"
+}
