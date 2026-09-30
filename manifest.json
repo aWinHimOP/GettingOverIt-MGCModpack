@@ -360,6 +360,15 @@
         "model:jason"
       ],
       "version": "1.28.0-alpha.26"
+    },
+    "dev": {
+      "devices": [
+        "5ba1a76b",
+        "model:xiaomi mi note 3",
+        "unity:2017.4.24f1:opengles3:android:arm64"
+      ],
+      "version": "1.29.0-debug.1",
+      "base": "debug"
     }
   }
 }
