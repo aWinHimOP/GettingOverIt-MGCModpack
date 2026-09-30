@@ -1,16 +1,16 @@
 {
     "schemaVersion": 1,
-    "rev": 95,
-    "latest": "1.28.0-alpha.6-diag",
-    "updatedAt": "2026-09-30T02:33:38Z",
+    "rev": 96,
+    "latest": "1.28.0-alpha.6",
+    "updatedAt": "2026-09-30T02:43:19Z",
     "versions": [
         {
-            "version": "1.28.0-alpha.6-diag",
-            "sha256": "fcd1c7034eb1322130c60cfb8ffdb5f9dbc09aa6ac2e64867df66fd21cd51c3c",
-            "size": 400896,
-            "notes": "临时诊断版：打印 ModsDir / 目录内容 / 匹配数",
-            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.6-diag/MGCModpack.dll",
-            "publishedAt": "2026-09-30T02:33:36Z"
+            "version": "1.28.0-alpha.6",
+            "sha256": "369cd448f72f13c554d738396194a9984a9802ad74598f6d8cd113c3ab697ee8",
+            "size": 399872,
+            "notes": "修复下载的 .modpack 无法加载：ZipHelper.ExtractToMemory 强制 UTF-8 解码条目名（缺 UTF-8 标志位的包不再回退到 Encoding 936/GBK 而抛异常）。含：Mod 管理改用 CreateToggle、ModpackDownloader 改名迁移、移除 ModPanelTabs。",
+            "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.6/MGCModpack.dll",
+            "publishedAt": "2026-09-30T02:43:18Z"
         },
         {
             "version": "1.28.0-alpha.5",
