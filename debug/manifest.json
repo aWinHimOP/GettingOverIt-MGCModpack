@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rev": 11,
+  "rev": 12,
   "latest": "",
   "updatedAt": "2026-09-30T14:20:29Z",
   "versions": [
@@ -19,6 +19,14 @@
       "updatedAt": "2026-09-30T15:44:44Z",
       "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/debug/versions/1.28.0-debug.2/MGCModpack.dll",
       "note": "修复公告正文消失（模板被生成的 MGCAnnBody 污染）"
+    },
+    {
+      "version": "1.28.0-debug.3",
+      "sha256": "cc8f745ad96cfb3c6251c930ebb57f57b4189657c1da211800ac0e1706b35f7f",
+      "size": 368640,
+      "updatedAt": "2026-09-30T16:23:10Z",
+      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/debug/versions/1.28.0-debug.3/MGCModpack.dll",
+      "note": "公告模板改为跳过 MGCAnn* 生成物（正文不再消失）"
     }
   ],
   "bundles": [
