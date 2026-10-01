@@ -1,9 +1,17 @@
 {
   "schemaVersion": 1,
-  "rev": 12,
+  "rev": 13,
   "latest": "",
-  "updatedAt": "2026-09-30T14:20:29Z",
+  "updatedAt": "2026-10-01T19:13:53Z",
   "versions": [
+    {
+      "version": "1.28.0-debug.4",
+      "sha256": "cef3d05d3356cd97dba1f111e6f45200c5eb5bdc7a763079573d5bca5c4532d1",
+      "size": 369152,
+      "notes": "公告栏修复：正文文字与正文内行内插图（[img]…[/img]）按顺序正常渲染；取模板时跳过自生成的 MGCAnn* 节点，正文不再消失。附正文/配图渲染诊断日志。",
+      "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/debug/versions/1.28.0-debug.4/MGCModpack.dll",
+      "publishedAt": "2026-10-01T19:13:53Z"
+    },
     {
       "version": "1.28.0-debug.1",
       "sha256": "f21b1a5f71b46f54e9b9a81da712b961f6db4c8f1e3619e26b23edb0fef67c8f",
