@@ -375,7 +375,7 @@
         "model:xiaomi mi note 3",
         "unity:2017.4.24f1:opengles3:android:arm64"
       ],
-      "version": "1.28.0-debug.3",
+      "version": "1.28.0-debug.4",
       "base": "debug"
     }
   }
