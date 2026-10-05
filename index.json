@@ -1,7 +1,7 @@
 {
     "schema": 2,
-    "rev": 19,
-    "generatedAt": "2026-10-05T09:46:08Z",
+    "rev": 20,
+    "generatedAt": "2026-10-05T10:29:44Z",
     "generator": "RepoEditor/2.0",
     "channels": {
         "stable": {
@@ -29,7 +29,7 @@
                 ]
             },
             "pin": {
-                "loader:MGCModpack": "1.28.0-alpha.7",
+                "loader:MGCModpack": "1.28.0-alpha.8",
                 "mod:MGCModpack": "1.0.0",
                 "map:MGCModpack": "1.0.0"
             }
@@ -41,6 +41,15 @@
             "kind": "loader",
             "name": "MGCModpack",
             "versions": [
+                {
+                    "version": "1.28.0-alpha.8",
+                    "file": "versions/1.28.0-alpha.8/MGCModpack.dll",
+                    "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.8/MGCModpack.dll",
+                    "sha256": "2d78473c71820c56e49d9824a46973edaf7bd37f6305695f45cff16278b136e0",
+                    "size": 402944,
+                    "publishedAt": "2026-10-05T10:29:44Z",
+                    "notes": "地图包云端列表 + 下载图标/进度"
+                },
                 {
                     "version": "1.28.0-alpha.7",
                     "file": "versions/1.28.0-alpha.7/MGCModpack.dll",
