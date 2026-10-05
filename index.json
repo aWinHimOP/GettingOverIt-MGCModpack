@@ -1,7 +1,7 @@
 {
     "schema": 2,
-    "rev": 39,
-    "generatedAt": "2026-10-05T16:09:23.853Z",
+    "rev": 40,
+    "generatedAt": "2026-10-05T18:39:04.563Z",
     "generator": "RepoEditor/2.0",
     "channels": {
         "stable": {
@@ -29,7 +29,7 @@
                 ]
             },
             "pin": {
-                "loader:MGCModpack": "1.28.0-alpha.24",
+                "loader:MGCModpack": "1.28.0-alpha.25",
                 "map:MGCModpack": "1.0.0",
                 "mod:MGCModpack": "1.0.0"
             }
@@ -41,6 +41,15 @@
             "kind": "loader",
             "name": "MGCModpack",
             "versions": [
+                {
+                    "version": "1.28.0-alpha.25",
+                    "file": "versions/1.28.0-alpha.25/MGCModpack.dll",
+                    "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.25/MGCModpack.dll",
+                    "sha256": "8559c4c424a51011db3f2e1ed6b88c598e238e15ff905ddb4af1739ad0fa8033",
+                    "size": 431616,
+                    "publishedAt": "2026-10-05T18:39:04.534Z",
+                    "notes": "通用钩子系统（HookBus/FastReflect/GameHookBridge）+ 自检；事件站点改为插座式"
+                },
                 {
                     "version": "1.28.0-alpha.24",
                     "file": "versions/1.28.0-alpha.24/MGCModpack.dll",
