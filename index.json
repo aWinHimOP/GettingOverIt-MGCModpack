@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 1,
-  "generatedAt": "2026-10-05T05:15:52Z",
+  "rev": 2,
+  "generatedAt": "2026-10-05T05:43:05Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -421,5 +421,33 @@
       ]
     }
   ],
-  "assets": []
+  "assets": [
+    {
+      "id": "picture:about-icon.png",
+      "kind": "picture",
+      "name": "about-icon.png",
+      "file": "picture/about-icon.png",
+      "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/about-icon.png",
+      "sha256": "5cd12b9cd7508f4c115c44514f41e8cb3aa24bf07fb2309202618eaf2af2cc90",
+      "size": 253621
+    },
+    {
+      "id": "picture:announcement-icon.png",
+      "kind": "picture",
+      "name": "announcement-icon.png",
+      "file": "picture/announcement-icon.png",
+      "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/announcement-icon.png",
+      "sha256": "84e306c160ea1833f967b2c01d2a5a81951ab5f9340808bc84d61ece2939cbb5",
+      "size": 483
+    },
+    {
+      "id": "picture:panel-placeholder.png",
+      "kind": "picture",
+      "name": "panel-placeholder.png",
+      "file": "picture/panel-placeholder.png",
+      "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/panel-placeholder.png",
+      "sha256": "67cd42c3910b13bc39b5294807c371ee3e1f41954e4b67c4ad44dd6a1e312e0a",
+      "size": 1286630
+    }
+  ]
 }
