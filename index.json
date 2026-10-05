@@ -1,7 +1,7 @@
 {
     "schema": 2,
-    "rev": 41,
-    "generatedAt": "2026-10-05T18:43:23.884Z",
+    "rev": 42,
+    "generatedAt": "2026-10-05T18:47:03.539Z",
     "generator": "RepoEditor/2.0",
     "channels": {
         "stable": {
@@ -29,7 +29,7 @@
                 ]
             },
             "pin": {
-                "loader:MGCModpack": "1.28.0-alpha.26",
+                "loader:MGCModpack": "1.28.0-alpha.27",
                 "map:MGCModpack": "1.0.0",
                 "mod:MGCModpack": "1.0.0"
             }
@@ -41,6 +41,15 @@
             "kind": "loader",
             "name": "MGCModpack",
             "versions": [
+                {
+                    "version": "1.28.0-alpha.27",
+                    "file": "versions/1.28.0-alpha.27/MGCModpack.dll",
+                    "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.27/MGCModpack.dll",
+                    "sha256": "80885b375db5fce2940f76ac07b5fec9f47db015e9cce8ee022e9ac65f270926",
+                    "size": 432640,
+                    "publishedAt": "2026-10-05T18:47:03.538Z",
+                    "notes": "钩子系统端到端自检（真事件 → 桥 → 站点）"
+                },
                 {
                     "version": "1.28.0-alpha.26",
                     "file": "versions/1.28.0-alpha.26/MGCModpack.dll",
