@@ -1,7 +1,0 @@
-{
-  "version": "1.28.0-debug.2",
-  "sha256": "ee1eba55e84dca95b4572ab30156cfbf37582105de684332a9633cf8baef9d6b",
-  "size": 368128,
-  "notes": "修复公告正文消失（模板被生成的 MGCAnnBody 污染）",
-  "publishedAt": "2026-09-30T15:44:44Z"
-}
