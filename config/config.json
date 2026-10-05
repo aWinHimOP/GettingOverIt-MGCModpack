@@ -8,6 +8,6 @@
     "aboutLogLabel": "更新日志",
     "aboutLog": "1.28.0-alpha：新增玩家设置页（改昵称/换头像）\n修复通关奖励界面显示暂停键\n关于页文案改为服务器可配",
     "aboutContent": "",
-    "aboutIcon": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/about-icon.png",
-    "updatedAt": "2026-10-05T05:40:06Z"
+    "aboutIcon": "about-icon.png",
+    "updatedAt": "2026-10-05T05:43:16Z"
 }
