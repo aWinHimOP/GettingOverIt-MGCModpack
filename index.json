@@ -1,7 +1,7 @@
 {
     "schema":  2,
-    "rev":  7,
-    "generatedAt":  "2026-10-05T07:21:09Z",
+    "rev":  8,
+    "generatedAt":  "2026-10-05T07:23:05Z",
     "generator":  "RepoEditor/2.0",
     "channels":  {
                      "stable":  {
@@ -47,6 +47,213 @@
                                                "size":  382464,
                                                "publishedAt":  "2026-10-05T07:21:09Z",
                                                "notes":  "build from current source: GoldPotFix, material warmup, TextureUtil/HttpUtil, dir refactor"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.10",
+                                               "file":  "versions/1.28.0-alpha.10/MGCModpack.dll",
+                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.10/MGCModpack.dll",
+                                               "sha256":  "",
+                                               "size":  402432,
+                                               "publishedAt":  "2026-10-05T07:23:05Z",
+                                               "notes":  "legacy build (kept for rollback testing)"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.11",
+                                               "file":  "versions/1.28.0-alpha.11/MGCModpack.dll",
+                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.11/MGCModpack.dll",
+                                               "sha256":  "",
+                                               "size":  402432,
+                                               "publishedAt":  "2026-10-05T07:23:05Z",
+                                               "notes":  "legacy build (kept for rollback testing)"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.12",
+                                               "file":  "versions/1.28.0-alpha.12/MGCModpack.dll",
+                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.12/MGCModpack.dll",
+                                               "sha256":  "",
+                                               "size":  412672,
+                                               "publishedAt":  "2026-10-05T07:23:05Z",
+                                               "notes":  "legacy build (kept for rollback testing)"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.13",
+                                               "file":  "versions/1.28.0-alpha.13/MGCModpack.dll",
+                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.13/MGCModpack.dll",
+                                               "sha256":  "",
+                                               "size":  415744,
+                                               "publishedAt":  "2026-10-05T07:23:05Z",
+                                               "notes":  "legacy build (kept for rollback testing)"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.14",
+                                               "file":  "versions/1.28.0-alpha.14/MGCModpack.dll",
+                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.14/MGCModpack.dll",
+                                               "sha256":  "",
+                                               "size":  432640,
+                                               "publishedAt":  "2026-10-05T07:23:05Z",
+                                               "notes":  "legacy build (kept for rollback testing)"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.15",
+                                               "file":  "versions/1.28.0-alpha.15/MGCModpack.dll",
+                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.15/MGCModpack.dll",
+                                               "sha256":  "",
+                                               "size":  438784,
+                                               "publishedAt":  "2026-10-05T07:23:05Z",
+                                               "notes":  "legacy build (kept for rollback testing)"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.16",
+                                               "file":  "versions/1.28.0-alpha.16/MGCModpack.dll",
+                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.16/MGCModpack.dll",
+                                               "sha256":  "",
+                                               "size":  438784,
+                                               "publishedAt":  "2026-10-05T07:23:05Z",
+                                               "notes":  "legacy build (kept for rollback testing)"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.17",
+                                               "file":  "versions/1.28.0-alpha.17/MGCModpack.dll",
+                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.17/MGCModpack.dll",
+                                               "sha256":  "",
+                                               "size":  442880,
+                                               "publishedAt":  "2026-10-05T07:23:05Z",
+                                               "notes":  "legacy build (kept for rollback testing)"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.18",
+                                               "file":  "versions/1.28.0-alpha.18/MGCModpack.dll",
+                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.18/MGCModpack.dll",
+                                               "sha256":  "",
+                                               "size":  444928,
+                                               "publishedAt":  "2026-10-05T07:23:05Z",
+                                               "notes":  "legacy build (kept for rollback testing)"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.19",
+                                               "file":  "versions/1.28.0-alpha.19/MGCModpack.dll",
+                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.19/MGCModpack.dll",
+                                               "sha256":  "",
+                                               "size":  444928,
+                                               "publishedAt":  "2026-10-05T07:23:05Z",
+                                               "notes":  "legacy build (kept for rollback testing)"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.2",
+                                               "file":  "versions/1.28.0-alpha.2/MGCModpack.dll",
+                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.2/MGCModpack.dll",
+                                               "sha256":  "",
+                                               "size":  385536,
+                                               "publishedAt":  "2026-10-05T07:23:05Z",
+                                               "notes":  "legacy build (kept for rollback testing)"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.21",
+                                               "file":  "versions/1.28.0-alpha.21/MGCModpack.dll",
+                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.21/MGCModpack.dll",
+                                               "sha256":  "",
+                                               "size":  366080,
+                                               "publishedAt":  "2026-10-05T07:23:05Z",
+                                               "notes":  "legacy build (kept for rollback testing)"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.26",
+                                               "file":  "versions/1.28.0-alpha.26/MGCModpack.dll",
+                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.26/MGCModpack.dll",
+                                               "sha256":  "",
+                                               "size":  366592,
+                                               "publishedAt":  "2026-10-05T07:23:05Z",
+                                               "notes":  "legacy build (kept for rollback testing)"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.3",
+                                               "file":  "versions/1.28.0-alpha.3/MGCModpack.dll",
+                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.3/MGCModpack.dll",
+                                               "sha256":  "",
+                                               "size":  398336,
+                                               "publishedAt":  "2026-10-05T07:23:05Z",
+                                               "notes":  "legacy build (kept for rollback testing)"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.33",
+                                               "file":  "versions/1.28.0-alpha.33/MGCModpack.dll",
+                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.33/MGCModpack.dll",
+                                               "sha256":  "",
+                                               "size":  368128,
+                                               "publishedAt":  "2026-10-05T07:23:05Z",
+                                               "notes":  "legacy build (kept for rollback testing)"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.34",
+                                               "file":  "versions/1.28.0-alpha.34/MGCModpack.dll",
+                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.34/MGCModpack.dll",
+                                               "sha256":  "",
+                                               "size":  382464,
+                                               "publishedAt":  "2026-10-05T07:23:05Z",
+                                               "notes":  "legacy build (kept for rollback testing)"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.4",
+                                               "file":  "versions/1.28.0-alpha.4/MGCModpack.dll",
+                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.4/MGCModpack.dll",
+                                               "sha256":  "",
+                                               "size":  399360,
+                                               "publishedAt":  "2026-10-05T07:23:05Z",
+                                               "notes":  "legacy build (kept for rollback testing)"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.5",
+                                               "file":  "versions/1.28.0-alpha.5/MGCModpack.dll",
+                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.5/MGCModpack.dll",
+                                               "sha256":  "",
+                                               "size":  399872,
+                                               "publishedAt":  "2026-10-05T07:23:05Z",
+                                               "notes":  "legacy build (kept for rollback testing)"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.6",
+                                               "file":  "versions/1.28.0-alpha.6/MGCModpack.dll",
+                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.6/MGCModpack.dll",
+                                               "sha256":  "",
+                                               "size":  399872,
+                                               "publishedAt":  "2026-10-05T07:23:05Z",
+                                               "notes":  "legacy build (kept for rollback testing)"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.7",
+                                               "file":  "versions/1.28.0-alpha.7/MGCModpack.dll",
+                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.7/MGCModpack.dll",
+                                               "sha256":  "",
+                                               "size":  400384,
+                                               "publishedAt":  "2026-10-05T07:23:05Z",
+                                               "notes":  "legacy build (kept for rollback testing)"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.8",
+                                               "file":  "versions/1.28.0-alpha.8/MGCModpack.dll",
+                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.8/MGCModpack.dll",
+                                               "sha256":  "",
+                                               "size":  401920,
+                                               "publishedAt":  "2026-10-05T07:23:05Z",
+                                               "notes":  "legacy build (kept for rollback testing)"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.9",
+                                               "file":  "versions/1.28.0-alpha.9/MGCModpack.dll",
+                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.9/MGCModpack.dll",
+                                               "sha256":  "",
+                                               "size":  401920,
+                                               "publishedAt":  "2026-10-05T07:23:05Z",
+                                               "notes":  "legacy build (kept for rollback testing)"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha",
+                                               "file":  "versions/1.28.0-alpha/MGCModpack.dll",
+                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
+                                               "sha256":  "",
+                                               "size":  373760,
+                                               "publishedAt":  "2026-10-05T07:23:05Z",
+                                               "notes":  "legacy build (kept for rollback testing)"
                                            }
                                        ]
                       },
