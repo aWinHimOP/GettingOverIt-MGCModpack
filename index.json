@@ -1,7 +1,7 @@
 {
     "schema": 2,
-    "rev": 40,
-    "generatedAt": "2026-10-05T18:39:04.563Z",
+    "rev": 41,
+    "generatedAt": "2026-10-05T18:43:23.884Z",
     "generator": "RepoEditor/2.0",
     "channels": {
         "stable": {
@@ -29,7 +29,7 @@
                 ]
             },
             "pin": {
-                "loader:MGCModpack": "1.28.0-alpha.25",
+                "loader:MGCModpack": "1.28.0-alpha.26",
                 "map:MGCModpack": "1.0.0",
                 "mod:MGCModpack": "1.0.0"
             }
@@ -41,6 +41,15 @@
             "kind": "loader",
             "name": "MGCModpack",
             "versions": [
+                {
+                    "version": "1.28.0-alpha.26",
+                    "file": "versions/1.28.0-alpha.26/MGCModpack.dll",
+                    "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.26/MGCModpack.dll",
+                    "sha256": "79cfcde2a07ab64d5c9d611f90a1276286fdc560b54a4ff49de530539a69994d",
+                    "size": 431616,
+                    "publishedAt": "2026-10-05T18:43:23.884Z",
+                    "notes": "修复重复订阅导致 Has 永久为 true（早退失效）；计数改为单源"
+                },
                 {
                     "version": "1.28.0-alpha.25",
                     "file": "versions/1.28.0-alpha.25/MGCModpack.dll",
