@@ -1,7 +1,7 @@
 {
     "schema":  2,
-    "rev":  9,
-    "generatedAt":  "2026-10-05T07:24:34Z",
+    "rev":  10,
+    "generatedAt":  "2026-10-05T07:57:36Z",
     "generator":  "RepoEditor/2.0",
     "channels":  {
                      "stable":  {
@@ -11,7 +11,7 @@
                                                    "type":  "all"
                                                },
                                     "pin":  {
-                                                "loader:MGCModpack":  "1.28.0-alpha.1",
+                                                "loader:MGCModpack":  "1.28.0-alpha",
                                                 "mod:MGCModpack":  "1.0.0"
                                             }
                                 },
@@ -28,7 +28,7 @@
                                                          ]
                                              },
                                   "pin":  {
-                                              "loader:MGCModpack":  "1.28.0-alpha.1",
+                                              "loader:MGCModpack":  "1.28.0-alpha",
                                               "mod:MGCModpack":  "1.0.0"
                                           }
                               }
@@ -40,13 +40,13 @@
                           "name":  "MGCModpack",
                           "versions":  [
                                            {
-                                               "version":  "1.28.0-alpha.1",
-                                               "file":  "versions/1.28.0-alpha.1/MGCModpack.dll",
-                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.1/MGCModpack.dll",
+                                               "version":  "1.28.0-alpha",
+                                               "file":  "versions/1.28.0-alpha/MGCModpack.dll",
+                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
                                                "sha256":  "0479444c3754010f578486642fe6b0af4a4dc4f4c80558bd5ddf558c98565fc2",
                                                "size":  382464,
                                                "publishedAt":  "2026-10-05T07:21:09Z",
-                                               "notes":  "build from current source: GoldPotFix, material warmup, TextureUtil/HttpUtil, dir refactor"
+                                               "notes":  "release build: GoldPotFix, material warmup, TextureUtil/HttpUtil, dir refactor"
                                            },
                                            {
                                                "version":  "1.28.0-alpha.10",
