@@ -1,7 +1,7 @@
 {
     "schema": 2,
-    "rev": 15,
-    "generatedAt": "2026-10-05T09:13:30Z",
+    "rev": 16,
+    "generatedAt": "2026-10-05T09:19:58Z",
     "generator": "RepoEditor/2.0",
     "channels": {
         "stable": {
@@ -29,7 +29,7 @@
                 ]
             },
             "pin": {
-                "loader:MGCModpack": "1.28.0-alpha.3",
+                "loader:MGCModpack": "1.28.0-alpha.4",
                 "mod:MGCModpack": "1.0.0",
                 "map:MGCModpack": "1.0.0"
             }
@@ -41,6 +41,15 @@
             "kind": "loader",
             "name": "MGCModpack",
             "versions": [
+                {
+                    "version": "1.28.0-alpha.4",
+                    "file": "versions/1.28.0-alpha.4/MGCModpack.dll",
+                    "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.4/MGCModpack.dll",
+                    "sha256": "b77e5cb0775721ec56fc090787769d920e8f4582014f0a7960488f88ecd019b1",
+                    "size": 395264,
+                    "publishedAt": "2026-10-05T09:19:58Z",
+                    "notes": "缓存放对位置 + 版本从加载器读"
+                },
                 {
                     "version": "1.28.0-alpha.3",
                     "file": "versions/1.28.0-alpha.3/MGCModpack.dll",
