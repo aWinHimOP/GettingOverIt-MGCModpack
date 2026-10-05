@@ -1,453 +1,458 @@
 {
-  "schema": 2,
-  "rev": 2,
-  "generatedAt": "2026-10-05T05:43:05Z",
-  "generator": "RepoEditor/2.0",
-  "channels": {
-    "stable": {
-      "label": "\u6B63\u5F0F",
-      "order": 10,
-      "target": {
-        "type": "all"
-      },
-      "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.33",
-        "mod:MGCModpack": "1.0.0"
-      }
-    },
-    "test": {
-      "label": "\u6D4B\u8BD5",
-      "order": 20,
-      "target": {
-        "type": "devices",
-        "ids": []
-      },
-      "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.33",
-        "mod:MGCModpack": "1.0.0"
-      }
-    }
-  },
-  "artifacts": [
-    {
-      "id": "loader:MGCModpack",
-      "kind": "loader",
-      "name": "MGCModpack",
-      "versions": [
-        {
-          "version": "1.28.0-alpha",
-          "file": "versions/1.28.0-alpha/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-          "sha256": "b2b84ca6f4082d6af483b5ee41da861b9391d298ebf60f6f60ecc0bbc7f44b5b",
-          "size": 373760,
-          "publishedAt": "2026-10-05T05:15:51Z",
-          "notes": "\u4FEE\u590D mod \u5173\u95ED\u4E0D\u751F\u6548\uFF1AHotReload=false \u7684 mod\uFF08Sideways/\u65E0\u80CC\u666F\uFF09\u5173\u95ED\u65F6\u73B0\u5728\u4F1A\u771F\u6B63 Unload \u5E76\u590D\u539F\u91CD\u529B\u4E0E\u65CB\u8F6C\uFF1BModBase.Unload \u5404\u6B65\u52A0 try \u4FDD\u8BC1 OnUnload \u4E00\u5B9A\u6267\u884C\uFF1BPublish \u8BB0\u5F55\u65E0\u4EBA\u8BA2\u9605\u4E8B\u4EF6"
-        },
-        {
-          "version": "1.28.0-alpha.3",
-          "file": "versions/1.28.0-alpha.3/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.3/MGCModpack.dll",
-          "sha256": "36aa82e7cfbbdd81a9486ff015a22051eae3734c71ec04ee71621e7333452b72",
-          "size": 398336,
-          "publishedAt": "2026-10-05T05:15:50Z",
-          "notes": "\u91CD\u6784 Mod \u4E0B\u8F7D\u9875\uFF1A\u4ECE ModPanelTabs \u642C\u5230 ModpackUIManager\uFF0C\u6539\u7528 UIControls \u771F\u6309\u94AE\uFF08\u4E0D\u518D\u624B\u6413\u5C04\u7EBF\u8F6E\u8BE2\uFF09\uFF1B\u884C\u72B6\u6001\u7528\u5D4C\u5957\u7C7B DownloadRow \u6536\u62E2\uFF08\u539F\u6765\u6563\u5728\u4E09\u4E2A\u5E73\u884C List\uFF09\uFF1BPollClicks/PollLabels \u4FDD\u7559\u4E3A\u7A7A\u58F3\uFF08\u7F16\u8BD1\u5668\u751F\u6210\u7684\u72B6\u6001\u673A\u4ECD\u5F15\u7528\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.2",
-          "file": "versions/1.28.0-alpha.2/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.2/MGCModpack.dll",
-          "sha256": "533de7dc556f0729ab114203c76b5a0990c359512c7e9b9ac8fc1d71ba26e8f6",
-          "size": 385536,
-          "publishedAt": "2026-10-05T05:15:50Z",
-          "notes": "\u4FEE\u590D Mod \u4E0B\u8F7D\u9875\uFF1A\u5165\u53E3\u6309\u94AE\u4E0D\u518D\u88AB\u81EA\u5DF1\u9690\u85CF\uFF08SetPage \u4E0D\u518D\u5173 ModList\uFF09\uFF1B\u4E0B\u8F7D\u5217\u8868\u6539\u6302\u8BBE\u7F6E\u5185\u5BB9\u533A\uFF1B\u65B0\u589E OnSettingsCleared \u5904\u7406 Destroy \u5EF6\u8FDF\u5BFC\u81F4\u7684\u6B7B\u5F15\u7528\u3002\u4FEE\u590D\u91CD\u7F6E\u573A\u666F\u540E\u516C\u544A\u6309\u94AE\u5931\u6548\uFF1ACoroutine \u975E UnityObject\uFF0C\u6539\u5224 _annPollerHost \u8BA9\u8F6E\u8BE2\u53EF\u91CD\u542F\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.4",
-          "file": "versions/1.28.0-alpha.4/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.4/MGCModpack.dll",
-          "sha256": "e5de51d24d076c92f5331840d7643e693728c3d0a10d1eec9bdee5b17d2546f0",
-          "size": 399360,
-          "publishedAt": "2026-10-05T05:15:49Z",
-          "notes": "PackDownloader \u2192 MGC.ModSystem.ModpackDownloader\uFF08\u6539\u540D\u5E76\u79FB\u5165 ModSystem\uFF09\uFF1B\u79FB\u9664 ModPanelTabs\uFF08\u8FDE\u540C\u5B64\u513F\u72B6\u6001\u673A\uFF09\uFF1B\u4FEE\u4E0B\u8F7D\u5B8C\u6210\u540E\u6574\u9875 UI \u88AB\u6E05\u7A7A\uFF08\u4E0D\u518D\u8C03 RefreshModList\uFF09\uFF1B\u4E0B\u8F7D\u884C\u6539\u5782\u76F4\u89C6\u56FE\u81EA\u9002\u5E94\u6587\u5B57\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.5",
-          "file": "versions/1.28.0-alpha.5/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.5/MGCModpack.dll",
-          "sha256": "a725c78bf449b5b6a75817609dd884e229de9e03816718becf414bdc1eeff899",
-          "size": 399872,
-          "publishedAt": "2026-10-05T05:15:48Z",
-          "notes": "Mod \u7BA1\u7406\u7684\u542F\u7528/\u7981\u7528\u6539\u7528 CreateToggle\uFF08\u590D\u7528 UIControls \u7684\u6FC0\u6D3B\u8272/\u9ED8\u8BA4\u8272\u53CD\u9988\uFF0C\u4E0E ModUIManager \u4E00\u81F4\uFF09\uFF0C\u53BB\u6389\u591A\u4F59\u7684\u542F\u7528/\u7981\u7528\u4E24\u4E2A\u6309\u952E\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.6",
-          "file": "versions/1.28.0-alpha.6/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.6/MGCModpack.dll",
-          "sha256": "369cd448f72f13c554d738396194a9984a9802ad74598f6d8cd113c3ab697ee8",
-          "size": 399872,
-          "publishedAt": "2026-10-05T05:15:47Z",
-          "notes": "\u4FEE\u590D\u4E0B\u8F7D\u7684 .modpack \u65E0\u6CD5\u52A0\u8F7D\uFF1AZipHelper.ExtractToMemory \u5F3A\u5236 UTF-8 \u89E3\u7801\u6761\u76EE\u540D\uFF08\u7F3A UTF-8 \u6807\u5FD7\u4F4D\u7684\u5305\u4E0D\u518D\u56DE\u9000\u5230 Encoding 936/GBK \u800C\u629B\u5F02\u5E38\uFF09\u3002\u542B\uFF1AMod \u7BA1\u7406\u6539\u7528 CreateToggle\u3001ModpackDownloader \u6539\u540D\u8FC1\u79FB\u3001\u79FB\u9664 ModPanelTabs\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.7",
-          "file": "versions/1.28.0-alpha.7/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.7/MGCModpack.dll",
-          "sha256": "a53f2844f462b12cf670736a61c6a3e0347f62ba028f9a6df32d47c779046ba9",
-          "size": 400384,
-          "publishedAt": "2026-10-05T05:15:16Z",
-          "notes": "\u4FEE\u590D\u4E0B\u8F7D\u540E\u4E0D\u81EA\u52A8\u52A0\u8F7D\uFF1ARefreshScan \u8865 LoadEnabledModpacks\uFF08\u4E4B\u524D\u53EA\u626B\u63CF\u002B\u7F13\u5B58\uFF0CDLL \u4E0D\u6CE8\u518C\uFF0C\u5FC5\u987B\u91CD\u542F\uFF09\u3002\u542B alpha.6 \u7684 UTF-8 \u6761\u76EE\u540D\u515C\u5E95\uFF08\u7F3A UTF-8 \u6807\u5FD7\u7684\u5305\u4E0D\u518D\u62A5 Encoding 936\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.6-diag",
-          "file": "versions/1.28.0-alpha.6-diag/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.6-diag/MGCModpack.dll",
-          "sha256": "fcd1c7034eb1322130c60cfb8ffdb5f9dbc09aa6ac2e64867df66fd21cd51c3c",
-          "size": 400896,
-          "publishedAt": "2026-10-05T05:15:16Z",
-          "notes": "\u4E34\u65F6\u8BCA\u65AD\u7248\uFF1A\u6253\u5370 ModsDir / \u76EE\u5F55\u5185\u5BB9 / \u5339\u914D\u6570"
-        },
-        {
-          "version": "1.28.0-alpha.8",
-          "file": "versions/1.28.0-alpha.8/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.8/MGCModpack.dll",
-          "sha256": "4fde1a48d782be92f8e477423437af27901c3582e7e2c5f5f3b58f742acc63ea",
-          "size": 401920,
-          "publishedAt": "2026-10-05T05:15:15Z",
-          "notes": "\u6574\u5408\u5305\u72B6\u6001\u6E05\u7406\uFF1AMods \u91CC\u5DF2\u4E0D\u5B58\u5728\u7684 .modpack\uFF0C\u5176 ModpackState \u4F1A\u81EA\u52A8\u6E05\u9664\uFF08\u91CD\u65B0\u4E0B\u8F7D\u5373\u4E3A\u5173\u95ED\u6001\uFF0C\u9700\u624B\u52A8\u5F00\u542F\uFF09\uFF1B\u5404 mod \u81EA\u8EAB\u914D\u7F6E\u4FDD\u7559\u4E0D\u52A8\u3002\u65B0\u589E ConfigService.Keys\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.9",
-          "file": "versions/1.28.0-alpha.9/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.9/MGCModpack.dll",
-          "sha256": "6bb79c184a45e12f4a3d6618edce8a36a32ed039d61dcd7044692977d66bb831",
-          "size": 401920,
-          "publishedAt": "2026-10-05T05:15:14Z",
-          "notes": "\u6574\u5408\u5305\u72B6\u6001\u6E05\u7406\u8865\u4E0A\u542F\u52A8\u8DEF\u5F84\uFF1AInitialize \u4E5F\u8C03\u7528 PruneMissingModpackState\uFF08\u4E4B\u524D\u53EA\u5728 RefreshScan/UI \u5237\u65B0\u65F6\u6E05\uFF0C\u542F\u52A8\u65F6\u6F0F\u4E86\uFF0C\u6240\u4EE5\u5220\u9664 .modpack \u540E\u72B6\u6001\u4E00\u76F4\u6B8B\u7559\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.11",
-          "file": "versions/1.28.0-alpha.11/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.11/MGCModpack.dll",
-          "sha256": "a02c2570190513b0642f5c4cba910c26da6856779080075ffc2e9adabd7c9cf6",
-          "size": 402432,
-          "publishedAt": "2026-10-05T05:15:13Z",
-          "notes": "\u5730\u56FE\u9ED8\u8BA4\u6846\u9009\uFF08\u771F\u6B63\u7684\u4FEE\u590D\uFF09\uFF1A\u515C\u5E95\u9009\u4E2D\u7B2C\u4E00\u4E2A\u5730\u56FE\u65F6\u540C\u65F6 SaveConfig \u843D\u76D8\u3002\u4E4B\u524D\u53EA\u8BBE\u5185\u5B58\uFF0C\u7D27\u63A5\u7740 map.Load()-\u003ELoadConfig() \u4F1A\u4ECE\u78C1\u76D8\u8BFB\u56DE false \u8986\u76D6\u6389\uFF0C\u5BFC\u81F4\u9996\u6B21\u5B89\u88C5\u5730\u56FE\u9875\u4E00\u9879\u90FD\u4E0D\u9AD8\u4EAE\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.10",
-          "file": "versions/1.28.0-alpha.10/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.10/MGCModpack.dll",
-          "sha256": "68f48589845679c5a5db2b43da975d8abc674a5e26ec855037167f999fea2951",
-          "size": 402432,
-          "publishedAt": "2026-10-05T05:15:13Z",
-          "notes": "\u2460 \u9996\u6B21\u5B89\u88C5\u5730\u56FE\u9875\u9ED8\u8BA4\u5730\u56FE\u4E0D\u6846\u9009\uFF1AMapManager.LoadEnabledMap \u515C\u5E95\u9009\u7B2C\u4E00\u4E2A\u65F6\u628A willbeenabled \u843D\u4E0A\uFF08\u5730\u56FE\u9875\u662F\u6309\u5B83\u627E\u9AD8\u4EAE\u7684\uFF09\u3002\u2461 \u79FB\u9664 Mod \u7BA1\u7406 / \u5BC6\u94A5\u7BA1\u7406 / Mod \u4E0B\u8F7D\u9875\u7684\u300C\u2190 \u8FD4\u56DE\u300D\u6309\u94AE\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.12",
-          "file": "versions/1.28.0-alpha.12/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.12/MGCModpack.dll",
-          "sha256": "4111a29dc62af6429585bbea45373d245237346c3b3bf10edcb32918b9bea614",
-          "size": 412672,
-          "publishedAt": "2026-10-05T05:15:09Z",
-          "notes": "\u2460 Mod \u4E0B\u8F7D\u5171\u7528\u6309\u952E\u4E09\u6001\uFF1A\u672A\u88C5=\u4E0B\u8F7D / \u6709\u65E7\u7248\u672C(\u54C8\u5E0C\u4E0D\u540C)=\u66F4\u65B0 / \u5DF2\u6700\u65B0=\u5220\u9664\uFF08\u65B0\u589E IsUpdateAvailable\u3001HasLocalFile\uFF09\u3002\u2461 \u4E0B\u8F7D\u9875\u300C\u5171 N \u4E2A\u5305\u300D\u79FB\u5230\u5237\u65B0\u6309\u94AE\u4E0A\u65B9\u3002\u2462 \u516C\u544A\u680F\u4E0B\u6ED1\u52A8\u753B\u62BD\u5230 PanelTransition.PlaySlideDown\uFF0C\u624B\u52A8\u6253\u5F00\u4E5F\u91CD\u653E\uFF1BAnnouncementEnterAnimation \u59D4\u6258\u540C\u4E00\u5B9E\u73B0\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.13",
-          "file": "versions/1.28.0-alpha.13/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.13/MGCModpack.dll",
-          "sha256": "e6941767f74bf328b601dbfde61da71f43e8321607efd9bb34bb2c1a556ba66d",
-          "size": 415744,
-          "publishedAt": "2026-10-05T05:14:39Z",
-          "notes": "\u2460 \u516C\u544A\u680F\u9996\u6B21\u81EA\u52A8\u5F39\u51FA\u4E5F\u6709\u52A8\u753B\uFF1A\u52A8\u753B\u6539\u7528\u72EC\u7ACB\u534F\u7A0B _annAnimCoroutine \u53D1\u8D77\uFF0C\u4E0D\u518D yield \u5D4C\u5957\u8FDB AnnouncementRoutine \u2014\u2014 \u4E4B\u524D ApplyAnnouncement \u7B2C\u4E8C\u6B21\u6267\u884C\u4F1A StopCoroutine \u628A\u6B63\u5728\u64AD\u7684\u52A8\u753B\u6390\u65AD\u3002\u2461 \u81EA\u52A8/\u624B\u52A8\u4E24\u6761\u8DEF\u5F84\u7EDF\u4E00\u8D70 PlayAnnouncementAnimation\u3002\u2462 \u8865\u4E0A\u7F3A\u5931\u7684\u516C\u544A\u6309\u94AE\u56FE\u6807 icon/announcement-icon.png\uFF08\u4E4B\u524D 404\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.15",
-          "file": "versions/1.28.0-alpha.15/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.15/MGCModpack.dll",
-          "sha256": "c047ba4f7ef7317a50ac2b8aebe4c86fc8beaaf3155715e5c9bbf95def410796",
-          "size": 438784,
-          "publishedAt": "2026-10-05T05:14:38Z",
-          "notes": "\u516C\u544A\u680F\u52A8\u753B\u6539\u4E3A\u4E8B\u4EF6\u9A71\u52A8\uFF08\u4E0D\u518D\u8F6E\u8BE2\uFF09\uFF1AMenuToggledEvent \u6B64\u524D\u65E0\u4EBA\u53D1\u5E03\uFF0C\u73B0\u7531 PauseButtonManager.DetectMenuVisibilityChange\uFF08\u590D\u7528\u5DF2\u6709 Update \u505A\u8FB9\u6CBF\u68C0\u6D4B\uFF0C\u96F6\u989D\u5916\u5F00\u9500\uFF09\u002B \u4E24\u5904 ToggleMenu \u53D1\u5E03\uFF1BMGCSettingManager \u8BA2\u9605\u540E\u5728\u83DC\u5355\u6253\u5F00\u65F6\u64AD\u52A8\u753B\u3002\u79FB\u9664 WaitMainPanelThenAnimate \u8F6E\u8BE2\u534F\u7A0B\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.14",
-          "file": "versions/1.28.0-alpha.14/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.14/MGCModpack.dll",
-          "sha256": "b46766bbacc58656326112e3040cfa8c4187d825644aa5f9587756f3f76f207e",
-          "size": 432640,
-          "publishedAt": "2026-10-05T05:14:38Z",
-          "notes": "\u516C\u544A\u680F\u52A8\u753B\u6539\u4E3A\u300C\u7B49\u4E3B\u9762\u677F\u771F\u6B63\u53EF\u89C1\u540E\u300D\u518D\u64AD\uFF1A\u65B0\u589E IsMainPanelVisible / PlayAnnouncementAnimationWhenVisible / WaitMainPanelThenAnimate\u3002\u4E4B\u524D\u56FA\u5B9A\u7B49 1.5 \u79D2\uFF0C\u4E0E\u4E3B\u9762\u677F\u4F55\u65F6\u663E\u793A\u65E0\u5173\uFF0C\u52A8\u753B\u5728\u7528\u6237\u770B\u5230\u4E3B\u9762\u677F\u524D\u5C31\u8DD1\u5B8C\u4E86\uFF08\u8868\u73B0\u4E3A\u76F4\u63A5\u51FA\u73B0\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.17",
-          "file": "versions/1.28.0-alpha.17/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.17/MGCModpack.dll",
-          "sha256": "3755913704aefc6afe1f4b35865ff4e2f25f3471481d847f61c9f1a621405db9",
-          "size": 442880,
-          "publishedAt": "2026-10-05T05:14:37Z",
-          "notes": "\u516C\u544A\u680F\u52A8\u753B\u6536\u5C3E\uFF1A\u2460 OnMenuToggled \u52A0 _annAutoShowConsumed \u95F8\u95E8\u2014\u2014\u542F\u52A8\u9996\u6B21\u4E3B\u83DC\u5355\u53EF\u89C1\u65F6\u81EA\u52A8\u5F39\u51FA\u4E00\u6B21\uFF0C\u4E4B\u540E\u83DC\u5355\u518D\u5F00\u5408\u4E0D\u518D\u81EA\u52A8\u5F39\uFF08\u53EA\u80FD\u624B\u52A8\u70B9\u9876\u680F\uFF09\u3002\u2461 \u79FB\u9664 PauseButtonManager \u91CC\u91CD\u590D\u7684 MenuToggledEvent \u53D1\u5E03\uFF08\u4E0E MainMenuController \u91CD\u590D\uFF0C\u4F1A\u8BA9\u52A8\u753B\u64AD\u4E24\u904D\uFF09\u3002\u2462 \u6E05\u7406\u8C03\u8BD5\u65E5\u5FD7\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.16",
-          "file": "versions/1.28.0-alpha.16/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.16/MGCModpack.dll",
-          "sha256": "9f1559004e93ceb01cb7a8a03c9e0b96a9cb8007f35c021b12c53f6437bbcc62",
-          "size": 438784,
-          "publishedAt": "2026-10-05T05:14:37Z",
-          "notes": "\u516C\u544A\u680F\u52A8\u753B\u771F\u6B63\u4E8B\u4EF6\u9A71\u52A8\uFF1A\u89C2\u5BDF\u70B9\u653E\u5728 MainMenuController\uFF08\u542F\u52A8\u5373\u521B\u5EFA\u3001\u5E38\u9A7B\u5168\u7A0B\uFF09\uFF0CUpdate \u91CC\u505A\u53EF\u89C1\u6027\u8FB9\u6CBF\u68C0\u6D4B\u5E76\u53D1\u5E03 MenuToggledEvent\uFF1BMGCSettingManager \u8BA2\u9605\u540E\u4E8E\u83DC\u5355\u6253\u5F00\u65F6\u64AD\u52A8\u753B\u3002\u4FEE\u6B63 alpha.15 \u628A\u89C2\u5BDF\u70B9\u653E\u5728 PauseButtonManager \u7684\u5931\u8BEF\u2014\u2014\u90A3\u4E2A\u7EC4\u4EF6\u6302\u5728\u6682\u505C\u952E\u4E0A\uFF0C\u4E3B\u83DC\u5355\u9636\u6BB5\u672A\u542F\u7528\uFF0CUpdate \u4E0D\u8DD1\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.18",
-          "file": "versions/1.28.0-alpha.18/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.18/MGCModpack.dll",
-          "sha256": "addc28cfe70472b688201f87a5b3c2771c55a42f7ebc04ac8a39accbd26c6920",
-          "size": 444928,
-          "publishedAt": "2026-10-05T05:14:36Z",
-          "notes": "\u4FEE\u590D mod \u5B9E\u4F8B\u6CC4\u6F0F\uFF08\u5FEB\u901F\u51FA\u7F50\u5931\u6548 / PoseControl \u4E8B\u4EF6\u5931\u7075\u7684\u6839\u56E0\uFF09\u3002IServices \u4E8B\u4EF6\u8868\u6539\u4E3A\u5F31\u5F15\u7528\u4FDD\u5B58\u5B9E\u4F8B\u59D4\u6258\uFF1AMGCInitializer \u6CA1\u6709 DontDestroyOnLoad\uFF0C\u6BCF\u5C40\u573A\u666F\u91CD\u5EFA\u90FD\u4F1A\u65B0\u5EFA\u4E00\u6574\u5957 mod \u5B9E\u4F8B\uFF1B\u539F\u6765\u5B9E\u4F8B\u59D4\u6258\u88AB\u9759\u6001\u8868\u5F3A\u5F15\u7528\uFF0C\u65E7 mod \u6C38\u8FDC\u9000\u4E0D\u51FA\u53BB\uFF0C\u5176 Enabled/WillBeEnabled \u505C\u5728 true \u2192 \u5173\u6389\u5F00\u5173\u4E5F\u4E0D\u751F\u6548\uFF0C\u4E14\u8BA2\u9605\u8005\u968F\u6BCF\u5C40 \u002B1\u3002\u9759\u6001\u65B9\u6CD5\u59D4\u6258\u4ECD\u8D70\u5F3A\u5F15\u7528\uFF08\u65E0\u5BBF\u4E3B\uFF0C\u5F31\u5F15\u7528\u4F1A\u88AB\u7ACB\u523B\u56DE\u6536\uFF09\u3002\u53BB\u6389\u65E5\u5FD7\u9650\u6D41\u4E0E\u53BB\u91CD\uFF08MaxPerSecond/MaxPerCategoryPerSecond/DedupeWindowSeconds \u5168 0\uFF09\uFF0CEchoToUnityConsole=true\uFF0C\u65E5\u5FD7\u5168\u90E8\u843D\u76D8\u4E0D\u518D\u4E22\u8BC1\u636E\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.20-dbg",
-          "file": "versions/1.28.0-alpha.20-dbg/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.20-dbg/MGCModpack.dll",
-          "sha256": "4adf216b815471e479933f41bfae21f434e6b651adc74f3c8f4f481f5717fdac",
-          "size": 446464,
-          "publishedAt": "2026-10-05T05:14:35Z",
-          "notes": "\u3010\u8C03\u8BD5\u7248\u3011\u56DE\u9000 IServices \u4E8B\u4EF6\u8868\u4E3A\u5F3A\u5F15\u7528\uFF08\u4FEE\u590D\u5FEB\u901F\u51FA\u7F50\u5931\u6548\uFF1A\u5F31\u5F15\u7528\u5BFC\u81F4 mod \u5B9E\u4F8B\u88AB GC \u540E\u4E8B\u4EF6\u9759\u9ED8\uFF0C\u5B9E\u6D4B 40 \u6B21\u8C03\u7528 \u2192 0 \u6B21\uFF09\u3002\u3010\u8C03\u8BD5\u7248\u3011\u52A0\u573A\u666F\u5207\u6362\u5165\u53E3\uFF1AF9=\u8FDB Reward Loader Mobile\uFF0CF10=\u56DE Mian\uFF0C\u6216\u4E09\u6307\u957F\u6309 1.2 \u79D2\u5F39\u9762\u677F\u3002\u7528\u4E8E\u6392\u67E5\u901A\u5173\u9875 mod \u6B8B\u7559 / \u573A\u666F\u91CD\u7F6E\u5B9E\u4F8B\u6CC4\u6F0F\u3002\u53D1\u5E03\u7248\u4F1A\u53BB\u6389\u8FD9\u4E2A\u5165\u53E3\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.19",
-          "file": "versions/1.28.0-alpha.19/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.19/MGCModpack.dll",
-          "sha256": "8d9a8d9f276504fba740624849706c0edbe375bd52893beccccfbf839bb2350b",
-          "size": 444928,
-          "publishedAt": "2026-10-05T05:14:35Z",
-          "notes": "\u628A\u4E8B\u4EF6\u6865\u7684\u5B89\u88C5\u4ECE MGCStorage.EnsureDirs \u79FB\u5230 MGCInitializer.Start\u3002EnsureDirs \u53EA\u5EFA\u76EE\u5F55\uFF1B\u6865\u7684\u5B89\u88C5\u5C5E\u4E8E\u521D\u59CB\u5316\u7F16\u6392\uFF0C\u5F52 MGCInitializer \u7BA1\u3002\u987A\u5E26\u89E3\u6389\u9690\u60A3\uFF1AEnsureDirs \u82E5\u88AB\u522B\u5904\u63D0\u524D\u8C03\u7528\uFF0C\u6865\u4F1A\u8DDF\u7740\u88C5\u4E0A\uFF08\u90A3\u65F6 DebugLogger \u53EF\u80FD\u8FD8\u6CA1 Init\uFF09\u3002\u884C\u4E3A\u4E0D\u53D8\uFF1A\u6865\u4ECD\u662F\u8FC7\u6E21\u5C42\uFF0811 \u4E2A\u6E38\u620F\u4E8B\u4EF6 \u002B 2 \u4E2A\u540D\u5B57\u94A9\u5B50\uFF09\uFF0Cstatic \u5B88\u536B \u002B Subscribe \u5185\u90E8 Contains \u53BB\u91CD\u4FDD\u8BC1\u5E42\u7B49\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.22-diag",
-          "file": "versions/1.28.0-alpha.22-diag/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.22-diag/MGCModpack.dll",
-          "sha256": "9f1c0736209aa64857ee2d7aeeaad0b69e90a353403fb667b7c3fdd60e2fa1cc",
-          "size": 369152,
-          "publishedAt": "2026-10-05T05:14:34Z",
-          "notes": "\u9286\u612F\u7616\u93C2\uE160\u5897\u9286\u621D\u59DE\u6D93\u3086\uE18C\u9477\uE045\uE5C5\u951B\u6C23\u61BC IServices.Publish \u9236?MGCBridge.Publish\u951B\u5C80\u6564\u93C9\u30E5\u757E\u6D63\u5D85\u63E9\u95AB\u71B7\u56AD\u7F03\u6130\u647C\u93C9\u2103\u67C7\u9366\u3125\u6462\u6D93\u20AC\u5A08\u70B9\u20AC\u5099\u7C8E\u6E1A\u6D99\u7974\u7487\u66DF\u6E80\u9368\u5B28\u20AC"
-        },
-        {
-          "version": "1.28.0-alpha.21",
-          "file": "versions/1.28.0-alpha.21/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.21/MGCModpack.dll",
-          "sha256": "2470bc782e6b82b09aa0afd9b37dc10bba1f000014224cacf4a84c69fd29a044",
-          "size": 366080,
-          "publishedAt": "2026-10-05T05:14:34Z",
-          "notes": "1.28.0-alpha.21 \u9225\u65BA\u20AC?\u6D60\uFF47\u721C\u7F01\u64B4\u702F\u95B2\u5D86\u702F\u9417?\n\u9236?MGCSettingManager \u6D60?7204 \u741B\u5C7D\u5D1F\u93C2\u56E6\u6B22\u93B7\u55D8\u579A 8 \u6D93\uE047\u4EB4\u7490\uFF45\u5D1F\u6D93\u20AC\u9428\u52ED\u88AB\u951B\u581D\u6093 MGC.Managers \u935B\u85C9\u6095\u7ECC\u6D2A\u68FF\u951B\u591B\u7D30\n   \u934F\uE100\u61A1 \u922B?AnnouncementManager\u951B\u5C7D\u3054\u934D?\u922B?AvatarManager\u951B\u5C7D\u53E7\u6D5C\u5EA8\u3009 \u922B?AboutPageManager\u951B?   \u6D93\u5A5A\u6F70\u93C9?\u922B?HomePanelManager\u951B\u5C7D\u6D58\u9417\u56E9\u7D26\u701B?\u922B?ImageCache\u951B\u5B5ESON \u922B?JsonHelper\u951B\u5B76I \u5BB8\u30E5\u53FF \u922B?UiHelper\u9286?   \u7035\u7470\uE63B\u741B\u5C7C\u8D1F\u6D93\u5D85\u5F49\u951B?02 \u6D93\uE045\u67DF\u5A09\u66E2\u20AC\u612A\u7AF4\u7035\u5F52\u7D88\u951B\u5C84\u6D42\u6D93\u3220\u3051\u951B\u5908\u20AC?\u9236?MGCLoader / MGCModpack \u93C0\u901B\u8D1F\u942A\u71B8\uE11C\u9428?C# \u5BB8\u30E7\u25BC\u951B\u572Bcripts/MGCLoader\u9286\u4E3Ccripts/MGCModpack\u951B\u591B\u7D1D\n   \u6D93\u5D85\u5540\u6E1A\u6FCA\u7986 dnSpy \u5997\u30E6\u58A6\u741B\u30E4\u7AF5\u951B\u5B92otnet build \u9357\u51B2\u5F72\u9351\u54C4\u5BD8\u9286?\u9236?\u934F\uE100\u61A1\u93CD?/ \u934F\u5145\u7C2C\u6924?/ \u6D93\u5A5A\u6F70\u93C9?/ \u9365\u5267\u5896\u7F02\u64B3\u74E8\u95AB\u660F\u7DEB\u9358\u71B8\u7271\u6DC7\u6FC8\u6680\u9286"
-        },
-        {
-          "version": "1.28.0-alpha.24-diag",
-          "file": "versions/1.28.0-alpha.24-diag/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.24-diag/MGCModpack.dll",
-          "sha256": "aa92bc885737691fcff99210e45624a2cac90f8734394f8ed085f1537833c031",
-          "size": 369664,
-          "publishedAt": "2026-10-05T05:14:33Z",
-          "notes": "\u9286\u612F\u7616\u93C2\uE160\u5897\u9286\u621D\u59DE\u5BB8\uFE3F\u7B02\u7459\u6395\u7E5B\u9410\u7845\u0415\u9359\u622F\u7D191.5 \u7EC9\u6391\u5534 3 \u5A06\u2605\u7D1A\u93B5\u64B3\u7D11\u748B\u51AD\u762F\u95C8\u3221\u6F98 \u002B \u6D93\u3086\uE18C\u9477\uE045\uE5C5 \u002B UnsubscribedEventCounts\u9286"
-        },
-        {
-          "version": "1.28.0-alpha.23-diag",
-          "file": "versions/1.28.0-alpha.23-diag/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.23-diag/MGCModpack.dll",
-          "sha256": "6cfbaa574e0b25f3212d1e3f9a7a02487ff9ca47ca15b556ebb3e598beeba2dd",
-          "size": 369664,
-          "publishedAt": "2026-10-05T05:14:33Z",
-          "notes": "\u9286\u612F\u7616\u93C2\uE160\u5897\u9286\u621D\u59DE UnsubscribedEventCounts \u6748\u64B3\u56AD\u951B\u6C2C\u57BD\u93C2\uE15E\u63E9\u95AB\u71B7\u56AD\u7F03\u612D\u69F8\u935A\uFE40\u6D1C\u6D93\u6052\u20AC\u5C7E\u7236\u93B4\u5FD3\u5F42\u6D5C\u5B29\u6B22\u93C3\u2540\u7C2C mod \u7481\u3224\u69C4\u9286\u5D88\u20AC\u5C7E\u7D21\u93BA\u5908\u20AC"
-        },
-        {
-          "version": "1.28.0-alpha.25-diag",
-          "file": "versions/1.28.0-alpha.25-diag/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.25-diag/MGCModpack.dll",
-          "sha256": "813b75aa00bb6ca2589766dc172d1773dbc869a5254fabfbbb75364e579a0293",
-          "size": 370176,
-          "publishedAt": "2026-10-05T05:14:32Z",
-          "notes": "\u9286\u612F\u7616\u93C2\uE160\u5897\u9286\u621D\u4E4F\u6D93\u5A45\uE757\u6769\u70B5\u5063\u7459\uFE40\u5F42\u934F\u714E\uE190 Unity \u5BB8\uFE3F\u7B05\u7459\u6391\u5E2B\u9410\u7678\u7D19\u6D93\u5A41\u7B05\u6D93\u3088\uE757\u95AE\u501F\uE17B\u951B\u5908\u20AC"
-        },
-        {
-          "version": "1.28.0-alpha.27-scenetest",
-          "file": "versions/1.28.0-alpha.27-scenetest/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.27-scenetest/MGCModpack.dll",
-          "sha256": "67a48261ffd036979be94ef5683680026de1504964bbe4346c253e23e4be84e8",
-          "size": 371712,
-          "publishedAt": "2026-10-05T05:14:31Z",
-          "notes": "\u9286\u612F\u7616\u93C2\uE160\u5897\u9286\u6223\u569C\u9354\u3125\u6E80\u93C5\uE21B\u7974\u7487\u66EA\u7D30\u935A\uE21A\u59E9 8 \u7EC9\u6391\u6097\u9477\uE044\u59E9\u6769\u6DA2\u20AC\u6C2C\u53E7\u6924\u7889\u7D1D\u9350\u5D85\u6D16\u6D93\u660F\u5F4D\u9357\u66EA\u7D1D\u7481\u677F\u7D8D\u9366\u70D8\u6AD9\u935A?\u7481\u3224\u69C4\u9470\u546E\u669F/\u701B\u6A3B\u693F\u7035\u7845\u8584\u9286"
-        },
-        {
-          "version": "1.28.0-alpha.26",
-          "file": "versions/1.28.0-alpha.26/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.26/MGCModpack.dll",
-          "sha256": "3f419f58954c05fff6f2534f601b13ec8bab614e58bc6cc21a29afc79f9d8c99",
-          "size": 366592,
-          "publishedAt": "2026-10-05T05:14:31Z",
-          "notes": "1.28.0-alpha.26\n\n\u9236?\u6DC7\uE1BC\uE632\u9286\u5C7D\u63E9\u95AB\u71B7\u56AD\u7F03\u612C\u53E7\u6D93\u5D86\u5E00 / \u9351\u8679\u7D88\u93C3\u5815\u68FF\u741A\uE0A5\u70E6\u6769?/ \u7481\u2103\u6902\u9363\u3124\u7CA0 0 \u5BEE\u20AC\u6FEE\u5B28\u20AC\u5D87\u6B91\u942A\u71B8\uE11C\u93CD\u7470\u6D1C\u951B?   ModManager.OnDestroy \u6D60\u5EA2\u6F75\u6D93\u5D89\u20AC\u20AC\u7481?mod \u6D5C\u5B29\u6B22\u9286\u4FB7Services \u9428\u52EA\u7C28\u6D60\u60F0\u3003\u93C4?static\u951B?   \u9470?mod \u7039\u70B0\u7DE5\u59E3\u5FCE\u91DC\u9366\u70D8\u6AD9\u95B2\u5D85\u7F13 \u9225\u65BA\u20AC?\u93C3\u0443\u7584\u6E1A\u5B2B\u6848\u6769\u6EC5\u6680\u9366\u3128\u3003\u95B2\u5C8B\u7D1DEnabled \u934B\u6EC3\u6E6A true\u951B?   \u941C\u2541\uE18D\u934F\u866B\u5E00\u5BEE\u20AC\u934F\u51B2\u6097\u7039\u51AA\u53CE\u93CD\u950B\u59B8 evt.FastStart \u93C0\u89C4\u579A true\u9286?   \u941C\u677F\u6E6A OnDestroy \u6D7C\u6C2C\u539B UnloadAllMods() \u9350\u5D86\u7AFB\u5BEE\u66E0\u6564\u9286?\u9236?\u6D60\uFF47\u721C\u7F01\u64B4\u702F\u95B2\u5D86\u702F\u951B\u6B41GCSettingManager \u6D60?7204 \u741B\u5C7E\u5AB6\u93B4?8 \u6D93\uE047\u4EB4\u7490\uFF45\u5D1F\u6D93\u20AC\u9428\u52ED\u88AB\u9286?\u9236?MGCLoader / MGCModpack \u93C0\u901B\u8D1F\u942A\u71B8\uE11C\u9428?C# \u5BB8\u30E7\u25BC\u951B\u5C7C\u7B09\u9350\u5D84\u7DF7\u74A7?dnSpy \u93B5\u64B9\u02C9\u6D93\u4F75\u20AC"
-        },
-        {
-          "version": "1.28.0-alpha.28-golddiag",
-          "file": "versions/1.28.0-alpha.28-golddiag/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.28-golddiag/MGCModpack.dll",
-          "sha256": "e24009fb9d03b5fa129c6c2fec0f71853ad69df6cd21960e6d1d423fec57821c",
-          "size": 373248,
-          "publishedAt": "2026-10-05T05:14:30Z",
-          "notes": "\u9286\u612F\u7616\u93C2\uE160\u5897\u9286\u621D\u59DE\u95B2\u6220\u7D88\u7487\u5A43\u67C7\u951B\u6C31\u6D3F\u93BA\u30E8\uE1F0 SettingsManager.potMat \u942A\u5B2B\u69F8\u6D93\u5D86\u69F8 null\u951B\u581D\u5585\u7039?native \u748B\u51AA\u6564 vs \u9359\u5D85\u7C2D\u9352\u6940\u5BF2\u951B\u5908\u20AC"
-        },
-        {
-          "version": "1.28.0-alpha.29-goldnative",
-          "file": "versions/1.28.0-alpha.29-goldnative/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.29-goldnative/MGCModpack.dll",
-          "sha256": "e07e08c5d25ab6eb1824672f516245f4fec9a6fe072572e6c36ec86055a034fc",
-          "size": 373760,
-          "publishedAt": "2026-10-05T05:14:00Z",
-          "notes": "\u9286\u612F\u7616\u93C2\uE160\u5897\u9286\u6220\u6D3F\u93BA\u30E8\u769F SetProceduralFloat/RebuildTextures\u951B\u5C80\u6E45 native \u93C4\uE21A\u60C1\u93B6\u6D98\u7D13\u752F\u641E\u20AC"
-        },
-        {
-          "version": "1.28.0-alpha.31-scenetest",
-          "file": "versions/1.28.0-alpha.31-scenetest/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.31-scenetest/MGCModpack.dll",
-          "sha256": "5eca51d4ba06e1a83fa8e764a56aa410b1a6b2e52d376d359f28d586c8052ad4",
-          "size": 373248,
-          "publishedAt": "2026-10-05T05:13:59Z",
-          "notes": "\u9286\u612F\u769F\u7487\u66E0\u5897\u9286\u6223\u569C\u9354\u3128\u70E6\u675E\uE104\u20AC\u6C2C\u53E7\u6924\u975B\u82DF dump \u701B\u6A3B\u693F\u7035\u7845\u8584\u951B\u5C84\u7359\u7487?SkipScene \u93C4\uE21A\u60C1\u942A\u71BA\u6B91\u93B8\u2032\u7D87 MGC\u9286"
-        },
-        {
-          "version": "1.28.0-alpha.30-img",
-          "file": "versions/1.28.0-alpha.30-img/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.30-img/MGCModpack.dll",
-          "sha256": "81a28436c6cd699a360942c6c7b76fa240fbef318eb99d8c1c6102efd5861cf8",
-          "size": 368128,
-          "publishedAt": "2026-10-05T05:13:59Z",
-          "notes": "\u934F\uE100\u61A1 [img] \u741B\u5C7D\u5534\u9365\u5267\u5896\u951B\u6C2D\uE11C\u93C2\u56E8\u5BDC\u93CD\u56EA\uE187\u9352\u56E8\uE18C\u5A13\u53C9\u714B \u002B \u9352\u56E7\u578E\u93C3\u30E5\u7E54\u951B\u6C73odManager \u9357\u6B4C\u6D47\u93C3\u5815\u20AC\u20AC\u7481?mod \u6D5C\u5B29\u6B22\u9286"
-        },
-        {
-          "version": "1.28.0-alpha.33",
-          "file": "versions/1.28.0-alpha.33/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.33/MGCModpack.dll",
-          "sha256": "f21b1a5f71b46f54e9b9a81da712b961f6db4c8f1e3619e26b23edb0fef67c8f",
-          "size": 368128,
-          "publishedAt": "2026-10-05T05:13:58Z",
-          "notes": "\u516C\u544A\u884C\u5185\u63D2\u56FE\uFF08[img]url[/img] \u6309\u6BB5\u6E32\u67D3\uFF09\uFF1B\u901A\u5173\u9875/\u5236\u4F5C\u4EBA\u5458\u4E0D\u518D\u542F\u52A8 MGC\uFF1BModManager \u5378\u8F7D\u65F6\u9000\u8BA2 mod \u4E8B\u4EF6\uFF08\u4FEE\u590D\u300C\u5173\u6389\u5FEB\u901F\u51FA\u7F50\u4ECD\u751F\u6548\u300D\uFF09\uFF1B\u65E5\u5FD7\u6539\u4E3A\u589E\u91CF\u8FFD\u52A0\uFF08\u6D88\u9664 O(N\u00B2) \u91CD\u590D\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.32-logfix",
-          "file": "versions/1.28.0-alpha.32-logfix/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.32-logfix/MGCModpack.dll",
-          "sha256": "f21b1a5f71b46f54e9b9a81da712b961f6db4c8f1e3619e26b23edb0fef67c8f",
-          "size": 368128,
-          "publishedAt": "2026-10-05T05:13:58Z",
-          "notes": "\u6DC7\uE1BC\uE632\u6D7C\u6C33\u763D\u93C3\u30E5\u7E54\u95B2\u5D85\uE632\u9350\u6B0F\u53C6\u951B\u6B4BaveToCompactString \u934F\u3129\u567A \u002B Append \u7035\u8270\u56A7 O(N\u864F) \u95B2\u5D85\uE632\u951B\u581D\u7584\u5A34?2822 \u741B\u5C7D\u5F67\u93C8?201 \u741B\u5C7D\u656E\u6D93\u20AC\u951B\u5908\u20AC\u509B\u657C\u6D93\u70D8\u5BDC Index \u6FA7\u70BA\u567A\u6769\u85C9\u59DE\u9286"
-        },
-        {
-          "version": "1.28.0-dbg.2",
-          "file": "versions/1.28.0-dbg.2/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.2/MGCModpack.dll",
-          "sha256": "8eda8ae4ebfb0b40d89b55eb87784dc56fb570afc266ca3cb60164306fd5e873",
-          "size": 446976,
-          "publishedAt": "2026-10-05T05:13:57Z",
-          "notes": "\u8BCA\u65AD\u72482\uFF1APlayAnnouncementAnimationWhenVisible \u52A0\u4E3B\u9762\u677F\u53EF\u89C1\u6027\u65E5\u5FD7 \u002B \u8BA2\u9605\u540E\u5373\u65F6\u515C\u5E95\u3002"
-        },
-        {
-          "version": "1.28.0-dbg.1",
-          "file": "versions/1.28.0-dbg.1/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.1/MGCModpack.dll",
-          "sha256": "883ee53e263e155536deb20ce339a36651f6f86bfc0777b7179256a608c04b61",
-          "size": 439296,
-          "publishedAt": "2026-10-05T05:13:57Z",
-          "notes": "\u8BCA\u65AD\u7248\uFF1AMainMenuController.Update / UIInitializer.EnsureMainMenuController \u52A0\u4E86 MenuDbg \u65E5\u5FD7\uFF0C\u7528\u4E8E\u5B9A\u4F4D Update \u662F\u5426\u6267\u884C\u3002"
-        },
-        {
-          "version": "1.28.0-dbg.3",
-          "file": "versions/1.28.0-dbg.3/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.3/MGCModpack.dll",
-          "sha256": "9c8d22ec417296317030710fca5d84da1dd171f1d9100e362fa55072757eb296",
-          "size": 442880,
-          "publishedAt": "2026-10-05T05:13:56Z",
-          "notes": "\u8BCA\u65AD\uFF1AInstallBridgeCompat / GameStartPreparingEvent \u6865\u52A0 DebugLogger\u3002"
-        },
-        {
-          "version": "1.28.0-dbg.5",
-          "file": "versions/1.28.0-dbg.5/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.5/MGCModpack.dll",
-          "sha256": "02350e46130579059eeeffc738bdfc04b2ea5f9293ea7e0db7a074b7e466ae88",
-          "size": 443904,
-          "publishedAt": "2026-10-05T05:13:55Z",
-          "notes": "\u8BCA\u65AD\uFF1APublish \u8BA2\u9605\u8005\u6570\u91CF \u002B \u6865\u8F6C\u53D1\uFF0C\u8D70 logcat \u4E0D\u9650\u6D41\u3002"
-        },
-        {
-          "version": "1.28.0-dbg.4",
-          "file": "versions/1.28.0-dbg.4/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.4/MGCModpack.dll",
-          "sha256": "61ee09b319071407b56f8f04ac2e66dbd45bbba3a400f9b7ea070b7834d71765",
-          "size": 443392,
-          "publishedAt": "2026-10-05T05:13:55Z",
-          "notes": "\u8BCA\u65AD\uFF1A\u6E38\u620F\u4E8B\u4EF6\u8F6C\u53D1\u6865\u5185\u90E8\u52A0\u65E5\u5FD7\u3002"
-        },
-        {
-          "version": "1.28.0-dbg.6",
-          "file": "versions/1.28.0-dbg.6/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.6/MGCModpack.dll",
-          "sha256": "b5d4ba94f716e1aec746cf3aef79d7ee5a0ff23ae75f004fb33a47decc7f5b3f",
-          "size": 444416,
-          "publishedAt": "2026-10-05T05:13:54Z",
-          "notes": "\u53BB\u6389\u65E5\u5FD7\u9650\u6D41\u4E0E\u53BB\u91CD\uFF08MaxPerSecond/MaxPerCategoryPerSecond/DedupeWindowSeconds \u5168 0\uFF09\uFF0CEchoToUnityConsole=true\uFF1B\u65E5\u5FD7\u5168\u90E8\u843D\u76D8\uFF0C\u4E0D\u518D\u4E22\u8BC1\u636E\u3002"
-        },
-        {
-          "version": "1.28.0-dbg.7",
-          "file": "versions/1.28.0-dbg.7/MGCModpack.dll",
-          "url": "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.7/MGCModpack.dll",
-          "sha256": "ce19dcb59e28efe9c496c30934946f672760c5b240fef7f1ce8cba5ff7a8c664",
-          "size": 445440,
-          "publishedAt": "2026-10-05T05:13:53Z",
-          "notes": "\u81EA\u68C0\uFF1A\u542F\u52A8\u65F6\u67E5 IServices \u8BA2\u9605\u8005\u6570\u5E76\u76F4\u63A5\u53D1\u4E00\u4E2A GameStartPreparingEvent\uFF0C\u9A8C\u8BC1 mod \u5904\u7406\u5668\u662F\u5426\u771F\u88AB\u8C03\u7528\u3002"
-        }
-      ]
-    },
-    {
-      "id": "mod:MGCModpack",
-      "kind": "mod",
-      "name": "MGCModpack",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "file": "mod/MGCModpack.modpack",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "49b902314b5f8eb87223700d53e0ec41afbb0431b1f8b3a0c97d773d4062ff56",
-          "size": 110660,
-          "publishedAt": "2026-10-05T05:15:51Z"
-        }
-      ]
-    }
-  ],
-  "assets": [
-    {
-      "id": "picture:about-icon.png",
-      "kind": "picture",
-      "name": "about-icon.png",
-      "file": "picture/about-icon.png",
-      "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/about-icon.png",
-      "sha256": "5cd12b9cd7508f4c115c44514f41e8cb3aa24bf07fb2309202618eaf2af2cc90",
-      "size": 253621
-    },
-    {
-      "id": "picture:announcement-icon.png",
-      "kind": "picture",
-      "name": "announcement-icon.png",
-      "file": "picture/announcement-icon.png",
-      "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/announcement-icon.png",
-      "sha256": "84e306c160ea1833f967b2c01d2a5a81951ab5f9340808bc84d61ece2939cbb5",
-      "size": 483
-    },
-    {
-      "id": "picture:panel-placeholder.png",
-      "kind": "picture",
-      "name": "panel-placeholder.png",
-      "file": "picture/panel-placeholder.png",
-      "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/panel-placeholder.png",
-      "sha256": "67cd42c3910b13bc39b5294807c371ee3e1f41954e4b67c4ad44dd6a1e312e0a",
-      "size": 1286630
-    }
-  ]
+    "schema":  2,
+    "rev":  3,
+    "generatedAt":  "2026-10-05T06:09:26Z",
+    "generator":  "RepoEditor/2.0",
+    "channels":  {
+                     "stable":  {
+                                    "label":  "正式",
+                                    "order":  10,
+                                    "target":  {
+                                                   "type":  "all"
+                                               },
+                                    "pin":  {
+                                                "loader:MGCModpack":  "1.28.0-alpha.33",
+                                                "mod:MGCModpack":  "1.0.0"
+                                            }
+                                },
+                     "test":  {
+                                  "label":  "测试",
+                                  "order":  20,
+                                  "target":  {
+                                                 "type":  "devices",
+                                                 "ids":  [
+                                                             {
+                                                                 "id":  "3fd4185c8eedba35",
+                                                                 "name":  "Mi Note 3 / jason（测试机）"
+                                                             }
+                                                         ]
+                                             },
+                                  "pin":  {
+                                              "loader:MGCModpack":  "1.28.0-alpha.33",
+                                              "mod:MGCModpack":  "1.0.0"
+                                          }
+                              }
+                 },
+    "artifacts":  [
+                      {
+                          "id":  "loader:MGCModpack",
+                          "kind":  "loader",
+                          "name":  "MGCModpack",
+                          "versions":  [
+                                           {
+                                               "version":  "1.28.0-alpha",
+                                               "file":  "versions/1.28.0-alpha/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
+                                               "sha256":  "b2b84ca6f4082d6af483b5ee41da861b9391d298ebf60f6f60ecc0bbc7f44b5b",
+                                               "size":  373760,
+                                               "publishedAt":  "2026-10-05T05:15:51Z",
+                                               "notes":  "修复 mod 关闭不生效：HotReload=false 的 mod（Sideways/无背景）关闭时现在会真正 Unload 并复原重力与旋转；ModBase.Unload 各步加 try 保证 OnUnload 一定执行；Publish 记录无人订阅事件"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.3",
+                                               "file":  "versions/1.28.0-alpha.3/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.3/MGCModpack.dll",
+                                               "sha256":  "36aa82e7cfbbdd81a9486ff015a22051eae3734c71ec04ee71621e7333452b72",
+                                               "size":  398336,
+                                               "publishedAt":  "2026-10-05T05:15:50Z",
+                                               "notes":  "重构 Mod 下载页：从 ModPanelTabs 搬到 ModpackUIManager，改用 UIControls 真按钮（不再手搓射线轮询）；行状态用嵌套类 DownloadRow 收拢（原来散在三个平行 List）；PollClicks/PollLabels 保留为空壳（编译器生成的状态机仍引用）。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.2",
+                                               "file":  "versions/1.28.0-alpha.2/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.2/MGCModpack.dll",
+                                               "sha256":  "533de7dc556f0729ab114203c76b5a0990c359512c7e9b9ac8fc1d71ba26e8f6",
+                                               "size":  385536,
+                                               "publishedAt":  "2026-10-05T05:15:50Z",
+                                               "notes":  "修复 Mod 下载页：入口按钮不再被自己隐藏（SetPage 不再关 ModList）；下载列表改挂设置内容区；新增 OnSettingsCleared 处理 Destroy 延迟导致的死引用。修复重置场景后公告按钮失效：Coroutine 非 UnityObject，改判 _annPollerHost 让轮询可重启。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.4",
+                                               "file":  "versions/1.28.0-alpha.4/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.4/MGCModpack.dll",
+                                               "sha256":  "e5de51d24d076c92f5331840d7643e693728c3d0a10d1eec9bdee5b17d2546f0",
+                                               "size":  399360,
+                                               "publishedAt":  "2026-10-05T05:15:49Z",
+                                               "notes":  "PackDownloader → MGC.ModSystem.ModpackDownloader（改名并移入 ModSystem）；移除 ModPanelTabs（连同孤儿状态机）；修下载完成后整页 UI 被清空（不再调 RefreshModList）；下载行改垂直视图自适应文字。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.5",
+                                               "file":  "versions/1.28.0-alpha.5/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.5/MGCModpack.dll",
+                                               "sha256":  "a725c78bf449b5b6a75817609dd884e229de9e03816718becf414bdc1eeff899",
+                                               "size":  399872,
+                                               "publishedAt":  "2026-10-05T05:15:48Z",
+                                               "notes":  "Mod 管理的启用/禁用改用 CreateToggle（复用 UIControls 的激活色/默认色反馈，与 ModUIManager 一致），去掉多余的启用/禁用两个按键。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.6",
+                                               "file":  "versions/1.28.0-alpha.6/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.6/MGCModpack.dll",
+                                               "sha256":  "369cd448f72f13c554d738396194a9984a9802ad74598f6d8cd113c3ab697ee8",
+                                               "size":  399872,
+                                               "publishedAt":  "2026-10-05T05:15:47Z",
+                                               "notes":  "修复下载的 .modpack 无法加载：ZipHelper.ExtractToMemory 强制 UTF-8 解码条目名（缺 UTF-8 标志位的包不再回退到 Encoding 936/GBK 而抛异常）。含：Mod 管理改用 CreateToggle、ModpackDownloader 改名迁移、移除 ModPanelTabs。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.7",
+                                               "file":  "versions/1.28.0-alpha.7/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.7/MGCModpack.dll",
+                                               "sha256":  "a53f2844f462b12cf670736a61c6a3e0347f62ba028f9a6df32d47c779046ba9",
+                                               "size":  400384,
+                                               "publishedAt":  "2026-10-05T05:15:16Z",
+                                               "notes":  "修复下载后不自动加载：RefreshScan 补 LoadEnabledModpacks（之前只扫描+缓存，DLL 不注册，必须重启）。含 alpha.6 的 UTF-8 条目名兜底（缺 UTF-8 标志的包不再报 Encoding 936）。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.6-diag",
+                                               "file":  "versions/1.28.0-alpha.6-diag/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.6-diag/MGCModpack.dll",
+                                               "sha256":  "fcd1c7034eb1322130c60cfb8ffdb5f9dbc09aa6ac2e64867df66fd21cd51c3c",
+                                               "size":  400896,
+                                               "publishedAt":  "2026-10-05T05:15:16Z",
+                                               "notes":  "临时诊断版：打印 ModsDir / 目录内容 / 匹配数"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.8",
+                                               "file":  "versions/1.28.0-alpha.8/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.8/MGCModpack.dll",
+                                               "sha256":  "4fde1a48d782be92f8e477423437af27901c3582e7e2c5f5f3b58f742acc63ea",
+                                               "size":  401920,
+                                               "publishedAt":  "2026-10-05T05:15:15Z",
+                                               "notes":  "整合包状态清理：Mods 里已不存在的 .modpack，其 ModpackState 会自动清除（重新下载即为关闭态，需手动开启）；各 mod 自身配置保留不动。新增 ConfigService.Keys。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.9",
+                                               "file":  "versions/1.28.0-alpha.9/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.9/MGCModpack.dll",
+                                               "sha256":  "6bb79c184a45e12f4a3d6618edce8a36a32ed039d61dcd7044692977d66bb831",
+                                               "size":  401920,
+                                               "publishedAt":  "2026-10-05T05:15:14Z",
+                                               "notes":  "整合包状态清理补上启动路径：Initialize 也调用 PruneMissingModpackState（之前只在 RefreshScan/UI 刷新时清，启动时漏了，所以删除 .modpack 后状态一直残留）。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.11",
+                                               "file":  "versions/1.28.0-alpha.11/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.11/MGCModpack.dll",
+                                               "sha256":  "a02c2570190513b0642f5c4cba910c26da6856779080075ffc2e9adabd7c9cf6",
+                                               "size":  402432,
+                                               "publishedAt":  "2026-10-05T05:15:13Z",
+                                               "notes":  "地图默认框选（真正的修复）：兜底选中第一个地图时同时 SaveConfig 落盘。之前只设内存，紧接着 map.Load()->LoadConfig() 会从磁盘读回 false 覆盖掉，导致首次安装地图页一项都不高亮。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.10",
+                                               "file":  "versions/1.28.0-alpha.10/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.10/MGCModpack.dll",
+                                               "sha256":  "68f48589845679c5a5db2b43da975d8abc674a5e26ec855037167f999fea2951",
+                                               "size":  402432,
+                                               "publishedAt":  "2026-10-05T05:15:13Z",
+                                               "notes":  "① 首次安装地图页默认地图不框选：MapManager.LoadEnabledMap 兜底选第一个时把 willbeenabled 落上（地图页是按它找高亮的）。② 移除 Mod 管理 / 密钥管理 / Mod 下载页的「← 返回」按钮。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.12",
+                                               "file":  "versions/1.28.0-alpha.12/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.12/MGCModpack.dll",
+                                               "sha256":  "4111a29dc62af6429585bbea45373d245237346c3b3bf10edcb32918b9bea614",
+                                               "size":  412672,
+                                               "publishedAt":  "2026-10-05T05:15:09Z",
+                                               "notes":  "① Mod 下载共用按键三态：未装=下载 / 有旧版本(哈希不同)=更新 / 已最新=删除（新增 IsUpdateAvailable、HasLocalFile）。② 下载页「共 N 个包」移到刷新按钮上方。③ 公告栏下滑动画抽到 PanelTransition.PlaySlideDown，手动打开也重放；AnnouncementEnterAnimation 委托同一实现。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.13",
+                                               "file":  "versions/1.28.0-alpha.13/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.13/MGCModpack.dll",
+                                               "sha256":  "e6941767f74bf328b601dbfde61da71f43e8321607efd9bb34bb2c1a556ba66d",
+                                               "size":  415744,
+                                               "publishedAt":  "2026-10-05T05:14:39Z",
+                                               "notes":  "① 公告栏首次自动弹出也有动画：动画改用独立协程 _annAnimCoroutine 发起，不再 yield 嵌套进 AnnouncementRoutine —— 之前 ApplyAnnouncement 第二次执行会 StopCoroutine 把正在播的动画掐断。② 自动/手动两条路径统一走 PlayAnnouncementAnimation。③ 补上缺失的公告按钮图标 icon/announcement-icon.png（之前 404）。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.15",
+                                               "file":  "versions/1.28.0-alpha.15/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.15/MGCModpack.dll",
+                                               "sha256":  "c047ba4f7ef7317a50ac2b8aebe4c86fc8beaaf3155715e5c9bbf95def410796",
+                                               "size":  438784,
+                                               "publishedAt":  "2026-10-05T05:14:38Z",
+                                               "notes":  "公告栏动画改为事件驱动（不再轮询）：MenuToggledEvent 此前无人发布，现由 PauseButtonManager.DetectMenuVisibilityChange（复用已有 Update 做边沿检测，零额外开销）+ 两处 ToggleMenu 发布；MGCSettingManager 订阅后在菜单打开时播动画。移除 WaitMainPanelThenAnimate 轮询协程。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.14",
+                                               "file":  "versions/1.28.0-alpha.14/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.14/MGCModpack.dll",
+                                               "sha256":  "b46766bbacc58656326112e3040cfa8c4187d825644aa5f9587756f3f76f207e",
+                                               "size":  432640,
+                                               "publishedAt":  "2026-10-05T05:14:38Z",
+                                               "notes":  "公告栏动画改为「等主面板真正可见后」再播：新增 IsMainPanelVisible / PlayAnnouncementAnimationWhenVisible / WaitMainPanelThenAnimate。之前固定等 1.5 秒，与主面板何时显示无关，动画在用户看到主面板前就跑完了（表现为直接出现）。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.17",
+                                               "file":  "versions/1.28.0-alpha.17/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.17/MGCModpack.dll",
+                                               "sha256":  "3755913704aefc6afe1f4b35865ff4e2f25f3471481d847f61c9f1a621405db9",
+                                               "size":  442880,
+                                               "publishedAt":  "2026-10-05T05:14:37Z",
+                                               "notes":  "公告栏动画收尾：① OnMenuToggled 加 _annAutoShowConsumed 闸门——启动首次主菜单可见时自动弹出一次，之后菜单再开合不再自动弹（只能手动点顶栏）。② 移除 PauseButtonManager 里重复的 MenuToggledEvent 发布（与 MainMenuController 重复，会让动画播两遍）。③ 清理调试日志。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.16",
+                                               "file":  "versions/1.28.0-alpha.16/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.16/MGCModpack.dll",
+                                               "sha256":  "9f1559004e93ceb01cb7a8a03c9e0b96a9cb8007f35c021b12c53f6437bbcc62",
+                                               "size":  438784,
+                                               "publishedAt":  "2026-10-05T05:14:37Z",
+                                               "notes":  "公告栏动画真正事件驱动：观察点放在 MainMenuController（启动即创建、常驻全程），Update 里做可见性边沿检测并发布 MenuToggledEvent；MGCSettingManager 订阅后于菜单打开时播动画。修正 alpha.15 把观察点放在 PauseButtonManager 的失误——那个组件挂在暂停键上，主菜单阶段未启用，Update 不跑。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.18",
+                                               "file":  "versions/1.28.0-alpha.18/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.18/MGCModpack.dll",
+                                               "sha256":  "addc28cfe70472b688201f87a5b3c2771c55a42f7ebc04ac8a39accbd26c6920",
+                                               "size":  444928,
+                                               "publishedAt":  "2026-10-05T05:14:36Z",
+                                               "notes":  "修复 mod 实例泄漏（快速出罐失效 / PoseControl 事件失灵的根因）。IServices 事件表改为弱引用保存实例委托：MGCInitializer 没有 DontDestroyOnLoad，每局场景重建都会新建一整套 mod 实例；原来实例委托被静态表强引用，旧 mod 永远退不出去，其 Enabled/WillBeEnabled 停在 true → 关掉开关也不生效，且订阅者随每局 +1。静态方法委托仍走强引用（无宿主，弱引用会被立刻回收）。去掉日志限流与去重（MaxPerSecond/MaxPerCategoryPerSecond/DedupeWindowSeconds 全 0），EchoToUnityConsole=true，日志全部落盘不再丢证据。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.20-dbg",
+                                               "file":  "versions/1.28.0-alpha.20-dbg/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.20-dbg/MGCModpack.dll",
+                                               "sha256":  "4adf216b815471e479933f41bfae21f434e6b651adc74f3c8f4f481f5717fdac",
+                                               "size":  446464,
+                                               "publishedAt":  "2026-10-05T05:14:35Z",
+                                               "notes":  "【调试版】回退 IServices 事件表为强引用（修复快速出罐失效：弱引用导致 mod 实例被 GC 后事件静默，实测 40 次调用 → 0 次）。【调试版】加场景切换入口：F9=进 Reward Loader Mobile，F10=回 Mian，或三指长按 1.2 秒弹面板。用于排查通关页 mod 残留 / 场景重置实例泄漏。发布版会去掉这个入口。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.19",
+                                               "file":  "versions/1.28.0-alpha.19/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.19/MGCModpack.dll",
+                                               "sha256":  "8d9a8d9f276504fba740624849706c0edbe375bd52893beccccfbf839bb2350b",
+                                               "size":  444928,
+                                               "publishedAt":  "2026-10-05T05:14:35Z",
+                                               "notes":  "把事件桥的安装从 MGCStorage.EnsureDirs 移到 MGCInitializer.Start。EnsureDirs 只建目录；桥的安装属于初始化编排，归 MGCInitializer 管。顺带解掉隐患：EnsureDirs 若被别处提前调用，桥会跟着装上（那时 DebugLogger 可能还没 Init）。行为不变：桥仍是过渡层（11 个游戏事件 + 2 个名字钩子），static 守卫 + Subscribe 内部 Contains 去重保证幂等。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.22-diag",
+                                               "file":  "versions/1.28.0-alpha.22-diag/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.22-diag/MGCModpack.dll",
+                                               "sha256":  "9f1c0736209aa64857ee2d7aeeaad0b69e90a353403fb667b7c3fdd60e2fa1cc",
+                                               "size":  369152,
+                                               "publishedAt":  "2026-10-05T05:14:34Z",
+                                               "notes":  "銆愯瘖鏂増銆戝姞涓ゆ鑷锛氣憼 IServices.Publish 鈶?MGCBridge.Publish锛岀敤鏉ュ畾浣嶅揩閫熷嚭缃愰摼鏉℃柇鍦ㄥ摢涓€娈点€備粎渚涙祴璇曟満鍨嬨€"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.21",
+                                               "file":  "versions/1.28.0-alpha.21/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.21/MGCModpack.dll",
+                                               "sha256":  "2470bc782e6b82b09aa0afd9b37dc10bba1f000014224cacf4a84c69fd29a044",
+                                               "size":  366080,
+                                               "publishedAt":  "2026-10-05T05:14:34Z",
+                                               "notes":  "1.28.0-alpha.21 鈥斺€?浠ｇ爜缁撴瀯閲嶆瀯鐗?\n鈶?MGCSettingManager 浠?7204 琛屽崟鏂囦欢鎷嗘垚 8 涓亴璐ｅ崟涓€鐨勭被锛堝悓 MGC.Managers 鍛藉悕绌洪棿锛夛細\n   鍏憡 鈫?AnnouncementManager锛屽ご鍍?鈫?AvatarManager锛屽叧浜庨〉 鈫?AboutPageManager锛?   涓婚潰鏉?鈫?HomePanelManager锛屽浘鐗囩紦瀛?鈫?ImageCache锛孞SON 鈫?JsonHelper锛孶I 宸ュ叿 鈫?UiHelper銆?   瀵瑰琛屼负涓嶅彉锛?02 涓柟娉曢€愪竴瀵归綈锛岄浂涓㈠け锛夈€?鈶?MGCLoader / MGCModpack 鏀逛负鐪熸鐨?C# 宸ョ▼锛圫cripts/MGCLoader銆丼cripts/MGCModpack锛夛紝\n   涓嶅啀渚濊禆 dnSpy 妗ユ墦琛ヤ竵锛宒otnet build 鍗冲彲鍑哄寘銆?鈶?鍏憡鏍?/ 鍏充簬椤?/ 涓婚潰鏉?/ 鍥剧墖缂撳瓨閫昏緫鍘熸牱淇濈暀銆"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.24-diag",
+                                               "file":  "versions/1.28.0-alpha.24-diag/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.24-diag/MGCModpack.dll",
+                                               "sha256":  "aa92bc885737691fcff99210e45624a2cac90f8734394f8ed085f1537833c031",
+                                               "size":  369664,
+                                               "publishedAt":  "2026-10-05T05:14:33Z",
+                                               "notes":  "銆愯瘖鏂増銆戝姞宸︿笂瑙掕繛鐐硅Е鍙戯紙1.5 绉掑唴 3 娆★級鎵撳紑璋冭瘯闈㈡澘 + 涓ゆ鑷 + UnsubscribedEventCounts銆"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.23-diag",
+                                               "file":  "versions/1.28.0-alpha.23-diag/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.23-diag/MGCModpack.dll",
+                                               "sha256":  "6cfbaa574e0b25f3212d1e3f9a7a02487ff9ca47ca15b556ebb3e598beeba2dd",
+                                               "size":  369664,
+                                               "publishedAt":  "2026-10-05T05:14:33Z",
+                                               "notes":  "銆愯瘖鏂増銆戝姞 UnsubscribedEventCounts 杈撳嚭锛氬垽鏂揩閫熷嚭缃愭槸鍚﹀洜涓恒€屾父鎴忓彂浜嬩欢鏃╀簬 mod 璁㈤槄銆嶈€屾紡鎺夈€"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.25-diag",
+                                               "file":  "versions/1.28.0-alpha.25-diag/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.25-diag/MGCModpack.dll",
+                                               "sha256":  "813b75aa00bb6ca2589766dc172d1773dbc869a5254fabfbbb75364e579a0293",
+                                               "size":  370176,
+                                               "publishedAt":  "2026-10-05T05:14:32Z",
+                                               "notes":  "銆愯瘖鏂増銆戝乏涓婅杩炵偣瑙﹀彂鍏煎 Unity 宸︿笅瑙掑師鐐癸紙涓婁笅涓よ閮借锛夈€"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.27-scenetest",
+                                               "file":  "versions/1.28.0-alpha.27-scenetest/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.27-scenetest/MGCModpack.dll",
+                                               "sha256":  "67a48261ffd036979be94ef5683680026de1504964bbe4346c253e23e4be84e8",
+                                               "size":  371712,
+                                               "publishedAt":  "2026-10-05T05:14:31Z",
+                                               "notes":  "銆愯瘖鏂増銆戣嚜鍔ㄥ満鏅祴璇曪細鍚姩 8 绉掑悗鑷姩杩涢€氬叧椤碉紝鍐嶅洖涓昏彍鍗曪紝璁板綍鍦烘櫙鍚?璁㈤槄鑰呮暟/瀛樻椿瀵硅薄銆"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.26",
+                                               "file":  "versions/1.28.0-alpha.26/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.26/MGCModpack.dll",
+                                               "sha256":  "3f419f58954c05fff6f2534f601b13ec8bab614e58bc6cc21a29afc79f9d8c99",
+                                               "size":  366592,
+                                               "publishedAt":  "2026-10-05T05:14:31Z",
+                                               "notes":  "1.28.0-alpha.26\n\n鈶?淇銆屽揩閫熷嚭缃愬叧涓嶆帀 / 鍑虹綈鏃堕棿琚烦杩?/ 璁℃椂鍣ㄤ粠 0 寮€濮嬨€嶇殑鐪熸鏍瑰洜锛?   ModManager.OnDestroy 浠庢潵涓嶉€€璁?mod 浜嬩欢銆侷Services 鐨勪簨浠惰〃鏄?static锛?   鑰?mod 瀹炰緥姣忎釜鍦烘櫙閲嶅缓 鈥斺€?鏃у疄渚嬫案杩滅暀鍦ㄨ〃閲岋紝Enabled 鍋滃湪 true锛?   鐜╁鍏虫帀寮€鍏冲悗瀹冪収鏍锋妸 evt.FastStart 鏀规垚 true銆?   鐜板湪 OnDestroy 浼氬厛 UnloadAllMods() 鍐嶆竻寮曠敤銆?鈶?浠ｇ爜缁撴瀯閲嶆瀯锛歁GCSettingManager 浠?7204 琛屾媶鎴?8 涓亴璐ｅ崟涓€鐨勭被銆?鈶?MGCLoader / MGCModpack 鏀逛负鐪熸鐨?C# 宸ョ▼锛屼笉鍐嶄緷璧?dnSpy 鎵撹ˉ涓併€"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.28-golddiag",
+                                               "file":  "versions/1.28.0-alpha.28-golddiag/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.28-golddiag/MGCModpack.dll",
+                                               "sha256":  "e24009fb9d03b5fa129c6c2fec0f71853ad69df6cd21960e6d1d423fec57821c",
+                                               "size":  373248,
+                                               "publishedAt":  "2026-10-05T05:14:30Z",
+                                               "notes":  "銆愯瘖鏂増銆戝姞閲戠綈璇婃柇锛氱洿鎺ヨ SettingsManager.potMat 鐪嬫槸涓嶆槸 null锛堝喅瀹?native 璋冪敤 vs 鍙嶅簭鍒楀寲锛夈€"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.29-goldnative",
+                                               "file":  "versions/1.28.0-alpha.29-goldnative/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.29-goldnative/MGCModpack.dll",
+                                               "sha256":  "e07e08c5d25ab6eb1824672f516245f4fec9a6fe072572e6c36ec86055a034fc",
+                                               "size":  373760,
+                                               "publishedAt":  "2026-10-05T05:14:00Z",
+                                               "notes":  "銆愯瘖鏂増銆戠洿鎺ヨ皟 SetProceduralFloat/RebuildTextures锛岀湅 native 鏄惁鎶涘紓甯搞€"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.31-scenetest",
+                                               "file":  "versions/1.28.0-alpha.31-scenetest/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.31-scenetest/MGCModpack.dll",
+                                               "sha256":  "5eca51d4ba06e1a83fa8e764a56aa410b1a6b2e52d376d359f28d586c8052ad4",
+                                               "size":  373248,
+                                               "publishedAt":  "2026-10-05T05:13:59Z",
+                                               "notes":  "銆愯皟璇曠増銆戣嚜鍔ㄨ烦杞€氬叧椤靛苟 dump 瀛樻椿瀵硅薄锛岄獙璇?SkipScene 鏄惁鐪熺殑鎸′綇 MGC銆"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.30-img",
+                                               "file":  "versions/1.28.0-alpha.30-img/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.30-img/MGCModpack.dll",
+                                               "sha256":  "81a28436c6cd699a360942c6c7b76fa240fbef318eb99d8c1c6102efd5861cf8",
+                                               "size":  368128,
+                                               "publishedAt":  "2026-10-05T05:13:59Z",
+                                               "notes":  "鍏憡 [img] 琛屽唴鍥剧墖锛氭鏂囨寜鏍囪鍒囨娓叉煋 + 鍒囧垎鏃ュ織锛汳odManager 鍗歌浇鏃堕€€璁?mod 浜嬩欢銆"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.33",
+                                               "file":  "versions/1.28.0-alpha.33/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.33/MGCModpack.dll",
+                                               "sha256":  "f21b1a5f71b46f54e9b9a81da712b961f6db4c8f1e3619e26b23edb0fef67c8f",
+                                               "size":  368128,
+                                               "publishedAt":  "2026-10-05T05:13:58Z",
+                                               "notes":  "公告行内插图（[img]url[/img] 按段渲染）；通关页/制作人员不再启动 MGC；ModManager 卸载时退订 mod 事件（修复「关掉快速出罐仍生效」）；日志改为增量追加（消除 O(N²) 重复）。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-alpha.32-logfix",
+                                               "file":  "versions/1.28.0-alpha.32-logfix/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.32-logfix/MGCModpack.dll",
+                                               "sha256":  "f21b1a5f71b46f54e9b9a81da712b961f6db4c8f1e3619e26b23edb0fef67c8f",
+                                               "size":  368128,
+                                               "publishedAt":  "2026-10-05T05:13:58Z",
+                                               "notes":  "淇浼氳瘽鏃ュ織閲嶅鍐欏叆锛歋aveToCompactString 鍏ㄩ噺 + Append 瀵艰嚧 O(N虏) 閲嶅锛堝疄娴?2822 琛屽彧鏈?201 琛屽敮涓€锛夈€傛敼涓烘寜 Index 澧為噺杩藉姞銆"
+                                           },
+                                           {
+                                               "version":  "1.28.0-dbg.2",
+                                               "file":  "versions/1.28.0-dbg.2/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.2/MGCModpack.dll",
+                                               "sha256":  "8eda8ae4ebfb0b40d89b55eb87784dc56fb570afc266ca3cb60164306fd5e873",
+                                               "size":  446976,
+                                               "publishedAt":  "2026-10-05T05:13:57Z",
+                                               "notes":  "诊断版2：PlayAnnouncementAnimationWhenVisible 加主面板可见性日志 + 订阅后即时兜底。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-dbg.1",
+                                               "file":  "versions/1.28.0-dbg.1/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.1/MGCModpack.dll",
+                                               "sha256":  "883ee53e263e155536deb20ce339a36651f6f86bfc0777b7179256a608c04b61",
+                                               "size":  439296,
+                                               "publishedAt":  "2026-10-05T05:13:57Z",
+                                               "notes":  "诊断版：MainMenuController.Update / UIInitializer.EnsureMainMenuController 加了 MenuDbg 日志，用于定位 Update 是否执行。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-dbg.3",
+                                               "file":  "versions/1.28.0-dbg.3/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.3/MGCModpack.dll",
+                                               "sha256":  "9c8d22ec417296317030710fca5d84da1dd171f1d9100e362fa55072757eb296",
+                                               "size":  442880,
+                                               "publishedAt":  "2026-10-05T05:13:56Z",
+                                               "notes":  "诊断：InstallBridgeCompat / GameStartPreparingEvent 桥加 DebugLogger。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-dbg.5",
+                                               "file":  "versions/1.28.0-dbg.5/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.5/MGCModpack.dll",
+                                               "sha256":  "02350e46130579059eeeffc738bdfc04b2ea5f9293ea7e0db7a074b7e466ae88",
+                                               "size":  443904,
+                                               "publishedAt":  "2026-10-05T05:13:55Z",
+                                               "notes":  "诊断：Publish 订阅者数量 + 桥转发，走 logcat 不限流。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-dbg.4",
+                                               "file":  "versions/1.28.0-dbg.4/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.4/MGCModpack.dll",
+                                               "sha256":  "61ee09b319071407b56f8f04ac2e66dbd45bbba3a400f9b7ea070b7834d71765",
+                                               "size":  443392,
+                                               "publishedAt":  "2026-10-05T05:13:55Z",
+                                               "notes":  "诊断：游戏事件转发桥内部加日志。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-dbg.6",
+                                               "file":  "versions/1.28.0-dbg.6/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.6/MGCModpack.dll",
+                                               "sha256":  "b5d4ba94f716e1aec746cf3aef79d7ee5a0ff23ae75f004fb33a47decc7f5b3f",
+                                               "size":  444416,
+                                               "publishedAt":  "2026-10-05T05:13:54Z",
+                                               "notes":  "去掉日志限流与去重（MaxPerSecond/MaxPerCategoryPerSecond/DedupeWindowSeconds 全 0），EchoToUnityConsole=true；日志全部落盘，不再丢证据。"
+                                           },
+                                           {
+                                               "version":  "1.28.0-dbg.7",
+                                               "file":  "versions/1.28.0-dbg.7/MGCModpack.dll",
+                                               "url":  "https://aWinHimOP.github.io/GettingOverIt-MGCModpack/versions/1.28.0-dbg.7/MGCModpack.dll",
+                                               "sha256":  "ce19dcb59e28efe9c496c30934946f672760c5b240fef7f1ce8cba5ff7a8c664",
+                                               "size":  445440,
+                                               "publishedAt":  "2026-10-05T05:13:53Z",
+                                               "notes":  "自检：启动时查 IServices 订阅者数并直接发一个 GameStartPreparingEvent，验证 mod 处理器是否真被调用。"
+                                           }
+                                       ]
+                      },
+                      {
+                          "id":  "mod:MGCModpack",
+                          "kind":  "mod",
+                          "name":  "MGCModpack",
+                          "versions":  [
+                                           {
+                                               "version":  "1.0.0",
+                                               "file":  "mod/MGCModpack.modpack",
+                                               "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
+                                               "sha256":  "49b902314b5f8eb87223700d53e0ec41afbb0431b1f8b3a0c97d773d4062ff56",
+                                               "size":  110660,
+                                               "publishedAt":  "2026-10-05T05:15:51Z"
+                                           }
+                                       ]
+                      }
+                  ],
+    "assets":  [
+                   {
+                       "id":  "picture:about-icon.png",
+                       "kind":  "picture",
+                       "name":  "about-icon.png",
+                       "file":  "picture/about-icon.png",
+                       "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/about-icon.png",
+                       "sha256":  "5cd12b9cd7508f4c115c44514f41e8cb3aa24bf07fb2309202618eaf2af2cc90",
+                       "size":  253621
+                   },
+                   {
+                       "id":  "picture:announcement-icon.png",
+                       "kind":  "picture",
+                       "name":  "announcement-icon.png",
+                       "file":  "picture/announcement-icon.png",
+                       "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/announcement-icon.png",
+                       "sha256":  "84e306c160ea1833f967b2c01d2a5a81951ab5f9340808bc84d61ece2939cbb5",
+                       "size":  483
+                   },
+                   {
+                       "id":  "picture:panel-placeholder.png",
+                       "kind":  "picture",
+                       "name":  "panel-placeholder.png",
+                       "file":  "picture/panel-placeholder.png",
+                       "url":  "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/panel-placeholder.png",
+                       "sha256":  "67cd42c3910b13bc39b5294807c371ee3e1f41954e4b67c4ad44dd6a1e312e0a",
+                       "size":  1286630
+                   }
+               ]
 }
