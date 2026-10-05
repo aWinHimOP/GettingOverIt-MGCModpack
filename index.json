@@ -1,7 +1,7 @@
 {
     "schema":  2,
-    "rev":  4,
-    "generatedAt":  "2026-10-05T06:59:52Z",
+    "rev":  5,
+    "generatedAt":  "2026-10-05T07:00:08Z",
     "generator":  "RepoEditor/2.0",
     "channels":  {
                      "stable":  {
@@ -28,7 +28,7 @@
                                                          ]
                                              },
                                   "pin":  {
-                                              "loader:MGCModpack":  "1.28.0-alpha.33",
+                                              "loader:MGCModpack":  "1.28.0-alpha.6",
                                               "mod:MGCModpack":  "1.0.0"
                                           }
                               }
