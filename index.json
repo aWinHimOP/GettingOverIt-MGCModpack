@@ -1,7 +1,7 @@
 {
     "schema": 2,
-    "rev": 14,
-    "generatedAt": "2026-10-05T08:55:08Z",
+    "rev": 15,
+    "generatedAt": "2026-10-05T09:13:30Z",
     "generator": "RepoEditor/2.0",
     "channels": {
         "stable": {
@@ -29,7 +29,7 @@
                 ]
             },
             "pin": {
-                "loader:MGCModpack": "1.28.0-alpha.2",
+                "loader:MGCModpack": "1.28.0-alpha.3",
                 "mod:MGCModpack": "1.0.0",
                 "map:MGCModpack": "1.0.0"
             }
@@ -41,6 +41,15 @@
             "kind": "loader",
             "name": "MGCModpack",
             "versions": [
+                {
+                    "version": "1.28.0-alpha.3",
+                    "file": "versions/1.28.0-alpha.3/MGCModpack.dll",
+                    "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.3/MGCModpack.dll",
+                    "sha256": "fad9ebb30962099bc89cf1e6a4644254ed7daa0ba1c1bea6c6017fa40cfe058b",
+                    "size": 394240,
+                    "publishedAt": "2026-10-05T09:13:30Z",
+                    "notes": "三份配置分离 + 图片走 assets + 关于页改名"
+                },
                 {
                     "version": "1.28.0-alpha.2",
                     "file": "versions/1.28.0-alpha.2/MGCModpack.dll",
