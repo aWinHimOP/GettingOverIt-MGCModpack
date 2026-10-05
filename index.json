@@ -1,7 +1,7 @@
 {
     "schema": 2,
-    "rev": 28,
-    "generatedAt": "2026-10-05T12:15:10Z",
+    "rev": 29,
+    "generatedAt": "2026-10-05T12:28:22Z",
     "generator": "RepoEditor/2.0",
     "channels": {
         "stable": {
@@ -190,7 +190,10 @@
                     "sha256": "d6e42b54394fbf13dc29d7db2b33706b84cbed23ac4c63f40be0ed5cffcba8f5",
                     "size": 40086493,
                     "publishedAt": "2026-10-05T08:19:57Z",
-                    "notes": "MGC 官图（38.2 MB）"
+                    "notes": "MGC 官图（38.2 MB）",
+                    "meta": {
+                        "thumbnail": "picture/map-thumbnail-mgcmappack.png"
+                    }
                 }
             ]
         },
@@ -264,6 +267,15 @@
             "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/panel-placeholder.png",
             "sha256": "67cd42c3910b13bc39b5294807c371ee3e1f41954e4b67c4ad44dd6a1e312e0a",
             "size": 1286630
+        },
+        {
+            "id": "picture:map-thumbnail-mgcmappack.png",
+            "kind": "picture",
+            "name": "map-thumbnail-mgcmappack.png",
+            "file": "picture/map-thumbnail-mgcmappack.png",
+            "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/map-thumbnail-mgcmappack.png",
+            "sha256": "eb650075834fdd6431391af29fe74e0876be461486a59f8f25104654b491c5d9",
+            "size": 428116
         }
     ]
 }
