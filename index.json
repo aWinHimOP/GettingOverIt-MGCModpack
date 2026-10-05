@@ -1,215 +1,224 @@
 {
-  "schema": 2,
-  "rev": 21,
-  "generatedAt": "2026-10-05T10:40:48Z",
-  "generator": "RepoEditor/2.0",
-  "channels": {
-    "stable": {
-      "label": "\u6B63\u5F0F",
-      "order": 10,
-      "target": {
-        "type": "all"
-      },
-      "pin": {
-        "loader:MGCModpack": "1.28.0-alpha",
-        "map:MGCModpack": "1.0.0",
-        "mod:MGCModpack": "1.0.0"
-      }
-    },
-    "test": {
-      "label": "\u6D4B\u8BD5",
-      "order": 20,
-      "target": {
-        "type": "devices",
-        "ids": [
-          {
-            "id": "5ba1a76b9d59183caf0fac8137d1949b",
-            "name": "Mi Note 3 / jason\uFF08\u6D4B\u8BD5\u673A\uFF09"
-          }
-        ]
-      },
-      "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.8",
-        "map:MGCModpack": "1.0.0",
-        "mod:MGCModpack": "1.0.0"
-      }
-    }
-  },
-  "artifacts": [
-    {
-      "id": "loader:MGCModpack",
-      "kind": "loader",
-      "name": "MGCModpack",
-      "versions": [
-        {
-          "version": "1.28.0-alpha.8",
-          "file": "versions/1.28.0-alpha.8/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.8/MGCModpack.dll",
-          "sha256": "2d78473c71820c56e49d9824a46973edaf7bd37f6305695f45cff16278b136e0",
-          "size": 402944,
-          "publishedAt": "2026-10-05T10:29:44Z",
-          "notes": "\u5730\u56FE\u5305\u4E91\u7AEF\u5217\u8868 \u002B \u4E0B\u8F7D\u56FE\u6807/\u8FDB\u5EA6"
+    "schema": 2,
+    "rev": 22,
+    "generatedAt": "2026-10-05T10:42:29Z",
+    "generator": "RepoEditor/2.0",
+    "channels": {
+        "stable": {
+            "label": "正式",
+            "order": 10,
+            "target": {
+                "type": "all"
+            },
+            "pin": {
+                "loader:MGCModpack": "1.28.0-alpha",
+                "map:MGCModpack": "1.0.0",
+                "mod:MGCModpack": "1.0.0"
+            }
         },
-        {
-          "version": "1.28.0-alpha.7",
-          "file": "versions/1.28.0-alpha.7/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.7/MGCModpack.dll",
-          "sha256": "60f737213414a7cf9f1a34932a3d3b1d221fa2ee9e56c5a145d4afa5e24ed6d7",
-          "size": 395264,
-          "publishedAt": "2026-10-05T09:46:08Z",
-          "notes": "mod/map \u4E0B\u8F7D\u8DEF\u5F84\u4FEE\u6B63\uFF08file \u662F\u4ED3\u5E93\u8DEF\u5F84\uFF0C\u672C\u5730\u8981\u53D6\u6587\u4EF6\u540D\uFF09"
-        },
-        {
-          "version": "1.28.0-alpha.6",
-          "file": "versions/1.28.0-alpha.6/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.6/MGCModpack.dll",
-          "sha256": "b77e5cb0775721ec56fc090787769d920e8f4582014f0a7960488f88ecd019b1",
-          "size": 395264,
-          "publishedAt": "2026-10-05T09:40:24Z",
-          "notes": "\u516C\u544A\u5730\u5740\u6539\u6307 config/\uFF08\u4FEE\u6B63\u6E05\u7406\u65F6\u8BEF\u5220\u7684\u56DE\u5F52\uFF09"
-        },
-        {
-          "version": "1.28.0-alpha.5",
-          "file": "versions/1.28.0-alpha.5/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.5/MGCModpack.dll",
-          "sha256": "b77e5cb0775721ec56fc090787769d920e8f4582014f0a7960488f88ecd019b1",
-          "size": 395264,
-          "publishedAt": "2026-10-05T09:36:54Z",
-          "notes": "\u4E0B\u8F7D\u6539\u8D70 UnityWebRequest\uFF08Mono \u7684 TLS \u5728\u8FD9\u53F0\u8BBE\u5907\u4E0A\u4E0D\u901A\uFF09"
-        },
-        {
-          "version": "1.28.0-alpha.4",
-          "file": "versions/1.28.0-alpha.4/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.4/MGCModpack.dll",
-          "sha256": "b77e5cb0775721ec56fc090787769d920e8f4582014f0a7960488f88ecd019b1",
-          "size": 395264,
-          "publishedAt": "2026-10-05T09:19:58Z",
-          "notes": "\u7F13\u5B58\u653E\u5BF9\u4F4D\u7F6E \u002B \u7248\u672C\u4ECE\u52A0\u8F7D\u5668\u8BFB"
-        },
-        {
-          "version": "1.28.0-alpha.3",
-          "file": "versions/1.28.0-alpha.3/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.3/MGCModpack.dll",
-          "sha256": "fad9ebb30962099bc89cf1e6a4644254ed7daa0ba1c1bea6c6017fa40cfe058b",
-          "size": 394240,
-          "publishedAt": "2026-10-05T09:13:30Z",
-          "notes": "\u4E09\u4EFD\u914D\u7F6E\u5206\u79BB \u002B \u56FE\u7247\u8D70 assets \u002B \u5173\u4E8E\u9875\u6539\u540D"
-        },
-        {
-          "version": "1.28.0-alpha.2",
-          "file": "versions/1.28.0-alpha.2/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.2/MGCModpack.dll",
-          "sha256": "fb0fa283b30aea139e31fa6daf89a9fd1a7a08141a2a44c2769374b8a3f7fb19",
-          "size": 391168,
-          "publishedAt": "2026-10-05T08:55:08Z",
-          "notes": "index.json \u9A71\u52A8 \u002B \u5730\u56FE\u5143\u6570\u636E \u002B \u7F13\u5B58\u8DEF\u5F84\u6539\u540D"
-        },
-        {
-          "version": "1.28.0-alpha.1",
-          "file": "versions/1.28.0-alpha.1/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.1/MGCModpack.dll",
-          "sha256": "0479444c3754010f578486642fe6b0af4a4dc4f4c80558bd5ddf558c98565fc2",
-          "size": 382464,
-          "publishedAt": "2026-10-05T08:32:13Z",
-          "notes": "\u6D4B\u8BD5\u5E8F\u5217\u8D77\u70B9\uFF08\u5185\u5BB9\u540C\u6B63\u5F0F\u7248\uFF0C\u7528\u4E8E\u9A8C\u8BC1\u6D4B\u8BD5\u901A\u9053\uFF09"
-        },
-        {
-          "version": "1.28.0-alpha",
-          "file": "versions/1.28.0-alpha/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-          "sha256": "0479444c3754010f578486642fe6b0af4a4dc4f4c80558bd5ddf558c98565fc2",
-          "size": 382464,
-          "publishedAt": "2026-10-05T07:21:09Z",
-          "notes": "release build: GoldPotFix, material warmup, TextureUtil/HttpUtil, dir refactor"
+        "test": {
+            "label": "测试",
+            "order": 20,
+            "target": {
+                "type": "devices",
+                "ids": [
+                    {
+                        "id": "5ba1a76b9d59183caf0fac8137d1949b",
+                        "name": "Mi Note 3 / jason（测试机）"
+                    }
+                ]
+            },
+            "pin": {
+                "loader:MGCModpack": "1.28.0-alpha.9",
+                "map:MGCModpack": "1.0.0",
+                "mod:MGCModpack": "1.0.0"
+            }
         }
-      ]
     },
-    {
-      "id": "map:MGCModpack",
-      "kind": "map",
-      "name": "MGCModpack",
-      "versions": [
+    "artifacts": [
         {
-          "version": "1.0.0",
-          "file": "map/MGCModpack.mappack",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/map/MGCModpack.mappack",
-          "sha256": "d6e42b54394fbf13dc29d7db2b33706b84cbed23ac4c63f40be0ed5cffcba8f5",
-          "size": 40086493,
-          "publishedAt": "2026-10-05T08:19:57Z",
-          "notes": "MGC \u5B98\u56FE\uFF0838.2 MB\uFF09"
-        }
-      ]
-    },
-    {
-      "id": "mod:MGCModpack",
-      "kind": "mod",
-      "name": "MGCModpack",
-      "versions": [
+            "id": "loader:MGCModpack",
+            "kind": "loader",
+            "name": "MGCModpack",
+            "versions": [
+                {
+                    "version": "1.28.0-alpha.9",
+                    "file": "versions/1.28.0-alpha.9/MGCModpack.dll",
+                    "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.9/MGCModpack.dll",
+                    "sha256": "5c67ceca3817262f962e8877c10c13054af74b0dac097c1c600f9c59fccc7f54",
+                    "size": 403456,
+                    "publishedAt": "2026-10-05T10:42:29Z",
+                    "notes": "bundle 走 index.json assets + 版本号加 v"
+                },
+                {
+                    "version": "1.28.0-alpha.8",
+                    "file": "versions/1.28.0-alpha.8/MGCModpack.dll",
+                    "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.8/MGCModpack.dll",
+                    "sha256": "2d78473c71820c56e49d9824a46973edaf7bd37f6305695f45cff16278b136e0",
+                    "size": 402944,
+                    "publishedAt": "2026-10-05T10:29:44Z",
+                    "notes": "地图包云端列表 + 下载图标/进度"
+                },
+                {
+                    "version": "1.28.0-alpha.7",
+                    "file": "versions/1.28.0-alpha.7/MGCModpack.dll",
+                    "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.7/MGCModpack.dll",
+                    "sha256": "60f737213414a7cf9f1a34932a3d3b1d221fa2ee9e56c5a145d4afa5e24ed6d7",
+                    "size": 395264,
+                    "publishedAt": "2026-10-05T09:46:08Z",
+                    "notes": "mod/map 下载路径修正（file 是仓库路径，本地要取文件名）"
+                },
+                {
+                    "version": "1.28.0-alpha.6",
+                    "file": "versions/1.28.0-alpha.6/MGCModpack.dll",
+                    "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.6/MGCModpack.dll",
+                    "sha256": "b77e5cb0775721ec56fc090787769d920e8f4582014f0a7960488f88ecd019b1",
+                    "size": 395264,
+                    "publishedAt": "2026-10-05T09:40:24Z",
+                    "notes": "公告地址改指 config/（修正清理时误删的回归）"
+                },
+                {
+                    "version": "1.28.0-alpha.5",
+                    "file": "versions/1.28.0-alpha.5/MGCModpack.dll",
+                    "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.5/MGCModpack.dll",
+                    "sha256": "b77e5cb0775721ec56fc090787769d920e8f4582014f0a7960488f88ecd019b1",
+                    "size": 395264,
+                    "publishedAt": "2026-10-05T09:36:54Z",
+                    "notes": "下载改走 UnityWebRequest（Mono 的 TLS 在这台设备上不通）"
+                },
+                {
+                    "version": "1.28.0-alpha.4",
+                    "file": "versions/1.28.0-alpha.4/MGCModpack.dll",
+                    "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.4/MGCModpack.dll",
+                    "sha256": "b77e5cb0775721ec56fc090787769d920e8f4582014f0a7960488f88ecd019b1",
+                    "size": 395264,
+                    "publishedAt": "2026-10-05T09:19:58Z",
+                    "notes": "缓存放对位置 + 版本从加载器读"
+                },
+                {
+                    "version": "1.28.0-alpha.3",
+                    "file": "versions/1.28.0-alpha.3/MGCModpack.dll",
+                    "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.3/MGCModpack.dll",
+                    "sha256": "fad9ebb30962099bc89cf1e6a4644254ed7daa0ba1c1bea6c6017fa40cfe058b",
+                    "size": 394240,
+                    "publishedAt": "2026-10-05T09:13:30Z",
+                    "notes": "三份配置分离 + 图片走 assets + 关于页改名"
+                },
+                {
+                    "version": "1.28.0-alpha.2",
+                    "file": "versions/1.28.0-alpha.2/MGCModpack.dll",
+                    "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.2/MGCModpack.dll",
+                    "sha256": "fb0fa283b30aea139e31fa6daf89a9fd1a7a08141a2a44c2769374b8a3f7fb19",
+                    "size": 391168,
+                    "publishedAt": "2026-10-05T08:55:08Z",
+                    "notes": "index.json 驱动 + 地图元数据 + 缓存路径改名"
+                },
+                {
+                    "version": "1.28.0-alpha.1",
+                    "file": "versions/1.28.0-alpha.1/MGCModpack.dll",
+                    "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.1/MGCModpack.dll",
+                    "sha256": "0479444c3754010f578486642fe6b0af4a4dc4f4c80558bd5ddf558c98565fc2",
+                    "size": 382464,
+                    "publishedAt": "2026-10-05T08:32:13Z",
+                    "notes": "测试序列起点（内容同正式版，用于验证测试通道）"
+                },
+                {
+                    "version": "1.28.0-alpha",
+                    "file": "versions/1.28.0-alpha/MGCModpack.dll",
+                    "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
+                    "sha256": "0479444c3754010f578486642fe6b0af4a4dc4f4c80558bd5ddf558c98565fc2",
+                    "size": 382464,
+                    "publishedAt": "2026-10-05T07:21:09Z",
+                    "notes": "release build: GoldPotFix, material warmup, TextureUtil/HttpUtil, dir refactor"
+                }
+            ]
+        },
         {
-          "version": "1.0.0",
-          "file": "mod/MGCModpack.modpack",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "49b902314b5f8eb87223700d53e0ec41afbb0431b1f8b3a0c97d773d4062ff56",
-          "size": 110660,
-          "publishedAt": "2026-10-05T05:15:51Z"
+            "id": "map:MGCModpack",
+            "kind": "map",
+            "name": "MGCModpack",
+            "versions": [
+                {
+                    "version": "1.0.0",
+                    "file": "map/MGCModpack.mappack",
+                    "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/map/MGCModpack.mappack",
+                    "sha256": "d6e42b54394fbf13dc29d7db2b33706b84cbed23ac4c63f40be0ed5cffcba8f5",
+                    "size": 40086493,
+                    "publishedAt": "2026-10-05T08:19:57Z",
+                    "notes": "MGC 官图（38.2 MB）"
+                }
+            ]
+        },
+        {
+            "id": "mod:MGCModpack",
+            "kind": "mod",
+            "name": "MGCModpack",
+            "versions": [
+                {
+                    "version": "1.0.0",
+                    "file": "mod/MGCModpack.modpack",
+                    "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
+                    "sha256": "49b902314b5f8eb87223700d53e0ec41afbb0431b1f8b3a0c97d773d4062ff56",
+                    "size": 110660,
+                    "publishedAt": "2026-10-05T05:15:51Z"
+                }
+            ]
         }
-      ]
-    }
-  ],
-  "assets": [
-    {
-      "id": "bundle:ui_mainmenu.unity3d",
-      "kind": "bundle",
-      "name": "ui_mainmenu.unity3d",
-      "file": "bundle/ui_mainmenu.unity3d",
-      "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_mainmenu.unity3d",
-      "sha256": "b07f78cbbf135c51347ee04c37fdf2f905d19e459938ce948c85ac178dd2d522",
-      "size": 1229810
-    },
-    {
-      "id": "bundle:ui_pause.unity3d",
-      "kind": "bundle",
-      "name": "ui_pause.unity3d",
-      "file": "bundle/ui_pause.unity3d",
-      "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_pause.unity3d",
-      "sha256": "a9b8db2e8482e65a090ff60c192c964c12e2b80ff41514cfb1d25aacae8d17a0",
-      "size": 10658
-    },
-    {
-      "id": "bundle:ui_uicontrols.unity3d",
-      "kind": "bundle",
-      "name": "ui_uicontrols.unity3d",
-      "file": "bundle/ui_uicontrols.unity3d",
-      "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_uicontrols.unity3d",
-      "sha256": "21504fb640c443cc28c099c4e1c6c3aac5b0f8d9c47ff6953a3ca76b31c2af36",
-      "size": 18966
-    },
-    {
-      "id": "picture:about-icon.png",
-      "kind": "picture",
-      "name": "about-icon.png",
-      "file": "picture/about-icon.png",
-      "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/about-icon.png",
-      "sha256": "5cd12b9cd7508f4c115c44514f41e8cb3aa24bf07fb2309202618eaf2af2cc90",
-      "size": 253621
-    },
-    {
-      "id": "picture:announcement-icon.png",
-      "kind": "picture",
-      "name": "announcement-icon.png",
-      "file": "picture/announcement-icon.png",
-      "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/announcement-icon.png",
-      "sha256": "84e306c160ea1833f967b2c01d2a5a81951ab5f9340808bc84d61ece2939cbb5",
-      "size": 483
-    },
-    {
-      "id": "picture:panel-placeholder.png",
-      "kind": "picture",
-      "name": "panel-placeholder.png",
-      "file": "picture/panel-placeholder.png",
-      "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/panel-placeholder.png",
-      "sha256": "67cd42c3910b13bc39b5294807c371ee3e1f41954e4b67c4ad44dd6a1e312e0a",
-      "size": 1286630
-    }
-  ]
+    ],
+    "assets": [
+        {
+            "id": "bundle:ui_mainmenu.unity3d",
+            "kind": "bundle",
+            "name": "ui_mainmenu.unity3d",
+            "file": "bundle/ui_mainmenu.unity3d",
+            "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_mainmenu.unity3d",
+            "sha256": "b07f78cbbf135c51347ee04c37fdf2f905d19e459938ce948c85ac178dd2d522",
+            "size": 1229810
+        },
+        {
+            "id": "bundle:ui_pause.unity3d",
+            "kind": "bundle",
+            "name": "ui_pause.unity3d",
+            "file": "bundle/ui_pause.unity3d",
+            "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_pause.unity3d",
+            "sha256": "a9b8db2e8482e65a090ff60c192c964c12e2b80ff41514cfb1d25aacae8d17a0",
+            "size": 10658
+        },
+        {
+            "id": "bundle:ui_uicontrols.unity3d",
+            "kind": "bundle",
+            "name": "ui_uicontrols.unity3d",
+            "file": "bundle/ui_uicontrols.unity3d",
+            "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_uicontrols.unity3d",
+            "sha256": "21504fb640c443cc28c099c4e1c6c3aac5b0f8d9c47ff6953a3ca76b31c2af36",
+            "size": 18966
+        },
+        {
+            "id": "picture:about-icon.png",
+            "kind": "picture",
+            "name": "about-icon.png",
+            "file": "picture/about-icon.png",
+            "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/about-icon.png",
+            "sha256": "5cd12b9cd7508f4c115c44514f41e8cb3aa24bf07fb2309202618eaf2af2cc90",
+            "size": 253621
+        },
+        {
+            "id": "picture:announcement-icon.png",
+            "kind": "picture",
+            "name": "announcement-icon.png",
+            "file": "picture/announcement-icon.png",
+            "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/announcement-icon.png",
+            "sha256": "84e306c160ea1833f967b2c01d2a5a81951ab5f9340808bc84d61ece2939cbb5",
+            "size": 483
+        },
+        {
+            "id": "picture:panel-placeholder.png",
+            "kind": "picture",
+            "name": "panel-placeholder.png",
+            "file": "picture/panel-placeholder.png",
+            "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/panel-placeholder.png",
+            "sha256": "67cd42c3910b13bc39b5294807c371ee3e1f41954e4b67c4ad44dd6a1e312e0a",
+            "size": 1286630
+        }
+    ]
 }
