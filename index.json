@@ -1,7 +1,7 @@
 {
     "schema": 2,
-    "rev": 34,
-    "generatedAt": "2026-10-05T13:10:35Z",
+    "rev": 35,
+    "generatedAt": "2026-10-05T13:30:23Z",
     "generator": "RepoEditor/2.0",
     "channels": {
         "stable": {
@@ -29,7 +29,7 @@
                 ]
             },
             "pin": {
-                "loader:MGCModpack": "1.28.0-alpha.19",
+                "loader:MGCModpack": "1.28.0-alpha.20",
                 "map:MGCModpack": "1.0.0",
                 "mod:MGCModpack": "1.0.0"
             }
@@ -41,6 +41,15 @@
             "kind": "loader",
             "name": "MGCModpack",
             "versions": [
+                {
+                    "version": "1.28.0-alpha.20",
+                    "file": "versions/1.28.0-alpha.20/MGCModpack.dll",
+                    "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.20/MGCModpack.dll",
+                    "sha256": "45cdcd5a80346ff03c89d5d1df0ca9c97efddce19d2413848a96d1de8a999733",
+                    "size": 411136,
+                    "publishedAt": "2026-10-05T13:30:23Z",
+                    "notes": "地图包页不卡 + 下载流式落盘 + 进度与卡死修复"
+                },
                 {
                     "version": "1.28.0-alpha.19",
                     "file": "versions/1.28.0-alpha.19/MGCModpack.dll",
