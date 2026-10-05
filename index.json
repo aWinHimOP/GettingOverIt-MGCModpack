@@ -1,7 +1,7 @@
 {
     "schema": 2,
-    "rev": 26,
-    "generatedAt": "2026-10-05T11:52:02Z",
+    "rev": 27,
+    "generatedAt": "2026-10-05T12:04:15Z",
     "generator": "RepoEditor/2.0",
     "channels": {
         "stable": {
@@ -29,7 +29,7 @@
                 ]
             },
             "pin": {
-                "loader:MGCModpack": "1.28.0-alpha.12",
+                "loader:MGCModpack": "1.28.0-alpha.13",
                 "map:MGCModpack": "1.0.0",
                 "mod:MGCModpack": "1.0.0"
             }
@@ -41,6 +41,15 @@
             "kind": "loader",
             "name": "MGCModpack",
             "versions": [
+                {
+                    "version": "1.28.0-alpha.13",
+                    "file": "versions/1.28.0-alpha.13/MGCModpack.dll",
+                    "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.13/MGCModpack.dll",
+                    "sha256": "a7e4e9df4a93131bf0dcf6c11c0332e417aa46c09d7d4aeb90515c1fe84a39a1",
+                    "size": 406016,
+                    "publishedAt": "2026-10-05T12:04:15Z",
+                    "notes": "修复地图包列表时序竞态"
+                },
                 {
                     "version": "1.28.0-alpha.12",
                     "file": "versions/1.28.0-alpha.12/MGCModpack.dll",
