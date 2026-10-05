@@ -1,7 +1,7 @@
 {
     "schema": 2,
-    "rev": 27,
-    "generatedAt": "2026-10-05T12:04:15Z",
+    "rev": 28,
+    "generatedAt": "2026-10-05T12:15:10Z",
     "generator": "RepoEditor/2.0",
     "channels": {
         "stable": {
@@ -29,7 +29,7 @@
                 ]
             },
             "pin": {
-                "loader:MGCModpack": "1.28.0-alpha.13",
+                "loader:MGCModpack": "1.28.0-alpha.14",
                 "map:MGCModpack": "1.0.0",
                 "mod:MGCModpack": "1.0.0"
             }
@@ -41,6 +41,15 @@
             "kind": "loader",
             "name": "MGCModpack",
             "versions": [
+                {
+                    "version": "1.28.0-alpha.14",
+                    "file": "versions/1.28.0-alpha.14/MGCModpack.dll",
+                    "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.14/MGCModpack.dll",
+                    "sha256": "de4f4d6159a43622f248cc2ee2d76d6d325539a1bc4e1f4feebd0403efcd0a76",
+                    "size": 406528,
+                    "publishedAt": "2026-10-05T12:15:10Z",
+                    "notes": "修复 zip 代码页 936 导致地图包扫描失败"
+                },
                 {
                     "version": "1.28.0-alpha.13",
                     "file": "versions/1.28.0-alpha.13/MGCModpack.dll",
