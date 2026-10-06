@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 48,
-  "generatedAt": "2026-10-06T19:01:16Z",
+  "rev": 49,
+  "generatedAt": "2026-10-06T19:15:24Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -45,10 +45,10 @@
           "version": "1.28.0-beta.1",
           "file": "versions/1.28.0-beta.1/MGCModpack.dll",
           "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-beta.1/MGCModpack.dll",
-          "sha256": "90de630fc0280b12650ee5d08013a9f9af13f818a3b4a9f144d9089ee649268b",
-          "size": 435712,
-          "publishedAt": "2026-10-06T19:01:16Z",
-          "notes": "删除 GOI.GameAPI.Events（11 个类型）：游戏侧插桩收敛到 6 行；新增数值插座 HookValue（player.cursor / player.hinge）；通关链改走 gravity.win + 框架事件 MGC.Events；modpack 同名去重；老 APK 上明确提示「通关不会计数」"
+          "sha256": "20c781ba4c23be715445dce5cbc58136f661b40f86cd2c9794f51c67871fb319",
+          "size": 438784,
+          "publishedAt": "2026-10-06T19:15:24Z",
+          "notes": "删除 GOI.GameAPI.Events：游戏侧插桩收敛到 6 行；数值插座 HookValue（player.cursor / player.hinge）；通关链改走 gravity.win + MGC.Events；**老 APK 兼容**（老事件兼容层 + 全程反射，老 APK 上通关计数照常、新 APK 上走站点）"
         },
         {
           "version": "1.28.0-alpha.30",
