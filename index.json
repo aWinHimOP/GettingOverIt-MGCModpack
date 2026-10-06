@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 45,
-  "generatedAt": "2026-10-06T18:29:13Z",
+  "rev": 46,
+  "generatedAt": "2026-10-06T18:47:16Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -31,7 +31,7 @@
       "pin": {
         "loader:MGCModpack": "1.28.0-alpha.30",
         "map:MGCModpack": "1.0.0",
-        "mod:MGCModpack": "1.0.1"
+        "mod:MGCModpack": "1.0.0"
       }
     }
   },
@@ -347,21 +347,13 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.0.1",
+          "version": "1.0.0",
           "file": "mod/MGCModpack.modpack",
           "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
           "sha256": "7b452ba4eb086f91c5a230c1ca5deacec5cd4abc47f10245c0b4130f35dc34bd",
           "size": 110744,
-          "publishedAt": "2026-10-06T18:03:58Z",
-          "notes": "配套 alpha.29：mod 侧事件订阅迁到 MGC.Events / HookBus 站点；Sideways 改用 player.cursor / player.hinge 数值站点"
-        },
-        {
-          "version": "1.0.0",
-          "file": "mod/1.0.0/MGCModpack.modpack",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/1.0.0/MGCModpack.modpack",
-          "sha256": "49b902314b5f8eb87223700d53e0ec41afbb0431b1f8b3a0c97d773d4062ff56",
-          "size": 110660,
-          "publishedAt": "2026-10-05T05:15:51Z"
+          "publishedAt": "2026-10-06T18:47:16Z",
+          "notes": "内容随框架 alpha.29/alpha.30 一起更新（mod 侧事件迁到 MGC.Events / HookBus 站点）。版本号不变。"
         }
       ]
     }
