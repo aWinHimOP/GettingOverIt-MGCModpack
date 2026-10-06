@@ -19,18 +19,18 @@
           "title": "交流群",
           "body": "掘地求升 Modpack QQ 交流群：549361403\n\n如有需要反馈bug、获取资源、提问问题的都可以来。",
           "publishedAt": "2026-09-27"
-        },
-        {
-          "title": "关于配图",
-          "body": "公告正文支持插图：在条目里写 image 字段填图片地址即可。\n\n下面就是一张示例图。",
-          "image": "https://awinhimop.github.io/GettingOverIt-MGCModpack/icon/about-icon.png",
-          "publishedAt": "2026-09-27"
         }
       ]
     },
     {
       "name": "问题/建议",
-      "items": []
+      "items": [
+        {
+          "title": "地图包和模组包",
+          "body": "很多地图和mod还没做完，大伙接着等待吧\r\n\r\n1.YeetLand",
+          "publishedAt": "2026-10-07"
+        }
+      ]
     }
   ]
 }
