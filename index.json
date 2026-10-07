@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 56,
-  "generatedAt": "2026-10-07T13:03:05Z",
+  "rev": 57,
+  "generatedAt": "2026-10-07T14:40:16Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -386,10 +386,10 @@
           "version": "1.0.0",
           "file": "mod/MGCModpack.modpack",
           "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "0f434e2cc92f4e2b6ece2edec22febbcb609574b618fcc9bffa20c73e0d7dca9",
-          "size": 110977,
-          "publishedAt": "2026-10-07T13:03:05Z",
-          "notes": "橘子雨：防意外通关改成按「玩家在不在终点」判定（碰撞盒 SqrDistance + 3 单位容差），拿不到玩家/触发器时一律放行；修掉原来恒拦一切通关的 bug"
+          "sha256": "1f6775e45605fdacc1c04b3221484bdae17bbda8ce3459a4958984f700ce7784",
+          "size": 111072,
+          "publishedAt": "2026-10-07T14:40:16Z",
+          "notes": "Sideways：重力改成跟随（游戏设 0 → 旋转后还是 0，重力井恢复）；橘子雨：防意外通关改成按玩家碰撞体判定"
         }
       ]
     }
