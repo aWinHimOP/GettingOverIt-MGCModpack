@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 53,
-  "generatedAt": "2026-10-07T08:21:58Z",
+  "rev": 54,
+  "generatedAt": "2026-10-07T08:50:46Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -11,7 +11,7 @@
         "type": "all"
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.1",
+        "loader:MGCModpack": "1.28.0-beta.2",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.32",
+        "loader:MGCModpack": "1.28.0-beta.2",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-beta.2",
+          "file": "versions/1.28.0-beta.2/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-beta.2/MGCModpack.dll",
+          "sha256": "3edb2ca6f4789e30f1b8eadba4330110eb6df6ac4b50bcf7f16466527104cbf2",
+          "size": 435200,
+          "publishedAt": "2026-10-07T08:50:46Z",
+          "notes": "beta.2：RewardBadge 顶部设备名修好（SystemInfo.deviceName 在安卓上会返回字面量 \"<unknown>\"，且 Text 开了 supportRichText 会被当标签吃掉 → 现在过滤占位符、转义尖括号、按 蓝牙名→机型→系统 回退）；GoldPotFix 开局一次性改写 potMat；只保留 hook 站点"
+        },
         {
           "version": "1.28.0-alpha.32",
           "file": "versions/1.28.0-alpha.32/MGCModpack.dll",
