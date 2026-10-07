@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 62,
-  "generatedAt": "2026-10-07T16:35:35Z",
+  "rev": 63,
+  "generatedAt": "2026-10-07T17:20:00Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -11,7 +11,7 @@
         "type": "all"
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.37",
+        "loader:MGCModpack": "1.28.0-alpha.38",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.37",
+        "loader:MGCModpack": "1.28.0-alpha.38",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.38",
+          "file": "versions/1.28.0-alpha.38/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.38/MGCModpack.dll",
+          "sha256": "17464cb02592462d6b164a35e10d86b582c679bfa0342ecc656190553fc019a7",
+          "size": 436736,
+          "publishedAt": "2026-10-07T17:20:00Z",
+          "notes": "alpha.38：暂停键不再静默失败 —— MainMenu 引用失效（场景重载销毁）时回场景重新查找并补登记，被拒时写清楚原因"
+        },
         {
           "version": "1.28.0-alpha.37",
           "file": "versions/1.28.0-alpha.37/MGCModpack.dll",
