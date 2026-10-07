@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 52,
-  "generatedAt": "2026-10-07T08:17:20Z",
+  "rev": 53,
+  "generatedAt": "2026-10-07T08:21:58Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.31",
+        "loader:MGCModpack": "1.28.0-alpha.32",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.32",
+          "file": "versions/1.28.0-alpha.32/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.32/MGCModpack.dll",
+          "sha256": "3edb2ca6f4789e30f1b8eadba4330110eb6df6ac4b50bcf7f16466527104cbf2",
+          "size": 435200,
+          "publishedAt": "2026-10-07T08:21:58Z",
+          "notes": "修 RewardBadge 设备名：SystemInfo.deviceName 在安卓上返回字面量 \"<unknown>\"（不是空串），而 Text 开了 supportRichText 会把 <unknown> 当标签吃掉 → 通关页那一行什么都不显示。现在按 蓝牙名→机型→系统 回退，并转义尖括号"
+        },
         {
           "version": "1.28.0-alpha.31",
           "file": "versions/1.28.0-alpha.31/MGCModpack.dll",
