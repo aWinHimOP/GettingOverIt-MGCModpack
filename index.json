@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 51,
-  "generatedAt": "2026-10-07T05:30:03Z",
+  "rev": 52,
+  "generatedAt": "2026-10-07T08:17:20Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.1",
+        "loader:MGCModpack": "1.28.0-alpha.31",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.31",
+          "file": "versions/1.28.0-alpha.31/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.31/MGCModpack.dll",
+          "sha256": "0a5faecc516d6a377439cacc5ef6a78920b6bd7a9621c3af2dee565baa432f61",
+          "size": 435200,
+          "publishedAt": "2026-10-07T08:17:20Z",
+          "notes": "修 RewardBadge 设备名：SystemInfo.deviceName 在安卓上是蓝牙名，取不到时会显示 unknown —— 现在按 蓝牙名 → 机型 → 系统 回退，并在启动日志里记一行原始值"
+        },
         {
           "version": "1.28.0-beta.1",
           "file": "versions/1.28.0-beta.1/MGCModpack.dll",
