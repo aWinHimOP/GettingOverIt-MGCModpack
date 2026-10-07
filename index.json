@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 60,
-  "generatedAt": "2026-10-07T15:55:10Z",
+  "rev": 61,
+  "generatedAt": "2026-10-07T16:20:51Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -11,7 +11,7 @@
         "type": "all"
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.2",
+        "loader:MGCModpack": "1.28.0-beta.3",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.2",
+        "loader:MGCModpack": "1.28.0-beta.3",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-beta.3",
+          "file": "versions/1.28.0-beta.3/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-beta.3/MGCModpack.dll",
+          "sha256": "fc109042ef71a2bab01eb6f1a0f6c1dbd774480c3faac7a8a45c348d3015e8b7",
+          "size": 436224,
+          "publishedAt": "2026-10-07T16:20:51Z",
+          "notes": "beta.3：修「mod 设了参数重开又回默认」—— SaveConfig 改非虚，值收集挪到 CollectConfig，任何 base.SaveConfig() 都不会再绕过；非热重载 mod 关闭时由框架重载场景恢复，mod 侧不用写恢复代码"
+        },
         {
           "version": "1.28.0-beta.2",
           "file": "versions/1.28.0-beta.2/MGCModpack.dll",
@@ -395,10 +404,10 @@
           "version": "1.0.0",
           "file": "mod/MGCModpack.modpack",
           "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "1f6775e45605fdacc1c04b3221484bdae17bbda8ce3459a4958984f700ce7784",
-          "size": 111072,
-          "publishedAt": "2026-10-07T14:40:16Z",
-          "notes": "Sideways：重力改成跟随（游戏设 0 → 旋转后还是 0，重力井恢复）；橘子雨：防意外通关改成按玩家碰撞体判定"
+          "sha256": "cb7783f4f75701205666e3a2e390c7e96be69d17995024e8ca2aa274e5be3e5f",
+          "size": 111003,
+          "publishedAt": "2026-10-07T16:20:51Z",
+          "notes": "修 mod 配置不保存（SaveConfig 非虚 + CollectConfig）；橘子雨防意外通关按玩家碰撞体判定；Sideways 重力改跟随"
         }
       ]
     }
