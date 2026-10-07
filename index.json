@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 54,
-  "generatedAt": "2026-10-07T08:50:46Z",
+  "rev": 55,
+  "generatedAt": "2026-10-07T12:59:34Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -386,10 +386,10 @@
           "version": "1.0.0",
           "file": "mod/MGCModpack.modpack",
           "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "85265d7aa160543400b9bb0f214b7ea4f66f48efd63f9097150963cf75e79991",
-          "size": 110647,
-          "publishedAt": "2026-10-07T03:36:44Z",
-          "notes": "mod 侧全部改用 hook 站点（TimerMod / OrangeRainMod 订 win.done / win.check）"
+          "sha256": "1282da1604e413dd9f72a0bd6475ce07fd7bd52ac9cee1e10ecea0201b94dce3",
+          "size": 110862,
+          "publishedAt": "2026-10-07T12:59:34Z",
+          "notes": "橘子雨：防意外通关改成按「玩家在不在终点」判定（碰撞盒 SqrDistance + 3 单位容差），拿不到玩家/触发器时一律放行；修掉原来恒拦一切通关的 bug"
         }
       ]
     }
