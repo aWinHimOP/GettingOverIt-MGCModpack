@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 58,
-  "generatedAt": "2026-10-07T14:55:32Z",
+  "rev": 59,
+  "generatedAt": "2026-10-07T15:47:01Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -11,7 +11,7 @@
         "type": "all"
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.3",
+        "loader:MGCModpack": "1.28.0-beta.4",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.3",
+        "loader:MGCModpack": "1.28.0-beta.4",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-beta.4",
+          "file": "versions/1.28.0-beta.4/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-beta.4/MGCModpack.dll",
+          "sha256": "ba31f05422ba9ab863ff3af15df0c9538fa842d9c56d736b982b2df03e07d595",
+          "size": 435712,
+          "publishedAt": "2026-10-07T15:47:01Z",
+          "notes": "beta.4：修白名单绕过（RewardLogic.saveBestTime 无条件改 BestTime）+ GravityControl.Win 补星空图回退与计数 + CustomTrigger.Finish 星空图回退。必须配新 APK。"
+        },
         {
           "version": "1.28.0-beta.3",
           "file": "versions/1.28.0-beta.3/MGCModpack.dll",
