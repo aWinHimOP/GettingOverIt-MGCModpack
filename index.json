@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 49,
-  "generatedAt": "2026-10-06T19:15:24Z",
+  "rev": 50,
+  "generatedAt": "2026-10-07T03:36:44Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -45,10 +45,10 @@
           "version": "1.28.0-beta.1",
           "file": "versions/1.28.0-beta.1/MGCModpack.dll",
           "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-beta.1/MGCModpack.dll",
-          "sha256": "20c781ba4c23be715445dce5cbc58136f661b40f86cd2c9794f51c67871fb319",
-          "size": 438784,
-          "publishedAt": "2026-10-06T19:15:24Z",
-          "notes": "删除 GOI.GameAPI.Events：游戏侧插桩收敛到 6 行；数值插座 HookValue（player.cursor / player.hinge）；通关链改走 gravity.win + MGC.Events；**老 APK 兼容**（老事件兼容层 + 全程反射，老 APK 上通关计数照常、新 APK 上走站点）"
+          "sha256": "c45426367980049e8daec9cfb926e40cfa443d67311960e2454adb600a94ec6d",
+          "size": 434688,
+          "publishedAt": "2026-10-07T03:36:44Z",
+          "notes": "只保留 hook：冻结层 MGCBridge 删掉事件功能（泛型总线 + 命名通道 + 已废弃重载），框架删掉 MGC.Events 与全部向后兼容层；通关走 win.check / win.done 两段站点；新增 menu.toggled / subtitles.toggle / modpacks.changed / reward.badge；RewardBadge 顶部显示设备名/特征码/时间并给 mod 留了追加文字接口"
         },
         {
           "version": "1.28.0-alpha.30",
@@ -359,10 +359,10 @@
           "version": "1.0.0",
           "file": "mod/MGCModpack.modpack",
           "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "7b452ba4eb086f91c5a230c1ca5deacec5cd4abc47f10245c0b4130f35dc34bd",
-          "size": 110744,
-          "publishedAt": "2026-10-06T18:47:16Z",
-          "notes": "内容随框架 alpha.29/alpha.30 一起更新（mod 侧事件迁到 MGC.Events / HookBus 站点）。版本号不变。"
+          "sha256": "85265d7aa160543400b9bb0f214b7ea4f66f48efd63f9097150963cf75e79991",
+          "size": 110647,
+          "publishedAt": "2026-10-07T03:36:44Z",
+          "notes": "mod 侧全部改用 hook 站点（TimerMod / OrangeRainMod 订 win.done / win.check）"
         }
       ]
     }
