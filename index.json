@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 50,
-  "generatedAt": "2026-10-07T03:36:44Z",
+  "rev": 51,
+  "generatedAt": "2026-10-07T05:30:03Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -45,10 +45,10 @@
           "version": "1.28.0-beta.1",
           "file": "versions/1.28.0-beta.1/MGCModpack.dll",
           "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-beta.1/MGCModpack.dll",
-          "sha256": "c45426367980049e8daec9cfb926e40cfa443d67311960e2454adb600a94ec6d",
-          "size": 434688,
-          "publishedAt": "2026-10-07T03:36:44Z",
-          "notes": "只保留 hook：冻结层 MGCBridge 删掉事件功能（泛型总线 + 命名通道 + 已废弃重载），框架删掉 MGC.Events 与全部向后兼容层；通关走 win.check / win.done 两段站点；新增 menu.toggled / subtitles.toggle / modpacks.changed / reward.badge；RewardBadge 顶部显示设备名/特征码/时间并给 mod 留了追加文字接口"
+          "sha256": "47ad011f5299d5effea9e3a77c3aadae0ae74aed6270b7d6f2d555885dfa729c",
+          "size": 434176,
+          "publishedAt": "2026-10-07T05:30:03Z",
+          "notes": "只保留 hook；通关走 win.check / win.done 两段站点；GoldPotFix 改成开局一次性改写 SettingsManager.potMat（不再每秒换渲染器材质，避免覆盖 SkinCustomizerMod 这类 mod 的贴图）"
         },
         {
           "version": "1.28.0-alpha.30",
