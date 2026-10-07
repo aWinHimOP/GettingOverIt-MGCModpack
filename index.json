@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 61,
-  "generatedAt": "2026-10-07T16:20:51Z",
+  "rev": 62,
+  "generatedAt": "2026-10-07T16:35:35Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -11,7 +11,7 @@
         "type": "all"
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.3",
+        "loader:MGCModpack": "1.28.0-alpha.37",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.3",
+        "loader:MGCModpack": "1.28.0-alpha.37",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -42,22 +42,40 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-beta.3",
-          "file": "versions/1.28.0-beta.3/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-beta.3/MGCModpack.dll",
+          "version": "1.28.0-alpha.37",
+          "file": "versions/1.28.0-alpha.37/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.37/MGCModpack.dll",
+          "sha256": "2c7dcfb28e5ed088d319196c5cf6ce59c4c5fd22e27b1dfb6575c1e4037066ab",
+          "size": 436224,
+          "publishedAt": "2026-10-07T16:35:35Z",
+          "notes": "mod 配置存不进去的修复（SaveConfig 非虚 + CollectConfig，任何 base.SaveConfig() 都不再绕过）；非热重载 mod 只记开关、重开游戏生效（不在会话内卸载）"
+        },
+        {
+          "version": "1.28.0-alpha.36",
+          "file": "versions/1.28.0-alpha.36/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.36/MGCModpack.dll",
           "sha256": "fc109042ef71a2bab01eb6f1a0f6c1dbd774480c3faac7a8a45c348d3015e8b7",
           "size": 436224,
           "publishedAt": "2026-10-07T16:20:51Z",
-          "notes": "beta.3：修「mod 设了参数重开又回默认」—— SaveConfig 改非虚，值收集挪到 CollectConfig，任何 base.SaveConfig() 都不会再绕过；非热重载 mod 关闭时由框架重载场景恢复，mod 侧不用写恢复代码"
+          "notes": "（重编号自 beta.3）配置保存修复 + 场景重载恢复（已被 alpha.37 取代）"
         },
         {
-          "version": "1.28.0-beta.2",
-          "file": "versions/1.28.0-beta.2/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-beta.2/MGCModpack.dll",
+          "version": "1.28.0-alpha.35",
+          "file": "versions/1.28.0-alpha.35/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.35/MGCModpack.dll",
           "sha256": "ba31f05422ba9ab863ff3af15df0c9538fa842d9c56d736b982b2df03e07d595",
           "size": 435712,
           "publishedAt": "2026-10-07T15:55:10Z",
-          "notes": "（重编号自 1.28.0-beta.4）堵住白名单绕过：RewardLogic.saveBestTime 现在先问 reward.besttime 站点，框架按 win.done 落盘的 MGC_LastRunVerified 否决未验证通关。必须配新 APK。"
+          "notes": "（重编号自 beta.2）堵白名单绕过：reward.besttime 站点 + MGC_LastRunVerified 落盘"
+        },
+        {
+          "version": "1.28.0-alpha.34",
+          "file": "versions/1.28.0-alpha.34/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.34/MGCModpack.dll",
+          "sha256": "47ad011f5299d5effea9e3a77c3aadae0ae74aed6270b7d6f2d555885dfa729c",
+          "size": 434176,
+          "publishedAt": "2026-10-07T05:30:03Z",
+          "notes": "（重编号自 beta.1）只保留 hook 站点 + 金罐开局一次性改写 potMat"
         },
         {
           "version": "1.28.0-alpha.33",
@@ -85,15 +103,6 @@
           "size": 435200,
           "publishedAt": "2026-10-07T08:17:20Z",
           "notes": "修 RewardBadge 设备名：SystemInfo.deviceName 在安卓上是蓝牙名，取不到时会显示 unknown —— 现在按 蓝牙名 → 机型 → 系统 回退，并在启动日志里记一行原始值"
-        },
-        {
-          "version": "1.28.0-beta.1",
-          "file": "versions/1.28.0-beta.1/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-beta.1/MGCModpack.dll",
-          "sha256": "47ad011f5299d5effea9e3a77c3aadae0ae74aed6270b7d6f2d555885dfa729c",
-          "size": 434176,
-          "publishedAt": "2026-10-07T05:30:03Z",
-          "notes": "只保留 hook；通关走 win.check / win.done 两段站点；GoldPotFix 改成开局一次性改写 SettingsManager.potMat（不再每秒换渲染器材质，避免覆盖 SkinCustomizerMod 这类 mod 的贴图）"
         },
         {
           "version": "1.28.0-alpha.30",
