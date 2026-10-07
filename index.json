@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 59,
-  "generatedAt": "2026-10-07T15:47:01Z",
+  "rev": 60,
+  "generatedAt": "2026-10-07T15:55:10Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -11,7 +11,7 @@
         "type": "all"
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.4",
+        "loader:MGCModpack": "1.28.0-beta.2",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.4",
+        "loader:MGCModpack": "1.28.0-beta.2",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -42,31 +42,22 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-beta.4",
-          "file": "versions/1.28.0-beta.4/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-beta.4/MGCModpack.dll",
-          "sha256": "ba31f05422ba9ab863ff3af15df0c9538fa842d9c56d736b982b2df03e07d595",
-          "size": 435712,
-          "publishedAt": "2026-10-07T15:47:01Z",
-          "notes": "beta.4：修白名单绕过（RewardLogic.saveBestTime 无条件改 BestTime）+ GravityControl.Win 补星空图回退与计数 + CustomTrigger.Finish 星空图回退。必须配新 APK。"
-        },
-        {
-          "version": "1.28.0-beta.3",
-          "file": "versions/1.28.0-beta.3/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-beta.3/MGCModpack.dll",
-          "sha256": "3edb2ca6f4789e30f1b8eadba4330110eb6df6ac4b50bcf7f16466527104cbf2",
-          "size": 435200,
-          "publishedAt": "2026-10-07T14:55:32Z",
-          "notes": "beta.3：必须配新 APK。GravityControl.Win 改成和 OnTriggerExit2D 一致（星空图 + (0,1.2) 重力 + 按 winVerified 计 NumWins/BestTime），星空图加了 三级回退查找；CustomTrigger.Finish 同样加星空图回退"
-        },
-        {
           "version": "1.28.0-beta.2",
           "file": "versions/1.28.0-beta.2/MGCModpack.dll",
           "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-beta.2/MGCModpack.dll",
+          "sha256": "ba31f05422ba9ab863ff3af15df0c9538fa842d9c56d736b982b2df03e07d595",
+          "size": 435712,
+          "publishedAt": "2026-10-07T15:55:10Z",
+          "notes": "（重编号自 1.28.0-beta.4）堵住白名单绕过：RewardLogic.saveBestTime 现在先问 reward.besttime 站点，框架按 win.done 落盘的 MGC_LastRunVerified 否决未验证通关。必须配新 APK。"
+        },
+        {
+          "version": "1.28.0-alpha.33",
+          "file": "versions/1.28.0-alpha.33/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.33/MGCModpack.dll",
           "sha256": "3edb2ca6f4789e30f1b8eadba4330110eb6df6ac4b50bcf7f16466527104cbf2",
           "size": 435200,
-          "publishedAt": "2026-10-07T08:50:46Z",
-          "notes": "beta.2：RewardBadge 顶部设备名修好（SystemInfo.deviceName 在安卓上会返回字面量 \"<unknown>\"，且 Text 开了 supportRichText 会被当标签吃掉 → 现在过滤占位符、转义尖括号、按 蓝牙名→机型→系统 回退）；GoldPotFix 开局一次性改写 potMat；只保留 hook 站点"
+          "publishedAt": "2026-10-07T15:55:10Z",
+          "notes": "（重编号自 1.28.0-beta.3）配新 APK：GravityControl.Win 补星空图回退与 NumWins 计数、CustomTrigger.Finish 星空图回退。"
         },
         {
           "version": "1.28.0-alpha.32",
