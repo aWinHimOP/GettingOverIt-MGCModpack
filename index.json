@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 64,
-  "generatedAt": "2026-10-08T06:21:39Z",
+  "rev": 65,
+  "generatedAt": "2026-10-08T06:24:54Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -11,7 +11,7 @@
         "type": "all"
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.39",
+        "loader:MGCModpack": "1.28.0-alpha.40",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.39",
+        "loader:MGCModpack": "1.28.0-alpha.40",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.40",
+          "file": "versions/1.28.0-alpha.40/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.40/MGCModpack.dll",
+          "sha256": "d61038bf6aab9554475bec6abebf82aff185ad5c55d8663b8b58cb1a3ffbae58",
+          "size": 437760,
+          "publishedAt": "2026-10-08T06:24:54Z",
+          "notes": "alpha.40：HookBus 会话报告措辞修正（区分「本局没发生」与「APK 缺插桩行」，避免误报）。含 alpha.39 的 MGCContract 移除与按站点触发计数"
+        },
         {
           "version": "1.28.0-alpha.39",
           "file": "versions/1.28.0-alpha.39/MGCModpack.dll",
