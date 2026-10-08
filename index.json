@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 83,
-  "generatedAt": "2026-10-08T18:15:08Z",
+  "rev": 84,
+  "generatedAt": "2026-10-08T18:20:09Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -503,10 +503,10 @@
           "version": "1.0.0",
           "file": "mod/MGCModpack.modpack",
           "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "20aeea301f5b6b67b3dcdda3a1e68558b8bba23f44099654aaee15a63996312a",
-          "size": 117260,
-          "publishedAt": "2026-10-08T18:15:08Z",
-          "notes": "AIGOI v0.5：计分改成有符号（向前 +1 / 向后 -0.5，可调，来回晃互相抵消）；样条画成连续线+段号+左上角 HUD；新增 12 根障碍射线当观测（Physics2D.Raycast），可开关显示"
+          "sha256": "ca86c9db75a29189521e879bae2c7e06c782d7474a28548415c0089696458e81",
+          "size": 117323,
+          "publishedAt": "2026-10-08T18:20:09Z",
+          "notes": "AIGOI 本机推理 + 进化学习（开启即自动训练，权重自动存盘）\n· 动作：只有模拟手指滑动（写 PlayerControl.cursorInputVelocity），不碰马达\n· 奖励：山体样条进度 —— 向前每段 +1、向后每段 -0.5（可调），段数 1000，反复经过不给，来回晃互相抵消\n· 感知：12 根物理射线（Physics2D.Raycast）当眼睛，观测 28 维\n· 策略：28→24→2 小 MLP，(1+λ) 进化，带振荡器相位与动作噪声\n· 每局 120 秒（设置页可调）到点重载场景；落水卡住自动重载\n· 权重存 MGCModpack/AIGOI/genome.txt，刷新纪录即写盘\n· 可视化三开关：样条进度线 / 障碍射线 / 左下角 HUD\n· 场景重载后自动重建样条缓存（存活检查），修复线消失与不再得分"
         }
       ]
     }
@@ -520,7 +520,8 @@
       "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_mainmenu.unity3d",
       "sha256": "eeffae653a99394068002a167a0c90fbeb5e510eec4e010ec1232760f0783b6a",
       "size": 1228471,
-      "publishedAt": "2026-10-08T07:17:13Z"
+      "publishedAt": "2026-10-08T07:17:13Z",
+      "notes": "主菜单 UI 资源包（随 APK 内置，热更可覆盖）"
     },
     {
       "id": "bundle:ui_pause.unity3d",
@@ -529,7 +530,8 @@
       "file": "bundle/ui_pause.unity3d",
       "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_pause.unity3d",
       "sha256": "a9b8db2e8482e65a090ff60c192c964c12e2b80ff41514cfb1d25aacae8d17a0",
-      "size": 10658
+      "size": 10658,
+      "notes": "暂停菜单 UI 资源包"
     },
     {
       "id": "bundle:ui_uicontrols.unity3d",
@@ -538,7 +540,8 @@
       "file": "bundle/ui_uicontrols.unity3d",
       "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_uicontrols.unity3d",
       "sha256": "21504fb640c443cc28c099c4e1c6c3aac5b0f8d9c47ff6953a3ca76b31c2af36",
-      "size": 18966
+      "size": 18966,
+      "notes": "通用控件 UI 资源包"
     },
     {
       "id": "picture:about-icon.png",
@@ -547,7 +550,8 @@
       "file": "picture/about-icon.png",
       "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/about-icon.png",
       "sha256": "5cd12b9cd7508f4c115c44514f41e8cb3aa24bf07fb2309202618eaf2af2cc90",
-      "size": 253621
+      "size": 253621,
+      "notes": "「关于」页图标"
     },
     {
       "id": "picture:announcement-icon.png",
@@ -556,7 +560,8 @@
       "file": "picture/announcement-icon.png",
       "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/announcement-icon.png",
       "sha256": "84e306c160ea1833f967b2c01d2a5a81951ab5f9340808bc84d61ece2939cbb5",
-      "size": 483
+      "size": 483,
+      "notes": "公告按钮图标（APK 内置优先，云端为回退）"
     },
     {
       "id": "picture:panel-placeholder.png",
@@ -565,7 +570,8 @@
       "file": "picture/panel-placeholder.png",
       "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/panel-placeholder.png",
       "sha256": "67cd42c3910b13bc39b5294807c371ee3e1f41954e4b67c4ad44dd6a1e312e0a",
-      "size": 1286630
+      "size": 1286630,
+      "notes": "面板加载占位图"
     },
     {
       "id": "picture:map-thumbnail-mgcmappack.png",
@@ -574,7 +580,8 @@
       "file": "picture/map-thumbnail-mgcmappack.png",
       "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/map-thumbnail-mgcmappack.png",
       "sha256": "eb650075834fdd6431391af29fe74e0876be461486a59f8f25104654b491c5d9",
-      "size": 428116
+      "size": 428116,
+      "notes": "MGC 官图缩略图"
     }
   ]
 }
