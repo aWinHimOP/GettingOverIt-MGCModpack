@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 77,
-  "generatedAt": "2026-10-08T17:46:25Z",
+  "rev": 78,
+  "generatedAt": "2026-10-08T17:52:29Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -503,10 +503,10 @@
           "version": "1.0.0",
           "file": "mod/MGCModpack.modpack",
           "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "59f8aaec3154c6d5df4f3e9a8c87ef4f9c2a08a81177ad3d5b06e9d9790e661b",
-          "size": 114539,
-          "publishedAt": "2026-10-08T17:46:25Z",
-          "notes": "AI试玩 v0.3：奖励 = 山体样条进度（CameraControl.lastTFValue，与游戏进度条同源），每推进 1% 得 1 点，反复经过不给；每局 60 秒后重载场景；移除自由相机 mod"
+          "sha256": "2aed95c5456b6c65c332d5d1b96c43b75a973473908dc5ae77de24a19140258e",
+          "size": 115635,
+          "publishedAt": "2026-10-08T17:52:29Z",
+          "notes": "AIGOI v0.4（原 AI试玩）：改名 AIGOI；开启 mod 即自动开始训练；权重自动存盘到 MGCModpack/AIGOI/genome.txt 并在重开后续训；山体样条进度线可视化（绿=已得分/白=未得分），设置页可开关"
         }
       ]
     }
