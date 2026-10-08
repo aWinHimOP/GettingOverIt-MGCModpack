@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 66,
-  "generatedAt": "2026-10-08T07:00:26Z",
+  "rev": 67,
+  "generatedAt": "2026-10-08T07:09:40Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -11,7 +11,7 @@
         "type": "all"
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.41",
+        "loader:MGCModpack": "1.28.0-alpha.42",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.41",
+        "loader:MGCModpack": "1.28.0-alpha.42",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.42",
+          "file": "versions/1.28.0-alpha.42/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.42/MGCModpack.dll",
+          "sha256": "8cf9c3fbd6e683463d1d056ae585b386522db7219fbd93cc1ade7525c9510701",
+          "size": 437760,
+          "publishedAt": "2026-10-08T07:09:40Z",
+          "notes": "alpha.42：内容与 alpha.41 相同。公告图标改的是 APK 内置资源 assets/Icons/Announcement.png（256×256 猫耳娘，白底已去除），必须配 alpha.42 的 APK"
+        },
         {
           "version": "1.28.0-alpha.41",
           "file": "versions/1.28.0-alpha.41/MGCModpack.dll",
