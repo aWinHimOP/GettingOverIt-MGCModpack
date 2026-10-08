@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 80,
-  "generatedAt": "2026-10-08T18:03:16Z",
+  "rev": 81,
+  "generatedAt": "2026-10-08T18:04:40Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -503,9 +503,9 @@
           "version": "1.0.0",
           "file": "mod/MGCModpack.modpack",
           "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "463db207ee1eb94c14628ff767f9d4725b7624b11ca482df9c8566e5ca56d2c4",
-          "size": 116866,
-          "publishedAt": "2026-10-08T18:03:16Z",
+          "sha256": "f31ecbf6260ccd42bc72c05273a3feee51ef879763e2b0a4c1d83c2346205533",
+          "size": 116904,
+          "publishedAt": "2026-10-08T18:04:40Z",
           "notes": "AIGOI v0.5：计分改成有符号（向前 +1 / 向后 -0.5，可调，来回晃互相抵消）；样条画成连续线+段号+左上角 HUD；新增 12 根障碍射线当观测（Physics2D.Raycast），可开关显示"
         }
       ]
