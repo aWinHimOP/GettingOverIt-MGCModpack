@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 75,
-  "generatedAt": "2026-10-08T16:59:21Z",
+  "rev": 76,
+  "generatedAt": "2026-10-08T17:24:56Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -503,10 +503,10 @@
           "version": "1.0.0",
           "file": "mod/MGCModpack.modpack",
           "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "273d3a738880f18ebec20fbe5cd8fa2398ae13c8d672f78999586d08d3d45b5a",
-          "size": 113607,
-          "publishedAt": "2026-10-08T16:59:21Z",
-          "notes": "AI试玩 v0.2：振荡器相位 + 动作噪声（治动作死板）；落水卡住自动重载场景；AI 运行时屏蔽玩家触摸输入"
+          "sha256": "5b8e8fab16e3ca055838fda4ad2703fbbb85b3992896f8fed504acecf5f87890",
+          "size": 116687,
+          "publishedAt": "2026-10-08T17:24:56Z",
+          "notes": "新增 自由相机 mod：按钮平移/缩放视角，在相机中心圈奖励区，区域存 AIGuide/zones.json 静态保存；AI 适应度 = 爬高 + 奖励区得分"
         }
       ]
     }
