@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 94,
-  "generatedAt": "2026-10-08T19:22:24Z",
+  "rev": 95,
+  "generatedAt": "2026-10-08T19:30:17Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -503,10 +503,10 @@
           "version": "1.0.0",
           "file": "mod/MGCModpack.modpack",
           "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "22e69d09238596221dbfedf5d20733a3b5cef0ac18485cadb2c4c2c4777e0dac",
-          "size": 119218,
-          "publishedAt": "2026-10-08T19:22:24Z",
-          "notes": "AIGOI 本机推理 + 进化学习（开启即自动训练，记录自动存盘）\n\n★ v1.3 实测数据驱动的一次修复\n\n抓取设备实际数据：\n  generation=1  bestFit=0.0244  episodes=9  bestRun=23.45\n结论：\n  · 记录其实是存下来了（generation/bestFit/episodes/bestRun 都在 genome.txt 里）\n  · AI **能走** —— bestRun=23.45 说明它往前推进了 23 个单位\n  · 但 bestFit 只有 0.024，几乎为零 ⇒ 往前走 23 又退回来了 23\n\n【根因】适应度用的是「净得分」。\n  「前进 23 再退回」和「完全没动」净得分都≈0 ⇒ 所有候选得分相同\n  ⇒ 没有选择压力 ⇒ 学不会。\n\n【修法】适应度 = **最远里程 MaxRun + 净得分 Score**。\n  这样「敢往前走」本身就是优点，梯度信号才存在。\n  日志现在同时打出两个分量：\n    [AIGOI] 第 N 代 / ... 适应度=X（最远里程 A，净得分 B，乘 W）\n\n【顺带】恢复 _cursorRb 赋值（之前一次编辑误删，导致光标位置观测恒为 0）\n【保留】异常改为连续计数（30 次才停），不再一次异常就永久静默停止\n\n· 记录：MGCModpack/AIGOI/genome.txt 存 generation / bestFit / episodes / bestRun + 全部权重\n· 奖励：沿线切线方向 + 距离。新地面沿切线向前加分 / 垂直移动 0 分 /\n  已走过的地面不加 / 沿切线往回退扣分\n· 方向自动判定：逐帧对 (ΔTF, ΔY) 投票，长期异号即判定样条反向并自动取反\n· 动作：只有模拟手指滑动（写 PlayerControl.cursorInputVelocity），幅度默认 150（可调）\n· 感知：38 维 = 位置/速度/朝向/动作历史/光标相对位置/12 根物理射线/卡住计时/速度EMA\n· 策略：38→12→2 小 MLP，种群 25，精英 4，交叉+变异，σ=0.4\n· 每局 30 秒（设置页可调）到点重载场景；落水卡住自动重载\n· 可视化三开关（设置页最顶部）：样条进度线 / 障碍射线 / 左下角 HUD"
+          "sha256": "e08cacdc7d5210cb13180a985d393dfb9f4338eca7db7792f5ff8e36e7394610",
+          "size": 119144,
+          "publishedAt": "2026-10-08T19:30:17Z",
+          "notes": "AIGOI 本机推理 + 进化学习（开启即自动训练，记录自动存盘）\n\n★ v1.4 修「重置场景后奖励反过来」—— 用户诊断正确\n\n根因：自动判定样条方向用的三个静态字段没在场景重载时清空：\n  FlipVotes / _lastYForFlip / _prevTfForFlip\n\n重载时玩家从半山腰被瞬移回起点 → tf 从 0.3 跳到 0.009\n→ dtfFlip = -0.29（巨大跳变），dyFlip 也是巨大跳变\n→ 产生虚假大票；FlipVotes 是静态的，跨场景累加\n→ 几次重载后到 -10 → TangentFlipped = true → 切线被取反 → 奖励方向反了\n\n修法：\n  1. 删掉自动判定（山体盘旋上升，Y 与 TF 非单调，该方案本来就不成立）\n  2. 改成设置页手动开关「样条方向取反（里程越爬越小就打开）」\n  3. Reset() 彻底清干净：样条缓存、相机引用、诊断计时器全部清零\n\nspline 切线方案本身没问题 —— 问题在判定方向的静态状态跨场景没清。\n\n· 适应度 = 最远里程 MaxRun + 净得分 Score\n· 奖励：沿线切线方向 + 距离。新地面沿切线向前加分 / 垂直移动 0 分 /\n  已走过的地面不加 / 沿切线往回退扣分\n· 记录：MGCModpack/AIGOI/genome.txt 存 generation / bestFit / episodes / bestRun + 全部权重\n· 动作：只有模拟手指滑动（写 PlayerControl.cursorInputVelocity），幅度默认 150（可调）\n· 感知：38 维 = 位置/速度/朝向/动作历史/光标相对位置/12 根物理射线/卡住计时/速度EMA\n· 策略：38→12→2 小 MLP，种群 25，精英 4，交叉+变异，σ=0.4\n· 每局 30 秒（设置页可调）到点重载场景；落水卡住自动重载\n· 可视化开关（设置页最顶部）：样条进度线 / 障碍射线 / 左下角 HUD / 样条方向取反"
         }
       ]
     }
