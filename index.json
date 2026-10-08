@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 86,
-  "generatedAt": "2026-10-08T18:26:22Z",
+  "rev": 87,
+  "generatedAt": "2026-10-08T18:39:54Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -503,10 +503,10 @@
           "version": "1.0.0",
           "file": "mod/MGCModpack.modpack",
           "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "a67809a825bfd9d69ba1ee2e0ba110cf176ec26ed6f53c2f15aa93c580013519",
-          "size": 117490,
-          "publishedAt": "2026-10-08T18:26:22Z",
-          "notes": "AIGOI 本机推理 + 进化学习（开启即自动训练，权重自动存盘）\n· 动作：只有模拟手指滑动（写 PlayerControl.cursorInputVelocity），不碰马达\n· 奖励：山体样条进度 —— 向前每段 +1、向后每段 -0.5（可调），段数 1000，反复经过不给，来回晃互相抵消\n· 感知：12 根物理射线（Physics2D.Raycast）当眼睛，观测 28 维\n· 策略：28→24→2 小 MLP，(1+λ) 进化，带振荡器相位与动作噪声\n· 每局 120 秒（设置页可调）到点重载场景；落水卡住自动重载\n· 权重存 MGCModpack/AIGOI/genome.txt，刷新纪录即写盘\n· 可视化三开关（设置页最顶部）：样条进度线 / 障碍射线 / 左下角 HUD\n· 场景重载后自动重建样条缓存（存活检查），修复线消失与不再得分\n· 性能：采样点缓存 + 只在 Repaint 绘制 + 绘制采样 200（与段数解耦）\n· 设置页会打印三个开关的创建结果，便于排查显示问题"
+          "sha256": "f0a40dfd9a4d03831d20fbf7119166106e2410d60db0ef2eab8bda94dcc409e2",
+          "size": 117640,
+          "publishedAt": "2026-10-08T18:39:54Z",
+          "notes": "AIGOI 本机推理 + 进化学习（开启即自动训练，权重自动存盘）\n\n★ v0.6 两个关键修复（上一版几乎动不了）：\n1) 动作幅度 3 → 150。真实手指滑动算出的 cursorInputVelocity 量级约 100~400，\n   原来写 3 差了约 100 倍，且下游是平方级衰减 → AI 的手几乎动不了。\n   现在设置页可调。\n2) 观测补上「光标相对玩家的位置」。这个游戏锤子的锚点就是光标，\n   原来只有速度大小、没有光标位置 → 相当于不知道自己的手伸到哪了。\n\n· 动作：只有模拟手指滑动（写 PlayerControl.cursorInputVelocity），不碰马达\n· 奖励：山体样条进度 —— 向前每段 +1、向后每段 -0.5（可调），段数 1000，反复经过不给\n· 感知：12 根物理射线（Physics2D.Raycast）+ 光标相对位置，观测 30 维\n· 策略：30→24→2 小 MLP，(1+λ) 进化，带振荡器相位与动作噪声\n· 每局 120 秒（设置页可调）到点重载场景；落水卡住自动重载\n· 权重存 MGCModpack/AIGOI/genome.txt，刷新纪录即写盘\n· 可视化三开关（设置页最顶部）：样条进度线 / 障碍射线 / 左下角 HUD\n· 性能：采样点缓存 + 只在 Repaint 绘制 + 绘制采样 200（与段数解耦）"
         }
       ]
     }
