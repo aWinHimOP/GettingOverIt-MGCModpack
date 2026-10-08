@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 68,
-  "generatedAt": "2026-10-08T07:17:13Z",
+  "rev": 69,
+  "generatedAt": "2026-10-08T07:18:06Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -11,7 +11,7 @@
         "type": "all"
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.42",
+        "loader:MGCModpack": "1.28.0-alpha.43",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.42",
+        "loader:MGCModpack": "1.28.0-alpha.43",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.43",
+          "file": "versions/1.28.0-alpha.43/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.43/MGCModpack.dll",
+          "sha256": "8cf9c3fbd6e683463d1d056ae585b386522db7219fbd93cc1ade7525c9510701",
+          "size": 437760,
+          "publishedAt": "2026-10-08T07:18:06Z",
+          "notes": "alpha.43：框架与 alpha.42 相同。本次更新的是 APK 内置 ui_mainmenu.unity3d；bundle 本身走 assets 热更（bundle/ui_mainmenu.unity3d），不需要重装也能生效"
+        },
         {
           "version": "1.28.0-alpha.42",
           "file": "versions/1.28.0-alpha.42/MGCModpack.dll",
