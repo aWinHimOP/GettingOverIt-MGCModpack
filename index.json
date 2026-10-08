@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 65,
-  "generatedAt": "2026-10-08T06:24:54Z",
+  "rev": 66,
+  "generatedAt": "2026-10-08T07:00:26Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -11,7 +11,7 @@
         "type": "all"
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.40",
+        "loader:MGCModpack": "1.28.0-alpha.41",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.40",
+        "loader:MGCModpack": "1.28.0-alpha.41",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.41",
+          "file": "versions/1.28.0-alpha.41/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.41/MGCModpack.dll",
+          "sha256": "8cf9c3fbd6e683463d1d056ae585b386522db7219fbd93cc1ade7525c9510701",
+          "size": 437760,
+          "publishedAt": "2026-10-08T07:00:26Z",
+          "notes": "alpha.41：公告按键图标换成 256×256 猫耳娘（icon/announcement-icon-v2.png，白底已从边缘泛洪去除、人物身上的白色保留）"
+        },
         {
           "version": "1.28.0-alpha.40",
           "file": "versions/1.28.0-alpha.40/MGCModpack.dll",
