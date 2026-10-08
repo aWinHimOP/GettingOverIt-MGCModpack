@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 71,
-  "generatedAt": "2026-10-08T07:53:08Z",
+  "rev": 72,
+  "generatedAt": "2026-10-08T07:56:32Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -11,7 +11,7 @@
         "type": "all"
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.45",
+        "loader:MGCModpack": "1.28.0-alpha.46",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.45",
+        "loader:MGCModpack": "1.28.0-alpha.46",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.46",
+          "file": "versions/1.28.0-alpha.46/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.46/MGCModpack.dll",
+          "sha256": "b51e2e245f5d39e711f805abbd6119afd9ce01e375554121f17da0178a801be7",
+          "size": 443392,
+          "publishedAt": "2026-10-08T07:56:32Z",
+          "notes": "alpha.46：存储自检不再谎报权限（JNI 拿不到 activity 时改用文件系统探测）"
+        },
         {
           "version": "1.28.0-alpha.45",
           "file": "versions/1.28.0-alpha.45/MGCModpack.dll",
