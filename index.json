@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 73,
-  "generatedAt": "2026-10-08T12:44:38Z",
+  "rev": 74,
+  "generatedAt": "2026-10-08T16:16:27Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -503,10 +503,10 @@
           "version": "1.0.0",
           "file": "mod/MGCModpack.modpack",
           "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "cb7783f4f75701205666e3a2e390c7e96be69d17995024e8ca2aa274e5be3e5f",
-          "size": 111003,
-          "publishedAt": "2026-10-07T16:20:51Z",
-          "notes": "修 mod 配置不保存（SaveConfig 非虚 + CollectConfig）；橘子雨防意外通关按玩家碰撞体判定；Sideways 重力改跟随"
+          "sha256": "00e41cb4e8eb0f3a2ec097236fac6c3b0f05e41712f8e73bee814485f7df1568",
+          "size": 113267,
+          "publishedAt": "2026-10-08T16:16:27Z",
+          "notes": "新增 AI试玩：本机推理 + (1+λ) 进化，动作空间只有模拟手指滑动（写 cursorInputVelocity），不碰马达"
         }
       ]
     }
