@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 74,
-  "generatedAt": "2026-10-08T16:16:27Z",
+  "rev": 75,
+  "generatedAt": "2026-10-08T16:59:21Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -503,10 +503,10 @@
           "version": "1.0.0",
           "file": "mod/MGCModpack.modpack",
           "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "00e41cb4e8eb0f3a2ec097236fac6c3b0f05e41712f8e73bee814485f7df1568",
-          "size": 113267,
-          "publishedAt": "2026-10-08T16:16:27Z",
-          "notes": "新增 AI试玩：本机推理 + (1+λ) 进化，动作空间只有模拟手指滑动（写 cursorInputVelocity），不碰马达"
+          "sha256": "273d3a738880f18ebec20fbe5cd8fa2398ae13c8d672f78999586d08d3d45b5a",
+          "size": 113607,
+          "publishedAt": "2026-10-08T16:59:21Z",
+          "notes": "AI试玩 v0.2：振荡器相位 + 动作噪声（治动作死板）；落水卡住自动重载场景；AI 运行时屏蔽玩家触摸输入"
         }
       ]
     }
