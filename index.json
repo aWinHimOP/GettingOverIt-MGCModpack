@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 69,
-  "generatedAt": "2026-10-08T07:18:06Z",
+  "rev": 70,
+  "generatedAt": "2026-10-08T07:45:40Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -11,7 +11,7 @@
         "type": "all"
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.43",
+        "loader:MGCModpack": "1.28.0-alpha.44",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.43",
+        "loader:MGCModpack": "1.28.0-alpha.44",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.44",
+          "file": "versions/1.28.0-alpha.44/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.44/MGCModpack.dll",
+          "sha256": "e2fe448c633b0b999ff47306ec80ae2cdab0db5990956790b0756ce9e76ef4d2",
+          "size": 443392,
+          "publishedAt": "2026-10-08T07:45:40Z",
+          "notes": "alpha.44：新增 MGC.Services.ExternalStorage —— 权限申请、列相册、列压缩包、读/拷贝文件；启动时打一行存储自检。放在热更层，改它不用重打包 APK"
+        },
         {
           "version": "1.28.0-alpha.43",
           "file": "versions/1.28.0-alpha.43/MGCModpack.dll",
