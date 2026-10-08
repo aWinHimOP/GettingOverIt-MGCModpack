@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 63,
-  "generatedAt": "2026-10-07T17:20:00Z",
+  "rev": 64,
+  "generatedAt": "2026-10-08T06:21:39Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -11,7 +11,7 @@
         "type": "all"
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.38",
+        "loader:MGCModpack": "1.28.0-alpha.39",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.38",
+        "loader:MGCModpack": "1.28.0-alpha.39",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.39",
+          "file": "versions/1.28.0-alpha.39/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.39/MGCModpack.dll",
+          "sha256": "bfbe41112a47b9927fe029b6f01a3acc06c59068bcb18e1ffa346839d5f59a69",
+          "size": 437760,
+          "publishedAt": "2026-10-08T06:21:39Z",
+          "notes": "alpha.39：移除 MGCContract（不再做契约版本管理）；HookBus 增加按站点触发计数与会话报告 —— 把「注册了处理器却从未触发」的静默失效变成日志里一眼可见。需配新 APK（MGCLoader 同步瘦身）"
+        },
         {
           "version": "1.28.0-alpha.38",
           "file": "versions/1.28.0-alpha.38/MGCModpack.dll",
