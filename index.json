@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 72,
-  "generatedAt": "2026-10-08T07:56:32Z",
+  "rev": 73,
+  "generatedAt": "2026-10-08T12:44:38Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -11,7 +11,7 @@
         "type": "all"
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.46",
+        "loader:MGCModpack": "1.28.0-alpha.47",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.46",
+        "loader:MGCModpack": "1.28.0-alpha.47",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.47",
+          "file": "versions/1.28.0-alpha.47/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.47/MGCModpack.dll",
+          "sha256": "283d953c32f068834558c2303f60137aa0683c2dacb3d4a72534b0ea3956b789",
+          "size": 444928,
+          "publishedAt": "2026-10-08T12:44:38Z",
+          "notes": "alpha.47：玩家设置新增「从相册导入头像」「存储自检」；启动自检实际列一遍相册/压缩包"
+        },
         {
           "version": "1.28.0-alpha.46",
           "file": "versions/1.28.0-alpha.46/MGCModpack.dll",
