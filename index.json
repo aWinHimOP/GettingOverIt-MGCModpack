@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 85,
-  "generatedAt": "2026-10-08T18:21:55Z",
+  "rev": 86,
+  "generatedAt": "2026-10-08T18:26:22Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -503,10 +503,10 @@
           "version": "1.0.0",
           "file": "mod/MGCModpack.modpack",
           "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "1317f3f535f1dbea3d521fc5b6fc4699a6aceab262be8cb24ebec45cfa634caa",
-          "size": 117466,
-          "publishedAt": "2026-10-08T18:21:55Z",
-          "notes": "AIGOI 本机推理 + 进化学习（开启即自动训练，权重自动存盘）\n· 动作：只有模拟手指滑动（写 PlayerControl.cursorInputVelocity），不碰马达\n· 奖励：山体样条进度 —— 向前每段 +1、向后每段 -0.5（可调），段数 1000，反复经过不给，来回晃互相抵消\n· 感知：12 根物理射线（Physics2D.Raycast）当眼睛，观测 28 维\n· 策略：28→24→2 小 MLP，(1+λ) 进化，带振荡器相位与动作噪声\n· 每局 120 秒（设置页可调）到点重载场景；落水卡住自动重载\n· 权重存 MGCModpack/AIGOI/genome.txt，刷新纪录即写盘\n· 可视化三开关：样条进度线 / 障碍射线 / 左下角 HUD\n· 场景重载后自动重建样条缓存（存活检查），修复线消失与不再得分\n· 性能：采样点缓存 + 只在 Repaint 绘制 + 绘制采样 200（与段数解耦）"
+          "sha256": "a67809a825bfd9d69ba1ee2e0ba110cf176ec26ed6f53c2f15aa93c580013519",
+          "size": 117490,
+          "publishedAt": "2026-10-08T18:26:22Z",
+          "notes": "AIGOI 本机推理 + 进化学习（开启即自动训练，权重自动存盘）\n· 动作：只有模拟手指滑动（写 PlayerControl.cursorInputVelocity），不碰马达\n· 奖励：山体样条进度 —— 向前每段 +1、向后每段 -0.5（可调），段数 1000，反复经过不给，来回晃互相抵消\n· 感知：12 根物理射线（Physics2D.Raycast）当眼睛，观测 28 维\n· 策略：28→24→2 小 MLP，(1+λ) 进化，带振荡器相位与动作噪声\n· 每局 120 秒（设置页可调）到点重载场景；落水卡住自动重载\n· 权重存 MGCModpack/AIGOI/genome.txt，刷新纪录即写盘\n· 可视化三开关（设置页最顶部）：样条进度线 / 障碍射线 / 左下角 HUD\n· 场景重载后自动重建样条缓存（存活检查），修复线消失与不再得分\n· 性能：采样点缓存 + 只在 Repaint 绘制 + 绘制采样 200（与段数解耦）\n· 设置页会打印三个开关的创建结果，便于排查显示问题"
         }
       ]
     }
