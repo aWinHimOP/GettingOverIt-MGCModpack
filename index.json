@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 102,
-  "generatedAt": "2026-10-09T04:18:28Z",
+  "rev": 104,
+  "generatedAt": "2026-10-09T04:33:29Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -10,11 +10,7 @@
       "target": {
         "type": "all"
       },
-      "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.47",
-        "map:MGCModpack": "1.0.0",
-        "mod:MGCModpack": "1.0.0"
-      }
+      "pin": "1.28.0-alpha.48"
     },
     "test": {
       "label": "测试",
@@ -28,11 +24,7 @@
           }
         ]
       },
-      "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.47",
-        "map:MGCModpack": "1.0.0",
-        "mod:MGCModpack": "1.0.0"
-      }
+      "pin": "1.28.0-alpha.48"
     }
   },
   "artifacts": [
@@ -41,6 +33,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.48",
+          "file": "artifacts/loader/MGCModpack-1.28.0-alpha.48.dll",
+          "url": "https://raw.githubusercontent.com/aWinHimOP/GettingOverIt-MGCModpack/main/artifacts/loader/MGCModpack-1.28.0-alpha.48.dll",
+          "sha256": "ba3286405c0137c02ebc0b977a29fb4356d982a4b84d05d84d68c8d06500d378",
+          "size": 444928,
+          "publishedAt": "2026-10-09T04:33:29Z",
+          "notes": "新增 player.touch 站点：PlayerControl.Update 在 Input.touchCount==0 的提前 return 处插桩，mod 可提供合成的手指滑动（F1/F2=像素增量，F3=帧时间；F3>0 表示接管）。下游完全走游戏原本流水线（×0.05、加速度曲线、平滑）。"
+        },
         {
           "version": "1.28.0-alpha.47",
           "file": "versions/1.28.0-alpha.47/MGCModpack.dll",
@@ -503,10 +504,10 @@
           "version": "1.0.0",
           "file": "mod/MGCModpack.modpack",
           "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "22cea7ca4ccca186ba891a5ad1fb1b9d1e07036eeb2bb532cc0fe02d0c00c1ab",
-          "size": 119907,
-          "publishedAt": "2026-10-09T04:18:28Z",
-          "notes": "AIGOI v2.1 取消扣分（用户指出：往回干脆别扣分，往哪走都扣根本没有反馈）\n\n现在规则：只有刷新「沿切线的最远里程」才加分（+1/单位）；后退只减少里程，不扣分。\n原地来回晃：拿不到分，但也不亏。\n\n★ 关于「模拟触摸/插桩」：用户提议正确，应给 PlayerControl.Update 插桩让 AI 输入走和真手指相同的路径。\n需要：a) 在 Input 读取段前后插桩（touchCount==0 的提前 return 之前）b) MGCBridge 加传递触摸增量+相位的接口 c) HookBus 新站点 d) 重打包 APK。这是下一步正式计划。\n\n· 适应度 = 最远里程 MaxRun + 净得分 Score（不再为负）\n· 记录：Mods/AIGOI/genome.txt，每局写盘\n· 感知 38 维；策略 38→12→2 MLP，种群 25，精英 4，交叉+变异 σ=0.4\n· 每局 30 秒（可调）到点重载场景\n· 诊断：[AIGOI诊断] 每秒一行"
+          "sha256": "c66040ae5754255a4715d21e411f07d6876f0a93441834243da88ad3be534b4e",
+          "size": 119947,
+          "publishedAt": "2026-10-09T04:33:29Z",
+          "notes": "AIGOI v3.0 改用合成触摸（插桩）\n\n★ 这是用户从第一轮就要求、我绕了十几轮才做对的事。\n\n改动：\n1. 给 PlayerControl.Update 插桩（位置：Input.touchCount==0 的提前 return 处）\n   没有真实手指时，mod 可提供合成输入：\n     MGCBridge.HookValue(\"player.touch\", this, ref mgcDx, ref mgcDy, ref mgcDt);\n     mgcDt > 0 表示接管 → vector=(mgcDx,mgcDy), d=mgcDt, touchPhase=Moved\n2. 新增通用站点 HookSites.PlayerTouch = \"player.touch\" —— **其他 mod 也能用**\n   （录屏回放、脚本演示、辅助操作……任何需要合成触摸的 mod）\n3. AIGOI 的动作改为「手指滑动像素/帧」，直接走游戏原本的 ×0.05、加速度曲线、平滑\n\n为什么之前一直不对：\n  我一直在下游直接写 cursorInputVelocity，等于跳过了整条流水线。\n  读完整源码后算出真实值约 5~15，而我一度设成 150（大 20 倍），\n  位移反而比设 3 时小 10 倍 —— 调了 5 轮都没调对。\n\n· 计分：纯正向（只有刷新沿切线的最远里程才加分，后退不扣）\n· 适应度 = 最远里程 MaxRun + 净得分 Score\n· 记录：Mods/AIGOI/genome.txt，每局写盘\n· 诊断：[AIGOI诊断] 每秒一行（TF/玩家Y/位移/切线/点积/里程/得分）"
         }
       ]
     }
