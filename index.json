@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 104,
-  "generatedAt": "2026-10-09T04:33:29Z",
+  "rev": 105,
+  "generatedAt": "2026-10-09T04:37:07Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -36,7 +36,7 @@
         {
           "version": "1.28.0-alpha.48",
           "file": "artifacts/loader/MGCModpack-1.28.0-alpha.48.dll",
-          "url": "https://raw.githubusercontent.com/aWinHimOP/GettingOverIt-MGCModpack/main/artifacts/loader/MGCModpack-1.28.0-alpha.48.dll",
+          "url": "https://awinhimop.github.io/aWinHimOP/GettingOverIt-MGCModpack/artifacts/loader/MGCModpack-1.28.0-alpha.48.dll",
           "sha256": "ba3286405c0137c02ebc0b977a29fb4356d982a4b84d05d84d68c8d06500d378",
           "size": 444928,
           "publishedAt": "2026-10-09T04:33:29Z",
