@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 107,
-  "generatedAt": "2026-10-09T05:08:54Z",
+  "rev": 108,
+  "generatedAt": "2026-10-09T05:14:45Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -10,7 +10,11 @@
       "target": {
         "type": "all"
       },
-      "pin": "1.28.0-alpha.48"
+      "pin": {
+        "loader:MGCModpack": "1.28.0-alpha.48",
+        "map:MGCModpack": "1.0.0",
+        "mod:MGCModpack": "1.0.0"
+      }
     },
     "test": {
       "label": "测试",
@@ -24,7 +28,11 @@
           }
         ]
       },
-      "pin": "1.28.0-alpha.48"
+      "pin": {
+        "loader:MGCModpack": "1.28.0-alpha.48",
+        "map:MGCModpack": "1.0.0",
+        "mod:MGCModpack": "1.0.0"
+      }
     }
   },
   "artifacts": [
