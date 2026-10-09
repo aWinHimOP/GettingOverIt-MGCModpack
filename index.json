@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 109,
-  "generatedAt": "2026-10-09T05:26:35Z",
+  "rev": 110,
+    "generatedAt": "2026-10-09T05:41:50Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -512,10 +512,10 @@
           "version": "1.0.0",
           "file": "mod/MGCModpack.modpack",
           "url": "https://raw.githubusercontent.com/aWinHimOP/GettingOverIt-MGCModpack/main/mod/MGCModpack.modpack",
-          "sha256": "9ce2defa762734217749e1dd997a5878e487b4ce0f946f4c9ae002f201380d60",
-          "size": 120179,
-          "publishedAt": "2026-10-09T05:26:35Z",
-          "notes": "AIGOI v3.1 修复「AI 完全无法移动」的根因：player.cursor 为了禁止玩家操控而无条件清零，把 AI 自己刚在 player.touch 写进去的动作也一起抹掉了 —— 现在按帧号区分，只掐真手指。\n\nAIGOI v3.0 改用合成触摸（插桩）\n\n★ 这是用户从第一轮就要求、我绕了十几轮才做对的事。\n\n改动：\n1. 给 PlayerControl.Update 插桩（位置：Input.touchCount==0 的提前 return 处）\n   没有真实手指时，mod 可提供合成输入：\n     MGCBridge.HookValue(\"player.touch\", this, ref mgcDx, ref mgcDy, ref mgcDt);\n     mgcDt > 0 表示接管 → vector=(mgcDx,mgcDy), d=mgcDt, touchPhase=Moved\n2. 新增通用站点 HookSites.PlayerTouch = \"player.touch\" —— **其他 mod 也能用**\n   （录屏回放、脚本演示、辅助操作……任何需要合成触摸的 mod）\n3. AIGOI 的动作改为「手指滑动像素/帧」，直接走游戏原本的 ×0.05、加速度曲线、平滑\n\n为什么之前一直不对：\n  我一直在下游直接写 cursorInputVelocity，等于跳过了整条流水线。\n  读完整源码后算出真实值约 5~15，而我一度设成 150（大 20 倍），\n  位移反而比设 3 时小 10 倍 —— 调了 5 轮都没调对。\n\n· 计分：纯正向（只有刷新沿切线的最远里程才加分，后退不扣）\n· 适应度 = 最远里程 MaxRun + 净得分 Score\n· 记录：Mods/AIGOI/genome.txt，每局写盘\n· 诊断：[AIGOI诊断] 每秒一行（TF/玩家Y/位移/切线/点积/里程/得分）"
+          "sha256": "262d8b6cf77c35bcd5fd203d6a3a8d18f1eb8169e5fc7c678a6faee80fefce5b",
+          "size": 124507,
+          "publishedAt": "2026-10-09T05:41:50Z",
+          "notes": "AIGOI v4.0 玩家预制体竞技场：克隆真实玩家 N 份当「子代理」并行采集经验。物理完全由游戏自己的 PlayerControl 跑（不是复刻公式），动作按 player.touch 的 c.Target 分发；每个鬼影配独立光标、放 31 层避开游戏的落水检测。一代 = 一局（原来 λ=24 ⇒ 一代 25 分钟，这就是「代次永远停在 0」的根因）。\n\nAIGOI v3.1 修复「AI 完全无法移动」的根因：player.cursor 为了禁止玩家操控而无条件清零，把 AI 自己刚在 player.touch 写进去的动作也一起抹掉了 —— 现在按帧号区分，只掐真手指。\n\nAIGOI v3.0 改用合成触摸（插桩）\n\n★ 这是用户从第一轮就要求、我绕了十几轮才做对的事。\n\n改动：\n1. 给 PlayerControl.Update 插桩（位置：Input.touchCount==0 的提前 return 处）\n   没有真实手指时，mod 可提供合成输入：\n     MGCBridge.HookValue(\"player.touch\", this, ref mgcDx, ref mgcDy, ref mgcDt);\n     mgcDt > 0 表示接管 → vector=(mgcDx,mgcDy), d=mgcDt, touchPhase=Moved\n2. 新增通用站点 HookSites.PlayerTouch = \"player.touch\" —— **其他 mod 也能用**\n   （录屏回放、脚本演示、辅助操作……任何需要合成触摸的 mod）\n3. AIGOI 的动作改为「手指滑动像素/帧」，直接走游戏原本的 ×0.05、加速度曲线、平滑\n\n为什么之前一直不对：\n  我一直在下游直接写 cursorInputVelocity，等于跳过了整条流水线。\n  读完整源码后算出真实值约 5~15，而我一度设成 150（大 20 倍），\n  位移反而比设 3 时小 10 倍 —— 调了 5 轮都没调对。\n\n· 计分：纯正向（只有刷新沿切线的最远里程才加分，后退不扣）\n· 适应度 = 最远里程 MaxRun + 净得分 Score\n· 记录：Mods/AIGOI/genome.txt，每局写盘\n· 诊断：[AIGOI诊断] 每秒一行（TF/玩家Y/位移/切线/点积/里程/得分）"
         }
       ]
     }
