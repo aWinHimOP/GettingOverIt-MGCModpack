@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 99,
-  "generatedAt": "2026-10-08T19:46:23Z",
+  "rev": 100,
+  "generatedAt": "2026-10-09T04:11:56Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -503,10 +503,10 @@
           "version": "1.0.0",
           "file": "mod/MGCModpack.modpack",
           "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "bda680fe934007d015f6566794c7f01fa64f25e051411a9cd2d8dc19a19e4697",
-          "size": 119593,
-          "publishedAt": "2026-10-08T19:46:23Z",
-          "notes": "AIGOI 本机推理 + 进化学习（开启即自动训练，记录自动存盘）\n\n★ v1.8 落水检测改用**游戏自己的脚本**（用户指出游戏里本来就有）\n\n游戏自带 RestartOnContact（挂在水的碰撞体上）：\n  OnCollisionEnter2D 命中 Player 层时 →\n      ScreenFader.EndScene(ResetPlayerButNotDialogue)\n      resetting = true; Invoke(\"ResetResetting\", 1f);\n\n三个关键点：\n  1. 它做的是 **ResetPlayerButNotDialogue**，不是重载场景 ——\n     所以「落水有概率不重置场景」是正常的，不该靠场景重载判断落水。\n  2. **resetting 字段就是现成的落水标志位**，命中后 true，1 秒后自动恢复。\n  3. 它检测的是 Player 层的碰撞。\n\n现在直接读这个标志位（反射），高度差只作兜底。\n不再自己造检测 —— 游戏已经写好了。\n\n★ 历史修复\n  v1.7 得分跨场景重载存活（不再依赖落水检测来堵逃避扣分的漏洞）\n  v1.6 落水改为结算这一局\n  v1.5 权重改存 mod 专属目录，自动迁移旧文件\n  v1.4 修方向状态跨场景残留\n\n· 方向说明：实测开局时 TF≈0.009（玩家在山脚），所以 TF 增大 = 往上爬，切线方向正确\n· 适应度 = 最远里程 MaxRun + 净得分 Score\n· 奖励：沿线切线方向 + 距离。新地面沿切线向前加分 / 垂直移动 0 分 /\n  已走过的地面不加 / 沿切线往回退扣分\n· 记录：Mods/AIGOI/genome.txt 存 generation / bestFit / episodes / bestRun + 全部权重，每局都写盘\n· 配置迁移：旧的 actionScale=3 会自动改成 150\n· 动作：只有模拟手指滑动（写 PlayerControl.cursorInputVelocity），不碰马达\n· 感知：38 维 = 位置/速度/朝向/动作历史/光标相对位置/12 根物理射线/卡住计时/速度EMA\n· 策略：38→12→2 小 MLP，种群 25，精英 4，交叉+变异，σ=0.4\n· 每局 30 秒（设置页可调）到点重载场景\n· 可视化开关（设置页最顶部）：样条进度线 / 障碍射线 / 左下角 HUD / 样条方向取反"
+          "sha256": "b4391bcbb6c94f2f5dc4118885616f7104e18410917359ad6737369f6439e1c1",
+          "size": 119846,
+          "publishedAt": "2026-10-09T04:11:56Z",
+          "notes": "AIGOI 本机推理 + 进化学习（开启即自动训练，记录自动存盘）\n\n★ v1.9 修复诊断日志（之前静默失效，导致一直拿不到方向判据）\n\n复查发现：[AIGOI诊断] 那段代码**从来没有生效过** ——\n插入时锚点没匹配上、静默失败，所以日志里一次都没出现过。\n这就是为什么「方向到底反没反」一直只能靠推理、拿不到实证。\n\n现在每 1 秒打一行完整判据：\n  [AIGOI诊断] TF=... 玩家Y=... 位移=(x,y) 切线=(x,y) 点积=... 里程=a/b 得分=... 取反=...\n\n判读方法：\n  · 玩家往上爬时，若「点积」长期为负 → 切线方向反了 → 打开设置页的「样条方向取反」\n  · 若「点积」为正但「里程」不涨 → 说明在垂直于线移动，蹭不到分\n\n关于方向的一条旁证（来自 CameraControl 源码）：\n  this.lookaheadPos = spline.Interpolate(lastTF + 0.01f)*0.333f + ...(+0.02f) + ...(+0.03f)\n  相机是「往前看」的，取 lastTF+0.01~0.03 作前瞻点；跟随相机永远看行进方向，\n  所以 TF 增大应当是前进方向。但这条只是旁证，最终以诊断日志为准。\n\n★ 历史修复\n  v1.8 落水检测改用游戏自带的 RestartOnContact.resetting 标志位\n  v1.7 得分跨场景重载存活（堵死「落水逃避扣分」）\n  v1.6 落水改为结算这一局\n  v1.5 权重改存 mod 专属目录，自动迁移旧文件\n  v1.4 修方向状态跨场景残留\n\n· 适应度 = 最远里程 MaxRun + 净得分 Score\n· 奖励：沿线切线方向 + 距离。新地面沿切线向前加分 / 垂直移动 0 分 /\n  已走过的地面不加 / 沿切线往回退扣分\n· 记录：Mods/AIGOI/genome.txt 存 generation / bestFit / episodes / bestRun + 全部权重，每局都写盘\n· 动作：只有模拟手指滑动（写 PlayerControl.cursorInputVelocity），不碰马达\n· 感知：38 维 = 位置/速度/朝向/动作历史/光标相对位置/12 根物理射线/卡住计时/速度EMA\n· 策略：38→12→2 小 MLP，种群 25，精英 4，交叉+变异，σ=0.4\n· 每局 30 秒（设置页可调）到点重载场景\n· 可视化开关（设置页最顶部）：样条进度线 / 障碍射线 / 左下角 HUD / 样条方向取反"
         }
       ]
     }
