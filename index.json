@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 128,
-  "generatedAt": "2026-10-11T16:48:58Z",
+  "rev": 129,
+  "generatedAt": "2026-10-11T17:45:14Z",
   "generator": "RepoEditor\/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.55",
+        "loader:MGCModpack": "1.28.0-alpha.56",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.56",
+          "file": "versions\/1.28.0-alpha.56\/MGCModpack.dll",
+          "url": "https:\/\/awinhimop.github.io\/GettingOverIt-MGCModpack\/versions\/1.28.0-alpha.56\/MGCModpack.dll",
+          "sha256": "5ebbf4a1a5c2db4516a239053aa71e293dd6715676b4b032e101a61bd2ce525c",
+          "size": 462336,
+          "publishedAt": "2026-10-11T17:45:14Z",
+          "notes": "1.28.0-alpha.56：①面板模板自检 —— 启动时把 ModPanel\/MapPanel 的节点树打进日志（bundle 里没有 prefab 源码，渲染代码得按真实结构写，不再靠猜）；②「下载列表」渠道接上（只列正在下载和下载失败的，已下好的归本地 Mod\/Map 页签管）；③「上传」渠道给出人话说明（功能没做，别点了没反应）。"
+        },
         {
           "version": "1.28.0-alpha.55",
           "file": "versions\/1.28.0-alpha.55\/MGCModpack.dll",
