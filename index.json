@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 133,
-  "generatedAt": "2026-10-11T19:45:37Z",
+  "rev": 134,
+  "generatedAt": "2026-10-11T19:49:41Z",
   "generator": "RepoEditor\/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.60",
+        "loader:MGCModpack": "1.28.0-alpha.61",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.61",
+          "file": "versions\/1.28.0-alpha.61\/MGCModpack.dll",
+          "url": "https:\/\/awinhimop.github.io\/GettingOverIt-MGCModpack\/versions\/1.28.0-alpha.61\/MGCModpack.dll",
+          "sha256": "991edd2bd3682a4ea359330a07ffd7831fb202e290ad784ff7141f5ee8101e29",
+          "size": 467456,
+          "publishedAt": "2026-10-11T19:49:41Z",
+          "notes": "1.28.0-alpha.61：社区页加「候选源」日志和一次性下载自检。候选源日志直接证明客户端会先试服务器、失败才退到 GitHub —— 这是 C4\/C3 的关键。下载自检只在设备上放了 dltest.flag 时跑一次（跑完自删，普通玩家永远不会触发），用来在没法手点 UI 的测试机上把「真的从服务器下一次包」验完。下的是官方 Mod 包，本来就装着，重下只是同内容覆盖，不改变任何状态。"
+        },
         {
           "version": "1.28.0-alpha.60",
           "file": "versions\/1.28.0-alpha.60\/MGCModpack.dll",
