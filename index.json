@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 129,
-  "generatedAt": "2026-10-11T17:45:14Z",
+  "rev": 130,
+  "generatedAt": "2026-10-11T18:20:12Z",
   "generator": "RepoEditor\/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.56",
+        "loader:MGCModpack": "1.28.0-alpha.57",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.57",
+          "file": "versions\/1.28.0-alpha.57\/MGCModpack.dll",
+          "url": "https:\/\/awinhimop.github.io\/GettingOverIt-MGCModpack\/versions\/1.28.0-alpha.57\/MGCModpack.dll",
+          "sha256": "d0ef576c7189d65b077af291f1d672096caedefe07503112ea42c42de15500ef",
+          "size": 465408,
+          "publishedAt": "2026-10-11T18:20:12Z",
+          "notes": "1.28.0-alpha.57：按真机打出来的节点树重写列表渲染。Mod 行用 ModPanel 的真实模板（LabelContent\/ValueContent\/DetailsContent，按钮就挂在 ValueContent 上）；地图用 MapPanel 的卡片模板（缩略图\/进度条\/下载图标，和旧面板那份代码一致）。自己拼行的问题是间距字号锚点全和面板其它地方不一样，而且按钮底图和按下反馈拼不出来。另：读社区列表失败时会强制掀掉 server.json 的 1 小时缓存，地址变了就用新地址重试一次 —— 之前是拿一个死地址反复重试，重试再多次也没用。"
+        },
         {
           "version": "1.28.0-alpha.56",
           "file": "versions\/1.28.0-alpha.56\/MGCModpack.dll",
