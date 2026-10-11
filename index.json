@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 126,
-  "generatedAt": "2026-10-11T15:57:44Z",
+  "rev": 127,
+  "generatedAt": "2026-10-11T16:02:12Z",
   "generator": "RepoEditor\/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.53",
+        "loader:MGCModpack": "1.28.0-alpha.54",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.54",
+          "file": "versions\/1.28.0-alpha.54\/MGCModpack.dll",
+          "url": "https:\/\/awinhimop.github.io\/GettingOverIt-MGCModpack\/versions\/1.28.0-alpha.54\/MGCModpack.dll",
+          "sha256": "7e2d8bf5661b439793d30460bb7e21d32db530559a0a661332469825fa83394f",
+          "size": 460288,
+          "publishedAt": "2026-10-11T16:02:12Z",
+          "notes": "1.28.0-alpha.54：社区列表和网盘清单改成开机就预取。①玩家开页面时是热数据，不用盯着空页面等；②服务器连不上时，报错页里那份网盘清单必须已经在手上 —— 等发现连不上才去拉，很可能连 Pages 也一起慢。"
+        },
         {
           "version": "1.28.0-alpha.53",
           "file": "versions\/1.28.0-alpha.53\/MGCModpack.dll",
