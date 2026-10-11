@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 130,
-  "generatedAt": "2026-10-11T18:20:12Z",
+  "rev": 131,
+  "generatedAt": "2026-10-11T18:24:24Z",
   "generator": "RepoEditor\/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.57",
+        "loader:MGCModpack": "1.28.0-alpha.58",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.58",
+          "file": "versions\/1.28.0-alpha.58\/MGCModpack.dll",
+          "url": "https:\/\/awinhimop.github.io\/GettingOverIt-MGCModpack\/versions\/1.28.0-alpha.58\/MGCModpack.dll",
+          "sha256": "258c938fc1139dd5748916eccccc94fd617d169f6c492e083bb22978e7adceaa",
+          "size": 465408,
+          "publishedAt": "2026-10-11T18:24:24Z",
+          "notes": "1.28.0-alpha.58：修一个我自己写的空操作 —— ForceRefresh 只把 _fetchedAt 清零再调 Kick()，可 Kick() 开头就是 LoadCache()，那一步立刻又把 _fetchedAt 从缓存文件时间戳读了回来，于是 1 小时的判断照旧通过，整个「强制刷新」根本没用，而日志上什么都看不出来。教训：强制必须绕开整条缓存路径，只清其中一个状态是没用的。现在隧道地址变了，客户端能立刻跟上，不用干等一小时。"
+        },
         {
           "version": "1.28.0-alpha.57",
           "file": "versions\/1.28.0-alpha.57\/MGCModpack.dll",
