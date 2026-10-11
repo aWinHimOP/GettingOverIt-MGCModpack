@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 121,
-  "generatedAt": "2026-10-11T13:17:56Z",
+  "rev": 122,
+  "generatedAt": "2026-10-11T13:29:29Z",
   "generator": "RepoEditor\/2.0",
   "channels": {
     "stable": {
@@ -48,7 +48,7 @@
           "sha256": "edaf9c287914d75fbaed3ceb335cd29b52ee06b1c6d38cfd7f878d3e5cc25d39",
           "size": 448000,
           "publishedAt": "2026-10-11T13:17:56Z",
-          "notes": "1.28.0-alpha.50：大包（Mod\/地图包）改从**服务器**拉，不再绕 GitHub。客户端新增 PackSource：读仓库里的 server.json 拿当前服务器地址（缓存 1 小时），下载时按「服务器优先 → GitHub 兜底」顺序试，某个源不行会自动换下一个。服务器侧也打通了独立发布（不再依赖电脑）：走 git 推送而不是 GitHub 的 REST API（实测这台网络下 api.github.com 超时、github.com 正常）。"
+          "notes": "1.28.0-alpha.50：大包（Mod\/地图包）改从服务器拉，不再绕 GitHub。客户端新增 PackSource：读仓库里的 server.json 拿当前服务器地址（缓存 1 小时），下载按「服务器优先 → GitHub 兜底」顺序试。服务器侧也打通了独立发布（不再依赖电脑）：走 git 推送而非 GitHub REST API。"
         },
         {
           "version": "1.28.0-alpha.49",
