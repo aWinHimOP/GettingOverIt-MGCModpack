@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 122,
-  "generatedAt": "2026-10-11T13:29:29Z",
+  "rev": 123,
+  "generatedAt": "2026-10-11T13:44:01Z",
   "generator": "RepoEditor\/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.50",
+        "loader:MGCModpack": "1.28.0-alpha.51",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.51",
+          "file": "versions\/1.28.0-alpha.51\/MGCModpack.dll",
+          "url": "https:\/\/awinhimop.github.io\/GettingOverIt-MGCModpack\/versions\/1.28.0-alpha.51\/MGCModpack.dll",
+          "sha256": "7b36b74bf8eadf1351e89388d5af1b857d8de2d537c55e3880d6337a11551bb0",
+          "size": 448000,
+          "publishedAt": "2026-10-11T13:44:01Z",
+          "notes": "1.28.0-alpha.51：把「社区」页签改名为「社区\/资源」（这个页里既有官方包也有社区包，原来的名字叫小了）。"
+        },
         {
           "version": "1.28.0-alpha.50",
           "file": "versions\/1.28.0-alpha.50\/MGCModpack.dll",
