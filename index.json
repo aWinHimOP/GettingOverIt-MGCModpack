@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 132,
-  "generatedAt": "2026-10-11T19:01:34Z",
+  "rev": 133,
+  "generatedAt": "2026-10-11T19:45:37Z",
   "generator": "RepoEditor\/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.59",
+        "loader:MGCModpack": "1.28.0-alpha.60",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.60",
+          "file": "versions\/1.28.0-alpha.60\/MGCModpack.dll",
+          "url": "https:\/\/awinhimop.github.io\/GettingOverIt-MGCModpack\/versions\/1.28.0-alpha.60\/MGCModpack.dll",
+          "sha256": "3da1d86f60b4ff1b40048adb965e5aeb20481f11617dc90735576c82afeeed3b",
+          "size": 466432,
+          "publishedAt": "2026-10-11T19:45:37Z",
+          "notes": "1.28.0-alpha.60：社区页加启动自检 —— 开机时把 Mod\/Map 两个渠道各渲染一次，把「生成了几行」写进日志。这个页面的渲染除了截图没别的办法看见，而测试机内存只剩几十 MB、input 命令会被低内存杀手干掉，「点开看一眼」这条路本身就不稳定。那就不点：开机自己渲染一遍，看数字。没报错不等于渲染出来了。"
+        },
         {
           "version": "1.28.0-alpha.59",
           "file": "versions\/1.28.0-alpha.59\/MGCModpack.dll",
