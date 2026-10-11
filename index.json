@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 134,
-  "generatedAt": "2026-10-11T19:49:41Z",
+  "rev": 135,
+  "generatedAt": "2026-10-11T19:53:27Z",
   "generator": "RepoEditor\/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.61",
+        "loader:MGCModpack": "1.28.0-alpha.62",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.62",
+          "file": "versions\/1.28.0-alpha.62\/MGCModpack.dll",
+          "url": "https:\/\/awinhimop.github.io\/GettingOverIt-MGCModpack\/versions\/1.28.0-alpha.62\/MGCModpack.dll",
+          "sha256": "2e6febc86f4daa9fb3a005caf4cd1f5035590ca8bdaba4a0fd3f8b54f43a4faf",
+          "size": 468480,
+          "publishedAt": "2026-10-11T19:53:27Z",
+          "notes": "1.28.0-alpha.62：地图包的下载自检（40MB 那个大包单独用一个标志触发，因为地图索引是异步加载的，走 Kick 的回调）。上一步已经验证了小包（mod 128KB）真的从服务器下到并校验通过；这一步验的是 C3 最在意的那个 40MB 地图包 —— 只有它也确认能正常下发，才允许删 GitHub 上的备份。"
+        },
         {
           "version": "1.28.0-alpha.61",
           "file": "versions\/1.28.0-alpha.61\/MGCModpack.dll",
