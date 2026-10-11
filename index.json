@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 125,
-  "generatedAt": "2026-10-11T15:31:51Z",
+  "rev": 126,
+  "generatedAt": "2026-10-11T15:57:44Z",
   "generator": "RepoEditor\/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.52",
+        "loader:MGCModpack": "1.28.0-alpha.53",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.53",
+          "file": "versions\/1.28.0-alpha.53\/MGCModpack.dll",
+          "url": "https:\/\/awinhimop.github.io\/GettingOverIt-MGCModpack\/versions\/1.28.0-alpha.53\/MGCModpack.dll",
+          "sha256": "bee780885ecb00e189acc61609907f81c87618f0ddf13f07cc22a606c9353e84",
+          "size": 459776,
+          "publishedAt": "2026-10-11T15:57:44Z",
+          "notes": "1.28.0-alpha.53：社区\/资源页补齐三件事。①下载进度实时刷新（只改按钮文字和颜色，不重建列表，手机不卡）；②服务器连不上时，页面最前面直接写「服务器连接失败」+ 换行给出具体原因，并把网盘备用链接列出来（连不上也能拿到包），网盘清单读 Pages 上的 netdisk.json —— 放服务器上等于停电时用手电筒找手电筒；③下载过的包给蓝色底色，一眼看出「这个我有了」。"
+        },
         {
           "version": "1.28.0-alpha.52",
           "file": "versions\/1.28.0-alpha.52\/MGCModpack.dll",
