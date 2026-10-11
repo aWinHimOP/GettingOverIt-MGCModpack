@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "updatedAt": "2026-10-11T09:57:03Z",
+  "note": "下载服务器连不上时的备用渠道。客户端在服务器不可用时把这份列表显示在最前面，让玩家去网盘拿包手动导入。",
+  "items": [
+    {
+      "name": "掘地求升移动端地图",
+      "kind": "map",
+      "desc": "微云文件分享",
+      "size": "",
+      "url": "https://share.weiyun.com/YDVaMQ9x",
+      "code": ""
+    }
+  ]
+}
