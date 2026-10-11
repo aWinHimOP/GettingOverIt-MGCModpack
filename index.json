@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 124,
-  "generatedAt": "2026-10-11T13:54:29Z",
+  "rev": 125,
+  "generatedAt": "2026-10-11T15:31:51Z",
   "generator": "RepoEditor\/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.51",
+        "loader:MGCModpack": "1.28.0-alpha.52",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.52",
+          "file": "versions\/1.28.0-alpha.52\/MGCModpack.dll",
+          "url": "https:\/\/awinhimop.github.io\/GettingOverIt-MGCModpack\/versions\/1.28.0-alpha.52\/MGCModpack.dll",
+          "sha256": "74d2330200d235a8b810921b55d83e236cf7446bd52c11e9ffa9eac01a613b62",
+          "size": 455168,
+          "publishedAt": "2026-10-11T15:31:51Z",
+          "notes": "1.28.0-alpha.52：社区\/资源页的 Mod \/ Map 两个渠道**接上内容了**。新增 CommunitySource：从服务器的 \/community\/index.json 拉社区包，和官方包合并展示（官方排前面、同名以官方为准）；进页面自动拉一次并缓存。Mod\/Map 列表复用旧面板那套 UIControls 搭行、下载复用现有内核（ModpackDownloader \/ MappackDownloader），只是换了渲染位置。拿不到服务器地址时只影响社区那一半，官方照常显示。"
+        },
         {
           "version": "1.28.0-alpha.51",
           "file": "versions\/1.28.0-alpha.51\/MGCModpack.dll",
