@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 127,
-  "generatedAt": "2026-10-11T16:02:12Z",
+  "rev": 128,
+  "generatedAt": "2026-10-11T16:48:58Z",
   "generator": "RepoEditor\/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.54",
+        "loader:MGCModpack": "1.28.0-alpha.55",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.55",
+          "file": "versions\/1.28.0-alpha.55\/MGCModpack.dll",
+          "url": "https:\/\/awinhimop.github.io\/GettingOverIt-MGCModpack\/versions\/1.28.0-alpha.55\/MGCModpack.dll",
+          "sha256": "1ebada4dfb7beb32e206e923bf4b19caafad4fac278157e0cb3f446463031274",
+          "size": 460288,
+          "publishedAt": "2026-10-11T16:48:58Z",
+          "notes": "1.28.0-alpha.55：修一个真机上抓到的真问题 —— 客户端开机时**从来不去刷新服务器地址**。PackSource 原来只在玩家去点面板时才被拉起，于是设备一直拿着上次缓存的地址，隧道一换地址客户端就对着死地址发请求，而且一条日志都没有（失败是静默的）。现在开机就预取，并且失败一定留痕。"
+        },
         {
           "version": "1.28.0-alpha.54",
           "file": "versions\/1.28.0-alpha.54\/MGCModpack.dll",
