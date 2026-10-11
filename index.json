@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 131,
-  "generatedAt": "2026-10-11T18:24:24Z",
+  "rev": 132,
+  "generatedAt": "2026-10-11T19:01:34Z",
   "generator": "RepoEditor\/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.58",
+        "loader:MGCModpack": "1.28.0-alpha.59",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.59",
+          "file": "versions\/1.28.0-alpha.59\/MGCModpack.dll",
+          "url": "https:\/\/awinhimop.github.io\/GettingOverIt-MGCModpack\/versions\/1.28.0-alpha.59\/MGCModpack.dll",
+          "sha256": "258c938fc1139dd5748916eccccc94fd617d169f6c492e083bb22978e7adceaa",
+          "size": 465408,
+          "publishedAt": "2026-10-11T19:01:34Z",
+          "notes": "1.28.0-alpha.59：验证发布改成「一个提交」——版本文件和 index.json 现在一起提交、一起推。以前版本文件走 REST API（它会在远程直接造提交，本地克隆不知道），索引走 git，两边分叉，导致「提交历史说发布了新版本、但远程 index.json 还指着旧版本」，玩家一直拿旧版。这个毛病复发过两次，现在从结构上消除了。"
+        },
         {
           "version": "1.28.0-alpha.58",
           "file": "versions\/1.28.0-alpha.58\/MGCModpack.dll",
