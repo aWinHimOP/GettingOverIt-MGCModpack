@@ -29,7 +29,15 @@
 | [JamesNK/Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json) | MIT | JSON 处理 |
 | [MelvinShwuaner/IL2CPP2MONO](https://github.com/MelvinShwuaner/IL2CPP2MONO) | MIT | 把 IL2CPP 转成 Mono 的工具链 |
 | [mono/cecil](https://github.com/mono/cecil) | MIT | 程序集读写（Mono.Cecil） |
-| [gree/unity-webview](https://github.com/gree/unity-webview) | zlib | 排行榜页的内嵌浏览器 |
+| [gree/unity-webview](https://github.com/gree/unity-webview) | zlib | 排行榜内嵌浏览器的**做法参考**（见下） |
+
+> **关于排行榜的内嵌浏览器：为什么没有直接用 gree/unity-webview。**
+> 它是最常用的免费方案（zlib 许可证），但它需要往游戏 APK 里放 Java 类和 native 库，
+> 而本模组包是**热更的 DLL** —— 游戏本体早就装在玩家手机上了，DLL 改不了 APK，
+> 所以任何插件（免费的、付费的都一样）都装不进去。
+> 好在**不做插件也能做**：Unity 自带的 `AndroidJavaObject` 本来就能调 Java，
+> 于是用 JNI 直接叫起系统的 `android.webkit.WebView`，**纯 C# 实现，不要钱、不改 APK**。
+> 万一在某些机型上起不来，会**退回系统浏览器**打开，功能不会没有。
 
 ## 免责声明
 
