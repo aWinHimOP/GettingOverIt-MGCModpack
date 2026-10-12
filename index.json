@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 138,
-  "generatedAt": "2026-10-12T05:48:23Z",
+  "rev": 139,
+  "generatedAt": "2026-10-12T06:02:08Z",
   "generator": "RepoEditor\/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.64",
+        "loader:MGCModpack": "1.28.0-alpha.65",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.65",
+          "file": "versions\/1.28.0-alpha.65\/MGCModpack.dll",
+          "url": "https:\/\/awinhimop.github.io\/GettingOverIt-MGCModpack\/versions\/1.28.0-alpha.65\/MGCModpack.dll",
+          "sha256": "af9ec38120a06ce83af241b2ffaee69a698b55aca693cb8a5cfbba70883418bd",
+          "size": 467968,
+          "publishedAt": "2026-10-12T06:02:08Z",
+          "notes": "1.28.0-alpha.65：按新方针收尾。① 客户端只走 GitHub Pages —— 下载候选源里服务器那项去掉了（索引里的 url 本来就是 Pages 地址，以前那个\"服务器优先\"只会让客户端对着已停掉的服务器白等一次超时）；② UIControls 的开关（Toggle）改成只找、只写「开\/关」，不再替美术改预制体：删掉了贴右边缘、改颜色、改对齐、SetAsLastSibling() 挪层级那一堆 —— 那正是\"右侧开\/关不显示\"的根因。"
+        },
         {
           "version": "1.28.0-alpha.64",
           "file": "versions\/1.28.0-alpha.64\/MGCModpack.dll",
