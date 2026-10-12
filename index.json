@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 157,
-  "generatedAt": "2026-10-12T08:41:15Z",
+  "rev": 158,
+  "generatedAt": "2026-10-12T08:45:44Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.83",
+        "loader:MGCModpack": "1.28.0-alpha.84",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.84",
+          "file": "versions/1.28.0-alpha.84/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.84/MGCModpack.dll",
+          "sha256": "caee0324eceaf2bbc80cfc4a8e15df391b0558ce3c7e47fbe973ac46f9b12955",
+          "size": 477184,
+          "publishedAt": "2026-10-12T08:45:39Z",
+          "notes": "1.28.0-alpha.84\uFF1A\u4FEE\u72EC\u7ACB\u7A97\u53E3\u5EFA\u4E0D\u8D77\u6765\u7684\u771F\u56E0 \u2014\u2014 requestWindowFeature \u8FD4\u56DE boolean\uFF0C\u7B2C\u4E00\u7248\u6309 void \u8C03\uFF0CJNI \u62A5 no non-static method signature=(I)V\u3002\u6539\u7528 Call\u003Cbool\u003E\uFF0C\u5E76\u7ED9\u5EFA\u7A97\u7684\u6BCF\u4E00\u6B65\u5355\u72EC\u6253\u65E5\u5FD7\uFF08\u4E0B\u6B21\u518D\u9519\u80FD\u76F4\u63A5\u5B9A\u4F4D\uFF09\u3002"
+        },
         {
           "version": "1.28.0-alpha.83",
           "file": "versions/1.28.0-alpha.83/MGCModpack.dll",
