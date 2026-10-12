@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 139,
-  "generatedAt": "2026-10-12T06:02:08Z",
+  "rev": 140,
+  "generatedAt": "2026-10-12T06:29:31Z",
   "generator": "RepoEditor\/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.65",
+        "loader:MGCModpack": "1.28.0-alpha.66",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.66",
+          "file": "versions\/1.28.0-alpha.66\/MGCModpack.dll",
+          "url": "https:\/\/awinhimop.github.io\/GettingOverIt-MGCModpack\/versions\/1.28.0-alpha.66\/MGCModpack.dll",
+          "sha256": "dc35b01346bc3a971f0cfaae6e9ec6dc07c776d09a07ab7cfefc93123f7d6c65",
+          "size": 471040,
+          "publishedAt": "2026-10-12T06:29:31Z",
+          "notes": "1.28.0-alpha.66：排行榜内嵌网页改成三层——①优先用 APK 里的 unity-webview 插件（反射调用，插件在就用）；②没有插件就自建 JNI WebView；③都不行退系统浏览器。另修一个隐藏问题：工程一直没定义 UNITY_ANDROID，导致所有安卓分支（包括自建视窗那段）从来没生效过。"
+        },
         {
           "version": "1.28.0-alpha.65",
           "file": "versions\/1.28.0-alpha.65\/MGCModpack.dll",
