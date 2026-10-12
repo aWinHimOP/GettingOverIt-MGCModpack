@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 173,
-  "generatedAt": "2026-10-12T14:48:46Z",
+  "rev": 174,
+  "generatedAt": "2026-10-12T14:53:31Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.99",
+        "loader:MGCModpack": "1.28.0-alpha.100",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.100",
+          "file": "versions/1.28.0-alpha.100/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.100/MGCModpack.dll",
+          "sha256": "6159df44fde47760f03c013aefde8680b9d895ea1de4400b3d9397c1e51d40fb",
+          "size": 471040,
+          "publishedAt": "2026-10-12T14:53:22Z",
+          "notes": "1.28.0-alpha.100\uFF1A\u6E05\u7406\u5168\u90E8\u6D4B\u8BD5\u811A\u624B\u67B6\uFF08\u5FC3\u8DF3\u7EC4\u4EF6\u3001ranktest.flag \u81EA\u68C0\u3001A/B \u7A7A\u767D\u9875\u5F00\u5173\u3001runInBackground \u8865\u4E01\u3001\u9010\u6B65\u65E5\u5FD7\u3001\u9632\u6296\u5B57\u6BB5\uFF09\uFF0C\u5220\u6389 RankHeartbeat.cs \u4E0E RankWebView.cs\u3002\u6392\u884C\u699C\u4FDD\u6301\u4EA4\u7ED9\u7CFB\u7EDF\u6D4F\u89C8\u5668\u6253\u5F00\u3002"
+        },
         {
           "version": "1.28.0-alpha.99",
           "file": "versions/1.28.0-alpha.99/MGCModpack.dll",
