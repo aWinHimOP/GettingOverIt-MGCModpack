@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 137,
-  "generatedAt": "2026-10-12T04:29:19Z",
+  "rev": 138,
+  "generatedAt": "2026-10-12T05:48:23Z",
   "generator": "RepoEditor\/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.63",
+        "loader:MGCModpack": "1.28.0-alpha.64",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.64",
+          "file": "versions\/1.28.0-alpha.64\/MGCModpack.dll",
+          "url": "https:\/\/awinhimop.github.io\/GettingOverIt-MGCModpack\/versions\/1.28.0-alpha.64\/MGCModpack.dll",
+          "sha256": "739310adf980ffac4a4ac018357433fb2d4b14ad6694e54a35a6f348be1eb71d",
+          "size": 467968,
+          "publishedAt": "2026-10-12T05:48:23Z",
+          "notes": "1.28.0-alpha.64：社区页按新面板结构重做。① 渠道只剩「资源」和「排行榜」两个（原来是 上传\/Mod\/Map\/下载列表 四个）。② 「资源」页把原先 Mod 页和 Map 页的逻辑一起摆过来，外加 Pages 上的网盘清单。③ 「排行榜」页用纯 C# 的 JNI 内嵌 android.webkit.WebView 显示 CGOIRankList 横屏页（起不来会自动退回系统浏览器）。④ 适配了改版后的面板层级：内容行模板从 ModPanel\/MapPanel 挪到了 ContentPanel\/List\/Viewport\/Content\/Example，代码先认新结构、再回退旧结构。⑤ 修正渠道键高光色，和整个 UI 一致。"
+        },
         {
           "version": "1.28.0-alpha.63",
           "file": "versions\/1.28.0-alpha.63\/MGCModpack.dll",
