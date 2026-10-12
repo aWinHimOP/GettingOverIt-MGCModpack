@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 140,
-  "generatedAt": "2026-10-12T06:29:31Z",
+  "rev": 141,
+  "generatedAt": "2026-10-12T07:08:07Z",
   "generator": "RepoEditor\/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.66",
+        "loader:MGCModpack": "1.28.0-alpha.67",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.67",
+          "file": "versions\/1.28.0-alpha.67\/MGCModpack.dll",
+          "url": "https:\/\/awinhimop.github.io\/GettingOverIt-MGCModpack\/versions\/1.28.0-alpha.67\/MGCModpack.dll",
+          "sha256": "72fb6731f3b92fededd74c91cd991e1eac9a34d862e5bf7071c280a65edd3d5b",
+          "size": 472576,
+          "publishedAt": "2026-10-12T07:08:07Z",
+          "notes": "1.28.0-alpha.67：修「排行榜网页铺满全屏、进去出不来」。① 网页视窗现在只占「社区\/资源」的内容区（按 ContentPanel 的矩形算边距），不再盖住渠道键；② 按返回键可以退出排行榜、回到资源页。另外：日志确认新面板结构和新 UI 包都已生效（渠道键 2 个、MapPanel 已消失），自建 JNI 视窗那条路实测可用。"
+        },
         {
           "version": "1.28.0-alpha.66",
           "file": "versions\/1.28.0-alpha.66\/MGCModpack.dll",
