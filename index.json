@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 136,
-  "generatedAt": "2026-10-11T21:02:12Z",
+  "rev": 137,
+  "generatedAt": "2026-10-12T04:29:19Z",
   "generator": "RepoEditor\/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.62",
+        "loader:MGCModpack": "1.28.0-alpha.63",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.63",
+          "file": "versions\/1.28.0-alpha.63\/MGCModpack.dll",
+          "url": "https:\/\/awinhimop.github.io\/GettingOverIt-MGCModpack\/versions\/1.28.0-alpha.63\/MGCModpack.dll",
+          "sha256": "61bd20167c9ed1f4c44b8978ec60618b03c307eb37455c280ef47b4c6d00c4b4",
+          "size": 467968,
+          "publishedAt": "2026-10-12T04:29:19Z",
+          "notes": "1.28.0-alpha.63：按反馈修社区页三处界面问题。① 渠道键的高光色原来是我自己发明的 (0.35,0.65,1,0.9)，和整个 UI 不一样 —— 现在改成和 UIControls \/ FoldoutControl \/ CustomDropdown \/ GameSettingManager \/ ModUIManager 完全一致的 (0.808,0.898,1,1)。② 已下载的地图卡片现在会激活 Select（卡片上「这张能用」的标记）；原来一律关掉，导致下好的地图看着也像没下。③「共 x 个」那行去掉了 —— 只在真出问题（拿不到服务器地址 \/ 社区列表失败）时才写一行。"
+        },
         {
           "version": "1.28.0-alpha.62",
           "file": "versions\/1.28.0-alpha.62\/MGCModpack.dll",
