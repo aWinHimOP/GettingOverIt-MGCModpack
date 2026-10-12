@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 159,
-  "generatedAt": "2026-10-12T09:16:11Z",
+  "rev": 160,
+  "generatedAt": "2026-10-12T09:32:45Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.85",
+        "loader:MGCModpack": "1.28.0-alpha.86",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.86",
+          "file": "versions/1.28.0-alpha.86/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.86/MGCModpack.dll",
+          "sha256": "14c344bd27caceb59f4751fe4fba5ee1421969c107b4a3efbff6523ac948662f",
+          "size": 477696,
+          "publishedAt": "2026-10-12T09:32:42Z",
+          "notes": "1.28.0-alpha.86\uFF1A\u7ED9\u6392\u884C\u699C\u7A97\u53E3\u5B9A\u6B7B\u5C3A\u5BF8\u3002Dialog \u7A97\u53E3\u9ED8\u8BA4 wrap_content\uFF0C\u800C\u5185\u5BB9\u9ED8\u8BA4 MATCH_PARENT\uFF0C\u4E8E\u662F\u7A97\u53E3\u94FA\u6EE1\u5168\u5C4F \u2014\u2014 \u7167\u6837\u906E\u6321 Unity \u7684 SurfaceView\uFF0C\u539F\u6765\u90A3\u4E2A\u5361\u6B7B\u5F88\u53EF\u80FD\u6839\u672C\u6CA1\u89E3\u51B3\u3002\u73B0\u5728\u6309\u9762\u677F\u77E9\u5F62\u7ED9 WebView \u56FA\u5B9A w\u00D7h\uFF0C\u7A97\u53E3\u53EA\u5360\u90A3\u4E00\u5C0F\u5757\u3002"
+        },
         {
           "version": "1.28.0-alpha.85",
           "file": "versions/1.28.0-alpha.85/MGCModpack.dll",
