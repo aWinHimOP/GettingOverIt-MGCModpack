@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 171,
-  "generatedAt": "2026-10-12T14:31:07Z",
+  "rev": 172,
+  "generatedAt": "2026-10-12T14:41:29Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.97",
+        "loader:MGCModpack": "1.28.0-alpha.98",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.98",
+          "file": "versions/1.28.0-alpha.98/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.98/MGCModpack.dll",
+          "sha256": "de529d622fa0c5ae4e62b7250062b9743c7c0bf2c99b452d3c019a5942ae269d",
+          "size": 478208,
+          "publishedAt": "2026-10-12T14:41:26Z",
+          "notes": "1.28.0-alpha.98\uFF1A\u89C6\u7A97\u56DE\u5230 decorView \u65B9\u6848\u3002Dialog \u662F\u72EC\u7ACB\u7A97\u53E3\uFF0C\u5750\u6807\u7A7A\u95F4\u548C Unity \u5BF9\u4E0D\u4E0A\uFF08\u5B89\u5353\u62A5 1920x1080\u3001\u622A\u56FE\u5374\u662F 1080x1920\uFF09\uFF0C\u6309 RectTransform \u7B97\u51FA\u7684\u6846\u843D\u5230\u5C4F\u5E55\u5916\uFF0C\u7528\u6237\u4EC0\u4E48\u90FD\u770B\u4E0D\u89C1\uFF1BdecorView \u548C Unity \u5171\u7528\u540C\u4E00\u4E2A\u6D3B\u52A8\u7A97\u53E3\u5750\u6807\u7A7A\u95F4\uFF0C\u7B2C\u4E00\u7248\u5C31\u662F\u5B83\u3001\u5B9E\u6D4B\u770B\u5F97\u89C1\u3002\u5F53\u5E74\u8BA9\u5B83\u5361\u6B7B\u7684\u81EA\u52A8\u9690\u85CF\u5FAA\u73AF\u5DF2\u5220\u9664\uFF0CShow \u4E5F\u52A0\u4E86\u5E42\u7B49\u3002"
+        },
         {
           "version": "1.28.0-alpha.97",
           "file": "versions/1.28.0-alpha.97/MGCModpack.dll",
