@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 155,
-  "generatedAt": "2026-10-12T08:28:19Z",
+  "rev": 156,
+  "generatedAt": "2026-10-12T08:38:08Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.81",
+        "loader:MGCModpack": "1.28.0-alpha.82",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.82",
+          "file": "versions/1.28.0-alpha.82/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.82/MGCModpack.dll",
+          "sha256": "5fa2c851c6bb859dca0473dc8366bdceb3a385385da030459ac80b2176179633",
+          "size": 476160,
+          "publishedAt": "2026-10-12T08:38:03Z",
+          "notes": "1.28.0-alpha.82\uFF1A\u6392\u884C\u699C\u89C6\u7A97\u6539\u6210**\u72EC\u7ACB\u7A97\u53E3**\u3002\u4E0A\u4E00\u7248\u628A WebView \u52A0\u5230 decorView \u4E0A \u2014\u2014 \u4E5F\u5C31\u662F\u548C Unity \u7684 SurfaceView \u6324\u5728\u540C\u4E00\u4E2A\u7A97\u53E3\u91CC\uFF0C\u4E24\u4E2A\u89C6\u56FE\u91CD\u53E0\u65F6 Android \u4F1A\u53BB\u52A8 Unity \u90A3\u4E2A surface\uFF0C\u4E8E\u662F\u6E38\u620F\u51BB\u4F4F\u3001\u800C WebView \u7167\u5E38\u8DD1\uFF08\u548C\u7528\u6237\u63CF\u8FF0\u7684\u73B0\u8C61\u5B8C\u5168\u4E00\u81F4\uFF09\u3002\u73B0\u5728 WebView \u653E\u8FDB\u81EA\u5DF1\u7684 Dialog \u7A97\u53E3\uFF0C\u5B8C\u5168\u4E0D\u78B0 Unity \u7684\u89C6\u56FE\u6811\u3002\u53E6\u5916\u52A0\u4E86\u5FC3\u8DF3\u65E5\u5FD7\uFF1A\u89C6\u7A97\u5F00\u7740\u65F6\u6BCF\u79D2\u62A5\u4E00\u6B21\u5E27\uFF0CUnity \u771F\u88AB\u51BB\u4F4F\u65F6\u8FD9\u4E9B\u884C\u4F1A\u76F4\u63A5\u505C\u6B62\u3002"
+        },
         {
           "version": "1.28.0-alpha.81",
           "file": "versions/1.28.0-alpha.81/MGCModpack.dll",
