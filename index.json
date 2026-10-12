@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 164,
-  "generatedAt": "2026-10-12T09:35:27Z",
+  "rev": 165,
+  "generatedAt": "2026-10-12T09:47:25Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.90",
+        "loader:MGCModpack": "1.28.0-alpha.91",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.91",
+          "file": "versions/1.28.0-alpha.91/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.91/MGCModpack.dll",
+          "sha256": "0d19c1196bbc74da44ceb12f32cabe1d9bb26bde1aafb3a5b4b3181ef4834ea4",
+          "size": 478208,
+          "publishedAt": "2026-10-12T09:47:18Z",
+          "notes": "1.28.0-alpha.91\uFF1A\u4FEE\u81EA\u68C0\u5F00\u5173\u4E0D\u751F\u6548\u3002\u6839\u56E0\uFF1ACommunityManager \u6302\u5728\u793E\u533A\u9762\u677F\u4E0A\uFF0C\u73A9\u5BB6\u4E0D\u5728\u90A3\u4E2A\u9875\u9762\u65F6\u5B83\u662F inactive \u7684\uFF0CUpdate() \u6839\u672C\u4E0D\u6267\u884C \u2014\u2014 \u5B9E\u6D4B flag \u653E\u4E0A\u53BB\u542F\u52A8 8 \u79D2\u540E\u6587\u4EF6\u8FD8\u5728\u3002\u73B0\u5728\u81EA\u68C0\u8BFB flag \u632A\u8FDB Initialize()\uFF0C\u5FC3\u8DF3\u632A\u5230\u5E38\u9A7B\u7684 RankHeartbeat \u7EC4\u4EF6\uFF08DontDestroyOnLoad\uFF09\uFF0C\u9762\u677F\u5F00\u5173\u90FD\u4E0D\u5F71\u54CD\u3002"
+        },
         {
           "version": "1.28.0-alpha.90",
           "file": "versions/1.28.0-alpha.90/MGCModpack.dll",
