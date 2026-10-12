@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 158,
-  "generatedAt": "2026-10-12T08:45:44Z",
+  "rev": 159,
+  "generatedAt": "2026-10-12T09:16:11Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.84",
+        "loader:MGCModpack": "1.28.0-alpha.85",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.85",
+          "file": "versions/1.28.0-alpha.85/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.85/MGCModpack.dll",
+          "sha256": "933dfac0547e743dc393b458c58b4927ff2346b573c7fb7626f1334c5c9dc231",
+          "size": 477184,
+          "publishedAt": "2026-10-12T09:15:54Z",
+          "notes": "1.28.0-alpha.85\uFF1A\u4FEE\u6392\u884C\u699C\u9ED1\u5C4F\u3002\u4E0A\u4E00\u7248 loadUrl \u6392\u5728\u6700\u540E\uFF0C\u800C setLayout \u4F1A\u629B\u5F02\u5E38\uFF08getWindow \u8FD4\u56DE\u7684\u5BF9\u8C61\u4E22\u4E86\u7C7B\u578B\uFF09\uFF0C\u4E8E\u662F\u90A3\u53E5 loadUrl \u6839\u672C\u6267\u884C\u4E0D\u5230 \u2014\u2014 \u7A97\u53E3\u662F\u9ED1\u7684\u3001\u9875\u9762\u4ECE\u6CA1\u8F7D\u5165\u8FC7\u3002\u73B0\u5728\uFF1A\u2460 loadUrl \u63D0\u5230 show \u4E4B\u540E\u7B2C\u4E00\u4EF6\u4E8B\uFF0C\u6392\u7248\u518D\u5931\u8D25\u4E5F\u4E0D\u5F71\u54CD\u9875\u9762\u8F7D\u5165\uFF1B\u2461 \u5F7B\u5E95\u4E0D\u7528 getWindow\uFF0C\u6539\u7528 WebView \u81EA\u8EAB\u5185\u8FB9\u8DDD\u628A\u5185\u5BB9\u7F29\u8FDB\u5230\u9762\u677F\u77E9\u5F62\u3002"
+        },
         {
           "version": "1.28.0-alpha.84",
           "file": "versions/1.28.0-alpha.84/MGCModpack.dll",
