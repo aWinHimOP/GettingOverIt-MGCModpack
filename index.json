@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 179,
-  "generatedAt": "2026-10-12T16:29:53Z",
+  "rev": 180,
+  "generatedAt": "2026-10-12T16:39:49Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -11,7 +11,7 @@
         "type": "all"
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.103",
+        "loader:MGCModpack": "1.28.0-alpha.104",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.104",
+          "file": "versions/1.28.0-alpha.104/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.104/MGCModpack.dll",
+          "sha256": "08f42423bf7ab3bb5e690867a0c1e80c6aa40085420c52e7c3b96b9e18a9eb76",
+          "size": 461824,
+          "publishedAt": "2026-10-12T16:39:42Z",
+          "notes": "1.28.0-alpha.104\uFF1A\u4FEE RewardBadge \u901A\u5173\u540E\u8D56\u5728\u4E3B\u573A\u666F\u4E0D\u6D88\u5931\u3002\u771F\u56E0\u662F Update() \u91CC\u90A3\u53E5\u65E0\u6761\u4EF6\u91CD\u5EFA\u2014\u2014\u53EA\u8981 uiRoot \u4E3A\u7A7A\u5C31 BuildUI()\uFF0C\u800C\u5EFA\u51FA\u6765\u7684 UI \u9ED8\u8BA4\u53EF\u89C1\uFF0C\u4E8E\u662F\u300C\u56DE\u4E3B\u573A\u666F \u2192 Canvas \u9500\u6BC1 \u2192 uiRoot \u53D8 null\u300D\u4E4B\u540E\u5FBD\u7AE0\u88AB\u5F53\u573A\u590D\u6D3B\u3002\u6539\u6CD5\uFF1A\u2460 \u52A0 _wantVisible\uFF0C\u53EA\u6709\u672C\u8BE5\u663E\u793A\u65F6\u624D\u91CD\u5EFA\uFF1B\u2461 \u6302 SceneManager.sceneLoaded\uFF0C\u573A\u666F\u4E00\u6362\u5C31 Hide\u3002"
+        },
         {
           "version": "1.28.0-alpha.103",
           "file": "versions/1.28.0-alpha.103/MGCModpack.dll",
