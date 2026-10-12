@@ -770,8 +770,8 @@
 =======
 {
   "schema": 2,
-  "rev": 154,
-  "generatedAt": "2026-10-12T08:21:01Z",
+  "rev": 159,
+  "generatedAt": "2026-10-12T09:16:11Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -799,7 +799,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.80",
+        "loader:MGCModpack": "1.28.0-alpha.85",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -811,6 +811,51 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.85",
+          "file": "versions/1.28.0-alpha.85/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.85/MGCModpack.dll",
+          "sha256": "933dfac0547e743dc393b458c58b4927ff2346b573c7fb7626f1334c5c9dc231",
+          "size": 477184,
+          "publishedAt": "2026-10-12T09:15:54Z",
+          "notes": "1.28.0-alpha.85\uFF1A\u4FEE\u6392\u884C\u699C\u9ED1\u5C4F\u3002\u4E0A\u4E00\u7248 loadUrl \u6392\u5728\u6700\u540E\uFF0C\u800C setLayout \u4F1A\u629B\u5F02\u5E38\uFF08getWindow \u8FD4\u56DE\u7684\u5BF9\u8C61\u4E22\u4E86\u7C7B\u578B\uFF09\uFF0C\u4E8E\u662F\u90A3\u53E5 loadUrl \u6839\u672C\u6267\u884C\u4E0D\u5230 \u2014\u2014 \u7A97\u53E3\u662F\u9ED1\u7684\u3001\u9875\u9762\u4ECE\u6CA1\u8F7D\u5165\u8FC7\u3002\u73B0\u5728\uFF1A\u2460 loadUrl \u63D0\u5230 show \u4E4B\u540E\u7B2C\u4E00\u4EF6\u4E8B\uFF0C\u6392\u7248\u518D\u5931\u8D25\u4E5F\u4E0D\u5F71\u54CD\u9875\u9762\u8F7D\u5165\uFF1B\u2461 \u5F7B\u5E95\u4E0D\u7528 getWindow\uFF0C\u6539\u7528 WebView \u81EA\u8EAB\u5185\u8FB9\u8DDD\u628A\u5185\u5BB9\u7F29\u8FDB\u5230\u9762\u677F\u77E9\u5F62\u3002"
+        },
+        {
+          "version": "1.28.0-alpha.84",
+          "file": "versions/1.28.0-alpha.84/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.84/MGCModpack.dll",
+          "sha256": "caee0324eceaf2bbc80cfc4a8e15df391b0558ce3c7e47fbe973ac46f9b12955",
+          "size": 477184,
+          "publishedAt": "2026-10-12T08:45:39Z",
+          "notes": "1.28.0-alpha.84\uFF1A\u4FEE\u72EC\u7ACB\u7A97\u53E3\u5EFA\u4E0D\u8D77\u6765\u7684\u771F\u56E0 \u2014\u2014 requestWindowFeature \u8FD4\u56DE boolean\uFF0C\u7B2C\u4E00\u7248\u6309 void \u8C03\uFF0CJNI \u62A5 no non-static method signature=(I)V\u3002\u6539\u7528 Call\u003Cbool\u003E\uFF0C\u5E76\u7ED9\u5EFA\u7A97\u7684\u6BCF\u4E00\u6B65\u5355\u72EC\u6253\u65E5\u5FD7\uFF08\u4E0B\u6B21\u518D\u9519\u80FD\u76F4\u63A5\u5B9A\u4F4D\uFF09\u3002"
+        },
+        {
+          "version": "1.28.0-alpha.83",
+          "file": "versions/1.28.0-alpha.83/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.83/MGCModpack.dll",
+          "sha256": "06df2a4491ded15271d2e3406b8d956eb52a9a4701c53acbaaa5bb50ea9aec03",
+          "size": 476672,
+          "publishedAt": "2026-10-12T08:41:09Z",
+          "notes": "1.28.0-alpha.83\uFF1A\u52A0\u4E00\u6B21\u6027\u81EA\u68C0\u5F00\u5173 ranktest.flag\uFF08\u653E\u6570\u636E\u76EE\u5F55\u5373\u81EA\u52A8\u6253\u5F00\u6392\u884C\u699C\u4E14\u4E0D\u81EA\u52A8\u9690\u85CF\uFF09\uFF0C\u7528\u6765\u5728\u8BBE\u5907\u4E0A\u91CF WebView \u5230\u5E95\u51BB\u4E0D\u51BB Unity\u3002\u5FC3\u8DF3\u65E5\u5FD7\u6BCF\u79D2\u62A5\u4E00\u6B21\u5E27\u6570\uFF0CUnity \u88AB\u51BB\u4F4F\u65F6\u8FD9\u4E9B\u884C\u4F1A\u76F4\u63A5\u505C\u6B62\u3002"
+        },
+        {
+          "version": "1.28.0-alpha.82",
+          "file": "versions/1.28.0-alpha.82/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.82/MGCModpack.dll",
+          "sha256": "5fa2c851c6bb859dca0473dc8366bdceb3a385385da030459ac80b2176179633",
+          "size": 476160,
+          "publishedAt": "2026-10-12T08:38:03Z",
+          "notes": "1.28.0-alpha.82\uFF1A\u6392\u884C\u699C\u89C6\u7A97\u6539\u6210**\u72EC\u7ACB\u7A97\u53E3**\u3002\u4E0A\u4E00\u7248\u628A WebView \u52A0\u5230 decorView \u4E0A \u2014\u2014 \u4E5F\u5C31\u662F\u548C Unity \u7684 SurfaceView \u6324\u5728\u540C\u4E00\u4E2A\u7A97\u53E3\u91CC\uFF0C\u4E24\u4E2A\u89C6\u56FE\u91CD\u53E0\u65F6 Android \u4F1A\u53BB\u52A8 Unity \u90A3\u4E2A surface\uFF0C\u4E8E\u662F\u6E38\u620F\u51BB\u4F4F\u3001\u800C WebView \u7167\u5E38\u8DD1\uFF08\u548C\u7528\u6237\u63CF\u8FF0\u7684\u73B0\u8C61\u5B8C\u5168\u4E00\u81F4\uFF09\u3002\u73B0\u5728 WebView \u653E\u8FDB\u81EA\u5DF1\u7684 Dialog \u7A97\u53E3\uFF0C\u5B8C\u5168\u4E0D\u78B0 Unity \u7684\u89C6\u56FE\u6811\u3002\u53E6\u5916\u52A0\u4E86\u5FC3\u8DF3\u65E5\u5FD7\uFF1A\u89C6\u7A97\u5F00\u7740\u65F6\u6BCF\u79D2\u62A5\u4E00\u6B21\u5E27\uFF0CUnity \u771F\u88AB\u51BB\u4F4F\u65F6\u8FD9\u4E9B\u884C\u4F1A\u76F4\u63A5\u505C\u6B62\u3002"
+        },
+        {
+          "version": "1.28.0-alpha.81",
+          "file": "versions/1.28.0-alpha.81/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.81/MGCModpack.dll",
+          "sha256": "9d40fa371fde90355b9db611de3c9cfc15b595c0b110dd19f24860b20f40fe00",
+          "size": 477184,
+          "publishedAt": "2026-10-12T08:28:17Z",
+          "notes": "1.28.0-alpha.81\uFF1A\u2460 \u4FEE\u6392\u884C\u699C\u89C6\u7A97\u62D6\u6B7B\u6E38\u620F \u2014\u2014 \u628A WebView \u8BBE\u6210\u8F6F\u4EF6\u5C42\uFF08LAYER_TYPE_SOFTWARE\uFF09\uFF0C\u5B83\u81EA\u5DF1\u4E0D\u518D\u8D70 GPU\uFF0C\u5C31\u4E0D\u4F1A\u548C Unity \u62A2\u5408\u6210\u5668\u3002\u7528\u6237\u63CF\u8FF0\u7684\u73B0\u8C61\uFF08\u5F00\u4E00\u4F1A Unity \u5361\u6B7B\u3001webview \u5374\u7167\u5E38\uFF09\u6B63\u662F\u5178\u578B\u7684 GL/Surface \u4E89\u7528\u3002\u2461 \u5B98\u65B9\u5305\u7684\u8BE6\u60C5\u6539\u7528\u538B\u7F29\u5305\u91CC\u7684\u63CF\u8FF0\uFF08\u5730\u56FE\u8BFB manifest.json\u3001mod \u8BFB\u52A0\u5BC6\u6E05\u5355\u91CC\u7684 description\uFF09\uFF0C\u8BFB\u4E0D\u5230\u624D\u9000\u56DE\u7D22\u5F15\u91CC\u90A3\u53E5\u77ED\u7684\u3002"
+        },
         {
           "version": "1.28.0-alpha.80",
           "file": "versions/1.28.0-alpha.80/MGCModpack.dll",
