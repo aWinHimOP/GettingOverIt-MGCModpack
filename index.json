@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 175,
-  "generatedAt": "2026-10-12T15:04:06Z",
+  "rev": 176,
+  "generatedAt": "2026-10-12T15:13:10Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.100",
+        "loader:MGCModpack": "1.28.0-alpha.102",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.102",
+          "file": "versions/1.28.0-alpha.102/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.102/MGCModpack.dll",
+          "sha256": "c03eadb0fb9ef9c0dc115552e341cd084be5f5dac2766fd0172a102bcf294331",
+          "size": 471552,
+          "publishedAt": "2026-10-12T15:13:06Z",
+          "notes": "1.28.0-alpha.102\uFF1A\u4E0E 101 \u4EE3\u7801\u5B8C\u5168\u76F8\u540C\uFF0C\u53EA\u662F\u56E0\u4E3A\u300C\u7248\u672C\u53F7\u4E0D\u53EF\u53D8\u300D\u65E0\u6CD5\u628A test \u9891\u9053\u91CD\u65B0\u6307\u5411 101\uFF0C\u6240\u4EE5\u524D\u8FDB\u4E00\u683C\uFF0C\u8BA9\u6D4B\u8BD5\u673A\u80FD\u9A8C\u5230\u5730\u56FE\u8BE6\u60C5\u6539\u52A8\uFF08\u5730\u56FE\u5305\u8BE6\u60C5\u6539\u7528\u538B\u7F29\u5305\u5185 manifest.json \u7684 description\uFF09\u3002\u6B63\u5F0F\u9891\u9053\u4ECD\u4E3A 101\u3002"
+        },
         {
           "version": "1.28.0-alpha.101",
           "file": "versions/1.28.0-alpha.101/MGCModpack.dll",
