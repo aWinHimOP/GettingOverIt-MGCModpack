@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 167,
-  "generatedAt": "2026-10-12T10:04:28Z",
+  "rev": 168,
+  "generatedAt": "2026-10-12T10:07:00Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.93",
+        "loader:MGCModpack": "1.28.0-alpha.94",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.94",
+          "file": "versions/1.28.0-alpha.94/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.94/MGCModpack.dll",
+          "sha256": "20908be44436d8f5a0c4f91cdf7917c6942d0e90b9fe21b2fb73824bb65f7c8f",
+          "size": 478720,
+          "publishedAt": "2026-10-12T10:06:57Z",
+          "notes": "1.28.0-alpha.94\uFF1A\u627E\u5230\u5361\u6B7B\u7684\u771F\u6B63\u89E3\u91CA \u2014\u2014 Dialog \u4F1A\u62A2\u8D70\u7A97\u53E3\u7126\u70B9\uFF0C\u6D3B\u52A8\u8F6C onPause\uFF0C\u800C Unity \u9ED8\u8BA4\u4E0D\u5728\u540E\u53F0\u8FD0\u884C\uFF0C\u4E8E\u662F\u6240\u6709 Update() \u505C\u6B62\uFF08\u5B9E\u6D4B\uFF1A\u9875\u9762\u8F7D\u5165\u6210\u529F\u3001\u5FC3\u8DF3\u4E00\u6761\u90FD\u6CA1\u6709\u3001\u4E14\u6C38\u4E45\u4E0D\u6062\u590D\uFF0C\u5B8C\u5168\u543B\u5408\uFF09\u3002\u4FEE\u6CD5\uFF1A\u7ED9\u7A97\u53E3\u52A0 FLAG_NOT_FOCUSABLE \u4E0D\u62A2\u7126\u70B9\uFF1B\u987A\u5E26\u7528 WindowManager.LayoutParams \u8BBE width/height/x/y/gravity\uFF0C\u4E00\u6B21\u89E3\u51B3\u7CBE\u786E\u5B9A\u4F4D\uFF08\u4E4B\u524D setLayout \u62A5 (IIIII)V \u662F\u56E0\u4E3A Window \u6CA1\u6709 5 \u53C2\u6570\u91CD\u8F7D\uFF09\u3002"
+        },
         {
           "version": "1.28.0-alpha.93",
           "file": "versions/1.28.0-alpha.93/MGCModpack.dll",
