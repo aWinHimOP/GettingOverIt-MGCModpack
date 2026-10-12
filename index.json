@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 141,
-  "generatedAt": "2026-10-12T07:08:07Z",
+  "rev": 142,
+  "generatedAt": "2026-10-12T07:27:15Z",
   "generator": "RepoEditor\/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.67",
+        "loader:MGCModpack": "1.28.0-alpha.68",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.68",
+          "file": "versions\/1.28.0-alpha.68\/MGCModpack.dll",
+          "url": "https:\/\/awinhimop.github.io\/GettingOverIt-MGCModpack\/versions\/1.28.0-alpha.68\/MGCModpack.dll",
+          "sha256": "72fb6731f3b92fededd74c91cd991e1eac9a34d862e5bf7071c280a65edd3d5b",
+          "size": 472576,
+          "publishedAt": "2026-10-12T07:27:15Z",
+          "notes": "1.28.0-alpha.68：官方 mod\/map 的下载地址改回索引给的 Pages 地址。真机日志暴露：官方那两行没带 url，导致候选源退回服务器根去拼路径（日志里那个 trycloudflare 地址就是这么来的）。新方针下只走 Pages，所以官方包地址必须取自索引。"
+        },
         {
           "version": "1.28.0-alpha.67",
           "file": "versions\/1.28.0-alpha.67\/MGCModpack.dll",
