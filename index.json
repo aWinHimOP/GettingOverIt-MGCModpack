@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 163,
-  "generatedAt": "2026-10-12T09:34:49Z",
+  "rev": 164,
+  "generatedAt": "2026-10-12T09:35:27Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.89",
+        "loader:MGCModpack": "1.28.0-alpha.90",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.90",
+          "file": "versions/1.28.0-alpha.90/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.90/MGCModpack.dll",
+          "sha256": "17fb6047b60767350488f33656c6cef19a2720681116ae5e37d60ce0da75594b",
+          "size": 477696,
+          "publishedAt": "2026-10-12T09:35:24Z",
+          "notes": "1.28.0-alpha.90\uFF1A\u4FEE\u6B63 alpha.89\uFF08\u90A3\u4E2A\u7248\u672C\u6784\u5EFA\u5176\u5B9E\u5931\u8D25\u4E86\u3001\u53D1\u7684\u662F\u65E7\u7684 DLL\uFF09\u3002\u672C\u7248\u771F\u6B63\u5305\u542B\uFF1A\u2460 Dialog \u6539\u5355\u53C2\u6784\u9020\uFF08int \u4E3B\u9898\u53C2\u6570\u4F1A\u8BA9 JNI \u6784\u9020\u56DE\u843D\u6210\u65E0\u7C7B\u578B\u5BF9\u8C61\uFF0C\u5BFC\u81F4 getWindow \u62FF\u5230 java.lang.Object\uFF09\uFF1B\u2461 \u52A0\u56DE\u7CBE\u786E\u5B9A\u4F4D\uFF0C\u5931\u8D25\u81EA\u52A8\u9000\u56DE\u5C45\u4E2D\uFF1B\u2462 \u53BB\u6389\u90A3\u4E2A\u5728\u672C Unity \u7248\u672C\u91CC\u7F16\u8BD1\u4E0D\u8FC7\u7684 GetClass \u8BCA\u65AD\u884C\u3002"
+        },
         {
           "version": "1.28.0-alpha.89",
           "file": "versions/1.28.0-alpha.89/MGCModpack.dll",
