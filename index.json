@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 200,
-  "generatedAt": "2026-10-14T18:50:42Z",
+  "rev": 201,
+  "generatedAt": "2026-10-14T18:57:33Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -30,7 +30,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.121",
+        "loader:MGCModpack": "1.28.0-alpha.122",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -42,6 +42,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.122",
+          "file": "versions/1.28.0-alpha.122/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.122/MGCModpack.dll",
+          "sha256": "bd28be3f183be7a82c5480c3dea9412335cbd62b91ca02ff8b61a205ba2d83e2",
+          "size": 474624,
+          "publishedAt": "2026-10-14T18:57:29Z",
+          "notes": "1.28.0-alpha.122\uFF1A\u6309\u7528\u6237\u7ED9\u7684\u7834\u5C40\u70B9\u4FEE\u9AD8\u5EA6 \u2014\u2014 \u7528\u6237\u5B9E\u6D4B\u300C\u6298\u53E0\u83DC\u5355\u70B9\u4E00\u6B21\u548C\u70B9\u4E24\u6B21\u9AD8\u5EA6\u4E0D\u4E00\u6837\u300D\uFF0C\u8BF4\u660E\u7B2C\u4E00\u6B21\u91CF\u9AD8\u5EA6\u65F6\u5185\u5BB9\u521A SetActive(true)\u3001\u5E03\u5C40\u8FD8\u6CA1\u7B97\u5B8C\u6240\u4EE5\u504F\u5C0F\uFF0C\u7B2C\u4E8C\u6B21\uFF08\u5185\u5BB9\u5DF2\u7ECF\u6D3B\u7740\uFF09\u91CF\u51FA\u6765\u624D\u5BF9\u3002\u6240\u4EE5\u5C55\u5F00\u540E\u8FDE\u91CF 60 \u5E27\u91CD\u65B0\u5E94\u7528\u9AD8\u5EA6\uFF08\u7B49\u4EF7\u4E8E\u5173\u6389\u518D\u70B9\u5F00\uFF0C\u4F46\u7528\u6237\u770B\u4E0D\u89C1\u95EA\uFF09\u3002\u540C\u65F6\u4FDD\u7559\u56FA\u5B9A\u9AD8\u5EA6\u6EDA\u52A8\u6846\u4F5C\u4E3A\u515C\u5E95\uFF1A\u6846\u9AD8 = \u6298\u53E0\u83DC\u5355\u5B9E\u9645\u9AD8 \u2212 \u6807\u7B7E\u9AD8 \u2212 12\uFF0C\u5373\u4F7F\u9AD8\u5EA6\u8FD8\u4E0D\u5B8C\u7F8E\u4E5F\u4E0D\u4F1A\u538B\u5230\u6807\u7B7E\u6216\u4E0A\u4E0B\u884C\u3002"
+        },
         {
           "version": "1.28.0-alpha.121",
           "file": "versions/1.28.0-alpha.121/MGCModpack.dll",
