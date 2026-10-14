@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 185,
-  "generatedAt": "2026-10-14T04:58:12Z",
+  "rev": 186,
+  "generatedAt": "2026-10-14T05:47:52Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -1067,8 +1067,8 @@
       "name": "ui_mainmenu.unity3d",
       "file": "bundle/ui_mainmenu.unity3d",
       "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_mainmenu.unity3d",
-      "sha256": "c24c230c519e6e5d3b2bc38809571bac121c434e0d9e34f095a329e8c7e3bc14",
-      "size": 1233120
+      "sha256": "a0fbcb033d0170964cf5195d9bb5696966dd027744b264fdbf57898b22d3634b",
+      "size": 1233116
     },
     {
       "id": "bundle:ui_pause.unity3d",
