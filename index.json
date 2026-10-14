@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 181,
-  "generatedAt": "2026-10-14T00:04:52Z",
+  "rev": 182,
+  "generatedAt": "2026-10-14T00:11:31Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.105",
+        "loader:MGCModpack": "1.28.0-alpha.106",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.106",
+          "file": "versions/1.28.0-alpha.106/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.106/MGCModpack.dll",
+          "sha256": "f81132066ac46a7d82fe145303e4e426f78f985d667a13f2419ff45c902e167f",
+          "size": 464896,
+          "publishedAt": "2026-10-14T00:11:26Z",
+          "notes": "1.28.0-alpha.106\uFF1A\u2460 \u6A21\u677F\u4E0D\u53EA\u5F00\u5934\u6309\u4E00\u6B21 \u2014\u2014 ClearRows \u9047\u5230\u540D\u5B57\u5E26 Example \u7684\u5B50\u8282\u70B9\u4F1A**\u987A\u624B\u6309\u4E0B\u53BB\u5E76\u6253\u65E5\u5FD7**\uFF08\u8C01\u6253\u5F00\u7684\u4E0D\u91CD\u8981\uFF09\uFF0CRefresh \u6536\u5C3E\u518D\u6309\u4E00\u6B21\uFF0C\u8986\u76D6\u6E32\u67D3\u8FC7\u7A0B\u4E2D\u88AB\u522B\u5904\u6253\u5F00\uFF1B\u2461 \u65B0\u589E\u65E5\u5FD7 [Community] \u6E05\u5217\u8868\u65F6\u53D1\u73B0\u6A21\u677F\u662F**\u663E\u793A**\u7684\uFF0C\u5DF2\u6309\u4E0B\u53BB: \u003C\u540D\u5B57\u003E\uFF0C\u7528\u6765\u5B9A\u4F4D\u5230\u5E95\u662F\u8C01\u6FC0\u6D3B\u4E86\u5B83\u3002\u4EC5\u53D1\u6D4B\u8BD5\u9891\u9053\u3002"
+        },
         {
           "version": "1.28.0-alpha.105",
           "file": "versions/1.28.0-alpha.105/MGCModpack.dll",
