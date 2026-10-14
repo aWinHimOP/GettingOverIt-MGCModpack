@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 184,
-  "generatedAt": "2026-10-14T00:25:19Z",
+  "rev": 185,
+  "generatedAt": "2026-10-14T04:58:12Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -29,7 +29,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.108",
+        "loader:MGCModpack": "1.28.0-alpha.109",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -41,6 +41,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.109",
+          "file": "versions/1.28.0-alpha.109/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.109/MGCModpack.dll",
+          "sha256": "d4c5f6a34720cbdeac9e5425382f00b30d03f91b611901204956d3391d0837fa",
+          "size": 466432,
+          "publishedAt": "2026-10-14T04:58:09Z",
+          "notes": "1.28.0-alpha.109\uFF1A\u4FEE\u5B9E\u673A\u67E5\u51FA\u7684\u5DE6\u680F\u771F\u56E0 \u2014\u2014 \u65B0 UI bundle \u91CC CommunityPanel/List \u7684\u5BBD\u5EA6\u662F\u6309\u66F4\u5BBD\u753B\u5E03\u6446\u7684\uFF08pos=-613 sizeDelta=-1227\uFF09\uFF0C1080 \u5BBD\u7684\u753B\u5E03\u4E0A\u7B97\u51FA\u6765\u662F**\u8D1F\u5BBD**\uFF0C\u6574\u680F\u4EC0\u4E48\u90FD\u4E0D\u753B\uFF1B\u800C\u6A21\u677F\u6CA1\u88AB\u62C9\u4F38\u3001\u6309\u81EA\u5DF1 283x93 \u753B\uFF0C\u6240\u4EE5\u90A3\u4E00\u5217\u91CC\u552F\u4E00\u770B\u5F97\u89C1\u7684\u5C31\u662F Example\uFF08\u8FD9\u5C31\u662F\u7528\u6237\u6700\u65E9\u770B\u5230\u7684\u201CExample \u4E00\u76F4\u663E\u793A\u201D\uFF09\uFF1B\u628A\u6A21\u677F\u6309\u4E0B\u53BB\u4E4B\u540E\u514B\u9686\uFF08\u62C9\u4F38\u5230\u7236\u5BBD=\u8D1F\uFF09\u4E5F\u770B\u4E0D\u89C1\uFF0C\u4E8E\u662F\u201C\u5DE6\u8FB9\u7684\u5217\u8868\u6D88\u5931\u4E86\u201D\u3002\u73B0\u5728\u5728 Update \u91CC\u7B49\u5E03\u5C40\u7B97\u597D\u540E\u515C\u5E95\uFF1A\u53EA\u6709\u7B97\u51FA\u6765 \u003C=1 \u624D\u628A\u8FD9\u4E00\u680F\u6309\u753B\u5E03\u91CD\u5B9A\u5BBD\u5EA6\uFF08\u7236\u9762\u677F 32%\uFF0C\u5939 180~360\uFF09\uFF0C\u5E76\u8BA9\u5185\u5BB9\u533A\u8BA9\u51FA\u8FD9\u4E00\u6BB5\uFF1B\u6446\u4F4D\u6B63\u5E38\u7684 bundle \u4E00\u5F8B\u4E0D\u78B0\u3002"
+        },
         {
           "version": "1.28.0-alpha.108",
           "file": "versions/1.28.0-alpha.108/MGCModpack.dll",
