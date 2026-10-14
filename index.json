@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 191,
-  "generatedAt": "2026-10-14T06:00:15Z",
+  "rev": 192,
+  "generatedAt": "2026-10-14T06:08:13Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -12,7 +12,7 @@
       },
       "pin": {
         "bundle:ui_mainmenu.unity3d": "1.1.0",
-        "loader:MGCModpack": "1.28.0-alpha.104",
+        "loader:MGCModpack": "1.28.0-alpha.110",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
