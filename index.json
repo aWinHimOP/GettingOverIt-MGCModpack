@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 205,
-  "generatedAt": "2026-10-15T05:22:20Z",
+  "rev": 206,
+  "generatedAt": "2026-10-15T06:02:23Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -30,7 +30,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.126",
+        "loader:MGCModpack": "1.28.0-alpha.127",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -42,6 +42,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.127",
+          "file": "versions/1.28.0-alpha.127/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.127/MGCModpack.dll",
+          "sha256": "a56ab9ec7aa24cd3d607ca630079db22d05122b4669cadb7c184521a00aa365f",
+          "size": 475648,
+          "publishedAt": "2026-10-15T06:02:20Z",
+          "notes": "1.28.0-alpha.127\uFF1A\u6293\u5230\u771F\u51F6 \u2014\u2014 AccordionItem \u7684 expandedHeight = GetPreferredHeight(valueContent) \u53EA\u7B97\u503C\u5BB9\u5668\u3001\u5FD8\u4E86\u52A0\u6807\u7B7E\u90A3\u4E00\u683C\uFF0C\u6240\u4EE5\u6298\u53E0\u83DC\u5355\u6C38\u8FDC\u6BD4\u5185\u5BB9\u77EE 93\uFF08\u6B63\u597D\u4E00\u683C\uFF09\u3002\u5B9E\u673A\u6570\u5B57\uFF1A\u6298\u53E0\u83DC\u5355=465\uFF0C\u6807\u7B7E=93\u002B\u503C\u5BB9\u5668=465=558\u3002\u73B0\u5728\u91CF\u5B8C\u540E\u628A\u6807\u7B7E\u9AD8\u8865\u4E0A\u3002\u53E6\u5916\u4E24\u5904\uFF1A\u503C\u5BB9\u5668\u81EA\u5DF1\u7684 VerticalLayoutGroup padding \u6E05\u6389\uFF08\u6807\u9898\u4E0B\u9762\u90A3\u5757\u7A7A\u767D\u5C31\u662F\u5B83\uFF09\uFF0C\u4EE5\u53CA\u6536\u8D77\u6765\u4E4B\u540E\u4E0D\u518D\u6539\u9AD8\u5EA6\uFF08\u7528\u6237\u53CD\u9988\u6536\u4E0D\u56DE\u53BB\uFF09\u3002"
+        },
         {
           "version": "1.28.0-alpha.126",
           "file": "versions/1.28.0-alpha.126/MGCModpack.dll",
