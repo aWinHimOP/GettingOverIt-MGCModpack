@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 222,
-  "generatedAt": "2026-10-15T16:42:06Z",
+  "rev": 223,
+  "generatedAt": "2026-10-15T17:21:04Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -33,7 +33,7 @@
         "bundle:ui_mainmenu.unity3d": "1.1.1",
         "loader:MGCModpack": "1.28.0-alpha.141",
         "map:MGCModpack": "1.0.0",
-        "mod:MGCModpack": "1.0.0"
+        "mod:MGCModpack": "1.1.0"
       }
     }
   },
@@ -1311,6 +1311,15 @@
       "kind": "mod",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.1.0",
+          "file": "mod/1.1.0/MGCModpack.modpack",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/1.1.0/MGCModpack.modpack",
+          "sha256": "0b3436cd126c3eb6324f24ffc431f47733276e6741ae1aa4f42069b2b213a60c",
+          "size": 134448,
+          "publishedAt": "2026-10-15T17:21:01Z",
+          "notes": "mod 1.1.0\uFF1A\u6E38\u620F\u8BA1\u65F6\u5668\uFF08TimerMod\uFF09\u65B0\u589E uGUI \u5206\u6BB5\u8868\uFF0C\u628A PC \u7248\u90A3\u4E2A IMGUI \u7684 LiveSplit \u98CE\u683C\u6574\u5957\u79FB\u690D\u8FC7\u6765\uFF1A\u8868\u5934 Segment / \u002B/- / Time\uFF0C\u4E00\u6761\u5206\u6BB5\u4E00\u884C\uFF08\u6BB5\u540D\u3001\u672C\u6BB5\u65F6\u95F4\u3001\u4E0E\u6700\u597D\u6210\u7EE9\u7684\u5DEE\u503C\u3001\u7D2F\u8BA1\u5206\u6BB5\uFF09\uFF0C\u5E95\u90E8 Sum of Best Segments \u5E76\u9644\u5E26 PB \u603B\u65F6\u95F4\uFF1B\u884C\u5E95\u8272\u6DF1\u6D45\u4EA4\u66FF\uFF0C\u843D\u540E\u7EA2\u3001\u9886\u5148\u7EFF\u3001\u5237\u65B0\u6700\u597D\u6210\u7EE9\u7684\u5206\u6BB5\u6807\u91D1\u8272\u3002\u6570\u636E\u4E00\u884C\u90FD\u4E0D\u81EA\u5DF1\u7B97\uFF0C\u5168\u90E8\u6765\u81EA MGC.Timer \u7684 SegmentTimerManager\uFF08GetProgress / GetBestRecords\uFF09\uFF0C\u6BB5\u540D\u53D6\u5F53\u524D\u5730\u56FE\u7684 Splitsname\u3002\u5927\u8BA1\u65F6\u5668\u540C\u65F6\u6539\u6210\u843D\u540E\u53D8\u7EA2\u3001\u9886\u5148\u53D8\u7EFF\u3001\u901A\u5173\u53D8\u7EFF\u3002\u8BBE\u7F6E\u9875\u65B0\u589E\uFF1A\u663E\u793A\u5206\u6BB5\u8868\u3001\u5206\u6BB5\u8868\u5B57\u53F7\u3002"
+        },
         {
           "version": "1.0.0",
           "file": "mod/MGCModpack.modpack",
