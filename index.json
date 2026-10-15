@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 212,
-  "generatedAt": "2026-10-15T12:02:32Z",
+  "rev": 213,
+  "generatedAt": "2026-10-15T13:05:51Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -30,7 +30,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.133",
+        "loader:MGCModpack": "1.28.0-alpha.134",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -42,6 +42,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.134",
+          "file": "versions/1.28.0-alpha.134/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.134/MGCModpack.dll",
+          "sha256": "304dda2eda54ec898e00671bedc8635b8424ca08b2f208bdde34765ef507c757",
+          "size": 478208,
+          "publishedAt": "2026-10-15T13:05:48Z",
+          "notes": "1.28.0-alpha.134\uFF1A\u2460 \u6298\u53E0\u83DC\u5355\u6807\u9898\u4E0D\u518D\u5199\u300C\u00B7 \u89E3\u9501\u300D\uFF0C\u6B63\u5E38\u663E\u793A\uFF08\u5F53\u524D\u6863\u4F4D\u7531\u6DE1\u84DD\u9AD8\u5149\u8868\u793A\uFF09\uFF1B\u2461 \u5173\u6389\u89E3\u9501\u65F6\u7528 GraphicsQuality/ValueContent/Button \u6A21\u677F\u81EA\u52A8\u751F\u6210\u539F\u7248\u4E09\u4E2A\u753B\u8D28\u6863\u4F4D\uFF08\u65B0\u9884\u5236\u4F53\u91CC\u90A3\u4E09\u4E2A\u6309\u94AE\u88AB\u5220\u4E86\uFF09\uFF1B\u2462 \u9002\u914D\u7528\u6237\u91CD\u65B0\u6253\u5305\u7684 ui_mainmenu.unity3d\u3002"
+        },
         {
           "version": "1.28.0-alpha.133",
           "file": "versions/1.28.0-alpha.133/MGCModpack.dll",
