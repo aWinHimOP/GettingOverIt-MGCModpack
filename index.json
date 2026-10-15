@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 223,
-  "generatedAt": "2026-10-15T17:21:04Z",
+  "rev": 224,
+  "generatedAt": "2026-10-15T17:47:47Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -33,7 +33,7 @@
         "bundle:ui_mainmenu.unity3d": "1.1.1",
         "loader:MGCModpack": "1.28.0-alpha.141",
         "map:MGCModpack": "1.0.0",
-        "mod:MGCModpack": "1.1.0"
+        "mod:MGCModpack": "1.1.1"
       }
     }
   },
@@ -1311,6 +1311,15 @@
       "kind": "mod",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.1.1",
+          "file": "mod/1.1.1/MGCModpack.modpack",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/1.1.1/MGCModpack.modpack",
+          "sha256": "f7dc98a686f1b05c360dfc95afaec97fa0fa784f46427c5abe076891be07455c",
+          "size": 134821,
+          "publishedAt": "2026-10-15T17:47:45Z",
+          "notes": "mod 1.1.1\uFF1A\u4FEE\u5206\u6BB5\u8868\u7684\u4E24\u4E2A\u771F bug\u3002\u2460 \u5730\u56FE\u7684 Splitsname \u6BCF\u6B21\u53D6\u90FD\u662F\u65B0\u6570\u7EC4\uFF0C\u539F\u6765\u6309\u5F15\u7528\u6BD4\u8F83\u6C38\u8FDC\u4E0D\u76F8\u7B49\uFF0C\u4E8E\u662F\u6BCF\u5E27\u9500\u6BC1\u91CD\u5EFA\u5168\u90E8\u884C\uFF08\u5361\u987F \u002B \u5E03\u5C40\u9519\u4E71\uFF1A\u4E0B\u9762\u51E0\u884C\u6CA1\u6709\u5E95\u8272\uFF09\uFF1B\u73B0\u5728\u6309\u5185\u5BB9\u6BD4\u8F83\u3002\u2461 \u5206\u6BB5\u8868\u539F\u6765\u7528 Screen.width \u53CD\u63A8\u5DE6\u8FB9\u7684 x\uFF0C\u5BFC\u81F4\u9762\u677F\u6709\u4E00\u534A\u8DD1\u5230\u5C4F\u5E55\u5916\uFF08\u753B\u5E03\u5750\u6807\u7A7A\u95F4\u548C Screen \u50CF\u7D20\u5C3A\u5BF8\u5E76\u4E0D\u4E00\u81F4\uFF09\uFF0C\u73B0\u5728\u76F4\u63A5\u8D34\u53F3\u8FB9\u951A\u70B9\uFF0C\u548C\u5927\u8BA1\u65F6\u5668\u540C\u4E00\u5957\u951A\u6CD5\u3002"
+        },
         {
           "version": "1.1.0",
           "file": "mod/1.1.0/MGCModpack.modpack",
