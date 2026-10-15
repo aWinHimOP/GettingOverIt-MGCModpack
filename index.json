@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 207,
-  "generatedAt": "2026-10-15T06:06:16Z",
+  "rev": 208,
+  "generatedAt": "2026-10-15T06:20:03Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -30,7 +30,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.128",
+        "loader:MGCModpack": "1.28.0-alpha.129",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -42,6 +42,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.129",
+          "file": "versions/1.28.0-alpha.129/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.129/MGCModpack.dll",
+          "sha256": "107ec37b3e097359b574e5d5a570377c3f095a739b4b2a377a57a2d9bc6793d0",
+          "size": 476160,
+          "publishedAt": "2026-10-15T06:20:00Z",
+          "notes": "1.28.0-alpha.129\uFF1A\u4E24\u5904\u6539\u52A8\u3002\u2460 \u6E38\u620F\u753B\u8D28\u6C34\u5E73\u89C6\u56FE\u53BB\u6389\u9ED1\u5E95\uFF08\u884C\u3001\u4E24\u5217\u3001\u6309\u94AE\u7684 Image \u90FD\u5173\u6389\uFF09\uFF0C\u6587\u5B57\u6539\u767D\uFF08\u5206\u8FA8\u7387/\u5E27\u7387\u6807\u9898\u548C\u6309\u94AE\u6587\u5B57\uFF09\uFF0C\u6846\u5185\u53EF\u89C1\u683C\u6570 4\u21925\uFF08\u6709\u4E00\u683C\u88AB\u5C0F\u6807\u9898\u5360\u6389\uFF09\u3002\u2461 \u65C1\u767D\u5B57\u5E55\u6539\u7528 MGC.UI.Controls.UIControls \u91CD\u5EFA\u6309\u94AE\uFF08\u539F\u6765\u76F4\u63A5\u7528\u6E38\u620F\u81EA\u5E26\u7684 Subtitles/ValueContent/Button\uFF0C\u80CC\u666F\u4F1A\u968F\u72B6\u6001\u53D8\u767D\uFF09\uFF0C\u5E76\u628A transition \u8BBE\u6210 None \u9501\u6B7B\u80CC\u666F \u2014\u2014 \u5F00\u5173\u53D8\u5316\u65F6\u53EA\u6539\u6587\u5B57\u300C\u5F00/\u5173\u300D\uFF0C\u80CC\u666F\u4E0D\u52A8\u3002"
+        },
         {
           "version": "1.28.0-alpha.128",
           "file": "versions/1.28.0-alpha.128/MGCModpack.dll",
