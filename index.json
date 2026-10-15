@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 218,
-  "generatedAt": "2026-10-15T14:42:36Z",
+  "rev": 219,
+  "generatedAt": "2026-10-15T14:59:32Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -31,7 +31,7 @@
       },
       "pin": {
         "bundle:ui_mainmenu.unity3d": "1.1.1",
-        "loader:MGCModpack": "1.28.0-alpha.137",
+        "loader:MGCModpack": "1.28.0-alpha.138",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -43,6 +43,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.138",
+          "file": "versions/1.28.0-alpha.138/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.138/MGCModpack.dll",
+          "sha256": "67a64ea00d9618d2ddcddbb69b8ed1e7abd5f20d7cc743cd978be4f632b835b5",
+          "size": 476672,
+          "publishedAt": "2026-10-15T14:59:29Z",
+          "notes": "1.28.0-alpha.138\uFF1A\u6309\u7528\u6237\u4E09\u6761\u53CD\u9988\u6539\u3002\u2460 \u672A\u89E3\u9501\u7684\u539F\u7248\u6863\u4F4D\u6FC0\u6D3B\u540E\u6587\u5B57\u4E0D\u53D8\u9ED1\uFF1AHighlightButton/ResetAllButtons \u91CC\u627E\u7684\u662F Text \u8282\u70B9\uFF0C\u800C\u7528 Button \u6A21\u677F\u514B\u9686\u51FA\u6765\u7684\u6863\u4F4D\u6587\u5B57\u5728 LabelContent/Text \u4E0B\uFF0C\u627E\u4E0D\u5230\u6240\u4EE5\u6CA1\u53D8\u8272\uFF0C\u6539\u6210 GetComponentInChildren\u003CText\u003E \u517C\u5BB9\u4E24\u79CD\u7ED3\u6784\u3002\u2461 \u5206\u8FA8\u7387\u548C\u5E27\u7387\u4E0B\u6B21\u8FDB\u6E38\u620F\u4E0D\u751F\u6548\uFF1ASavedRatio() \u91CC Mathf.Clamp(..., 0.3f, 1f) \u4E0A\u9650\u88AB\u5939\u6210 1.0\uFF0C125%~400% \u5B58\u4E86\u4E5F\u767D\u5B58\uFF0C\u6539\u6210 0.25~4\u3002\u2462 \u624B\u6307\u653E\u5728\u6298\u53E0\u83DC\u5355\u4E0A\u62D6\u4E0D\u52A8\u5916\u5C42\u8BBE\u7F6E\u9875\uFF1A\u5185\u5C42 UnlockScroll \u662F ScrollRect \u4F1A\u5403\u6389\u62D6\u62FD\uFF0C\u73B0\u5728\u5173\u6389\u5185\u5C42\u6EDA\u52A8\u3001\u6846\u9AD8\u8DDF\u7740\u5185\u5BB9\u957F\uFF0C\u6EDA\u52A8\u5168\u4EA4\u7ED9\u5916\u5C42\u3002"
+        },
         {
           "version": "1.28.0-alpha.137",
           "file": "versions/1.28.0-alpha.137/MGCModpack.dll",
