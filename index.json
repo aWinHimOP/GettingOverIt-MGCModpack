@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 211,
-  "generatedAt": "2026-10-15T07:02:22Z",
+  "rev": 212,
+  "generatedAt": "2026-10-15T12:02:32Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -30,7 +30,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.132",
+        "loader:MGCModpack": "1.28.0-alpha.133",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -42,6 +42,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.133",
+          "file": "versions/1.28.0-alpha.133/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.133/MGCModpack.dll",
+          "sha256": "eb03092526b65be86ef7de01238d8c424013b2e7625465fb838e719195bf7b40",
+          "size": 477696,
+          "publishedAt": "2026-10-15T12:02:28Z",
+          "notes": "1.28.0-alpha.133\uFF1A\u6309\u7528\u6237\u624B\u5DE5\u505A\u7684\u9884\u5236\u4F53\u6539\u9020 \u002B \u4E24\u4E2A\u65B0\u9700\u6C42\u3002\u2460 BuildUnlockView \u6539\u6210\u7ED1\u5B9A GraphicsQuality/ValueContent/UnlockScroll\uFF08\u63A5 ScrollRect \u7684 viewport=Viewport\u3001content=Viewport/Content\uFF0C\u627E ResolutionRatio/FPS \u4E24\u5217\uFF0C\u62FF\u5360\u4F4D Button \u5F53\u6A21\u677F\u514B\u9686\u6863\u4F4D\uFF0C\u6807\u9898\u548C\u6309\u94AE\u6587\u5B57\u5237\u767D\u3001\u53BB\u9ED1\u5E95\uFF09\uFF1B\u2461 \u7ED9\u5F53\u524D\u751F\u6548\u7684\u6863\u4F4D\u52A0\u6DE1\u84DD\u9AD8\u5149\uFF080.808,0.898,1\uFF09\uFF1B\u2462 \u4FEE\u300C\u5206\u8FA8\u7387\u53CD\u590D\u751F\u6548\u300D\uFF1AUpdate() \u515C\u5E95\u8FD8\u5728\u7528\u5E26 720 \u5730\u677F\u7684\u8001\u516C\u5F0F\u7B97\u671F\u671B\u9AD8\u5EA6\uFF0C25% \u65F6\u7B97\u6210 720\u3001\u5B9E\u9645 270\uFF0C\u4E8E\u662F\u6BCF 1.5 \u79D2\u91CD\u8BBE\u4E00\u6B21\uFF0C\u73B0\u5728\u7EDF\u4E00\u7528 ComputeResolution\uFF0C\u5E76\u4E14\u540C\u4E00\u6863\u4F4D\u91CD\u590D\u70B9\u51FB\u76F4\u63A5\u8FD4\u56DE\uFF1B\u2463 Map(\u5730\u56FE)\u9875\u7684\u5730\u56FE\u5305\u5217\u8868\u4E0D\u518D\u663E\u793A\u4E91\u7AEF\u5305\uFF0C\u53EA\u5217\u672C\u5730\u5DF2\u88C5\u7684\u3002"
+        },
         {
           "version": "1.28.0-alpha.132",
           "file": "versions/1.28.0-alpha.132/MGCModpack.dll",
