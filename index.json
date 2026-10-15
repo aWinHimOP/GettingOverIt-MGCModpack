@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 209,
-  "generatedAt": "2026-10-15T06:39:18Z",
+  "rev": 210,
+  "generatedAt": "2026-10-15T06:44:29Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -30,7 +30,7 @@
         ]
       },
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.130",
+        "loader:MGCModpack": "1.28.0-alpha.131",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -42,6 +42,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.131",
+          "file": "versions/1.28.0-alpha.131/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.131/MGCModpack.dll",
+          "sha256": "ef28247af17e3c6131c8b6fb1d392f1e6e8d2d18c93428e4fcaf25148fb689ed",
+          "size": 476160,
+          "publishedAt": "2026-10-15T06:44:26Z",
+          "notes": "1.28.0-alpha.131\uFF1A\u6309\u7528\u6237\u660E\u786E\u7684\u65B9\u6848\u505A \u2014\u2014 \u628A\u6E38\u620F\u539F\u672C\u90A3\u4E00\u6574\u884C Subtitles \u5220\u6389\uFF08Destroy\uFF09\uFF0C\u5728\u539F\u4F4D\u7F6E\u7528 UIControls \u91CD\u5EFA\u4E00\u884C\uFF1ACreateValueContentVertical \u002B CreateToggle\uFF0C\u548C\u300C\u8BBE\u7F6E-\u901A\u7528-\u89E3\u9664\u5E27\u7387\u548C\u5206\u8FA8\u7387\u9650\u5236\u300D\u90A3\u4E00\u884C\u5B8C\u5168\u540C\u4E00\u5957\u7ED3\u6784\uFF08\u6807\u7B7E \u002B \u5F00/\u5173\uFF0C\u65E0\u80CC\u666F\uFF09\u3002\u767D\u8272\u6309\u952E\u7684\u6839\u56E0 UIControls.UpdateToggleState \u91CC component.color = isOn ? highlightBgColor : defaultBgColor \u4E5F\u5DF2\u6539\u6210\u5B8C\u5168\u4E0D\u78B0\u989C\u8272\u3002"
+        },
         {
           "version": "1.28.0-alpha.130",
           "file": "versions/1.28.0-alpha.130/MGCModpack.dll",
