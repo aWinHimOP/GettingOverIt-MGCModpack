@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 232,
-  "generatedAt": "2026-10-16T06:04:40Z",
+  "rev": 233,
+  "generatedAt": "2026-10-16T10:23:22Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -33,7 +33,7 @@
         "bundle:ui_mainmenu.unity3d": "1.1.1",
         "loader:MGCModpack": "1.28.0-alpha.144",
         "map:MGCModpack": "1.0.0",
-        "mod:MGCModpack": "1.2.0"
+        "mod:MGCModpack": "1.0.0"
       }
     }
   },
@@ -1339,6 +1339,15 @@
       "name": "MGCModpack",
       "versions": [
         {
+          "version": "1.0.0",
+          "file": "mod/MGCModpack.modpack",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
+          "sha256": "adc9af0ad8a2fee0048f1619318859d8636158902b8872c742dbff342b898ca1",
+          "size": 132521,
+          "publishedAt": "2026-10-16T10:23:16Z",
+          "notes": "\u6574\u5408\u5305 1.0.0\uFF08\u6B63\u5F0F\uFF09\uFF1A\u2460 \u901A\u5173\u9875\u53F3\u4E0A\u89D2\u663E\u793A\u4E0A\u6B21\u901A\u5173\u7684\u5206\u6BB5\u8868\uFF08\u901A\u5173\u90A3\u4E00\u523B\u628A\u6574\u4EFD\u7EAA\u5F55\u5B58\u8FDB RunSplitsArchive\uFF0C\u7531\u6838\u5FC3\u7684 RewardBadge \u6E32\u67D3\uFF0C\u4E0D\u518D\u4F9D\u8D56\u901A\u5173\u9875\u4E0A\u5DF2\u7ECF\u5378\u8F7D\u7684 mod\uFF09\uFF1B\u2461 \u914D\u5408\u6838\u5FC3 alpha.144 \u7684 screen.mode \u7AD9\u70B9\u3002\u672C\u7248\u5DF2\u5220\u9664\u6240\u6709\u4E34\u65F6\u81EA\u6D4B\u4EE3\u7801\uFF08\u81EA\u52A8\u8DF3\u573A\u666F/\u8BCA\u65AD\u65E5\u5FD7\uFF09\u3002"
+        },
+        {
           "version": "1.2.0",
           "file": "mod/1.2.0/MGCModpack.modpack",
           "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/1.2.0/MGCModpack.modpack",
@@ -1346,15 +1355,6 @@
           "size": 132822,
           "publishedAt": "2026-10-16T06:04:38Z",
           "notes": "\u2605\u4E34\u65F6\u6D4B\u8BD5\u5305\uFF08\u9A8C\u8BC1\u5B8C\u5220\uFF09\uFF1ATimerMod \u91CC\u52A0\u4E86\u300C\u5B58\u5728 testjump \u6587\u4EF6\u624D\u8DF3\u901A\u5173\u9875\u300D\u7684\u81EA\u6D4B\u5F00\u5173\uFF0C\u7528\u6765\u9A8C\u8BC1\u901A\u5173\u9875\u5206\u6BB5\u8868\u3002\u9ED8\u8BA4\u4E0D\u5B58\u5728\u8BE5\u6587\u4EF6 \u21D2 \u4E0D\u4F1A\u8DF3\u3002\u9A8C\u8BC1\u5B8C\u4F1A\u7ACB\u523B\u7528\u6B63\u5F0F\u5185\u5BB9\u8986\u76D6\u56DE 1.0.0\u3002"
-        },
-        {
-          "version": "1.0.0",
-          "file": "mod/MGCModpack.modpack",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "32fe48b29582f6b5cc72fa75063ff56f4cde8e208fe4556d7d6a3e5ea903ec0c",
-          "size": 134923,
-          "publishedAt": "2026-10-15T18:36:07Z",
-          "notes": "\u6574\u5408\u5305\u7248\u672C\u53F7\u6309\u7528\u6237\u8981\u6C42\u56DE\u5230 1.0.0\uFF08\u5185\u5BB9\u662F\u6700\u65B0\u7684\uFF09\u3002\u672C\u8F6E\u5185\u5BB9\uFF1A\u2460 \u5206\u6BB5\u8BA1\u65F6\u5668\u7684\u901A\u5173\u9875\u4E5F\u663E\u793A\uFF08Reward Loader Mobile \u573A\u666F\u62FF\u4E0D\u5230\u5730\u56FE\uFF0C\u9000\u56DE\u7F13\u5B58\u7684\u6BB5\u540D\uFF09\uFF1B\u2461 \u65B0\u589E\u300C\u5206\u6BB5\u8BA1\u65F6\u5668\u5F00\u5173\u300D\u603B\u5F00\u5173\uFF1B\u2462 \u9ED8\u8BA4\u503C\u6539\u6210 \u5B57\u53F7 0.8 / \u884C\u9AD8 3 / \u5BBD 0.35\u3002"
         },
         {
           "version": "1.1.7",
