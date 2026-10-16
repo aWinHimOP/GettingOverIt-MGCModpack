@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 244,
-  "generatedAt": "2026-10-16T12:36:35Z",
+  "rev": 245,
+  "generatedAt": "2026-10-16T12:40:06Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -14,7 +14,7 @@
         "bundle:ui_mainmenu.unity3d": "1.28.0-alpha.146",
         "loader:MGCModpack": "1.28.0-alpha.150",
         "map:MGCModpack": "1.0.0",
-        "mod:MGCModpack": "1.0.0"
+        "mod:MGCModpack": "1.0.1"
       }
     },
     "test": {
@@ -33,7 +33,7 @@
         "bundle:ui_mainmenu.unity3d": "1.28.0-alpha.146",
         "loader:MGCModpack": "1.28.0-alpha.150",
         "map:MGCModpack": "1.0.0",
-        "mod:MGCModpack": "1.0.0"
+        "mod:MGCModpack": "1.0.1"
       }
     }
   },
@@ -1392,6 +1392,15 @@
       "kind": "mod",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.0.1",
+          "file": "mod/MGCModpack.modpack",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
+          "sha256": "faa859f51de415c794082767a43f4bd129cc8fd338eb702e8e8a40ade060b5b7",
+          "size": 132522,
+          "publishedAt": "2026-10-16T12:40:00Z",
+          "notes": "TimerMod \u6539\u7528\u6838\u5FC3\u8D44\u6E90\u5305\u7248\u5206\u6BB5\u8BA1\u65F6\u5668\uFF08\u5916\u89C2 ui_splitstimer\uFF0C\u53E3\u5F84\u540C PC\uFF09\u3002"
+        },
         {
           "version": "1.0.0",
           "file": "mod/MGCModpack.modpack",
