@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 234,
-  "generatedAt": "2026-10-16T10:23:34Z",
+  "rev": 235,
+  "generatedAt": "2026-10-16T10:33:36Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -31,7 +31,7 @@
       },
       "pin": {
         "bundle:ui_mainmenu.unity3d": "1.1.1",
-        "loader:MGCModpack": "1.28.0-alpha.144",
+        "loader:MGCModpack": "1.28.0-alpha.145",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.2.0"
       }
@@ -43,6 +43,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.145",
+          "file": "versions/1.28.0-alpha.145/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.145/MGCModpack.dll",
+          "sha256": "a939ce0a969234ecdfc3f583da73ba4b73cf4b88631cb77dfdc7cbd49f0b868b",
+          "size": 495104,
+          "publishedAt": "2026-10-16T10:33:33Z",
+          "notes": "\u6838\u5FC3 alpha.145\uFF1Ascreen.mode \u7AD9\u70B9\u5904\u7406\u5668\u6539\u6210\u300C\u6E38\u620F\u8981\u7684\u503C != \u89E3\u9501\u503C\u65F6\u624D\u6539\u5199\u5E76\u8BB0\u65E5\u5FD7\u300D\uFF0C\u907F\u514D\u6BCF\u6B21 SetResolution \u5237\u65E5\u5FD7\uFF1B\u914D\u5408\u6E38\u620F\u4FA7 4 \u5904\u63D2\u6869\uFF08BeautifulOn / SixtyFramesOn / BatterySaverOn / PlayerControl.AdjustScreenResolution\uFF09\u3002"
+        },
         {
           "version": "1.28.0-alpha.144",
           "file": "versions/1.28.0-alpha.144/MGCModpack.dll",
