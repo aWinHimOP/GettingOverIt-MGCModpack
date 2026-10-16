@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 271,
-  "generatedAt": "2026-10-16T19:10:09Z",
+  "rev": 272,
+  "generatedAt": "2026-10-16T19:10:21Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -11,6 +11,7 @@
         "type": "all"
       },
       "pin": {
+        "bundle:ui_fpspanel.unity3d": "1.1.0",
         "bundle:ui_mainmenu.unity3d": "1.28.0-alpha.146",
         "bundle:ui_splitstimer.unity3d": "1.1.0",
         "loader:MGCModpack": "1.28.0-alpha.160",
@@ -1658,6 +1659,25 @@
     }
   ],
   "assets": [
+    {
+      "id": "bundle:ui_fpspanel.unity3d",
+      "kind": "bundle",
+      "name": "ui_fpspanel.unity3d",
+      "file": "bundle/ui_fpspanel.unity3d",
+      "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_fpspanel.unity3d",
+      "sha256": "9f7ddf0b3411a33b74e844fa9f0cd6db2a19bd41893ec8b223a0585cecfb77f2",
+      "size": 17595,
+      "versions": [
+        {
+          "version": "1.1.0",
+          "file": "bundle/ui_fpspanel.unity3d",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_fpspanel.unity3d",
+          "sha256": "9f7ddf0b3411a33b74e844fa9f0cd6db2a19bd41893ec8b223a0585cecfb77f2",
+          "size": 17595,
+          "publishedAt": "2026-10-16T19:10:18Z"
+        }
+      ]
+    },
     {
       "id": "bundle:ui_mainmenu.unity3d",
       "kind": "bundle",
