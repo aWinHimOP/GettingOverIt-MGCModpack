@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 270,
-  "generatedAt": "2026-10-16T19:09:43Z",
+  "rev": 271,
+  "generatedAt": "2026-10-16T19:10:09Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -12,6 +12,7 @@
       },
       "pin": {
         "bundle:ui_mainmenu.unity3d": "1.28.0-alpha.146",
+        "bundle:ui_splitstimer.unity3d": "1.1.0",
         "loader:MGCModpack": "1.28.0-alpha.160",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.4"
@@ -1700,6 +1701,25 @@
       "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_pause.unity3d",
       "sha256": "a9b8db2e8482e65a090ff60c192c964c12e2b80ff41514cfb1d25aacae8d17a0",
       "size": 10658
+    },
+    {
+      "id": "bundle:ui_splitstimer.unity3d",
+      "kind": "bundle",
+      "name": "ui_splitstimer.unity3d",
+      "file": "bundle/ui_splitstimer.unity3d",
+      "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_splitstimer.unity3d",
+      "sha256": "99aa2942a1bdece16683a9c9ad3a7afae578e65764a11655e8c3d819cb2f4df8",
+      "size": 7263,
+      "versions": [
+        {
+          "version": "1.1.0",
+          "file": "bundle/ui_splitstimer.unity3d",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_splitstimer.unity3d",
+          "sha256": "99aa2942a1bdece16683a9c9ad3a7afae578e65764a11655e8c3d819cb2f4df8",
+          "size": 7263,
+          "publishedAt": "2026-10-16T19:10:08Z"
+        }
+      ]
     },
     {
       "id": "bundle:ui_uicontrols.unity3d",
