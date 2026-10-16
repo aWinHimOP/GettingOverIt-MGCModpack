@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 230,
-  "generatedAt": "2026-10-15T18:47:49Z",
+  "rev": 231,
+  "generatedAt": "2026-10-16T05:59:37Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -31,7 +31,7 @@
       },
       "pin": {
         "bundle:ui_mainmenu.unity3d": "1.1.1",
-        "loader:MGCModpack": "1.28.0-alpha.143",
+        "loader:MGCModpack": "1.28.0-alpha.144",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -43,6 +43,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.144",
+          "file": "versions/1.28.0-alpha.144/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.144/MGCModpack.dll",
+          "sha256": "f7330eda8caf71b2e7bc16e9bd9a556f3fd363027a0f713183ff4fc484fd33f6",
+          "size": 495104,
+          "publishedAt": "2026-10-16T05:59:35Z",
+          "notes": "\u6838\u5FC3 alpha.144\uFF1A\u2460 \u901A\u5173\u9875\u5206\u6BB5\u8868\u2014\u2014\u901A\u5173\u90A3\u4E00\u523B\u628A\u6574\u4EFD\u5206\u6BB5\u7EAA\u5F55\u5B58\u8FDB RunSplitsArchive\uFF08\u603B\u7528\u65F6/\u6BCF\u6BB5\u6BB5\u540D/\u672C\u6BB5\u7528\u65F6/\u7D2F\u8BA1/\u4E0E\u6700\u597D\u6210\u7EE9\u5DEE/Sum of Best\uFF09\uFF0C\u901A\u5173\u9875\u7531 RewardBadge \u7528 SplitsTableView \u6E32\u67D3\uFF08\u53F3\u4E0A\u89D2\uFF09\uFF0C\u6570\u636E\u4E0D\u518D\u4F9D\u8D56\u6D3B\u7684\u8BA1\u65F6\u5668\uFF08\u901A\u5173\u9875\u4E0A mod \u4F1A\u88AB\u5378\u8F7D\u3001\u672C\u5C40\u72B6\u6001\u4E5F\u6CA1\u4E86\uFF09\uFF1B\u2461 \u65B0\u589E\u8F6F\u7AD9\u70B9 screen.mode\uFF08\u62E6\u4F4F\u6E38\u620F\u6BCF\u573A\u666F\u81EA\u52A8\u6539\u5206\u8FA8\u7387/\u5E27\u7387\uFF0C\u9700\u6E38\u620F\u4FA7\u7B2C 7 \u5904\u63D2\u6869\uFF0C\u6CA1\u6709\u65F6\u81EA\u52A8\u56DE\u9000\u5230\u4E8B\u540E\u91CD\u538B\uFF09\u3002"
+        },
         {
           "version": "1.28.0-alpha.143",
           "file": "versions/1.28.0-alpha.143/MGCModpack.dll",
