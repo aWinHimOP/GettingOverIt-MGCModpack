@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 267,
-  "generatedAt": "2026-10-16T18:47:08Z",
+  "rev": 268,
+  "generatedAt": "2026-10-16T19:03:03Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -12,7 +12,7 @@
       },
       "pin": {
         "bundle:ui_mainmenu.unity3d": "1.28.0-alpha.146",
-        "loader:MGCModpack": "1.28.0-alpha.166",
+        "loader:MGCModpack": "1.28.0-alpha.160",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.3"
       }
@@ -31,7 +31,7 @@
       },
       "pin": {
         "bundle:ui_mainmenu.unity3d": "1.28.0-alpha.146",
-        "loader:MGCModpack": "1.28.0-alpha.166",
+        "loader:MGCModpack": "1.28.0-alpha.160",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.3"
       }
@@ -43,6 +43,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.160",
+          "file": "versions/1.28.0-alpha.160/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.160/MGCModpack.dll",
+          "sha256": "df1fa734e66591cf1174f9256dd76044ffc9b25ffc102e4b0332a6a0af5d9c14",
+          "size": 508416,
+          "publishedAt": "2026-10-16T19:02:56Z",
+          "notes": "\u56DE\u5230\u660E\u786E\u53EF\u7528\u7684 alpha.160"
+        },
         {
           "version": "1.28.0-alpha.166",
           "file": "versions/1.28.0-alpha.166/MGCModpack.dll",
@@ -96,15 +105,6 @@
           "size": 508928,
           "publishedAt": "2026-10-16T17:43:29Z",
           "notes": "SplitsTimerView \u52A0 DebugFirstRow\uFF08\u8BCA\u65AD\u5206\u6BB5\u8868\u5237\u65B0\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.160",
-          "file": "versions/1.28.0-alpha.160/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.160/MGCModpack.dll",
-          "sha256": "df1fa734e66591cf1174f9256dd76044ffc9b25ffc102e4b0332a6a0af5d9c14",
-          "size": 508416,
-          "publishedAt": "2026-10-16T17:03:26Z",
-          "notes": "\u5206\u6BB5\u8868\uFF1A\u884C\u6570\u636E\u6539\u56DE\u672C\u5C40\u5B9E\u65F6\uFF08\u4E4B\u524D\u62FF PB \u5C40\u5F53\u884C\u6570\u636E\uFF0C\u6E38\u620F\u91CC\u4E00\u52A8\u4E0D\u52A8\uFF09\uFF1BPB \u5C40\u6210\u7EE9\u6539\u5F53\u5DEE\u503C\u5217\u57FA\u7EBF\uFF08UsePbRunBaseline\uFF0C\u9ED8\u8BA4\u5F00\uFF09\u3002"
         },
         {
           "version": "1.28.0-alpha.159",
