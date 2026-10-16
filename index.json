@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 258,
-  "generatedAt": "2026-10-16T17:03:42Z",
+  "rev": 259,
+  "generatedAt": "2026-10-16T17:43:32Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -12,7 +12,7 @@
       },
       "pin": {
         "bundle:ui_mainmenu.unity3d": "1.28.0-alpha.146",
-        "loader:MGCModpack": "1.28.0-alpha.160",
+        "loader:MGCModpack": "1.28.0-alpha.161",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.4"
       }
@@ -31,7 +31,7 @@
       },
       "pin": {
         "bundle:ui_mainmenu.unity3d": "1.28.0-alpha.146",
-        "loader:MGCModpack": "1.28.0-alpha.160",
+        "loader:MGCModpack": "1.28.0-alpha.161",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.4"
       }
@@ -43,6 +43,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.161",
+          "file": "versions/1.28.0-alpha.161/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.161/MGCModpack.dll",
+          "sha256": "a18b6bcee2e7453819a38b9de74f2c49af88efbb405211aff4cc7c78bc4ed867",
+          "size": 508928,
+          "publishedAt": "2026-10-16T17:43:29Z",
+          "notes": "SplitsTimerView \u52A0 DebugFirstRow\uFF08\u8BCA\u65AD\u5206\u6BB5\u8868\u5237\u65B0\uFF09\u3002"
+        },
         {
           "version": "1.28.0-alpha.160",
           "file": "versions/1.28.0-alpha.160/MGCModpack.dll",
