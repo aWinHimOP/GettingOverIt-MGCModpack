@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 268,
-  "generatedAt": "2026-10-16T19:03:03Z",
+  "rev": 269,
+  "generatedAt": "2026-10-16T19:07:31Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -14,7 +14,7 @@
         "bundle:ui_mainmenu.unity3d": "1.28.0-alpha.146",
         "loader:MGCModpack": "1.28.0-alpha.160",
         "map:MGCModpack": "1.0.0",
-        "mod:MGCModpack": "1.0.3"
+        "mod:MGCModpack": "1.0.4"
       }
     },
     "test": {
@@ -33,7 +33,7 @@
         "bundle:ui_mainmenu.unity3d": "1.28.0-alpha.146",
         "loader:MGCModpack": "1.28.0-alpha.160",
         "map:MGCModpack": "1.0.0",
-        "mod:MGCModpack": "1.0.3"
+        "mod:MGCModpack": "1.0.4"
       }
     }
   },
@@ -1537,6 +1537,15 @@
       "name": "MGCModpack",
       "versions": [
         {
+          "version": "1.0.4",
+          "file": "mod/MGCModpack.modpack",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
+          "sha256": "081fee47ddd8bfc88e002bd7c7a3a713d1ced6b0cde1517abd9e53992512f6c3",
+          "size": 132751,
+          "publishedAt": "2026-10-16T19:07:25Z",
+          "notes": "\u56DE\u5230\u660E\u786E\u53EF\u7528\u7684 1.0.4"
+        },
+        {
           "version": "1.0.3",
           "file": "mod/MGCModpack.modpack",
           "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
@@ -1562,15 +1571,6 @@
           "size": 133102,
           "publishedAt": "2026-10-16T17:43:38Z",
           "notes": "\u4E34\u65F6\u8BCA\u65AD\uFF1A\u6BCF 120 \u5E27\u6253 [TimerModDiag] \u6BB5\u540D/\u5F53\u524D\u6BB5/\u8D77\u6B65/\u5B8C\u8D5B/split0/seg0 \u002B \u7B2C\u4E00\u884C\u5B9E\u9645\u6587\u5B57\uFF1BSetData \u5305 try/catch \u6253\u5F02\u5E38\u3002\u67E5\u5B8C\u5220\u3002"
-        },
-        {
-          "version": "1.0.4",
-          "file": "mod/MGCModpack.modpack",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "081fee47ddd8bfc88e002bd7c7a3a713d1ced6b0cde1517abd9e53992512f6c3",
-          "size": 132751,
-          "publishedAt": "2026-10-16T17:03:35Z",
-          "notes": "\u5206\u6BB5\u8868\u884C\u6570\u636E\u56DE\u5230\u672C\u5C40\u5B9E\u65F6\uFF08\u4F1A\u52A8\uFF09\uFF1BPB \u5C40\u6210\u7EE9\u5F53\u5DEE\u503C\u57FA\u7EBF\uFF1B\u8BA1\u65F6\u5668\u5728\u300C\u91CD\u7F6E\u573A\u666F\u540E\u8FD8\u6CA1\u8D77\u6B65\u300D\u65F6\u4E5F\u8FD4\u56DE\u7EFF\u8272\uFF08\u4E4B\u524D\u662F\u767D\u8272\uFF09\u3002"
         },
         {
           "version": "1.0.2",
