@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 241,
-  "generatedAt": "2026-10-16T11:21:41Z",
+  "rev": 242,
+  "generatedAt": "2026-10-16T11:31:55Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -12,7 +12,7 @@
       },
       "pin": {
         "bundle:ui_mainmenu.unity3d": "1.28.0-alpha.146",
-        "loader:MGCModpack": "1.28.0-alpha.147",
+        "loader:MGCModpack": "1.28.0-alpha.148",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -31,7 +31,7 @@
       },
       "pin": {
         "bundle:ui_mainmenu.unity3d": "1.28.0-alpha.146",
-        "loader:MGCModpack": "1.28.0-alpha.147",
+        "loader:MGCModpack": "1.28.0-alpha.148",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.0.0"
       }
@@ -43,6 +43,15 @@
       "kind": "loader",
       "name": "MGCModpack",
       "versions": [
+        {
+          "version": "1.28.0-alpha.148",
+          "file": "versions/1.28.0-alpha.148/MGCModpack.dll",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.148/MGCModpack.dll",
+          "sha256": "7290385f95674fc601970e705e5bb1d27e9110701398232e88645859ec521fe4",
+          "size": 496128,
+          "publishedAt": "2026-10-16T11:31:52Z",
+          "notes": "\u4FEE RKS \u6052\u4E3A 0 \u7684\u6839\u56E0\uFF1A\u901A\u5173\u90A3\u4E00\u523B\u6E38\u620F\u5148\u53D1 win.done\u3001\u540E\u8DD1 UpdateTimer\uFF0C\u5BFC\u81F4\u6700\u540E\u4E00\u6BB5\u8FD8\u6CA1\u7ED3\u7B97\uFF08currentSegments[last]=0\uFF09\uFF0C\u800C RecordClear \u662F\u300C\u4EFB\u4F55\u4E00\u6BB5\u003C=0 \u5C31\u6574\u5C40\u4E0D\u8BB0\u300D\u21D2 \u4E00\u5C40\u90FD\u5B58\u4E0D\u4E0B\u6765\u3002\u4FEE\u6CD5\uFF1Awin.done \u91CC\u5148\u8C03 SegmentTimerManager.FinalizeRunAtWin(\u6E38\u620F\u603B\u7528\u65F6)\uFF0C\u7528\u540C\u4E00\u6761 ProcessSegment \u8DEF\u5F84\u8865\u7B97\u6700\u540E\u4E00\u6BB5\u518D\u8BB0\u8D26\u3002"
+        },
         {
           "version": "1.28.0-alpha.147",
           "file": "versions/1.28.0-alpha.147/MGCModpack.dll",
