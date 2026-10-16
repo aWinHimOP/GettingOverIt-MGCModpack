@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 272,
-  "generatedAt": "2026-10-16T19:10:21Z",
+  "rev": 273,
+  "generatedAt": "2026-10-16T19:45:13Z",
   "generator": "RepoEditor/2.0",
   "channels": {
     "stable": {
@@ -16,7 +16,7 @@
         "bundle:ui_splitstimer.unity3d": "1.1.0",
         "loader:MGCModpack": "1.28.0-alpha.160",
         "map:MGCModpack": "1.0.0",
-        "mod:MGCModpack": "1.0.4"
+        "mod:MGCModpack": "1.0.6"
       }
     },
     "test": {
@@ -35,7 +35,7 @@
         "bundle:ui_mainmenu.unity3d": "1.1.0",
         "loader:MGCModpack": "1.28.0-alpha.160",
         "map:MGCModpack": "1.0.0",
-        "mod:MGCModpack": "1.0.4"
+        "mod:MGCModpack": "1.0.6"
       }
     }
   },
@@ -1539,6 +1539,15 @@
       "name": "MGCModpack",
       "versions": [
         {
+          "version": "1.0.6",
+          "file": "mod/MGCModpack.modpack",
+          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
+          "sha256": "842067d1bf295a7605d46149be8e45820ca7efbaf628aa0d364ab7b6dc475bbc",
+          "size": 133106,
+          "publishedAt": "2026-10-16T19:45:06Z",
+          "notes": "\u56DE\u5230\u6700\u65B0 1.0.6"
+        },
+        {
           "version": "1.0.4",
           "file": "mod/MGCModpack.modpack",
           "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
@@ -1555,15 +1564,6 @@
           "size": 133106,
           "publishedAt": "2026-10-16T18:38:37Z",
           "notes": "\u56DE\u5230 1.0.3\uFF1A\u5206\u6BB5\u8868\u884C\u6570\u636E=\u672C\u5C40\u5B9E\u65F6\uFF08\u4F1A\u9010\u6BB5\u5237\u65B0\uFF09\uFF0CPB \u5C40\u6210\u7EE9\u5F53\u5DEE\u503C\u57FA\u7EBF"
-        },
-        {
-          "version": "1.0.6",
-          "file": "mod/MGCModpack.modpack",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "842067d1bf295a7605d46149be8e45820ca7efbaf628aa0d364ab7b6dc475bbc",
-          "size": 133106,
-          "publishedAt": "2026-10-16T18:28:14Z",
-          "notes": "\u6BCF\u5E27\u515C\u5E95 SetActive(true)\uFF0C\u4FDD\u8BC1\u6E38\u620F\u5185\u5206\u6BB5\u8868\u53EF\u89C1\u3002"
         },
         {
           "version": "1.0.5",
