@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 375,
-  "generatedAt": "2026-10-30T12:36:11",
+  "rev": 376,
+  "generatedAt": "2026-10-31T00:42:11",
   "channels": {
     "stable": {
       "label": "正式",
@@ -21,9 +21,7 @@
       "order": 200,
       "target": {
         "type": "devices",
-        "ids": [
-          "356af1dbbf94887360586c6bff2e8b7b"
-        ]
+        "ids": []
       },
       "release": "1.28.0-alpha.164(2)",
       "pin": {

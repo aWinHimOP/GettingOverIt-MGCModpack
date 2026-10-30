@@ -13,9 +13,7 @@
       "order": 200,
       "target": {
         "type": "devices",
-        "ids": [
-          "356af1dbbf94887360586c6bff2e8b7b"
-        ]
+        "ids": []
       },
       "release": "1.28.0-alpha.164(2)"
     }
