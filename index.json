@@ -1,45 +1,76 @@
 {
   "schema": 2,
-  "rev": 278,
-  "generatedAt": "2026-10-16T20:13:37Z",
-  "generator": "RepoEditor/2.0",
+  "rev": 375,
+  "generatedAt": "2026-10-30T12:36:11",
   "channels": {
     "stable": {
-      "label": "\u6B63\u5F0F",
-      "order": 10,
+      "label": "正式",
+      "order": 100,
       "target": {
         "type": "all"
       },
+      "release": "1.28.0-alpha.164(2)",
       "pin": {
-        "bundle:ui_fpspanel.unity3d": "1.1.0",
-        "bundle:ui_mainmenu.unity3d": "1.1.0",
-        "bundle:ui_splitstimer.unity3d": "1.1.0",
-        "loader:MGCModpack": "1.28.0-alpha.164",
+        "mod:MGCModpack": "1.0.9",
         "map:MGCModpack": "1.0.0",
-        "mod:MGCModpack": "1.0.9"
+        "loader:MGCModpack": "1.28.0-alpha.164"
       }
     },
     "test": {
-      "label": "\u6D4B\u8BD5",
-      "order": 20,
+      "label": "测试",
+      "order": 200,
       "target": {
         "type": "devices",
         "ids": [
-          {
-            "id": "5ba1a76b9d59183caf0fac8137d1949b",
-            "name": "Mi Note 3 / jason\uFF08\u6D4B\u8BD5\u673A\uFF09"
-          }
+          "356af1dbbf94887360586c6bff2e8b7b"
         ]
       },
+      "release": "1.28.0-alpha.164(2)",
       "pin": {
-        "bundle:ui_mainmenu.unity3d": "1.1.0",
-        "loader:MGCModpack": "1.28.0-alpha.164",
+        "mod:MGCModpack": "1.0.9",
         "map:MGCModpack": "1.0.0",
-        "mod:MGCModpack": "1.0.9"
+        "loader:MGCModpack": "1.28.0-alpha.164"
       }
     }
   },
   "artifacts": [
+    {
+      "id": "mod:MGCModpack",
+      "kind": "mod",
+      "name": "MGCModpack",
+      "category": "official",
+      "versions": [
+        {
+          "version": "1.0.9",
+          "file": "mod/official/MGCModpack.modpack",
+          "sha256": "e54f857779b9b61648503b71d39b4d9781744ae8f2976e3443e474574175d680",
+          "size": 132976,
+          "category": "official"
+        }
+      ],
+      "author": "Various Mod Developer",
+      "description": "MGCMopdack默认的Mod整合包，集合了大部分常见Mod"
+    },
+    {
+      "id": "map:MGCModpack",
+      "kind": "map",
+      "name": "MGCMappack",
+      "category": "official",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "file": "map/official/MGCModpack.mappack",
+          "sha256": "d6e42b54394fbf13dc29d7db2b33706b84cbed23ac4c63f40be0ed5cffcba8f5",
+          "size": 40086493,
+          "category": "official",
+          "meta": {
+            "thumbnail": "picture/map-thumbnail-mgcmappack.png"
+          }
+        }
+      ],
+      "author": "Various Map Developer",
+      "description": "MGCMopdack内置的Map整合包，集合了大部分常见Map"
+    },
     {
       "id": "loader:MGCModpack",
       "kind": "loader",
@@ -47,1640 +78,9 @@
       "versions": [
         {
           "version": "1.28.0-alpha.164",
-          "file": "versions/1.28.0-alpha.164/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.164/MGCModpack.dll",
-          "sha256": "dcea3977178b7e1ec2c4914c302953fd8bcfdee81a488488b669c4f0a1b8eef8",
-          "size": 508928,
-          "publishedAt": "2026-10-16T19:53:07Z",
-          "notes": "164\uFF08\u8986\u76D6\u4E3A\u5F53\u524D\u4FEE\u590D\u7248\uFF09\uFF1A\u5206\u6BB5\u8868\u5237\u65B0\u4FEE\u590D"
-        },
-        {
-          "version": "1.28.0-alpha.160",
-          "file": "versions/1.28.0-alpha.160/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.160/MGCModpack.dll",
-          "sha256": "df1fa734e66591cf1174f9256dd76044ffc9b25ffc102e4b0332a6a0af5d9c14",
-          "size": 508416,
-          "publishedAt": "2026-10-16T19:02:56Z",
-          "notes": "\u56DE\u5230\u660E\u786E\u53EF\u7528\u7684 alpha.160"
-        },
-        {
-          "version": "1.28.0-alpha.166",
-          "file": "versions/1.28.0-alpha.166/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.166/MGCModpack.dll",
-          "sha256": "dcea3977178b7e1ec2c4914c302953fd8bcfdee81a488488b669c4f0a1b8eef8",
-          "size": 508928,
-          "publishedAt": "2026-10-16T18:47:05Z",
-          "notes": "\u901A\u5173\u9875\u90A3\u4EFD\u89C6\u56FE\u5728\u4E0D\u9700\u8981\u65F6\u6BCF\u5E27\u5F3A\u5236\u5173\u95ED\uFF08\u6F0F\u5173\u4F1A\u6B8B\u7559\u5728\u6E38\u620F\u91CC\u5192\u5145\u5206\u6BB5\u8868\uFF1A\u663E\u793A\u5B58\u6863 PB\u3001\u4E0D\u5237\u65B0\uFF09"
-        },
-        {
-          "version": "1.28.0-alpha.165",
-          "file": "versions/1.28.0-alpha.165/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.165/MGCModpack.dll",
-          "sha256": "bdb17536eeb5e02677a0612cdcd0d7c0c6bca5b26aae0b3c1843e341c82715a4",
-          "size": 508928,
-          "publishedAt": "2026-10-16T18:42:05Z",
-          "notes": "\u6062\u590D\u5230\u6700\u65B0 DLL\uFF1A\u5206\u6BB5\u8868\u5237\u65B0\u4FEE\u590D\uFF08\u901A\u5173\u9875\u72EC\u7ACB\u89C6\u56FE\u002B\u573A\u666F\u5207\u6362\u81EA\u52A8\u6536\u8D77\u002Bmod \u6BCF\u5E27\u515C\u5E95\u53EF\u89C1\uFF09"
-        },
-        {
-          "version": "1.28.0-alpha.163",
-          "file": "versions/1.28.0-alpha.163/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.163/MGCModpack.dll",
-          "sha256": "9eecf61d4a418dcc084d80c2e726bf23d9738742154052e771e9141ab4579957",
-          "size": 508928,
-          "publishedAt": "2026-10-16T18:24:07Z",
-          "notes": "\u901A\u5173\u9875\u4E0E\u6E38\u620F\u5185\u5F7B\u5E95\u5206\u5F00\u4E24\u4EFD\u5206\u6BB5\u8868\u89C6\u56FE\uFF1ASplitsTimerView.Create(forceNew) \u7ED9\u901A\u5173\u9875\u5355\u72EC\u4E00\u4EFD\uFF0C\u4E0D\u518D\u548C mod \u62A2\u5355\u4F8B\uFF08\u6E38\u620F\u5185\u88AB\u85CF/\u88AB\u5B58\u6863\u8986\u76D6\u7684\u6839\u56E0\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.162",
-          "file": "versions/1.28.0-alpha.162/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.162/MGCModpack.dll",
-          "sha256": "c96f5d4498a722d00e5e78b932c902da75adc4f7c894f5117606557d4328e90d",
-          "size": 508928,
-          "publishedAt": "2026-10-16T18:14:23Z",
-          "notes": "\u4FEE\u300C\u5206\u6BB5\u8868\u4E0D\u5237\u65B0\u300D\u771F\u51F6\uFF1ARewardBadge \u6536\u8D77\u540E RefreshSplits \u4ECD\u6BCF\u5E27\u628A mod \u7684\u672C\u5C40\u5B9E\u65F6\u6570\u636E\u76D6\u6210\u5B58\u6863 PB\uFF1B\u73B0\u5728\u53EA\u6709 _wantVisible \u65F6\u624D\u5199\u8FD9\u5F20\u8868\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.161",
-          "file": "versions/1.28.0-alpha.161/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.161/MGCModpack.dll",
-          "sha256": "a18b6bcee2e7453819a38b9de74f2c49af88efbb405211aff4cc7c78bc4ed867",
-          "size": 508928,
-          "publishedAt": "2026-10-16T17:43:29Z",
-          "notes": "SplitsTimerView \u52A0 DebugFirstRow\uFF08\u8BCA\u65AD\u5206\u6BB5\u8868\u5237\u65B0\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.159",
-          "file": "versions/1.28.0-alpha.159/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.159/MGCModpack.dll",
-          "sha256": "844ca5320fa260a72466c2b121c8781b25ba952092f1eb28b430a220a7d77488",
-          "size": 508416,
-          "publishedAt": "2026-10-16T16:25:54Z",
-          "notes": "\u901A\u5173\u9875\uFF1AuserInfoPanel \u526F\u672C\u52A0 MainPanel/TopPanel \u5305\u88C5\u5E76\u4EA4\u7ED9 UserInfoManager \u8BA4\u9886\uFF08\u6635\u79F0/\u5934\u50CF/RKS \u6709\u5185\u5BB9\uFF09\uFF1B\u5DEE\u503C\u5217\u5728\u300C\u663E\u793A PB \u5C40\u300D\u65F6\u7559\u7A7A\uFF08\u4E0D\u518D\u5168 \u002B0.000\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.158",
-          "file": "versions/1.28.0-alpha.158/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.158/MGCModpack.dll",
-          "sha256": "1ba08617946dba68b0fb2840d5df4e60e2ab2b22dbb5c01968492d197044bb30",
-          "size": 507392,
-          "publishedAt": "2026-10-16T16:00:47Z",
-          "notes": "\u901A\u5173\u9875\uFF1A\u5206\u6BB5\u8BA1\u65F6\u5668\u8D34\u7D27\u53F3\u4E0B\u89D2\uFF08\u53F3\u8FB9\u8DDD\u53D6\u8D1F\uFF09\u002B \u653E\u5927 1.35x\uFF1B\u53F3\u4E0A\u89D2 userInfoPanel \u63A5\u4E0A rks\uFF08\u628A Text \u4EA4\u7ED9 RKSManager\uFF09\u5E76\u5C1D\u8BD5\u7167\u6284\u6D3B\u7740\u7684\u6635\u79F0/\u5934\u50CF\uFF1BSplitsTimerView \u65B0\u589E UseSegmentPb\u3001Scale\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.157",
-          "file": "versions/1.28.0-alpha.157/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.157/MGCModpack.dll",
-          "sha256": "3641fdfaf8249ad707c454ff1d80e11c3ab30212d9f6a0848f4ba03c54c15083",
-          "size": 505344,
-          "publishedAt": "2026-10-16T15:13:39Z",
-          "notes": "\u901A\u5173\u9875\uFF1A\u5206\u6BB5\u8BA1\u65F6\u5668\u79FB\u5230\u53F3\u4E0B\u89D2\uFF08SetAnchorBottomRight\uFF09\uFF1B\u53F3\u4E0A\u89D2\u6539\u6210\u590D\u5236 ui_mainmenu \u91CC\u7684 MainPanel/TopPanel/userInfoPanel\uFF08UserInfoPanelView\uFF09\uFF0C\u968F RewardBadge \u663E\u9690\u3002\u53EA\u514B\u9686/\u590D\u5236\uFF0C\u4E0D\u6539\u9884\u5236\u4F53\u7ED3\u6784\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.156",
-          "file": "versions/1.28.0-alpha.156/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.156/MGCModpack.dll",
-          "sha256": "cbd550349075ff68a1082d81b4c6a3e81f2c595e7191ebc930d61da521de3b04",
-          "size": 503296,
-          "publishedAt": "2026-10-16T13:50:05Z",
-          "notes": "\u5206\u6BB5\u8BA1\u65F6\u5668\uFF1ASegment/Time \u4E24\u5217\u989C\u8272\u6539\u7531\u4EE3\u7801\u7EDF\u4E00\u7ED9\uFF08\u767D/\u7070\uFF09\uFF0C\u4E0D\u518D\u6CBF\u7528\u9884\u5236\u4F53\u91CC\u7684\u91D1\u8272\uFF1BRewardBadge \u663E\u9690\u65F6\u628A\u8D44\u6E90\u5305\u7248\u5206\u6BB5\u8868\u4E00\u8D77\u6536\u8D77\uFF08\u53EA\u5728\u901A\u5173\u9875\u663E\u793A\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.155",
-          "file": "versions/1.28.0-alpha.155/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.155/MGCModpack.dll",
-          "sha256": "3c2a9f0a7dc52bc018b3ebcdb75fc694086bd3dad78716bd528ca9804d1c01fd",
-          "size": 503296,
-          "publishedAt": "2026-10-16T13:46:21Z",
-          "notes": "RewardBadge \u53EA\u5728\u901A\u5173\u9875\u663E\u793A\uFF1A\u8D44\u6E90\u5305\u7248\u5206\u6BB5\u8868\u4EE5\u524D\u6CA1\u8DDF\u7740 SetVisible(false) \u4E00\u8D77\u6536\uFF08\u5B83\u81EA\u5DF1 DontDestroyOnLoad\uFF09\uFF0C\u6240\u4EE5\u4F1A\u8DDF\u53BB\u4E3B\u573A\u666F\uFF1B\u73B0\u5728\u663E/\u9690\u4E00\u5E76\u5904\u7406\u3002\u53E6\uFF1ASplitsTimer \u6302\u6E38\u620F Canvas \u4E0B\u5E76\u6392\u5230\u6700\u524D\uFF08MainMenu \u4E4B\u524D\uFF09\u4E0D\u906E\u6321\uFF1BHeader \u7684 Name \u5360\u4F4D\u4E0D\u518D\u5199\u6587\u5B57\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.154",
-          "file": "versions/1.28.0-alpha.154/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.154/MGCModpack.dll",
-          "sha256": "a9d8ab747d48431ee42ec9c69edba758519309a4d44cf86e938e10e47e4ae9a3",
-          "size": 503296,
-          "publishedAt": "2026-10-16T13:38:35Z",
-          "notes": "\u5206\u6BB5\u8BA1\u65F6\u5668\u6302\u5728\u6E38\u620F Canvas \u4E0B\u5E76\u6392\u5230\u6700\u524D\uFF08MainMenu \u4E4B\u524D\uFF09\u21D2 \u5728\u83DC\u5355/\u901A\u5173\u9875 UI \u540E\u9762\uFF0C\u4E0D\u906E\u6321\uFF1BHeader \u7684 Name \u5360\u4F4D\u4E0D\u518D\u5199\u6587\u5B57\uFF08\u65B0\u7248\u5B8C\u5168\u4E0D\u78B0\u8868\u5934\uFF09\uFF1B\u53EA\u514B\u9686\u002B\u6392\u5E8F\uFF0C\u4E0D\u52A8\u9884\u5236\u4F53\u7EC4\u4EF6/\u4F4D\u7F6E\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.153",
-          "file": "versions/1.28.0-alpha.153/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.153/MGCModpack.dll",
-          "sha256": "44f5e7673bd40707baaf11840a6001c90541e1da2e383fef037dcf639e8317f0",
-          "size": 502784,
-          "publishedAt": "2026-10-16T13:29:41Z",
-          "notes": "\u8D44\u6E90\u5305\u7248\u5206\u6BB5\u8BA1\u65F6\u5668\uFF1A\u53EA\u514B\u9686\u002B\u6392\u5E8F\uFF08Row_Example/Row_Example2 \u4EA4\u9519\u3001Bottom \u7F6E\u5E95\uFF09\uFF0C\u4E0D\u52A8\u9884\u5236\u4F53\u4EFB\u4F55\u7EC4\u4EF6/\u4F4D\u7F6E\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.152",
-          "file": "versions/1.28.0-alpha.152/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.152/MGCModpack.dll",
-          "sha256": "44f5e7673bd40707baaf11840a6001c90541e1da2e383fef037dcf639e8317f0",
-          "size": 502784,
-          "publishedAt": "2026-10-16T13:01:28Z",
-          "notes": "\u8D44\u6E90\u5305\u7248\u5206\u6BB5\u8BA1\u65F6\u5668\u53EA\u505A\u300C\u514B\u9686\u002B\u6392\u5E8F\u300D\uFF0C\u4E0D\u518D\u52A8\u9884\u5236\u4F53\u7EC4\u4EF6/\u4F4D\u7F6E\uFF1ARow_Example \u4E0E Row_Example2 \u4EA4\u9519\u514B\u9686\uFF0CBottom \u9876\u5230\u6700\u540E\uFF0C\u5C3A\u5BF8/\u5B57\u53F7\u4EA4\u7ED9\u9884\u5236\u4F53\u7684 VerticalLayoutGroup\u002BContentSizeFitter\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.151",
-          "file": "versions/1.28.0-alpha.151/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.151/MGCModpack.dll",
-          "sha256": "06ccba4e6da23ba1b6cb396761cab110c9d7ccb56ec0ee1146dab0b10a34935e",
-          "size": 504320,
-          "publishedAt": "2026-10-16T12:58:42Z",
-          "notes": "\u5206\u6BB5\u8BA1\u65F6\u5668\u8D44\u6E90\u5305\u7248\u6309\u5B9E\u673A\u4FEE\uFF1A\u884C\u6A21\u677F Row_Example/Row_Example2 \u4EA4\u9519\u514B\u9686\u3001\u884C\u6309\u56FA\u5B9A\u5750\u6807 -(i\u002B1)*30 \u6392\u3001Bottom \u8DDF\u7740\u632A\u5230\u6700\u4E0B\u9762\u3001\u6839\u9AD8\u5EA6\u6491\u957F\uFF1B\u56DB\u5217 Name/Segment/\u002B/-/Time \u5168\u90E8\u586B\u503C\uFF1B\u6839\u5BBD\u4E0D\u518D\u88AB\u6539\uFF08\u7167\u9884\u5236\u4F53 460\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.150",
-          "file": "versions/1.28.0-alpha.150/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.150/MGCModpack.dll",
-          "sha256": "069320edef924a198b56a5eb3791b63104561a695472b73ef97fa8235048a816",
-          "size": 503296,
-          "publishedAt": "2026-10-16T12:36:32Z",
-          "notes": "\u65B0\u589E\u8D44\u6E90\u5305\u7248\u5206\u6BB5\u8BA1\u65F6\u5668 MGC.Timer.SplitsTimerView\uFF08ui_splitstimer \u8D44\u6E90\u5305\uFF0C\u81EA\u5DF1\u5EFA DontDestroyOnLoad \u753B\u5E03 \u21D2 \u901A\u5173\u9875\u5E38\u9A7B\uFF1B\u9690\u85CF\u5927\u8BA1\u65F6\u5668\uFF1B\u53E3\u5F84\u4E0E PC \u7684 SplitsTableView \u4E00\u81F4\uFF09\uFF1BRewardBadge \u4F18\u5148\u7528\u8D44\u6E90\u5305\u7248\u3002\u65B0\u589E\u63A5\u53E3\uFF1ACreate/Ensure/SetData/SetAnchorTopLeft/Right/SetActive/InvalidateLayout/FontScale/RowScale/WidthScale\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.149",
-          "file": "versions/1.28.0-alpha.149/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.149/MGCModpack.dll",
-          "sha256": "1c38dcbdc5bd724e2ddac2550e08a6e74fac4f00de12eb0c6b4f82f1f6f795da",
-          "size": 496640,
-          "publishedAt": "2026-10-16T11:33:06Z",
-          "notes": "RKS \u8BB0\u8D26\u518D\u52A0\u4E00\u5C42\u515C\u5E95\uFF1ARecordClear(segmentTimes, totalTime) \u5141\u8BB8\u300C\u4EC5\u6700\u540E\u4E00\u6BB5\u4E3A 0\u300D\u5E76\u7528\u603B\u7528\u65F6\u8865\u7B97\uFF08\u5176\u4F59\u6BB5\u4E3A 0 \u4ECD\u62D2\u7EDD\uFF09\uFF1BOnGameWon \u628A\u603B\u7528\u65F6\u4F20\u4E0B\u53BB\u3002\u914D\u5408 alpha.148 \u7684 FinalizeRunAtWin\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.148",
-          "file": "versions/1.28.0-alpha.148/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.148/MGCModpack.dll",
-          "sha256": "7290385f95674fc601970e705e5bb1d27e9110701398232e88645859ec521fe4",
-          "size": 496128,
-          "publishedAt": "2026-10-16T11:31:52Z",
-          "notes": "\u4FEE RKS \u6052\u4E3A 0 \u7684\u6839\u56E0\uFF1A\u901A\u5173\u90A3\u4E00\u523B\u6E38\u620F\u5148\u53D1 win.done\u3001\u540E\u8DD1 UpdateTimer\uFF0C\u5BFC\u81F4\u6700\u540E\u4E00\u6BB5\u8FD8\u6CA1\u7ED3\u7B97\uFF08currentSegments[last]=0\uFF09\uFF0C\u800C RecordClear \u662F\u300C\u4EFB\u4F55\u4E00\u6BB5\u003C=0 \u5C31\u6574\u5C40\u4E0D\u8BB0\u300D\u21D2 \u4E00\u5C40\u90FD\u5B58\u4E0D\u4E0B\u6765\u3002\u4FEE\u6CD5\uFF1Awin.done \u91CC\u5148\u8C03 SegmentTimerManager.FinalizeRunAtWin(\u6E38\u620F\u603B\u7528\u65F6)\uFF0C\u7528\u540C\u4E00\u6761 ProcessSegment \u8DEF\u5F84\u8865\u7B97\u6700\u540E\u4E00\u6BB5\u518D\u8BB0\u8D26\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.147",
-          "file": "versions/1.28.0-alpha.147/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.147/MGCModpack.dll",
-          "sha256": "404c36795fe188f96cb1f6266ab6e3b12e15b0dcff000ab39be6c401c637ef39",
-          "size": 495104,
-          "publishedAt": "2026-10-16T11:21:38Z",
-          "notes": "RewardBadge\uFF1A\u4E3B\u83DC\u5355(Mian)\u4E00\u91CD\u8F7D\u5C31\u5237\u65B0\u8FD9\u4EFD\u8BB0\u5F55\uFF08\u539F\u6765\u8981\u7B49\u8FDB\u901A\u5173\u9875\u624D\u5237\uFF09\uFF1B\u5E76\u52A0\u65E5\u5FD7 [RewardBadge] \u4E3B\u83DC\u5355(Mian)\u91CD\u8F7D \u21D2 \u8BB0\u5F55\u5DF2\u5237\u65B0\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.146",
-          "file": "versions/1.28.0-alpha.146/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.146/MGCModpack.dll",
-          "sha256": "f144e555beadfd9268505b5d7595595472858e8d30203b425b3d2e4cd9f09692",
-          "size": 495104,
-          "publishedAt": "2026-10-16T11:02:16Z",
-          "notes": "\u6B63\u5F0F\u9891\u9053\uFF1A\u6838\u5FC3 alpha.146\uFF08screen.mode \u7AD9\u70B9 \u002B \u901A\u5173\u9875\u5206\u6BB5\u8868\uFF09"
-        },
-        {
-          "version": "1.28.0-alpha.145",
-          "file": "versions/1.28.0-alpha.145/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.145/MGCModpack.dll",
-          "sha256": "a939ce0a969234ecdfc3f583da73ba4b73cf4b88631cb77dfdc7cbd49f0b868b",
-          "size": 495104,
-          "publishedAt": "2026-10-16T10:33:33Z",
-          "notes": "\u6838\u5FC3 alpha.145\uFF1Ascreen.mode \u7AD9\u70B9\u5904\u7406\u5668\u6539\u6210\u300C\u6E38\u620F\u8981\u7684\u503C != \u89E3\u9501\u503C\u65F6\u624D\u6539\u5199\u5E76\u8BB0\u65E5\u5FD7\u300D\uFF0C\u907F\u514D\u6BCF\u6B21 SetResolution \u5237\u65E5\u5FD7\uFF1B\u914D\u5408\u6E38\u620F\u4FA7 4 \u5904\u63D2\u6869\uFF08BeautifulOn / SixtyFramesOn / BatterySaverOn / PlayerControl.AdjustScreenResolution\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.144",
-          "file": "versions/1.28.0-alpha.144/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.144/MGCModpack.dll",
-          "sha256": "f7330eda8caf71b2e7bc16e9bd9a556f3fd363027a0f713183ff4fc484fd33f6",
-          "size": 495104,
-          "publishedAt": "2026-10-16T05:59:35Z",
-          "notes": "\u6838\u5FC3 alpha.144\uFF1A\u2460 \u901A\u5173\u9875\u5206\u6BB5\u8868\u2014\u2014\u901A\u5173\u90A3\u4E00\u523B\u628A\u6574\u4EFD\u5206\u6BB5\u7EAA\u5F55\u5B58\u8FDB RunSplitsArchive\uFF08\u603B\u7528\u65F6/\u6BCF\u6BB5\u6BB5\u540D/\u672C\u6BB5\u7528\u65F6/\u7D2F\u8BA1/\u4E0E\u6700\u597D\u6210\u7EE9\u5DEE/Sum of Best\uFF09\uFF0C\u901A\u5173\u9875\u7531 RewardBadge \u7528 SplitsTableView \u6E32\u67D3\uFF08\u53F3\u4E0A\u89D2\uFF09\uFF0C\u6570\u636E\u4E0D\u518D\u4F9D\u8D56\u6D3B\u7684\u8BA1\u65F6\u5668\uFF08\u901A\u5173\u9875\u4E0A mod \u4F1A\u88AB\u5378\u8F7D\u3001\u672C\u5C40\u72B6\u6001\u4E5F\u6CA1\u4E86\uFF09\uFF1B\u2461 \u65B0\u589E\u8F6F\u7AD9\u70B9 screen.mode\uFF08\u62E6\u4F4F\u6E38\u620F\u6BCF\u573A\u666F\u81EA\u52A8\u6539\u5206\u8FA8\u7387/\u5E27\u7387\uFF0C\u9700\u6E38\u620F\u4FA7\u7B2C 7 \u5904\u63D2\u6869\uFF0C\u6CA1\u6709\u65F6\u81EA\u52A8\u56DE\u9000\u5230\u4E8B\u540E\u91CD\u538B\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.143",
-          "file": "versions/1.28.0-alpha.143/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.143/MGCModpack.dll",
-          "sha256": "f375da7c4ae763c9e5dd84e5631c05dd40a86b2b02ab9c12448d706c05ece664",
-          "size": 480256,
-          "publishedAt": "2026-10-15T18:47:46Z",
-          "notes": "\u6838\u5FC3 alpha.143\uFF1A\u6309\u7528\u6237\u63D0\u793A\uFF0C\u771F\u51F6\u9501\u5B9A\u4E3A**\u6E38\u620F\u81EA\u5DF1\u7684 MobileManager**\u2014\u2014\u6BCF\u4E2A\u6E38\u620F\u573A\u666F\u91CC\u5B83\u662F\u4E2A\u534F\u7A0B\uFF0C\u8DD1\u5B8C\u573A\u666F\u521D\u59CB\u5316\u540E\u6309 PlayerPrefs \u7684 DisplayMode \u8C03 BeautifulOn/SixtyFramesOn\uFF0C\u91CC\u9762\u53C8\u4F1A Application.targetFrameRate=60 \u002B PlayerControl.AdjustScreenResolution(1f)\uFF08\u5E26 720 \u5730\u677F\uFF09\uFF0C\u4E8E\u662F\u6211\u4EEC\u8BBE\u597D\u7684\u5206\u8FA8\u7387/\u5E27\u7387\u88AB\u76D6\u56DE\u53BB\uFF0C\u8868\u73B0\u5C31\u662F\u300C\u89E3\u9501\u540E\u91CD\u7F6E\u573A\u666F\u4E0D\u7ACB\u523B\u751F\u6548\u300D\u3002\u4FEE\u6CD5\uFF1AMGCInitializer\uFF08\u4E00\u76F4\u6D3B\u7740\uFF09\u76EF\u573A\u666F\u540D\uFF0C\u4E00\u6362\u573A\u666F\u7ACB\u523B\u91CD\u538B\u4E00\u6B21\uFF0C\u5E76\u76EF\u4F4F MobileManager.Ready\uFF0C\u5B83\u4E00\u5C31\u7EEA\u7ACB\u523B\u518D\u538B\u4E00\u6B21\uFF0C\u4E4B\u540E 6 \u79D2\u5185\u6BCF 0.35 \u79D2\u7EE7\u7EED\u8865\uFF1BSetResolution \u6700\u591A 1.2 \u79D2\u4E00\u6B21\uFF0C\u907F\u514D\u731B\u8C03\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.142",
-          "file": "versions/1.28.0-alpha.142/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.142/MGCModpack.dll",
-          "sha256": "f45cffbc02db218fa825a9892906422727f3dad6b8f373437e452cb3e68e1365",
-          "size": 478208,
-          "publishedAt": "2026-10-15T18:35:59Z",
-          "notes": "\u6838\u5FC3 alpha.142\uFF1A\u89E3\u9501\u5206\u8FA8\u7387/\u5E27\u7387\u540E\uFF0C\u91CD\u7F6E\u573A\u666F\uFF08\u91CD\u5F00\u4E00\u5C40/\u5207\u573A\u666F\uFF09\u4F1A**\u7ACB\u523B**\u91CD\u8BBE\u4E00\u6B21\uFF0C\u5E76\u5728\u573A\u666F\u5207\u6362\u540E 6 \u79D2\u5185\u628A\u590D\u67E5\u95F4\u9694\u7F29\u5230 0.35 \u79D2\uFF08\u539F\u6765\u662F 1.5 \u79D2\u624D\u67E5\u4E00\u6B21\uFF0C\u73A9\u5BB6\u770B\u5230\u7684\u5C31\u662F\u300C\u521A\u91CD\u7F6E\u5B8C\u6CA1\u751F\u6548\u300D\uFF09\u3002\u6BCF\u4E2A\u573A\u666F\u6700\u591A\u8865\u8BBE 4 \u6B21\u3001\u6BCF\u6B21\u81F3\u5C11\u9694 1.2 \u79D2\uFF0C\u907F\u514D\u53CD\u590D\u8C03 SetResolution\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.141",
-          "file": "versions/1.28.0-alpha.141/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.141/MGCModpack.dll",
-          "sha256": "66ac4b4d5d33b524320c5869dbe4ae9134ece9cfb132c13768a94b313ee20406",
-          "size": 477696,
-          "publishedAt": "2026-10-15T16:42:04Z",
-          "notes": "1.28.0-alpha.141\uFF1A\u4FEE\u7528\u6237\u62A5\u7684\u4E24\u4E2A\u5C0F\u6BDB\u75C5\u3002\u2460 \u5207\u4E86\u5E27\u7387\u4E4B\u540E\u6309\u952E\u80CC\u666F\u4E0D\u53D8\uFF1AApplyFps \u53EA\u5237\u4E86\u300C\u5F53\u524D \u2026fps\u300D\u90A3\u884C\u5B57\uFF0C\u6F0F\u4E86 UpdateUnlockHighlight\uFF0C\u6DE1\u84DD\u9AD8\u5149\u505C\u5728\u4E0A\u4E00\u4E2A\u6863\u4F4D\uFF0C\u53EA\u6709\u300C\u70B9\u540C\u4E00\u6863\u300D\u90A3\u6761\u63D0\u524D\u8FD4\u56DE\u7684\u5206\u652F\u5237\u4E86\u9AD8\u5149\uFF1B\u73B0\u5728\u6B63\u5E38\u8DEF\u5F84\u4E5F\u5237\u3002\u2461 \u6362\u4E86\u5206\u8FA8\u7387\u4E4B\u540E\u6298\u53E0\u83DC\u5355\u7684\u6807\u9898\u6CA1\u5237\u65B0\uFF1AUpdateQualityLabel \u8BFB\u7684\u662F Screen.width/height\uFF0C\u800C Android \u4E0A Screen.SetResolution \u662F\u5F02\u6B65\u7684\uFF0C\u8C03\u5B8C\u90A3\u4E00\u77AC\u95F4\u8FD8\u662F\u65E7\u503C\uFF0C\u5199\u8FDB\u53BB\u5C31\u56FA\u5316\u4E86\uFF0C\u4E4B\u540E\u515C\u5E95\u68C0\u67E5\u53D1\u73B0\u5C3A\u5BF8\u5DF2\u7ECF\u5BF9\u5F97\u4E0A\u5C31\u4E0D\u518D\u8C03\u5B83\uFF1B\u73B0\u5728\u89E3\u9501\u72B6\u6001\u4E0B\u76F4\u63A5\u7528\u6211\u4EEC\u81EA\u5DF1\u7B97\u51FA\u6765\u7684\u5F53\u524D\u6863\u4F4D\u5C3A\u5BF8\uFF08\u548C\u771F\u6B63\u751F\u6548\u7684\u53E3\u5F84\u5B8C\u5168\u4E00\u81F4\uFF09\uFF0C\u70B9\u4E0B\u53BB\u7ACB\u523B\u5C31\u662F\u65B0\u503C\uFF0C\u53E6\u5916\u6362\u5B8C\u5206\u8FA8\u7387\u7B49\u4E24\u5E27\u518D\u6838\u4E00\u904D\u771F\u5B9E\u751F\u6548\u5C3A\u5BF8\u5E76\u5199\u65E5\u5FD7\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.140",
-          "file": "versions/1.28.0-alpha.140/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.140/MGCModpack.dll",
-          "sha256": "e9c4b6869bf39720a5a8b69776f13188e47b5bc1d3ca1177a1fdfb19d6953822",
-          "size": 477184,
-          "publishedAt": "2026-10-15T16:27:15Z",
-          "notes": "1.28.0-alpha.140\uFF1A\u4FEE\u300C\u70B9\u5176\u4ED6\u5206\u8FA8\u7387\u9009\u9879\u51E0\u4E0B\u662F\u5728\u53E0\u52A0\u3001\u4E0D\u662F\u5207\u6362\u5206\u8FA8\u7387\u300D\u3002\u771F\u6B63\u539F\u56E0\uFF1AComputeResolution \u91CC\u58F0\u660E\u4E86\u4E24\u4E2A\u5C40\u90E8\u53D8\u91CF nativeH/nativeW\uFF0C\u628A\u7C7B\u4E0A EnsureNativeSize \u7F13\u5B58\u7684\u539F\u751F\u5C3A\u5BF8\u906E\u853D\u4E86\uFF0C\u5C40\u90E8\u91CF\u6052\u4E3A 0\uFF0C\u4E8E\u662F\u6BCF\u6B21\u9000\u56DE\u53BB\u8BFB Screen.height/width\uFF1B\u800C Android \u4E0A Screen.SetResolution \u4F1A\u628A Screen \u7684\u5C3A\u5BF8\u4E00\u8D77\u6539\u6389\uFF0C\u6240\u4EE5\u6BCF\u70B9\u4E00\u6B21\u90FD\u5728\u5F53\u524D\u503C\u4E0A\u518D\u4E58\u4E00\u6B21\u6BD4\u4F8B\uFF08\u5B9E\u673A\u65E5\u5FD7\u4E3A\u8BC1\uFF1A1440x810 -\u003E 1081x608 -\u003E 811x456 -\u003E 608x342 \u4E00\u8DEF\u7F29\u4E0B\u53BB\uFF0C\u6863\u4F4D\u6807\u7B7E\u4E5F\u8DDF\u7740\u7B97\u9519\uFF0C1080p \u7684\u539F\u753B\u88AB\u5199\u6210 455x256\uFF09\u3002\u73B0\u5728\u7EDF\u4E00\u8BFB\u9759\u6001\u7F13\u5B58\uFF0C\u5168\u6D41\u7A0B\u53EA\u6709\u4E00\u4E2A\u53E3\u5F84\uFF1B\u7F13\u5B58\u53D6\u7684\u662F\u300C\u7B2C\u4E00\u6B21\u6211\u4EEC\u81EA\u5DF1\u8BBE\u5206\u8FA8\u7387\u4E4B\u524D\u89C2\u5BDF\u5230\u7684\u6700\u5927\u503C\u300D\uFF0C\u8BBE\u8FC7\u4E4B\u540E\u9501\u6B7B\uFF0C\u907F\u514D\u88AB SetResolution \u6539\u6389\uFF1B\u5F00\u673A\u521D\u59CB\u5316\u65F6\u4E5F\u5148\u6293\u4E00\u6B21\uFF0C\u514D\u5F97\u6293\u5230\u6E38\u620F\u81EA\u5DF1\u7684 MobileManager \u5DF2\u7ECF\u538B\u8FC7\u7684\u503C\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.139",
-          "file": "versions/1.28.0-alpha.139/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.139/MGCModpack.dll",
-          "sha256": "09e1b285c394b5b5cb46043e8e759eb1a624f4db17478704e31fdbc507d082ee",
-          "size": 476672,
-          "publishedAt": "2026-10-15T15:28:25Z",
-          "notes": "1.28.0-alpha.139\uFF1A\u2460 \u4FEE\u300C\u89E3\u9501\u540E\u4FEE\u6539\u9009\u9879\u5168\u90E8\u6D88\u5931\u300D\u2014\u2014\u4E0A\u4E00\u7248\u628A UnlockScroll \u7684\u9AD8\u5EA6\u76F4\u63A5\u8BBE\u6210\u5185\u5BB9\u9AD8\uFF0C\u800C\u5185\u5BB9\u9AD8\u5728\u5E03\u5C40\u6CA1\u7B97\u597D\u65F6\u4F1A\u662F\u4E2A\u5C0F\u503C\uFF0C\u6846\u88AB\u538B\u6241\u3001\u91CC\u9762\u5185\u5BB9\u5168\u88AB\u906E\u7F69\u88C1\u6389\uFF1B\u73B0\u5728\u6539\u6210\u53EA\u589E\u4E0D\u51CF\uFF08\u53D6\u5185\u5BB9\u9AD8\u002B8 \u548C 5 \u683C\u7684\u8F83\u5927\u503C\uFF0C\u4E14\u53EA\u5728\u9700\u8981\u53D8\u9AD8\u65F6\u624D\u52A8\uFF09\u3002\u2461 \u987A\u624B\u4FEE\u4E00\u4E2A\u6BCF 2 \u79D2\u4E00\u4E2A\u7684 NullReferenceException\uFF1AMapUIManager.LoadMapThumbnail \u534F\u7A0B\u8DE8\u7F51\u7EDC\u8BF7\u6C42\u6301\u6709 Image\uFF0C\u5217\u8868\u91CD\u753B\u540E\u8BE5 Image \u5DF2\u9500\u6BC1\uFF0C\u518D\u8BBE sprite \u5C31\u70B8\uFF1B\u73B0\u5728\u6BCF\u4E2A yield \u4E4B\u540E\u91CD\u65B0\u786E\u8BA4\u5B58\u6D3B\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.138",
-          "file": "versions/1.28.0-alpha.138/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.138/MGCModpack.dll",
-          "sha256": "67a64ea00d9618d2ddcddbb69b8ed1e7abd5f20d7cc743cd978be4f632b835b5",
-          "size": 476672,
-          "publishedAt": "2026-10-15T14:59:29Z",
-          "notes": "1.28.0-alpha.138\uFF1A\u6309\u7528\u6237\u4E09\u6761\u53CD\u9988\u6539\u3002\u2460 \u672A\u89E3\u9501\u7684\u539F\u7248\u6863\u4F4D\u6FC0\u6D3B\u540E\u6587\u5B57\u4E0D\u53D8\u9ED1\uFF1AHighlightButton/ResetAllButtons \u91CC\u627E\u7684\u662F Text \u8282\u70B9\uFF0C\u800C\u7528 Button \u6A21\u677F\u514B\u9686\u51FA\u6765\u7684\u6863\u4F4D\u6587\u5B57\u5728 LabelContent/Text \u4E0B\uFF0C\u627E\u4E0D\u5230\u6240\u4EE5\u6CA1\u53D8\u8272\uFF0C\u6539\u6210 GetComponentInChildren\u003CText\u003E \u517C\u5BB9\u4E24\u79CD\u7ED3\u6784\u3002\u2461 \u5206\u8FA8\u7387\u548C\u5E27\u7387\u4E0B\u6B21\u8FDB\u6E38\u620F\u4E0D\u751F\u6548\uFF1ASavedRatio() \u91CC Mathf.Clamp(..., 0.3f, 1f) \u4E0A\u9650\u88AB\u5939\u6210 1.0\uFF0C125%~400% \u5B58\u4E86\u4E5F\u767D\u5B58\uFF0C\u6539\u6210 0.25~4\u3002\u2462 \u624B\u6307\u653E\u5728\u6298\u53E0\u83DC\u5355\u4E0A\u62D6\u4E0D\u52A8\u5916\u5C42\u8BBE\u7F6E\u9875\uFF1A\u5185\u5C42 UnlockScroll \u662F ScrollRect \u4F1A\u5403\u6389\u62D6\u62FD\uFF0C\u73B0\u5728\u5173\u6389\u5185\u5C42\u6EDA\u52A8\u3001\u6846\u9AD8\u8DDF\u7740\u5185\u5BB9\u957F\uFF0C\u6EDA\u52A8\u5168\u4EA4\u7ED9\u5916\u5C42\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.137",
-          "file": "versions/1.28.0-alpha.137/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.137/MGCModpack.dll",
-          "sha256": "1a5e0038e6042e15ee29de8196d22cb465d8a7da29e16954e663c9ccf98e546a",
-          "size": 476672,
-          "publishedAt": "2026-10-15T14:42:33Z",
-          "notes": "1.28.0-alpha.137\uFF1A\u6309\u7528\u6237\u8981\u6C42\u8C03\u6837\u5F0F\u3002\u2460 UnlockScroll \u91CC\u7684\u6863\u4F4D\u6309\u94AE\u6062\u590D\u9ED1\u5E95\u5E38\u9A7B\uFF08Image.enabled=true\uFF0C\u672A\u6FC0\u6D3B\u7528 0,0,0,20/51\uFF09\uFF0C\u6FC0\u6D3B\u65F6\u7ED9\u6DE1\u84DD\u9AD8\u5149 \u002B \u9ED1\u5B57\uFF0C\u672A\u6FC0\u6D3B\u767D\u5B57 \u2014\u2014 \u548C\u539F\u7248\u4E09\u4E2A\u753B\u8D28\u6863\u4F4D\u540C\u4E00\u5957\u89C2\u611F\uFF1B\u2461 \u503C\u5BB9\u5668\u91CD\u65B0\u8D34\u5230\u6807\u7B7E\u4E0B\u9762\uFF08anchoredPosition.y = -\u6807\u7B7E\u9AD8\uFF09\uFF0C\u4FEE\u300C\u4E0A\u9762\u5206\u8FA8\u7387\u548C\u5E27\u7387\u6CA1\u5BF9\u9F50\u300D\u2014\u2014\u4E4B\u524D\u5B83\u951A\u5728\u6298\u53E0\u83DC\u5355\u9876\u90E8\uFF0C\u7B2C\u4E00\u884C\u5185\u5BB9\u548C\u6807\u9898\u884C\u53E0\u5728\u4E00\u8D77\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.136",
-          "file": "versions/1.28.0-alpha.136/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.136/MGCModpack.dll",
-          "sha256": "6c4e8ab804386d83e213934165647cab301c324ae233c6a9dd17255acb9bbd80",
-          "size": 476160,
-          "publishedAt": "2026-10-15T14:02:33Z",
-          "notes": "1.28.0-alpha.136\uFF1A\u4FEE\u6298\u53E0\u83DC\u5355\u81EA\u52A8\u9AD8\u5EA6\uFF08\u7528\u6237\u62A5\u300C\u89E3\u9501\u540E\u4E0D\u663E\u793A\u6298\u53E0\u83DC\u5355\u300D\u300C\u672A\u89E3\u9501\u4E5F\u5BF9\u4E0D\u4E0A\u4F4D\u7F6E\u300D\uFF09\u3002\u2460 ForceAccordionHeight \u91CD\u5199\uFF1A\u539F\u6765\u5F00\u5934\u4E00\u53E5 unlockView == null \u5C31 return\uFF0C\u5BFC\u81F4\u672A\u89E3\u9501\u65F6\u5B8C\u5168\u4E0D\u7BA1\u9AD8\u5EA6\uFF1B\u73B0\u5728\u7EDF\u4E00\u6309\u503C\u5BB9\u5668\u91CC\u6240\u6709\u6FC0\u6D3B\u5B50\u7269\u4F53\u7684\u5B9E\u6D4B\u9AD8\u5EA6\u7B97\uFF08\u6807\u7B7E \u002B \u5185\u5BB9 \u002B 8\uFF09\uFF0C\u89E3\u9501/\u672A\u89E3\u9501\u4E24\u79CD\u72B6\u6001\u90FD\u8986\u76D6\uFF1B\u2461 \u5220\u6389 60 \u5E27\u5FAA\u73AF\u91CC\u7684 AccordionItem.RefreshHeight() \u002B \u624B\u52A8\u8865\u6807\u7B7E\u90A3\u5957\uFF08\u4E24\u5957\u7B97\u6CD5\u4E92\u76F8\u76D6\uFF09\uFF0C\u9AD8\u5EA6\u53EA\u7531 ForceAccordionHeight \u8D1F\u8D23\uFF1B\u2462 \u4E0D\u518D\u5F80\u503C\u5BB9\u5668\u6302 AutoLayoutHeight \u2014\u2014 \u7528\u6237\u65B0\u9884\u5236\u4F53\u81EA\u5E26 ContentSizeFitter \u002B VerticalLayoutGroup\uFF0C\u518D\u6302\u4E00\u4E2A\u5C31\u662F\u4E24\u5957\u7B97\u6CD5\u6253\u67B6\uFF1B\u2463 \u89E3\u9501\u5F00\u5173\u72B6\u6001\u53D8\u5316\u540E\u4E5F\u8C03\u4E00\u6B21\u81EA\u52A8\u9AD8\u5EA6\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.135",
-          "file": "versions/1.28.0-alpha.135/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.135/MGCModpack.dll",
-          "sha256": "cb7f912d8914243f04ffc0218deb9e56fdfb92e5e2026dc536496b87910c35e7",
-          "size": 478720,
-          "publishedAt": "2026-10-15T13:43:02Z",
-          "notes": "1.28.0-alpha.135\uFF1A\u6309\u7528\u6237\u6307\u51FA\u7684\u4E09\u4E2A\u95EE\u9898\u6539\u3002\u2460 \u628A UIControls.UpdateToggleState \u6062\u590D\u539F\u6837\uFF08\u6211\u4E00\u5EA6\u5220\u6389\u91CC\u9762\u7684\u914D\u8272\uFF0C\u5BFC\u81F4\u6240\u6709 CreateToggle \u6CA1\u6709\u5F00\u5173\u5E95\u8272\uFF09\u3002\u2461 \u4FEE\u300C\u8FDB\u573A\u666F\u53D8\u6162/\u9ED1\u5C4F\u300D\uFF1AComputeResolution/NativeHeight \u91CC\u6211\u505A\u4E86\u7AD6\u5C4F\u5BBD\u9AD8\u4EA4\u6362\uFF0C\u800C\u6E38\u620F\u81EA\u5DF1\u7684\u53E3\u5F84\u662F Screen.currentResolution\uFF08\u6A2A\u5C4F 1920x1080\uFF0C\u5B9E\u673A\u65E5\u5FD7 [ScreenRes] Original Screen 1920x1080\uFF09\uFF0C\u4E24\u8FB9\u6765\u56DE\u6253\u67B6\u5BFC\u81F4\u753B\u9762\u91CD\u6392\uFF0C\u5DF2\u53BB\u6389\u4EA4\u6362\u3002\u2462 \u51CF\u4E3B\u7EBF\u7A0B\u5F00\u9500\uFF1AEnsurePresetButtons \u53EA\u505A\u4E00\u6B21\uFF1BApplyResolutionNow \u91CC\u5982\u679C Screen \u5DF2\u7ECF\u662F\u76EE\u6807\u5C3A\u5BF8\u5C31\u76F4\u63A5\u8DF3\u8FC7\uFF08SetResolution \u5F88\u91CD\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.134",
-          "file": "versions/1.28.0-alpha.134/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.134/MGCModpack.dll",
-          "sha256": "304dda2eda54ec898e00671bedc8635b8424ca08b2f208bdde34765ef507c757",
-          "size": 478208,
-          "publishedAt": "2026-10-15T13:05:48Z",
-          "notes": "1.28.0-alpha.134\uFF1A\u2460 \u6298\u53E0\u83DC\u5355\u6807\u9898\u4E0D\u518D\u5199\u300C\u00B7 \u89E3\u9501\u300D\uFF0C\u6B63\u5E38\u663E\u793A\uFF08\u5F53\u524D\u6863\u4F4D\u7531\u6DE1\u84DD\u9AD8\u5149\u8868\u793A\uFF09\uFF1B\u2461 \u5173\u6389\u89E3\u9501\u65F6\u7528 GraphicsQuality/ValueContent/Button \u6A21\u677F\u81EA\u52A8\u751F\u6210\u539F\u7248\u4E09\u4E2A\u753B\u8D28\u6863\u4F4D\uFF08\u65B0\u9884\u5236\u4F53\u91CC\u90A3\u4E09\u4E2A\u6309\u94AE\u88AB\u5220\u4E86\uFF09\uFF1B\u2462 \u9002\u914D\u7528\u6237\u91CD\u65B0\u6253\u5305\u7684 ui_mainmenu.unity3d\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.133",
-          "file": "versions/1.28.0-alpha.133/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.133/MGCModpack.dll",
-          "sha256": "eb03092526b65be86ef7de01238d8c424013b2e7625465fb838e719195bf7b40",
-          "size": 477696,
-          "publishedAt": "2026-10-15T12:02:28Z",
-          "notes": "1.28.0-alpha.133\uFF1A\u6309\u7528\u6237\u624B\u5DE5\u505A\u7684\u9884\u5236\u4F53\u6539\u9020 \u002B \u4E24\u4E2A\u65B0\u9700\u6C42\u3002\u2460 BuildUnlockView \u6539\u6210\u7ED1\u5B9A GraphicsQuality/ValueContent/UnlockScroll\uFF08\u63A5 ScrollRect \u7684 viewport=Viewport\u3001content=Viewport/Content\uFF0C\u627E ResolutionRatio/FPS \u4E24\u5217\uFF0C\u62FF\u5360\u4F4D Button \u5F53\u6A21\u677F\u514B\u9686\u6863\u4F4D\uFF0C\u6807\u9898\u548C\u6309\u94AE\u6587\u5B57\u5237\u767D\u3001\u53BB\u9ED1\u5E95\uFF09\uFF1B\u2461 \u7ED9\u5F53\u524D\u751F\u6548\u7684\u6863\u4F4D\u52A0\u6DE1\u84DD\u9AD8\u5149\uFF080.808,0.898,1\uFF09\uFF1B\u2462 \u4FEE\u300C\u5206\u8FA8\u7387\u53CD\u590D\u751F\u6548\u300D\uFF1AUpdate() \u515C\u5E95\u8FD8\u5728\u7528\u5E26 720 \u5730\u677F\u7684\u8001\u516C\u5F0F\u7B97\u671F\u671B\u9AD8\u5EA6\uFF0C25% \u65F6\u7B97\u6210 720\u3001\u5B9E\u9645 270\uFF0C\u4E8E\u662F\u6BCF 1.5 \u79D2\u91CD\u8BBE\u4E00\u6B21\uFF0C\u73B0\u5728\u7EDF\u4E00\u7528 ComputeResolution\uFF0C\u5E76\u4E14\u540C\u4E00\u6863\u4F4D\u91CD\u590D\u70B9\u51FB\u76F4\u63A5\u8FD4\u56DE\uFF1B\u2463 Map(\u5730\u56FE)\u9875\u7684\u5730\u56FE\u5305\u5217\u8868\u4E0D\u518D\u663E\u793A\u4E91\u7AEF\u5305\uFF0C\u53EA\u5217\u672C\u5730\u5DF2\u88C5\u7684\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.132",
-          "file": "versions/1.28.0-alpha.132/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.132/MGCModpack.dll",
-          "sha256": "49be91e75fdd7f3971ec55caafb4ac911f12d694ded891a897ecaad6de074628",
-          "size": 476160,
-          "publishedAt": "2026-10-15T07:02:19Z",
-          "notes": "1.28.0-alpha.132\uFF1A\u4FEE 25% \u4E0E 50% \u5206\u8FA8\u7387\u76F8\u540C\u7684\u95EE\u9898\u3002\u6839\u56E0\u662F\u6E38\u620F\u81EA\u5E26\u7684 PlayerControl.AdjustScreenResolution \u91CC\u6709 Mathf.Max(720f, originalHeight * resRatio)\uFF0C\u5730\u677F\u662F 720p\uFF0C\u6240\u4EE5 25%(270p) \u548C 50%(540p) \u90FD\u88AB\u5939\u6210 720p\u3002\u73B0\u5728\u4E0D\u518D\u8C03\u7528\u90A3\u4E2A\u51FD\u6570\uFF0C\u6539\u4E3A\u81EA\u5DF1\u6309\u6BD4\u4F8B\u7B97\uFF08ComputeResolution\uFF0C\u4E0D\u5939 720\uFF09\u518D Screen.SetResolution\uFF1Bdpi \u7528\u53CD\u5C04\u6309\u6E38\u620F\u540C\u4E00\u516C\u5F0F\u91CD\u7B97\uFF08dpi/originalDpi \u662F private\uFF0C\u76F4\u63A5\u5199\u7F16\u8BD1\u4E0D\u8FC7\uFF0C\u8D70 FastReflect.FindField(Type,name)\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.131",
-          "file": "versions/1.28.0-alpha.131/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.131/MGCModpack.dll",
-          "sha256": "ef28247af17e3c6131c8b6fb1d392f1e6e8d2d18c93428e4fcaf25148fb689ed",
-          "size": 476160,
-          "publishedAt": "2026-10-15T06:44:26Z",
-          "notes": "1.28.0-alpha.131\uFF1A\u6309\u7528\u6237\u660E\u786E\u7684\u65B9\u6848\u505A \u2014\u2014 \u628A\u6E38\u620F\u539F\u672C\u90A3\u4E00\u6574\u884C Subtitles \u5220\u6389\uFF08Destroy\uFF09\uFF0C\u5728\u539F\u4F4D\u7F6E\u7528 UIControls \u91CD\u5EFA\u4E00\u884C\uFF1ACreateValueContentVertical \u002B CreateToggle\uFF0C\u548C\u300C\u8BBE\u7F6E-\u901A\u7528-\u89E3\u9664\u5E27\u7387\u548C\u5206\u8FA8\u7387\u9650\u5236\u300D\u90A3\u4E00\u884C\u5B8C\u5168\u540C\u4E00\u5957\u7ED3\u6784\uFF08\u6807\u7B7E \u002B \u5F00/\u5173\uFF0C\u65E0\u80CC\u666F\uFF09\u3002\u767D\u8272\u6309\u952E\u7684\u6839\u56E0 UIControls.UpdateToggleState \u91CC component.color = isOn ? highlightBgColor : defaultBgColor \u4E5F\u5DF2\u6539\u6210\u5B8C\u5168\u4E0D\u78B0\u989C\u8272\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.130",
-          "file": "versions/1.28.0-alpha.130/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.130/MGCModpack.dll",
-          "sha256": "fb9b5a908fd642c5f5d19e6d24d133849999bf919b74d1dec5023ed283e49d62",
-          "size": 476160,
-          "publishedAt": "2026-10-15T06:39:15Z",
-          "notes": "1.28.0-alpha.130\uFF1A\u2460 \u5206\u8FA8\u7387\u6863\u4F4D\u52A0\u4E0A 25%\uFF08\u539F\u6765\u6700\u5C0F\u53EA\u6709 50%\uFF09\u3002\u2461 \u65C1\u767D\u5B57\u5E55\u6309\u7528\u6237\u65B9\u6848\u91CD\u505A\uFF1A\u767D\u8272\u6309\u952E\u7684\u6839\u56E0\u662F UIControls.UpdateToggleState \u91CC component.color = isOn ? highlightBgColor : defaultBgColor\uFF08\u5F00\u7684\u65F6\u5019\u5237\u767D\u5E95\uFF09\uFF0C\u5DF2\u6539\u6210\u5B8C\u5168\u4E0D\u78B0\u989C\u8272\uFF1B\u6E38\u620F\u81EA\u5E26\u7684 Subtitles/ValueContent/Button \u76F4\u63A5 Destroy \u5220\u6389\uFF08\u4E4B\u524D\u53EA\u662F\u9690\u85CF\uFF09\uFF1B\u7136\u540E\u7528 UIControls.CreateToggle \u5728\u540C\u4E00\u4E2A ValueContent \u91CC\u91CD\u5EFA\uFF0C\u8DDF\u901A\u7528\u9875\u90A3\u4E2A\u5F00\u5173\u540C\u4E00\u5957\u7ED3\u6784\uFF0C\u5E76\u628A Selectable \u8FC7\u6E21\u4E5F\u5173\u6389\u505A\u53CC\u4FDD\u9669\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.129",
-          "file": "versions/1.28.0-alpha.129/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.129/MGCModpack.dll",
-          "sha256": "107ec37b3e097359b574e5d5a570377c3f095a739b4b2a377a57a2d9bc6793d0",
-          "size": 476160,
-          "publishedAt": "2026-10-15T06:20:00Z",
-          "notes": "1.28.0-alpha.129\uFF1A\u4E24\u5904\u6539\u52A8\u3002\u2460 \u6E38\u620F\u753B\u8D28\u6C34\u5E73\u89C6\u56FE\u53BB\u6389\u9ED1\u5E95\uFF08\u884C\u3001\u4E24\u5217\u3001\u6309\u94AE\u7684 Image \u90FD\u5173\u6389\uFF09\uFF0C\u6587\u5B57\u6539\u767D\uFF08\u5206\u8FA8\u7387/\u5E27\u7387\u6807\u9898\u548C\u6309\u94AE\u6587\u5B57\uFF09\uFF0C\u6846\u5185\u53EF\u89C1\u683C\u6570 4\u21925\uFF08\u6709\u4E00\u683C\u88AB\u5C0F\u6807\u9898\u5360\u6389\uFF09\u3002\u2461 \u65C1\u767D\u5B57\u5E55\u6539\u7528 MGC.UI.Controls.UIControls \u91CD\u5EFA\u6309\u94AE\uFF08\u539F\u6765\u76F4\u63A5\u7528\u6E38\u620F\u81EA\u5E26\u7684 Subtitles/ValueContent/Button\uFF0C\u80CC\u666F\u4F1A\u968F\u72B6\u6001\u53D8\u767D\uFF09\uFF0C\u5E76\u628A transition \u8BBE\u6210 None \u9501\u6B7B\u80CC\u666F \u2014\u2014 \u5F00\u5173\u53D8\u5316\u65F6\u53EA\u6539\u6587\u5B57\u300C\u5F00/\u5173\u300D\uFF0C\u80CC\u666F\u4E0D\u52A8\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.128",
-          "file": "versions/1.28.0-alpha.128/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.128/MGCModpack.dll",
-          "sha256": "b893bacb80c1e9eecdacef3fa651f0b6d189a5de06152445052d72b095b34249",
-          "size": 475648,
-          "publishedAt": "2026-10-15T06:06:13Z",
-          "notes": "1.28.0-alpha.128\uFF1A\u6846\u91CC\u53EF\u89C1\u683C\u6570 4 \u2192 5\u3002\u5B9E\u673A alpha.127 \u5DF2\u786E\u8BA4\u7A7A\u767D\u548C\u4E0A\u4E0B\u884C\u91CD\u53E0\u90FD\u4FEE\u597D\u4E86\uFF08\u771F\u51F6\u662F AccordionItem \u7684 expandedHeight \u5FD8\u4E86\u52A0\u6807\u7B7E\u90A3\u4E00\u683C\uFF0C93\u002B372=465 \u624D\u662F\u5BF9\u7684\uFF09\uFF0C\u4F46 4 \u683C\u91CC\u6709\u4E00\u683C\u88AB\u5206\u8FA8\u7387/\u5E27\u7387\u7684\u5C0F\u6807\u9898\u5360\u6389\uFF0C\u7B2C 4 \u4E2A\u6309\u94AE\u6B63\u597D\u88AB\u5207\u4E00\u534A\uFF0C\u6240\u4EE5\u52A0\u4E00\u683C\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.127",
-          "file": "versions/1.28.0-alpha.127/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.127/MGCModpack.dll",
-          "sha256": "a56ab9ec7aa24cd3d607ca630079db22d05122b4669cadb7c184521a00aa365f",
-          "size": 475648,
-          "publishedAt": "2026-10-15T06:02:20Z",
-          "notes": "1.28.0-alpha.127\uFF1A\u6293\u5230\u771F\u51F6 \u2014\u2014 AccordionItem \u7684 expandedHeight = GetPreferredHeight(valueContent) \u53EA\u7B97\u503C\u5BB9\u5668\u3001\u5FD8\u4E86\u52A0\u6807\u7B7E\u90A3\u4E00\u683C\uFF0C\u6240\u4EE5\u6298\u53E0\u83DC\u5355\u6C38\u8FDC\u6BD4\u5185\u5BB9\u77EE 93\uFF08\u6B63\u597D\u4E00\u683C\uFF09\u3002\u5B9E\u673A\u6570\u5B57\uFF1A\u6298\u53E0\u83DC\u5355=465\uFF0C\u6807\u7B7E=93\u002B\u503C\u5BB9\u5668=465=558\u3002\u73B0\u5728\u91CF\u5B8C\u540E\u628A\u6807\u7B7E\u9AD8\u8865\u4E0A\u3002\u53E6\u5916\u4E24\u5904\uFF1A\u503C\u5BB9\u5668\u81EA\u5DF1\u7684 VerticalLayoutGroup padding \u6E05\u6389\uFF08\u6807\u9898\u4E0B\u9762\u90A3\u5757\u7A7A\u767D\u5C31\u662F\u5B83\uFF09\uFF0C\u4EE5\u53CA\u6536\u8D77\u6765\u4E4B\u540E\u4E0D\u518D\u6539\u9AD8\u5EA6\uFF08\u7528\u6237\u53CD\u9988\u6536\u4E0D\u56DE\u53BB\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.126",
-          "file": "versions/1.28.0-alpha.126/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.126/MGCModpack.dll",
-          "sha256": "f24e49303caedcb51bc8ec978567b783efb98294b147e44c2809766b45bc21b7",
-          "size": 475136,
-          "publishedAt": "2026-10-15T05:22:17Z",
-          "notes": "1.28.0-alpha.126\uFF1A\u6309\u7528\u6237\u7ED9\u7684\u65B9\u6848\u5B9A\u7A3F \u2014\u2014 \u4E00\u683C 93\uFF08\u8FD9\u4E00\u9875\u7684\u6807\u51C6\u683C\u9AD8\uFF0CAccordionItem.collapsedHeight \u548C ContentHeightUpdater.DEFAULT_HEIGHT \u90FD\u662F 93\uFF09\uFF0C\u6846\u9AD8 = 93 \u00D7 4 \u683C = 372\uFF0C\u6BCF\u4E2A\u6309\u94AE\u7528 LayoutElement \u9489\u6210 93 \u9AD8\uFF1B\u4E24\u5217\u653E\u8FDB ScrollRect \u002B RectMask2D\uFF0C\u8D85\u51FA\u5728\u6846\u5185\u6ED1\u52A8\u3002\u53E6\u5916\u7528\u6237\u63D0\u9192\uFF1A\u7528 Screen.* \u7B97\u51FA\u6765\u7684\u6570\u8981\u9664\u4EE5\u7F29\u653E\u7CFB\u6570\uFF08\u8FD9\u53F0\u7EA6 2\uFF09\uFF0C\u800C 93 \u662F\u753B\u5E03\u5355\u4F4D\u3001\u4E0D\u7528\u6362\u7B97 \u2014\u2014 \u6240\u4EE5\u6574\u5957\u90FD\u6539\u6210\u6309 93 \u7B97\uFF0C\u4E0D\u518D\u6DF7\u7528\u7269\u7406\u50CF\u7D20\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.125",
-          "file": "versions/1.28.0-alpha.125/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.125/MGCModpack.dll",
-          "sha256": "98e2f9ecce7da6c1831dc6bcc8bea361ee706cfea4b670423ab963a335253f5b",
-          "size": 475136,
-          "publishedAt": "2026-10-15T00:15:50Z",
-          "notes": "1.28.0-alpha.125\uFF1A\u6539\u7528 uicontrols \u81EA\u5DF1\u7684\u9AD8\u5EA6\u65B9\u6848\uFF08\u7528\u6237\u5EFA\u8BAE\uFF09\u3002\u8FD9\u4E00\u9875\u7684\u9AD8\u5EA6\u662F\u6BCF\u5C42\u81EA\u5DF1\u62A5\u7684\uFF1AAutoLayoutHeight \u6BCF\u5E27\u628A sizeDelta.y \u8BBE\u6210\u6FC0\u6D3B\u5B50\u7269\u4F53 rect.height \u4E4B\u548C\uFF0C\u7236\u7EA7 LayoutUtility.GetPreferredHeight \u62FF\u4E0D\u5230 ILayoutElement \u65F6\u4F1A\u56DE\u9000\u7528 rect\uFF0C\u9AD8\u5EA6\u5C31\u4F20\u4E0A\u53BB\u4E86\u3002\u73B0\u5728\u7ED9\u6298\u53E0\u83DC\u5355\u7684\u503C\u5BB9\u5668\u6302 AutoLayoutHeight\uFF0C\u5E76\u628A\u5185\u5BB9\u6539\u56DE\u6807\u51C6\u7684 ValueContent_Horizontal \u002B \u4E24\u4E2A ValueContent_Vertical\uFF08\u4E0D\u518D\u7528\u6EDA\u52A8\u6846\uFF09\u3002\u4E4B\u524D\u7528 sizeDelta/LayoutElement/ContentSizeFitter \u786C\u6491\u5C5E\u4E8E\u5916\u6765\u673A\u5236\uFF0C\u6BCF\u5E27\u90FD\u88AB\u8FD9\u4E00\u9875\u81EA\u5DF1\u7684\u5E03\u5C40\u76D6\u56DE\u53BB\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.124",
-          "file": "versions/1.28.0-alpha.124/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.124/MGCModpack.dll",
-          "sha256": "49b3adbead51738f51bb9532ee6106fd3a967d1eeca4c7548b1754375d687e47",
-          "size": 475136,
-          "publishedAt": "2026-10-14T19:10:33Z",
-          "notes": "1.28.0-alpha.124\uFF1A\u6700\u540E\u4FEE\u4E00\u5904\u91CD\u53E0 \u2014\u2014 \u503C\u5BB9\u5668\u6CA1\u88AB\u538B\u5230\u6807\u7B7E\u4E0B\u9762\uFF0C\u6846\u7684\u4E0A\u6CBF\u548C\u6807\u9898\u90A3\u884C\u53E0\u5728\u4E00\u8D77\u3002\u73B0\u5728\u628A\u503C\u5BB9\u5668\u951A\u5230\u6298\u53E0\u83DC\u5355\u9876\u90E8\u5E76\u628A anchoredPosition.y \u8BBE\u6210 \u2212\u6807\u7B7E\u9AD8\uFF0C\u6807\u9898\u548C\u6846\u4E0D\u518D\u91CD\u53E0\u3002\u5176\u4F59\u4FDD\u6301 alpha.123 \u7684\u505A\u6CD5\uFF08\u6EDA\u52A8\u6846\u5B9A\u9AD8 \u002B LayoutElement\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.123",
-          "file": "versions/1.28.0-alpha.123/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.123/MGCModpack.dll",
-          "sha256": "1105af7af7d53755410d987ccb07b0a3b2046a018d669ddeb5b621bcf359922e",
-          "size": 474624,
-          "publishedAt": "2026-10-14T19:02:16Z",
-          "notes": "1.28.0-alpha.123\uFF1A\u6EDA\u52A8\u6846\u6539\u6210**\u5B9A\u9AD8 \u002B LayoutElement**\u3002alpha.122 \u91CC\u5185\u5BB9\u6574\u4E2A\u6D88\u5931\uFF0C\u539F\u56E0\u662F\u6EDA\u52A8\u6846\u662F\u7EAF RectTransform\u3001\u4E0D\u662F ILayoutElement\uFF0C\u5E03\u5C40\u7B97 preferred \u65F6\u770B\u4E0D\u89C1\u5B83\uFF08\u548C AutoLayoutHeight \u540C\u4E00\u4E2A\u5751\uFF09\uFF0C\u6298\u53E0\u83DC\u5355\u88AB\u7B97\u6210\u53EA\u5269\u6807\u7B7E\u9AD8\u3002\u73B0\u5728\u6846\u9AD8\u5B9A\u6B7B\uFF08\u5C4F\u5E55\u9AD8\u7684 42%\uFF0C\u5939 320~900\uFF09\u5E76\u6302 LayoutElement\uFF0C\u6298\u53E0\u83DC\u5355\u9AD8\u5EA6 = \u6807\u7B7E \u002B \u6846 \u002B 16 \u7531 RefreshHeight \u6B63\u5E38\u7B97\u51FA\uFF1BForceAccordionHeight \u4FDD\u7559\u4E00\u6B21\u786C\u8BBE\u515C\u5E95\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.122",
-          "file": "versions/1.28.0-alpha.122/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.122/MGCModpack.dll",
-          "sha256": "bd28be3f183be7a82c5480c3dea9412335cbd62b91ca02ff8b61a205ba2d83e2",
-          "size": 474624,
-          "publishedAt": "2026-10-14T18:57:29Z",
-          "notes": "1.28.0-alpha.122\uFF1A\u6309\u7528\u6237\u7ED9\u7684\u7834\u5C40\u70B9\u4FEE\u9AD8\u5EA6 \u2014\u2014 \u7528\u6237\u5B9E\u6D4B\u300C\u6298\u53E0\u83DC\u5355\u70B9\u4E00\u6B21\u548C\u70B9\u4E24\u6B21\u9AD8\u5EA6\u4E0D\u4E00\u6837\u300D\uFF0C\u8BF4\u660E\u7B2C\u4E00\u6B21\u91CF\u9AD8\u5EA6\u65F6\u5185\u5BB9\u521A SetActive(true)\u3001\u5E03\u5C40\u8FD8\u6CA1\u7B97\u5B8C\u6240\u4EE5\u504F\u5C0F\uFF0C\u7B2C\u4E8C\u6B21\uFF08\u5185\u5BB9\u5DF2\u7ECF\u6D3B\u7740\uFF09\u91CF\u51FA\u6765\u624D\u5BF9\u3002\u6240\u4EE5\u5C55\u5F00\u540E\u8FDE\u91CF 60 \u5E27\u91CD\u65B0\u5E94\u7528\u9AD8\u5EA6\uFF08\u7B49\u4EF7\u4E8E\u5173\u6389\u518D\u70B9\u5F00\uFF0C\u4F46\u7528\u6237\u770B\u4E0D\u89C1\u95EA\uFF09\u3002\u540C\u65F6\u4FDD\u7559\u56FA\u5B9A\u9AD8\u5EA6\u6EDA\u52A8\u6846\u4F5C\u4E3A\u515C\u5E95\uFF1A\u6846\u9AD8 = \u6298\u53E0\u83DC\u5355\u5B9E\u9645\u9AD8 \u2212 \u6807\u7B7E\u9AD8 \u2212 12\uFF0C\u5373\u4F7F\u9AD8\u5EA6\u8FD8\u4E0D\u5B8C\u7F8E\u4E5F\u4E0D\u4F1A\u538B\u5230\u6807\u7B7E\u6216\u4E0A\u4E0B\u884C\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.121",
-          "file": "versions/1.28.0-alpha.121/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.121/MGCModpack.dll",
-          "sha256": "439153739e57c65e275bdcd32889a503a34a98cb89cbd71e83b52ff83ac5a9db",
-          "size": 474624,
-          "publishedAt": "2026-10-14T18:50:39Z",
-          "notes": "1.28.0-alpha.121\uFF1A\u6298\u53E0\u83DC\u5355\u5E03\u5C40\u5B9A\u7A3F \u2014\u2014 \u4E0D\u518D\u53BB\u6539\u6298\u53E0\u83DC\u5355\u7684\u9AD8\u5EA6\uFF08\u90A3\u662F\u8FD9\u4E00\u9875 VerticalLayoutGroup \u002B AutoLayoutHeight \u002B ContentHeightUpdater \u90A3\u5957\u5728\u7BA1\u7684\uFF0C\u5B9E\u673A\u8BCA\u65AD\u8BC1\u660E\u8BBE\u4E86 1102 \u4E0B\u4E00\u5E27\u53C8\u88AB\u91CF\u56DE 985\uFF0CLayoutElement \u548C ContentSizeFitter \u90FD\u538B\u4E0D\u4F4F\uFF09\uFF0C\u6539\u6210\u8BA9\u5185\u5BB9\u9002\u914D\u5B83\uFF1A\u4E24\u5217\u653E\u8FDB\u4E00\u4E2A\u56FA\u5B9A\u9AD8\u5EA6\u7684\u6EDA\u52A8\u6846\uFF08ScrollRect \u002B RectMask2D\uFF09\uFF0C\u6846\u9AD8 = \u6298\u53E0\u83DC\u5355\u5B9E\u9645\u9AD8 \u2212 \u6807\u7B7E\u9AD8 \u2212 12\uFF0C\u8D85\u51FA\u5728\u6846\u5185\u6EDA\u52A8\u3002\u8FD9\u6837\u6846\u6C38\u8FDC\u6BD4\u6298\u53E0\u83DC\u5355\u5C0F\uFF0C\u4E0D\u53EF\u80FD\u518D\u538B\u5230\u6807\u7B7E\u6216\u4E0A\u4E0B\u884C\u3002\u53E6\u5916\u5220\u6389\u4E86\u5FAA\u73AF\u91CC\u6BCF\u5E27\u8C03\u7684 AccordionItem.RefreshHeight()\uFF08\u5B83\u4F1A\u6BCF\u5E27\u628A expandedHeight \u91CD\u7B97\u56DE preferred\uFF0C\u628A\u521A\u8BBE\u7684\u503C\u8986\u76D6\u6389\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.117",
-          "file": "versions/1.28.0-alpha.117/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.117/MGCModpack.dll",
-          "sha256": "363956d28d54155b1d26e7710998742f031d6283261596ee88dc840a8c04f2c5",
-          "size": 473600,
-          "publishedAt": "2026-10-14T18:21:08Z",
-          "notes": "1.28.0-alpha.117\uFF1A\u6309\u5B9E\u673A\u8BCA\u65AD\u7684\u6570\u5B57\u91CD\u7B97\u9AD8\u5EA6\u3002\u8BCA\u65AD\u663E\u793A\uFF1A\u6807\u7B7E93 / \u503C\u5BB9\u5668985 / \u6298\u53E0\u83DC\u5355985 / \u884C892 / \u5DE6\u5217892 / \u53F3\u5217427 \u2014\u2014 \u4E24\u4E2A\u95EE\u9898\uFF1A\u2460 \u5149\u8BBE sizeDelta \u6CA1\u7528\uFF0C\u7236\u7EA7 VerticalLayoutGroup \u6BCF\u5E27\u6309\u5B50\u7269\u4F53 preferred \u9AD8\u5EA6\u91CD\u6392\u4F1A\u8986\u76D6\u6389\uFF08\u8BBE\u4E861049\u4E0B\u4E00\u5E27\u53C8\u53D8\u56DE985\uFF09\uFF0C\u5FC5\u987B\u6302 LayoutElement \u544A\u8BC9\u5E03\u5C40\u8981\u591A\u9AD8\uFF1B\u2461 \u884C\u548C\u503C\u5BB9\u5668\u81EA\u5DF1\u7684 layout padding \u6CA1\u7B97\u8FDB\u53BB\uFF08\u4E0A\u9762\u90A3\u5757\u7A7A\u767D\u5C31\u662F\u5B83\uFF09\uFF0C\u6240\u4EE5\u5E95\u4E0B\u5DEE\u4E00\u70B9\u3002\u73B0\u5728\u628A\u884C/\u503C\u5BB9\u5668\u7684 padding \u90FD\u52A0\u4E0A\uFF0C\u5E76\u7528 LayoutElement \u7684 min/preferredHeight \u56FA\u5B9A\u9AD8\u5EA6\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.116",
-          "file": "versions/1.28.0-alpha.116/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.116/MGCModpack.dll",
-          "sha256": "b1eee4b9914dede76f4dd74403a31ec01f33d32068eac6e8a93141060005069f",
-          "size": 473088,
-          "publishedAt": "2026-10-14T18:15:56Z",
-          "notes": "1.28.0-alpha.116\uFF1A\u9AD8\u5EA6\u8BCA\u65AD\u7248\u3002\u2460 \u6C34\u5E73\u884C\u672C\u8EAB\u4E5F\u6309\u4E24\u5217\u7684\u5B9E\u9645\u9AD8\u5EA6\u6491\u5F00\uFF08\u5B83\u662F prefab \u56FA\u5B9A\u9AD8\u5EA6\uFF0C\u4E24\u5217\u6BD4\u5B83\u9AD8\u5C31\u4F1A\u6EA2\u51FA\u5230\u884C\u5916\uFF0C\u7236\u7EA7\u91CF\u5230\u7684\u8FD8\u662F\u65E7\u9AD8\u5EA6\uFF09\u3002\u2461 \u6BCF 1 \u79D2\u6253\u4E00\u884C [GraphicsQuality] \u9AD8\u5EA6\u8BCA\u65AD\uFF1A\u6807\u7B7E / \u503C\u5BB9\u5668 rect / \u503C\u5BB9\u5668 preferred / \u6298\u53E0\u83DC\u5355 / \u884C / \u4E24\u5217\u5404\u81EA rect\u002BsizeDelta / \u7B97\u51FA\u7684 need \u2014\u2014 \u7528\u6765\u628A\u9AD8\u5EA6\u7B97\u51C6\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.115",
-          "file": "versions/1.28.0-alpha.115/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.115/MGCModpack.dll",
-          "sha256": "2c7e49232b15935329d90f98dc012ea2dc1e5faa7f425620b144980f98337ac1",
-          "size": 472576,
-          "publishedAt": "2026-10-14T18:08:48Z",
-          "notes": "1.28.0-alpha.115\uFF1A\u6309\u7528\u6237\u5B9E\u673A\u53CD\u9988\u518D\u6539\u4E09\u5904\u3002\u2460 \u9AD8\u5EA6\u4F59\u91CF 16\u219264 \u5E76\u628A\u91CD\u6392\u5E27\u6570 20\u219260\uFF1A\u4E0A\u4E00\u7248\u5B9E\u673A\u91CC\u6B63\u597D\u5DEE\u4E00\u683C\uFF08\u5185\u5BB9\u5BB9\u5668\u7684 layout padding/spacing \u6CA1\u7B97\u8FDB\u53BB\uFF09\uFF0C\u6240\u4EE5 4 \u500D\u90A3\u51E0\u6863\u6EDA\u4E0D\u5230\u3002\u2461 \u5E27\u7387\u6863\u4F4D\u52A0\u5BC6\u6210 15/30/45/60/75/90/120/144/165/185\uFF08\u4ECD\u53EA\u4FDD\u7559\u4E0D\u8D85\u8FC7\u8BBE\u5907\u5237\u65B0\u7387\u7684\uFF0C\u5E76\u8865\u4E0A\u5237\u65B0\u7387\u672C\u8EAB\uFF09\u3002\u2462 \u6298\u53E0\u83DC\u5355\u91CC\u9762\u4E0D\u518D\u663E\u793A\u300C\u5F53\u524D \u2026\u300D\u4E24\u884C \u2014\u2014 \u5F53\u524D\u503C\u770B\u6807\u9898\u90A3\u884C\u5C31\u591F\u4E86\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.114",
-          "file": "versions/1.28.0-alpha.114/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.114/MGCModpack.dll",
-          "sha256": "2e36c843ca056397fbc08865423b0f4809dff3e7104a299a73f419d8b583ac98",
-          "size": 472576,
-          "publishedAt": "2026-10-14T17:55:45Z",
-          "notes": "1.28.0-alpha.114\uFF1A\u4FEE\u5206\u8FA8\u7387\u6863\u4F4D\u6807\u7B7E \u2014\u2014 \u53EA\u6709\u6B63\u597D 1 \u500D\u624D\u53EB\u300C\u539F\u753B\u300D\uFF0C1.25/1.5/2/2.5/3/4 \u500D\u8FD9\u4E9B\u8D85\u91C7\u6837\u6863\u73B0\u5728\u6B63\u786E\u663E\u793A\u767E\u5206\u6BD4\uFF08\u4E0A\u4E00\u7248\u628A\u5B83\u4EEC\u4E5F\u6807\u6210\u4E86\u300C\u539F\u753B\u300D\uFF0C\u5B9E\u673A\u622A\u56FE\u91CC\u4E00\u773C\u53EF\u89C1\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.113",
-          "file": "versions/1.28.0-alpha.113/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.113/MGCModpack.dll",
-          "sha256": "e6c5e6479fd7953d5f5d52f15fe1ab53a82089d1c5db9f2290d17380947c45d0",
-          "size": 472576,
-          "publishedAt": "2026-10-14T17:52:15Z",
-          "notes": "1.28.0-alpha.113\uFF1A\u6298\u53E0\u83DC\u5355\u9AD8\u5EA6\u518D\u4FEE\u4E00\u7248\u3002\u5B9E\u673A\u622A\u56FE\u663E\u793A\u5185\u5BB9\u4ECD\u7136\u6EA2\u51FA\u5230\u4E0B\u9762\u7684\u884C\u4E0A \u2014\u2014 \u539F\u56E0\u662F\u90A3\u4E9B AutoLayoutHeight \u662F\u81EA\u5B9A\u4E49\u7EC4\u4EF6\u3001\u4E0D\u662F ILayoutElement\uFF0C\u7236\u7EA7\u7B97 preferredHeight \u65F6\u770B\u4E0D\u5230\u5B83\u4EEC\uFF0C\u91CF\u51FA\u6765\u504F\u5C0F\u3002\u73B0\u5728\u5C55\u5F00\u540E\u9664\u8FDE\u91CF 20 \u5E27\u5916\uFF0C\u518D\u76F4\u63A5\u62FF\u4E24\u5217\u91CC\u6700\u9AD8\u7684\u90A3\u4E00\u5217\u7684\u5B9E\u9645\u9AD8\u5EA6\uFF08rect.height\uFF09\u515C\u5E95\u6491\u5F00\u6298\u53E0\u83DC\u5355\uFF0C\u5E76\u6BCF\u5E27\u91CD\u5EFA\u7236\u7EA7\u5E03\u5C40\u8BA9\u540E\u9762\u7684\u884C\u8BA9\u4F4D\u3002\u6807\u9898\u4E5F\u6539\u6210\u663E\u793A\u5F53\u524D\u5B9E\u9645\u753B\u9762\u5C3A\u5BF8\uFF08\u539F\u6765\u5199\u539F\u751F\u5206\u8FA8\u7387 1920\u00D71080\uFF0C\u548C\u7AD6\u5C4F\u753B\u9762\u53CD\u7740\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.112",
-          "file": "versions/1.28.0-alpha.112/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.112/MGCModpack.dll",
-          "sha256": "52ae318ac01a54400bb63faed7d4be70dc0b96498b8f78f7a5156f27e95b38ef",
-          "size": 472064,
-          "publishedAt": "2026-10-14T17:38:52Z",
-          "notes": "1.28.0-alpha.112\uFF1A\u4FEE\u5B9E\u673A\u770B\u5230\u7684\u9519\u4F4D \u002B \u6309\u7528\u6237\u8981\u6C42\u6539\u6863\u4F4D\u3002\u2460 \u6298\u53E0\u83DC\u5355\u9AD8\u5EA6\uFF1A\u5C55\u5F00\u540E\u8FDE\u91CF 20 \u5E27\u9AD8\u5EA6\uFF0C\u5E76\u4E14\u6BCF\u5E27\u628A\u7236\u7EA7\uFF08\u8BBE\u7F6E\u9875 Content\uFF09\u4E5F ForceRebuildLayoutImmediate \u4E00\u6B21 \u2014\u2014 \u539F\u6765\u53EA\u6539\u81EA\u5DF1\u9AD8\u5EA6\uFF0C\u540E\u9762\u7684\u97F3\u91CF\u884C\u4E0D\u8BA9\u4F4D\uFF0C\u5185\u5BB9\u4F1A\u753B\u5230\u5B83\u4EEC\u4E0A\u9762\u3002\u2461 \u5206\u8FA8\u7387\u6863\u4F4D\u6539\u6210 0.5/0.75/1/1.25/1.5/2/2.5/3/4 \u500D\uFF08\u7528\u6237\u8981\u6C42\u5141\u8BB8\u8D85\u8FC7\u8BBE\u5907\u5206\u8FA8\u7387\uFF0C\u4E0A\u9650 4 \u500D\u8D85\u91C7\u6837\uFF09\u3002\u2462 \u5E27\u7387\u6863\u4F4D\u6539\u6210\u6309\u8BBE\u5907\u5237\u65B0\u7387\u52A8\u6001\u751F\u6210\uFF08\u4E0D\u8D85\u8FC7\u5237\u65B0\u7387\uFF0C\u5E76\u8865\u4E0A\u5237\u65B0\u7387\u672C\u8EAB\uFF09\uFF1B\u4FDD\u5B58\u503C\u8D85\u8FC7\u5237\u65B0\u7387\u65F6\u4E5F\u4F1A\u88AB\u5939\u56DE\u6765\u3002\u2463 \u5206\u8FA8\u7387\u6807\u7B7E\uFF1A\u7AD6\u5C4F\u65F6\u628A\u539F\u751F\u5206\u8FA8\u7387\u4E5F\u8F6C\u8FC7\u6765\uFF0C\u539F\u6765\u4F1A\u5199\u6210 1920\u00D71080\uFF08\u5B9E\u9645\u753B\u9762\u662F 1080\u00D71920\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.111",
-          "file": "versions/1.28.0-alpha.111/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.111/MGCModpack.dll",
-          "sha256": "541ff5804c4a6d5ef944502dd74929f3800413635aeb92cfd12932307df8d582",
-          "size": 471040,
-          "publishedAt": "2026-10-14T16:42:29Z",
-          "notes": "1.28.0-alpha.111\uFF1A\u6E38\u620F\u8BBE\u7F6E\u9875\u7684\u300C\u6E38\u620F\u753B\u8D28\u300D\u6298\u53E0\u83DC\u5355\u652F\u6301\u89E3\u9501\u6A21\u5F0F \u2014\u2014 \u8BBE\u7F6E\u2192\u901A\u7528 \u91CC\u6253\u5F00\u300C\u89E3\u9664\u5E27\u7387\u548C\u5206\u8FA8\u7387\u9650\u5236\u300D\u540E\uFF0C\u518D\u70B9\u5F00\u6298\u53E0\u83DC\u5355\u4F1A\u53D8\u6210\u6C34\u5E73\u89C6\u56FE\uFF1A\u5DE6\u5217\u5206\u8FA8\u7387\uFF08\u539F\u751F\u00D7100/85/75/60/50%\uFF09\uFF0C\u53F3\u5217\u5E27\u7387\uFF0830/45/60/90/120/144\uFF09\u3002\u5206\u8FA8\u7387\u8D70\u6E38\u620F\u81EA\u5DF1\u7684 PlayerControl.AdjustScreenResolution(ratio)\uFF0Cdpi \u4F1A\u4E00\u8D77\u91CD\u7B97\uFF1B\u5E27\u7387\u8BBE Application.targetFrameRate \u5E76\u5173\u6389 vSync\u3002\u9009\u62E9\u5B58 PlayerPrefs\uFF0C\u5F00\u673A 6 \u79D2\u540E\u7531 MGCInitializer \u515C\u5E95\u518D\u538B\u4E00\u6B21\uFF08\u8EB2\u5F00 MobileManager \u5F00\u5C40\u7684\u8986\u76D6\uFF09\u3002\u5F00\u5173\u5173\u7740\u65F6\u4FDD\u6301\u539F\u6765\u4E09\u4E2A\u9884\u8BBE\u952E\u4E0D\u53D8\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.110",
-          "file": "versions/1.28.0-alpha.110/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.110/MGCModpack.dll",
-          "sha256": "7cf9f46e01137b5768e70102cf66531cf26e6c40b0d8b78321f9c789906f6981",
-          "size": 465408,
-          "publishedAt": "2026-10-14T06:00:12Z",
-          "notes": "1.28.0-alpha.110\uFF1A\u6309\u7528\u6237\u8981\u6C42\u628A\u4EE3\u7801\u6539\u56DE\u300C\u53EA\u514B\u9686 \u002B \u7ED1\u5B9A\u6309\u952E\u300D\u2014\u2014 \u53BB\u6389\u4E0A\u7248\u4E3A\u4E86\u7ED5\u5F00\u8D1F\u5BBD\u5EA6\u52A0\u7684\u5DE6\u680F\u5BBD\u5EA6\u515C\u5E95\uFF0C\u4E5F\u53BB\u6389\u514B\u9686\u65F6\u5BF9 RectTransform \u7684\u6A2A\u5411\u62C9\u4F38\uFF1B\u5E03\u5C40\u4EA4\u7ED9 UI bundle \u91CC\u5BB9\u5668\u4E0A\u7684 VerticalLayoutGroup\u3002UI \u90A3\u8FB9\u7528\u6237\u5DF2\u4FEE\u597D\u5E76\u66F4\u65B0\u5230\u4E91\u7AEF\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.109",
-          "file": "versions/1.28.0-alpha.109/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.109/MGCModpack.dll",
-          "sha256": "d4c5f6a34720cbdeac9e5425382f00b30d03f91b611901204956d3391d0837fa",
-          "size": 466432,
-          "publishedAt": "2026-10-14T04:58:09Z",
-          "notes": "1.28.0-alpha.109\uFF1A\u4FEE\u5B9E\u673A\u67E5\u51FA\u7684\u5DE6\u680F\u771F\u56E0 \u2014\u2014 \u65B0 UI bundle \u91CC CommunityPanel/List \u7684\u5BBD\u5EA6\u662F\u6309\u66F4\u5BBD\u753B\u5E03\u6446\u7684\uFF08pos=-613 sizeDelta=-1227\uFF09\uFF0C1080 \u5BBD\u7684\u753B\u5E03\u4E0A\u7B97\u51FA\u6765\u662F**\u8D1F\u5BBD**\uFF0C\u6574\u680F\u4EC0\u4E48\u90FD\u4E0D\u753B\uFF1B\u800C\u6A21\u677F\u6CA1\u88AB\u62C9\u4F38\u3001\u6309\u81EA\u5DF1 283x93 \u753B\uFF0C\u6240\u4EE5\u90A3\u4E00\u5217\u91CC\u552F\u4E00\u770B\u5F97\u89C1\u7684\u5C31\u662F Example\uFF08\u8FD9\u5C31\u662F\u7528\u6237\u6700\u65E9\u770B\u5230\u7684\u201CExample \u4E00\u76F4\u663E\u793A\u201D\uFF09\uFF1B\u628A\u6A21\u677F\u6309\u4E0B\u53BB\u4E4B\u540E\u514B\u9686\uFF08\u62C9\u4F38\u5230\u7236\u5BBD=\u8D1F\uFF09\u4E5F\u770B\u4E0D\u89C1\uFF0C\u4E8E\u662F\u201C\u5DE6\u8FB9\u7684\u5217\u8868\u6D88\u5931\u4E86\u201D\u3002\u73B0\u5728\u5728 Update \u91CC\u7B49\u5E03\u5C40\u7B97\u597D\u540E\u515C\u5E95\uFF1A\u53EA\u6709\u7B97\u51FA\u6765 \u003C=1 \u624D\u628A\u8FD9\u4E00\u680F\u6309\u753B\u5E03\u91CD\u5B9A\u5BBD\u5EA6\uFF08\u7236\u9762\u677F 32%\uFF0C\u5939 180~360\uFF09\uFF0C\u5E76\u8BA9\u5185\u5BB9\u533A\u8BA9\u51FA\u8FD9\u4E00\u6BB5\uFF1B\u6446\u4F4D\u6B63\u5E38\u7684 bundle \u4E00\u5F8B\u4E0D\u78B0\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.108",
-          "file": "versions/1.28.0-alpha.108/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.108/MGCModpack.dll",
-          "sha256": "1fd981d8120f9f54856011065f4d9b30dbc3ab6366eb2b6932e83ce6be8eb792",
-          "size": 465408,
-          "publishedAt": "2026-10-14T00:25:17Z",
-          "notes": "1.28.0-alpha.108\uFF1A\u8BCA\u65AD\u52A0\u5F3A \u2014\u2014 \u5185\u5BB9\u5BB9\u5668\u90A3\u6761\u65E5\u5FD7\u73B0\u5728\u628A\u6BCF\u4E00\u884C\u7684**\u6807\u7B7E\u6587\u5B57**\u4E5F\u5E26\u4E0A\uFF1A[Community] \u5185\u5BB9\u5BB9\u5668 N \u4E2A\u5B50\u8282\u70B9: Example\u2717[Mod Name] | xxx_NetdiskRow\u2713[\u3010\u7F51\u76D8\u3011\u2026]\u3002\u8FD9\u6837\u771F\u673A\u4E0A\u80FD\u4E00\u773C\u5206\u6E05\u300C\u6A21\u677F\u672C\u4F53\u300D\uFF08\u5360\u4F4D\u6587\u5B57 Mod Name\uFF09\u548C\u300C\u6CA1\u586B\u5B57\u7684\u514B\u9686\u300D\uFF08\u5E94\u8BE5\u662F\u3010\u5B98\u65B9\u3011/\u3010\u793E\u533A\u3011/\u3010\u7F51\u76D8\u3011\uFF09\u3002\u914D\u5408 alpha.107 \u7684\u6BCF\u5E27\u515C\u5E95\u4E0E\u73B0\u573A\u8BC1\u636E\u65E5\u5FD7\u3002\u4EC5\u53D1\u6D4B\u8BD5\u9891\u9053\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.107",
-          "file": "versions/1.28.0-alpha.107/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.107/MGCModpack.dll",
-          "sha256": "80ffb0f135386eae94e82eb69d33e1515536e86f9c992ada23b1283875c709a4",
-          "size": 465408,
-          "publishedAt": "2026-10-14T00:20:18Z",
-          "notes": "1.28.0-alpha.107\uFF1Abug \u2460 \u505A\u6210**\u6BCF\u5E27\u515C\u5E95** \u2014\u2014 Update() \u91CC GuardTemplates() \u6BCF\u5E27\u7784\u4E00\u773C\u4E09\u4E2A\u6A21\u677F\uFF0C\u53D1\u73B0\u662F\u663E\u793A\u7684\u7ACB\u523B\u6309\u4E0B\u53BB\uFF0C\u5E76\u8BB0\u4E00\u6761\u65E5\u5FD7\uFF08[Community] \u6A21\u677F\u300C\u5185\u5BB9\u884C\u300D\u88AB\u6FC0\u6D3B\u4E86\u2026\u5DF2\u6309\u4E0B\u53BB\uFF09\u3002\u8FD9\u6837\u4E0D\u7BA1\u662F\u8C01\u3001\u4EC0\u4E48\u65F6\u5019\u628A Example \u6253\u5F00\u7684\uFF0C\u5B83\u6700\u591A\u53EA\u663E\u793A\u4E00\u5E27\uFF0C\u7528\u6237\u770B\u4E0D\u5230\uFF1B\u65E5\u5FD7\u540C\u65F6\u7559\u4E0B\u73B0\u573A\u8BC1\u636E\u3002\u514B\u9686\u662F\u72EC\u7ACB\u5BF9\u8C61\uFF0C\u6309\u6A21\u677F\u4F24\u4E0D\u5230\u4EFB\u4F55\u884C\u3002\u4EC5\u53D1\u6D4B\u8BD5\u9891\u9053\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.106",
-          "file": "versions/1.28.0-alpha.106/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.106/MGCModpack.dll",
-          "sha256": "f81132066ac46a7d82fe145303e4e426f78f985d667a13f2419ff45c902e167f",
-          "size": 464896,
-          "publishedAt": "2026-10-14T00:11:26Z",
-          "notes": "1.28.0-alpha.106\uFF1A\u2460 \u6A21\u677F\u4E0D\u53EA\u5F00\u5934\u6309\u4E00\u6B21 \u2014\u2014 ClearRows \u9047\u5230\u540D\u5B57\u5E26 Example \u7684\u5B50\u8282\u70B9\u4F1A**\u987A\u624B\u6309\u4E0B\u53BB\u5E76\u6253\u65E5\u5FD7**\uFF08\u8C01\u6253\u5F00\u7684\u4E0D\u91CD\u8981\uFF09\uFF0CRefresh \u6536\u5C3E\u518D\u6309\u4E00\u6B21\uFF0C\u8986\u76D6\u6E32\u67D3\u8FC7\u7A0B\u4E2D\u88AB\u522B\u5904\u6253\u5F00\uFF1B\u2461 \u65B0\u589E\u65E5\u5FD7 [Community] \u6E05\u5217\u8868\u65F6\u53D1\u73B0\u6A21\u677F\u662F**\u663E\u793A**\u7684\uFF0C\u5DF2\u6309\u4E0B\u53BB: \u003C\u540D\u5B57\u003E\uFF0C\u7528\u6765\u5B9A\u4F4D\u5230\u5E95\u662F\u8C01\u6FC0\u6D3B\u4E86\u5B83\u3002\u4EC5\u53D1\u6D4B\u8BD5\u9891\u9053\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.105",
-          "file": "versions/1.28.0-alpha.105/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.105/MGCModpack.dll",
-          "sha256": "768eb197e5a67f6c0b1c735374109661085bd3a9024154a2eab99c49ade4af9f",
-          "size": 464896,
-          "publishedAt": "2026-10-14T00:04:49Z",
-          "notes": "1.28.0-alpha.105\uFF1A\u2460 \u793E\u533A/\u8D44\u6E90\u9875\u6BCF\u6B21\u5237\u65B0\u90FD\u628A Example \u6A21\u677F\u6309\u56DE\u53BB\uFF08\u6A21\u677F\u4E0D\u8BE5\u4E00\u76F4\u663E\u793A\uFF09\uFF1B\u2461 mod \u7D22\u5F15\u665A\u5230\u65F6\u6CA1\u4EBA\u518D\u6E32\u67D3\u4E00\u6B21 \u2014\u2014 \u8865 ModpackDownloader.Kick \u002B \u56DE\u8C03\u5237\u65B0\uFF0C\u5E76\u7ED9\u6BCF\u884C\u5EFA\u884C\u52A0 try/catch\uFF08\u4E00\u884C\u5931\u8D25\u4E0D\u518D\u5403\u6389\u540E\u9762\u6240\u6709\u884C\uFF09\uFF1B\u2462 \u7D20\u6750\uFF08UI \u5305/\u56FE\u7247\uFF09\u6309\u9891\u9053\u89E3\u6790\uFF08\u6B63\u5F0F/\u6D4B\u8BD5\u5404\u53D1\u4E00\u4EFD\uFF09\u3002\u4EC5\u53D1\u6D4B\u8BD5\u9891\u9053\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.104",
-          "file": "versions/1.28.0-alpha.104/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.104/MGCModpack.dll",
-          "sha256": "08f42423bf7ab3bb5e690867a0c1e80c6aa40085420c52e7c3b96b9e18a9eb76",
-          "size": 461824,
-          "publishedAt": "2026-10-12T16:39:42Z",
-          "notes": "1.28.0-alpha.104\uFF1A\u4FEE RewardBadge \u901A\u5173\u540E\u8D56\u5728\u4E3B\u573A\u666F\u4E0D\u6D88\u5931\u3002\u771F\u56E0\u662F Update() \u91CC\u90A3\u53E5\u65E0\u6761\u4EF6\u91CD\u5EFA\u2014\u2014\u53EA\u8981 uiRoot \u4E3A\u7A7A\u5C31 BuildUI()\uFF0C\u800C\u5EFA\u51FA\u6765\u7684 UI \u9ED8\u8BA4\u53EF\u89C1\uFF0C\u4E8E\u662F\u300C\u56DE\u4E3B\u573A\u666F \u2192 Canvas \u9500\u6BC1 \u2192 uiRoot \u53D8 null\u300D\u4E4B\u540E\u5FBD\u7AE0\u88AB\u5F53\u573A\u590D\u6D3B\u3002\u6539\u6CD5\uFF1A\u2460 \u52A0 _wantVisible\uFF0C\u53EA\u6709\u672C\u8BE5\u663E\u793A\u65F6\u624D\u91CD\u5EFA\uFF1B\u2461 \u6302 SceneManager.sceneLoaded\uFF0C\u573A\u666F\u4E00\u6362\u5C31 Hide\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.103",
-          "file": "versions/1.28.0-alpha.103/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.103/MGCModpack.dll",
-          "sha256": "5d6064220fd8387ff56970e074dd0b4e353f719e7923030a847d89aa6626bfce",
-          "size": 461312,
-          "publishedAt": "2026-10-12T15:44:28Z",
-          "notes": "1.28.0-alpha.103\uFF1A\u2460 \u884C\u8BE6\u60C5\u53BB\u6389\u300C\u5B98\u65B9 \u00B7 /\u793E\u533A \u00B7 /\u7F51\u76D8 \u00B7\u300D\u524D\u7F00\uFF1B\u2461 \u7F29\u7565\u56FE\u5F00\u5173\u8FDE\u5E26 DetailsContent/blank\uFF08\u65B0\u9884\u5236\u4F53\u52A0\u7684\u5360\u4F4D\u8282\u70B9\uFF09\uFF1B\u2462 \u8C03\u8BD5\u9762\u677F\u56DB\u5904 Toggle \u4F20 hideValueText: true\uFF1B\u2463 \u79FB\u9664 HookSelfTest\uFF1B\u2464 \u5DF2\u4E0B\u8F7D\u4E14\u54C8\u5E0C\u4E00\u81F4\u65F6\u70B9\u300C\u5DF2\u4E0B\u8F7D\u300D\u4E0D\u518D\u91CD\u65B0\u4E0B\u8F7D\uFF0C\u53EA\u6709\u54C8\u5E0C\u4E0D\u540C\u624D\u663E\u793A\u300C\u66F4\u65B0\u300D\u5E76\u91CD\u4E0B\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.102",
-          "file": "versions/1.28.0-alpha.102/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.102/MGCModpack.dll",
-          "sha256": "c03eadb0fb9ef9c0dc115552e341cd084be5f5dac2766fd0172a102bcf294331",
-          "size": 471552,
-          "publishedAt": "2026-10-12T15:13:06Z",
-          "notes": "1.28.0-alpha.102\uFF1A\u4E0E 101 \u4EE3\u7801\u5B8C\u5168\u76F8\u540C\uFF0C\u53EA\u662F\u56E0\u4E3A\u300C\u7248\u672C\u53F7\u4E0D\u53EF\u53D8\u300D\u65E0\u6CD5\u628A test \u9891\u9053\u91CD\u65B0\u6307\u5411 101\uFF0C\u6240\u4EE5\u524D\u8FDB\u4E00\u683C\uFF0C\u8BA9\u6D4B\u8BD5\u673A\u80FD\u9A8C\u5230\u5730\u56FE\u8BE6\u60C5\u6539\u52A8\uFF08\u5730\u56FE\u5305\u8BE6\u60C5\u6539\u7528\u538B\u7F29\u5305\u5185 manifest.json \u7684 description\uFF09\u3002\u6B63\u5F0F\u9891\u9053\u4ECD\u4E3A 101\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.101",
-          "file": "versions/1.28.0-alpha.101/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.101/MGCModpack.dll",
-          "sha256": "c03eadb0fb9ef9c0dc115552e341cd084be5f5dac2766fd0172a102bcf294331",
-          "size": 471552,
-          "publishedAt": "2026-10-12T15:04:01Z",
-          "notes": "1.28.0-alpha.101\uFF1A\u5730\u56FE\u5305\u7684\u8BE6\u60C5\u6539\u7528\u538B\u7F29\u5305\u91CC\u7684\u63CF\u8FF0\u3002\u539F\u6765\u8D70\u7684\u662F\u7D22\u5F15\u91CC\u90A3\u884C\u8BF4\u660E\uFF08MGC\u5B98\u56FE\uFF0838.2 MB\uFF09\uFF09\uFF0C\u800C\u7D22\u5F15\u91CC\u7684\u5305\u540D\u548C\u5305\u5185 manifest \u7684\u540D\u5B57\u4E0D\u4E00\u5B9A\u4E00\u6837\uFF0C\u5BF9\u4E0D\u4E0A\u5C31\u9000\u56DE\u957F\u8BF4\u660E\u3002\u73B0\u5728\u76F4\u63A5\u6309 zip \u8BFB manifest.json \u7684 description\uFF0C\u8BFB\u4E0D\u5230\u624D\u56DE\u9000\u3002\u53E6\u5916\u6392\u884C\u699C\u4E0D\u518D\u5185\u5D4C\uFF08\u5185\u5D4C webview \u4F1A\u8BA9\u6E38\u620F\u753B\u9762\u5361\u6B7B\uFF0C\u6E32\u67D3\u7EBF\u7A0B\u88AB\u6321\uFF09\uFF0C\u6539\u4E3A\u4EA4\u7ED9\u7CFB\u7EDF\u6D4F\u89C8\u5668\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.100",
-          "file": "versions/1.28.0-alpha.100/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.100/MGCModpack.dll",
-          "sha256": "6159df44fde47760f03c013aefde8680b9d895ea1de4400b3d9397c1e51d40fb",
-          "size": 471040,
-          "publishedAt": "2026-10-12T14:53:22Z",
-          "notes": "1.28.0-alpha.100\uFF1A\u6E05\u7406\u5168\u90E8\u6D4B\u8BD5\u811A\u624B\u67B6\uFF08\u5FC3\u8DF3\u7EC4\u4EF6\u3001ranktest.flag \u81EA\u68C0\u3001A/B \u7A7A\u767D\u9875\u5F00\u5173\u3001runInBackground \u8865\u4E01\u3001\u9010\u6B65\u65E5\u5FD7\u3001\u9632\u6296\u5B57\u6BB5\uFF09\uFF0C\u5220\u6389 RankHeartbeat.cs \u4E0E RankWebView.cs\u3002\u6392\u884C\u699C\u4FDD\u6301\u4EA4\u7ED9\u7CFB\u7EDF\u6D4F\u89C8\u5668\u6253\u5F00\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.99",
-          "file": "versions/1.28.0-alpha.99/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.99/MGCModpack.dll",
-          "sha256": "cc448d13b1a6cfd76f73bd2cc15a798e99aeb569e69034ba0aef156c3d550c82",
-          "size": 478208,
-          "publishedAt": "2026-10-12T14:48:40Z",
-          "notes": "1.28.0-alpha.99\uFF1A\u6392\u884C\u699C\u4E0D\u518D\u5185\u5D4C\uFF0C\u6539\u7528\u7CFB\u7EDF\u6D4F\u89C8\u5668\u3002\u771F\u673A\u786E\u8BA4\uFF1A\u6E38\u620F\u753B\u9762\u5B8C\u5168\u5361\u6B7B\u3001webview \u6B63\u5E38\uFF0C\u800C Unity \u4E3B\u7EBF\u7A0B\u7684\u5E27\u7387\u4E00\u76F4\u6B63\u5E38\uFF0847~54 \u5E27\uFF09\u2014\u2014 \u8BF4\u660E\u5361\u7684\u662F\u6E32\u67D3\u7EBF\u7A0B\uFF0C\u4E0D\u662F\u4E3B\u7EBF\u7A0B\uFF1AWebView \u76D6\u5728 Unity \u7684 SurfaceView \u4E0A\uFF0C\u5B89\u5353\u628A surface \u6321\u6389/\u56DE\u6536\uFF0C\u6E32\u67D3\u7EBF\u7A0B\u5C31\u505C\u4F4F\u4E86\u3002\u6362 Dialog\u3001\u6362\u5750\u6807\u3001\u4E0D\u62A2\u7126\u70B9\u3001runInBackground \u90FD\u6539\u53D8\u4E0D\u4E86\u8FD9\u4E00\u70B9\uFF0C\u56E0\u4E3A\u53EA\u8981\u4E24\u8005\u753B\u9762\u91CD\u53E0\u5C31\u4F1A\u8FD9\u6837\u3002\u6240\u4EE5\u4E0D\u518D\u5185\u5D4C\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.98",
-          "file": "versions/1.28.0-alpha.98/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.98/MGCModpack.dll",
-          "sha256": "de529d622fa0c5ae4e62b7250062b9743c7c0bf2c99b452d3c019a5942ae269d",
-          "size": 478208,
-          "publishedAt": "2026-10-12T14:41:26Z",
-          "notes": "1.28.0-alpha.98\uFF1A\u89C6\u7A97\u56DE\u5230 decorView \u65B9\u6848\u3002Dialog \u662F\u72EC\u7ACB\u7A97\u53E3\uFF0C\u5750\u6807\u7A7A\u95F4\u548C Unity \u5BF9\u4E0D\u4E0A\uFF08\u5B89\u5353\u62A5 1920x1080\u3001\u622A\u56FE\u5374\u662F 1080x1920\uFF09\uFF0C\u6309 RectTransform \u7B97\u51FA\u7684\u6846\u843D\u5230\u5C4F\u5E55\u5916\uFF0C\u7528\u6237\u4EC0\u4E48\u90FD\u770B\u4E0D\u89C1\uFF1BdecorView \u548C Unity \u5171\u7528\u540C\u4E00\u4E2A\u6D3B\u52A8\u7A97\u53E3\u5750\u6807\u7A7A\u95F4\uFF0C\u7B2C\u4E00\u7248\u5C31\u662F\u5B83\u3001\u5B9E\u6D4B\u770B\u5F97\u89C1\u3002\u5F53\u5E74\u8BA9\u5B83\u5361\u6B7B\u7684\u81EA\u52A8\u9690\u85CF\u5FAA\u73AF\u5DF2\u5220\u9664\uFF0CShow \u4E5F\u52A0\u4E86\u5E42\u7B49\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.97",
-          "file": "versions/1.28.0-alpha.97/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.97/MGCModpack.dll",
-          "sha256": "6c3bbaa764e60470fc97f075d827043faba701768ef7767549ca6223aa9bcf36",
-          "size": 479744,
-          "publishedAt": "2026-10-12T14:31:02Z",
-          "notes": "1.28.0-alpha.97\uFF1A\u4FEE\u89C6\u7A97\u88AB\u6446\u5230\u5C4F\u5E55\u5916\u3002Unity \u7684 Screen.width/height \u5728\u8FD9\u53F0\u8BBE\u5907\u4E0A\u62A5 1920x1080\uFF08\u6A2A\uFF09\uFF0C\u800C\u771F\u5B9E\u663E\u793A\u662F 1080x1920\uFF08\u7AD6\uFF09\u2014\u2014 \u76F4\u63A5\u62FF Unity \u5C3A\u5BF8\u6446\u7A97\u53E3\uFF0C\u7B97\u51FA\u7684\u6846 x \u4ECE 633 \u5230 1861\uFF0C\u6574\u4E2A\u843D\u5728\u771F\u5B9E 1080 \u5BBD\u4E4B\u5916\uFF0C\u7528\u6237\u770B\u5230\u7684\u81EA\u7136\u662F\u4EC0\u4E48\u90FD\u6CA1\u6709\u3002\u73B0\u5728\u5148\u53D6\u5B89\u5353\u771F\u5B9E\u663E\u793A\u5C3A\u5BF8\uFF08Display.getSize\uFF09\uFF0C\u6309\u6BD4\u4F8B\u6362\u7B97\u5E76\u5BF9\u8C03\u957F\u77ED\u8F74\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.96",
-          "file": "versions/1.28.0-alpha.96/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.96/MGCModpack.dll",
-          "sha256": "f113d13d8f98a7e6722c7f835c27be368208417933b9268d06c5b6c8308c69fb",
-          "size": 479232,
-          "publishedAt": "2026-10-12T14:11:26Z",
-          "notes": "1.28.0-alpha.96\uFF1A\u627E\u5230\u5361\u6B7B\u7684\u771F\u5143\u51F6 \u2014\u2014 \u662F\u6211\u81EA\u5DF1\u7684\u81EA\u52A8\u9690\u85CF\u5728\u8BEF\u4F24\u3002\u771F\u673A\u65E5\u5FD7\u663E\u793A\u89C6\u7A97\u5F00\u7740\u65F6 Unity \u7A33\u5B9A\u8DD1 40~45 \u5E27\uFF08\u6700\u574F\u5E27 ~70ms\uFF09\uFF0CWebView \u672C\u8EAB\u5B8C\u5168\u6CA1\u95EE\u9898\uFF1B\u4F46\u81EA\u52A8\u9690\u85CF\u6BCF 0.6 \u79D2\u5224\u5B9A\u73A9\u5BB6\u79BB\u5F00\u4E86\uFF08\u5224\u65AD\u7684\u8282\u70B9\u662F\u539F\u59CB\u8282\u70B9\uFF0C\u800C\u5B9E\u9645\u663E\u793A\u7684\u662F MainMenu \u514B\u9686\u4F53\uFF09\uFF0C\u628A\u5B83\u62C6\u6389\uFF0CSelect \u53C8\u628A\u5B83\u5EFA\u56DE\u6765\uFF0C20 \u79D2\u5185\u5EFA\u4E86 5 \u6B21\u4EE5\u4E0A\uFF0C\u5C4F\u5E55\u4E00\u76F4\u9ED1\u95EA\u3002\u5DF2\u5220\u6389\u81EA\u52A8\u9690\u85CF\uFF08\u6539\u7531\u5207\u6E20\u9053\u65F6\u660E\u786E Hide\uFF09\uFF0C\u5E76\u7ED9 Show \u52A0\u5E42\u7B49\u5224\u65AD\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.95",
-          "file": "versions/1.28.0-alpha.95/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.95/MGCModpack.dll",
-          "sha256": "9d74a2198cbb522b6088f40ccf810f0627e534f1cf6007c23dd6a161f27717ee",
-          "size": 479232,
-          "publishedAt": "2026-10-12T13:58:10Z",
-          "notes": "1.28.0-alpha.95\uFF1A\u7ED9\u5361\u6B7B\u52A0\u53CC\u4FDD\u9669\u3002\u9664\u4E86\u4E0A\u4E00\u7248\u7684 FLAG_NOT_FOCUSABLE\uFF0C\u518D\u5728\u89C6\u7A97\u5F39\u51FA\u671F\u95F4\u4E34\u65F6\u6253\u5F00 Application.runInBackground\uFF08\u5173\u6389\u65F6\u8FD8\u539F\uFF09\u2014\u2014 \u5C31\u7B97\u6D3B\u52A8\u771F\u88AB onPause\uFF0CUnity \u4E5F\u7EE7\u7EED\u8DD1\u3002\u5B9E\u6D4B\u73B0\u8C61\u662F\u9875\u9762\u8F7D\u5165\u540E\u6240\u6709 Update() \u5F7B\u5E95\u505C\u6B62\u4E14\u6C38\u4E45\u4E0D\u6062\u590D\uFF0C\u8FD9\u4E24\u6761\u4E00\u8D77\u8986\u76D6\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.94",
-          "file": "versions/1.28.0-alpha.94/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.94/MGCModpack.dll",
-          "sha256": "20908be44436d8f5a0c4f91cdf7917c6942d0e90b9fe21b2fb73824bb65f7c8f",
-          "size": 478720,
-          "publishedAt": "2026-10-12T10:06:57Z",
-          "notes": "1.28.0-alpha.94\uFF1A\u627E\u5230\u5361\u6B7B\u7684\u771F\u6B63\u89E3\u91CA \u2014\u2014 Dialog \u4F1A\u62A2\u8D70\u7A97\u53E3\u7126\u70B9\uFF0C\u6D3B\u52A8\u8F6C onPause\uFF0C\u800C Unity \u9ED8\u8BA4\u4E0D\u5728\u540E\u53F0\u8FD0\u884C\uFF0C\u4E8E\u662F\u6240\u6709 Update() \u505C\u6B62\uFF08\u5B9E\u6D4B\uFF1A\u9875\u9762\u8F7D\u5165\u6210\u529F\u3001\u5FC3\u8DF3\u4E00\u6761\u90FD\u6CA1\u6709\u3001\u4E14\u6C38\u4E45\u4E0D\u6062\u590D\uFF0C\u5B8C\u5168\u543B\u5408\uFF09\u3002\u4FEE\u6CD5\uFF1A\u7ED9\u7A97\u53E3\u52A0 FLAG_NOT_FOCUSABLE \u4E0D\u62A2\u7126\u70B9\uFF1B\u987A\u5E26\u7528 WindowManager.LayoutParams \u8BBE width/height/x/y/gravity\uFF0C\u4E00\u6B21\u89E3\u51B3\u7CBE\u786E\u5B9A\u4F4D\uFF08\u4E4B\u524D setLayout \u62A5 (IIIII)V \u662F\u56E0\u4E3A Window \u6CA1\u6709 5 \u53C2\u6570\u91CD\u8F7D\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.93",
-          "file": "versions/1.28.0-alpha.93/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.93/MGCModpack.dll",
-          "sha256": "0cd8c0889024dd21b8017f2cc243acfcf214b01ce3ca48e83cf07662baa8dbec",
-          "size": 478720,
-          "publishedAt": "2026-10-12T10:04:25Z",
-          "notes": "1.28.0-alpha.93\uFF1A\u52A0\u770B\u95E8\u72D7\u3002\u89C6\u7A97\u628A\u6E38\u620F\u62D6\u5230\u8FDE\u7EED 4 \u79D2\u5E27\u65F6\u8D85\u8FC7 500ms \u5C31\u81EA\u52A8\u5173\u6389\u89C6\u7A97\u3001\u5E76\u6539\u7528\u7CFB\u7EDF\u6D4F\u89C8\u5668\u6253\u5F00\u6392\u884C\u699C\uFF0C\u540C\u65F6\u628A\u5361\u987F\u7A0B\u5EA6\u5199\u8FDB\u65E5\u5FD7\u3002\u7406\u7531\uFF1A\u8FD9\u53F0\u6D4B\u8BD5\u673A\u53EF\u7528\u5185\u5B58\u53EA\u5269\u51E0\u5341 MB\uFF0C\u800C WebView \u4F1A\u53E6\u8D77\u4E00\u4E2A\u6E32\u67D3\u8FDB\u7A0B\uFF1B\u5728\u6839\u56E0\u786E\u8BA4\u524D\u5148\u628A\u5FC5\u5361\u6B7B\u53D8\u6210\u5361\u4E00\u4E0B\u81EA\u5DF1\u8BA9\u5F00\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.92",
-          "file": "versions/1.28.0-alpha.92/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.92/MGCModpack.dll",
-          "sha256": "c6973ca22c9bc9ca39726966a297d7c599bb44281599ea6cd21652fd1f709a09",
-          "size": 478208,
-          "publishedAt": "2026-10-12T09:54:32Z",
-          "notes": "1.28.0-alpha.92\uFF1A\u8BCA\u65AD\u7248\u3002\u52A0 A/B \u5F00\u5173\uFF1Aranktest.flag \u5185\u5BB9\u542B blank \u5C31\u8F7D\u5165 about:blank \u7A7A\u767D\u9875\uFF0C\u7528\u6765\u533A\u5206\u662F\u7F51\u9875\u592A\u91CD\u628A\u673A\u5668\u5403\u5E72\u3001\u8FD8\u662F WebView \u7A97\u53E3\u672C\u8EAB\u6709\u95EE\u9898\u3002\u4E0A\u4E00\u7248\u5B9E\u6D4B\uFF1A\u9875\u9762\u8F7D\u5165\u6210\u529F\u540E\u5FC3\u8DF3\u5F7B\u5E95\u505C\u6B62\uFF0C\u5373 Unity \u4E3B\u7EBF\u7A0B\u88AB\u51BB\u4F4F\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.91",
-          "file": "versions/1.28.0-alpha.91/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.91/MGCModpack.dll",
-          "sha256": "0d19c1196bbc74da44ceb12f32cabe1d9bb26bde1aafb3a5b4b3181ef4834ea4",
-          "size": 478208,
-          "publishedAt": "2026-10-12T09:47:18Z",
-          "notes": "1.28.0-alpha.91\uFF1A\u4FEE\u81EA\u68C0\u5F00\u5173\u4E0D\u751F\u6548\u3002\u6839\u56E0\uFF1ACommunityManager \u6302\u5728\u793E\u533A\u9762\u677F\u4E0A\uFF0C\u73A9\u5BB6\u4E0D\u5728\u90A3\u4E2A\u9875\u9762\u65F6\u5B83\u662F inactive \u7684\uFF0CUpdate() \u6839\u672C\u4E0D\u6267\u884C \u2014\u2014 \u5B9E\u6D4B flag \u653E\u4E0A\u53BB\u542F\u52A8 8 \u79D2\u540E\u6587\u4EF6\u8FD8\u5728\u3002\u73B0\u5728\u81EA\u68C0\u8BFB flag \u632A\u8FDB Initialize()\uFF0C\u5FC3\u8DF3\u632A\u5230\u5E38\u9A7B\u7684 RankHeartbeat \u7EC4\u4EF6\uFF08DontDestroyOnLoad\uFF09\uFF0C\u9762\u677F\u5F00\u5173\u90FD\u4E0D\u5F71\u54CD\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.90",
-          "file": "versions/1.28.0-alpha.90/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.90/MGCModpack.dll",
-          "sha256": "17fb6047b60767350488f33656c6cef19a2720681116ae5e37d60ce0da75594b",
-          "size": 477696,
-          "publishedAt": "2026-10-12T09:35:24Z",
-          "notes": "1.28.0-alpha.90\uFF1A\u4FEE\u6B63 alpha.89\uFF08\u90A3\u4E2A\u7248\u672C\u6784\u5EFA\u5176\u5B9E\u5931\u8D25\u4E86\u3001\u53D1\u7684\u662F\u65E7\u7684 DLL\uFF09\u3002\u672C\u7248\u771F\u6B63\u5305\u542B\uFF1A\u2460 Dialog \u6539\u5355\u53C2\u6784\u9020\uFF08int \u4E3B\u9898\u53C2\u6570\u4F1A\u8BA9 JNI \u6784\u9020\u56DE\u843D\u6210\u65E0\u7C7B\u578B\u5BF9\u8C61\uFF0C\u5BFC\u81F4 getWindow \u62FF\u5230 java.lang.Object\uFF09\uFF1B\u2461 \u52A0\u56DE\u7CBE\u786E\u5B9A\u4F4D\uFF0C\u5931\u8D25\u81EA\u52A8\u9000\u56DE\u5C45\u4E2D\uFF1B\u2462 \u53BB\u6389\u90A3\u4E2A\u5728\u672C Unity \u7248\u672C\u91CC\u7F16\u8BD1\u4E0D\u8FC7\u7684 GetClass \u8BCA\u65AD\u884C\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.89",
-          "file": "versions/1.28.0-alpha.89/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.89/MGCModpack.dll",
-          "sha256": "b4e20c274983534f38f365ba4809ff80dee519336f36ab114edeb3e385ab56dc",
-          "size": 477184,
-          "publishedAt": "2026-10-12T09:34:46Z",
-          "notes": "1.28.0-alpha.89\uFF1A\u2460 Dialog \u6539\u5355\u53C2\u6784\u9020\uFF08\u90A3\u4E2A int \u4E3B\u9898\u53C2\u6570\u8BA9 JNI \u6784\u9020\u56DE\u843D\u6210\u65E0\u7C7B\u578B\u5BF9\u8C61\uFF0C\u624D\u5BFC\u81F4 getWindow \u62FF\u5230 java.lang.Object\u3001setLayout \u627E\u4E0D\u5230\u65B9\u6CD5\uFF09\uFF1B\u2461 \u52A0\u56DE\u7CBE\u786E\u5B9A\u4F4D \u2014\u2014 \u9762\u677F\u5728\u54EA\u7A97\u53E3\u5C31\u6446\u54EA\uFF0C\u5931\u8D25\u81EA\u52A8\u9000\u56DE\u5C45\u4E2D\uFF1B\u2462 \u6253\u5370\u7A97\u53E3\u5BF9\u8C61\u7C7B\u540D\uFF0C\u4E0B\u6B21\u4E00\u773C\u770B\u6E05\u7C7B\u578B\u5BF9\u4E0D\u5BF9\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.88",
-          "file": "versions/1.28.0-alpha.88/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.88/MGCModpack.dll",
-          "sha256": "b4e20c274983534f38f365ba4809ff80dee519336f36ab114edeb3e385ab56dc",
-          "size": 477184,
-          "publishedAt": "2026-10-12T09:33:57Z",
-          "notes": "1.28.0-alpha.88\uFF1A\u4FEE\u7A97\u53E3\u5BF9\u8C61\u4E22\u7C7B\u578B\u7684\u771F\u56E0 \u2014\u2014 Dialog \u4E4B\u524D\u7528 (Context,int) \u53CC\u53C2\u6784\u9020\uFF0C\u90A3\u4E2A int \u4E3B\u9898\u53C2\u6570\u8BA9 JNI \u6784\u9020\u56DE\u843D\u6210\u65E0\u7C7B\u578B\u5BF9\u8C61\uFF0C\u4E8E\u662F getWindow \u62FF\u5230 java.lang.Object\u3001setLayout \u627E\u4E0D\u5230\u65B9\u6CD5\u3002\u6539\u7528\u5355\u53C2\u6784\u9020\uFF0C\u5E76\u6253\u5370\u7A97\u53E3\u7C7B\u540D\uFF1B\u62FF\u5230\u771F Window \u540E\u5C31\u80FD\u7CBE\u786E\u5B9A\u4F4D\u5230\u9762\u677F\u77E9\u5F62\uFF08\u62FF\u4E0D\u5230\u5C31\u9000\u56DE\u5C45\u4E2D\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.87",
-          "file": "versions/1.28.0-alpha.87/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.87/MGCModpack.dll",
-          "sha256": "b4e20c274983534f38f365ba4809ff80dee519336f36ab114edeb3e385ab56dc",
-          "size": 477184,
-          "publishedAt": "2026-10-12T09:33:12Z",
-          "notes": "1.28.0-alpha.87\uFF1A\u53BB\u6389\u4E0A\u4E00\u7248\u591A\u4F59\u7684\u5185\u8FB9\u8DDD \u2014\u2014 \u5DF2\u7ECF\u7528\u56FA\u5B9A\u5C3A\u5BF8\u628A\u7A97\u53E3\u5B9A\u6B7B\u4E86\uFF0C\u518D\u52A0\u5185\u8FB9\u8DDD\u4F1A\u53CC\u91CD\u7F29\u5C0F\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.86",
-          "file": "versions/1.28.0-alpha.86/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.86/MGCModpack.dll",
-          "sha256": "14c344bd27caceb59f4751fe4fba5ee1421969c107b4a3efbff6523ac948662f",
-          "size": 477696,
-          "publishedAt": "2026-10-12T09:32:42Z",
-          "notes": "1.28.0-alpha.86\uFF1A\u7ED9\u6392\u884C\u699C\u7A97\u53E3\u5B9A\u6B7B\u5C3A\u5BF8\u3002Dialog \u7A97\u53E3\u9ED8\u8BA4 wrap_content\uFF0C\u800C\u5185\u5BB9\u9ED8\u8BA4 MATCH_PARENT\uFF0C\u4E8E\u662F\u7A97\u53E3\u94FA\u6EE1\u5168\u5C4F \u2014\u2014 \u7167\u6837\u906E\u6321 Unity \u7684 SurfaceView\uFF0C\u539F\u6765\u90A3\u4E2A\u5361\u6B7B\u5F88\u53EF\u80FD\u6839\u672C\u6CA1\u89E3\u51B3\u3002\u73B0\u5728\u6309\u9762\u677F\u77E9\u5F62\u7ED9 WebView \u56FA\u5B9A w\u00D7h\uFF0C\u7A97\u53E3\u53EA\u5360\u90A3\u4E00\u5C0F\u5757\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.85",
-          "file": "versions/1.28.0-alpha.85/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.85/MGCModpack.dll",
-          "sha256": "933dfac0547e743dc393b458c58b4927ff2346b573c7fb7626f1334c5c9dc231",
-          "size": 477184,
-          "publishedAt": "2026-10-12T09:15:54Z",
-          "notes": "1.28.0-alpha.85\uFF1A\u4FEE\u6392\u884C\u699C\u9ED1\u5C4F\u3002\u4E0A\u4E00\u7248 loadUrl \u6392\u5728\u6700\u540E\uFF0C\u800C setLayout \u4F1A\u629B\u5F02\u5E38\uFF08getWindow \u8FD4\u56DE\u7684\u5BF9\u8C61\u4E22\u4E86\u7C7B\u578B\uFF09\uFF0C\u4E8E\u662F\u90A3\u53E5 loadUrl \u6839\u672C\u6267\u884C\u4E0D\u5230 \u2014\u2014 \u7A97\u53E3\u662F\u9ED1\u7684\u3001\u9875\u9762\u4ECE\u6CA1\u8F7D\u5165\u8FC7\u3002\u73B0\u5728\uFF1A\u2460 loadUrl \u63D0\u5230 show \u4E4B\u540E\u7B2C\u4E00\u4EF6\u4E8B\uFF0C\u6392\u7248\u518D\u5931\u8D25\u4E5F\u4E0D\u5F71\u54CD\u9875\u9762\u8F7D\u5165\uFF1B\u2461 \u5F7B\u5E95\u4E0D\u7528 getWindow\uFF0C\u6539\u7528 WebView \u81EA\u8EAB\u5185\u8FB9\u8DDD\u628A\u5185\u5BB9\u7F29\u8FDB\u5230\u9762\u677F\u77E9\u5F62\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.84",
-          "file": "versions/1.28.0-alpha.84/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.84/MGCModpack.dll",
-          "sha256": "caee0324eceaf2bbc80cfc4a8e15df391b0558ce3c7e47fbe973ac46f9b12955",
-          "size": 477184,
-          "publishedAt": "2026-10-12T08:45:39Z",
-          "notes": "1.28.0-alpha.84\uFF1A\u4FEE\u72EC\u7ACB\u7A97\u53E3\u5EFA\u4E0D\u8D77\u6765\u7684\u771F\u56E0 \u2014\u2014 requestWindowFeature \u8FD4\u56DE boolean\uFF0C\u7B2C\u4E00\u7248\u6309 void \u8C03\uFF0CJNI \u62A5 no non-static method signature=(I)V\u3002\u6539\u7528 Call\u003Cbool\u003E\uFF0C\u5E76\u7ED9\u5EFA\u7A97\u7684\u6BCF\u4E00\u6B65\u5355\u72EC\u6253\u65E5\u5FD7\uFF08\u4E0B\u6B21\u518D\u9519\u80FD\u76F4\u63A5\u5B9A\u4F4D\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.83",
-          "file": "versions/1.28.0-alpha.83/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.83/MGCModpack.dll",
-          "sha256": "06df2a4491ded15271d2e3406b8d956eb52a9a4701c53acbaaa5bb50ea9aec03",
-          "size": 476672,
-          "publishedAt": "2026-10-12T08:41:09Z",
-          "notes": "1.28.0-alpha.83\uFF1A\u52A0\u4E00\u6B21\u6027\u81EA\u68C0\u5F00\u5173 ranktest.flag\uFF08\u653E\u6570\u636E\u76EE\u5F55\u5373\u81EA\u52A8\u6253\u5F00\u6392\u884C\u699C\u4E14\u4E0D\u81EA\u52A8\u9690\u85CF\uFF09\uFF0C\u7528\u6765\u5728\u8BBE\u5907\u4E0A\u91CF WebView \u5230\u5E95\u51BB\u4E0D\u51BB Unity\u3002\u5FC3\u8DF3\u65E5\u5FD7\u6BCF\u79D2\u62A5\u4E00\u6B21\u5E27\u6570\uFF0CUnity \u88AB\u51BB\u4F4F\u65F6\u8FD9\u4E9B\u884C\u4F1A\u76F4\u63A5\u505C\u6B62\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.82",
-          "file": "versions/1.28.0-alpha.82/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.82/MGCModpack.dll",
-          "sha256": "5fa2c851c6bb859dca0473dc8366bdceb3a385385da030459ac80b2176179633",
-          "size": 476160,
-          "publishedAt": "2026-10-12T08:38:03Z",
-          "notes": "1.28.0-alpha.82\uFF1A\u6392\u884C\u699C\u89C6\u7A97\u6539\u6210**\u72EC\u7ACB\u7A97\u53E3**\u3002\u4E0A\u4E00\u7248\u628A WebView \u52A0\u5230 decorView \u4E0A \u2014\u2014 \u4E5F\u5C31\u662F\u548C Unity \u7684 SurfaceView \u6324\u5728\u540C\u4E00\u4E2A\u7A97\u53E3\u91CC\uFF0C\u4E24\u4E2A\u89C6\u56FE\u91CD\u53E0\u65F6 Android \u4F1A\u53BB\u52A8 Unity \u90A3\u4E2A surface\uFF0C\u4E8E\u662F\u6E38\u620F\u51BB\u4F4F\u3001\u800C WebView \u7167\u5E38\u8DD1\uFF08\u548C\u7528\u6237\u63CF\u8FF0\u7684\u73B0\u8C61\u5B8C\u5168\u4E00\u81F4\uFF09\u3002\u73B0\u5728 WebView \u653E\u8FDB\u81EA\u5DF1\u7684 Dialog \u7A97\u53E3\uFF0C\u5B8C\u5168\u4E0D\u78B0 Unity \u7684\u89C6\u56FE\u6811\u3002\u53E6\u5916\u52A0\u4E86\u5FC3\u8DF3\u65E5\u5FD7\uFF1A\u89C6\u7A97\u5F00\u7740\u65F6\u6BCF\u79D2\u62A5\u4E00\u6B21\u5E27\uFF0CUnity \u771F\u88AB\u51BB\u4F4F\u65F6\u8FD9\u4E9B\u884C\u4F1A\u76F4\u63A5\u505C\u6B62\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.81",
-          "file": "versions/1.28.0-alpha.81/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.81/MGCModpack.dll",
-          "sha256": "9d40fa371fde90355b9db611de3c9cfc15b595c0b110dd19f24860b20f40fe00",
-          "size": 477184,
-          "publishedAt": "2026-10-12T08:28:17Z",
-          "notes": "1.28.0-alpha.81\uFF1A\u2460 \u4FEE\u6392\u884C\u699C\u89C6\u7A97\u62D6\u6B7B\u6E38\u620F \u2014\u2014 \u628A WebView \u8BBE\u6210\u8F6F\u4EF6\u5C42\uFF08LAYER_TYPE_SOFTWARE\uFF09\uFF0C\u5B83\u81EA\u5DF1\u4E0D\u518D\u8D70 GPU\uFF0C\u5C31\u4E0D\u4F1A\u548C Unity \u62A2\u5408\u6210\u5668\u3002\u7528\u6237\u63CF\u8FF0\u7684\u73B0\u8C61\uFF08\u5F00\u4E00\u4F1A Unity \u5361\u6B7B\u3001webview \u5374\u7167\u5E38\uFF09\u6B63\u662F\u5178\u578B\u7684 GL/Surface \u4E89\u7528\u3002\u2461 \u5B98\u65B9\u5305\u7684\u8BE6\u60C5\u6539\u7528\u538B\u7F29\u5305\u91CC\u7684\u63CF\u8FF0\uFF08\u5730\u56FE\u8BFB manifest.json\u3001mod \u8BFB\u52A0\u5BC6\u6E05\u5355\u91CC\u7684 description\uFF09\uFF0C\u8BFB\u4E0D\u5230\u624D\u9000\u56DE\u7D22\u5F15\u91CC\u90A3\u53E5\u77ED\u7684\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.80",
-          "file": "versions/1.28.0-alpha.80/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.80/MGCModpack.dll",
-          "sha256": "ea35bfa963c87d092b358f8ed2c4d284b87a46e51f81725cec459dfe4eaecb3b",
-          "size": 476672,
-          "publishedAt": "2026-10-12T08:20:57Z",
-          "notes": "1.28.0-alpha.80\uFF1A\u6392\u884C\u699C\u89C6\u7A97\u52A0\u9632\u6296\u3002\u5B9E\u6D4B\u5207\u9875\u65F6\u6709\u4E00\u4E24\u5E27\u9762\u677F\u4E0D\u53EF\u89C1\uFF0C\u7B2C\u4E00\u7248\u4E00\u5E27\u4E0D\u53EF\u89C1\u5C31\u6536\uFF0C\u4E8E\u662F\u89C6\u7A97\u5EFA\u5B8C 173 \u6BEB\u79D2\u5C31\u88AB\u9500\u6BC1 \u2014\u2014 \u73A9\u5BB6\u770B\u5230\u7684\u662F\u70B9\u4E86\u4EC0\u4E48\u90FD\u6CA1\u6709\u3002\u73B0\u5728\u8981\u6C42\u8FDE\u7EED 0.6 \u79D2\u770B\u4E0D\u89C1\u624D\u6536\u3002\u53E6\u5916\u76F8\u673A\u95EE\u5BF9\u4E4B\u540E\u4F4D\u7F6E\u7EC8\u4E8E\u662F\u5BF9\u7684\u4E86\uFF08\u5B9E\u6D4B\u7B97\u51FA \u5DE6633 \u4E0A175 \u53F359 \u4E0B50\uFF0C\u53EF\u7528 1228x855\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.79",
-          "file": "versions/1.28.0-alpha.79/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.79/MGCModpack.dll",
-          "sha256": "eb5e642c7e8f7b31846d2d5dd0f7ed124d9a208e219f77f6749b874670023a29",
-          "size": 476672,
-          "publishedAt": "2026-10-12T08:16:36Z",
-          "notes": "1.28.0-alpha.79\uFF1A\u53BB\u6389\u8D44\u6E90\u9875\u6700\u4E0A\u65B9\u90A3\u884C\u7070\u8272\u5C0F\u5B57 \u2014\u2014 \u5B83\u6765\u81EA netdisk.json \u91CC\u7684 note \u5B57\u6BB5\uFF0C\u4F1A\u88AB\u6253\u5728\u6574\u4E2A\u5217\u8868\u6700\u9876\u4E0A\u3002\u6E05\u5355\u7528\u9014\u5DF2\u7ECF\u5199\u5728\u6BCF\u884C\u8BE6\u60C5\u91CC\uFF0C\u4E0D\u9700\u8981\u518D\u89E3\u91CA\u4E00\u904D\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.78",
-          "file": "versions/1.28.0-alpha.78/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.78/MGCModpack.dll",
-          "sha256": "cce587034410bef489714ab02b3ce8fec3fff5a5eb41dd1fef6aa3ad5622b115",
-          "size": 476672,
-          "publishedAt": "2026-10-12T08:12:29Z",
-          "notes": "1.28.0-alpha.78\uFF1A\u4FEE\u300C\u5730\u56FE\u5305\u6CA1\u6709\u300D\u7684\u771F\u6B63\u539F\u56E0 \u2014\u2014 \u8D44\u6E90\u9875\u6E32\u67D3\u65F6\u6309 kind \u8FC7\u6EE4\uFF0C\u4F20\u7684\u662F mod\uFF0C\u800C\u5730\u56FE\u884C\u7684 kind \u662F map\uFF0C\u4E8E\u662F\u5730\u56FE\u884C\u88AB\u8FC7\u6EE4\u5668\u5403\u6389\u4E86\u3002\u73B0\u5728 kind \u4E3A\u7A7A\u8868\u793A\u5168\u90FD\u8981\uFF0C\u8D44\u6E90\u9875\u4F20 null\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.77",
-          "file": "versions/1.28.0-alpha.77/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.77/MGCModpack.dll",
-          "sha256": "18da3e560550bf1e501ed77534465eefc5e2ca0e783c6466fe13e98e1434c6a9",
-          "size": 476672,
-          "publishedAt": "2026-10-12T08:11:30Z",
-          "notes": "1.28.0-alpha.77\uFF1A\u6309\u7528\u6237\u66F4\u6B63\uFF0C\u4E0A\u4E00\u7248\u5220\u8FC7\u5934\u4E86\u3002\u2460 \u6A21\u7EC4\u9875\u8FD8\u539F\u300CMod \u7BA1\u7406\u300D\u548C\u300C\u5BC6\u94A5\u7BA1\u7406\u300D\u4E24\u4E2A\u952E\uFF0C\u53EA\u5220\u6389\u300CMod \u4E0B\u8F7D\u300D\u90A3\u4E00\u4E2A\uFF1B\u2461 \u5730\u56FE\u9875\u7684\u4E91\u7AEF\u884C\u4E5F\u8FD8\u539F\uFF08\u8BA9\u73A9\u5BB6\u77E5\u9053\u6709\u4EC0\u4E48\u5305\uFF09\uFF0C\u4F46\u70B9\u5B83\u4E0D\u518D\u4E0B\u8F7D\u3001\u6539\u4E3A\u5728\u884C\u6587\u5B57\u91CC\u5199\u660E\u5230\u300C\u793E\u533A/\u8D44\u6E90\u300D\u9875\u4E0B\u8F7D\uFF1B\u2462 \u53BB\u6389\u5730\u56FE\u9875\u90A3\u53E5\u7070\u8272\u5C0F\u5B57\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.76",
-          "file": "versions/1.28.0-alpha.76/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.76/MGCModpack.dll",
-          "sha256": "acd3e0a1f8639a36d9001d5e4c20f795aa6751c139c6c053211b27cb90fb009b",
-          "size": 477184,
-          "publishedAt": "2026-10-12T08:05:21Z",
-          "notes": "1.28.0-alpha.76\uFF1A\u6309\u7528\u6237\u8981\u6C42\u91CD\u6392\u8D44\u6E90\u9875 \u2014\u2014 \u4ECE\u4E0A\u5230\u4E0B\uFF1A\u7F51\u76D8\u94FE\u63A5 \u2192 \u5B98\u65B9 mod/map \u2192 \u793E\u533A mod/map\u3002\u53E6\u5916\u9876\u90E8\u4E0D\u518D\u663E\u793A\u4EFB\u4F55\u72B6\u6001\u6587\u5B57\uFF08\u539F\u6765\u4F1A\u9876\u670D\u52A1\u5668\u8FDE\u63A5\u5931\u8D25\u3001\u6216\u8FD8\u6CA1\u62FF\u5230\u670D\u52A1\u5668\u5730\u5740\u4E4B\u7C7B\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.75",
-          "file": "versions/1.28.0-alpha.75/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.75/MGCModpack.dll",
-          "sha256": "062cf1028ee88723ad6359372ca87eec3d451965318830646eae63db64044a7f",
-          "size": 477184,
-          "publishedAt": "2026-10-12T07:59:09Z",
-          "notes": "1.28.0-alpha.75\uFF1A\u4FEE\u8D44\u6E90\u9875\u7684\u6587\u5B57\u663E\u793A\u3002\u2460 \u884C\u91CC\u4E0D\u518D\u76F4\u63A5\u585E\u7D22\u5F15\u7684\u6539\u52A8\u8BF4\u660E\uFF08\u90A3\u4F1A\u53D8\u6210\u4E00\u5899\u5C0F\u5B57\uFF09\uFF0C\u53EA\u622A\u51FA\u4E00\u53E5\u4EBA\u8BDD\uFF0C\u5206\u7C7B\u5199\u8FDB\u8BE6\u60C5\u5F00\u5934\uFF1B\u2461 \u53BB\u6389\u5360\u4E00\u884C\u7684\u7070\u8272\u5206\u7C7B\u5C0F\u6807\u9898\uFF1B\u2462 \u8865\u56DE\u88AB\u8BEF\u5220\u7684\u7F51\u76D8\u6E05\u5355\u8C03\u7528\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.74",
-          "file": "versions/1.28.0-alpha.74/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.74/MGCModpack.dll",
-          "sha256": "75c4255431d4b7aa664d3b7580a2c4d94c00e8bdb81b0a18b42a6f2f7fbc6965",
-          "size": 477184,
-          "publishedAt": "2026-10-12T07:54:21Z",
-          "notes": "1.28.0-alpha.74\uFF1A\u7ED9\u8D44\u6E90\u9875\u52A0\u4E00\u6761\u6E32\u67D3\u6D41\u6C34\u65E5\u5FD7\uFF08\u6E32\u67D3\u4E86\u51E0\u884C\u3001mod/map \u5404\u51E0\u884C\u3001\u7F51\u76D8\u51E0\u6761\uFF09\u3002\u81EA\u68C0\u662F\u542F\u52A8\u77AC\u95F4\u7684\u5FEB\u7167\uFF0C\u5730\u56FE\u6E05\u5355\u662F\u540E\u53F0\u8BFB\u7684\uFF0C\u4E24\u4E2A\u65F6\u523B\u7684\u6570\u5B57\u672C\u6765\u5C31\u4E0D\u4E00\u6837 \u2014\u2014 \u9700\u8981\u4E00\u884C\u6743\u5A01\u6570\u5B57\u6765\u533A\u5206\u5230\u5E95\u662F\u62FF\u4E0D\u5230\u6570\u636E\u8FD8\u662F\u6CA1\u6E32\u67D3\u51FA\u6765\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.73",
-          "file": "versions/1.28.0-alpha.73/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.73/MGCModpack.dll",
-          "sha256": "3fd9315b8cc39ea56f993b996e656ec25619e3a6b5798aa1f6e624ec01989764",
-          "size": 476672,
-          "publishedAt": "2026-10-12T07:48:06Z",
-          "notes": "1.28.0-alpha.73\uFF1A\u2460 \u6392\u884C\u699C\u89C6\u7A97\u7684\u4F4D\u7F6E\u6362\u7B97\u6539\u6210\u95EE\u753B\u5E03\u8981\u76F8\u673A\uFF08\u539F\u6765\u5199\u6B7B null\uFF0C\u53EA\u5BF9 Overlay \u753B\u5E03\u6210\u7ACB\uFF0C\u5B9E\u6D4B\u7B97\u51FA\u6765\u6574\u4E2A\u6B6A\u5230\u5C4F\u5E55\u5916\uFF09\uFF1B\u2461 \u79BB\u5F00\u793E\u533A\u9875\u65F6\u81EA\u52A8\u6536\u6389\u89C6\u7A97 \u2014\u2014 \u5B83\u6302\u5728\u5B89\u5353\u89C6\u56FE\u6811\u4E0A\u3001\u4E0D\u5728\u9762\u677F\u91CC\uFF0C\u6240\u4EE5\u9762\u677F\u88AB\u9690\u85CF\u5B83\u4E0D\u4F1A\u6D88\u5931\uFF1B\u2462 \u65E7 mod/map \u9875\u4E0D\u518D\u627F\u62C5\u4E91\u7AEF\u4E0B\u8F7D\uFF0C\u53EA\u7BA1\u672C\u5730\u6587\u4EF6\uFF08\u4E91\u7AEF\u5165\u53E3\u6536\u5F52\u793E\u533A/\u8D44\u6E90\u9875\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.72",
-          "file": "versions/1.28.0-alpha.72/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.72/MGCModpack.dll",
-          "sha256": "360a7f116b18a790eb7d965888f8ec1f30c180dd6a7d6efa025dcbc14175e65a",
-          "size": 476160,
-          "publishedAt": "2026-10-12T07:45:46Z",
-          "notes": "1.28.0-alpha.72\uFF1A\u2460 \u7F51\u76D8\u94FE\u63A5\u6539\u7528\u548C mod/map \u540C\u4E00\u5957 Example \u6A21\u677F\uFF0C\u53F3\u4FA7\u6309\u952E\u6539\u6210\u300C\u8DF3\u8F6C\u300D\uFF0C\u6309\u4E0B\u53BB\u7528\u624B\u673A\u6D4F\u89C8\u5668\u6253\u5F00\uFF1B\u2461 \u79BB\u5F00\u6392\u884C\u699C\u65F6\u628A\u7F51\u9875\u89C6\u7A97\u5F7B\u5E95\u9500\u6BC1\uFF08\u539F\u6765\u53EA\u662F\u9690\u85CF\uFF0C\u9690\u85CF\u7684 WebView \u8FD8\u5360\u7740\u9875\u9762\u548C JS \u5806\uFF0C\u8FD9\u53F0\u6D4B\u8BD5\u673A\u5185\u5B58\u672C\u6765\u5C31\u7D27\uFF0C\u7528\u6237\u53CD\u9988\u8FD0\u884C\u4E00\u4F1A\u5361\u6B7B\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.71",
-          "file": "versions/1.28.0-alpha.71/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.71/MGCModpack.dll",
-          "sha256": "d1c3d30b3a1b34bf67a3a94ea86b74652b7cd85fd7f19ede11c8421d9b741d73",
-          "size": 475136,
-          "publishedAt": "2026-10-12T07:42:03Z",
-          "notes": "1.28.0-alpha.71\uFF1A\u52A0\u8BCA\u65AD\u3002\u2460 \u6392\u884C\u699C\u89C6\u7A97\u628A\u7B97\u51FA\u6765\u7684\u663E\u793A\u533A\u57DF\u6253\u8FDB\u65E5\u5FD7\uFF0C\u5E76\u52A0\u4E86\u5B89\u5168\u533A\u57DF\u515C\u5E95\uFF08\u7B97\u9519\u65F6\u4E0D\u4F1A\u6574\u5757\u6D88\u5931\uFF09\uFF1B\u2461 \u81EA\u68C0\u989D\u5916\u62A5\u51FA\u5730\u56FE\u7D22\u5F15\u672C\u8EAB\u6709\u51E0\u4E2A\u5305\uFF0C\u7528\u6765\u533A\u5206\u5230\u5E95\u662F\u62FF\u4E0D\u5230\u6570\u636E\u8FD8\u662F\u6CA1\u6E32\u67D3\u51FA\u6765\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.70",
-          "file": "versions/1.28.0-alpha.70/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.70/MGCModpack.dll",
-          "sha256": "7c1adb67bad5bf361ebf93c3353998c8737b44e1ba376c2a02485f3707002daa",
-          "size": 474112,
-          "publishedAt": "2026-10-12T07:37:09Z",
-          "notes": "1.28.0-alpha.70\uFF1A\u8D44\u6E90\u9875 = \u7F51\u76D8\u5907\u7528\u6E05\u5355\uFF08\u653E\u6700\u524D\u9762\uFF09\u002B \u5B98\u65B9 mod/map \u5217\u8868\u3002\u4EE5\u524D\u7F51\u76D8\u6E05\u5355\u53EA\u5728\u670D\u52A1\u5668\u8FDE\u4E0D\u4E0A\u7684\u62A5\u9519\u9875\u91CC\u624D\u51FA\u73B0\uFF0C\u6B63\u5E38\u8FDB\u8D44\u6E90\u9875\u770B\u4E0D\u5230 \u2014\u2014 \u53EF\u5B83\u672C\u8EAB\u5C31\u5728 GitHub Pages \u4E0A\uFF0C\u548C\u670D\u52A1\u5668\u6CA1\u5173\u7CFB\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.69",
-          "file": "versions/1.28.0-alpha.69/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.69/MGCModpack.dll",
-          "sha256": "8063575e8bbf03bb872bffbf392b1a5c8e5db53fc583569beeb76219f271e471",
-          "size": 474112,
-          "publishedAt": "2026-10-12T07:34:04Z",
-          "notes": "1.28.0-alpha.69\uFF1A\u2460 \u8865\u4E0A\u5730\u56FE\u6E05\u5355\u7684 Kick \u2014\u2014 \u4E4B\u524D\u8D44\u6E90\u9875\u53EA Kick \u4E86\u793E\u533A\u548C\u7F51\u76D8\uFF0C\u6F0F\u4E86\u5730\u56FE\uFF0C\u5BFC\u81F4\u5B98\u65B9\u5730\u56FE\u90A3\u4E00\u884C\u6C38\u8FDC\u662F\u7A7A\u7684\uFF08\u65E5\u5FD7\u91CC mod 1 / map 0\uFF09\uFF1B\u2461 \u5730\u56FE\u7F29\u7565\u56FE\uFF1A\u7528\u5217\u8868\u6A21\u677F\u91CC\u7684 DetailsContent/Image\uFF0C\u5F02\u6B65\u52A0\u8F7D\u3001\u8BFB\u5230\u4E86\u624D\u663E\u793A\uFF0C\u4E0D\u963B\u585E\u4E3B\u7EBF\u7A0B\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.68",
-          "file": "versions/1.28.0-alpha.68/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.68/MGCModpack.dll",
-          "sha256": "72fb6731f3b92fededd74c91cd991e1eac9a34d862e5bf7071c280a65edd3d5b",
-          "size": 472576,
-          "publishedAt": "2026-10-12T07:24:45Z",
-          "notes": "1.28.0-alpha.68\uFF1A\u2460 \u6392\u884C\u699C\u7F51\u9875\u89C6\u7A97\u4E0D\u518D\u94FA\u6EE1\u5168\u5C4F\uFF0C\u53EA\u5360\u300C\u793E\u533A/\u8D44\u6E90\u300D\u5185\u5BB9\u533A\uFF0C\u5E76\u4E14\u53EF\u6309\u8FD4\u56DE\u952E\u9000\u51FA\uFF08\u4FEE alpha.67 \u7684\u0022\u8FDB\u53BB\u51FA\u4E0D\u6765\u0022\uFF09\uFF1B\u2461 \u5B98\u65B9 mod/map \u7684\u4E0B\u8F7D\u5730\u5740\u6539\u56DE\u7D22\u5F15\u7ED9\u7684 Pages \u5730\u5740 \u2014\u2014 \u771F\u673A\u65E5\u5FD7\u663E\u793A\u5B98\u65B9\u90A3\u4E24\u884C\u6CA1\u5E26 url\uFF0C\u5BFC\u81F4\u5019\u9009\u6E90\u9000\u56DE\u670D\u52A1\u5668\u6839\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.66",
-          "file": "versions/1.28.0-alpha.66/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.66/MGCModpack.dll",
-          "sha256": "dc35b01346bc3a971f0cfaae6e9ec6dc07c776d09a07ab7cfefc93123f7d6c65",
-          "size": 471040,
-          "publishedAt": "2026-10-12T06:29:31Z",
-          "notes": "1.28.0-alpha.66\uFF1A\u6392\u884C\u699C\u5185\u5D4C\u7F51\u9875\u6539\u6210\u4E09\u5C42\u2014\u2014\u2460\u4F18\u5148\u7528 APK \u91CC\u7684 unity-webview \u63D2\u4EF6\uFF08\u53CD\u5C04\u8C03\u7528\uFF0C\u63D2\u4EF6\u5728\u5C31\u7528\uFF09\uFF1B\u2461\u6CA1\u6709\u63D2\u4EF6\u5C31\u81EA\u5EFA JNI WebView\uFF1B\u2462\u90FD\u4E0D\u884C\u9000\u7CFB\u7EDF\u6D4F\u89C8\u5668\u3002\u53E6\u4FEE\u4E00\u4E2A\u9690\u85CF\u95EE\u9898\uFF1A\u5DE5\u7A0B\u4E00\u76F4\u6CA1\u5B9A\u4E49 UNITY_ANDROID\uFF0C\u5BFC\u81F4\u6240\u6709\u5B89\u5353\u5206\u652F\uFF08\u5305\u62EC\u81EA\u5EFA\u89C6\u7A97\u90A3\u6BB5\uFF09\u4ECE\u6765\u6CA1\u751F\u6548\u8FC7\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.65",
-          "file": "versions/1.28.0-alpha.65/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.65/MGCModpack.dll",
-          "sha256": "af9ec38120a06ce83af241b2ffaee69a698b55aca693cb8a5cfbba70883418bd",
-          "size": 467968,
-          "publishedAt": "2026-10-12T06:02:08Z",
-          "notes": "1.28.0-alpha.65\uFF1A\u6309\u65B0\u65B9\u9488\u6536\u5C3E\u3002\u2460 \u5BA2\u6237\u7AEF\u53EA\u8D70 GitHub Pages \u2014\u2014 \u4E0B\u8F7D\u5019\u9009\u6E90\u91CC\u670D\u52A1\u5668\u90A3\u9879\u53BB\u6389\u4E86\uFF08\u7D22\u5F15\u91CC\u7684 url \u672C\u6765\u5C31\u662F Pages \u5730\u5740\uFF0C\u4EE5\u524D\u90A3\u4E2A\u0022\u670D\u52A1\u5668\u4F18\u5148\u0022\u53EA\u4F1A\u8BA9\u5BA2\u6237\u7AEF\u5BF9\u7740\u5DF2\u505C\u6389\u7684\u670D\u52A1\u5668\u767D\u7B49\u4E00\u6B21\u8D85\u65F6\uFF09\uFF1B\u2461 UIControls \u7684\u5F00\u5173\uFF08Toggle\uFF09\u6539\u6210\u53EA\u627E\u3001\u53EA\u5199\u300C\u5F00/\u5173\u300D\uFF0C\u4E0D\u518D\u66FF\u7F8E\u672F\u6539\u9884\u5236\u4F53\uFF1A\u5220\u6389\u4E86\u8D34\u53F3\u8FB9\u7F18\u3001\u6539\u989C\u8272\u3001\u6539\u5BF9\u9F50\u3001SetAsLastSibling() \u632A\u5C42\u7EA7\u90A3\u4E00\u5806 \u2014\u2014 \u90A3\u6B63\u662F\u0022\u53F3\u4FA7\u5F00/\u5173\u4E0D\u663E\u793A\u0022\u7684\u6839\u56E0\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.64",
-          "file": "versions/1.28.0-alpha.64/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.64/MGCModpack.dll",
-          "sha256": "739310adf980ffac4a4ac018357433fb2d4b14ad6694e54a35a6f348be1eb71d",
-          "size": 467968,
-          "publishedAt": "2026-10-12T05:48:23Z",
-          "notes": "1.28.0-alpha.64\uFF1A\u793E\u533A\u9875\u6309\u65B0\u9762\u677F\u7ED3\u6784\u91CD\u505A\u3002\u2460 \u6E20\u9053\u53EA\u5269\u300C\u8D44\u6E90\u300D\u548C\u300C\u6392\u884C\u699C\u300D\u4E24\u4E2A\uFF08\u539F\u6765\u662F \u4E0A\u4F20/Mod/Map/\u4E0B\u8F7D\u5217\u8868 \u56DB\u4E2A\uFF09\u3002\u2461 \u300C\u8D44\u6E90\u300D\u9875\u628A\u539F\u5148 Mod \u9875\u548C Map \u9875\u7684\u903B\u8F91\u4E00\u8D77\u6446\u8FC7\u6765\uFF0C\u5916\u52A0 Pages \u4E0A\u7684\u7F51\u76D8\u6E05\u5355\u3002\u2462 \u300C\u6392\u884C\u699C\u300D\u9875\u7528\u7EAF C# \u7684 JNI \u5185\u5D4C android.webkit.WebView \u663E\u793A CGOIRankList \u6A2A\u5C4F\u9875\uFF08\u8D77\u4E0D\u6765\u4F1A\u81EA\u52A8\u9000\u56DE\u7CFB\u7EDF\u6D4F\u89C8\u5668\uFF09\u3002\u2463 \u9002\u914D\u4E86\u6539\u7248\u540E\u7684\u9762\u677F\u5C42\u7EA7\uFF1A\u5185\u5BB9\u884C\u6A21\u677F\u4ECE ModPanel/MapPanel \u632A\u5230\u4E86 ContentPanel/List/Viewport/Content/Example\uFF0C\u4EE3\u7801\u5148\u8BA4\u65B0\u7ED3\u6784\u3001\u518D\u56DE\u9000\u65E7\u7ED3\u6784\u3002\u2464 \u4FEE\u6B63\u6E20\u9053\u952E\u9AD8\u5149\u8272\uFF0C\u548C\u6574\u4E2A UI \u4E00\u81F4\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.63",
-          "file": "versions/1.28.0-alpha.63/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.63/MGCModpack.dll",
-          "sha256": "61bd20167c9ed1f4c44b8978ec60618b03c307eb37455c280ef47b4c6d00c4b4",
-          "size": 467968,
-          "publishedAt": "2026-10-12T04:29:19Z",
-          "notes": "1.28.0-alpha.63\uFF1A\u6309\u53CD\u9988\u4FEE\u793E\u533A\u9875\u4E09\u5904\u754C\u9762\u95EE\u9898\u3002\u2460 \u6E20\u9053\u952E\u7684\u9AD8\u5149\u8272\u539F\u6765\u662F\u6211\u81EA\u5DF1\u53D1\u660E\u7684 (0.35,0.65,1,0.9)\uFF0C\u548C\u6574\u4E2A UI \u4E0D\u4E00\u6837 \u2014\u2014 \u73B0\u5728\u6539\u6210\u548C UIControls / FoldoutControl / CustomDropdown / GameSettingManager / ModUIManager \u5B8C\u5168\u4E00\u81F4\u7684 (0.808,0.898,1,1)\u3002\u2461 \u5DF2\u4E0B\u8F7D\u7684\u5730\u56FE\u5361\u7247\u73B0\u5728\u4F1A\u6FC0\u6D3B Select\uFF08\u5361\u7247\u4E0A\u300C\u8FD9\u5F20\u80FD\u7528\u300D\u7684\u6807\u8BB0\uFF09\uFF1B\u539F\u6765\u4E00\u5F8B\u5173\u6389\uFF0C\u5BFC\u81F4\u4E0B\u597D\u7684\u5730\u56FE\u770B\u7740\u4E5F\u50CF\u6CA1\u4E0B\u3002\u2462\u300C\u5171 x \u4E2A\u300D\u90A3\u884C\u53BB\u6389\u4E86 \u2014\u2014 \u53EA\u5728\u771F\u51FA\u95EE\u9898\uFF08\u62FF\u4E0D\u5230\u670D\u52A1\u5668\u5730\u5740 / \u793E\u533A\u5217\u8868\u5931\u8D25\uFF09\u65F6\u624D\u5199\u4E00\u884C\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.62",
-          "file": "versions/1.28.0-alpha.62/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.62/MGCModpack.dll",
-          "sha256": "2e6febc86f4daa9fb3a005caf4cd1f5035590ca8bdaba4a0fd3f8b54f43a4faf",
-          "size": 468480,
-          "publishedAt": "2026-10-11T19:53:27Z",
-          "notes": "1.28.0-alpha.62\uFF1A\u5730\u56FE\u5305\u7684\u4E0B\u8F7D\u81EA\u68C0\uFF0840MB \u90A3\u4E2A\u5927\u5305\u5355\u72EC\u7528\u4E00\u4E2A\u6807\u5FD7\u89E6\u53D1\uFF0C\u56E0\u4E3A\u5730\u56FE\u7D22\u5F15\u662F\u5F02\u6B65\u52A0\u8F7D\u7684\uFF0C\u8D70 Kick \u7684\u56DE\u8C03\uFF09\u3002\u4E0A\u4E00\u6B65\u5DF2\u7ECF\u9A8C\u8BC1\u4E86\u5C0F\u5305\uFF08mod 128KB\uFF09\u771F\u7684\u4ECE\u670D\u52A1\u5668\u4E0B\u5230\u5E76\u6821\u9A8C\u901A\u8FC7\uFF1B\u8FD9\u4E00\u6B65\u9A8C\u7684\u662F C3 \u6700\u5728\u610F\u7684\u90A3\u4E2A 40MB \u5730\u56FE\u5305 \u2014\u2014 \u53EA\u6709\u5B83\u4E5F\u786E\u8BA4\u80FD\u6B63\u5E38\u4E0B\u53D1\uFF0C\u624D\u5141\u8BB8\u5220 GitHub \u4E0A\u7684\u5907\u4EFD\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.61",
-          "file": "versions/1.28.0-alpha.61/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.61/MGCModpack.dll",
-          "sha256": "991edd2bd3682a4ea359330a07ffd7831fb202e290ad784ff7141f5ee8101e29",
-          "size": 467456,
-          "publishedAt": "2026-10-11T19:49:41Z",
-          "notes": "1.28.0-alpha.61\uFF1A\u793E\u533A\u9875\u52A0\u300C\u5019\u9009\u6E90\u300D\u65E5\u5FD7\u548C\u4E00\u6B21\u6027\u4E0B\u8F7D\u81EA\u68C0\u3002\u5019\u9009\u6E90\u65E5\u5FD7\u76F4\u63A5\u8BC1\u660E\u5BA2\u6237\u7AEF\u4F1A\u5148\u8BD5\u670D\u52A1\u5668\u3001\u5931\u8D25\u624D\u9000\u5230 GitHub \u2014\u2014 \u8FD9\u662F C4/C3 \u7684\u5173\u952E\u3002\u4E0B\u8F7D\u81EA\u68C0\u53EA\u5728\u8BBE\u5907\u4E0A\u653E\u4E86 dltest.flag \u65F6\u8DD1\u4E00\u6B21\uFF08\u8DD1\u5B8C\u81EA\u5220\uFF0C\u666E\u901A\u73A9\u5BB6\u6C38\u8FDC\u4E0D\u4F1A\u89E6\u53D1\uFF09\uFF0C\u7528\u6765\u5728\u6CA1\u6CD5\u624B\u70B9 UI \u7684\u6D4B\u8BD5\u673A\u4E0A\u628A\u300C\u771F\u7684\u4ECE\u670D\u52A1\u5668\u4E0B\u4E00\u6B21\u5305\u300D\u9A8C\u5B8C\u3002\u4E0B\u7684\u662F\u5B98\u65B9 Mod \u5305\uFF0C\u672C\u6765\u5C31\u88C5\u7740\uFF0C\u91CD\u4E0B\u53EA\u662F\u540C\u5185\u5BB9\u8986\u76D6\uFF0C\u4E0D\u6539\u53D8\u4EFB\u4F55\u72B6\u6001\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.60",
-          "file": "versions/1.28.0-alpha.60/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.60/MGCModpack.dll",
-          "sha256": "3da1d86f60b4ff1b40048adb965e5aeb20481f11617dc90735576c82afeeed3b",
-          "size": 466432,
-          "publishedAt": "2026-10-11T19:45:37Z",
-          "notes": "1.28.0-alpha.60\uFF1A\u793E\u533A\u9875\u52A0\u542F\u52A8\u81EA\u68C0 \u2014\u2014 \u5F00\u673A\u65F6\u628A Mod/Map \u4E24\u4E2A\u6E20\u9053\u5404\u6E32\u67D3\u4E00\u6B21\uFF0C\u628A\u300C\u751F\u6210\u4E86\u51E0\u884C\u300D\u5199\u8FDB\u65E5\u5FD7\u3002\u8FD9\u4E2A\u9875\u9762\u7684\u6E32\u67D3\u9664\u4E86\u622A\u56FE\u6CA1\u522B\u7684\u529E\u6CD5\u770B\u89C1\uFF0C\u800C\u6D4B\u8BD5\u673A\u5185\u5B58\u53EA\u5269\u51E0\u5341 MB\u3001input \u547D\u4EE4\u4F1A\u88AB\u4F4E\u5185\u5B58\u6740\u624B\u5E72\u6389\uFF0C\u300C\u70B9\u5F00\u770B\u4E00\u773C\u300D\u8FD9\u6761\u8DEF\u672C\u8EAB\u5C31\u4E0D\u7A33\u5B9A\u3002\u90A3\u5C31\u4E0D\u70B9\uFF1A\u5F00\u673A\u81EA\u5DF1\u6E32\u67D3\u4E00\u904D\uFF0C\u770B\u6570\u5B57\u3002\u6CA1\u62A5\u9519\u4E0D\u7B49\u4E8E\u6E32\u67D3\u51FA\u6765\u4E86\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.59",
-          "file": "versions/1.28.0-alpha.59/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.59/MGCModpack.dll",
-          "sha256": "258c938fc1139dd5748916eccccc94fd617d169f6c492e083bb22978e7adceaa",
-          "size": 465408,
-          "publishedAt": "2026-10-11T19:01:34Z",
-          "notes": "1.28.0-alpha.59\uFF1A\u9A8C\u8BC1\u53D1\u5E03\u6539\u6210\u300C\u4E00\u4E2A\u63D0\u4EA4\u300D\u2014\u2014\u7248\u672C\u6587\u4EF6\u548C index.json \u73B0\u5728\u4E00\u8D77\u63D0\u4EA4\u3001\u4E00\u8D77\u63A8\u3002\u4EE5\u524D\u7248\u672C\u6587\u4EF6\u8D70 REST API\uFF08\u5B83\u4F1A\u5728\u8FDC\u7A0B\u76F4\u63A5\u9020\u63D0\u4EA4\uFF0C\u672C\u5730\u514B\u9686\u4E0D\u77E5\u9053\uFF09\uFF0C\u7D22\u5F15\u8D70 git\uFF0C\u4E24\u8FB9\u5206\u53C9\uFF0C\u5BFC\u81F4\u300C\u63D0\u4EA4\u5386\u53F2\u8BF4\u53D1\u5E03\u4E86\u65B0\u7248\u672C\u3001\u4F46\u8FDC\u7A0B index.json \u8FD8\u6307\u7740\u65E7\u7248\u672C\u300D\uFF0C\u73A9\u5BB6\u4E00\u76F4\u62FF\u65E7\u7248\u3002\u8FD9\u4E2A\u6BDB\u75C5\u590D\u53D1\u8FC7\u4E24\u6B21\uFF0C\u73B0\u5728\u4ECE\u7ED3\u6784\u4E0A\u6D88\u9664\u4E86\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.58",
-          "file": "versions/1.28.0-alpha.58/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.58/MGCModpack.dll",
-          "sha256": "258c938fc1139dd5748916eccccc94fd617d169f6c492e083bb22978e7adceaa",
-          "size": 465408,
-          "publishedAt": "2026-10-11T18:24:24Z",
-          "notes": "1.28.0-alpha.58\uFF1A\u4FEE\u4E00\u4E2A\u6211\u81EA\u5DF1\u5199\u7684\u7A7A\u64CD\u4F5C \u2014\u2014 ForceRefresh \u53EA\u628A _fetchedAt \u6E05\u96F6\u518D\u8C03 Kick()\uFF0C\u53EF Kick() \u5F00\u5934\u5C31\u662F LoadCache()\uFF0C\u90A3\u4E00\u6B65\u7ACB\u523B\u53C8\u628A _fetchedAt \u4ECE\u7F13\u5B58\u6587\u4EF6\u65F6\u95F4\u6233\u8BFB\u4E86\u56DE\u6765\uFF0C\u4E8E\u662F 1 \u5C0F\u65F6\u7684\u5224\u65AD\u7167\u65E7\u901A\u8FC7\uFF0C\u6574\u4E2A\u300C\u5F3A\u5236\u5237\u65B0\u300D\u6839\u672C\u6CA1\u7528\uFF0C\u800C\u65E5\u5FD7\u4E0A\u4EC0\u4E48\u90FD\u770B\u4E0D\u51FA\u6765\u3002\u6559\u8BAD\uFF1A\u5F3A\u5236\u5FC5\u987B\u7ED5\u5F00\u6574\u6761\u7F13\u5B58\u8DEF\u5F84\uFF0C\u53EA\u6E05\u5176\u4E2D\u4E00\u4E2A\u72B6\u6001\u662F\u6CA1\u7528\u7684\u3002\u73B0\u5728\u96A7\u9053\u5730\u5740\u53D8\u4E86\uFF0C\u5BA2\u6237\u7AEF\u80FD\u7ACB\u523B\u8DDF\u4E0A\uFF0C\u4E0D\u7528\u5E72\u7B49\u4E00\u5C0F\u65F6\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.57",
-          "file": "versions/1.28.0-alpha.57/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.57/MGCModpack.dll",
-          "sha256": "d0ef576c7189d65b077af291f1d672096caedefe07503112ea42c42de15500ef",
-          "size": 465408,
-          "publishedAt": "2026-10-11T18:20:12Z",
-          "notes": "1.28.0-alpha.57\uFF1A\u6309\u771F\u673A\u6253\u51FA\u6765\u7684\u8282\u70B9\u6811\u91CD\u5199\u5217\u8868\u6E32\u67D3\u3002Mod \u884C\u7528 ModPanel \u7684\u771F\u5B9E\u6A21\u677F\uFF08LabelContent/ValueContent/DetailsContent\uFF0C\u6309\u94AE\u5C31\u6302\u5728 ValueContent \u4E0A\uFF09\uFF1B\u5730\u56FE\u7528 MapPanel \u7684\u5361\u7247\u6A21\u677F\uFF08\u7F29\u7565\u56FE/\u8FDB\u5EA6\u6761/\u4E0B\u8F7D\u56FE\u6807\uFF0C\u548C\u65E7\u9762\u677F\u90A3\u4EFD\u4EE3\u7801\u4E00\u81F4\uFF09\u3002\u81EA\u5DF1\u62FC\u884C\u7684\u95EE\u9898\u662F\u95F4\u8DDD\u5B57\u53F7\u951A\u70B9\u5168\u548C\u9762\u677F\u5176\u5B83\u5730\u65B9\u4E0D\u4E00\u6837\uFF0C\u800C\u4E14\u6309\u94AE\u5E95\u56FE\u548C\u6309\u4E0B\u53CD\u9988\u62FC\u4E0D\u51FA\u6765\u3002\u53E6\uFF1A\u8BFB\u793E\u533A\u5217\u8868\u5931\u8D25\u65F6\u4F1A\u5F3A\u5236\u6380\u6389 server.json \u7684 1 \u5C0F\u65F6\u7F13\u5B58\uFF0C\u5730\u5740\u53D8\u4E86\u5C31\u7528\u65B0\u5730\u5740\u91CD\u8BD5\u4E00\u6B21 \u2014\u2014 \u4E4B\u524D\u662F\u62FF\u4E00\u4E2A\u6B7B\u5730\u5740\u53CD\u590D\u91CD\u8BD5\uFF0C\u91CD\u8BD5\u518D\u591A\u6B21\u4E5F\u6CA1\u7528\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.56",
-          "file": "versions/1.28.0-alpha.56/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.56/MGCModpack.dll",
-          "sha256": "5ebbf4a1a5c2db4516a239053aa71e293dd6715676b4b032e101a61bd2ce525c",
-          "size": 462336,
-          "publishedAt": "2026-10-11T17:45:14Z",
-          "notes": "1.28.0-alpha.56\uFF1A\u2460\u9762\u677F\u6A21\u677F\u81EA\u68C0 \u2014\u2014 \u542F\u52A8\u65F6\u628A ModPanel/MapPanel \u7684\u8282\u70B9\u6811\u6253\u8FDB\u65E5\u5FD7\uFF08bundle \u91CC\u6CA1\u6709 prefab \u6E90\u7801\uFF0C\u6E32\u67D3\u4EE3\u7801\u5F97\u6309\u771F\u5B9E\u7ED3\u6784\u5199\uFF0C\u4E0D\u518D\u9760\u731C\uFF09\uFF1B\u2461\u300C\u4E0B\u8F7D\u5217\u8868\u300D\u6E20\u9053\u63A5\u4E0A\uFF08\u53EA\u5217\u6B63\u5728\u4E0B\u8F7D\u548C\u4E0B\u8F7D\u5931\u8D25\u7684\uFF0C\u5DF2\u4E0B\u597D\u7684\u5F52\u672C\u5730 Mod/Map \u9875\u7B7E\u7BA1\uFF09\uFF1B\u2462\u300C\u4E0A\u4F20\u300D\u6E20\u9053\u7ED9\u51FA\u4EBA\u8BDD\u8BF4\u660E\uFF08\u529F\u80FD\u6CA1\u505A\uFF0C\u522B\u70B9\u4E86\u6CA1\u53CD\u5E94\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.55",
-          "file": "versions/1.28.0-alpha.55/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.55/MGCModpack.dll",
-          "sha256": "1ebada4dfb7beb32e206e923bf4b19caafad4fac278157e0cb3f446463031274",
-          "size": 460288,
-          "publishedAt": "2026-10-11T16:48:58Z",
-          "notes": "1.28.0-alpha.55\uFF1A\u4FEE\u4E00\u4E2A\u771F\u673A\u4E0A\u6293\u5230\u7684\u771F\u95EE\u9898 \u2014\u2014 \u5BA2\u6237\u7AEF\u5F00\u673A\u65F6**\u4ECE\u6765\u4E0D\u53BB\u5237\u65B0\u670D\u52A1\u5668\u5730\u5740**\u3002PackSource \u539F\u6765\u53EA\u5728\u73A9\u5BB6\u53BB\u70B9\u9762\u677F\u65F6\u624D\u88AB\u62C9\u8D77\uFF0C\u4E8E\u662F\u8BBE\u5907\u4E00\u76F4\u62FF\u7740\u4E0A\u6B21\u7F13\u5B58\u7684\u5730\u5740\uFF0C\u96A7\u9053\u4E00\u6362\u5730\u5740\u5BA2\u6237\u7AEF\u5C31\u5BF9\u7740\u6B7B\u5730\u5740\u53D1\u8BF7\u6C42\uFF0C\u800C\u4E14\u4E00\u6761\u65E5\u5FD7\u90FD\u6CA1\u6709\uFF08\u5931\u8D25\u662F\u9759\u9ED8\u7684\uFF09\u3002\u73B0\u5728\u5F00\u673A\u5C31\u9884\u53D6\uFF0C\u5E76\u4E14\u5931\u8D25\u4E00\u5B9A\u7559\u75D5\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.54",
-          "file": "versions/1.28.0-alpha.54/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.54/MGCModpack.dll",
-          "sha256": "7e2d8bf5661b439793d30460bb7e21d32db530559a0a661332469825fa83394f",
-          "size": 460288,
-          "publishedAt": "2026-10-11T16:02:12Z",
-          "notes": "1.28.0-alpha.54\uFF1A\u793E\u533A\u5217\u8868\u548C\u7F51\u76D8\u6E05\u5355\u6539\u6210\u5F00\u673A\u5C31\u9884\u53D6\u3002\u2460\u73A9\u5BB6\u5F00\u9875\u9762\u65F6\u662F\u70ED\u6570\u636E\uFF0C\u4E0D\u7528\u76EF\u7740\u7A7A\u9875\u9762\u7B49\uFF1B\u2461\u670D\u52A1\u5668\u8FDE\u4E0D\u4E0A\u65F6\uFF0C\u62A5\u9519\u9875\u91CC\u90A3\u4EFD\u7F51\u76D8\u6E05\u5355\u5FC5\u987B\u5DF2\u7ECF\u5728\u624B\u4E0A \u2014\u2014 \u7B49\u53D1\u73B0\u8FDE\u4E0D\u4E0A\u624D\u53BB\u62C9\uFF0C\u5F88\u53EF\u80FD\u8FDE Pages \u4E5F\u4E00\u8D77\u6162\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.53",
-          "file": "versions/1.28.0-alpha.53/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.53/MGCModpack.dll",
-          "sha256": "bee780885ecb00e189acc61609907f81c87618f0ddf13f07cc22a606c9353e84",
-          "size": 459776,
-          "publishedAt": "2026-10-11T15:57:44Z",
-          "notes": "1.28.0-alpha.53\uFF1A\u793E\u533A/\u8D44\u6E90\u9875\u8865\u9F50\u4E09\u4EF6\u4E8B\u3002\u2460\u4E0B\u8F7D\u8FDB\u5EA6\u5B9E\u65F6\u5237\u65B0\uFF08\u53EA\u6539\u6309\u94AE\u6587\u5B57\u548C\u989C\u8272\uFF0C\u4E0D\u91CD\u5EFA\u5217\u8868\uFF0C\u624B\u673A\u4E0D\u5361\uFF09\uFF1B\u2461\u670D\u52A1\u5668\u8FDE\u4E0D\u4E0A\u65F6\uFF0C\u9875\u9762\u6700\u524D\u9762\u76F4\u63A5\u5199\u300C\u670D\u52A1\u5668\u8FDE\u63A5\u5931\u8D25\u300D\u002B \u6362\u884C\u7ED9\u51FA\u5177\u4F53\u539F\u56E0\uFF0C\u5E76\u628A\u7F51\u76D8\u5907\u7528\u94FE\u63A5\u5217\u51FA\u6765\uFF08\u8FDE\u4E0D\u4E0A\u4E5F\u80FD\u62FF\u5230\u5305\uFF09\uFF0C\u7F51\u76D8\u6E05\u5355\u8BFB Pages \u4E0A\u7684 netdisk.json \u2014\u2014 \u653E\u670D\u52A1\u5668\u4E0A\u7B49\u4E8E\u505C\u7535\u65F6\u7528\u624B\u7535\u7B52\u627E\u624B\u7535\u7B52\uFF1B\u2462\u4E0B\u8F7D\u8FC7\u7684\u5305\u7ED9\u84DD\u8272\u5E95\u8272\uFF0C\u4E00\u773C\u770B\u51FA\u300C\u8FD9\u4E2A\u6211\u6709\u4E86\u300D\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.52",
-          "file": "versions/1.28.0-alpha.52/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.52/MGCModpack.dll",
-          "sha256": "74d2330200d235a8b810921b55d83e236cf7446bd52c11e9ffa9eac01a613b62",
-          "size": 455168,
-          "publishedAt": "2026-10-11T15:31:51Z",
-          "notes": "1.28.0-alpha.52\uFF1A\u793E\u533A/\u8D44\u6E90\u9875\u7684 Mod / Map \u4E24\u4E2A\u6E20\u9053**\u63A5\u4E0A\u5185\u5BB9\u4E86**\u3002\u65B0\u589E CommunitySource\uFF1A\u4ECE\u670D\u52A1\u5668\u7684 /community/index.json \u62C9\u793E\u533A\u5305\uFF0C\u548C\u5B98\u65B9\u5305\u5408\u5E76\u5C55\u793A\uFF08\u5B98\u65B9\u6392\u524D\u9762\u3001\u540C\u540D\u4EE5\u5B98\u65B9\u4E3A\u51C6\uFF09\uFF1B\u8FDB\u9875\u9762\u81EA\u52A8\u62C9\u4E00\u6B21\u5E76\u7F13\u5B58\u3002Mod/Map \u5217\u8868\u590D\u7528\u65E7\u9762\u677F\u90A3\u5957 UIControls \u642D\u884C\u3001\u4E0B\u8F7D\u590D\u7528\u73B0\u6709\u5185\u6838\uFF08ModpackDownloader / MappackDownloader\uFF09\uFF0C\u53EA\u662F\u6362\u4E86\u6E32\u67D3\u4F4D\u7F6E\u3002\u62FF\u4E0D\u5230\u670D\u52A1\u5668\u5730\u5740\u65F6\u53EA\u5F71\u54CD\u793E\u533A\u90A3\u4E00\u534A\uFF0C\u5B98\u65B9\u7167\u5E38\u663E\u793A\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.51",
-          "file": "versions/1.28.0-alpha.51/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.51/MGCModpack.dll",
-          "sha256": "7b36b74bf8eadf1351e89388d5af1b857d8de2d537c55e3880d6337a11551bb0",
-          "size": 448000,
-          "publishedAt": "2026-10-11T13:44:01Z",
-          "notes": "1.28.0-alpha.51\uFF1A\u628A\u300C\u793E\u533A\u300D\u9875\u7B7E\u6539\u540D\u4E3A\u300C\u793E\u533A/\u8D44\u6E90\u300D\uFF08\u8FD9\u4E2A\u9875\u91CC\u65E2\u6709\u5B98\u65B9\u5305\u4E5F\u6709\u793E\u533A\u5305\uFF0C\u539F\u6765\u7684\u540D\u5B57\u53EB\u5C0F\u4E86\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.50",
-          "file": "versions/1.28.0-alpha.50/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.50/MGCModpack.dll",
-          "sha256": "edaf9c287914d75fbaed3ceb335cd29b52ee06b1c6d38cfd7f878d3e5cc25d39",
-          "size": 448000,
-          "publishedAt": "2026-10-11T13:17:56Z",
-          "notes": "1.28.0-alpha.50\uFF1A\u5927\u5305\uFF08Mod/\u5730\u56FE\u5305\uFF09\u6539\u4ECE\u670D\u52A1\u5668\u62C9\uFF0C\u4E0D\u518D\u7ED5 GitHub\u3002\u5BA2\u6237\u7AEF\u65B0\u589E PackSource\uFF1A\u8BFB\u4ED3\u5E93\u91CC\u7684 server.json \u62FF\u5F53\u524D\u670D\u52A1\u5668\u5730\u5740\uFF08\u7F13\u5B58 1 \u5C0F\u65F6\uFF09\uFF0C\u4E0B\u8F7D\u6309\u300C\u670D\u52A1\u5668\u4F18\u5148 \u2192 GitHub \u515C\u5E95\u300D\u987A\u5E8F\u8BD5\u3002\u670D\u52A1\u5668\u4FA7\u4E5F\u6253\u901A\u4E86\u72EC\u7ACB\u53D1\u5E03\uFF08\u4E0D\u518D\u4F9D\u8D56\u7535\u8111\uFF09\uFF1A\u8D70 git \u63A8\u9001\u800C\u975E GitHub REST API\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.49",
-          "file": "versions/1.28.0-alpha.49/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.49/MGCModpack.dll",
-          "sha256": "e5b9b57cee627fdf97439dce849c5e9453f28ec48fabbd4a9015110ad07b8db6",
-          "size": 439808,
-          "publishedAt": "2026-10-11T04:56:11Z",
-          "notes": "alpha.49\uFF1A\u4FEE\u300C\u5F00\u5173\u53F3\u4FA7\u4E0D\u663E\u793A\u5F00/\u5173\u300D\u2014\u2014 ui_uicontrols \u91CC\u6BCF\u4E2A\u6A21\u677F\u7684 anchoredPosition \u90FD\u662F\u7F16\u8F91\u671F\u6B8B\u7559\uFF08Toggle/Title/LabelContent \u5168\u662F x=1317.7\uFF09\uFF0CInstantiate(prefab,parent,false) \u4F1A\u628A\u5B83\u539F\u6837\u5E26\u8FDB\u6E38\u620F\uFF0C\u4E8E\u662F\u6BCF\u4E2A\u63A7\u4EF6\u90FD\u88AB\u6254\u5230\u5BB9\u5668\u5DE6\u8FB9 1318px \u4E4B\u5916\uFF0C\u53F3\u4FA7\u6587\u5B57\u76F4\u63A5\u51FA\u5C4F/\u88AB\u88C1\u3002\u771F\u673A\u5B9E\u6D4B\uFF08\u5C0F\u7C73 Note 3\uFF0C1920x1080\uFF09\uFF1A\u300C\u89E3\u9664\u5E27\u7387\u548C\u5206\u8FA8\u7387\u9650\u5236\u300D\u90A3\u4E2A\u5F00\u5173 \u884C\u5C4F=[2510,3458]\u3001\u6587\u5B57\u5C4F=[3218,3438]\uFF0C\u5C4F\u5BBD\u624D 1920 \u2014\u2014 \u4E00\u4E2A\u5B57\u90FD\u770B\u4E0D\u89C1\u3002\u4FEE\u6CD5\uFF1A9 \u4E2A Create* \u7EDF\u4E00\u5728 Instantiate \u4E4B\u540E FitToParentWidth() \u6E05\u6389\u6B8B\u7559\u5750\u6807\u3001\u6A2A\u5411\u94FA\u6EE1\u5BB9\u5668\uFF08\u53EA\u52A8\u6A2A\u5411\uFF0C\u7EB5\u5411\u4ECD\u5F52\u5BB9\u5668\u7684 LayoutGroup \u7BA1\uFF09\uFF1B\u5F00\u5173\u7684 ValueContent \u518D\u663E\u5F0F SetActive \u002B \u91CD\u951A\u5230\u884C\u7684\u53F3\u8FB9\u7F18\u3001\u989C\u8272\u8DDF LabelContent \u8D70\u3002\u4FEE\u540E\u540C\u4E00\u6279 14 \u4E2A\u5F00\u5173\u7684\u6587\u5B57\u5168\u90E8\u56DE\u5230\u88C1\u5207\u533A\u5185\u3002\u53E6\uFF1A\u4F1A\u8BDD\u65E5\u5FD7\u6539\u5F02\u6B65\u843D\u76D8\uFF08\u540E\u53F0\u7EBF\u7A0B MGCLogWriter \u5199\u76D8\uFF0C\u4E3B\u7EBF\u7A0B\u53EA\u5165\u961F\uFF09\uFF0C\u4E0D\u518D\u6BCF 5 \u79D2\u540C\u6B65 Write\u002BFlush \u5361\u4E00\u4E0B\uFF1B\u9000\u51FA\u65F6 DrainWriter \u6392\u7A7A\u961F\u5217\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.48",
-          "file": "versions/1.28.0-alpha.48/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.48/MGCModpack.dll",
-          "sha256": "ba3286405c0137c02ebc0b977a29fb4356d982a4b84d05d84d68c8d06500d378",
-          "size": 444928,
-          "publishedAt": "2026-10-09T04:33:29Z",
-          "notes": "\u65B0\u589E player.touch \u7AD9\u70B9\uFF1APlayerControl.Update \u5728 Input.touchCount==0 \u7684\u63D0\u524D return \u5904\u63D2\u6869\uFF0Cmod \u53EF\u63D0\u4F9B\u5408\u6210\u7684\u624B\u6307\u6ED1\u52A8\uFF08F1/F2=\u50CF\u7D20\u589E\u91CF\uFF0CF3=\u5E27\u65F6\u95F4\uFF1BF3\u003E0 \u8868\u793A\u63A5\u7BA1\uFF09\u3002\u4E0B\u6E38\u5B8C\u5168\u8D70\u6E38\u620F\u539F\u672C\u6D41\u6C34\u7EBF\uFF08\u00D70.05\u3001\u52A0\u901F\u5EA6\u66F2\u7EBF\u3001\u5E73\u6ED1\uFF09\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.47",
-          "file": "versions/1.28.0-alpha.47/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.47/MGCModpack.dll",
-          "sha256": "283d953c32f068834558c2303f60137aa0683c2dacb3d4a72534b0ea3956b789",
-          "size": 444928,
-          "publishedAt": "2026-10-08T12:44:38Z",
-          "notes": "alpha.47\uFF1A\u73A9\u5BB6\u8BBE\u7F6E\u65B0\u589E\u300C\u4ECE\u76F8\u518C\u5BFC\u5165\u5934\u50CF\u300D\u300C\u5B58\u50A8\u81EA\u68C0\u300D\uFF1B\u542F\u52A8\u81EA\u68C0\u5B9E\u9645\u5217\u4E00\u904D\u76F8\u518C/\u538B\u7F29\u5305"
-        },
-        {
-          "version": "1.28.0-alpha.46",
-          "file": "versions/1.28.0-alpha.46/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.46/MGCModpack.dll",
-          "sha256": "b51e2e245f5d39e711f805abbd6119afd9ce01e375554121f17da0178a801be7",
-          "size": 443392,
-          "publishedAt": "2026-10-08T07:56:32Z",
-          "notes": "alpha.46\uFF1A\u5B58\u50A8\u81EA\u68C0\u4E0D\u518D\u8C0E\u62A5\u6743\u9650\uFF08JNI \u62FF\u4E0D\u5230 activity \u65F6\u6539\u7528\u6587\u4EF6\u7CFB\u7EDF\u63A2\u6D4B\uFF09"
-        },
-        {
-          "version": "1.28.0-alpha.45",
-          "file": "versions/1.28.0-alpha.45/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.45/MGCModpack.dll",
-          "sha256": "b7fdee94757490cf81c32bb8767a67ca18bcc9066f9feb11192b51a742788f8e",
-          "size": 443392,
-          "publishedAt": "2026-10-08T07:53:08Z",
-          "notes": "alpha.45\uFF1A\u516C\u544A\u56FE\u6807 v3\uFF08\u4FDD\u7559\u539F\u56FE alpha \u901A\u9053\u76F4\u63A5\u7F29\u653E\uFF0C\u8FB9\u7F18\u5E72\u51C0\uFF09\u002B ExternalStorage \u5B58\u50A8\u8BBF\u95EE\u670D\u52A1"
-        },
-        {
-          "version": "1.28.0-alpha.44",
-          "file": "versions/1.28.0-alpha.44/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.44/MGCModpack.dll",
-          "sha256": "e2fe448c633b0b999ff47306ec80ae2cdab0db5990956790b0756ce9e76ef4d2",
-          "size": 443392,
-          "publishedAt": "2026-10-08T07:45:40Z",
-          "notes": "alpha.44\uFF1A\u65B0\u589E MGC.Services.ExternalStorage \u2014\u2014 \u6743\u9650\u7533\u8BF7\u3001\u5217\u76F8\u518C\u3001\u5217\u538B\u7F29\u5305\u3001\u8BFB/\u62F7\u8D1D\u6587\u4EF6\uFF1B\u542F\u52A8\u65F6\u6253\u4E00\u884C\u5B58\u50A8\u81EA\u68C0\u3002\u653E\u5728\u70ED\u66F4\u5C42\uFF0C\u6539\u5B83\u4E0D\u7528\u91CD\u6253\u5305 APK"
-        },
-        {
-          "version": "1.28.0-alpha.43",
-          "file": "versions/1.28.0-alpha.43/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.43/MGCModpack.dll",
-          "sha256": "8cf9c3fbd6e683463d1d056ae585b386522db7219fbd93cc1ade7525c9510701",
-          "size": 437760,
-          "publishedAt": "2026-10-08T07:18:06Z",
-          "notes": "alpha.43\uFF1A\u6846\u67B6\u4E0E alpha.42 \u76F8\u540C\u3002\u672C\u6B21\u66F4\u65B0\u7684\u662F APK \u5185\u7F6E ui_mainmenu.unity3d\uFF1Bbundle \u672C\u8EAB\u8D70 assets \u70ED\u66F4\uFF08bundle/ui_mainmenu.unity3d\uFF09\uFF0C\u4E0D\u9700\u8981\u91CD\u88C5\u4E5F\u80FD\u751F\u6548"
-        },
-        {
-          "version": "1.28.0-alpha.42",
-          "file": "versions/1.28.0-alpha.42/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.42/MGCModpack.dll",
-          "sha256": "8cf9c3fbd6e683463d1d056ae585b386522db7219fbd93cc1ade7525c9510701",
-          "size": 437760,
-          "publishedAt": "2026-10-08T07:09:40Z",
-          "notes": "alpha.42\uFF1A\u5185\u5BB9\u4E0E alpha.41 \u76F8\u540C\u3002\u516C\u544A\u56FE\u6807\u6539\u7684\u662F APK \u5185\u7F6E\u8D44\u6E90 assets/Icons/Announcement.png\uFF08256\u00D7256 \u732B\u8033\u5A18\uFF0C\u767D\u5E95\u5DF2\u53BB\u9664\uFF09\uFF0C\u5FC5\u987B\u914D alpha.42 \u7684 APK"
-        },
-        {
-          "version": "1.28.0-alpha.41",
-          "file": "versions/1.28.0-alpha.41/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.41/MGCModpack.dll",
-          "sha256": "8cf9c3fbd6e683463d1d056ae585b386522db7219fbd93cc1ade7525c9510701",
-          "size": 437760,
-          "publishedAt": "2026-10-08T07:00:26Z",
-          "notes": "alpha.41\uFF1A\u516C\u544A\u6309\u952E\u56FE\u6807\u6362\u6210 256\u00D7256 \u732B\u8033\u5A18\uFF08icon/announcement-icon-v2.png\uFF0C\u767D\u5E95\u5DF2\u4ECE\u8FB9\u7F18\u6CDB\u6D2A\u53BB\u9664\u3001\u4EBA\u7269\u8EAB\u4E0A\u7684\u767D\u8272\u4FDD\u7559\uFF09"
-        },
-        {
-          "version": "1.28.0-alpha.40",
-          "file": "versions/1.28.0-alpha.40/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.40/MGCModpack.dll",
-          "sha256": "d61038bf6aab9554475bec6abebf82aff185ad5c55d8663b8b58cb1a3ffbae58",
-          "size": 437760,
-          "publishedAt": "2026-10-08T06:24:54Z",
-          "notes": "alpha.40\uFF1AHookBus \u4F1A\u8BDD\u62A5\u544A\u63AA\u8F9E\u4FEE\u6B63\uFF08\u533A\u5206\u300C\u672C\u5C40\u6CA1\u53D1\u751F\u300D\u4E0E\u300CAPK \u7F3A\u63D2\u6869\u884C\u300D\uFF0C\u907F\u514D\u8BEF\u62A5\uFF09\u3002\u542B alpha.39 \u7684 MGCContract \u79FB\u9664\u4E0E\u6309\u7AD9\u70B9\u89E6\u53D1\u8BA1\u6570"
-        },
-        {
-          "version": "1.28.0-alpha.39",
-          "file": "versions/1.28.0-alpha.39/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.39/MGCModpack.dll",
-          "sha256": "bfbe41112a47b9927fe029b6f01a3acc06c59068bcb18e1ffa346839d5f59a69",
-          "size": 437760,
-          "publishedAt": "2026-10-08T06:21:39Z",
-          "notes": "alpha.39\uFF1A\u79FB\u9664 MGCContract\uFF08\u4E0D\u518D\u505A\u5951\u7EA6\u7248\u672C\u7BA1\u7406\uFF09\uFF1BHookBus \u589E\u52A0\u6309\u7AD9\u70B9\u89E6\u53D1\u8BA1\u6570\u4E0E\u4F1A\u8BDD\u62A5\u544A \u2014\u2014 \u628A\u300C\u6CE8\u518C\u4E86\u5904\u7406\u5668\u5374\u4ECE\u672A\u89E6\u53D1\u300D\u7684\u9759\u9ED8\u5931\u6548\u53D8\u6210\u65E5\u5FD7\u91CC\u4E00\u773C\u53EF\u89C1\u3002\u9700\u914D\u65B0 APK\uFF08MGCLoader \u540C\u6B65\u7626\u8EAB\uFF09"
-        },
-        {
-          "version": "1.28.0-alpha.38",
-          "file": "versions/1.28.0-alpha.38/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.38/MGCModpack.dll",
-          "sha256": "17464cb02592462d6b164a35e10d86b582c679bfa0342ecc656190553fc019a7",
-          "size": 436736,
-          "publishedAt": "2026-10-07T17:20:00Z",
-          "notes": "alpha.38\uFF1A\u6682\u505C\u952E\u4E0D\u518D\u9759\u9ED8\u5931\u8D25 \u2014\u2014 MainMenu \u5F15\u7528\u5931\u6548\uFF08\u573A\u666F\u91CD\u8F7D\u9500\u6BC1\uFF09\u65F6\u56DE\u573A\u666F\u91CD\u65B0\u67E5\u627E\u5E76\u8865\u767B\u8BB0\uFF0C\u88AB\u62D2\u65F6\u5199\u6E05\u695A\u539F\u56E0"
-        },
-        {
-          "version": "1.28.0-alpha.37",
-          "file": "versions/1.28.0-alpha.37/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.37/MGCModpack.dll",
-          "sha256": "2c7dcfb28e5ed088d319196c5cf6ce59c4c5fd22e27b1dfb6575c1e4037066ab",
-          "size": 436224,
-          "publishedAt": "2026-10-07T16:35:35Z",
-          "notes": "mod \u914D\u7F6E\u5B58\u4E0D\u8FDB\u53BB\u7684\u4FEE\u590D\uFF08SaveConfig \u975E\u865A \u002B CollectConfig\uFF0C\u4EFB\u4F55 base.SaveConfig() \u90FD\u4E0D\u518D\u7ED5\u8FC7\uFF09\uFF1B\u975E\u70ED\u91CD\u8F7D mod \u53EA\u8BB0\u5F00\u5173\u3001\u91CD\u5F00\u6E38\u620F\u751F\u6548\uFF08\u4E0D\u5728\u4F1A\u8BDD\u5185\u5378\u8F7D\uFF09"
-        },
-        {
-          "version": "1.28.0-alpha.36",
-          "file": "versions/1.28.0-alpha.36/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.36/MGCModpack.dll",
-          "sha256": "fc109042ef71a2bab01eb6f1a0f6c1dbd774480c3faac7a8a45c348d3015e8b7",
-          "size": 436224,
-          "publishedAt": "2026-10-07T16:20:51Z",
-          "notes": "\uFF08\u91CD\u7F16\u53F7\u81EA beta.3\uFF09\u914D\u7F6E\u4FDD\u5B58\u4FEE\u590D \u002B \u573A\u666F\u91CD\u8F7D\u6062\u590D\uFF08\u5DF2\u88AB alpha.37 \u53D6\u4EE3\uFF09"
-        },
-        {
-          "version": "1.28.0-alpha.35",
-          "file": "versions/1.28.0-alpha.35/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.35/MGCModpack.dll",
-          "sha256": "ba31f05422ba9ab863ff3af15df0c9538fa842d9c56d736b982b2df03e07d595",
-          "size": 435712,
-          "publishedAt": "2026-10-07T15:55:10Z",
-          "notes": "\uFF08\u91CD\u7F16\u53F7\u81EA beta.2\uFF09\u5835\u767D\u540D\u5355\u7ED5\u8FC7\uFF1Areward.besttime \u7AD9\u70B9 \u002B MGC_LastRunVerified \u843D\u76D8"
-        },
-        {
-          "version": "1.28.0-alpha.33",
-          "file": "versions/1.28.0-alpha.33/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.33/MGCModpack.dll",
-          "sha256": "3edb2ca6f4789e30f1b8eadba4330110eb6df6ac4b50bcf7f16466527104cbf2",
-          "size": 435200,
-          "publishedAt": "2026-10-07T15:55:10Z",
-          "notes": "\uFF08\u91CD\u7F16\u53F7\u81EA 1.28.0-beta.3\uFF09\u914D\u65B0 APK\uFF1AGravityControl.Win \u8865\u661F\u7A7A\u56FE\u56DE\u9000\u4E0E NumWins \u8BA1\u6570\u3001CustomTrigger.Finish \u661F\u7A7A\u56FE\u56DE\u9000\u3002"
-        },
-        {
-          "version": "1.28.0-alpha.32",
-          "file": "versions/1.28.0-alpha.32/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.32/MGCModpack.dll",
-          "sha256": "3edb2ca6f4789e30f1b8eadba4330110eb6df6ac4b50bcf7f16466527104cbf2",
-          "size": 435200,
-          "publishedAt": "2026-10-07T08:21:58Z",
-          "notes": "\u4FEE RewardBadge \u8BBE\u5907\u540D\uFF1ASystemInfo.deviceName \u5728\u5B89\u5353\u4E0A\u8FD4\u56DE\u5B57\u9762\u91CF \u0022\u003Cunknown\u003E\u0022\uFF08\u4E0D\u662F\u7A7A\u4E32\uFF09\uFF0C\u800C Text \u5F00\u4E86 supportRichText \u4F1A\u628A \u003Cunknown\u003E \u5F53\u6807\u7B7E\u5403\u6389 \u2192 \u901A\u5173\u9875\u90A3\u4E00\u884C\u4EC0\u4E48\u90FD\u4E0D\u663E\u793A\u3002\u73B0\u5728\u6309 \u84DD\u7259\u540D\u2192\u673A\u578B\u2192\u7CFB\u7EDF \u56DE\u9000\uFF0C\u5E76\u8F6C\u4E49\u5C16\u62EC\u53F7"
-        },
-        {
-          "version": "1.28.0-alpha.31",
-          "file": "versions/1.28.0-alpha.31/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.31/MGCModpack.dll",
-          "sha256": "0a5faecc516d6a377439cacc5ef6a78920b6bd7a9621c3af2dee565baa432f61",
-          "size": 435200,
-          "publishedAt": "2026-10-07T08:17:20Z",
-          "notes": "\u4FEE RewardBadge \u8BBE\u5907\u540D\uFF1ASystemInfo.deviceName \u5728\u5B89\u5353\u4E0A\u662F\u84DD\u7259\u540D\uFF0C\u53D6\u4E0D\u5230\u65F6\u4F1A\u663E\u793A unknown \u2014\u2014 \u73B0\u5728\u6309 \u84DD\u7259\u540D \u2192 \u673A\u578B \u2192 \u7CFB\u7EDF \u56DE\u9000\uFF0C\u5E76\u5728\u542F\u52A8\u65E5\u5FD7\u91CC\u8BB0\u4E00\u884C\u539F\u59CB\u503C"
-        },
-        {
-          "version": "1.28.0-alpha.34",
-          "file": "versions/1.28.0-alpha.34/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.34/MGCModpack.dll",
-          "sha256": "47ad011f5299d5effea9e3a77c3aadae0ae74aed6270b7d6f2d555885dfa729c",
-          "size": 434176,
-          "publishedAt": "2026-10-07T05:30:03Z",
-          "notes": "\uFF08\u91CD\u7F16\u53F7\u81EA beta.1\uFF09\u53EA\u4FDD\u7559 hook \u7AD9\u70B9 \u002B \u91D1\u7F50\u5F00\u5C40\u4E00\u6B21\u6027\u6539\u5199 potMat"
-        },
-        {
-          "version": "1.28.0-alpha.30",
-          "file": "versions/1.28.0-alpha.30/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.30/MGCModpack.dll",
-          "sha256": "b1383d1e4dbd15dc8ba9fa30a941df2c1ba83606931edc1fc082356de4acd58d",
-          "size": 435712,
-          "publishedAt": "2026-10-06T18:29:13Z",
-          "notes": "ModpackManager \u6309\u5305\u540D\u53BB\u91CD\uFF1A\u540C\u540D\u6574\u5408\u5305\u53EA\u7559\u4E00\u4E2A\uFF08\u4F18\u5148\u6587\u4EF6\u540D\u4E0E\u5305\u540D\u4E00\u81F4\u7684\u90A3\u4EFD\uFF09\u5E76\u5435\u4E00\u58F0\uFF0C\u4E0D\u518D\u51FA\u73B0\u4E24\u884C\u540C\u540D\u5305"
-        },
-        {
-          "version": "1.28.0-alpha.29",
-          "file": "versions/1.28.0-alpha.29/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.29/MGCModpack.dll",
-          "sha256": "dc7d1217f9fddac6e053d4f6378a23210771f5b083b16ca3d07c31890a3e9a55",
-          "size": 434688,
-          "publishedAt": "2026-10-06T18:03:58Z",
-          "notes": "\u5220\u9664 GOI.GameAPI.Events\uFF0811 \u4E2A\u7C7B\u578B\uFF09\uFF1A\u6E38\u620F\u4FA7\u63D2\u6869\u6536\u655B\u5230 6 \u884C\uFF1B\u65B0\u589E\u6570\u503C\u63D2\u5EA7 HookValue\uFF08player.cursor / player.hinge\uFF09\uFF1B\u901A\u5173\u94FE\u6539\u8D70 gravity.win \u002B \u6846\u67B6\u4E8B\u4EF6 MGC.Events"
-        },
-        {
-          "version": "1.28.0-alpha.28",
-          "file": "versions/1.28.0-alpha.28/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.28/MGCModpack.dll",
-          "sha256": "40f1c9b7c5f129219410d6081909fab8a21803243a653ddf3b50358d1b82198e",
-          "size": 434688,
-          "publishedAt": "2026-10-06T15:52:27Z",
-          "notes": "\u63D2\u6869\u6536\u655B\u4E3A\u4E00\u884C\uFF1AMGCBridge.Hook(site,target) \u002B \u53CD\u5C04\u63A5\u7BA1\uFF1BHookBus \u63D2\u5EA7\u540C\u6B65\u65B0\u7B7E\u540D"
-        },
-        {
-          "version": "1.28.0-alpha.27",
-          "file": "versions/1.28.0-alpha.27/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.27/MGCModpack.dll",
-          "sha256": "80885b375db5fce2940f76ac07b5fec9f47db015e9cce8ee022e9ac65f270926",
-          "size": 432640,
-          "publishedAt": "2026-10-05T18:47:03.538Z",
-          "notes": "\u94A9\u5B50\u7CFB\u7EDF\u7AEF\u5230\u7AEF\u81EA\u68C0\uFF08\u771F\u4E8B\u4EF6 \u2192 \u6865 \u2192 \u7AD9\u70B9\uFF09"
-        },
-        {
-          "version": "1.28.0-alpha.26",
-          "file": "versions/1.28.0-alpha.26/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.26/MGCModpack.dll",
-          "sha256": "79cfcde2a07ab64d5c9d611f90a1276286fdc560b54a4ff49de530539a69994d",
-          "size": 431616,
-          "publishedAt": "2026-10-05T18:43:23.884Z",
-          "notes": "\u4FEE\u590D\u91CD\u590D\u8BA2\u9605\u5BFC\u81F4 Has \u6C38\u4E45\u4E3A true\uFF08\u65E9\u9000\u5931\u6548\uFF09\uFF1B\u8BA1\u6570\u6539\u4E3A\u5355\u6E90"
-        },
-        {
-          "version": "1.28.0-alpha.25",
-          "file": "versions/1.28.0-alpha.25/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.25/MGCModpack.dll",
-          "sha256": "8559c4c424a51011db3f2e1ed6b88c598e238e15ff905ddb4af1739ad0fa8033",
-          "size": 431616,
-          "publishedAt": "2026-10-05T18:39:04.534Z",
-          "notes": "\u901A\u7528\u94A9\u5B50\u7CFB\u7EDF\uFF08HookBus/FastReflect/GameHookBridge\uFF09\u002B \u81EA\u68C0\uFF1B\u4E8B\u4EF6\u7AD9\u70B9\u6539\u4E3A\u63D2\u5EA7\u5F0F"
-        },
-        {
-          "version": "1.28.0-alpha.24",
-          "file": "versions/1.28.0-alpha.24/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.24/MGCModpack.dll",
-          "sha256": "6fc1c48f5df21aefb93e4f9a5c6acf1d1c57731b590668b504027d5ffcf10ae2",
-          "size": 413696,
-          "publishedAt": "2026-10-05T16:09:23.840Z",
-          "notes": "RKS 50 \u69FD\u4F4D\uFF0816.75/50=0.335\uFF09\u002B \u4ECA\u65E5\u6700\u4F73\u4FEE\u590D \u002B \u5173\u95ED\u4FA7\u680F\u56FE\u6807"
-        },
-        {
-          "version": "1.28.0-alpha.23",
-          "file": "versions/1.28.0-alpha.23/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.23/MGCModpack.dll",
-          "sha256": "b39def44288b2882f9ac0d137e19e58a3bfa8b77c886a61232e3642a7a70c94e",
-          "size": 411648,
-          "publishedAt": "2026-10-05T14:38:17.244Z",
-          "notes": "\u8FDB\u5165\u5730\u56FE\u9875\u5373\u5237\u65B0\uFF08\u53EF\u89C1\u6027\u8DF3\u53D8\uFF09\u002B \u91CD\u626B\u65B0\u5730\u56FE"
-        },
-        {
-          "version": "1.28.0-alpha.22",
-          "file": "versions/1.28.0-alpha.22/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.22/MGCModpack.dll",
-          "sha256": "9057a7ec9d2699de599f0dae22c41bb0bcb273eba9f80be6b22d0219d1c4a5ee",
-          "size": 411648,
-          "publishedAt": "2026-10-05T14:06:37.629Z",
-          "notes": "\u4E0B\u8F7D\u6539\u7528\u72EC\u7ACB\u5E38\u9A7B\u5BBF\u4E3B \u002B \u5927\u5C0F\u6821\u9A8C"
-        },
-        {
-          "version": "1.28.0-alpha.21",
-          "file": "versions/1.28.0-alpha.21/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.21/MGCModpack.dll",
-          "sha256": "dd03b92b94fddc6e73d02c66ea00dbef682f4cfea996d5ef8305d1299c46962b",
-          "size": 411136,
-          "publishedAt": "2026-10-05T13:48:09.807Z",
-          "notes": "\u7F29\u7565\u56FE\u89E3\u7801\u4E0D\u518D\u5361\u5E27 \u002B \u8FDB\u5EA6\u66F4\u51C6 \u002B \u4E2D\u65AD\u6E05\u7406"
-        },
-        {
-          "version": "1.28.0-alpha.20",
-          "file": "versions/1.28.0-alpha.20/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.20/MGCModpack.dll",
-          "sha256": "45cdcd5a80346ff03c89d5d1df0ca9c97efddce19d2413848a96d1de8a999733",
-          "size": 411136,
-          "publishedAt": "2026-10-05T13:30:23Z",
-          "notes": "\u5730\u56FE\u5305\u9875\u4E0D\u5361 \u002B \u4E0B\u8F7D\u6D41\u5F0F\u843D\u76D8 \u002B \u8FDB\u5EA6\u4E0E\u5361\u6B7B\u4FEE\u590D"
-        },
-        {
-          "version": "1.28.0-alpha.19",
-          "file": "versions/1.28.0-alpha.19/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.19/MGCModpack.dll",
-          "sha256": "61985e7543c9f921eaeabe93ddacc52a8e401c1f9c271144d5a00877e7c9092c",
-          "size": 409088,
-          "publishedAt": "2026-10-05T13:10:35Z",
-          "notes": "\u5E27\u8F6E\u8BE2\u81EA\u52A8\u5237\u65B0 \u002B \u4FEE\u590D\u91CD\u590D\u70B9\u51FB\u5E76\u53D1\u4E0B\u8F7D"
-        },
-        {
-          "version": "1.28.0-alpha.18",
-          "file": "versions/1.28.0-alpha.18/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.18/MGCModpack.dll",
-          "sha256": "9f87323cf0fc7911d3f34fbefcc623922ca805015bfe78b5ae87ea2faa4221e4",
-          "size": 409088,
-          "publishedAt": "2026-10-05T12:58:06Z",
-          "notes": "\u5730\u56FE\u9875\u8BFB\u5B8C\u540E\u81EA\u52A8\u5237\u65B0\u5217\u8868"
-        },
-        {
-          "version": "1.28.0-alpha.17",
-          "file": "versions/1.28.0-alpha.17/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.17/MGCModpack.dll",
-          "sha256": "c3ad33de55cb2c59cbb08de02a791415d1903f81bdfe522dc3a7193b5fd68fe7",
-          "size": 408576,
-          "publishedAt": "2026-10-05T12:43:51Z",
-          "notes": "\u5730\u56FE\u5305\u9875\u5B8C\u5584\uFF08\u9884\u89C8\u56FE\u80CC\u666F / \u66F4\u65B0\u65F6\u53EF\u66FF\u6362 / \u9ED8\u8BA4\u5730\u56FE\u5217\u8868\uFF09"
-        },
-        {
-          "version": "1.28.0-alpha.16",
-          "file": "versions/1.28.0-alpha.16/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.16/MGCModpack.dll",
-          "sha256": "fb9b7f0344feff35e7c731e1bbc31c616b6088ed3d9f5f956595e51d54cd63b8",
-          "size": 408576,
-          "publishedAt": "2026-10-05T12:38:03Z",
-          "notes": "\u5730\u56FE\u5305\u9875\u9ED8\u8BA4\u5730\u56FE\u5217\u8868\uFF1B\u4E91\u7AEF\u9884\u89C8\u56FE\u80CC\u666F"
-        },
-        {
-          "version": "1.28.0-alpha.15",
-          "file": "versions/1.28.0-alpha.15/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.15/MGCModpack.dll",
-          "sha256": "fb9b7f0344feff35e7c731e1bbc31c616b6088ed3d9f5f956595e51d54cd63b8",
-          "size": 408576,
-          "publishedAt": "2026-10-05T12:33:18Z",
-          "notes": "\u4E91\u7AEF\u5730\u56FE\u5305\u9884\u89C8\u56FE \u002B \u6709\u65B0\u7248\u672C\u53EF\u66FF\u6362"
-        },
-        {
-          "version": "1.28.0-alpha.14",
-          "file": "versions/1.28.0-alpha.14/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.14/MGCModpack.dll",
-          "sha256": "de4f4d6159a43622f248cc2ee2d76d6d325539a1bc4e1f4feebd0403efcd0a76",
-          "size": 406528,
-          "publishedAt": "2026-10-05T12:15:10Z",
-          "notes": "\u4FEE\u590D zip \u4EE3\u7801\u9875 936 \u5BFC\u81F4\u5730\u56FE\u5305\u626B\u63CF\u5931\u8D25"
-        },
-        {
-          "version": "1.28.0-alpha.13",
-          "file": "versions/1.28.0-alpha.13/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.13/MGCModpack.dll",
-          "sha256": "a7e4e9df4a93131bf0dcf6c11c0332e417aa46c09d7d4aeb90515c1fe84a39a1",
-          "size": 406016,
-          "publishedAt": "2026-10-05T12:04:15Z",
-          "notes": "\u4FEE\u590D\u5730\u56FE\u5305\u5217\u8868\u65F6\u5E8F\u7ADE\u6001"
-        },
-        {
-          "version": "1.28.0-alpha.12",
-          "file": "versions/1.28.0-alpha.12/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.12/MGCModpack.dll",
-          "sha256": "93899327759c784e78fdf5ba7a0abb8901e22013f4d3ca49d9b56ea4f61ca966",
-          "size": 405504,
-          "publishedAt": "2026-10-05T11:52:02Z",
-          "notes": "\u9ED8\u8BA4\u5730\u56FE\u89C6\u56FE \u002B \u53CD\u7F16\u8BD1\u6062\u590D MapUIManager"
-        },
-        {
-          "version": "1.28.0-alpha.11",
-          "file": "versions/1.28.0-alpha.11/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.11/MGCModpack.dll",
-          "sha256": "930af3d730fee4f5a61eeea0b23f301b30aa15f0460d3a4279cc850e9b622eb5",
-          "size": 404992,
-          "publishedAt": "2026-10-05T11:22:40Z",
-          "notes": "\u4FEE\u590D\u9762\u677F\u6CE8\u518C\u8DEF\u5F84 \u002B \u5730\u56FE\u5305\u9875\u975E\u963B\u585E"
-        },
-        {
-          "version": "1.28.0-alpha.10",
-          "file": "versions/1.28.0-alpha.10/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.10/MGCModpack.dll",
-          "sha256": "0ead5c4765fab5813beb9b175664d000bb77e9e437bb045f3c75e4bec5c450c7",
-          "size": 402944,
-          "publishedAt": "2026-10-05T10:57:35Z",
-          "notes": "\u5730\u56FE\u5305\u9875\u9ED8\u8BA4\u663E\u793A\u4E91\u7AEF\u5217\u8868 \u002B \u53BB\u6389\u906E\u6321\u63D0\u793A"
-        },
-        {
-          "version": "1.28.0-alpha.9",
-          "file": "versions/1.28.0-alpha.9/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.9/MGCModpack.dll",
-          "sha256": "5c67ceca3817262f962e8877c10c13054af74b0dac097c1c600f9c59fccc7f54",
-          "size": 403456,
-          "publishedAt": "2026-10-05T10:42:29Z",
-          "notes": "bundle \u8D70 index.json assets \u002B \u7248\u672C\u53F7\u52A0 v"
-        },
-        {
-          "version": "1.28.0-alpha.8",
-          "file": "versions/1.28.0-alpha.8/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.8/MGCModpack.dll",
-          "sha256": "2d78473c71820c56e49d9824a46973edaf7bd37f6305695f45cff16278b136e0",
-          "size": 402944,
-          "publishedAt": "2026-10-05T10:29:44Z",
-          "notes": "\u5730\u56FE\u5305\u4E91\u7AEF\u5217\u8868 \u002B \u4E0B\u8F7D\u56FE\u6807/\u8FDB\u5EA6"
-        },
-        {
-          "version": "1.28.0-alpha.7",
-          "file": "versions/1.28.0-alpha.7/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.7/MGCModpack.dll",
-          "sha256": "60f737213414a7cf9f1a34932a3d3b1d221fa2ee9e56c5a145d4afa5e24ed6d7",
-          "size": 395264,
-          "publishedAt": "2026-10-05T09:46:08Z",
-          "notes": "mod/map \u4E0B\u8F7D\u8DEF\u5F84\u4FEE\u6B63\uFF08file \u662F\u4ED3\u5E93\u8DEF\u5F84\uFF0C\u672C\u5730\u8981\u53D6\u6587\u4EF6\u540D\uFF09"
-        },
-        {
-          "version": "1.28.0-alpha.6",
-          "file": "versions/1.28.0-alpha.6/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.6/MGCModpack.dll",
-          "sha256": "b77e5cb0775721ec56fc090787769d920e8f4582014f0a7960488f88ecd019b1",
-          "size": 395264,
-          "publishedAt": "2026-10-05T09:40:24Z",
-          "notes": "\u516C\u544A\u5730\u5740\u6539\u6307 config/\uFF08\u4FEE\u6B63\u6E05\u7406\u65F6\u8BEF\u5220\u7684\u56DE\u5F52\uFF09"
-        },
-        {
-          "version": "1.28.0-alpha.5",
-          "file": "versions/1.28.0-alpha.5/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.5/MGCModpack.dll",
-          "sha256": "b77e5cb0775721ec56fc090787769d920e8f4582014f0a7960488f88ecd019b1",
-          "size": 395264,
-          "publishedAt": "2026-10-05T09:36:54Z",
-          "notes": "\u4E0B\u8F7D\u6539\u8D70 UnityWebRequest\uFF08Mono \u7684 TLS \u5728\u8FD9\u53F0\u8BBE\u5907\u4E0A\u4E0D\u901A\uFF09"
-        },
-        {
-          "version": "1.28.0-alpha.4",
-          "file": "versions/1.28.0-alpha.4/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.4/MGCModpack.dll",
-          "sha256": "b77e5cb0775721ec56fc090787769d920e8f4582014f0a7960488f88ecd019b1",
-          "size": 395264,
-          "publishedAt": "2026-10-05T09:19:58Z",
-          "notes": "\u7F13\u5B58\u653E\u5BF9\u4F4D\u7F6E \u002B \u7248\u672C\u4ECE\u52A0\u8F7D\u5668\u8BFB"
-        },
-        {
-          "version": "1.28.0-alpha.3",
-          "file": "versions/1.28.0-alpha.3/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.3/MGCModpack.dll",
-          "sha256": "fad9ebb30962099bc89cf1e6a4644254ed7daa0ba1c1bea6c6017fa40cfe058b",
-          "size": 394240,
-          "publishedAt": "2026-10-05T09:13:30Z",
-          "notes": "\u4E09\u4EFD\u914D\u7F6E\u5206\u79BB \u002B \u56FE\u7247\u8D70 assets \u002B \u5173\u4E8E\u9875\u6539\u540D"
-        },
-        {
-          "version": "1.28.0-alpha.2",
-          "file": "versions/1.28.0-alpha.2/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.2/MGCModpack.dll",
-          "sha256": "fb0fa283b30aea139e31fa6daf89a9fd1a7a08141a2a44c2769374b8a3f7fb19",
-          "size": 391168,
-          "publishedAt": "2026-10-05T08:55:08Z",
-          "notes": "index.json \u9A71\u52A8 \u002B \u5730\u56FE\u5143\u6570\u636E \u002B \u7F13\u5B58\u8DEF\u5F84\u6539\u540D"
-        },
-        {
-          "version": "1.28.0-alpha.1",
-          "file": "versions/1.28.0-alpha.1/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha.1/MGCModpack.dll",
-          "sha256": "0479444c3754010f578486642fe6b0af4a4dc4f4c80558bd5ddf558c98565fc2",
-          "size": 382464,
-          "publishedAt": "2026-10-05T08:32:13Z",
-          "notes": "\u6D4B\u8BD5\u5E8F\u5217\u8D77\u70B9\uFF08\u5185\u5BB9\u540C\u6B63\u5F0F\u7248\uFF0C\u7528\u4E8E\u9A8C\u8BC1\u6D4B\u8BD5\u901A\u9053\uFF09"
-        },
-        {
-          "version": "1.28.0-alpha",
-          "file": "versions/1.28.0-alpha/MGCModpack.dll",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/versions/1.28.0-alpha/MGCModpack.dll",
-          "sha256": "0479444c3754010f578486642fe6b0af4a4dc4f4c80558bd5ddf558c98565fc2",
-          "size": 382464,
-          "publishedAt": "2026-10-05T07:21:09Z",
-          "notes": "release build: GoldPotFix, material warmup, TextureUtil/HttpUtil, dir refactor"
-        }
-      ]
-    },
-    {
-      "id": "map:MGCModpack",
-      "kind": "map",
-      "name": "MGCModpack",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "file": "map/MGCModpack.mappack",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/map/MGCModpack.mappack",
-          "sha256": "d6e42b54394fbf13dc29d7db2b33706b84cbed23ac4c63f40be0ed5cffcba8f5",
-          "size": 40086493,
-          "publishedAt": "2026-10-05T08:19:57Z",
-          "notes": "MGC \u5B98\u56FE\uFF0838.2 MB\uFF09",
-          "meta": {
-            "thumbnail": "picture/map-thumbnail-mgcmappack.png"
-          }
-        }
-      ]
-    },
-    {
-      "id": "mod:MGCModpack",
-      "kind": "mod",
-      "name": "MGCModpack",
-      "versions": [
-        {
-          "version": "1.0.9",
-          "file": "mod/MGCModpack.modpack",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "e54f857779b9b61648503b71d39b4d9781744ae8f2976e3443e474574175d680",
-          "size": 132976,
-          "publishedAt": "2026-10-16T20:13:30Z",
-          "notes": "\u8BBE\u7F6E\u9875\u62C6\u5206\uFF1A\u5355\u5C40PB\uFF08\u5DEE\u503C\u57FA\u7EBF\uFF09/ \u5206\u6BB5PB\uFF08\u6BCF\u6BB5\u5386\u53F2\u6700\u597D\uFF09\uFF1B\u8BA1\u65F6\u5668\u4E0E\u5E27\u7387\u5B57\u53F7\u6539\u4E3A\u4E0D\u968F\u6E32\u67D3\u5206\u8FA8\u7387\u53D8\u5316\uFF08\u7528\u753B\u5E03\u53C2\u8003\u9AD8\u5EA6\uFF09"
-        },
-        {
-          "version": "1.0.8",
-          "file": "mod/MGCModpack.modpack",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "757e82476528d4c5c1bc17584cd94daf67287f97a53dc97652b6d0ee720eaef8",
-          "size": 132640,
-          "publishedAt": "2026-10-16T20:04:36Z",
-          "notes": "\u5206\u6BB5\u8868\u5237\u65B0\u4FEE\u590D \u002B \u6E05\u6389\u4E34\u65F6\u8BCA\u65AD\u65E5\u5FD7\uFF08\u5E72\u51C0\u7248\uFF09"
-        },
-        {
-          "version": "1.0.7",
-          "file": "mod/MGCModpack.modpack",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "b140a296332e1a26a1626573920751d3279e6edca3a103d2ca2da1110f883bc8",
-          "size": 132996,
-          "publishedAt": "2026-10-16T20:02:10Z",
-          "notes": "\u4FEE\u5206\u6BB5\u8868\u4E0D\u5237\u65B0\u771F\u51F6\uFF1A\u5220\u6389\u628A\u884C\u6570\u636E\u6362\u6210PB\u5FEB\u7167\u7684\u65E7\u4EE3\u7801\uFF0C\u884C\u6570\u636E\u53EA\u5582\u672C\u5C40\u5B9E\u65F6\uFF0CPB \u53EA\u5F53\u5DEE\u503C\u57FA\u7EBF"
-        },
-        {
-          "version": "1.0.6",
-          "file": "mod/MGCModpack.modpack",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "842067d1bf295a7605d46149be8e45820ca7efbaf628aa0d364ab7b6dc475bbc",
-          "size": 133106,
-          "publishedAt": "2026-10-16T19:45:06Z",
-          "notes": "\u56DE\u5230\u6700\u65B0 1.0.6"
-        },
-        {
-          "version": "1.0.4",
-          "file": "mod/MGCModpack.modpack",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "081fee47ddd8bfc88e002bd7c7a3a713d1ced6b0cde1517abd9e53992512f6c3",
-          "size": 132751,
-          "publishedAt": "2026-10-16T19:07:25Z",
-          "notes": "\u56DE\u5230\u660E\u786E\u53EF\u7528\u7684 1.0.4"
-        },
-        {
-          "version": "1.0.3",
-          "file": "mod/MGCModpack.modpack",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "36ea502dfb56bc0ed0213666a3de9777495e070608903be3a75863731938f772",
-          "size": 133106,
-          "publishedAt": "2026-10-16T18:38:37Z",
-          "notes": "\u56DE\u5230 1.0.3\uFF1A\u5206\u6BB5\u8868\u884C\u6570\u636E=\u672C\u5C40\u5B9E\u65F6\uFF08\u4F1A\u9010\u6BB5\u5237\u65B0\uFF09\uFF0CPB \u5C40\u6210\u7EE9\u5F53\u5DEE\u503C\u57FA\u7EBF"
-        },
-        {
-          "version": "1.0.5",
-          "file": "mod/MGCModpack.modpack",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "7ae9e90b9feaf2886c5cd5caf8da1db7042bb440bc3319ceebe50e4363bd3af9",
-          "size": 133102,
-          "publishedAt": "2026-10-16T17:43:38Z",
-          "notes": "\u4E34\u65F6\u8BCA\u65AD\uFF1A\u6BCF 120 \u5E27\u6253 [TimerModDiag] \u6BB5\u540D/\u5F53\u524D\u6BB5/\u8D77\u6B65/\u5B8C\u8D5B/split0/seg0 \u002B \u7B2C\u4E00\u884C\u5B9E\u9645\u6587\u5B57\uFF1BSetData \u5305 try/catch \u6253\u5F02\u5E38\u3002\u67E5\u5B8C\u5220\u3002"
-        },
-        {
-          "version": "1.0.2",
-          "file": "mod/MGCModpack.modpack",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "e9300371da3b3cb149f7ffdc37a10a212a061afe2a6f380355e6cfb0c6e9835c",
-          "size": 132714,
-          "publishedAt": "2026-10-16T16:00:55Z",
-          "notes": "\u5206\u6BB5\u8868\uFF1A\u9ED8\u8BA4\u663E\u793A PB \u5C40\u6210\u7EE9\u3001\u65B0\u589E\u300C\u5206\u6BB5\u663E\u793A\u5386\u53F2PB\u300D\u9009\u9879\uFF1B\u8BA1\u65F6\u5668\u521D\u59CB\u4E3A\u7EFF\uFF08\u8FD8\u6CA1\u6709\u5386\u53F2\u5206\u6BB5\u65F6\u4E0D\u518D\u767D\u7740\uFF09\uFF1B\u8BA1\u65F6\u5668\u5F00\u5173\u4E0E\u5206\u6BB5\u8868\u5F00\u5173\u5F7B\u5E95\u72EC\u7ACB\uFF1B\u7B2C\u4E00\u4E2A\u5F00\u5173\u6539\u540D\u300C\u8BA1\u65F6\u5668\u5F00\u5173\u300D\u3002"
-        },
-        {
-          "version": "1.0.1",
-          "file": "mod/MGCModpack.modpack",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "faa859f51de415c794082767a43f4bd129cc8fd338eb702e8e8a40ade060b5b7",
-          "size": 132522,
-          "publishedAt": "2026-10-16T12:40:00Z",
-          "notes": "TimerMod \u6539\u7528\u6838\u5FC3\u8D44\u6E90\u5305\u7248\u5206\u6BB5\u8BA1\u65F6\u5668\uFF08\u5916\u89C2 ui_splitstimer\uFF0C\u53E3\u5F84\u540C PC\uFF09\u3002"
-        },
-        {
-          "version": "1.0.0",
-          "file": "mod/MGCModpack.modpack",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/MGCModpack.modpack",
-          "sha256": "adc9af0ad8a2fee0048f1619318859d8636158902b8872c742dbff342b898ca1",
-          "size": 132521,
-          "publishedAt": "2026-10-16T11:01:39Z",
-          "notes": "\u6B63\u5F0F\u9891\u9053\uFF1A\u901A\u5173\u9875\u53F3\u4E0A\u89D2\u663E\u793A\u4E0A\u6B21\u901A\u5173\u7684\u5206\u6BB5\u8868\uFF08RunSplitsArchive \u002B RewardBadge/SplitsTableView\uFF09\uFF1B\u6838\u5FC3 alpha.146 \u7684 screen.mode \u7AD9\u70B9\u62E6\u4F4F\u6E38\u620F\u6BCF\u573A\u666F\u81EA\u52A8\u6539\u5206\u8FA8\u7387/\u5E27\u7387\uFF08\u6E38\u620F\u4FA7 4 \u5904\u63D2\u6869\u5DF2\u771F\u673A\u9A8C\u8BC1\uFF09\u3002\u6574\u5408\u5305\u65E0\u81EA\u6D4B\u4EE3\u7801\u3002"
-        },
-        {
-          "version": "1.2.0",
-          "file": "mod/1.2.0/MGCModpack.modpack",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/1.2.0/MGCModpack.modpack",
-          "sha256": "adc9af0ad8a2fee0048f1619318859d8636158902b8872c742dbff342b898ca1",
-          "size": 132521,
-          "publishedAt": "2026-10-16T10:23:27Z",
-          "notes": "\u2605 \u8FD9\u4E2A\u7248\u672C\u53F7\u672C\u6765\u662F\u4E34\u65F6\u6D4B\u8BD5\u5305\uFF08\u5E26 testjump \u81EA\u6D4B\u5F00\u5173\uFF09\uFF0C\u73B0\u5DF2\u7528\u6B63\u5F0F\u5185\u5BB9\u8986\u76D6\uFF0C\u4E0D\u518D\u542B\u4EFB\u4F55\u81EA\u6D4B\u4EE3\u7801\u3002"
-        },
-        {
-          "version": "1.1.7",
-          "file": "mod/1.1.7/MGCModpack.modpack",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/1.1.7/MGCModpack.modpack",
-          "sha256": "53f04f7f2e6f0b060fc51a4c5ca400e7455170c9e0d1622440dfd06577473d99",
-          "size": 134724,
-          "publishedAt": "2026-10-15T18:09:59Z",
-          "notes": "mod 1.1.7\uFF1A\u5206\u6BB5\u8868\u53EF\u4EE5\u8C03\u9AD8\u5EA6\u548C\u5927\u5C0F\u4E86\uFF08\u7528\u6237\u53CD\u9988\u9ED8\u8BA4\u592A\u6241\uFF09\u3002\u8BBE\u7F6E\u9875\u65B0\u589E\u4E24\u9879\uFF1A\u5206\u6BB5\u8868\u884C\u9AD8 1.2-4\uFF08\u9ED8\u8BA4 1.9\uFF0C\u884C\u9AD8=\u5B57\u53F7\u4E58\u500D\u6570\uFF09\u3001\u5206\u6BB5\u8868\u5BBD\u5EA6 0.2-1.2\uFF08\u9ED8\u8BA4 0.52\uFF0C\u9762\u677F\u5BBD=\u5C4F\u5E55\u9AD8\u4E58\u500D\u6570\uFF09\uFF0C\u6539\u5B8C\u7ACB\u523B\u751F\u6548\u5E76\u5B58\u6863\uFF1B\u5206\u6BB5\u8868\u5B57\u53F7\u8FD8\u5728 0.5-3\u3002\u9ED8\u8BA4\u884C\u9AD8\u4ECE 1.5 \u63D0\u5230 1.9\u3002\u53E6\u5916\u5DEE\u503C\u5217\u7EDF\u4E00\u663E\u793A\u5230\u6BEB\u79D2\uFF08\u5C0F\u6570\u70B9\u540E\u4E09\u4F4D\uFF09\u3002"
-        },
-        {
-          "version": "1.1.6",
-          "file": "mod/1.1.6/MGCModpack.modpack",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/1.1.6/MGCModpack.modpack",
-          "sha256": "44e87fda627381146ba5eea6edf23cb20d92d3b69e540e7485547bf37dd354be",
-          "size": 134516,
-          "publishedAt": "2026-10-15T18:05:30Z",
-          "notes": "mod 1.1.6\uFF1A\u5206\u6BB5\u8868\u7684\u5DEE\u503C\u5217\u7EDF\u4E00\u663E\u793A\u5230\u6BEB\u79D2\uFF08\u5C0F\u6570\u70B9\u540E\u4E09\u4F4D\uFF09\uFF0C\u548C\u7D2F\u8BA1/\u672C\u6BB5\u65F6\u95F4\u540C\u4E00\u4E2A\u7CBE\u5EA6\uFF1A\u002B15.543 / -1:23.456 / \u002B1:02:03.456\u3002\u4E4B\u524D\u4E0D\u5230\u4E00\u5206\u949F\u53EA\u5199\u4E24\u4F4D\u5C0F\u6570\uFF08\u002B15.54\uFF09\uFF0C\u7528\u6237\u8981\u6C42\u8865\u5230\u4E09\u4F4D\u3002"
-        },
-        {
-          "version": "1.1.5",
-          "file": "mod/1.1.5/MGCModpack.modpack",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/1.1.5/MGCModpack.modpack",
-          "sha256": "1e8fd3a2c9ff286f85d57e8b67cf2efafc765b3019ea1941c6308e0bf7663605",
-          "size": 134485,
-          "publishedAt": "2026-10-15T18:03:28Z",
-          "notes": "mod 1.1.5\uFF1A\u5206\u6BB5\u8868\u628A PC \u7248\u90A3\u4E2A IMGUI \u7684 LiveSplit \u98CE\u683C\u6574\u5957\u79FB\u690D\u6210 uGUI\uFF0C\u5B9E\u673A\u9A8C\u6536\u901A\u8FC7\u3002\u8868\u5934 Segment / \u002B/- / Time\uFF0C\u4E00\u6761\u5206\u6BB5\u4E00\u884C\uFF08\u6BB5\u540D\u3001\u672C\u6BB5\u65F6\u95F4\u3001\u4E0E\u6700\u597D\u6210\u7EE9\u7684\u5DEE\u503C\u3001\u7D2F\u8BA1\u65F6\u95F4\uFF09\uFF0C\u5E95\u90E8 Sum of Best Segments\uFF08\u5E26 PB \u603B\u65F6\u95F4\uFF09\uFF1B\u884C\u5E95\u8272\u6DF1\u6D45\u4EA4\u66FF\uFF0C\u843D\u540E\u7EA2\u3001\u9886\u5148\u7EFF\u3001\u5237\u65B0\u6700\u597D\u6210\u7EE9\u7684\u5206\u6BB5\u6807\u91D1\u8272\uFF0C\u672A\u5230\u8FBE\u7684\u5206\u6BB5\u7528\u6697\u8272\u663E\u793A\u6700\u597D\u6210\u7EE9\u3002\u6570\u636E\u5168\u90E8\u6765\u81EA MGC.Timer\uFF08SegmentTimerManager.GetProgress / GetBestRecords\uFF09\uFF0C\u6BB5\u540D\u53D6\u5F53\u524D\u5730\u56FE\u7684 Splitsname\u3002\u5927\u8BA1\u65F6\u5668\u6539\u6210\u843D\u540E\u53D8\u7EA2\u3001\u9886\u5148\u53D8\u7EFF\u3001\u901A\u5173\u53D8\u7EFF\u3002\u8BBE\u7F6E\u9875\u65B0\u589E\uFF1A\u663E\u793A\u5206\u6BB5\u8868\u3001\u5206\u6BB5\u8868\u5B57\u53F7\u3002\u4FEE\u8FC7\u7684\u5751\u4F9D\u6B21\u662F\uFF1A\u5730\u56FE Splitsname \u6BCF\u6B21\u90FD\u662F\u65B0\u6570\u7EC4\u5BFC\u81F4\u6BCF\u5E27\u91CD\u5EFA\u5168\u90E8\u884C\uFF08\u6539\u6210\u6309\u5185\u5BB9\u6BD4\u8F83\uFF09\uFF1B\u9762\u677F\u7528 Screen.width \u53CD\u63A8 x \u5BFC\u81F4\u8DD1\u51FA\u5C4F\u5E55\uFF08\u6539\u6210\u8D34\u53F3\u951A\u70B9\uFF09\uFF1B\u884C\u5185\u6587\u5B57\u7684\u951A\u70B9\u53C8\u5E26\u4E86\u4E00\u6B21\u884C\u4F4D\u79FB\u5BFC\u81F4\u7B2C 5 \u884C\u4EE5\u540E\u6574\u6392\u8DD1\u5230\u9762\u677F\u5916\uFF08\u6539\u6210 0\uFF09\uFF1B\u540D\u5B57\u5217\u5BBD\u5EA6\u53EA\u51CF\u4E86\u4E00\u4E2A\u5206\u680F\u5BBD\u5BFC\u81F4 Time \u5217\u88AB\u6324\u51FA\u5C4F\u5E55\uFF08\u6539\u6210\u51CF\u4E24\u680F\uFF09\u3002"
-        },
-        {
-          "version": "1.1.1",
-          "file": "mod/1.1.1/MGCModpack.modpack",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/1.1.1/MGCModpack.modpack",
-          "sha256": "f7dc98a686f1b05c360dfc95afaec97fa0fa784f46427c5abe076891be07455c",
-          "size": 134821,
-          "publishedAt": "2026-10-15T17:47:45Z",
-          "notes": "mod 1.1.1\uFF1A\u4FEE\u5206\u6BB5\u8868\u7684\u4E24\u4E2A\u771F bug\u3002\u2460 \u5730\u56FE\u7684 Splitsname \u6BCF\u6B21\u53D6\u90FD\u662F\u65B0\u6570\u7EC4\uFF0C\u539F\u6765\u6309\u5F15\u7528\u6BD4\u8F83\u6C38\u8FDC\u4E0D\u76F8\u7B49\uFF0C\u4E8E\u662F\u6BCF\u5E27\u9500\u6BC1\u91CD\u5EFA\u5168\u90E8\u884C\uFF08\u5361\u987F \u002B \u5E03\u5C40\u9519\u4E71\uFF1A\u4E0B\u9762\u51E0\u884C\u6CA1\u6709\u5E95\u8272\uFF09\uFF1B\u73B0\u5728\u6309\u5185\u5BB9\u6BD4\u8F83\u3002\u2461 \u5206\u6BB5\u8868\u539F\u6765\u7528 Screen.width \u53CD\u63A8\u5DE6\u8FB9\u7684 x\uFF0C\u5BFC\u81F4\u9762\u677F\u6709\u4E00\u534A\u8DD1\u5230\u5C4F\u5E55\u5916\uFF08\u753B\u5E03\u5750\u6807\u7A7A\u95F4\u548C Screen \u50CF\u7D20\u5C3A\u5BF8\u5E76\u4E0D\u4E00\u81F4\uFF09\uFF0C\u73B0\u5728\u76F4\u63A5\u8D34\u53F3\u8FB9\u951A\u70B9\uFF0C\u548C\u5927\u8BA1\u65F6\u5668\u540C\u4E00\u5957\u951A\u6CD5\u3002"
-        },
-        {
-          "version": "1.1.0",
-          "file": "mod/1.1.0/MGCModpack.modpack",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/mod/1.1.0/MGCModpack.modpack",
-          "sha256": "0b3436cd126c3eb6324f24ffc431f47733276e6741ae1aa4f42069b2b213a60c",
-          "size": 134448,
-          "publishedAt": "2026-10-15T17:21:01Z",
-          "notes": "mod 1.1.0\uFF1A\u6E38\u620F\u8BA1\u65F6\u5668\uFF08TimerMod\uFF09\u65B0\u589E uGUI \u5206\u6BB5\u8868\uFF0C\u628A PC \u7248\u90A3\u4E2A IMGUI \u7684 LiveSplit \u98CE\u683C\u6574\u5957\u79FB\u690D\u8FC7\u6765\uFF1A\u8868\u5934 Segment / \u002B/- / Time\uFF0C\u4E00\u6761\u5206\u6BB5\u4E00\u884C\uFF08\u6BB5\u540D\u3001\u672C\u6BB5\u65F6\u95F4\u3001\u4E0E\u6700\u597D\u6210\u7EE9\u7684\u5DEE\u503C\u3001\u7D2F\u8BA1\u5206\u6BB5\uFF09\uFF0C\u5E95\u90E8 Sum of Best Segments \u5E76\u9644\u5E26 PB \u603B\u65F6\u95F4\uFF1B\u884C\u5E95\u8272\u6DF1\u6D45\u4EA4\u66FF\uFF0C\u843D\u540E\u7EA2\u3001\u9886\u5148\u7EFF\u3001\u5237\u65B0\u6700\u597D\u6210\u7EE9\u7684\u5206\u6BB5\u6807\u91D1\u8272\u3002\u6570\u636E\u4E00\u884C\u90FD\u4E0D\u81EA\u5DF1\u7B97\uFF0C\u5168\u90E8\u6765\u81EA MGC.Timer \u7684 SegmentTimerManager\uFF08GetProgress / GetBestRecords\uFF09\uFF0C\u6BB5\u540D\u53D6\u5F53\u524D\u5730\u56FE\u7684 Splitsname\u3002\u5927\u8BA1\u65F6\u5668\u540C\u65F6\u6539\u6210\u843D\u540E\u53D8\u7EA2\u3001\u9886\u5148\u53D8\u7EFF\u3001\u901A\u5173\u53D8\u7EFF\u3002\u8BBE\u7F6E\u9875\u65B0\u589E\uFF1A\u663E\u793A\u5206\u6BB5\u8868\u3001\u5206\u6BB5\u8868\u5B57\u53F7\u3002"
+          "file": "releases/1.28.0-alpha.164(2)/dll/MGCModpack.dll",
+          "sha256": "3394a29222af85b33015b1ad7349a2b4f102183e70d22a2579e78c118bbcf12e",
+          "size": 525824
         }
       ]
     }
@@ -1693,17 +93,7 @@
       "file": "bundle/ui_fpspanel.unity3d",
       "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_fpspanel.unity3d",
       "sha256": "9f7ddf0b3411a33b74e844fa9f0cd6db2a19bd41893ec8b223a0585cecfb77f2",
-      "size": 17595,
-      "versions": [
-        {
-          "version": "1.1.0",
-          "file": "bundle/ui_fpspanel.unity3d",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_fpspanel.unity3d",
-          "sha256": "9f7ddf0b3411a33b74e844fa9f0cd6db2a19bd41893ec8b223a0585cecfb77f2",
-          "size": 17595,
-          "publishedAt": "2026-10-16T19:10:18Z"
-        }
-      ]
+      "size": 17595
     },
     {
       "id": "bundle:ui_mainmenu.unity3d",
@@ -1712,33 +102,7 @@
       "file": "bundle/ui_mainmenu.unity3d",
       "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_mainmenu.unity3d",
       "sha256": "cf72cd2425bb57e1688dd09e327348aeb47c033136147e148884fb08d3c14e6b",
-      "size": 1236169,
-      "versions": [
-        {
-          "version": "1.1.0",
-          "file": "bundle/ui_mainmenu.unity3d",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_mainmenu.unity3d",
-          "sha256": "cf72cd2425bb57e1688dd09e327348aeb47c033136147e148884fb08d3c14e6b",
-          "size": 1236169,
-          "publishedAt": "2026-10-16T19:46:05Z"
-        },
-        {
-          "version": "1.1.1",
-          "file": "bundle/ui_mainmenu@1.1.1.unity3d",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_mainmenu@1.1.1.unity3d",
-          "sha256": "489fef0fa03f1bb20246053d4208c0c2dee2f887f9467fbc0ec2565cfc8aa7f4",
-          "size": 1236014,
-          "publishedAt": "2026-10-15T14:32:53Z"
-        },
-        {
-          "version": "1.28.0-alpha.146",
-          "file": "bundle/ui_mainmenu@1.28.0-alpha.146.unity3d",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_mainmenu@1.28.0-alpha.146.unity3d",
-          "sha256": "6bb04ca7857c72ebbed17eaff3ef86cc9bad057ffdd91e70f8c42145eb54a5d3",
-          "size": 933142,
-          "publishedAt": "2026-10-16T11:02:53Z"
-        }
-      ]
+      "size": 1236169
     },
     {
       "id": "bundle:ui_pause.unity3d",
@@ -1756,17 +120,7 @@
       "file": "bundle/ui_splitstimer.unity3d",
       "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_splitstimer.unity3d",
       "sha256": "99aa2942a1bdece16683a9c9ad3a7afae578e65764a11655e8c3d819cb2f4df8",
-      "size": 7263,
-      "versions": [
-        {
-          "version": "1.1.0",
-          "file": "bundle/ui_splitstimer.unity3d",
-          "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_splitstimer.unity3d",
-          "sha256": "99aa2942a1bdece16683a9c9ad3a7afae578e65764a11655e8c3d819cb2f4df8",
-          "size": 7263,
-          "publishedAt": "2026-10-16T19:10:08Z"
-        }
-      ]
+      "size": 7263
     },
     {
       "id": "bundle:ui_uicontrols.unity3d",
@@ -1812,6 +166,98 @@
       "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/panel-placeholder.png",
       "sha256": "67cd42c3910b13bc39b5294807c371ee3e1f41954e4b67c4ad44dd6a1e312e0a",
       "size": 1286630
+    }
+  ],
+  "releases": [
+    {
+      "id": "1.28.0-alpha.164(2)",
+      "version": "1.28.0-alpha.164",
+      "build": 2,
+      "note": "带分类目录",
+      "createdAt": "2026-10-26T00:54:40",
+      "totalSize": 44010930,
+      "files": [
+        {
+          "path": "bundles/ui_fpspanel.unity3d",
+          "sha256": "9f7ddf0b3411a33b74e844fa9f0cd6db2a19bd41893ec8b223a0585cecfb77f2",
+          "size": 17595
+        },
+        {
+          "path": "bundles/ui_mainmenu.unity3d",
+          "sha256": "cf72cd2425bb57e1688dd09e327348aeb47c033136147e148884fb08d3c14e6b",
+          "size": 1236169
+        },
+        {
+          "path": "bundles/ui_pause.unity3d",
+          "sha256": "a9b8db2e8482e65a090ff60c192c964c12e2b80ff41514cfb1d25aacae8d17a0",
+          "size": 10658
+        },
+        {
+          "path": "bundles/ui_splitstimer.unity3d",
+          "sha256": "99aa2942a1bdece16683a9c9ad3a7afae578e65764a11655e8c3d819cb2f4df8",
+          "size": 7263
+        },
+        {
+          "path": "bundles/ui_uicontrols.unity3d",
+          "sha256": "21504fb640c443cc28c099c4e1c6c3aac5b0f8d9c47ff6953a3ca76b31c2af36",
+          "size": 18966
+        },
+        {
+          "path": "config/announcements.json",
+          "sha256": "d99f9fd2d3310a2a0b4927dcff6e9a9a7c004c20a81fb34cbe5f6bb928d52548",
+          "size": 3283
+        },
+        {
+          "path": "config/config.json",
+          "sha256": "0b6f069854f48c53d7b908313337b3eb740b6392356b4baf0b0923ec28526328",
+          "size": 674
+        },
+        {
+          "path": "config/mainpanel.json",
+          "sha256": "9d0240e0d2a8d507e522641615f16871baca99fe8cd5840b724cf20ba3edb614",
+          "size": 117
+        },
+        {
+          "path": "config/rks.json",
+          "sha256": "b5cbeea25a3930afc252a851c102fe826a1d4aba85b45f94eaf50f4c90f1b44b",
+          "size": 313
+        },
+        {
+          "path": "dll/MGCModpack.dll",
+          "sha256": "3394a29222af85b33015b1ad7349a2b4f102183e70d22a2579e78c118bbcf12e",
+          "size": 525824
+        },
+        {
+          "path": "map/MGCModpack.mappack",
+          "sha256": "d6e42b54394fbf13dc29d7db2b33706b84cbed23ac4c63f40be0ed5cffcba8f5",
+          "size": 40086493
+        },
+        {
+          "path": "mod/MGCModpack.modpack",
+          "sha256": "1d8eb5c96c903cccf202b47281030263fc85f4d1af69f2606082d535e2fe420e",
+          "size": 134725
+        },
+        {
+          "path": "picture/about-icon.png",
+          "sha256": "5cd12b9cd7508f4c115c44514f41e8cb3aa24bf07fb2309202618eaf2af2cc90",
+          "size": 253621
+        },
+        {
+          "path": "picture/announcement-icon.png",
+          "sha256": "84e306c160ea1833f967b2c01d2a5a81951ab5f9340808bc84d61ece2939cbb5",
+          "size": 483
+        },
+        {
+          "path": "picture/map-thumbnail-mgcmappack.png",
+          "sha256": "eb650075834fdd6431391af29fe74e0876be461486a59f8f25104654b491c5d9",
+          "size": 428116
+        },
+        {
+          "path": "picture/panel-placeholder.png",
+          "sha256": "67cd42c3910b13bc39b5294807c371ee3e1f41954e4b67c4ad44dd6a1e312e0a",
+          "size": 1286630
+        }
+      ]
     }
   ]
 }

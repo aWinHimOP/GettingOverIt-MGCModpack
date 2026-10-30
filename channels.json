@@ -1,0 +1,23 @@
+{
+  "channels": {
+    "stable": {
+      "label": "正式",
+      "order": 100,
+      "target": {
+        "type": "all"
+      },
+      "release": "1.28.0-alpha.164(2)"
+    },
+    "test": {
+      "label": "测试",
+      "order": 200,
+      "target": {
+        "type": "devices",
+        "ids": [
+          "356af1dbbf94887360586c6bff2e8b7b"
+        ]
+      },
+      "release": "1.28.0-alpha.164(2)"
+    }
+  }
+}
