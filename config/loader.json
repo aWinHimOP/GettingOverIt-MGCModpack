@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "syncSkipPrefixes": [
+    "mod/",
+    "map/"
+  ],
+  "note": "syncSkipPrefixes：启动时版本同步整段跳过的路径前缀。mod/ 和 map/ 是游戏内按需下载的内容（MGCModpack.dll 的 ModpackDownloader 负责），loader 不要在这里拉。改完这个文件不用重发 DLL。"
+}
