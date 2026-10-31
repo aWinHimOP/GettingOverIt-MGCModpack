@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 380,
-  "generatedAt": "2026-10-31T13:21:17",
+  "rev": 381,
+  "generatedAt": "2026-10-31T13:34:17",
   "channels": {
     "stable": {
       "label": "正式",
@@ -76,8 +76,8 @@
         {
           "version": "1.28.0-alpha.164",
           "file": "releases/1.28.0-alpha.164(2)/dll/MGCModpack.dll",
-          "sha256": "813b0d9752d65e5861c35eb1cb3b69c582195ac4f5148499cc207392f5425325",
-          "size": 526336
+          "sha256": "ba69a0bc4d57dbe77068ee025b346ef6d8d5b59f26870456594d65643088576f",
+          "size": 526848
         }
       ]
     }
@@ -163,7 +163,7 @@
       "build": 2,
       "note": "带分类目录",
       "createdAt": "2026-10-26T00:54:40",
-      "totalSize": 45890741,
+      "totalSize": 45891253,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -212,8 +212,8 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "813b0d9752d65e5861c35eb1cb3b69c582195ac4f5148499cc207392f5425325",
-          "size": 526336
+          "sha256": "ba69a0bc4d57dbe77068ee025b346ef6d8d5b59f26870456594d65643088576f",
+          "size": 526848
         },
         {
           "path": "map/MGCModpack.mappack",
