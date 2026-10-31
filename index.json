@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 382,
-  "generatedAt": "2026-10-31T15:21:42",
+  "rev": 384,
+  "generatedAt": "2026-11-01T00:42:06",
   "channels": {
     "stable": {
       "label": "正式",
@@ -11,7 +11,7 @@
       },
       "release": "1.28.0-alpha.164(2)",
       "pin": {
-        "mod:MGCModpack": "1.0.9",
+        "mod:MGCModpack": "1.1.0",
         "map:MGCModpack": "1.0.0",
         "loader:MGCModpack": "1.28.0-alpha.164"
       }
@@ -27,7 +27,7 @@
       },
       "release": "1.28.0-alpha.164(2)",
       "pin": {
-        "mod:MGCModpack": "1.0.9",
+        "mod:MGCModpack": "1.1.0",
         "map:MGCModpack": "1.0.0",
         "loader:MGCModpack": "1.28.0-alpha.164"
       }
@@ -41,10 +41,10 @@
       "category": "official",
       "versions": [
         {
-          "version": "1.0.9",
+          "version": "1.1.0",
           "file": "mod/official/MGCModpack.modpack",
-          "sha256": "e54f857779b9b61648503b71d39b4d9781744ae8f2976e3443e474574175d680",
-          "size": 132976,
+          "sha256": "9b5b8e11fa85974d947b71531764e91a2684cbceedb5c581a930aff213b20ddf",
+          "size": 135326,
           "category": "official"
         }
       ],
@@ -163,7 +163,7 @@
       "build": 2,
       "note": "带分类目录",
       "createdAt": "2026-10-26T00:54:40",
-      "totalSize": 45891251,
+      "totalSize": 45891852,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -222,8 +222,8 @@
         },
         {
           "path": "mod/MGCModpack.modpack",
-          "sha256": "1d8eb5c96c903cccf202b47281030263fc85f4d1af69f2606082d535e2fe420e",
-          "size": 134725
+          "sha256": "9b5b8e11fa85974d947b71531764e91a2684cbceedb5c581a930aff213b20ddf",
+          "size": 135326
         },
         {
           "path": "picture/about-icon.png",
