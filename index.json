@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 381,
-  "generatedAt": "2026-10-31T13:34:17",
+  "rev": 382,
+  "generatedAt": "2026-10-31T15:21:42",
   "channels": {
     "stable": {
       "label": "正式",
@@ -98,8 +98,8 @@
       "name": "ui_mainmenu.unity3d",
       "file": "bundle/ui_mainmenu.unity3d",
       "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_mainmenu.unity3d",
-      "sha256": "cf72cd2425bb57e1688dd09e327348aeb47c033136147e148884fb08d3c14e6b",
-      "size": 1236169
+      "sha256": "15d1db3ad99eb38fce37e12896a37adfab9e5a5a098ce394dd6a44dad2674a59",
+      "size": 1236167
     },
     {
       "id": "bundle:ui_pause.unity3d",
@@ -163,7 +163,7 @@
       "build": 2,
       "note": "带分类目录",
       "createdAt": "2026-10-26T00:54:40",
-      "totalSize": 45891253,
+      "totalSize": 45891251,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -172,8 +172,8 @@
         },
         {
           "path": "bundles/ui_mainmenu.unity3d",
-          "sha256": "cf72cd2425bb57e1688dd09e327348aeb47c033136147e148884fb08d3c14e6b",
-          "size": 1236169
+          "sha256": "15d1db3ad99eb38fce37e12896a37adfab9e5a5a098ce394dd6a44dad2674a59",
+          "size": 1236167
         },
         {
           "path": "bundles/ui_pause.unity3d",
