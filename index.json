@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 387,
-  "generatedAt": "2026-11-01T13:08:03",
+  "rev": 388,
+  "generatedAt": "2026-11-01T13:46:13",
   "channels": {
     "stable": {
       "label": "正式",
@@ -43,8 +43,8 @@
         {
           "version": "1.1.0",
           "file": "mod/official/MGCModpack.modpack",
-          "sha256": "33d94c161bea7dcf238746475680fa5c71a6e9eb50c8b11759f452db157020f8",
-          "size": 139135,
+          "sha256": "7d4c213f31beb9963f79612fbc58fb8deea55e08ed5ac86df992cc64993d37af",
+          "size": 139138,
           "category": "official"
         }
       ],
@@ -76,8 +76,8 @@
         {
           "version": "1.28.0-alpha.164",
           "file": "releases/1.28.0-alpha.164(2)/dll/MGCModpack.dll",
-          "sha256": "eb4f0d89c1f69c99ed338261dc478225e36f3ee72147398807468c17adf5701e",
-          "size": 526848
+          "sha256": "0defd0f85ed1e0b711cc2a6a56c2803420f605b1d27a91d1981350e116031d3c",
+          "size": 528384
         }
       ]
     }
@@ -163,7 +163,7 @@
       "build": 2,
       "note": "带分类目录",
       "createdAt": "2026-10-26T00:54:40",
-      "totalSize": 44709092,
+      "totalSize": 44710628,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -212,8 +212,8 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "eb4f0d89c1f69c99ed338261dc478225e36f3ee72147398807468c17adf5701e",
-          "size": 526848
+          "sha256": "0defd0f85ed1e0b711cc2a6a56c2803420f605b1d27a91d1981350e116031d3c",
+          "size": 528384
         },
         {
           "path": "map/MGCModpack.mappack",
