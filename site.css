@@ -37,7 +37,8 @@ p b,li b{color:var(--txt)}
 .card:hover{border-color:#2f4a68}
 .card h3{margin:0 0 8px;font-size:16px}
 .card p{color:var(--dim);font-size:14px;margin:0}
-.icon{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(76,194,255,.18),rgba(167,139,250,.18));margin-bottom:14px;font-size:17px}
+.icon{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(76,194,255,.18),rgba(167,139,250,.18));margin-bottom:14px}
+.icon svg{width:19px;height:19px;fill:none;stroke:var(--accent);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .shots{display:grid;grid-template-columns:1fr;gap:26px}
 .shots figure{margin:0}
 .shots img{width:100%;border-radius:16px;border:1px solid var(--line);display:block;background:#131c2e}

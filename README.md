@@ -85,23 +85,7 @@
 | [icsharpcode/ILSpy](https://github.com/icsharpcode/ILSpy)（ICSharpCode.Decompiler） | MIT | 反编译辅助工具 |
 | [MelvinShwuaner/IL2CPP2MONO](https://github.com/MelvinShwuaner/IL2CPP2MONO) | MIT | 把游戏从 IL2CPP 转成 Mono 的工具链 |
 
-### 只参考做法，未使用其代码
-
-| 项目 | 许可证 | 说明 |
-|---|---|---|
-| [gree/unity-webview](https://github.com/gree/unity-webview) | zlib | 排行榜内嵌浏览器的**思路参考**（见下） |
-| kdivTAS | — | 「存档」Mod 的快照实现思路参考，代码为自行实现 |
-
-> **本项目没有使用 Newtonsoft.Json。** 所有 JSON 都是手写的轻量解析（见 `CommunitySource` / `NetdiskSource`），
-> 早期文档里写过这一条，是误标，已删除。
-
-> **关于排行榜的内嵌浏览器：为什么没有直接用 gree/unity-webview。**
-> 它是最常用的免费方案（zlib 许可证），但它需要往游戏 APK 里放 Java 类和 native 库，
-> 而本模组包是**热更的 DLL** —— 游戏本体早就装在玩家手机上了，DLL 改不了 APK，
-> 所以任何插件（免费的、付费的都一样）都装不进去。
-> 好在**不做插件也能做**：Unity 自带的 `AndroidJavaObject` 本来就能调 Java，
-> 于是用 JNI 直接叫起系统的 `android.webkit.WebView`，**纯 C# 实现，不要钱、不改 APK**。
-> 万一在某些机型上起不来，会**退回系统浏览器**打开，功能不会没有。
+以上许可证文本以各项目仓库为准。
 
 ## 免责声明
 
