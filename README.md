@@ -48,7 +48,10 @@
 
 | 路径 | 说明 |
 |---|---|
-| `index.html` | 官网 / 下载页（GitHub Pages 根页） |
+| `index.html` | 官网首页（GitHub Pages 根页） |
+| `download.html` | 下载页：本体 / 地图包 / 模组包（读 `netdisk.json`） |
+| `guide.html` `faq.html` `shots.html` `disclaimer.html` | 教程 / 常见问题 / 实机截图 / 声明 |
+| `site.css` | 全站样式 |
 | `index.json` | 版本清单，客户端启动时拉这个 |
 | `releases/` `bundle/` `picture/` | 各版本的 DLL、UI 资源包、图标 |
 | `mod/` `map/` | 官方 mod 与地图（客户端直接从这里下载） |
