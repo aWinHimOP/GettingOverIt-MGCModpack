@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MGC Modpack · 掘地求升手机版扩展模组包</title>
+<meta name="description" content="MGC Modpack 是《Getting Over It 掘地求升》手机版的非官方扩展模组包：热更新、Mod 系统、地图包、内置资源下载。">
+<link rel="icon" href="picture/about-icon.png">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0b1220;--bg2:#131c2e;--card:#182236;--line:#243147;--txt:#e6edf7;--dim:#93a4bd;--accent:#4cc2ff;--accent2:#a78bfa}
+html{scroll-behavior:smooth}
+body{background:radial-gradient(1200px 600px at 20% -10%,#1b2c47 0%,var(--bg) 55%) no-repeat,var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(12px);background:rgba(11,18,32,.78);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:18px;height:60px}
+nav .logo{font-weight:700;letter-spacing:.5px}
+nav .logo span{color:var(--accent)}
+nav .links{margin-left:auto;display:flex;gap:18px;font-size:14px}
+nav .links a{color:var(--dim)}nav .links a:hover{color:var(--txt);text-decoration:none}
+@media(max-width:720px){nav .links{display:none}}
+header.hero{padding:88px 0 64px;text-align:center}
+.badge{display:inline-block;padding:5px 14px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--dim);margin-bottom:22px}
+h1{font-size:clamp(34px,6vw,58px);line-height:1.15;letter-spacing:-1px}
+h1 em{font-style:normal;background:linear-gradient(92deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{margin:20px auto 0;max-width:640px;color:var(--dim);font-size:17px}
+.cta{margin-top:36px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:12px;font-weight:600;font-size:16px;border:1px solid transparent;cursor:pointer;transition:.18s;font-family:inherit}
+.btn-main{background:linear-gradient(92deg,var(--accent),#7cc7ff);color:#05243a}
+.btn-main:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(76,194,255,.28);text-decoration:none}
+.btn-ghost{border-color:var(--line);color:var(--txt);background:transparent}
+.btn-ghost:hover{border-color:var(--accent);text-decoration:none}
+section{padding:64px 0;border-top:1px solid var(--line)}
+h2{font-size:26px;margin-bottom:8px}
+.lead{color:var(--dim);margin-bottom:34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;transition:.2s}
+.card:hover{border-color:#2f4a68}
+.card h3{font-size:16px;margin-bottom:8px}
+.card p{color:var(--dim);font-size:14px}
+.icon{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(76,194,255,.18),rgba(167,139,250,.18));margin-bottom:14px;font-size:17px}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:720px){.shots{grid-template-columns:1fr}}
+.shots img{width:100%;border-radius:16px;border:1px solid var(--line);display:block}
+ol.steps{counter-reset:s;list-style:none;display:grid;gap:14px}
+ol.steps li{position:relative;padding-left:52px;color:var(--dim)}
+ol.steps li b{color:var(--txt)}
+ol.steps li:before{counter-increment:s;content:counter(s);position:absolute;left:0;top:2px;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--card);border:1px solid var(--line);color:var(--accent);font-weight:700;font-size:14px}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:10px}
+details summary{cursor:pointer;font-weight:600;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details summary:before{content:"›";color:var(--accent);margin-right:10px;display:inline-block;transition:.2s}
+details[open] summary:before{transform:rotate(90deg)}
+details p{color:var(--dim);font-size:14px;margin-top:10px}
+.notice{background:linear-gradient(180deg,rgba(255,196,86,.07),rgba(255,196,86,.02));border:1px solid rgba(255,196,86,.28);border-radius:16px;padding:24px}
+.notice h2{color:#ffd479}
+.notice ul{list-style:none;display:grid;gap:10px;margin-top:14px}
+.notice li{padding-left:24px;position:relative;color:var(--dim);font-size:14px}
+.notice li:before{content:"!";position:absolute;left:0;top:0;width:16px;height:16px;border-radius:50%;background:rgba(255,196,86,.2);color:#ffd479;font-size:11px;font-weight:700;display:grid;place-items:center}
+#download{display:none}
+#download.on{display:block;animation:fade .35s ease}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.dl-list{display:grid;gap:14px;margin-top:26px}
+.dl{display:flex;align-items:center;gap:18px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 22px;transition:.2s}
+.dl:hover{border-color:var(--accent);transform:translateY(-2px)}
+.dl .name{font-weight:600}.dl .meta{color:var(--dim);font-size:13px}
+.dl .go{margin-left:auto;white-space:nowrap;font-size:14px;padding:9px 18px;border-radius:10px;background:rgba(76,194,255,.14);color:var(--accent);font-weight:600}
+.dl .code{font-size:12px;color:var(--dim);margin-left:10px}
+.empty{text-align:center;color:var(--dim);padding:40px;border:1px dashed var(--line);border-radius:14px;margin-top:26px}
+footer{border-top:1px solid var(--line);padding:34px 0 60px;color:var(--dim);font-size:13px;text-align:center}
+footer a{color:var(--dim)}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <div class="logo">MGC <span>Modpack</span></div>
+  <div class="links">
+    <a href="#features">功能</a>
+    <a href="#shots">截图</a>
+    <a href="#install">安装</a>
+    <a href="#faq">常见问题</a>
+    <a href="#disclaimer">声明</a>
+    <a href="javascript:void(0)" onclick="showDownloads()">下载</a>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="badge">v1.28.0-alpha.164 · 正式频道</div>
+  <h1>掘地求升手机版<br><em>MGC Modpack</em></h1>
+  <p class="sub">给《Getting Over It》安卓版加一层可热更新的扩展：Mod 系统、地图包、计时器、存档，还有内置的资源下载页。不重装 APK 也能更新。</p>
+  <div class="cta">
+    <a class="btn btn-main" href="javascript:void(0)" onclick="showDownloads()">下载 Modpack</a>
+    <a class="btn btn-ghost" href="#features">看看有什么</a>
+  </div>
+</div></header>
+
+<section id="features"><div class="wrap">
+  <h2>功能</h2>
+  <p class="lead">下面这些都不是改 APK 做出来的，而是启动时挂上去的。</p>
+  <div class="grid">
+    <div class="card"><div class="icon">&#9889;</div><h3>热更新</h3><p>启动时比对版本清单，只下变动的 DLL 和资源包。修 bug 不用重新分发安装包。</p></div>
+    <div class="card"><div class="icon">&#129513;</div><h3>Mod 系统</h3><p>存档、游戏计时器、光标美化、自定义背景、碰撞箱显示、快速出罐、TNT、触摸可视化……可在游戏内逐项开关。</p></div>
+    <div class="card"><div class="icon">&#128506;</div><h3>地图包</h3><p>官方地图和社区地图都支持，资源页里点一下就能下，下完直接开。</p></div>
+    <div class="card"><div class="icon">&#128230;</div><h3>内置资源页</h3><p>Mod 和地图不用去别处找，游戏里就是下载入口，还带网盘备用渠道。</p></div>
+    <div class="card"><div class="icon">&#128172;</div><h3>公告与远程 UI</h3><p>公告、通知、问题反馈都在游戏内，不用加群也知道最近改了什么。</p></div>
+    <div class="card"><div class="icon">&#127942;</div><h3>成绩统计</h3><p>分段计时、最佳成绩、重开次数、通关次数，都存在本地。</p></div>
+  </div>
+</div></section>
+
+<section id="shots"><div class="wrap">
+  <h2>截图</h2>
+  <p class="lead">主页面和游戏内。</p>
+  <div class="shots">
+    <img src="picture/panel-placeholder.png" alt="主页面">
+    <img src="picture/about-icon.png" alt="图标" style="object-fit:contain;background:#131c2e;padding:40px">
+  </div>
+</div></section>
+
+<section id="install"><div class="wrap">
+  <h2>安装</h2>
+  <p class="lead">前提：手机能装 APK，游戏版本为 1.9.2（安卓）。</p>
+  <ol class="steps">
+    <li><b>下载安装包</b>：从下面的下载区拿 APK，装到手机上。</li>
+    <li><b>首次启动</b>：会自动从更新服务器同步最新版本，需要联网，等它跑完。</li>
+    <li><b>进游戏</b>：左上角暂停键打开菜单，左边一列就是各个页面。</li>
+    <li><b>装 Mod / 地图</b>：「社区/资源」页里直接下载，下完在「Mod(模组)」「Map(地图)」里启用。</li>
+  </ol>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <h2>常见问题</h2>
+  <p class="lead">先看这里，大部分问题都能自己解决。</p>
+  <details><summary>启动卡在同步 / 一直转圈怎么办？</summary><p>多半是网络问题。切换网络重试；实在不行去下载区拿网盘里的完整包手动替换。</p></details>
+  <details><summary>Mod 或地图下载失败？</summary><p>资源页会自动换源重试。如果全部失败，说明服务器连不上，用网盘备用渠道手动导入。</p></details>
+  <details><summary>更新后存档还在吗？</summary><p>在。存档和配置存在游戏目录下，热更新只替换程序文件，不动玩家数据。</p></details>
+  <details><summary>会不会被判定作弊？</summary><p>这是单机游戏，没有联机也没有反作弊。但请自觉，别拿改过的成绩去冒充原版记录。</p></details>
+  <details><summary>iOS 能用吗？</summary><p>不能，只做了安卓。</p></details>
+</div></section>
+
+<section id="disclaimer"><div class="wrap">
+  <div class="notice">
+    <h2>声明</h2>
+    <ul>
+      <li>本项目是<b>非官方</b>的玩家自制扩展，与 Noodlecake Studios、Bennett Foddy 及《Getting Over It》原开发团队<b>没有任何关系</b>，也未获其授权或认可。</li>
+      <li>仅供<b>学习交流</b>使用，<b>禁止任何形式的商业用途</b>（包括但不限于售卖、付费下载、捆绑推广）。</li>
+      <li>修改游戏存在风险：可能出现闪退、卡死、存档异常。<b>请自行备份存档，风险自负。</b></li>
+      <li>本项目<b>不收集任何个人信息</b>。联网仅用于拉取版本清单、配置和资源包；公告与统计均不含身份信息。</li>
+      <li>项目内部分素材来自网络，版权归原作者所有。如有侵权，请通过下方联系方式告知，会立即删除。</li>
+      <li>游戏本体请通过<b>官方渠道</b>购买支持作者。</li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="download"><div class="wrap">
+  <h2>下载</h2>
+  <p class="lead">网盘渠道。链接失效或需要提取码时，看每一条下面的说明。</p>
+  <div id="dlList" class="dl-list"></div>
+  <div id="dlEmpty" class="empty" style="display:none">还没有配置网盘链接。<br>可以先加 QQ 群 <b>549361403</b> 获取。</div>
+</div></section>
+
+<footer><div class="wrap">
+  <p>MGC Modpack · 作者 <a href="https://github.com/aWinHimOP" target="_blank" rel="noopener">@aWinHimOP</a> · QQ 群 549361403</p>
+  <p style="margin-top:8px"><a href="https://github.com/aWinHimOP/GettingOverIt-MGCModpack" target="_blank" rel="noopener">GitHub 仓库</a> · 本站为项目发布页</p>
+</div></footer>
+
+<script>
+var DL_FALLBACK = [];
+
+function esc(s){ return String(s == null ? "" : s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]; }); }
+
+function renderDownloads(items){
+  var box = document.getElementById("dlList");
+  var empty = document.getElementById("dlEmpty");
+  box.innerHTML = "";
+  if (!items || !items.length){ empty.style.display = "block"; return; }
+  empty.style.display = "none";
+  for (var i = 0; i < items.length; i++){
+    var it = items[i];
+    var a = document.createElement("a");
+    a.className = "dl";
+    a.href = it.url || "#";
+    a.target = "_blank";
+    a.rel = "noopener";
+    var meta = [];
+    if (it.desc) meta.push(it.desc);
+    if (it.size) meta.push(it.size);
+    if (it.kind) meta.push(it.kind === "map" ? "地图包" : (it.kind === "mod" ? "Mod 包" : it.kind));
+    a.innerHTML = '<div><div class="name">' + esc(it.name) + '</div><div class="meta">' + esc(meta.join(" · ")) + '</div></div>'
+      + '<div class="go">前往下载 &#8599;</div>';
+    box.appendChild(a);
+  }
+}
+
+function showDownloads(){
+  var sec = document.getElementById("download");
+  sec.classList.add("on");
+  setTimeout(function(){ sec.scrollIntoView({behavior:"smooth", block:"start"}); }, 40);
+  fetch("netdisk.json?t=" + Date.now(), {cache:"no-store"})
+    .then(function(r){ return r.json(); })
+    .then(function(j){ renderDownloads((j && j.items) || DL_FALLBACK); })
+    .catch(function(){ renderDownloads(DL_FALLBACK); });
+}
+</script>
+</body>
+</html>
