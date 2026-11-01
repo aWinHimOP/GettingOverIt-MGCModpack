@@ -40,9 +40,10 @@ h2{font-size:26px;margin-bottom:8px}
 .card h3{font-size:16px;margin-bottom:8px}
 .card p{color:var(--dim);font-size:14px}
 .icon{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(76,194,255,.18),rgba(167,139,250,.18));margin-bottom:14px;font-size:17px}
-.shots{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-@media(max-width:720px){.shots{grid-template-columns:1fr}}
-.shots img{width:100%;border-radius:16px;border:1px solid var(--line);display:block}
+.shots{display:grid;grid-template-columns:1fr;gap:18px}
+.shots figure{margin:0}
+.shots img{width:100%;border-radius:16px;border:1px solid var(--line);display:block;background:#131c2e}
+.shots figcaption{color:var(--dim);font-size:13px;margin-top:10px;text-align:center}
 ol.steps{counter-reset:s;list-style:none;display:grid;gap:14px}
 ol.steps li{position:relative;padding-left:52px;color:var(--dim)}
 ol.steps li b{color:var(--txt)}
@@ -112,8 +113,8 @@ footer a{color:var(--dim)}
   <h2>截图</h2>
   <p class="lead">主页面和游戏内。</p>
   <div class="shots">
-    <img src="picture/panel-placeholder.png" alt="主页面">
-    <img src="picture/about-icon.png" alt="图标" style="object-fit:contain;background:#131c2e;padding:40px">
+    <figure><img src="picture/panel-placeholder.png" alt="主页面"><figcaption>主页面</figcaption></figure>
+    <figure><img src="picture/screenshot-ingame.png" alt="游戏内"><figcaption>游戏内（左侧为「存档」mod 的贴边按键）</figcaption></figure>
   </div>
 </div></section>
 
@@ -191,6 +192,8 @@ function renderDownloads(items){
     box.appendChild(a);
   }
 }
+
+if (location.hash === "#download"){ window.addEventListener("load", showDownloads); }
 
 function showDownloads(){
   var sec = document.getElementById("download");
