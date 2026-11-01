@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 385,
-  "generatedAt": "2026-11-01T12:05:05",
+  "rev": 386,
+  "generatedAt": "2026-11-01T12:20:50",
   "channels": {
     "stable": {
       "label": "正式",
@@ -76,7 +76,7 @@
         {
           "version": "1.28.0-alpha.164",
           "file": "releases/1.28.0-alpha.164(2)/dll/MGCModpack.dll",
-          "sha256": "ba69a0bc4d57dbe77068ee025b346ef6d8d5b59f26870456594d65643088576f",
+          "sha256": "eb4f0d89c1f69c99ed338261dc478225e36f3ee72147398807468c17adf5701e",
           "size": 526848
         }
       ]
@@ -212,7 +212,7 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "ba69a0bc4d57dbe77068ee025b346ef6d8d5b59f26870456594d65643088576f",
+          "sha256": "eb4f0d89c1f69c99ed338261dc478225e36f3ee72147398807468c17adf5701e",
           "size": 526848
         },
         {

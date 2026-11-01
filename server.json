@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updatedAt": "2026-10-13T05:29:10Z",
-  "url": "https:\/\/psychological-install-recognized-interventions.trycloudflare.com",
-  "note": "当前公网入口（Cloudflare quick tunnel）。地址会变，客户端只读这个文件，不要写死。"
+  "updatedAt": "2026-11-01T04:20:00Z",
+  "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack",
+  "note": "★ 2026-11-01：原来的 cloudflare quick tunnel 早已失效（DNS 解析不了），除了本机以外所有手机的 mod/map 包下载全部失败。现在直接指 GitHub Pages，永远可达。客户端只读这个文件，不要写死。"
 }
