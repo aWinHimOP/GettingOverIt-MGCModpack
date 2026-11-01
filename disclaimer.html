@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>声明 · MGC Modpack</title>
-<meta name="description" content="MGC Modpack 声明：非官方作品、不含游戏本体、禁止商用、风险自负。">
+<meta name="description" content="MGC Modpack 声明：本站不提供安装包、非官方作品、禁止商用、风险自负，以及用到的开源项目清单。">
 <link rel="icon" href="picture/about-icon.png">
 <link rel="stylesheet" href="site.css">
 </head>
@@ -28,6 +28,8 @@
 <section class="noline"><div class="wrap">
   <div class="notice">
     <ul>
+      <li><b>本站和 GitHub 仓库都不提供安装包。</b>GitHub 仓库与 GitHub Pages 上<b>不放 APK、不放游戏本体、不放成品安装包</b>，只存放版本清单、配置和热更新用的文件。所有安装包仅通过网盘等第三方渠道分发，与 GitHub 无关，本站也不构成对游戏或成品的再分发。</li>
+
       <li><b>这是玩家自制作品，不是官方的东西。</b>本项目与《Getting Over It with Bennett Foddy》的开发者 Bennett Foddy、中国区代理 ZPLAY、发行商 Noodlecake Studios 以及任何相关公司，都<b>没有任何隶属、合作、授权或背书关系</b>。任何官方渠道都不会为它提供支持。</li>
 
       <li><b>不包含游戏本体。</b>游戏的程序、美术、音频、商标等一切内容的版权归原作者及发行方所有。本项目只提供运行在游戏之上的扩展，<b>不提供、也不代替游戏本体</b>。</li>
@@ -42,13 +44,39 @@
 
       <li><b>素材版权。</b>项目内部分图标、字体、图片等素材来源于网络，版权归原作者所有。若你是权利人且不希望被使用，请通过下方方式联系，核实后会立即移除。</li>
 
-      <li><b>第三方开源组件。</b>本项目使用了若干 MIT / zlib 许可的开源项目，具体清单见 <a href="https://github.com/aWinHimOP/GettingOverIt-MGCModpack" target="_blank" rel="noopener">GitHub 仓库</a> 的 README，遵循其各自的许可证。</li>
-
-      <li><b>最终解释。</b>本声明可能随项目更新而调整，以本页面当前内容为准。</li>
+      <li><b>本声明可能随项目更新而调整</b>，以本页面当前内容为准。</li>
     </ul>
   </div>
+</div></section>
 
-  <p style="margin-top:28px">联系方式：QQ 群 <b>549361403</b> ｜ GitHub <a href="https://github.com/aWinHimOP/GettingOverIt-MGCModpack/issues" target="_blank" rel="noopener">提交 Issue</a></p>
+<section id="oss"><div class="wrap">
+  <h2>用到的开源项目</h2>
+  <p class="lead">按实际使用情况逐项列出：用在哪、有没有随成品分发。方便核对，也避免误标。</p>
+
+  <h3>随成品分发</h3>
+  <div class="card" style="margin-top:10px">
+    <h3><a href="https://github.com/DearVa/Unity-Runtime-Inspector" target="_blank" rel="noopener">DearVa/Unity-Runtime-Inspector</a> <span style="color:var(--dim);font-size:13px;font-weight:400">· MIT</span></h3>
+    <p>游戏内调试面板。<code>MGC/Managers/DebugPanelManager.cs</code> 调用其 <code>InGameDebugger</code> API，以 <code>InGameDebugger.dll</code> 的形式打进 APK 的冻结层。</p>
+  </div>
+
+  <h3>仅构建 / 开发工具（不随成品分发）</h3>
+  <div class="card" style="margin-top:10px">
+    <p><a href="https://github.com/jbevain/cecil" target="_blank" rel="noopener">jbevain/cecil</a>（Mono.Cecil，MIT）—— <code>Tools/ILVaultGui</code>、<code>Tools/VMObfuscator</code> 的程序集读写。</p>
+    <p style="margin-top:10px"><a href="https://github.com/icsharpcode/ILSpy" target="_blank" rel="noopener">icsharpcode/ILSpy</a>（ICSharpCode.Decompiler，MIT）—— 反编译辅助工具。</p>
+    <p style="margin-top:10px"><a href="https://github.com/MelvinShwuaner/IL2CPP2MONO" target="_blank" rel="noopener">MelvinShwuaner/IL2CPP2MONO</a>（MIT）—— 把游戏从 IL2CPP 转成 Mono 的工具链。</p>
+  </div>
+
+  <h3>只参考做法，未使用其代码</h3>
+  <div class="card" style="margin-top:10px">
+    <p><a href="https://github.com/gree/unity-webview" target="_blank" rel="noopener">gree/unity-webview</a>（zlib）—— 排行榜内嵌浏览器的思路参考。实际实现用 Unity 自带的 <code>AndroidJavaObject</code> 直接调系统 WebView，纯 C#，不引入其代码。</p>
+    <p style="margin-top:10px">kdivTAS —— 「存档」Mod 的快照实现思路参考，代码为自行实现。</p>
+  </div>
+
+  <p style="margin-top:20px;font-size:14px">本项目<b>没有使用 Newtonsoft.Json</b>：所有 JSON 都是手写的轻量解析（<code>CommunitySource</code> / <code>NetdiskSource</code>）。早期文档里写过这一条，属误标，已更正。</p>
+</div></section>
+
+<section><div class="wrap">
+  <p>联系方式：QQ 群 <b>549361403</b> ｜ GitHub <a href="https://github.com/aWinHimOP/GettingOverIt-MGCModpack/issues" target="_blank" rel="noopener">提交 Issue</a></p>
   <p style="margin-top:10px;color:#ffd479">不同意以上任何一条，请不要下载或使用。</p>
 </div></section>
 
