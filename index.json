@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 389,
-  "generatedAt": "2026-11-01T14:39:31",
+  "rev": 390,
+  "generatedAt": "2026-11-01T20:50:31",
   "channels": {
     "stable": {
       "label": "正式",
@@ -76,8 +76,8 @@
         {
           "version": "1.28.0-alpha.164",
           "file": "releases/1.28.0-alpha.164(2)/dll/MGCModpack.dll",
-          "sha256": "578bfee57b90ada0076d689650a6376903e24f86a3087b1fee855053a7749a47",
-          "size": 528384
+          "sha256": "f1b8cc8a1c97c21fcfb9c87ee053557430b73b252ea9a7cc3a20595b63f197ea",
+          "size": 529408
         }
       ]
     }
@@ -154,6 +154,15 @@
       "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/panel-placeholder.png",
       "sha256": "14599cb985e7447dacf80de0b610d1e7ddaa91a5d5d14daf7824089d60c2357c",
       "size": 2411285
+    },
+    {
+      "id": "picture:screenshot-ingame.png",
+      "kind": "picture",
+      "name": "screenshot-ingame.png",
+      "file": "picture/screenshot-ingame.png",
+      "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/screenshot-ingame.png",
+      "sha256": "f2d782aaf062487a57a57d8e5da485094269565c71750e5001cc341088a94bdf",
+      "size": 735696
     }
   ],
   "releases": [
@@ -163,7 +172,7 @@
       "build": 2,
       "note": "带分类目录",
       "createdAt": "2026-10-26T00:54:40",
-      "totalSize": 44710628,
+      "totalSize": 44711652,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -212,8 +221,8 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "578bfee57b90ada0076d689650a6376903e24f86a3087b1fee855053a7749a47",
-          "size": 528384
+          "sha256": "f1b8cc8a1c97c21fcfb9c87ee053557430b73b252ea9a7cc3a20595b63f197ea",
+          "size": 529408
         },
         {
           "path": "map/MGCModpack.mappack",
