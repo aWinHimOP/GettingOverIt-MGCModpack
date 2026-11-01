@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 384,
-  "generatedAt": "2026-11-01T00:42:06",
+  "rev": 385,
+  "generatedAt": "2026-11-01T12:05:05",
   "channels": {
     "stable": {
       "label": "正式",
@@ -152,8 +152,8 @@
       "name": "panel-placeholder.png",
       "file": "picture/panel-placeholder.png",
       "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/panel-placeholder.png",
-      "sha256": "2bd2c5e33cf699e7f9f67ccdddb9ba0c2ceb197e707cce1d25c51d607857b9f0",
-      "size": 3594045
+      "sha256": "d4c56d8c8b19774122707ca325d0fab6fce237c9c3f28bbaa96bec4806adffaf",
+      "size": 2378808
     }
   ],
   "releases": [
@@ -163,7 +163,7 @@
       "build": 2,
       "note": "带分类目录",
       "createdAt": "2026-10-26T00:54:40",
-      "totalSize": 45891852,
+      "totalSize": 44676615,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -237,8 +237,8 @@
         },
         {
           "path": "picture/panel-placeholder.png",
-          "sha256": "2bd2c5e33cf699e7f9f67ccdddb9ba0c2ceb197e707cce1d25c51d607857b9f0",
-          "size": 3594045
+          "sha256": "d4c56d8c8b19774122707ca325d0fab6fce237c9c3f28bbaa96bec4806adffaf",
+          "size": 2378808
         }
       ]
     }
