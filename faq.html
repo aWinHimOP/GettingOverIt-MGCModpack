@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>常见问题 · MGC Modpack</title>
+<meta name="description" content="MGC Modpack 常见问题：Modpack 页面在哪、怎么装 Mod、外置地图怎么用。">
+<link rel="icon" href="picture/about-icon.png">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="index.html">MGC <span>Modpack</span></a>
+  <div class="links">
+    <a href="shots.html" class="hide">截图</a>
+    <a href="guide.html">教程</a>
+    <a href="faq.html">常见问题</a>
+    <a href="disclaimer.html" class="hide">声明</a>
+    <a href="download.html" class="dl">下载</a>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <h1>常见<em>问题</em></h1>
+  <p class="sub">装 Mod、外置地图、页面在哪，还有各种转圈和闪退。</p>
+</div></header>
+
+<section class="noline"><div class="wrap">
+  <details open><summary>Modpack 的页面在哪？找不到入口</summary>
+    <p>没有独立的 App 图标，所有功能都在<b>游戏内</b>：进游戏 → 点左上角<b>暂停键</b> → 左边一列就是主页面 / 游戏设置 / Map(地图) / <b>Mod(模组)</b> / 社区/资源 / 设置 / 关于。</p>
+    <p>想看装了哪些模组包：点 <b>Mod(模组)</b>；想总开关某个包：点 <b>Mod 管理</b>。</p>
+  </details>
+
+  <details><summary>怎么装 Mod？</summary>
+    <p><b>推荐</b>：暂停 → 社区/资源 → 找到模组包 → 点<b>下载</b> → 回到「Mod(模组)」页面打开开关。</p>
+    <p><b>手动</b>：把 <code>.modpack</code> 放进 <code>MGCModpack/Mods/</code>，完全退出游戏再重进，然后在「Mod 管理」里点<b>刷新 Modpack 列表</b>。</p>
+    <p>详细图文在 <a href="guide.html">教程页</a>。</p>
+  </details>
+
+  <details><summary>外置地图怎么用？</summary>
+    <p>地图包是 <code>.mappack</code>。游戏内可以在「社区/资源」直接下载；手动装就放进 <code>MGCModpack/Maps/</code>，重开游戏后在 <b>Map(地图)</b> 页选中它，再点<b>新游戏</b>。</p>
+  </details>
+
+  <details><summary>装好的 Mod 没反应 / 列表里看不到</summary>
+    <p>按顺序排查：① 文件是不是真的在 <code>Mods/</code> 里（注意别放成 <code>Mods/xxx/xxx.modpack</code> 多套了一层）；② 有没有<b>完全退出</b>游戏再进（不是退到后台）；③ 在「Mod 管理」里点一次<b>刷新 Modpack 列表</b>；④ 有些 Mod 要在它自己的设置页里单独打开开关。</p>
+  </details>
+
+  <details><summary>启动一直转圈 / 同步卡住</summary>
+    <p>多半是网络。切换 WiFi / 流量重试一次；还是不行就去 <a href="download.html">下载页</a> 拿网盘里的完整包。</p>
+  </details>
+
+  <details><summary>资源页里的 Mod / 地图下载失败</summary>
+    <p>客户端会自动换源重试。如果全部失败，说明更新服务器连不上，去网盘手动拿包，按上面的路径放好。</p>
+  </details>
+
+  <details><summary>更新之后存档还在吗？</summary>
+    <p>在。热更新只替换程序文件，不动玩家数据。但还是建议定期备份 <code>MGCModpack</code> 这个目录。</p>
+  </details>
+
+  <details><summary>会不会被判定作弊？</summary>
+    <p>这是单机游戏，没有联机也没有反作弊。但请自觉：用 Mod 跑出来的成绩别当成原版记录去发。</p>
+  </details>
+
+  <details><summary>iOS 能用吗？</summary>
+    <p>不能，只做了安卓。</p>
+  </details>
+
+  <details><summary>怎么卸载干净？</summary>
+    <p>卸载 App 会把 <code>MGCModpack</code> 目录一起删掉。只想关掉 Mod 的话，在「Mod 管理」里把总开关关掉即可，不用卸载。</p>
+  </details>
+</div></section>
+
+<footer><div class="wrap">
+  <p>MGC Modpack · 作者 <a href="https://github.com/aWinHimOP" target="_blank" rel="noopener">@aWinHimOP</a> · QQ 群 549361403</p>
+  <p class="fl"><a href="shots.html">截图</a> · <a href="guide.html">教程</a> · <a href="faq.html">常见问题</a> · <a href="disclaimer.html">声明</a> · <a href="https://github.com/aWinHimOP/GettingOverIt-MGCModpack" target="_blank" rel="noopener">GitHub</a></p>
+</div></footer>
+</body>
+</html>

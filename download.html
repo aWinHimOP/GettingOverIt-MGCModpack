@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>下载 · MGC Modpack</title>
+<meta name="description" content="MGC Modpack 下载：本体 APK、地图包、模组包。">
+<link rel="icon" href="picture/about-icon.png">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="index.html">MGC <span>Modpack</span></a>
+  <div class="links">
+    <a href="shots.html" class="hide">截图</a>
+    <a href="guide.html">教程</a>
+    <a href="faq.html">常见问题</a>
+    <a href="disclaimer.html" class="hide">声明</a>
+    <a href="download.html" class="dl">下载</a>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <h1><em>下载</em></h1>
+  <p class="sub">分三类：本体、地图包、模组包。全部走网盘，点条目直接跳转。</p>
+</div></header>
+
+<section class="noline"><div class="wrap">
+  <div class="dlgroup">
+    <h3>MGCModpack 本体 <span class="tag">APK · 必装</span></h3>
+    <p style="font-size:14px;margin:-4px 0 14px">装好就能用，Mod 和地图可以之后再下。</p>
+    <div id="list-core" class="dl-list"></div>
+  </div>
+  <div class="dlgroup">
+    <h3>地图包 <span class="tag">.mappack · 可选</span></h3>
+    <p style="font-size:14px;margin:-4px 0 14px">放进 <code>MGCModpack/Maps/</code>，在游戏「Map(地图)」页选用。</p>
+    <div id="list-map" class="dl-list"></div>
+  </div>
+  <div class="dlgroup">
+    <h3>模组包 <span class="tag">.modpack · 可选</span></h3>
+    <p style="font-size:14px;margin:-4px 0 14px">放进 <code>MGCModpack/Mods/</code>，在游戏「Mod(模组)」页启用。</p>
+    <div id="list-mod" class="dl-list"></div>
+  </div>
+  <p style="margin-top:36px;font-size:14px">链接失效、需要提取码，或者想找别的版本：加 QQ 群 <b>549361403</b>。</p>
+</div></section>
+
+<script>
+var GROUPS = [
+  { id: "list-core", kinds: ["apk", "core", "app"], empty: "本体暂时没放网盘，先加群获取。" },
+  { id: "list-map",  kinds: ["map"], empty: "暂时没有地图包。" },
+  { id: "list-mod",  kinds: ["mod"], empty: "暂时没有模组包。" }
+];
+
+function esc(s){ return String(s == null ? "" : s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]; }); }
+
+function itemEl(it){
+  var a = document.createElement("a");
+  a.className = "dl";
+  a.href = it.url || "#";
+  a.target = "_blank";
+  a.rel = "noopener";
+  var meta = [];
+  if (it.desc) meta.push(it.desc);
+  if (it.size) meta.push(it.size);
+  if (it.code) meta.push("提取码 " + it.code);
+  a.innerHTML = '<div><div class="name">' + esc(it.name) + '</div><div class="meta">' + esc(meta.join(" · ")) + '</div></div><div class="go">前往下载 &#8599;</div>';
+  return a;
+}
+
+function render(items){
+  for (var g = 0; g < GROUPS.length; g++){
+    var box = document.getElementById(GROUPS[g].id);
+    box.innerHTML = "";
+    var hit = 0;
+    for (var i = 0; i < items.length; i++){
+      var kind = (items[i].kind || "").toLowerCase();
+      if (GROUPS[g].kinds.indexOf(kind) >= 0){ box.appendChild(itemEl(items[i])); hit++; }
+    }
+    if (!hit){
+      var d = document.createElement("div");
+      d.className = "empty";
+      d.textContent = GROUPS[g].empty;
+      box.appendChild(d);
+    }
+  }
+}
+
+render([]);
+fetch("netdisk.json?t=" + Date.now(), {cache:"no-store"})
+  .then(function(r){ return r.json(); })
+  .then(function(j){ render((j && j.items) || []); })
+  .catch(function(){ render([]); });
+</script>
+
+<footer><div class="wrap">
+  <p>MGC Modpack · 作者 <a href="https://github.com/aWinHimOP" target="_blank" rel="noopener">@aWinHimOP</a> · QQ 群 549361403</p>
+  <p class="fl"><a href="shots.html">截图</a> · <a href="guide.html">教程</a> · <a href="faq.html">常见问题</a> · <a href="disclaimer.html">声明</a> · <a href="https://github.com/aWinHimOP/GettingOverIt-MGCModpack" target="_blank" rel="noopener">GitHub</a></p>
+</div></footer>
+</body>
+</html>

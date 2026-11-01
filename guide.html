@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>使用教程 · MGC Modpack</title>
+<meta name="description" content="MGC Modpack 教程：Modpack 页面在哪、怎么装 Mod、外置地图怎么用、文件路径速查。">
+<link rel="icon" href="picture/about-icon.png">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="index.html">MGC <span>Modpack</span></a>
+  <div class="links">
+    <a href="shots.html" class="hide">截图</a>
+    <a href="guide.html">教程</a>
+    <a href="faq.html">常见问题</a>
+    <a href="disclaimer.html" class="hide">声明</a>
+    <a href="download.html" class="dl">下载</a>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <h1>使用<em>教程</em></h1>
+  <p class="sub">Mod 怎么装、外置地图怎么放、Modpack 页面在哪 —— 都在这页。</p>
+</div></header>
+
+<section class="noline"><div class="wrap">
+  <div class="toc">
+    <a href="#where">游戏里的「Modpack 页面」到底在哪<span>第一次进游戏最容易找不到的东西</span></a>
+    <a href="#install-mod">怎么装 Mod<span>两种方式：游戏内下载 / 手动放文件</span></a>
+    <a href="#install-map">外置地图怎么用<span>下载的地图放哪、怎么开</span></a>
+    <a href="#paths">文件路径速查<span>Mods / Maps / 存档 / 日志</span></a>
+  </div>
+</div></section>
+
+<section id="where"><div class="wrap">
+  <h2>游戏里的「Modpack 页面」在哪</h2>
+  <p class="lead">模组包没有独立的桌面图标，所有页面都在游戏内的暂停菜单里。</p>
+  <ol class="steps">
+    <li><b>进游戏后点左上角的暂停键</b>（两条竖线那个）。</li>
+    <li>菜单左边是一列页面：主页面 / 游戏设置 / Map(地图) / <b>Mod(模组)</b> / 社区/资源 / 设置 / 关于。</li>
+    <li>点 <b>Mod(模组)</b> —— 左边列出的就是<b>已安装的模组包</b>，点进去是它自己的设置页。</li>
+    <li>点 <b>Mod 管理</b> —— 这里能看到所有已识别的模组包，并<b>总开关</b>（开 / 关）。</li>
+  </ol>
+  <div class="shots" style="margin-top:26px">
+    <figure><img src="picture/shots/mods.png" alt="Mod 页面"><figcaption>「Mod(模组)」页面：左边是已装模组包</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="install-mod"><div class="wrap">
+  <h2>怎么装 Mod</h2>
+  <p class="lead">模组包是一个 <code>.modpack</code> 文件（其实是个 zip），装 = 放到对的地方 + 启用。</p>
+
+  <h3>方式一：游戏内下载（推荐）</h3>
+  <ol class="steps">
+    <li>暂停 → <b>社区/资源</b> → 「资源」页，找到想要的模组包。</li>
+    <li>点右边的<b>下载</b>，等它下完（会显示百分比）。</li>
+    <li>回到 <b>Mod(模组)</b> 页面，新的模组包已经出现在左边了。</li>
+    <li>点进去，用<b>开关</b>打开；有些 Mod 还需要重启游戏才生效。</li>
+  </ol>
+  <div class="shots" style="margin-top:24px">
+    <figure><img src="picture/shots/resources.png" alt="资源页"><figcaption>「社区/资源」页：网盘渠道 + 官方包，点右边按钮下载</figcaption></figure>
+  </div>
+
+  <h3>方式二：手动放文件</h3>
+  <p>从网盘或群里拿到 <code>.modpack</code> 文件后，丢进这个目录：</p>
+  <pre><code>/sdcard/Android/data/com.noodlecake.gettingoverit/files/MGCModpack/Mods/</code></pre>
+  <p>放好之后<b>完全退出游戏再重进</b>，然后在「Mod 管理」里点一下 <b>刷新 Modpack 列表</b>，它就会出现在列表里。</p>
+  <p style="margin-top:14px">没有文件管理器能看到 <code>Android/data</code> 的话，用 <b>MT管理器</b>、<b>ZArchiver</b> 这类工具，安卓 11 以上还需要在授权弹窗里点「允许」。</p>
+</div></section>
+
+<section id="install-map"><div class="wrap">
+  <h2>外置地图怎么用</h2>
+  <p class="lead">地图包是 <code>.mappack</code> 文件，和 Mod 一样是「放对位置 + 游戏里选」。</p>
+  <ol class="steps">
+    <li>在 <b>社区/资源</b> 页下载地图包，或者从网盘拿。</li>
+    <li>手动安装的话，放进这个目录：<br><code>/sdcard/Android/data/com.noodlecake.gettingoverit/files/MGCModpack/Maps/</code></li>
+    <li>重开游戏，暂停 → <b>Map(地图)</b> 页，列表里就能看到。</li>
+    <li>选中它，然后<b>新游戏</b>，就会从这张图的开头开始。</li>
+  </ol>
+  <p style="margin-top:14px">地图和原版进度互不影响，换回原版只要在同一个页面选回默认地图。</p>
+</div></section>
+
+<section id="paths"><div class="wrap">
+  <h2>文件路径速查</h2>
+  <p class="lead">全部在应用私有目录下，卸载 App 会一起删掉，换机前记得备份。</p>
+  <pre><code>Android/data/com.noodlecake.gettingoverit/files/MGCModpack/
+├─ Mods/            ← .modpack 模组包放这里
+├─ Maps/            ← .mappack 地图包放这里
+├─ 存档/            ← 「存档」Mod 的快照
+├─ HotUpdate/       ← 热更下来的 DLL / 资源包 / 配置
+└─ Logs/            ← 运行日志，出问题先看这里</code></pre>
+  <p style="margin-top:16px">游戏本体自己的存档不在这里，卸载游戏时系统会一起清掉 —— <b>想留进度请在游戏内正常退出</b>。</p>
+</div></section>
+
+<footer><div class="wrap">
+  <p>MGC Modpack · 作者 <a href="https://github.com/aWinHimOP" target="_blank" rel="noopener">@aWinHimOP</a> · QQ 群 549361403</p>
+  <p class="fl"><a href="shots.html">截图</a> · <a href="guide.html">教程</a> · <a href="faq.html">常见问题</a> · <a href="disclaimer.html">声明</a> · <a href="https://github.com/aWinHimOP/GettingOverIt-MGCModpack" target="_blank" rel="noopener">GitHub</a></p>
+</div></footer>
+</body>
+</html>
