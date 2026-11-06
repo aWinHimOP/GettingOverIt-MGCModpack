@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 392,
-  "generatedAt": "2026-11-01T22:31:47",
+  "rev": 395,
+  "generatedAt": "2026-11-07T03:50:23",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,11 +9,11 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-alpha.164(2)",
+      "release": "1.28.0-alpha.165(1)",
       "pin": {
         "mod:MGCModpack": "1.1.0",
         "map:MGCModpack": "1.0.0",
-        "loader:MGCModpack": "1.28.0-alpha.164"
+        "loader:MGCModpack": "1.28.0-alpha.165"
       }
     },
     "test": {
@@ -25,11 +25,11 @@
           "356af1dbbf94887360586c6bff2e8b7b"
         ]
       },
-      "release": "1.28.0-alpha.164(2)",
+      "release": "1.28.0-alpha.165(1)",
       "pin": {
         "mod:MGCModpack": "1.1.0",
         "map:MGCModpack": "1.0.0",
-        "loader:MGCModpack": "1.28.0-alpha.164"
+        "loader:MGCModpack": "1.28.0-alpha.165"
       }
     }
   },
@@ -74,10 +74,10 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-alpha.164",
-          "file": "releases/1.28.0-alpha.164(2)/dll/MGCModpack.dll",
-          "sha256": "a55042d0f07d77e15fc749763b6a6a9cfbe5b918aeb6789601dc6296399dd804",
-          "size": 529920
+          "version": "1.28.0-alpha.165",
+          "file": "releases/1.28.0-alpha.165(1)/dll/MGCModpack.dll",
+          "sha256": "833822fd894e845aee7dcbe5130e384ca3f0a9af738c91b6e24dc7444545b139",
+          "size": 545792
         }
       ]
     }
@@ -98,8 +98,8 @@
       "name": "ui_mainmenu.unity3d",
       "file": "bundle/ui_mainmenu.unity3d",
       "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_mainmenu.unity3d",
-      "sha256": "15d1db3ad99eb38fce37e12896a37adfab9e5a5a098ce394dd6a44dad2674a59",
-      "size": 1236167
+      "sha256": "c4bd3ce156a5173958f2f93ebcc9e7bcc55dbd6337797a97eccf3f070879cbdd",
+      "size": 1236949
     },
     {
       "id": "bundle:ui_pause.unity3d",
@@ -167,12 +167,12 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-alpha.164(2)",
-      "version": "1.28.0-alpha.164",
-      "build": 2,
-      "note": "带分类目录",
-      "createdAt": "2026-10-26T00:54:40",
-      "totalSize": 44712164,
+      "id": "1.28.0-alpha.165(1)",
+      "version": "1.28.0-alpha.165",
+      "build": 1,
+      "note": "UI 更新：圆角 / 胶囊控件（RoundedRect）",
+      "createdAt": "2026-11-07T03:47:16",
+      "totalSize": 44728818,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -181,8 +181,8 @@
         },
         {
           "path": "bundles/ui_mainmenu.unity3d",
-          "sha256": "15d1db3ad99eb38fce37e12896a37adfab9e5a5a098ce394dd6a44dad2674a59",
-          "size": 1236167
+          "sha256": "c4bd3ce156a5173958f2f93ebcc9e7bcc55dbd6337797a97eccf3f070879cbdd",
+          "size": 1236949
         },
         {
           "path": "bundles/ui_pause.unity3d",
@@ -221,8 +221,8 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "a55042d0f07d77e15fc749763b6a6a9cfbe5b918aeb6789601dc6296399dd804",
-          "size": 529920
+          "sha256": "833822fd894e845aee7dcbe5130e384ca3f0a9af738c91b6e24dc7444545b139",
+          "size": 545792
         },
         {
           "path": "map/MGCModpack.mappack",
