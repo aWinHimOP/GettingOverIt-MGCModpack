@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 398,
-  "generatedAt": "2026-11-07T17:32:44",
+  "rev": 399,
+  "generatedAt": "2026-11-07T20:56:10",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,11 +9,11 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-alpha.168(1)",
+      "release": "1.28.0-alpha.169(1)",
       "pin": {
         "mod:MGCModpack": "1.1.0",
         "map:MGCModpack": "1.0.0",
-        "loader:MGCModpack": "1.28.0-alpha.168"
+        "loader:MGCModpack": "1.28.0-alpha.169"
       }
     },
     "test": {
@@ -25,11 +25,11 @@
           "356af1dbbf94887360586c6bff2e8b7b"
         ]
       },
-      "release": "1.28.0-alpha.168(1)",
+      "release": "1.28.0-alpha.169(1)",
       "pin": {
         "mod:MGCModpack": "1.1.0",
         "map:MGCModpack": "1.0.0",
-        "loader:MGCModpack": "1.28.0-alpha.168"
+        "loader:MGCModpack": "1.28.0-alpha.169"
       }
     }
   },
@@ -74,8 +74,8 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-alpha.168",
-          "file": "releases/1.28.0-alpha.168(1)/dll/MGCModpack.dll",
+          "version": "1.28.0-alpha.169",
+          "file": "releases/1.28.0-alpha.169(1)/dll/MGCModpack.dll",
           "sha256": "833822fd894e845aee7dcbe5130e384ca3f0a9af738c91b6e24dc7444545b139",
           "size": 545792
         }
@@ -98,8 +98,8 @@
       "name": "ui_mainmenu.unity3d",
       "file": "bundle/ui_mainmenu.unity3d",
       "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_mainmenu.unity3d",
-      "sha256": "f90cebbe8371f0a65868729ee82dfe6fecbb8520e7f76a23419917e7618035f5",
-      "size": 1236929
+      "sha256": "7c319de02d7bcd9fe0fb31554c99e4e55b7f424d4c33e2a33e5dec919205a186",
+      "size": 1239862
     },
     {
       "id": "bundle:ui_pause.unity3d",
@@ -167,12 +167,12 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-alpha.168(1)",
-      "version": "1.28.0-alpha.168",
+      "id": "1.28.0-alpha.169(1)",
+      "version": "1.28.0-alpha.169",
       "build": 1,
-      "note": "撤销诊断日志，回到 166 的 dll",
-      "createdAt": "2026-11-07T17:31:47",
-      "totalSize": 44728798,
+      "note": "实验：AB 脚本改指通用壳 MGCScriptShell",
+      "createdAt": "2026-11-07T20:55:24",
+      "totalSize": 44731731,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -181,8 +181,8 @@
         },
         {
           "path": "bundles/ui_mainmenu.unity3d",
-          "sha256": "f90cebbe8371f0a65868729ee82dfe6fecbb8520e7f76a23419917e7618035f5",
-          "size": 1236929
+          "sha256": "7c319de02d7bcd9fe0fb31554c99e4e55b7f424d4c33e2a33e5dec919205a186",
+          "size": 1239862
         },
         {
           "path": "bundles/ui_pause.unity3d",
