@@ -1,0 +1,6 @@
+{
+  "version": "1.28.0-alpha.170",
+  "build": 1,
+  "note": "通用壳：AB 里自定义组件改为 MGCScriptShell，运行时由 ShellBinder 还原",
+  "createdAt": "2026-11-07T22:38:22"
+}
