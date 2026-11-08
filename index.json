@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 400,
-  "generatedAt": "2026-11-07T22:39:16",
+  "rev": 401,
+  "generatedAt": "2026-11-09T03:20:11",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,11 +9,11 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-alpha.170(1)",
+      "release": "1.28.0-alpha.171(1)",
       "pin": {
         "mod:MGCModpack": "1.1.0",
         "map:MGCModpack": "1.0.0",
-        "loader:MGCModpack": "1.28.0-alpha.170"
+        "loader:MGCModpack": "1.28.0-alpha.171"
       }
     },
     "test": {
@@ -25,11 +25,11 @@
           "356af1dbbf94887360586c6bff2e8b7b"
         ]
       },
-      "release": "1.28.0-alpha.170(1)",
+      "release": "1.28.0-alpha.171(1)",
       "pin": {
         "mod:MGCModpack": "1.1.0",
         "map:MGCModpack": "1.0.0",
-        "loader:MGCModpack": "1.28.0-alpha.170"
+        "loader:MGCModpack": "1.28.0-alpha.171"
       }
     }
   },
@@ -74,10 +74,10 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-alpha.170",
-          "file": "releases/1.28.0-alpha.170(1)/dll/MGCModpack.dll",
-          "sha256": "173e585c3d6b49e41743c57fcbc5c817f35c1add1509f6be065683211efa4e65",
-          "size": 547328
+          "version": "1.28.0-alpha.171",
+          "file": "releases/1.28.0-alpha.171(1)/dll/MGCModpack.dll",
+          "sha256": "9145bfff25b5a07230873765da2bf805180d5cfc707a8156ea0e9940d47edb73",
+          "size": 549376
         }
       ]
     }
@@ -98,8 +98,8 @@
       "name": "ui_mainmenu.unity3d",
       "file": "bundle/ui_mainmenu.unity3d",
       "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_mainmenu.unity3d",
-      "sha256": "71e74c21bced766aaf58ce9081420349ba63d29fbd10d4de1abf05100afda26d",
-      "size": 1237941
+      "sha256": "397cf72cc52883401a290038f0fdb330946824bb268f8bd82d919fda9dab381d",
+      "size": 1239474
     },
     {
       "id": "bundle:ui_pause.unity3d",
@@ -167,12 +167,12 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-alpha.170(1)",
-      "version": "1.28.0-alpha.170",
+      "id": "1.28.0-alpha.171(1)",
+      "version": "1.28.0-alpha.171",
       "build": 1,
-      "note": "通用壳：AB 里自定义组件改为 MGCScriptShell，运行时由 ShellBinder 还原",
-      "createdAt": "2026-11-07T22:38:22",
-      "totalSize": 44731346,
+      "note": "壳资源引用通道 + RoundedRect 展开/收起 + 编辑器可见性",
+      "createdAt": "2026-11-09T03:19:02",
+      "totalSize": 44734927,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -181,8 +181,8 @@
         },
         {
           "path": "bundles/ui_mainmenu.unity3d",
-          "sha256": "71e74c21bced766aaf58ce9081420349ba63d29fbd10d4de1abf05100afda26d",
-          "size": 1237941
+          "sha256": "397cf72cc52883401a290038f0fdb330946824bb268f8bd82d919fda9dab381d",
+          "size": 1239474
         },
         {
           "path": "bundles/ui_pause.unity3d",
@@ -221,8 +221,8 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "173e585c3d6b49e41743c57fcbc5c817f35c1add1509f6be065683211efa4e65",
-          "size": 547328
+          "sha256": "9145bfff25b5a07230873765da2bf805180d5cfc707a8156ea0e9940d47edb73",
+          "size": 549376
         },
         {
           "path": "map/MGCModpack.mappack",
