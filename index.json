@@ -1,7 +1,7 @@
 {
   "schema": 2,
   "rev": 402,
-  "generatedAt": "2026-11-10T16:30:38",
+  "generatedAt": "2026-11-10T18:23:22",
   "channels": {
     "stable": {
       "label": "正式",
@@ -11,8 +11,7 @@
       },
       "release": "1.28.0-alpha.172(1)",
       "pin": {
-        "mod:MGCModpack": "1.1.0",
-        "map:MGCModpack": "1.0.0",
+        "mod:MGCModpack": "official",
         "loader:MGCModpack": "1.28.0-alpha.172"
       }
     },
@@ -27,8 +26,7 @@
       },
       "release": "1.28.0-alpha.172(1)",
       "pin": {
-        "mod:MGCModpack": "1.1.0",
-        "map:MGCModpack": "1.0.0",
+        "mod:MGCModpack": "official",
         "loader:MGCModpack": "1.28.0-alpha.172"
       }
     }
@@ -38,35 +36,14 @@
       "id": "mod:MGCModpack",
       "kind": "mod",
       "name": "MGCModpack",
-      "category": "official",
       "versions": [
         {
-          "version": "1.1.0",
+          "version": "official",
           "file": "mod/official/MGCModpack.modpack",
           "sha256": "5a8afc55a2cedf6f8fdc1c90fa31c42e5fbe244c6389be2d82d4234381893da0",
-          "size": 139145,
-          "category": "official"
+          "size": 139145
         }
-      ],
-      "author": "Various Mod Developer",
-      "description": "MGCMopdack默认的Mod整合包，集合了大部分常见Mod"
-    },
-    {
-      "id": "map:MGCModpack",
-      "kind": "map",
-      "name": "MGCMappack",
-      "category": "official",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "file": "map/official/MGCModpack.mappack",
-          "sha256": "d6e42b54394fbf13dc29d7db2b33706b84cbed23ac4c63f40be0ed5cffcba8f5",
-          "size": 40086493,
-          "category": "official"
-        }
-      ],
-      "author": "Various Map Developer",
-      "description": "MGCMopdack内置的Map整合包，集合了大部分常见Map"
+      ]
     },
     {
       "id": "loader:MGCModpack",
@@ -82,97 +59,14 @@
       ]
     }
   ],
-  "assets": [
-    {
-      "id": "bundle:ui_fpspanel.unity3d",
-      "kind": "bundle",
-      "name": "ui_fpspanel.unity3d",
-      "file": "bundle/ui_fpspanel.unity3d",
-      "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_fpspanel.unity3d",
-      "sha256": "9f7ddf0b3411a33b74e844fa9f0cd6db2a19bd41893ec8b223a0585cecfb77f2",
-      "size": 17595
-    },
-    {
-      "id": "bundle:ui_mainmenu.unity3d",
-      "kind": "bundle",
-      "name": "ui_mainmenu.unity3d",
-      "file": "bundle/ui_mainmenu.unity3d",
-      "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_mainmenu.unity3d",
-      "sha256": "03ad1b5ff91b484d54ea558ee0a680c067b4386b10464d682a0f9520551a704e",
-      "size": 1243468
-    },
-    {
-      "id": "bundle:ui_pause.unity3d",
-      "kind": "bundle",
-      "name": "ui_pause.unity3d",
-      "file": "bundle/ui_pause.unity3d",
-      "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_pause.unity3d",
-      "sha256": "a9b8db2e8482e65a090ff60c192c964c12e2b80ff41514cfb1d25aacae8d17a0",
-      "size": 10658
-    },
-    {
-      "id": "bundle:ui_splitstimer.unity3d",
-      "kind": "bundle",
-      "name": "ui_splitstimer.unity3d",
-      "file": "bundle/ui_splitstimer.unity3d",
-      "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_splitstimer.unity3d",
-      "sha256": "99aa2942a1bdece16683a9c9ad3a7afae578e65764a11655e8c3d819cb2f4df8",
-      "size": 7263
-    },
-    {
-      "id": "bundle:ui_uicontrols.unity3d",
-      "kind": "bundle",
-      "name": "ui_uicontrols.unity3d",
-      "file": "bundle/ui_uicontrols.unity3d",
-      "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/bundle/ui_uicontrols.unity3d",
-      "sha256": "21504fb640c443cc28c099c4e1c6c3aac5b0f8d9c47ff6953a3ca76b31c2af36",
-      "size": 18966
-    },
-    {
-      "id": "picture:about-icon.png",
-      "kind": "picture",
-      "name": "about-icon.png",
-      "file": "picture/about-icon.png",
-      "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/about-icon.png",
-      "sha256": "5cd12b9cd7508f4c115c44514f41e8cb3aa24bf07fb2309202618eaf2af2cc90",
-      "size": 253621
-    },
-    {
-      "id": "picture:announcement-icon.png",
-      "kind": "picture",
-      "name": "announcement-icon.png",
-      "file": "picture/announcement-icon.png",
-      "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/announcement-icon.png",
-      "sha256": "84e306c160ea1833f967b2c01d2a5a81951ab5f9340808bc84d61ece2939cbb5",
-      "size": 483
-    },
-    {
-      "id": "picture:panel-placeholder.png",
-      "kind": "picture",
-      "name": "panel-placeholder.png",
-      "file": "picture/panel-placeholder.png",
-      "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/panel-placeholder.png",
-      "sha256": "14599cb985e7447dacf80de0b610d1e7ddaa91a5d5d14daf7824089d60c2357c",
-      "size": 2411285
-    },
-    {
-      "id": "picture:screenshot-ingame.png",
-      "kind": "picture",
-      "name": "screenshot-ingame.png",
-      "file": "picture/screenshot-ingame.png",
-      "url": "https://awinhimop.github.io/GettingOverIt-MGCModpack/picture/screenshot-ingame.png",
-      "sha256": "f2d782aaf062487a57a57d8e5da485094269565c71750e5001cc341088a94bdf",
-      "size": 735696
-    }
-  ],
   "releases": [
     {
-      "id": "1.28.0-alpha.171(1)",
-      "version": "1.28.0-alpha.171",
+      "id": "1.28.0-alpha.172(1)",
+      "version": "1.28.0-alpha.172",
       "build": 1,
-      "note": "壳资源引用通道 + RoundedRect 展开/收起 + 编辑器可见性",
-      "createdAt": "2026-11-09T03:19:02",
-      "totalSize": 44734927,
+      "note": "公告按钮改用 SVG 导入的喇叭图标（announcement.svg），ui_mainmenu 重新烘焙",
+      "createdAt": "2026-11-10T18:21:49",
+      "totalSize": 44738921,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -181,8 +75,8 @@
         },
         {
           "path": "bundles/ui_mainmenu.unity3d",
-          "sha256": "397cf72cc52883401a290038f0fdb330946824bb268f8bd82d919fda9dab381d",
-          "size": 1239474
+          "sha256": "03ad1b5ff91b484d54ea558ee0a680c067b4386b10464d682a0f9520551a704e",
+          "size": 1243468
         },
         {
           "path": "bundles/ui_pause.unity3d",
