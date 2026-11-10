@@ -1,6 +1,0 @@
-{
-  "version": "1.28.0-alpha.178",
-  "build": 1,
-  "note": "资源页介绍文字改为读包内 manifest.json 的 description，取不到就不显示；索引补 author/description 解析",
-  "createdAt": "2026-11-10T21:41:53"
-}
