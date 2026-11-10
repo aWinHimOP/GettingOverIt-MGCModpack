@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 411,
-  "generatedAt": "2026-11-11T02:13:21",
+  "rev": 412,
+  "generatedAt": "2026-11-11T02:36:18",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,11 +9,11 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-alpha.179(1)",
+      "release": "1.28.0-alpha.180(1)",
       "pin": {
         "mod:MGCModpack": "1.1.0",
         "map:MGCModpack": "1.0.0",
-        "loader:MGCModpack": "1.28.0-alpha.179"
+        "loader:MGCModpack": "1.28.0-alpha.180"
       }
     },
     "test": {
@@ -25,11 +25,11 @@
           "356af1dbbf94887360586c6bff2e8b7b"
         ]
       },
-      "release": "1.28.0-alpha.179(1)",
+      "release": "1.28.0-alpha.180(1)",
       "pin": {
         "mod:MGCModpack": "1.1.0",
         "map:MGCModpack": "1.0.0",
-        "loader:MGCModpack": "1.28.0-alpha.179"
+        "loader:MGCModpack": "1.28.0-alpha.180"
       }
     }
   },
@@ -74,10 +74,10 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-alpha.179",
-          "file": "releases/1.28.0-alpha.179(1)/dll/MGCModpack.dll",
-          "sha256": "04d83693ea1ecb2a71ab60d30b3eff0378e437a1621f543cabf6765307b18f30",
-          "size": 557056
+          "version": "1.28.0-alpha.180",
+          "file": "releases/1.28.0-alpha.180(1)/dll/MGCModpack.dll",
+          "sha256": "6a48af0bc8157bc10a52a922f5228ce7324a9f4344ed14b28f89fb845488db9f",
+          "size": 560128
         }
       ]
     }
@@ -167,12 +167,12 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-alpha.179(1)",
-      "version": "1.28.0-alpha.179",
+      "id": "1.28.0-alpha.180(1)",
+      "version": "1.28.0-alpha.180",
       "build": 1,
-      "note": "加载器/模组：下载断点续传；加载页右下角圆形「跳过下载」（点一下向左展开、再点确认，带缓动）；RoundedRect 支持文字自适应宽度、可切换展开方向、OutQuint 缓动",
-      "createdAt": "2026-11-11T02:12:00",
-      "totalSize": 44747868,
+      "note": "公告栏：顶栏按钮→公告面板 形变过渡（PanelLink 组件标准）；激活态统一天蓝 UIPalette.Active；RoundedRect 文字自适应宽度/可切展开方向/OutQuint 缓动",
+      "createdAt": "2026-11-11T02:35:20",
+      "totalSize": 44750940,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -221,8 +221,8 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "04d83693ea1ecb2a71ab60d30b3eff0378e437a1621f543cabf6765307b18f30",
-          "size": 557056
+          "sha256": "6a48af0bc8157bc10a52a922f5228ce7324a9f4344ed14b28f89fb845488db9f",
+          "size": 560128
         },
         {
           "path": "map/MGCModpack.mappack",
