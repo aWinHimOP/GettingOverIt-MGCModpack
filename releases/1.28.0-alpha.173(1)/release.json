@@ -1,6 +1,0 @@
-{
-  "version": "1.28.0-alpha.173",
-  "build": 1,
-  "note": "侧栏按钮适配 RoundedRect：文字走 SetText、图标默认隐藏、选中色走 SetFill",
-  "createdAt": "2026-11-10T19:34:43"
-}
