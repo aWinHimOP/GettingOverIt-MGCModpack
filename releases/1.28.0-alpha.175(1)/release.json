@@ -1,6 +1,0 @@
-{
-  "version": "1.28.0-alpha.175",
-  "build": 1,
-  "note": "顶部栏公告按钮去掉重复图标（清掉 RoundedRect 自带的 _icon）",
-  "createdAt": "2026-11-10T20:34:56"
-}
