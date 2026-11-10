@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 413,
-  "generatedAt": "2026-11-11T02:52:29",
+  "rev": 414,
+  "generatedAt": "2026-11-11T02:57:30",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,11 +9,11 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-alpha.181(1)",
+      "release": "1.28.0-alpha.182(1)",
       "pin": {
         "mod:MGCModpack": "1.1.0",
         "map:MGCModpack": "1.0.0",
-        "loader:MGCModpack": "1.28.0-alpha.181"
+        "loader:MGCModpack": "1.28.0-alpha.182"
       }
     },
     "test": {
@@ -25,11 +25,11 @@
           "356af1dbbf94887360586c6bff2e8b7b"
         ]
       },
-      "release": "1.28.0-alpha.181(1)",
+      "release": "1.28.0-alpha.182(1)",
       "pin": {
         "mod:MGCModpack": "1.1.0",
         "map:MGCModpack": "1.0.0",
-        "loader:MGCModpack": "1.28.0-alpha.181"
+        "loader:MGCModpack": "1.28.0-alpha.182"
       }
     }
   },
@@ -74,10 +74,10 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-alpha.181",
-          "file": "releases/1.28.0-alpha.181(1)/dll/MGCModpack.dll",
-          "sha256": "fa257f61b1a5b2fa1bb30211a6ce52081239f2a0920157e579e586bd2d5594d4",
-          "size": 560128
+          "version": "1.28.0-alpha.182",
+          "file": "releases/1.28.0-alpha.182(1)/dll/MGCModpack.dll",
+          "sha256": "e82c4854b887d1954e4efc41ace04bb4965bcbaf598b18737a958f3283f501c3",
+          "size": 561152
         }
       ]
     }
@@ -167,12 +167,12 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-alpha.181(1)",
-      "version": "1.28.0-alpha.181",
+      "id": "1.28.0-alpha.182(1)",
+      "version": "1.28.0-alpha.182",
       "build": 1,
-      "note": "公告首次自动弹出也走顶栏按钮→面板形变（与点击同一套动画）",
-      "createdAt": "2026-11-11T02:51:31",
-      "totalSize": 44750940,
+      "note": "公告关闭后按钮复原；转场按实时包围盒计算（任意位置/任意面板形状）；目标内容淡入",
+      "createdAt": "2026-11-11T02:56:30",
+      "totalSize": 44751964,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -221,8 +221,8 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "fa257f61b1a5b2fa1bb30211a6ce52081239f2a0920157e579e586bd2d5594d4",
-          "size": 560128
+          "sha256": "e82c4854b887d1954e4efc41ace04bb4965bcbaf598b18737a958f3283f501c3",
+          "size": 561152
         },
         {
           "path": "map/MGCModpack.mappack",
