@@ -1,6 +1,0 @@
-{
-  "version": "1.28.0-alpha.180",
-  "build": 1,
-  "note": "公告栏：顶栏按钮→公告面板 形变过渡（PanelLink 组件标准）；激活态统一天蓝 UIPalette.Active；RoundedRect 文字自适应宽度/可切展开方向/OutQuint 缓动",
-  "createdAt": "2026-11-11T02:35:20"
-}
