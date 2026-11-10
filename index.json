@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 406,
-  "generatedAt": "2026-11-10T20:43:07",
+  "rev": 407,
+  "generatedAt": "2026-11-10T20:51:30",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,10 +9,10 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-alpha.176(1)",
+      "release": "1.28.0-alpha.177(1)",
       "pin": {
         "mod:MGCModpack": "official",
-        "loader:MGCModpack": "1.28.0-alpha.176"
+        "loader:MGCModpack": "1.28.0-alpha.177"
       }
     },
     "test": {
@@ -24,10 +24,10 @@
           "356af1dbbf94887360586c6bff2e8b7b"
         ]
       },
-      "release": "1.28.0-alpha.176(1)",
+      "release": "1.28.0-alpha.177(1)",
       "pin": {
         "mod:MGCModpack": "official",
-        "loader:MGCModpack": "1.28.0-alpha.176"
+        "loader:MGCModpack": "1.28.0-alpha.177"
       }
     }
   },
@@ -51,22 +51,22 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-alpha.176",
-          "file": "releases/1.28.0-alpha.176(1)/dll/MGCModpack.dll",
-          "sha256": "2c86744818839d574d89b4fc8361de5722704021b0255819e3f0e0f002f8e261",
-          "size": 549376
+          "version": "1.28.0-alpha.177",
+          "file": "releases/1.28.0-alpha.177(1)/dll/MGCModpack.dll",
+          "sha256": "b3c860622e410990b32744eb7585464ff0d510f6ff81598cf6514e3f849649f0",
+          "size": 549888
         }
       ]
     }
   ],
   "releases": [
     {
-      "id": "1.28.0-alpha.176(1)",
-      "version": "1.28.0-alpha.176",
+      "id": "1.28.0-alpha.177(1)",
+      "version": "1.28.0-alpha.177",
       "build": 1,
-      "note": "公告图标改用 prefab 烘焙的黑色喇叭，不再注入下载图标",
-      "createdAt": "2026-11-10T20:42:16",
-      "totalSize": 44740188,
+      "note": "侧栏按钮接图标（assets/Icons 下 8 枚），按面板名加载",
+      "createdAt": "2026-11-10T20:50:32",
+      "totalSize": 44740700,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -115,8 +115,8 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "2c86744818839d574d89b4fc8361de5722704021b0255819e3f0e0f002f8e261",
-          "size": 549376
+          "sha256": "b3c860622e410990b32744eb7585464ff0d510f6ff81598cf6514e3f849649f0",
+          "size": 549888
         },
         {
           "path": "map/MGCModpack.mappack",
