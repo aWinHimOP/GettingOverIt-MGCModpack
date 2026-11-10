@@ -1,6 +1,0 @@
-{
-  "version": "1.28.0-alpha.172",
-  "build": 1,
-  "note": "公告按钮改用 SVG 导入的喇叭图标（announcement.svg），ui_mainmenu 重新烘焙",
-  "createdAt": "2026-11-10T18:21:49"
-}
