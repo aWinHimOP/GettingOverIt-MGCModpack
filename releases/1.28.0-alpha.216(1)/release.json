@@ -1,0 +1,6 @@
+{
+  "version": "1.28.0-alpha.216",
+  "build": 1,
+  "note": "形变：面板几何在预热时缓存，打开时不再 SetActive+ForceUpdateCanvases（省掉整画布重布局）",
+  "createdAt": "2026-11-12T02:50:09"
+}
