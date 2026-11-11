@@ -1,6 +1,0 @@
-{
-  "version": "1.28.0-alpha.205",
-  "build": 1,
-  "note": "下载：每块强制新连接（Connection: close）+ 块间 0.15s，绕开 keep-alive 脏连接",
-  "createdAt": "2026-11-12T00:14:24"
-}

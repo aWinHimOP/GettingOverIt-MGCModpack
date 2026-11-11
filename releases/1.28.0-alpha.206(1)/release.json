@@ -1,0 +1,6 @@
+{
+  "version": "1.28.0-alpha.206",
+  "build": 1,
+  "note": "下载：去掉被 Unity 拒绝的 Connection 头，保留每块重建请求 + 0.15s 间隔",
+  "createdAt": "2026-11-12T00:19:43"
+}
