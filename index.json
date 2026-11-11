@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 429,
-  "generatedAt": "2026-11-11T22:41:53",
+  "rev": 430,
+  "generatedAt": "2026-11-11T22:48:12",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,11 +9,11 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-alpha.197(1)",
+      "release": "1.28.0-alpha.198(1)",
       "pin": {
         "mod:MGCModpack": "1.1.0",
         "map:MGCModpack": "1.0.0",
-        "loader:MGCModpack": "1.28.0-alpha.197"
+        "loader:MGCModpack": "1.28.0-alpha.198"
       }
     },
     "test": {
@@ -25,11 +25,11 @@
           "356af1dbbf94887360586c6bff2e8b7b"
         ]
       },
-      "release": "1.28.0-alpha.197(1)",
+      "release": "1.28.0-alpha.198(1)",
       "pin": {
         "mod:MGCModpack": "1.1.0",
         "map:MGCModpack": "1.0.0",
-        "loader:MGCModpack": "1.28.0-alpha.197"
+        "loader:MGCModpack": "1.28.0-alpha.198"
       }
     }
   },
@@ -74,9 +74,9 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-alpha.197",
-          "file": "releases/1.28.0-alpha.197(1)/dll/MGCModpack.dll",
-          "sha256": "babb09a171373edfa999555f8b566978b504cb0fd9fff54f922889db625722dd",
+          "version": "1.28.0-alpha.198",
+          "file": "releases/1.28.0-alpha.198(1)/dll/MGCModpack.dll",
+          "sha256": "0c43ec85fef5191cb70022ccbb12aa788ae36c3b7b001cdc933a771d46447479",
           "size": 564736
         }
       ]
@@ -167,11 +167,11 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-alpha.197(1)",
-      "version": "1.28.0-alpha.197",
+      "id": "1.28.0-alpha.198(1)",
+      "version": "1.28.0-alpha.198",
       "build": 1,
-      "note": "转场节奏：OutQuint→OutCubic，展开 0.42s / 收回 0.36s（10fps 设备上也看得清形状）",
-      "createdAt": "2026-11-11T22:40:54",
+      "note": "转场：前 62% 只显示形状轮廓（圆→圆角），之后内容才淡入；外壳最后 15% 淡出",
+      "createdAt": "2026-11-11T22:47:13",
       "totalSize": 44755548,
       "files": [
         {
@@ -221,7 +221,7 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "babb09a171373edfa999555f8b566978b504cb0fd9fff54f922889db625722dd",
+          "sha256": "0c43ec85fef5191cb70022ccbb12aa788ae36c3b7b001cdc933a771d46447479",
           "size": 564736
         },
         {

@@ -1,6 +1,0 @@
-{
-  "version": "1.28.0-alpha.197",
-  "build": 1,
-  "note": "转场节奏：OutQuint→OutCubic，展开 0.42s / 收回 0.36s（10fps 设备上也看得清形状）",
-  "createdAt": "2026-11-11T22:40:54"
-}
