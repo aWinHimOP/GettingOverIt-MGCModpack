@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 419,
-  "generatedAt": "2026-11-11T12:59:58",
+  "rev": 420,
+  "generatedAt": "2026-11-11T13:51:54",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,11 +9,11 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-alpha.187(1)",
+      "release": "1.28.0-alpha.188(1)",
       "pin": {
         "mod:MGCModpack": "1.1.0",
         "map:MGCModpack": "1.0.0",
-        "loader:MGCModpack": "1.28.0-alpha.187"
+        "loader:MGCModpack": "1.28.0-alpha.188"
       }
     },
     "test": {
@@ -25,11 +25,11 @@
           "356af1dbbf94887360586c6bff2e8b7b"
         ]
       },
-      "release": "1.28.0-alpha.187(1)",
+      "release": "1.28.0-alpha.188(1)",
       "pin": {
         "mod:MGCModpack": "1.1.0",
         "map:MGCModpack": "1.0.0",
-        "loader:MGCModpack": "1.28.0-alpha.187"
+        "loader:MGCModpack": "1.28.0-alpha.188"
       }
     }
   },
@@ -74,10 +74,10 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-alpha.187",
-          "file": "releases/1.28.0-alpha.187(1)/dll/MGCModpack.dll",
-          "sha256": "36f8ea65d70291ed2d81026fe3cee61aa0591d2b413ac0cfe08b9cea0b67573c",
-          "size": 564224
+          "version": "1.28.0-alpha.188",
+          "file": "releases/1.28.0-alpha.188(1)/dll/MGCModpack.dll",
+          "sha256": "f2671eb4a010f85fb21a4da689ec96ad1a3f175f377f7d43383a1c2e2bcbc697",
+          "size": 563200
         }
       ]
     }
@@ -167,12 +167,12 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-alpha.187(1)",
-      "version": "1.28.0-alpha.187",
+      "id": "1.28.0-alpha.188(1)",
+      "version": "1.28.0-alpha.188",
       "build": 1,
-      "note": "公告：打印按钮屏幕坐标（真机定位形变入口）",
-      "createdAt": "2026-11-11T12:59:05",
-      "totalSize": 44755036,
+      "note": "公告转场改为真形状插值（圆↔圆角面板：位置/宽高/圆角/颜色逐帧插值），内容用真面板克隆渐显",
+      "createdAt": "2026-11-11T13:50:58",
+      "totalSize": 44754012,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -221,8 +221,8 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "36f8ea65d70291ed2d81026fe3cee61aa0591d2b413ac0cfe08b9cea0b67573c",
-          "size": 564224
+          "sha256": "f2671eb4a010f85fb21a4da689ec96ad1a3f175f377f7d43383a1c2e2bcbc697",
+          "size": 563200
         },
         {
           "path": "map/MGCModpack.mappack",
