@@ -1,6 +1,0 @@
-{
-  "version": "1.28.0-alpha.202",
-  "build": 1,
-  "note": "修地图包下载 0 字节：关掉 UnityWebRequest 内部超时（改墙钟检测），块大小 2MB→512KB",
-  "createdAt": "2026-11-11T23:52:40"
-}

@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 434,
-  "generatedAt": "2026-11-11T23:53:41",
+  "rev": 435,
+  "generatedAt": "2026-11-12T00:01:36",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,11 +9,11 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-alpha.202(1)",
+      "release": "1.28.0-alpha.203(1)",
       "pin": {
         "mod:MGCModpack": "1.1.0",
         "map:MGCModpack": "1.0.0",
-        "loader:MGCModpack": "1.28.0-alpha.202"
+        "loader:MGCModpack": "1.28.0-alpha.203"
       }
     },
     "test": {
@@ -25,11 +25,11 @@
           "356af1dbbf94887360586c6bff2e8b7b"
         ]
       },
-      "release": "1.28.0-alpha.202(1)",
+      "release": "1.28.0-alpha.203(1)",
       "pin": {
         "mod:MGCModpack": "1.1.0",
         "map:MGCModpack": "1.0.0",
-        "loader:MGCModpack": "1.28.0-alpha.202"
+        "loader:MGCModpack": "1.28.0-alpha.203"
       }
     }
   },
@@ -74,10 +74,10 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-alpha.202",
-          "file": "releases/1.28.0-alpha.202(1)/dll/MGCModpack.dll",
-          "sha256": "781116cf365a029aa7a67557a260a2cae05c2e95fb18e20eeea2105d24ddca71",
-          "size": 565248
+          "version": "1.28.0-alpha.203",
+          "file": "releases/1.28.0-alpha.203(1)/dll/MGCModpack.dll",
+          "sha256": "9e7cbf0f7a517a1607d8082bf88b357dcc318fb2066db2f91abd30113c45be4c",
+          "size": 565760
         }
       ]
     }
@@ -167,12 +167,12 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-alpha.202(1)",
-      "version": "1.28.0-alpha.202",
+      "id": "1.28.0-alpha.203(1)",
+      "version": "1.28.0-alpha.203",
       "build": 1,
-      "note": "修地图包下载 0 字节：关掉 UnityWebRequest 内部超时（改墙钟检测），块大小 2MB→512KB",
-      "createdAt": "2026-11-11T23:52:40",
-      "totalSize": 44756060,
+      "note": "下载诊断：块失败时记录 code/error/实收字节/耗时；块 128KB",
+      "createdAt": "2026-11-12T00:00:28",
+      "totalSize": 44756572,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -221,8 +221,8 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "781116cf365a029aa7a67557a260a2cae05c2e95fb18e20eeea2105d24ddca71",
-          "size": 565248
+          "sha256": "9e7cbf0f7a517a1607d8082bf88b357dcc318fb2066db2f91abd30113c45be4c",
+          "size": 565760
         },
         {
           "path": "map/MGCModpack.mappack",

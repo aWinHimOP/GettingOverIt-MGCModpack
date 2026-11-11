@@ -1,0 +1,6 @@
+{
+  "version": "1.28.0-alpha.203",
+  "build": 1,
+  "note": "下载诊断：块失败时记录 code/error/实收字节/耗时；块 128KB",
+  "createdAt": "2026-11-12T00:00:28"
+}
