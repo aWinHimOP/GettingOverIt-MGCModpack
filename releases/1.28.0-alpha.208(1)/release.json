@@ -1,6 +1,0 @@
-{
-  "version": "1.28.0-alpha.208",
-  "build": 1,
-  "note": "进度：整包模式下按 downloadedBytes 实时上报百分比（不再是 0%）",
-  "createdAt": "2026-11-12T00:48:02"
-}
