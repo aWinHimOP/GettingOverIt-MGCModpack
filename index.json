@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 439,
-  "generatedAt": "2026-11-12T00:28:14",
+  "rev": 440,
+  "generatedAt": "2026-11-12T00:49:04",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,11 +9,11 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-alpha.207(1)",
+      "release": "1.28.0-alpha.208(1)",
       "pin": {
         "mod:MGCModpack": "1.1.0",
         "map:MGCModpack": "1.0.0",
-        "loader:MGCModpack": "1.28.0-alpha.207"
+        "loader:MGCModpack": "1.28.0-alpha.208"
       }
     },
     "test": {
@@ -25,11 +25,11 @@
           "356af1dbbf94887360586c6bff2e8b7b"
         ]
       },
-      "release": "1.28.0-alpha.207(1)",
+      "release": "1.28.0-alpha.208(1)",
       "pin": {
         "mod:MGCModpack": "1.1.0",
         "map:MGCModpack": "1.0.0",
-        "loader:MGCModpack": "1.28.0-alpha.207"
+        "loader:MGCModpack": "1.28.0-alpha.208"
       }
     }
   },
@@ -74,9 +74,9 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-alpha.207",
-          "file": "releases/1.28.0-alpha.207(1)/dll/MGCModpack.dll",
-          "sha256": "29d271939f239c0b52af38e5d3ef1e214388b064509f8b51624497b2492cdace",
+          "version": "1.28.0-alpha.208",
+          "file": "releases/1.28.0-alpha.208(1)/dll/MGCModpack.dll",
+          "sha256": "2e400c61b01c6846399bde82cb1ca17a9c34f02de5248e8b0e16ca6740423305",
           "size": 566272
         }
       ]
@@ -167,11 +167,11 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-alpha.207(1)",
-      "version": "1.28.0-alpha.207",
+      "id": "1.28.0-alpha.208(1)",
+      "version": "1.28.0-alpha.208",
       "build": 1,
-      "note": "下载：Range 非 0 起点会挂死 → 有半截数据时退回整包单请求（超时 900s）",
-      "createdAt": "2026-11-12T00:27:08",
+      "note": "进度：整包模式下按 downloadedBytes 实时上报百分比（不再是 0%）",
+      "createdAt": "2026-11-12T00:48:02",
       "totalSize": 44757084,
       "files": [
         {
@@ -221,7 +221,7 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "29d271939f239c0b52af38e5d3ef1e214388b064509f8b51624497b2492cdace",
+          "sha256": "2e400c61b01c6846399bde82cb1ca17a9c34f02de5248e8b0e16ca6740423305",
           "size": 566272
         },
         {
