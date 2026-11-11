@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 426,
-  "generatedAt": "2026-11-11T22:12:01",
+  "rev": 427,
+  "generatedAt": "2026-11-11T22:19:34",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,11 +9,11 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-alpha.194(1)",
+      "release": "1.28.0-alpha.195(1)",
       "pin": {
         "mod:MGCModpack": "1.1.0",
         "map:MGCModpack": "1.0.0",
-        "loader:MGCModpack": "1.28.0-alpha.194"
+        "loader:MGCModpack": "1.28.0-alpha.195"
       }
     },
     "test": {
@@ -25,11 +25,11 @@
           "356af1dbbf94887360586c6bff2e8b7b"
         ]
       },
-      "release": "1.28.0-alpha.194(1)",
+      "release": "1.28.0-alpha.195(1)",
       "pin": {
         "mod:MGCModpack": "1.1.0",
         "map:MGCModpack": "1.0.0",
-        "loader:MGCModpack": "1.28.0-alpha.194"
+        "loader:MGCModpack": "1.28.0-alpha.195"
       }
     }
   },
@@ -74,8 +74,8 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-alpha.194",
-          "file": "releases/1.28.0-alpha.194(1)/dll/MGCModpack.dll",
+          "version": "1.28.0-alpha.195",
+          "file": "releases/1.28.0-alpha.195(1)/dll/MGCModpack.dll",
           "sha256": "be701dd9eb6db08d805d179b2c67a36b12813f88bc0c9c886e92ddd6866301d7",
           "size": 564736
         }
@@ -167,11 +167,11 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-alpha.194(1)",
-      "version": "1.28.0-alpha.194",
+      "id": "1.28.0-alpha.195(1)",
+      "version": "1.28.0-alpha.195",
       "build": 1,
-      "note": "修：形变期间忽略隐藏请求（不再弹出来就消失）；地图包进度按 .part 实际大小兜底（不再恒 0%）",
-      "createdAt": "2026-11-11T22:11:03",
+      "note": "Morph 日志：打印时长/慢放标记是否命中；便于验证",
+      "createdAt": "2026-11-11T22:18:36",
       "totalSize": 44755548,
       "files": [
         {
