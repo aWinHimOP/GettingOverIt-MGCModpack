@@ -1,0 +1,6 @@
+{
+  "version": "1.28.0-alpha.214",
+  "build": 1,
+  "note": "形变卡顿修复：面板克隆改为缓存复用（不再每帧 Instantiate）+ 追踪加 raw dt",
+  "createdAt": "2026-11-12T02:39:37"
+}
