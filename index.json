@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 416,
-  "generatedAt": "2026-11-11T03:19:06",
+  "rev": 417,
+  "generatedAt": "2026-11-11T10:20:26",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,11 +9,11 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-alpha.184(1)",
+      "release": "1.28.0-alpha.185(1)",
       "pin": {
         "mod:MGCModpack": "1.1.0",
         "map:MGCModpack": "1.0.0",
-        "loader:MGCModpack": "1.28.0-alpha.184"
+        "loader:MGCModpack": "1.28.0-alpha.185"
       }
     },
     "test": {
@@ -25,11 +25,11 @@
           "356af1dbbf94887360586c6bff2e8b7b"
         ]
       },
-      "release": "1.28.0-alpha.184(1)",
+      "release": "1.28.0-alpha.185(1)",
       "pin": {
         "mod:MGCModpack": "1.1.0",
         "map:MGCModpack": "1.0.0",
-        "loader:MGCModpack": "1.28.0-alpha.184"
+        "loader:MGCModpack": "1.28.0-alpha.185"
       }
     }
   },
@@ -74,10 +74,10 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-alpha.184",
-          "file": "releases/1.28.0-alpha.184(1)/dll/MGCModpack.dll",
-          "sha256": "f4969ae33db147e39e294443f1611f77d1d53c3f35e3ccd49e80271d9a2d8668",
-          "size": 562176
+          "version": "1.28.0-alpha.185",
+          "file": "releases/1.28.0-alpha.185(1)/dll/MGCModpack.dll",
+          "sha256": "a0a32a37094802c8227ec66fb6bc7de94d383aa8a931bb7050d2e2f49fd6f4a7",
+          "size": 563200
         }
       ]
     }
@@ -167,12 +167,12 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-alpha.184(1)",
-      "version": "1.28.0-alpha.184",
+      "id": "1.28.0-alpha.185(1)",
+      "version": "1.28.0-alpha.185",
       "build": 1,
-      "note": "公告转场改为安卓容器转场：遮罩+窗口放大渐显+真实按钮克隆飞入；收回镜像同款",
-      "createdAt": "2026-11-11T03:18:07",
-      "totalSize": 44752988,
+      "note": "公告转场：面板/按钮都复制真实对象来演（不再拿真面板直接缩放）；形变绑定加健壮性与诊断",
+      "createdAt": "2026-11-11T10:19:27",
+      "totalSize": 44754012,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -221,8 +221,8 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "f4969ae33db147e39e294443f1611f77d1d53c3f35e3ccd49e80271d9a2d8668",
-          "size": 562176
+          "sha256": "a0a32a37094802c8227ec66fb6bc7de94d383aa8a931bb7050d2e2f49fd6f4a7",
+          "size": 563200
         },
         {
           "path": "map/MGCModpack.mappack",
