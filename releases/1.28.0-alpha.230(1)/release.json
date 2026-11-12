@@ -1,0 +1,6 @@
+{
+  "version": "1.28.0-alpha.230",
+  "build": 1,
+  "note": "BCL 补齐 + XmlSerializer 验证",
+  "createdAt": "2026-11-12T18:39:57"
+}
