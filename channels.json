@@ -6,7 +6,10 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-alpha.232(1)"
+      "release": "1.28.0-alpha.232(1)",
+      "pin": {
+        "mod:MGCModpack": "1.1.0"
+      }
     },
     "test": {
       "label": "测试",
@@ -18,7 +21,10 @@
           "14fd08c4b94dd59264a2d5eac7e6a28c"
         ]
       },
-      "release": "1.28.0-alpha.233(1)"
+      "release": "1.28.0-alpha.234(1)",
+      "pin": {
+        "mod:MGCModpack": "1.2.0"
+      }
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 465,
-  "generatedAt": "2026-11-12T20:42:27",
+  "rev": 466,
+  "generatedAt": "2026-11-12T22:44:57",
   "channels": {
     "stable": {
       "label": "正式",
@@ -26,11 +26,11 @@
           "14fd08c4b94dd59264a2d5eac7e6a28c"
         ]
       },
-      "release": "1.28.0-alpha.233(1)",
+      "release": "1.28.0-alpha.234(1)",
       "pin": {
-        "mod:MGCModpack": "1.1.0",
+        "mod:MGCModpack": "1.2.0",
         "map:MGCModpack": "1.0.0",
-        "loader:MGCModpack": "1.28.0-alpha.233"
+        "loader:MGCModpack": "1.28.0-alpha.234"
       }
     }
   },
@@ -43,14 +43,21 @@
       "versions": [
         {
           "version": "1.1.0",
-          "file": "mod/official/MGCModpack.modpack",
+          "file": "mod/official/versions/1.1.0/MGCModpack.modpack",
           "sha256": "5a8afc55a2cedf6f8fdc1c90fa31c42e5fbe244c6389be2d82d4234381893da0",
           "size": 139145,
+          "category": "official"
+        },
+        {
+          "version": "1.2.0",
+          "file": "mod/official/MGCModpack.modpack",
+          "sha256": "cf700052b2477f2f64821e643df65ddc1f31af095608dabb30083c13134209e9",
+          "size": 150895,
           "category": "official"
         }
       ],
       "author": "Various Mod Developer",
-      "description": "MGCMopdack默认的Mod整合包，集合了大部分常见Mod"
+      "description": "1.2.0：新增性能优化 mod；模组落盘目录隔离与存档/AIGOI 迁移"
     },
     {
       "id": "map:MGCModpack",
@@ -75,10 +82,10 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-alpha.233",
-          "file": "releases/1.28.0-alpha.233(1)/dll/MGCModpack.dll",
-          "sha256": "c96fb0896db59d7184aad4097b4d8c0b41c8991dc792c642b3c8bb2c934b462c",
-          "size": 575488
+          "version": "1.28.0-alpha.234",
+          "file": "releases/1.28.0-alpha.234(1)/dll/MGCModpack.dll",
+          "sha256": "2f2d99ca0e6dab675ec5070c128625b527948d21b33e04a31f1d1ec2a987695a",
+          "size": 584704
         },
         {
           "version": "1.28.0-alpha.232",
@@ -174,12 +181,12 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-alpha.233(1)",
-      "version": "1.28.0-alpha.233",
+      "id": "1.28.0-alpha.234(1)",
+      "version": "1.28.0-alpha.234",
       "build": 1,
-      "note": "测试频道：版本号 -test 后缀（仅展示/日志，真实版本字段不变）",
-      "createdAt": "2026-11-12T20:40:55",
-      "totalSize": 44765593,
+      "note": "测试频道发布（含性能优化 mod / modpack 1.2.0；版本号 -test 后缀仅展示）",
+      "createdAt": "2026-11-12T22:39:55",
+      "totalSize": 44774809,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -228,8 +235,8 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "c96fb0896db59d7184aad4097b4d8c0b41c8991dc792c642b3c8bb2c934b462c",
-          "size": 575488
+          "sha256": "2f2d99ca0e6dab675ec5070c128625b527948d21b33e04a31f1d1ec2a987695a",
+          "size": 584704
         },
         {
           "path": "map/MGCModpack.mappack",
