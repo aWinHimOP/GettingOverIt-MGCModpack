@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 466,
-  "generatedAt": "2026-11-12T22:44:57",
+  "rev": 467,
+  "generatedAt": "2026-11-12T22:58:21",
   "channels": {
     "stable": {
       "label": "正式",
@@ -26,11 +26,11 @@
           "14fd08c4b94dd59264a2d5eac7e6a28c"
         ]
       },
-      "release": "1.28.0-alpha.234(1)",
+      "release": "1.28.0-alpha.235(1)",
       "pin": {
         "mod:MGCModpack": "1.2.0",
         "map:MGCModpack": "1.0.0",
-        "loader:MGCModpack": "1.28.0-alpha.234"
+        "loader:MGCModpack": "1.28.0-alpha.235"
       }
     }
   },
@@ -82,10 +82,10 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-alpha.234",
-          "file": "releases/1.28.0-alpha.234(1)/dll/MGCModpack.dll",
-          "sha256": "2f2d99ca0e6dab675ec5070c128625b527948d21b33e04a31f1d1ec2a987695a",
-          "size": 584704
+          "version": "1.28.0-alpha.235",
+          "file": "releases/1.28.0-alpha.235(1)/dll/MGCModpack.dll",
+          "sha256": "93af7a3c23f5417b871cf860504db9a31313a020df54c12652d975ac2f43a5d6",
+          "size": 585216
         },
         {
           "version": "1.28.0-alpha.232",
@@ -181,12 +181,12 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-alpha.234(1)",
-      "version": "1.28.0-alpha.234",
+      "id": "1.28.0-alpha.235(1)",
+      "version": "1.28.0-alpha.235",
       "build": 1,
       "note": "测试频道发布（含性能优化 mod / modpack 1.2.0；版本号 -test 后缀仅展示）",
-      "createdAt": "2026-11-12T22:39:55",
-      "totalSize": 44774809,
+      "createdAt": "2026-11-12T22:56:37",
+      "totalSize": 44775321,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -235,8 +235,8 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "2f2d99ca0e6dab675ec5070c128625b527948d21b33e04a31f1d1ec2a987695a",
-          "size": 584704
+          "sha256": "93af7a3c23f5417b871cf860504db9a31313a020df54c12652d975ac2f43a5d6",
+          "size": 585216
         },
         {
           "path": "map/MGCModpack.mappack",
