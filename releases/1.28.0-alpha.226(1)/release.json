@@ -1,6 +1,0 @@
-{
-  "version": "1.28.0-alpha.226",
-  "build": 1,
-  "note": "公告面板改用 RoundedRect 绘制圆角，形变圆角可实时插值；新 AB 包",
-  "createdAt": "2026-11-12T14:05:54"
-}
