@@ -14,10 +14,11 @@
       "target": {
         "type": "devices",
         "ids": [
-          "356af1dbbf94887360586c6bff2e8b7b"
+          "356af1dbbf94887360586c6bff2e8b7b",
+          "14fd08c4b94dd59264a2d5eac7e6a28c"
         ]
       },
-      "release": "1.28.0-alpha.232(1)"
+      "release": "1.28.0-alpha.233(1)"
     }
   }
 }
