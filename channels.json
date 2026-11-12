@@ -6,9 +6,9 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-alpha.232(1)",
+      "release": "1.28.0-alpha.236(1)",
       "pin": {
-        "mod:MGCModpack": "1.1.0"
+        "mod:MGCModpack": "1.2.1"
       }
     },
     "test": {
