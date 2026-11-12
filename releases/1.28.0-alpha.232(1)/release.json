@@ -1,0 +1,6 @@
+{
+  "version": "1.28.0-alpha.232",
+  "build": 1,
+  "note": "桥自带缓存失效(XmlSerializer BCL)+下载协程修复",
+  "createdAt": "2026-11-12T20:13:46"
+}
