@@ -1,11 +1,11 @@
 {
-  "version": "1.28.0-beta.1",
+  "version": "1.28.0-beta.2",
   "build": 1,
-  "createdAt": "2026-11-14 00:02:45",
+  "createdAt": "2026-11-14 01:08:32",
   "generatedBy": "mgcpush (lock v1)",
   "components": {
-    "loader": "1.28.0-beta.1",
-    "mod": "1.2.2",
+    "loader": "1.28.0-beta.2",
+    "mod": "1.2.3",
     "map": "1.0.0",
     "bundles": "5"
   },
@@ -67,8 +67,8 @@
     },
     {
       "path": "mod/MGCModpack.modpack",
-      "size": 119404,
-      "sha256": "64beb5656332e42029a80de08ea9801a8e377968064bec861da33a08e1ffd6ae"
+      "size": 130651,
+      "sha256": "ba828a6790f8730ff6392b7f8ff7e1f89e70254ac30320c67611ca0986907dfd"
     },
     {
       "path": "picture/about-icon.png",
@@ -86,5 +86,5 @@
       "sha256": "14599cb985e7447dacf80de0b610d1e7ddaa91a5d5d14daf7824089d60c2357c"
     }
   ],
-  "digest": "15cec3e979f7b9ebdcc961698f3aaf1b97211f9b5b7e6f2140044cf0652dcce3"
+  "digest": "fece3c71695be1da8023060b15822673e9bcf2cb6f50a0350012d022a2e41448"
 }

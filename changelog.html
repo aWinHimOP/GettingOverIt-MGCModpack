@@ -23,15 +23,27 @@
 
 <header class="hero"><div class="wrap">
   <h1>更新<em>日志</em></h1>
-  <p class="sub">每个版本改了什么、为什么改。只有正式频道算「发布」，测试频道的版本会在这里归并说明。</p>
+  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.2。</p>
 </div></header>
 
 <section class="noline"><div class="wrap">
   <div class="toc">
+    <a href="#v1280-beta2">1.28.0-beta.2<span>正式频道 · 2026-11-14 · 官方包补上性能优化 mod（20 mods）</span></a>
     <a href="#v1280-beta1">1.28.0-beta.1<span>正式频道 · 2026-11-13 · 官方包瘦身、主面板统计不再溢出</span></a>
     <a href="#v1280-alpha">1.28.0 开发期间<span>alpha.232 ~ alpha.238 · 下载提速、加载页、公告、落盘隔离、推送工具</span></a>
     <a href="#toolchain">工具链<span>mgcpush：命令行 + 图形界面，发布/回滚/内容编辑</span></a>
   </div>
+</div></section>
+
+<section id="v1280-beta2"><div class="wrap">
+  <h2>1.28.0-beta.2 <span class="badge">正式频道 · 2026-11-14</span></h2>
+  <p class="lead">beta.1 → beta.2 只换了一样东西：官方包。程序本体（dll）没动。</p>
+
+  <h3>官方包换成 1.2.3：性能优化 mod 回到正式频道（20 个 mod）</h3>
+  <p><b>做了什么：</b>官方 <code>MGCModpack.modpack</code> 升级到 1.2.3，共 <b>20</b> 个 mod，重新包含「性能优化」mod（<b>默认关闭</b>，在 设置 → 性能优化 里开启）；AIGOI / AIRL 仍然不在官方包里。<b>为什么：</b>beta.1 为了瘦身把性能优化一起拿掉了，实测低配机（0.3 档 +11.5% fps）挺需要它；现在改成「默认关、想要自己开」，既不影响默认体验，也不需要另装包。</p>
+
+  <h3>dll 不变：四排统计字号统一沿用</h3>
+  <p><b>做了什么：</b>程序本体与 beta.1 完全一致（同一份 dll，sha256 <code>14c843a9…</code>）。<b>为什么：</b>这一版只调整官方包组成，没有再改客户端代码，减少回归面。</p>
 </div></section>
 
 <section id="v1280-beta1"><div class="wrap">

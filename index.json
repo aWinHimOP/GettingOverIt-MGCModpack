@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 479,
-  "generatedAt": "2026-11-14T00:24:14",
+  "rev": 481,
+  "generatedAt": "2026-11-14T01:10:56",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,11 +9,11 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-beta.1(1)",
+      "release": "1.28.0-beta.2(1)",
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.1",
+        "loader:MGCModpack": "1.28.0-beta.2",
         "map:MGCModpack": "1.0.0",
-        "mod:MGCModpack": "1.2.2"
+        "mod:MGCModpack": "1.2.3"
       }
     },
     "test": {
@@ -68,6 +68,13 @@
           "sha256": "64beb5656332e42029a80de08ea9801a8e377968064bec861da33a08e1ffd6ae",
           "size": 119404,
           "category": "official"
+        },
+        {
+          "version": "1.2.3",
+          "file": "mod/official/versions/1.2.3/MGCModpack.modpack",
+          "sha256": "ba828a6790f8730ff6392b7f8ff7e1f89e70254ac30320c67611ca0986907dfd",
+          "size": 130651,
+          "category": "official"
         }
       ],
       "author": "Various Mod Developer",
@@ -96,8 +103,8 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-beta.1",
-          "file": "releases/1.28.0-beta.1(1)/dll/MGCModpack.dll",
+          "version": "1.28.0-beta.2",
+          "file": "releases/1.28.0-beta.2(1)/dll/MGCModpack.dll",
           "sha256": "14c843a9f840f594d4ab46231d1203b2fa7edf86788d0d80898a5a7096a0e79a",
           "size": 586752
         },
@@ -195,12 +202,12 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-beta.1(1)",
-      "version": "1.28.0-beta.1",
+      "id": "1.28.0-beta.2(1)",
+      "version": "1.28.0-beta.2",
       "build": 1,
-      "note": "1.28.0-beta.1：AIGOI 从官方包移除；主面板四排统计字号统一",
-      "createdAt": "2026-11-14T00:02:44",
-      "totalSize": 44763739,
+      "note": "1.28.0-beta.2：官方包 1.2.3（20 mods，含性能优化 mod，默认关闭）",
+      "createdAt": "2026-11-14T01:08:32",
+      "totalSize": 44774986,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -259,8 +266,8 @@
         },
         {
           "path": "mod/MGCModpack.modpack",
-          "sha256": "64beb5656332e42029a80de08ea9801a8e377968064bec861da33a08e1ffd6ae",
-          "size": 119404
+          "sha256": "ba828a6790f8730ff6392b7f8ff7e1f89e70254ac30320c67611ca0986907dfd",
+          "size": 130651
         },
         {
           "path": "picture/about-icon.png",
@@ -279,7 +286,7 @@
         },
         {
           "path": "release.lock.json",
-          "sha256": "8bbbad2521b9071025fe744aef16bdac770aec355d11d0b328857514c0fccea5",
+          "sha256": "bcdf1de79b6cbec2412128447874ec9a4c736b70e9bce5b7d3c5ba797ece966a",
           "size": 2804
         }
       ]
