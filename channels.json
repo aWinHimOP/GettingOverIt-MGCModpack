@@ -6,11 +6,11 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-beta.2(1)",
+      "release": "1.28.0-beta.3(1)",
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.2",
+        "loader:MGCModpack": "1.28.0-beta.3",
         "map:MGCModpack": "1.0.0",
-        "mod:MGCModpack": "1.2.3"
+        "mod:MGCModpack": "1.2.4"
       }
     },
     "test": {

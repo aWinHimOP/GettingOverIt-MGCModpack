@@ -29,10 +29,23 @@
 <section class="noline"><div class="wrap">
   <div class="toc">
     <a href="#v1280-beta2">1.28.0-beta.2<span>正式频道 · 2026-11-14 · 官方包补上性能优化 mod（20 mods）</span></a>
+    <a href="#v1280-beta3">1.28.0-beta.3<span>正式频道 · 2026-11-14 · 新增「问题复现报告」导出 zip（默认关闭，0.12ms/帧）</span></a>
     <a href="#v1280-beta1">1.28.0-beta.1<span>正式频道 · 2026-11-13 · 官方包瘦身、主面板统计不再溢出</span></a>
     <a href="#v1280-alpha">1.28.0 开发期间<span>alpha.232 ~ alpha.238 · 下载提速、加载页、公告、落盘隔离、推送工具</span></a>
     <a href="#toolchain">工具链<span>mgcpush：命令行 + 图形界面，发布/回滚/内容编辑</span></a>
   </div>
+</div></section>
+
+<section id="v1280-beta3"><div class="wrap">
+  <h2>1.28.0-beta.3 <span class="badge">正式频道 · 2026-11-14</span></h2>
+  <p class="lead">这一版加了一个给作者看的「问题复现报告」：遇到 bug 不用再手打一堆环境信息，点一下导出 zip 发过来就行。</p>
+
+  <h3>问题复现报告：调试页左侧顶部开关 + 一键导出 zip</h3>
+  <p><b>做了什么：</b>调试页（设置 → 调试）<b>左侧顶部</b>新增「问题复现报告」开关，默认<b>关闭</b>；开启后可以导出 <code>.zip</code>，里面包含：报告（markdown）、截图、游戏日志、配置、环境信息（系统/显卡/内存/版本等）。把 zip 发给作者即可排查。<b>为什么：</b>真机上出的问题，靠文字描述经常缺关键信息，来回问好几轮；把现场一次性打包，能省掉一半沟通成本。</p>
+  <p><b>开销：</b>默认关闭，不开启完全无感；开启后每帧约 <b>0.12 ms</b>（真机 6 项验证实测稳态值），对 60fps（16.7ms/帧）来说基本可以忽略。</p>
+
+  <h3>官方包 1.2.4 / dll 同步更新</h3>
+  <p><b>做了什么：</b>dll 更新到 <code>627,200 B / c6df9d71…</code>（含 zip 导出、SystemProbe 无障碍探测、原始触摸采集、启动期汇总、ModpackState 双路径、主题冻结开关默认关）；官方包 1.2.4（20 个 mod，含性能优化、默认关闭）。<b>为什么：</b>报告器需要读这些新数据源，旧 dll 导出的信息不全。</p>
 </div></section>
 
 <section id="v1280-beta2"><div class="wrap">
