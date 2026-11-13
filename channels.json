@@ -23,11 +23,11 @@
           "14fd08c4b94dd59264a2d5eac7e6a28c"
         ]
       },
-      "release": "1.28.0-alpha.236(1)",
+      "release": "1.28.0-beta.2(1)",
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.236",
+        "loader:MGCModpack": "1.28.0-beta.2",
         "map:MGCModpack": "1.0.0",
-        "mod:MGCModpack": "1.2.0"
+        "mod:MGCModpack": "1.2.3"
       }
     }
   }
