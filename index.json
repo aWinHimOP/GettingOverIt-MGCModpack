@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 483,
-  "generatedAt": "2026-11-14T01:24:35",
+  "rev": 484,
+  "generatedAt": "2026-11-14T03:02:19",
   "channels": {
     "stable": {
       "label": "正式",
@@ -74,6 +74,13 @@
           "file": "mod/official/versions/1.2.3/MGCModpack.modpack",
           "sha256": "ba828a6790f8730ff6392b7f8ff7e1f89e70254ac30320c67611ca0986907dfd",
           "size": 130651,
+          "category": "official"
+        },
+        {
+          "version": "1.2.4",
+          "file": "mod/official/versions/1.2.4/MGCModpack.modpack",
+          "sha256": "5d3853c2841f144855fea1f421d363bcb3ca2801294daaa35e1ff513980dec73",
+          "size": 130788,
           "category": "official"
         }
       ],
