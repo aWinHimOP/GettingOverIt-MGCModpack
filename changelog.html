@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>更新日志 · MGC Modpack</title>
+<meta name="description" content="MGC Modpack 更新日志：1.28.0 正式版与开发期间的改动记录。">
+<link rel="icon" href="picture/about-icon.png">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="index.html">MGC <span>Modpack</span></a>
+  <div class="links">
+    <a href="shots.html" class="hide">截图</a>
+    <a href="guide.html">教程</a>
+    <a href="faq.html">常见问题</a>
+    <a href="changelog.html">更新日志</a>
+    <a href="disclaimer.html" class="hide">声明</a>
+    <a href="download.html" class="dl">下载</a>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <h1>更新<em>日志</em></h1>
+  <p class="sub">每个版本改了什么、为什么改。只有正式频道算「发布」，测试频道的版本会在这里归并说明。</p>
+</div></header>
+
+<section class="noline"><div class="wrap">
+  <div class="toc">
+    <a href="#v1280-beta1">1.28.0-beta.1<span>正式频道 · 2026-11-13 · 官方包瘦身、主面板统计不再溢出</span></a>
+    <a href="#v1280-alpha">1.28.0 开发期间<span>alpha.232 ~ alpha.238 · 下载提速、加载页、公告、落盘隔离、推送工具</span></a>
+    <a href="#toolchain">工具链<span>mgcpush：命令行 + 图形界面，发布/回滚/内容编辑</span></a>
+  </div>
+</div></section>
+
+<section id="v1280-beta1"><div class="wrap">
+  <h2>1.28.0-beta.1 <span class="badge">正式频道 · 2026-11-13</span></h2>
+  <p class="lead">第一个正式版。这一版只做两件事：把官方包收干净，把主面板那排数字收进面板里。</p>
+
+  <h3>官方包移除 AIGOI，只剩 19 个 mod</h3>
+  <p><b>做了什么：</b>官方 <code>MGCModpack.modpack</code> 不再包含 AIGOI（本机推理 + 进化的实验 mod），包内 mod 数量从 20 降到 <b>19</b>。<b>为什么：</b>AIGOI 是实验性质、吃性能、普通玩家用不到；放进正式包既占体积也容易让人误开。想玩的仍然可以单独装，不影响官方包。</p>
+
+  <h3>主面板四排统计：字号统一，不再超出面板</h3>
+  <p><b>做了什么：</b>主面板四排统计（游玩时长 / 重开次数 / 通关次数 / 今日最佳）现在会各自算出「不超出本排宽度」的最大字号，再取四者里最小的那个，<b>四排统一用同一个字号</b>；实在放不下就四排一起改成两行。<b>为什么：</b>游玩时长可以很长（比如 100 小时），旧版按 34pt 画会顶穿面板——实测文字右边界 x1888，面板右边界 x1862，超出 26px；统一 31pt 后右边界 x1811，面板内还剩 51px。只缩一排会让四排看着不齐，所以一起改。</p>
+
+  <p class="lead" style="margin-top:26px">测试频道在开发期间跑过 alpha.236 / 237 / 238（公告修复、横屏实验）。横屏方案依赖系统层、已撤掉，正式频道用户直接从 236 拿到 beta.1，不受影响。</p>
+</div></section>
+
+<section id="v1280-alpha"><div class="wrap">
+  <h2>1.28.0 开发期间 <span class="badge">alpha.232 ~ 238 · 测试频道</span></h2>
+  <p class="lead">这一段不在正式频道的版本号里，但功能都进了 beta.1。</p>
+
+  <h3>下载：多源 + 停滞检测 + 按文件预算</h3>
+  <p><b>做了什么：</b>下载改成 Pages → raw 多源，单个文件卡住就判「停滞」并换源，预算按文件分配而不是整包一刀切。<b>效果：</b>最慢的面板大图 <code>panel-placeholder</code> 从 <b>67.33s → 9.73s（6.9×）</b>。改之前一次全量同步 114.5s，其中 2.4MB 的这一张图就占了 67.3s（60s 超时 + 7s 重试成功）——用户看到的「进度停住」就是它。</p>
+
+  <h3>加载页：固定区域、不裁切、显示速度</h3>
+  <p><b>做了什么：</b>加载页改成固定区域布局（内容变化不再抖），右侧统计区不再被裁掉，补上实时速度和进度显示。<b>为什么：</b>原来边下边重排，数字跳来跳去；右侧统计在某些分辨率下直接被切掉一半。</p>
+
+  <h3>公告：自动弹出规则 + 首启按钮 + 客户端补拉</h3>
+  <p><b>做了什么：</b>公告弹出有了明确规则——内容哈希变了 / 跨天 / 打开菜单 / 首次进游戏，四种情况各弹一次，弹过就记住（日期 + 内容指纹）。首启时顶栏「公告」按钮不再依赖内容是否拉到，先放按钮再填内容；万一首启下载预算被资源包吃光，客户端会自己补拉 <code>config/announcements.json</code> 并原子写盘。<b>为什么：</b>原来公告没拉到就连按钮都没有，玩家以为没有公告；首启预算耗尽时公告会整段跳过。</p>
+
+  <h3>落盘：严格写入隔离</h3>
+  <p><b>做了什么：</b>mod 只能写自己名下 <code>Mods/&lt;模组名&gt;/</code>，越界写直接被拒绝并记一条审计日志；旧路径（<code>MGCModpack/AIGOI</code>、<code>MGCModpack/存档</code>）只允许读、不许写。存档、AIGOI 权重、性能配置各自迁到 <code>Mods/存档/</code>、<code>Mods/AIGOI/</code>、<code>Mods/PerfMod/</code>。<b>为什么：</b>之前 mod 到处写文件，卸载/迁移时容易互相覆盖，也说不清是谁写的。</p>
+</div></section>
+
+<section id="toolchain"><div class="wrap">
+  <h2>工具链 <span class="badge">mgcpush</span></h2>
+  <p class="lead">发布流程本身也重写了，和玩家无关，但决定了这个站点的更新速度。</p>
+  <p><b>做了什么：</b>新增 <code>mgcpush</code>（命令行 + 图形界面）统管站点发布：打包整版本快照、逐文件 sha256 锁文件、干跑先看计划、删远端历史目录前必须有本地快照（安全门）、回滚只动频道指针、一条命令把整站恢复到某个快照。<b>为什么：</b>以前靠手工改 index/上传，出过「索引里有、线上没有 → 设备同步 404」和「回滚了指针但 pin 没退」的事故。现在每次发布前先 dry-run 打印「将上传/将删除/安全门/稳定版断言」，稳定版目录 sha 不变才允许发。</p>
+</div></section>
+
+<footer><div class="wrap">
+  <p>MGC Modpack · 作者 <a href="https://github.com/aWinHimOP" target="_blank" rel="noopener">@aWinHimOP</a> · QQ 群 549361403</p>
+  <p class="fl"><a href="shots.html">截图</a> · <a href="guide.html">教程</a> · <a href="faq.html">常见问题</a> · <a href="disclaimer.html">声明</a> · <a href="https://github.com/aWinHimOP/GettingOverIt-MGCModpack" target="_blank" rel="noopener">GitHub</a></p>
+</div></footer>
+</body>
+</html>
