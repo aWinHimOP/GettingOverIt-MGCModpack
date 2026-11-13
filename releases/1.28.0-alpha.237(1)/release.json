@@ -1,0 +1,7 @@
+{
+  "version": "1.28.0-alpha.237",
+  "build": 1,
+  "note": "test 频道：强制横屏 + 公告修复（dll 19:10 构建，modpack 1.2.0 含性能优化）",
+  "createdAt": "2026-11-13T19:27:25",
+  "from": "1.28.0-alpha.236(1)"
+}
