@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 472,
-  "generatedAt": "2026-11-13T19:44:04",
+  "rev": 473,
+  "generatedAt": "2026-11-13T20:00:05",
   "channels": {
     "stable": {
       "label": "正式",
@@ -26,9 +26,9 @@
           "14fd08c4b94dd59264a2d5eac7e6a28c"
         ]
       },
-      "release": "1.28.0-alpha.237(1)",
+      "release": "1.28.0-alpha.238(1)",
       "pin": {
-        "loader:MGCModpack": "1.28.0-alpha.237",
+        "loader:MGCModpack": "1.28.0-alpha.238",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.2.0"
       }
@@ -89,10 +89,10 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-alpha.237",
-          "file": "releases/1.28.0-alpha.237(1)/dll/MGCModpack.dll",
-          "sha256": "f15eccc2ddb175c65631bf7147691281bfaaaa10266869c2ae76266a59d200a1",
-          "size": 587776
+          "version": "1.28.0-alpha.238",
+          "file": "releases/1.28.0-alpha.238(1)/dll/MGCModpack.dll",
+          "sha256": "10aa41d7edf3c1c74e60a840597fdb06fc38621c3ab4e3362764a353ae52b4aa",
+          "size": 589312
         },
         {
           "version": "1.28.0-alpha.236",
@@ -188,12 +188,12 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-alpha.237(1)",
-      "version": "1.28.0-alpha.237",
+      "id": "1.28.0-alpha.238(1)",
+      "version": "1.28.0-alpha.238",
       "build": 1,
-      "note": "test 频道：强制横屏 + 公告修复（dll 19:10 构建，modpack 1.2.0 含性能优化）",
-      "createdAt": "2026-11-13T19:27:25",
-      "totalSize": 44796260,
+      "note": "test 频道：Android setRequestedOrientation 横屏修复（dll 589,312 B / 10aa41d7），modpack 仍 1.2.0",
+      "createdAt": "2026-11-13T19:57:13",
+      "totalSize": 44797796,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -242,8 +242,8 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "f15eccc2ddb175c65631bf7147691281bfaaaa10266869c2ae76266a59d200a1",
-          "size": 587776
+          "sha256": "10aa41d7edf3c1c74e60a840597fdb06fc38621c3ab4e3362764a353ae52b4aa",
+          "size": 589312
         },
         {
           "path": "map/MGCModpack.mappack",
@@ -272,7 +272,7 @@
         },
         {
           "path": "release.lock.json",
-          "sha256": "6f95b7647ca4e0e8bce02d64782eacb28fcb2a3015001e9a3571651227d5e6c5",
+          "sha256": "d91d6525188655249b1591c7f1caeba3b095789c8f3d34b12154fd6bbaa002cb",
           "size": 2810
         }
       ]

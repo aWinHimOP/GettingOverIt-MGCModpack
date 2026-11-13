@@ -1,0 +1,7 @@
+{
+  "version": "1.28.0-alpha.238",
+  "build": 1,
+  "note": "test 频道：Android setRequestedOrientation 横屏修复（dll 589,312 B / 10aa41d7），modpack 仍 1.2.0",
+  "createdAt": "2026-11-13T19:57:13",
+  "from": "1.28.0-alpha.237(1)"
+}
