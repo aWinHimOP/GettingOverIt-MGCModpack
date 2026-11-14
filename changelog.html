@@ -23,11 +23,12 @@
 
 <header class="hero"><div class="wrap">
   <h1>更新<em>日志</em></h1>
-  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.14。</p>
+  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.15。</p>
 </div></header>
 
 <section class="noline"><div class="wrap">
   <div class="toc">
+    <a href="#v1280-beta15">1.28.0-beta.15<span>正式频道 · 2026-11-14 · 地图包改「单请求 + 边收边写盘」，并把响应头写进日志</span></a>
     <a href="#v1280-beta14">1.28.0-beta.14<span>正式频道 · 2026-11-14 · 大文件下载搬到后台线程（HttpWebRequest 流式写盘），彻底不碰主线程</span></a>
     <a href="#v1280-beta13">1.28.0-beta.13<span>正式频道 · 2026-11-14 · 卡死根因：下载时反复读 downloadHandler.data 会阻塞主线程（ANR）</span></a>
     <a href="#v1280-beta12">1.28.0-beta.12<span>正式频道 · 2026-11-14 · 自动崩溃报告：等日志模块就绪后再判定，否则永远不触发</span></a>
@@ -45,6 +46,22 @@
     <a href="#v1280-alpha">1.28.0 开发期间<span>alpha.232 ~ alpha.238 · 下载提速、加载页、公告、落盘隔离、推送工具</span></a>
     <a href="#toolchain">工具链<span>mgcpush：命令行 + 图形界面，发布/回滚/内容编辑</span></a>
   </div>
+</div></section>
+
+<section id="v1280-beta15"><div class="wrap">
+  <h2>1.28.0-beta.15 <span class="badge">正式频道 · 2026-11-14</span></h2>
+  <p class="lead">beta.14 的后台线程方案在真机上直接报错（Mono 的 TLS 不可用），这版换回 Unity 的网络栈，但用<b>流式写盘</b>绕开内存和阻塞问题。</p>
+
+  <h3>beta.14 真机结果</h3>
+  <p><code>后台线程下载失败: Object reference not set to an instance of an object</code>——这台机器上 Mono 的 <code>HttpWebRequest</code> 走不通 HTTPS，只剩 UnityWebRequest 一条路。</p>
+
+  <h3>这版怎么下 38MB 地图包</h3>
+  <ul>
+    <li><b>边收边写盘</b>：用 <code>DownloadHandlerScript</code> 的 <code>ReceiveData</code> 直接写 <code>.part</code>，内存里只有一个 64KB 缓冲；不再碰会阻塞的 <code>downloadHandler.data</code>。</li>
+    <li><b>一轮只发一个请求</b>，不自动重试——重试正是把卡死请求越堆越多的根源。</li>
+    <li><b>大文件一律从 0 起</b>：这台设备对 Range 续传不可靠，宁可整包重来，也不把两份数据接错。</li>
+    <li><b>响应头进日志</b>：<code>Content-Length</code> / <code>Content-Range</code> / <code>Content-Encoding</code> / <code>Transfer-Encoding</code> / <code>Server</code> 全记下来，下次报告一眼看出服务器或中间层到底给了什么。</li>
+  </ul>
 </div></section>
 
 <section id="v1280-beta14"><div class="wrap">
