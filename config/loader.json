@@ -2,7 +2,8 @@
   "version": 1,
   "syncSkipPrefixes": [
     "mod/",
-    "map/"
+    "map/",
+    "picture/"
   ],
-  "note": "syncSkipPrefixes：启动时版本同步整段跳过的路径前缀。mod/ 和 map/ 是游戏内按需下载的内容（MGCModpack.dll 的 ModpackDownloader 负责），loader 不要在这里拉。改完这个文件不用重发 DLL。"
+  "note": "syncSkipPrefixes：启动时版本同步整段跳过的路径前缀。mod/ 和 map/ 是游戏内按需下载的内容（MGCModpack.dll 的 ModpackDownloader 负责）；picture/ 是海报图/图标/面板底图（共 2.6MB，其中 panel-placeholder 一张就 2.4MB），进游戏后由 UI 按需懒加载（有本地缓存），没必要让玩家在加载页等。改完这个文件不用重发 DLL。"
 }
