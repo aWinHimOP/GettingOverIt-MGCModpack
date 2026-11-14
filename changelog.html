@@ -23,11 +23,13 @@
 
 <header class="hero"><div class="wrap">
   <h1>更新<em>日志</em></h1>
-  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.17。</p>
+  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.19。</p>
 </div></header>
 
 <section class="noline"><div class="wrap">
   <div class="toc">
+    <a href="#v1280-beta19">1.28.0-beta.19<span>正式频道 · 2026-11-14 · 海报图不再占加载页（picture/ 2.6MB 改为进游戏后按需懒加载）</span></a>
+    <a href="#v1280-beta18">1.28.0-beta.18<span>正式频道 · 2026-11-14 · 地图包分块改成 128KB（2MB 的块在真机上收不完整）</span></a>
     <a href="#v1280-beta17">1.28.0-beta.17<span>正式频道 · 2026-11-14 · 地图包改按 2MB 分块：一条长连接活 75 秒会把进程拖死</span></a>
     <a href="#v1280-beta16">1.28.0-beta.16<span>正式频道 · 2026-11-14 · 写盘移到后台线程：主线程只 memcpy，不再被 sdcard 写卡死</span></a>
     <a href="#v1280-beta15">1.28.0-beta.15<span>正式频道 · 2026-11-14 · 地图包改「单请求 + 边收边写盘」，并把响应头写进日志</span></a>
@@ -48,6 +50,35 @@
     <a href="#v1280-alpha">1.28.0 开发期间<span>alpha.232 ~ alpha.238 · 下载提速、加载页、公告、落盘隔离、推送工具</span></a>
     <a href="#toolchain">工具链<span>mgcpush：命令行 + 图形界面，发布/回滚/内容编辑</span></a>
   </div>
+</div></section>
+
+<section id="v1280-beta19"><div class="wrap">
+  <h2>1.28.0-beta.19 <span class="badge">正式频道 · 2026-11-14</span></h2>
+  <p class="lead">加载页不再为海报图干等：<code>picture/</code> 整段移出启动同步，进游戏用到哪张下哪张。</p>
+
+  <h3>为什么之前加载页慢</h3>
+  <p>启动同步的文件表里有 3 张图，共 <b>2.6 MB</b>：<code>about-icon.png</code> 248 KB、<code>announcement-icon.png</code> 0.5 KB、<code>panel-placeholder.png</code> <b>2.4 MB</b>。在 38 KB/s 的链路上光这几张就要 70 秒，而它们<b>一进游戏就会被用到</b>，完全可以边玩边下。</p>
+
+  <h3>改法</h3>
+  <ul>
+    <li><code>config/loader.json</code> 的 <code>syncSkipPrefixes</code> 加上 <code>picture/</code>（服务器配置，改完不用重发 APK 也生效）。</li>
+    <li>loader 里的默认排除名单同步加上 <code>picture/</code>（配置文件丢失时的兜底）。</li>
+    <li>UI 侧本来就按需拉图 + 本地缓存（<code>RemoteUI</code> / 图片缓存），所以缺图时会自己下，不影响进游戏。</li>
+  </ul>
+</div></section>
+
+<section id="v1280-beta18"><div class="wrap">
+  <h2>1.28.0-beta.18 <span class="badge">正式频道 · 2026-11-14</span></h2>
+  <p class="lead">地图包分块从 2MB 改回 128KB——实测 2MB 的块收不完整。</p>
+  <h3>证据</h3>
+  <p>平板真机抓到的对照：</p>
+  <pre>请求 bytes=2096518-4193669（2MB 一块）
+响应 Content-Range=bytes 2096518-4193669/40075131
+结果 实收 0 字节，Request timeout
+
+请求 128KB 一块（历史上一直是这个尺寸）
+结果 40MB 能完整下完</pre>
+  <p>说明这条链路的中间层对大响应会截断。块回到 128KB，配 <code>Content-Range</code> 精确续传，断点也不丢。</p>
 </div></section>
 
 <section id="v1280-beta17"><div class="wrap">
