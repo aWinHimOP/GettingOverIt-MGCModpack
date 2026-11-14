@@ -23,11 +23,12 @@
 
 <header class="hero"><div class="wrap">
   <h1>更新<em>日志</em></h1>
-  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.16。</p>
+  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.17。</p>
 </div></header>
 
 <section class="noline"><div class="wrap">
   <div class="toc">
+    <a href="#v1280-beta17">1.28.0-beta.17<span>正式频道 · 2026-11-14 · 地图包改按 2MB 分块：一条长连接活 75 秒会把进程拖死</span></a>
     <a href="#v1280-beta16">1.28.0-beta.16<span>正式频道 · 2026-11-14 · 写盘移到后台线程：主线程只 memcpy，不再被 sdcard 写卡死</span></a>
     <a href="#v1280-beta15">1.28.0-beta.15<span>正式频道 · 2026-11-14 · 地图包改「单请求 + 边收边写盘」，并把响应头写进日志</span></a>
     <a href="#v1280-beta14">1.28.0-beta.14<span>正式频道 · 2026-11-14 · 大文件下载搬到后台线程（HttpWebRequest 流式写盘），彻底不碰主线程</span></a>
@@ -47,6 +48,27 @@
     <a href="#v1280-alpha">1.28.0 开发期间<span>alpha.232 ~ alpha.238 · 下载提速、加载页、公告、落盘隔离、推送工具</span></a>
     <a href="#toolchain">工具链<span>mgcpush：命令行 + 图形界面，发布/回滚/内容编辑</span></a>
   </div>
+</div></section>
+
+<section id="v1280-beta17"><div class="wrap">
+  <h2>1.28.0-beta.17 <span class="badge">正式频道 · 2026-11-14</span></h2>
+  <p class="lead">beta.16 把写盘搬到后台线程后<b>主线程确实不卡了</b>（每 10 秒一条 Diag 一直正常），但下到 2.5MB / 75 秒时整个进程还是被杀——这次问题不在主线程，在那条<b>活着太久的长连接</b>。</p>
+
+  <h3>beta.16 的实测数据</h3>
+  <pre>20:25:33  流式进行中：已收 311207 字节（10s）
+20:25:53  流式进行中：已收 1064513 字节（30s）
+20:26:38  流式进行中：已收 2571253 字节（75s）
+20:26:39  Diag 每帧开销 平均 0.037ms ← 主线程完全正常
+          （之后无任何日志，53 秒后进程没了）</pre>
+  <p>速度约 34 KB/s，40 MB 要下 20 分钟；一条连接活这么久，在 MIUI 上很容易被系统侧掐掉（表现为「闪退」而不是报错）。</p>
+
+  <h3>修法</h3>
+  <ul>
+    <li><b>按 2MB 分块</b>：每块一个独立的短请求 + <code>Range</code>，单块十几秒就结束，不再有长连接。</li>
+    <li><b>断点续传回来了</b>：每块完成后从 <code>.part</code> 的实际长度接着来，进程被杀也能从断点继续。</li>
+    <li><b>Range 兜底</b>：服务器若忽略 Range 回了 200 整包，自动丢弃本次数据并从头下，绝不把两份数据接错。</li>
+    <li>某一块连续 3 次没进展才放弃（并写清「第几块没进展」）。</li>
+  </ul>
 </div></section>
 
 <section id="v1280-beta16"><div class="wrap">
