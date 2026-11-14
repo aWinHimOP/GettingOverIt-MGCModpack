@@ -6,9 +6,9 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-beta.17(1)",
+      "release": "1.28.0-beta.18(1)",
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.17",
+        "loader:MGCModpack": "1.28.0-beta.18",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.2.5"
       }
