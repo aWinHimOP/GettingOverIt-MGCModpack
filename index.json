@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 521,
-  "generatedAt": "2026-11-14T20:23:35",
+  "rev": 522,
+  "generatedAt": "2026-11-14T20:25:57",
   "channels": {
     "stable": {
       "label": "正式",
