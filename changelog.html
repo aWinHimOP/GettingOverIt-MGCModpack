@@ -23,11 +23,12 @@
 
 <header class="hero"><div class="wrap">
   <h1>更新<em>日志</em></h1>
-  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.9。</p>
+  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.10。</p>
 </div></header>
 
 <section class="noline"><div class="wrap">
   <div class="toc">
+    <a href="#v1280-beta10">1.28.0-beta.10<span>正式频道 · 2026-11-14 · 地图包（38MB）续传卡死时改为从 0 分块重下</span></a>
     <a href="#v1280-beta9">1.28.0-beta.9<span>正式频道 · 2026-11-14 · 主题适配补全（社区/Mod 列表、已下载底色）+ 圆角组件 NaN 兜底</span></a>
     <a href="#v1280-beta8">1.28.0-beta.8<span>正式频道 · 2026-11-14 · 适配新 UI：底图从 Image 换成圆角组件后的染色/高亮/压暗</span></a>
     <a href="#v1280-beta7">1.28.0-beta.7<span>正式频道 · 2026-11-14 · 下载：大小对不上不再当坏数据；大包不再整份进内存</span></a>
@@ -40,6 +41,22 @@
     <a href="#v1280-alpha">1.28.0 开发期间<span>alpha.232 ~ alpha.238 · 下载提速、加载页、公告、落盘隔离、推送工具</span></a>
     <a href="#toolchain">工具链<span>mgcpush：命令行 + 图形界面，发布/回滚/内容编辑</span></a>
   </div>
+</div></section>
+
+<section id="v1280-beta10"><div class="wrap">
+  <h2>1.28.0-beta.10 <span class="badge">正式频道 · 2026-11-14</span></h2>
+  <p class="lead">根据小米 / Android 14 真机的复现报告：地图包（38 MB）每次都在 131038 字节处报 <code>HTTP 206: Request timeout，实收 0</code>，然后连续失败四次、放弃下载。</p>
+
+  <h3>现象</h3>
+  <pre>[ResumableDL] 块详情 MGCModpack.mappack code=206 error=Request timeout 实收=0 耗时=0.3s
+[ResumableDL] 第 4 次失败: HTTP 206: Request timeout；已下载 131038 字节，保留 .part 下次继续
+[ResumableDL] 放弃这个源（连续失败 4 次）</pre>
+
+  <h3>根因</h3>
+  <p>设备的网络栈对「从中间某个位置开始的 Range 请求」不稳定：<b>206 头回来了，正文 0 字节就超时</b>。而 <code>.part</code> 里已经躺了 131038 字节，于是每次重试都从那个位置续 —— 每次都撞同一堵墙，永远下不完。旧逻辑只有两条路：继续续传（必失败），或者「整包单请求」（38MB 全读进内存，我们已限制在 4MB 以下）。</p>
+
+  <h3>修法</h3>
+  <p>续传连续失败 2 次后，<b>大包直接丢掉 <code>.part</code>、从 0 重新分块下载</b>（不是整包进内存）。小包仍然走「整包单请求」兜底。这样即使某个续传位置彻底坏掉，也能自己爬出来。</p>
 </div></section>
 
 <section id="v1280-beta9"><div class="wrap">
