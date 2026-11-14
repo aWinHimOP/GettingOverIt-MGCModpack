@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 487,
-  "generatedAt": "2026-11-14T03:56:18",
+  "rev": 489,
+  "generatedAt": "2026-11-14T13:59:06",
   "channels": {
     "stable": {
       "label": "正式",
@@ -85,7 +85,7 @@
         }
       ],
       "author": "Various Mod Developer",
-      "description": "1.2.0：新增性能优化 mod；模组落盘目录隔离与存档/AIGOI 迁移"
+      "description": "MGCModpack 正式频道版"
     },
     {
       "id": "map:MGCModpack",
