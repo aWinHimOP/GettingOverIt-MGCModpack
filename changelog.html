@@ -23,17 +23,40 @@
 
 <header class="hero"><div class="wrap">
   <h1>更新<em>日志</em></h1>
-  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.2。</p>
+  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.5。</p>
 </div></header>
 
 <section class="noline"><div class="wrap">
   <div class="toc">
+    <a href="#v1280-beta5">1.28.0-beta.5<span>正式频道 · 2026-11-14 · 官方包描述恢复原文（1.2.5）</span></a>
+    <a href="#v1280-beta4">1.28.0-beta.4<span>正式频道 · 2026-11-14 · 修复下载源 404、报告器恒定 zip</span></a>
     <a href="#v1280-beta2">1.28.0-beta.2<span>正式频道 · 2026-11-14 · 官方包补上性能优化 mod（20 mods）</span></a>
     <a href="#v1280-beta3">1.28.0-beta.3<span>正式频道 · 2026-11-14 · 新增「问题复现报告」导出 zip（默认关闭，0.12ms/帧）</span></a>
     <a href="#v1280-beta1">1.28.0-beta.1<span>正式频道 · 2026-11-13 · 官方包瘦身、主面板统计不再溢出</span></a>
     <a href="#v1280-alpha">1.28.0 开发期间<span>alpha.232 ~ alpha.238 · 下载提速、加载页、公告、落盘隔离、推送工具</span></a>
     <a href="#toolchain">工具链<span>mgcpush：命令行 + 图形界面，发布/回滚/内容编辑</span></a>
   </div>
+</div></section>
+
+<section id="v1280-beta5"><div class="wrap">
+  <h2>1.28.0-beta.5 <span class="badge">正式频道 · 2026-11-14</span></h2>
+  <p class="lead">这一版只改了一样东西，但它是玩家在资源页第一眼看到的那行字：官方 Mod 包的介绍恢复了原文。</p>
+
+  <h3>官方包描述恢复成「MGCMopdack默认的Mod整合包，集合了大部分常见Mod」</h3>
+  <p><b>做了什么：</b>官方包升级到 <b>1.2.5</b>，包内 <code>manifest.json</code> 的 <code>description</code> 恢复成最初那句介绍；站点资源页与游戏内社区页显示的都是这一句。<b>为什么：</b>前几版把介绍写成了「MGCModpack 正式频道版」，等于拿版本口号替换了原本的说明文字——资源页是给玩家挑包看的，介绍要说明「这是什么」，不是「这是哪个频道」。</p>
+
+  <p><b>顺带修掉的根因：</b>站点生成 <code>index.json</code> 时，包的名称/作者/介绍只从「无版本号目录下那份包」（也就是最老的 1.2.0）里读，所以之后无论新包 manifest 写什么，页面上都停在旧文案。现在改成读<b>最高版本</b>的 manifest，改包里的文字、重新生成索引就会同步。</p>
+</div></section>
+
+<section id="v1280-beta4"><div class="wrap">
+  <h2>1.28.0-beta.4 <span class="badge">正式频道 · 2026-11-14</span></h2>
+  <p class="lead">两处「看起来莫名其妙失败」的问题，根因都在客户端：一个是下载，一个是报告器导出格式。</p>
+
+  <h3>资源页下载老是「重试三次都下不来」</h3>
+  <p><b>做了什么：</b>下载候选地址里，把索引给出的真实路径排到第一位；新结构路径只当兜底。重试次数 2 次 → 3 次，等待改成递增（1s / 2s / 3s，上限 6s）。<b>为什么：</b>旧逻辑每次下载都先试一个<b>仓库里根本不存在</b>的地址（<code>&lt;类型&gt;/&lt;名字&gt;/&lt;版本&gt;/文件名</code>，实际结构是 <code>…/versions/&lt;版本&gt;/</code>），等于先把重试次数耗在一个必然 404 的地址上，网络一抖整轮就失败。</p>
+
+  <h3>问题复现报告：固定导出成压缩包</h3>
+  <p><b>做了什么：</b>「导出报告」现在<b>恒定</b>生成一个 <code>.zip</code>（报告正文 + 截图 + 最近日志 + 配置 + 环境信息），并移除了调试页里那个能切成纯文本的开关。<b>为什么：</b>一次现场要带的东西不止正文，纯 txt 只能装文字，玩家得一个一个找文件发过来；压缩包一次给全，也不会因为旧配置残留而退回 txt。</p>
 </div></section>
 
 <section id="v1280-beta3"><div class="wrap">
