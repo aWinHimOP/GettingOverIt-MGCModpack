@@ -23,11 +23,12 @@
 
 <header class="hero"><div class="wrap">
   <h1>更新<em>日志</em></h1>
-  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.13。</p>
+  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.14。</p>
 </div></header>
 
 <section class="noline"><div class="wrap">
   <div class="toc">
+    <a href="#v1280-beta14">1.28.0-beta.14<span>正式频道 · 2026-11-14 · 大文件下载搬到后台线程（HttpWebRequest 流式写盘），彻底不碰主线程</span></a>
     <a href="#v1280-beta13">1.28.0-beta.13<span>正式频道 · 2026-11-14 · 卡死根因：下载时反复读 downloadHandler.data 会阻塞主线程（ANR）</span></a>
     <a href="#v1280-beta12">1.28.0-beta.12<span>正式频道 · 2026-11-14 · 自动崩溃报告：等日志模块就绪后再判定，否则永远不触发</span></a>
     <a href="#v1280-beta11">1.28.0-beta.11<span>正式频道 · 2026-11-14 · 崩溃后自动生成报告压缩包（下次启动补做）</span></a>
@@ -44,6 +45,27 @@
     <a href="#v1280-alpha">1.28.0 开发期间<span>alpha.232 ~ alpha.238 · 下载提速、加载页、公告、落盘隔离、推送工具</span></a>
     <a href="#toolchain">工具链<span>mgcpush：命令行 + 图形界面，发布/回滚/内容编辑</span></a>
   </div>
+</div></section>
+
+<section id="v1280-beta14"><div class="wrap">
+  <h2>1.28.0-beta.14 <span class="badge">正式频道 · 2026-11-14</span></h2>
+  <p class="lead">用户描述完全对上了：第一次下载失败帧率正常 → 点重试 → 帧率慢慢掉 → 卡死。这版把大文件下载整体搬出主线程。</p>
+
+  <h3>为什么重试会越来越卡</h3>
+  <p>UnityWebRequest 在「请求已发出、底层还在等」时，<code>isDone</code> / <code>downloadHandler.data</code> 会<b>阻塞调用线程</b>——而调用它的正是主线程。每重试一次，就多一个卡住的请求挂着，帧率因此一点点掉下去，最后主线程彻底卡死、被系统当 ANR 杀掉。（崩溃日志：最后一行断在半句，之后 25 秒一行都没有。）</p>
+
+  <h3>修法</h3>
+  <p>大文件（≥4MB，地图包 38MB 属于这类）不再用 UnityWebRequest，改成 <b>后台线程 + HttpWebRequest</b>：</p>
+  <ul>
+    <li>网络 IO 全在后台线程，主线程只轮询进度 → 不可能卡住 UI；</li>
+    <li>64KB 流式写盘，40MB 也不占内存；</li>
+    <li>Range 续传走标准 HTTP 头，不经过 Unity 的 native 网络层；</li>
+    <li>连接用完即关（<code>KeepAlive=false</code>），避开这台设备「复用连接导致第二个请求瞬间失败」的毛病。</li>
+  </ul>
+  <p>小文件（模组包 127KB 等）仍走原来的分块逻辑，行为不变。</p>
+
+  <h3>已知风险</h3>
+  <p>这条路径依赖 Mono 的 TLS 实现，如果某些机型上证书握手失败，会在日志里写明原因（<code>后台线程下载失败: …</code>），不会卡游戏。</p>
 </div></section>
 
 <section id="v1280-beta13"><div class="wrap">
