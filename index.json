@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 532,
-  "generatedAt": "2026-11-14T22:39:05",
+  "rev": 533,
+  "generatedAt": "2026-11-14T23:04:57",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,9 +9,9 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-beta.21(1)",
+      "release": "1.28.0-beta.22(1)",
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.21",
+        "loader:MGCModpack": "1.28.0-beta.22",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.2.5"
       }
@@ -117,6 +117,12 @@
       "name": "MGCModpack",
       "versions": [
         {
+          "version": "1.28.0-beta.22",
+          "file": "releases/1.28.0-beta.22(1)/dll/MGCModpack.dll",
+          "sha256": "fb7636ce6ab291949ca71644755df6840b1b7548fe67849e9f75d0a7146b662b",
+          "size": 641536
+        },
+        {
           "version": "1.28.0-beta.21",
           "file": "releases/1.28.0-beta.21(1)/dll/MGCModpack.dll",
           "sha256": "fb7636ce6ab291949ca71644755df6840b1b7548fe67849e9f75d0a7146b662b",
@@ -209,6 +215,96 @@
     }
   ],
   "releases": [
+    {
+      "id": "1.28.0-beta.22(1)",
+      "version": "1.28.0-beta.22",
+      "build": 1,
+      "note": "从 1.28.0-beta.21(1) 全量复制，替换 2 个文件",
+      "createdAt": "2026-11-14T23:03:32",
+      "totalSize": 44829948,
+      "files": [
+        {
+          "path": "bundles/ui_fpspanel.unity3d",
+          "sha256": "9f7ddf0b3411a33b74e844fa9f0cd6db2a19bd41893ec8b223a0585cecfb77f2",
+          "size": 17595
+        },
+        {
+          "path": "bundles/ui_mainmenu.unity3d",
+          "sha256": "868a9c1f0c6d5844fee8a6633cf72bd67b130e851b93778f6ec33e732b82f039",
+          "size": 1244028
+        },
+        {
+          "path": "bundles/ui_pause.unity3d",
+          "sha256": "a9b8db2e8482e65a090ff60c192c964c12e2b80ff41514cfb1d25aacae8d17a0",
+          "size": 10658
+        },
+        {
+          "path": "bundles/ui_splitstimer.unity3d",
+          "sha256": "99aa2942a1bdece16683a9c9ad3a7afae578e65764a11655e8c3d819cb2f4df8",
+          "size": 7263
+        },
+        {
+          "path": "bundles/ui_uicontrols.unity3d",
+          "sha256": "21504fb640c443cc28c099c4e1c6c3aac5b0f8d9c47ff6953a3ca76b31c2af36",
+          "size": 18966
+        },
+        {
+          "path": "config/announcements.json",
+          "sha256": "d99f9fd2d3310a2a0b4927dcff6e9a9a7c004c20a81fb34cbe5f6bb928d52548",
+          "size": 3283
+        },
+        {
+          "path": "config/config.json",
+          "sha256": "0b6f069854f48c53d7b908313337b3eb740b6392356b4baf0b0923ec28526328",
+          "size": 674
+        },
+        {
+          "path": "config/mainpanel.json",
+          "sha256": "9d0240e0d2a8d507e522641615f16871baca99fe8cd5840b724cf20ba3edb614",
+          "size": 117
+        },
+        {
+          "path": "config/rks.json",
+          "sha256": "b5cbeea25a3930afc252a851c102fe826a1d4aba85b45f94eaf50f4c90f1b44b",
+          "size": 313
+        },
+        {
+          "path": "dll/MGCModpack.dll",
+          "sha256": "fb7636ce6ab291949ca71644755df6840b1b7548fe67849e9f75d0a7146b662b",
+          "size": 641536
+        },
+        {
+          "path": "map/MGCModpack.mappack",
+          "sha256": "d6e42b54394fbf13dc29d7db2b33706b84cbed23ac4c63f40be0ed5cffcba8f5",
+          "size": 40086493
+        },
+        {
+          "path": "mod/MGCModpack.modpack",
+          "sha256": "dca4b86ed24c711b2543e85f76a30579e10b8cc62b626344873884e28205993a",
+          "size": 130827
+        },
+        {
+          "path": "picture/about-icon.png",
+          "sha256": "5cd12b9cd7508f4c115c44514f41e8cb3aa24bf07fb2309202618eaf2af2cc90",
+          "size": 253621
+        },
+        {
+          "path": "picture/announcement-icon.png",
+          "sha256": "84e306c160ea1833f967b2c01d2a5a81951ab5f9340808bc84d61ece2939cbb5",
+          "size": 483
+        },
+        {
+          "path": "picture/panel-placeholder.png",
+          "sha256": "14599cb985e7447dacf80de0b610d1e7ddaa91a5d5d14daf7824089d60c2357c",
+          "size": 2411285
+        },
+        {
+          "path": "release.lock.json",
+          "sha256": "1467895a940161ed698370ac83f465b5dc141a9cc7ca6f0740734ef78cfc0158",
+          "size": 2806
+        }
+      ]
+    },
     {
       "id": "1.28.0-beta.21(1)",
       "version": "1.28.0-beta.21",
