@@ -5,6 +5,11 @@
       "name": "公告",
       "items": [
         {
+          "title": "1.28.0-beta.12 发布",
+          "body": "1.28.0-beta.12 已发布（只修一个 bug）：\n\n① 上版的「崩溃后自动生成报告」在真机上没触发 —— 因为它跑得比日志模块建会话日志还早，那时「上次是否异常退出」还没判定出来；现在改成等日志就绪后再判定；\n② 崩溃日志（crash_*.log）现在也会被打进报告里。\n\n闪退后重开游戏，BugReport 目录里会出现 MGCBugReport_crash_*.zip，把最新那个发我就行。\n\n遇到问题加群反馈：549361403",
+          "publishedAt": "2026-11-14"
+        },
+        {
           "title": "1.28.0-beta.11 发布",
           "body": "1.28.0-beta.11 已发布：\n\n① 闪退后**自动生成报告**：下次启动时自动把崩溃日志 + 配置 + 加载日志打成一个 zip，放在 Android/data/com.noodlecake.gettingoverit/files/MGCModpack/BugReport/ 下（文件名 MGCBugReport_crash_*.zip），直接把最新那个发我就行；\n② 顺手修了「报告里收不到崩溃日志」——之前只收 session 日志，崩溃那份被改名成 crash_*.log 后漏掉了；\n③ 地图包下载卡住（beta.10 的修复）继续有效。\n\n遇到问题加群反馈：549361403",
           "publishedAt": "2026-11-14"

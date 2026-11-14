@@ -23,11 +23,12 @@
 
 <header class="hero"><div class="wrap">
   <h1>更新<em>日志</em></h1>
-  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.11。</p>
+  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.12。</p>
 </div></header>
 
 <section class="noline"><div class="wrap">
   <div class="toc">
+    <a href="#v1280-beta12">1.28.0-beta.12<span>正式频道 · 2026-11-14 · 自动崩溃报告：等日志模块就绪后再判定，否则永远不触发</span></a>
     <a href="#v1280-beta11">1.28.0-beta.11<span>正式频道 · 2026-11-14 · 崩溃后自动生成报告压缩包（下次启动补做）</span></a>
     <a href="#v1280-beta10">1.28.0-beta.10<span>正式频道 · 2026-11-14 · 地图包（38MB）续传卡死时改为从 0 分块重下</span></a>
     <a href="#v1280-beta9">1.28.0-beta.9<span>正式频道 · 2026-11-14 · 主题适配补全（社区/Mod 列表、已下载底色）+ 圆角组件 NaN 兜底</span></a>
@@ -42,6 +43,20 @@
     <a href="#v1280-alpha">1.28.0 开发期间<span>alpha.232 ~ alpha.238 · 下载提速、加载页、公告、落盘隔离、推送工具</span></a>
     <a href="#toolchain">工具链<span>mgcpush：命令行 + 图形界面，发布/回滚/内容编辑</span></a>
   </div>
+</div></section>
+
+<section id="v1280-beta12"><div class="wrap">
+  <h2>1.28.0-beta.12 <span class="badge">正式频道 · 2026-11-14</span></h2>
+  <p class="lead">beta.11 的自动崩溃报告在真机上没触发，这版修掉。</p>
+
+  <h3>现象</h3>
+  <p>主动杀进程后重启，日志里能看到 <code>crash_20261114_183926.log</code>（说明「上次异常退出」判定成功了），但 <code>BugReport/</code> 里没有自动生成的 zip。</p>
+
+  <h3>根因</h3>
+  <p>自动导出挂在初始化阶段，而日志模块建会话日志要晚约 2 秒 —— 导出跑的时候「上次是否异常退出」还没判定出来，直接返回了。真机时间线：<code>18:39:24.896</code> 初始化 → <code>18:39:26.673</code> 会话日志才建好。</p>
+
+  <h3>修法</h3>
+  <p>改成「等日志模块就绪（会话日志已建）后的第一帧」再做判定与打包，只做一次。</p>
 </div></section>
 
 <section id="v1280-beta11"><div class="wrap">
