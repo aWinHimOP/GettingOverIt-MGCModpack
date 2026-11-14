@@ -23,11 +23,12 @@
 
 <header class="hero"><div class="wrap">
   <h1>更新<em>日志</em></h1>
-  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.12。</p>
+  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.13。</p>
 </div></header>
 
 <section class="noline"><div class="wrap">
   <div class="toc">
+    <a href="#v1280-beta13">1.28.0-beta.13<span>正式频道 · 2026-11-14 · 卡死根因：下载时反复读 downloadHandler.data 会阻塞主线程（ANR）</span></a>
     <a href="#v1280-beta12">1.28.0-beta.12<span>正式频道 · 2026-11-14 · 自动崩溃报告：等日志模块就绪后再判定，否则永远不触发</span></a>
     <a href="#v1280-beta11">1.28.0-beta.11<span>正式频道 · 2026-11-14 · 崩溃后自动生成报告压缩包（下次启动补做）</span></a>
     <a href="#v1280-beta10">1.28.0-beta.10<span>正式频道 · 2026-11-14 · 地图包（38MB）续传卡死时改为从 0 分块重下</span></a>
@@ -43,6 +44,23 @@
     <a href="#v1280-alpha">1.28.0 开发期间<span>alpha.232 ~ alpha.238 · 下载提速、加载页、公告、落盘隔离、推送工具</span></a>
     <a href="#toolchain">工具链<span>mgcpush：命令行 + 图形界面，发布/回滚/内容编辑</span></a>
   </div>
+</div></section>
+
+<section id="v1280-beta13"><div class="wrap">
+  <h2>1.28.0-beta.13 <span class="badge">正式频道 · 2026-11-14</span></h2>
+  <p class="lead">靠 beta.12 的自动崩溃报告终于拿到了现场：不是闪退，是<b>主线程被卡死、30 秒后被系统当 ANR 杀掉</b>。</p>
+
+  <h3>现场长什么样</h3>
+  <p>崩溃日志停在半行（<code>块详情 … error=Request tim</code>），之后 29 秒**一行日志都没有**——主线程停了。这期间正在反复重试下载 38 MB 地图包，每次都 <code>code=206 实收=0 Request timeout</code>。</p>
+
+  <h3>根因</h3>
+  <p>每处理一个响应，代码要访问 <b>3 次</b> <code>UnityWebRequest.downloadHandler.data</code>（打日志 1 次、写盘 1 次、ConsumeResponse 里 1 次）。当请求已经超时、底层还在收/还在等时，这个属性会<b>阻塞调用线程</b>——而调用它的正是主线程，于是画面定格、日志断在半行，30 秒后被系统杀掉。</p>
+
+  <h3>修法</h3>
+  <ul>
+    <li><b>响应体只取一次</b>：拿到 <code>body</code> 后全程复用，不再反复访问 <code>downloadHandler.data</code>。</li>
+    <li><b>Dispose 前先 Abort</b>：请求没真正结束时直接 Dispose，在 Android 上会卡/崩（原生线程还在读），先掐断底层传输再释放。</li>
+  </ul>
 </div></section>
 
 <section id="v1280-beta12"><div class="wrap">
