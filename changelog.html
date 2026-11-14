@@ -23,11 +23,12 @@
 
 <header class="hero"><div class="wrap">
   <h1>更新<em>日志</em></h1>
-  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.22。</p>
+  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.23。</p>
 </div></header>
 
 <section class="noline"><div class="wrap">
   <div class="toc">
+    <a href="#v1280-beta23">1.28.0-beta.23<span>正式频道 · 2026-11-15 · 下载：同一块最多重发 1 次（不做无限重试）</span></a>
     <a href="#v1280-beta22">1.28.0-beta.22<span>正式频道 · 2026-11-14 · 海报图改回由 loader 在加载页同步（取消懒加载）</span></a>
     <a href="#v1280-beta21">1.28.0-beta.21<span>正式频道 · 2026-11-14 · 下载彻底去重试：一次 256KB，不排队不起线程，内存恒定</span></a>
     <a href="#v1280-beta20">1.28.0-beta.20<span>正式频道 · 2026-11-14 · loader 三处加固：半套更新 / 强制 hash 校验 / index 超时</span></a>
@@ -53,6 +54,25 @@
     <a href="#v1280-alpha">1.28.0 开发期间<span>alpha.232 ~ alpha.238 · 下载提速、加载页、公告、落盘隔离、推送工具</span></a>
     <a href="#toolchain">工具链<span>mgcpush：命令行 + 图形界面，发布/回滚/内容编辑</span></a>
   </div>
+</div></section>
+
+<section id="v1280-beta23"><div class="wrap">
+  <h2>1.28.0-beta.23 <span class="badge">正式频道 · 2026-11-15</span></h2>
+  <p class="lead">下载折中方案：<b>同一块最多重发 1 次</b>，不做无限重试。</p>
+
+  <h3>为什么不是「完全不重试」</h3>
+  <p>beta.21 把重试彻底去掉之后，配合「海报图回到加载同步」，问题变成：2.6MB 的图（其中 <code>panel-placeholder</code> 一张就 2.4MB、约 10 块）<b>任何一块抖一下就整轮同步失败</b>，玩家会一直停在旧版本反复重来。</p>
+
+  <h3>现在的策略</h3>
+  <ul>
+    <li>256KB 一块，<b>同一块失败 → 重发一次</b>；还失败就停（<code>.part</code> 保留，下次启动续）；</li>
+    <li>不是无限重试：不会出现「同一个错误重复几十遍」的情况；</li>
+    <li>每次请求用完立刻释放，内存里始终只有一个 256KB 响应 + 一个 256KB 写缓冲；</li>
+    <li>小文件（模组包这类）同一个源同样是「失败重发 1 次」。</li>
+  </ul>
+
+  <h3>下一步</h3>
+  <p>海报图的「未加载时的离线方案」以后再做（用户计划），这版先保证启动同步能稳定补齐图片。</p>
 </div></section>
 
 <section id="v1280-beta22"><div class="wrap">
