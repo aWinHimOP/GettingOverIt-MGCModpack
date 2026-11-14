@@ -23,11 +23,12 @@
 
 <header class="hero"><div class="wrap">
   <h1>更新<em>日志</em></h1>
-  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.15。</p>
+  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.16。</p>
 </div></header>
 
 <section class="noline"><div class="wrap">
   <div class="toc">
+    <a href="#v1280-beta16">1.28.0-beta.16<span>正式频道 · 2026-11-14 · 写盘移到后台线程：主线程只 memcpy，不再被 sdcard 写卡死</span></a>
     <a href="#v1280-beta15">1.28.0-beta.15<span>正式频道 · 2026-11-14 · 地图包改「单请求 + 边收边写盘」，并把响应头写进日志</span></a>
     <a href="#v1280-beta14">1.28.0-beta.14<span>正式频道 · 2026-11-14 · 大文件下载搬到后台线程（HttpWebRequest 流式写盘），彻底不碰主线程</span></a>
     <a href="#v1280-beta13">1.28.0-beta.13<span>正式频道 · 2026-11-14 · 卡死根因：下载时反复读 downloadHandler.data 会阻塞主线程（ANR）</span></a>
@@ -46,6 +47,24 @@
     <a href="#v1280-alpha">1.28.0 开发期间<span>alpha.232 ~ alpha.238 · 下载提速、加载页、公告、落盘隔离、推送工具</span></a>
     <a href="#toolchain">工具链<span>mgcpush：命令行 + 图形界面，发布/回滚/内容编辑</span></a>
   </div>
+</div></section>
+
+<section id="v1280-beta16"><div class="wrap">
+  <h2>1.28.0-beta.16 <span class="badge">正式频道 · 2026-11-14</span></h2>
+  <p class="lead">beta.15 的流式下载跑起来了，但 74 秒后还是卡死——这次日志给出了明确线索：<b>主线程在写盘上卡住了</b>。</p>
+
+  <h3>日志说明了什么</h3>
+  <p>下载开始后，Diag 每 10 秒一条稳定输出（说明主线程活着），到 <code>19:43:37</code> 突然全停，45 秒后进程被系统杀掉。整个过程没有任何异常记录，说明不是 C# 抛错，是主线程被某个阻塞调用卡住。</p>
+
+  <h3>根因</h3>
+  <p><code>ReceiveData</code> 是 Unity 在<b>主线程</b>回调的，beta.15 在里面直接 <code>FileStream.Write + Flush</code>。40MB 写满一轮后 sdcard(FUSE) 的写开始变慢，主线程就卡在 write 上——帧不跑了，系统判定无响应。</p>
+
+  <h3>修法</h3>
+  <ul>
+    <li><b>写盘搬到后台线程</b>：<code>ReceiveData</code> 里只把数据拷进队列（几十微秒），真正的 write 由一条常驻写盘线程做。</li>
+    <li>队列上限 64 块（4MB）：磁盘跟不上就短暂等待，不会无限吃内存；堵超过 5 秒则主动报错退出，绝不拖死主线程。</li>
+    <li><b>每 5 秒记一次进度</b>（<code>流式进行中：已收 X / Y 字节</code>），下次万一再被杀，日志能看出死在下了多少。</li>
+  </ul>
 </div></section>
 
 <section id="v1280-beta15"><div class="wrap">
