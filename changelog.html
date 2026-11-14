@@ -23,11 +23,12 @@
 
 <header class="hero"><div class="wrap">
   <h1>更新<em>日志</em></h1>
-  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.19。</p>
+  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.20。</p>
 </div></header>
 
 <section class="noline"><div class="wrap">
   <div class="toc">
+    <a href="#v1280-beta20">1.28.0-beta.20<span>正式频道 · 2026-11-14 · loader 三处加固：半套更新 / 强制 hash 校验 / index 超时</span></a>
     <a href="#v1280-beta19">1.28.0-beta.19<span>正式频道 · 2026-11-14 · 海报图不再占加载页（picture/ 2.6MB 改为进游戏后按需懒加载）</span></a>
     <a href="#v1280-beta18">1.28.0-beta.18<span>正式频道 · 2026-11-14 · 地图包分块改成 128KB（2MB 的块在真机上收不完整）</span></a>
     <a href="#v1280-beta17">1.28.0-beta.17<span>正式频道 · 2026-11-14 · 地图包改按 2MB 分块：一条长连接活 75 秒会把进程拖死</span></a>
@@ -50,6 +51,24 @@
     <a href="#v1280-alpha">1.28.0 开发期间<span>alpha.232 ~ alpha.238 · 下载提速、加载页、公告、落盘隔离、推送工具</span></a>
     <a href="#toolchain">工具链<span>mgcpush：命令行 + 图形界面，发布/回滚/内容编辑</span></a>
   </div>
+</div></section>
+
+<section id="v1280-beta20"><div class="wrap">
+  <h2>1.28.0-beta.20 <span class="badge">正式频道 · 2026-11-14</span></h2>
+  <p class="lead">这版只动 loader（游戏本体那一层），修三个「平时看不出来、出事就很难查」的问题。</p>
+
+  <h3>① 半套更新（最严重）</h3>
+  <p>以前同步是<b>边下边写</b>：某个文件失败就停下并报失败，但已经写进 <code>HotUpdate/</code> 的 dll、bundles <b>不会回滚</b>。于是可能跑起「新 dll + 旧 bundle」这种混搭——最容易出 UI 错乱和闪退，而且下次启动还会反复重下。</p>
+  <p>现在：所有文件先下到 <code>HotUpdate/.staging/&lt;版本&gt;/</code>，<b>全部</b>校验通过后才统一换进 <code>HotUpdate/</code>（dll 最后搬）。中途失败 → <code>HotUpdate/</code> 一个字节都不动，老版本完整可用；下次启动还会复用 staging 里已经下好的文件，不用重下。</p>
+
+  <h3>② 热更 dll 强制哈希校验</h3>
+  <p>以前 <code>hash.txt</code> 缺失时直接放行 —— 等于热更目录里任何 dll 都会被无条件加载。现在热更目录必须有 <code>hash.txt</code> 且对得上才加载；旧布局和内置兜底仍保持宽松（为了兼容老安装）。</p>
+
+  <h3>③ index.json 超时 8 秒 → 20 秒</h3>
+  <p>index 是随版本数增长的：现在 14KB（0.5 秒就下完），但一旦涨过 8 秒就会<b>整轮同步静默失败</b>、玩家只会觉得「怎么更新都不生效」。放宽到 20 秒。</p>
+
+  <h3>顺带</h3>
+  <p><code>HttpRoutine</code> 超时后先等请求真的结束再释放（Abort 后立刻 Dispose 在 Android 上会卡死，这坑在地图包下载上踩过）。</p>
 </div></section>
 
 <section id="v1280-beta19"><div class="wrap">
