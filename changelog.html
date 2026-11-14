@@ -23,11 +23,12 @@
 
 <header class="hero"><div class="wrap">
   <h1>更新<em>日志</em></h1>
-  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.7。</p>
+  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.8。</p>
 </div></header>
 
 <section class="noline"><div class="wrap">
   <div class="toc">
+    <a href="#v1280-beta8">1.28.0-beta.8<span>正式频道 · 2026-11-14 · 适配新 UI：底图从 Image 换成圆角组件后的染色/高亮/压暗</span></a>
     <a href="#v1280-beta7">1.28.0-beta.7<span>正式频道 · 2026-11-14 · 下载：大小对不上不再当坏数据；大包不再整份进内存</span></a>
     <a href="#v1280-beta6">1.28.0-beta.6<span>正式频道 · 2026-11-14 · 修复下载进度到 99% 又从头重下</span></a>
     <a href="#v1280-beta5">1.28.0-beta.5<span>正式频道 · 2026-11-14 · 官方包描述恢复原文（1.2.5）</span></a>
@@ -38,6 +39,18 @@
     <a href="#v1280-alpha">1.28.0 开发期间<span>alpha.232 ~ alpha.238 · 下载提速、加载页、公告、落盘隔离、推送工具</span></a>
     <a href="#toolchain">工具链<span>mgcpush：命令行 + 图形界面，发布/回滚/内容编辑</span></a>
   </div>
+</div></section>
+
+<section id="v1280-beta8"><div class="wrap">
+  <h2>1.28.0-beta.8 <span class="badge">正式频道 · 2026-11-14</span></h2>
+  <p class="lead">这次跟上用户重做的整套界面。新 prefab 把大量「底图 Image」换成了 RoundedRect（圆角组件），还有一批面板干脆不再挂 Image。</p>
+
+  <h3>现象：换新 UI 后主题染色、选中高亮、浅色底压暗全部失效</h3>
+  <p><b>根因：</b>Modpack 里所有取颜色 / 染色 / 压暗 / 设不透明的代码都是 <code>GetComponent&lt;Image&gt;()</code>。新 prefab 里这些节点挂的是 <b>RoundedRect</b>（打包时烘成 MGCScriptShell，运行时由 ShellBinder 还原），取 Image 拿到 null —— 不报错，只是**什么都没发生**：深色主题下面板仍是一片白、侧栏选中没高亮、设置条目点中没反应。</p>
+  <p><b>修法：</b>新增一层 <code>UIGraphic</code> 适配器 —— 谁在画就找谁：<b>Image → RawImage → RoundedRect → Text</b>。旧的 Image 路径行为完全不变，只有 Image 缺失时才落到 RoundedRect（<code>SetFill</code>）。主题的「浅色底压暗」「面板不透明化」「按底图亮度选文字色」、设置页档位高亮、MGC 设置条目的选中底色，全部改走这层。</p>
+
+  <h3>资源</h3>
+  <p>主界面资源包 <code>bundle/ui_mainmenu.unity3d</code> 换成本次新构建（1,249,526 B）。其余 bundle 未变。</p>
 </div></section>
 
 <section id="v1280-beta7"><div class="wrap">
