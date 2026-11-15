@@ -1,7 +1,0 @@
-{
-  "version": "1.28.0-beta.33",
-  "build": 1,
-  "note": "mod 开关上色改走 UIGraphic（RoundedRect 走 SetFill），修开关前后都是灰色",
-  "createdAt": "2026-11-16T01:34:29",
-  "from": "1.28.0-beta.32(1)"
-}
