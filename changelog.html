@@ -23,11 +23,12 @@
 
 <header class="hero"><div class="wrap">
   <h1>更新<em>日志</em></h1>
-  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.25。</p>
+  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.26。</p>
 </div></header>
 
 <section class="noline"><div class="wrap">
   <div class="toc">
+    <a href="#v1280-beta26">1.28.0-beta.26<span>正式频道 · 2026-11-15 · 下载改用 DownloadHandlerFile 边收边写盘：内存不再被响应体撑爆</span></a>
     <a href="#v1280-beta25">1.28.0-beta.25<span>正式频道 · 2026-11-15 · 社区页下载按 MGCLoader 的下载器重写（多源 + 分块 + 停滞检测）</span></a>
     <a href="#v1280-beta24">1.28.0-beta.24<span>正式频道 · 2026-11-15 · 主页面板没图时改用装机内置的离线海报</span></a>
     <a href="#v1280-beta23">1.28.0-beta.23<span>正式频道 · 2026-11-15 · 下载：同一块最多重发 1 次（不做无限重试）</span></a>
@@ -56,6 +57,31 @@
     <a href="#v1280-alpha">1.28.0 开发期间<span>alpha.232 ~ alpha.238 · 下载提速、加载页、公告、落盘隔离、推送工具</span></a>
     <a href="#toolchain">工具链<span>mgcpush：命令行 + 图形界面，发布/回滚/内容编辑</span></a>
   </div>
+</div></section>
+
+<section id="v1280-beta26"><div class="wrap">
+  <h2>1.28.0-beta.26 <span class="badge">正式频道 · 2026-11-15</span></h2>
+  <p class="lead">找到「内存爆炸」的真凶了：下载时整个响应体被塞进内存。</p>
+
+  <h3>现场数据（崩溃报告里的日志）</h3>
+  <pre>13:19:26  开始下载地图包           RSS=769MB
+13:19:56  已下 0B / 38.2MB          RSS=1574MB   ← 30 秒涨 805MB
+13:20:27  已下 0B / 38.2MB          RSS=2056MB   ← 再 30 秒涨 482MB，随后被杀</pre>
+  <p>更早一份日志里，<b>每发一次下载请求 RSS 就涨约 80MB</b>（742→776→854→862→935→943）。原因：旧的下载器用 <code>DownloadHandlerBuffer</code>，它会把整个响应体收进内存——服务器无视 Range 返回整包 38MB 时，一次请求就要 80MB 左右，而且请求被取消后这块内存不会马上还给系统。点几次重试就 2GB，系统直接杀进程。</p>
+
+  <h3>改法</h3>
+  <ul>
+    <li>换成 <code>DownloadHandlerFile</code>：<b>边收边写盘</b>，内存里只有一个几 KB 的缓冲区，38MB 也不会把内存顶起来；</li>
+    <li>先写 <code>.incoming</code>，结束后按状态码并入 <code>.part</code>（206 续传=追加，200 整包=替换），失败也不白下；</li>
+    <li>停滞 20 秒没有新字节才放弃（不再靠 Unity 的 timeout）；</li>
+    <li><b>内存护栏</b>：下载期间每秒采样 RSS，比开始涨超过 300MB 就立刻中止并写日志——宁可这次下不完，也不让游戏被杀；</li>
+    <li>同一源只试 1 轮（每多一次请求就多一次内存风险），失败保留 <code>.part</code>，下次启动续。</li>
+  </ul>
+
+  <h3>日志怎么读</h3>
+  <pre>[下载] MGCModpack.mappack 开始：期望=38.2MB 已有=0B 源=1 顺序=awinhimop.github.io RSS=430MB
+[下载] MGCModpack.mappack 收 4.2MB / 38.2MB，RSS=432MB（+2）     ← 括号里是相对开始涨了多少
+[下载] 响应 code=206 实收=4.2MB 已有=0B total=38.2MB cr=bytes 0-4194303/40086493</pre>
 </div></section>
 
 <section id="v1280-beta25"><div class="wrap">
