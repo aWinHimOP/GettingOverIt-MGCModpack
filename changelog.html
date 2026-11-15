@@ -23,11 +23,12 @@
 
 <header class="hero"><div class="wrap">
   <h1>更新<em>日志</em></h1>
-  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.26。</p>
+  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.29。</p>
 </div></header>
 
 <section class="noline"><div class="wrap">
   <div class="toc">
+    <a href="#v1280-beta29">1.28.0-beta.29<span>正式频道 · 2026-11-15 · 系统下载器修好（visibility 传 2 在安卓 10+ 直接抛异常）＋失败冷却</span></a>
     <a href="#v1280-beta26">1.28.0-beta.26<span>正式频道 · 2026-11-15 · 下载改用 DownloadHandlerFile 边收边写盘：内存不再被响应体撑爆</span></a>
     <a href="#v1280-beta25">1.28.0-beta.25<span>正式频道 · 2026-11-15 · 社区页下载按 MGCLoader 的下载器重写（多源 + 分块 + 停滞检测）</span></a>
     <a href="#v1280-beta24">1.28.0-beta.24<span>正式频道 · 2026-11-15 · 主页面板没图时改用装机内置的离线海报</span></a>
@@ -58,6 +59,37 @@
     <a href="#toolchain">工具链<span>mgcpush：命令行 + 图形界面，发布/回滚/内容编辑</span></a>
   </div>
 </div></section>
+
+<section id="v1280-beta29"><div class="wrap">
+    <h2>1.28.0-beta.29 <span class="badge">正式频道 · 2026-11-15</span></h2>
+    <p class="lead">beta.28 的系统下载器一次都没启动成功，原因找到了：一行参数在安卓 10 以后直接抛异常。</p>
+
+    <h3>真机日志（beta.28）</h3>
+    <pre>[系统下载] 入队失败: java.lang.SecurityException: Invalid value for visibility: 2
+[下载] 结果 ok=False … 原因=TLS 握手失败: The authentication or decryption has failed.
+（然后每次点击都重复上面两行，RSS 883 → 1934MB）</pre>
+
+    <h3>三个问题，一起修</h3>
+    <ol>
+      <li><b>系统下载器根本没入队</b>：<code>setNotificationVisibility(2)</code>（VISIBILITY_HIDDEN）从安卓 10 起被禁用，传 2 直接 <code>SecurityException</code>，连 <code>enqueue</code> 都到不了。
+        改成依次尝试 2 → 1 → 0，全被拒就不设（用系统默认）。</li>
+      <li><b>兜底的 socket 下载握手失败</b>：Unity 2017 自带 Mono 默认只谈 TLS 1.0，GitHub Pages 只收 TLS 1.2+。
+        现在先显式指定 TLS 1.2，失败再退回默认协商。这条路只是兜底，主力是系统下载器。</li>
+      <li><b>连点把内存点爆</b>：失败后每点一次「下载」就新建一条请求，每次漏 10~20MB（883→1934MB 就是 10 次点击）。
+        同一个文件失败后进入 <b>20 秒冷却</b>，冷却期内的点击直接返回、不发请求。</li>
+    </ol>
+
+    <h3>现在的下载顺序</h3>
+    <pre>1. Android 系统 DownloadManager（系统进程下载，游戏内存零占用）← 主力
+2. Unity 的 DownloadHandlerFile（能下，但这台机器上漏内存，带 300MB 护栏）
+3. 自己写的 socket 下载（TLS 1.2，最后兜底）</pre>
+
+    <h3>测试时看这几行</h3>
+    <pre>[系统下载] 已入队 id=xxx → files/MGCModpack/Maps/MGCModpack.mappack.part
+[系统下载] 结束 ok=True 文件=38.2MB
+[下载] MGCModpack.mappack 完成（源 1/1，38.2MB，RSS=xxxMB）</pre>
+    <p>如果又看到 <code>入队失败</code>，把那行原文发我（不同 ROM 报的异常不一样）。</p>
+  </div></section>
 
 <section id="v1280-beta26"><div class="wrap">
   <h2>1.28.0-beta.26 <span class="badge">正式频道 · 2026-11-15</span></h2>
