@@ -23,11 +23,12 @@
 
 <header class="hero"><div class="wrap">
   <h1>更新<em>日志</em></h1>
-  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.29。</p>
+  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.30。</p>
 </div></header>
 
 <section class="noline"><div class="wrap">
   <div class="toc">
+    <a href="#v1280-beta30">1.28.0-beta.30<span>正式频道 · 2026-11-15 · 真凶是社区页每秒重拉的索引请求，不是下载器；下载回到 Unity 实现</span></a>
     <a href="#v1280-beta29">1.28.0-beta.29<span>正式频道 · 2026-11-15 · 系统下载器修好（visibility 传 2 在安卓 10+ 直接抛异常）＋失败冷却</span></a>
     <a href="#v1280-beta26">1.28.0-beta.26<span>正式频道 · 2026-11-15 · 下载改用 DownloadHandlerFile 边收边写盘：内存不再被响应体撑爆</span></a>
     <a href="#v1280-beta25">1.28.0-beta.25<span>正式频道 · 2026-11-15 · 社区页下载按 MGCLoader 的下载器重写（多源 + 分块 + 停滞检测）</span></a>
@@ -59,6 +60,37 @@
     <a href="#toolchain">工具链<span>mgcpush：命令行 + 图形界面，发布/回滚/内容编辑</span></a>
   </div>
 </div></section>
+
+<section id="v1280-beta30"><div class="wrap">
+    <h2>1.28.0-beta.30 <span class="badge">正式频道 · 2026-11-15</span></h2>
+    <p class="lead">你说得对：加载页（MGCLoader）下载一直正常，说明 Unity 的下载本身没问题。顺着这条线查下去，真凶找到了 —— <b>不是下载器，是社区页那个每秒重拉的索引请求</b>。</p>
+
+    <h3>证据</h3>
+    <pre>[社区列表已更新] 14:54:26.349
+[社区列表已更新] 14:54:26.915   ← 0.5 秒后又拉一次
+[社区列表已更新] 14:54:28.662
+[社区列表已更新] 14:54:29.111
+… 一次点击 = 2 次 Refresh = 2 次 HTTP 请求（带 ?t= 缓存）
+你连点 10 次 → 20 次请求 → RSS 883MB → 1934MB</pre>
+    <p>而且<b>下载中止后内存还在涨</b>（14:08:03 中止，到 14:08:17 又涨了 321MB，那段时间一个下载都没在跑）—— 这条早就说明了问题跟下载无关。</p>
+
+    <h3>为什么加载页没事、面板里就爆</h3>
+    <ul>
+      <li>加载页（MGCLoader）：只在同步阶段发几个请求，没有任何循环，下完就结束；</li>
+      <li>面板里：<code>CommunitySource.Kick()</code> <b>漏了「已加载就别再拉」的判断</b>（网盘那份 NetdiskSource 有，这里没写）。
+        而 <code>CommunityManager.Refresh()</code> 每次都 Kick，Refresh 又被「下载失败回调」调用 → 拉取→回调→重绘→再拉取的自激循环。</li>
+    </ul>
+
+    <h3>改法</h3>
+    <ol>
+      <li><code>CommunitySource.Kick()</code>：<b>已加载 + 60 秒内不再发请求</b>（<code>MinFetchInterval</code>），另加 <code>ForceRefresh()</code> 给手动刷新用；</li>
+      <li>下载恢复成 <b>Unity 的 DownloadHandlerFile</b>（和加载页同一套 HTTP），socket 只留兜底；<b>移除系统 DownloadManager</b>；</li>
+      <li>保留失败冷却（20 秒）和 RSS 护栏（+300MB 中止）当保险。</li>
+    </ol>
+
+    <h3>验证方式</h3>
+    <p>进资源页，日志里「社区列表已更新」应该<b>只出现一次</b>（60 秒内不再刷屏），下载进度正常走，RSS 平稳。</p>
+  </div></section>
 
 <section id="v1280-beta29"><div class="wrap">
     <h2>1.28.0-beta.29 <span class="badge">正式频道 · 2026-11-15</span></h2>
