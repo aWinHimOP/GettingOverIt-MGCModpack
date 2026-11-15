@@ -23,11 +23,12 @@
 
 <header class="hero"><div class="wrap">
   <h1>更新<em>日志</em></h1>
-  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.30。</p>
+  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.31。</p>
 </div></header>
 
 <section class="noline"><div class="wrap">
   <div class="toc">
+    <a href="#v1280-beta31">1.28.0-beta.31<span>正式频道 · 2026-11-16 · 修通关页分段表差值整列空白（空快照覆盖了真纪录）</span></a>
     <a href="#v1280-beta30">1.28.0-beta.30<span>正式频道 · 2026-11-15 · 真凶是社区页每秒重拉的索引请求，不是下载器；下载回到 Unity 实现</span></a>
     <a href="#v1280-beta29">1.28.0-beta.29<span>正式频道 · 2026-11-15 · 系统下载器修好（visibility 传 2 在安卓 10+ 直接抛异常）＋失败冷却</span></a>
     <a href="#v1280-beta26">1.28.0-beta.26<span>正式频道 · 2026-11-15 · 下载改用 DownloadHandlerFile 边收边写盘：内存不再被响应体撑爆</span></a>
@@ -60,6 +61,36 @@
     <a href="#toolchain">工具链<span>mgcpush：命令行 + 图形界面，发布/回滚/内容编辑</span></a>
   </div>
 </div></section>
+
+<section id="v1280-beta31"><div class="wrap">
+    <h2>1.28.0-beta.31 <span class="badge">正式频道 · 2026-11-16</span></h2>
+    <p class="lead">修「通关后分段计时器的差值列整列空白」：不是显示逻辑坏了，是<b>存档被一份空快照覆盖</b>了。</p>
+
+    <h3>证据</h3>
+    <pre>last_run_splits.txt（出问题时）
+names=Tutorial Devil's Chimney Slide Skip …
+splits=0,0,0,0,0,0,0,0,0,0      ← 本局分割全是 0
+bestsplits=9.70,24.68,37.18 …   ← PB 数据还在
+index=0  started=0  finished=0  ← 却标着"没开跑、没完赛"</pre>
+    <p>通关页拿到这份快照后，逐行判定 <code>done=false</code>，差值列就被置成空字符串。</p>
+
+    <h3>为什么会被覆盖</h3>
+    <ul>
+      <li>分段纪录在「地图初始化 / 每完成一段 / 跑完 / 通关」时都会 <code>Capture()</code>；</li>
+      <li><b>新一局刚开局</b>那次 Capture 的 splits 全是 0、finished=0；</li>
+      <li>而写盘那行是 <code>Persist(_last ?? snap)</code> —— 上一局没记到 <code>_last</code> 时，这份<b>空快照</b>就被当成「上一次通关纪录」写进去了。</li>
+    </ul>
+
+    <h3>改法</h3>
+    <ol>
+      <li><code>RunSplitsArchive.Capture()</code>：<b>空快照只留在内存</b>，绝不落盘、绝不覆盖历史纪录；只有「跑完 / 至少完成一段 / 有真分割」才写盘。</li>
+      <li><code>RunSplitsArchive.Best()</code>：新增 <code>IsUsable()</code> 过滤，空的快照（只有段名、没有数据）不再参与「最完整」比较。</li>
+      <li>通关页显示走 <code>DisplayProgress()</code>：本局分割缺失时退回 <b>PB 局分段</b>，并把进度标记为「已完赛」，差值列不再被清空。</li>
+    </ol>
+
+    <h3>验证方式</h3>
+    <p>跑完一局 → 通关页分段表：<b>时间列有值、差值列显示 +0.000 或与 PB 的真实差值</b>；重启后再进通关页，显示不变。</p>
+  </div></section>
 
 <section id="v1280-beta30"><div class="wrap">
     <h2>1.28.0-beta.30 <span class="badge">正式频道 · 2026-11-15</span></h2>
