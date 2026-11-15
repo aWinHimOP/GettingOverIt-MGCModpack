@@ -23,11 +23,13 @@
 
 <header class="hero"><div class="wrap">
   <h1>更新<em>日志</em></h1>
-  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.33。</p>
+  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.35。</p>
 </div></header>
 
 <section class="noline"><div class="wrap">
   <div class="toc">
+    <a href="#v1280-beta35">1.28.0-beta.35<span>正式频道 · 2026-11-16 · 自定义头像每帧解码导致显存爆炸（已改成缓存一次+裁圆）；通关页分段表用本局数据</span></a>
+    <a href="#v1280-beta34">1.28.0-beta.34<span>正式频道 · 2026-11-16 · 开关本体子节点一起上色 + Title 子树诊断日志</span></a>
     <a href="#v1280-beta33">1.28.0-beta.33<span>正式频道 · 2026-11-16 · mod 开关上色改走 UIGraphic（圆角走 SetFill），修开关前后都是灰色</span></a>
     <a href="#v1280-beta32">1.28.0-beta.32<span>正式频道 · 2026-11-16 · 通关页加版本号；通关提交前先结算最后一段（修 WinDone 顺序）</span></a>
     <a href="#v1280-beta31">1.28.0-beta.31<span>正式频道 · 2026-11-16 · 修通关页分段表差值整列空白（空快照覆盖了真纪录）</span></a>
@@ -63,6 +65,31 @@
     <a href="#toolchain">工具链<span>mgcpush：命令行 + 图形界面，发布/回滚/内容编辑</span></a>
   </div>
 </div></section>
+
+<section id="v1280-beta35"><div class="wrap">
+    <h2>1.28.0-beta.35 <span class="badge">正式频道 · 2026-11-16</span></h2>
+    <p class="lead">显存爆炸的<b>真凶找到了：自定义头像被每帧重新解码</b>。另外修好通关页分段表的差值。</p>
+    <h3>证据（用户实测）</h3>
+    <ul>
+      <li>设置自定义头像 → 进菜单后 <code>GL mtrack</code> 每秒涨几十 MB，最后被 lowmemorykiller 用 <code>signal 9</code> 杀掉；</li>
+      <li>删掉自定义头像 → <b>完全稳 60 帧</b>，不再闪退；</li>
+      <li>通关页右上角头像不是圆的、还是默认头像（退出去又能看到自定义头像）。</li>
+    </ul>
+    <h3>根因</h3>
+    <p><code>UserInfoPanelView.CacheLiveAvatar()</code> 挂在 <code>UserInfoPanelFollower.LateUpdate</code> 里 <b>每帧</b>跑。发现游戏面板上还是占位圆环（<code>FilledRingCursor</code>）时，会走"从磁盘读一张"的兜底 —— 于是 <b>每帧 new Texture2D + Sprite 解码一张头像，且每帧都不销毁旧的</b> ⇒ 每秒泄漏 60 张头像贴图 ⇒ 显存爆炸。没设自定义头像时这段不执行，所以"删掉就正常"。</p>
+    <h3>改法</h3>
+    <ol>
+      <li>新增 <code>LoadLocalAvatarSpriteCached()</code>：按「路径 + 修改时间」只解码一次，替换时销毁旧贴图；</li>
+      <li>解码后 <b>裁成圆形</b>（256×256，中心取样 + 圆形 alpha 遮罩）——通关页副本没有圆形遮罩，方形贴上去就是"头像不圆"；</li>
+      <li>占位圆环不再覆盖已缓存的自定义头像；</li>
+      <li>新增 <code>RetryRestore()</code>：启动时 <code>UserInfoManager</code> 没就绪也不会丢头像，之后每帧补恢复一次，成功即停；</li>
+      <li>通关页分段表：<code>ShowSnapshot()</code> 以前<b>无条件</b>把本局分割换成 PB 那套 ⇒ 本局值 == 对比基线 ⇒ 差值恒 <code>+0.000</code>、Segment 列显示 PB 段。现在只有本局没数据才用 PB 兜底。</li>
+    </ol>
+    <h3>验证方式</h3>
+    <p>① 自定义头像挂 1 分钟：<code>GL mtrack</code> 不涨、稳 60 帧；② 通关页头像<b>圆形</b>且是自定义那张；③ 重启后头像还在；④ 通关页差值真实（如 Tutorial +2.4s）。</p>
+  </div></section>
+
+<section id="v1280-beta34"><div class="wrap"><h2>1.28.0-beta.34 <span class="badge">正式频道 · 2026-11-16</span></h2><p class="lead">mod 开关上色：除 Title 外，把开关本体子节点（toggle/pill/knob/bg…）一起上色，并把 Title 子树打进日志用于"找对象"。</p></div></section>
 
 <section id="v1280-beta33"><div class="wrap">
     <h2>1.28.0-beta.33 <span class="badge">正式频道 · 2026-11-16</span></h2>
