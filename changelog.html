@@ -23,11 +23,12 @@
 
 <header class="hero"><div class="wrap">
   <h1>更新<em>日志</em></h1>
-  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.35。</p>
+  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.36。</p>
 </div></header>
 
 <section class="noline"><div class="wrap">
   <div class="toc">
+    <a href="#v1280-beta36">1.28.0-beta.36<span>正式频道 · 2026-11-16 · 头像常驻内存；场景重置/重开一局后自动重贴自定义头像</span></a>
     <a href="#v1280-beta35">1.28.0-beta.35<span>正式频道 · 2026-11-16 · 自定义头像每帧解码导致显存爆炸（已改成缓存一次+裁圆）；通关页分段表用本局数据</span></a>
     <a href="#v1280-beta34">1.28.0-beta.34<span>正式频道 · 2026-11-16 · 开关本体子节点一起上色 + Title 子树诊断日志</span></a>
     <a href="#v1280-beta33">1.28.0-beta.33<span>正式频道 · 2026-11-16 · mod 开关上色改走 UIGraphic（圆角走 SetFill），修开关前后都是灰色</span></a>
@@ -65,6 +66,23 @@
     <a href="#toolchain">工具链<span>mgcpush：命令行 + 图形界面，发布/回滚/内容编辑</span></a>
   </div>
 </div></section>
+
+<section id="v1280-beta36"><div class="wrap">
+    <h2>1.28.0-beta.36 <span class="badge">正式频道 · 2026-11-16</span></h2>
+    <p class="lead">头像常驻内存；<b>场景重置 / 重开一局后自动重贴自定义头像</b>，不再变回默认。</p>
+    <h3>根因</h3>
+    <p>换头像时只调了 <code>UserInfoManager.SetAvatar()</code>，<b>没在内存里留一份</b>，也没通知面板视图缓存；恢复逻辑又只在启动跑一次（还带一次性开关）。场景重置后游戏把头像表现恢复成占位环，就再没人把自定义头像贴回去 —— 于是"重开一局头像没了"，而且每次都要重新读盘解码。</p>
+    <h3>改法</h3>
+    <ol>
+      <li><code>AvatarManager._activeAvatar</code> 常驻内存，换头像/启动恢复时写入；</li>
+      <li>新增 <code>SyncActiveAvatarToCurrent()</code>：每帧比对「UserInfoManager 实例 id + 场景名」，变了就重贴一次；</li>
+      <li>同场景内被重置（重开一局可能不换场景名、复用实例）时，发现原面板头像是占位环就补一次，<b>限速 1 秒/次</b>，不会变成每帧 <code>SetAvatar</code>；</li>
+      <li>换头像/恢复时同步刷新面板视图缓存（<code>SetCachedHeadSprite</code>），副本立刻是新头像；</li>
+      <li>重置为预设头像时清空内存缓存，避免旧自定义头像被贴回来。</li>
+    </ol>
+    <h3>验证方式</h3>
+    <p>设自定义头像 → 重开一局 / 重进场景：右上角仍是自定义头像（圆形），日志有 <code>[PlayerSetting] 已重新贴自定义头像（场景=…）</code>。</p>
+  </div></section>
 
 <section id="v1280-beta35"><div class="wrap">
     <h2>1.28.0-beta.35 <span class="badge">正式频道 · 2026-11-16</span></h2>
