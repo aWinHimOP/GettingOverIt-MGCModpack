@@ -23,11 +23,13 @@
 
 <header class="hero"><div class="wrap">
   <h1>更新<em>日志</em></h1>
-  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.31。</p>
+  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.33。</p>
 </div></header>
 
 <section class="noline"><div class="wrap">
   <div class="toc">
+    <a href="#v1280-beta33">1.28.0-beta.33<span>正式频道 · 2026-11-16 · mod 开关上色改走 UIGraphic（圆角走 SetFill），修开关前后都是灰色</span></a>
+    <a href="#v1280-beta32">1.28.0-beta.32<span>正式频道 · 2026-11-16 · 通关页加版本号；通关提交前先结算最后一段（修 WinDone 顺序）</span></a>
     <a href="#v1280-beta31">1.28.0-beta.31<span>正式频道 · 2026-11-16 · 修通关页分段表差值整列空白（空快照覆盖了真纪录）</span></a>
     <a href="#v1280-beta30">1.28.0-beta.30<span>正式频道 · 2026-11-15 · 真凶是社区页每秒重拉的索引请求，不是下载器；下载回到 Unity 实现</span></a>
     <a href="#v1280-beta29">1.28.0-beta.29<span>正式频道 · 2026-11-15 · 系统下载器修好（visibility 传 2 在安卓 10+ 直接抛异常）＋失败冷却</span></a>
@@ -61,6 +63,37 @@
     <a href="#toolchain">工具链<span>mgcpush：命令行 + 图形界面，发布/回滚/内容编辑</span></a>
   </div>
 </div></section>
+
+<section id="v1280-beta33"><div class="wrap">
+    <h2>1.28.0-beta.33 <span class="badge">正式频道 · 2026-11-16</span></h2>
+    <p class="lead">修「mod 开关点了不变色，前后都是灰的」：不是没给颜色，是<b>颜色写给了不存在的组件</b>。</p>
+    <h3>根因</h3>
+    <p>开关底色节点在新 UI 里是 <code>RoundedRect</code>（圆角网格），不再是 <code>Image</code>。而代码里存的是 <code>gameObject.GetComponent&lt;Image&gt;()</code> —— 新 UI 下拿到的是 <b>null</b>，于是 <code>ContainerBackground.color = ...</code> 被 null 判断直接吞掉，一次都没执行过。</p>
+    <h3>改法</h3>
+    <ol>
+      <li>开关状态里不再存 <code>Image</code>，改存 <code>Transform</code>；</li>
+      <li>上色统一走 <code>UIGraphic.SetColor()</code>：按 Image → RawImage → <b>RoundedRect</b> → Text 找组件，碰到圆角组件就直接调 <code>SetFill()</code> <b>改圆角网格自己的填充色</b>；</li>
+      <li>节点查找用 <code>UIGraphic.CollectFills()</code>（三种组件全收），优先节点自己，其次名字带 bg/底/back 的子节点；</li>
+      <li>新增日志 <code>[ModUIManager] 开关底色节点: 模块名 → 节点名（RoundedRect/Image/…）</code>，下次一看就知道点到了谁。</li>
+    </ol>
+    <h3>验证方式</h3>
+    <p>设置 → 模组列表：开关<b>开=绿、关=红</b>，点一下立刻变色，不用重启。</p>
+  </div></section>
+
+<section id="v1280-beta32"><div class="wrap">
+    <h2>1.28.0-beta.32 <span class="badge">正式频道 · 2026-11-16</span></h2>
+    <p class="lead">通关页：左上角第一行加版本号；并修真因 —— <b>通关提交分段纪录赶在"最后一段补算"之前</b>，导致存档是"没完赛"的。</p>
+    <h3>根因</h3>
+    <p><code>WinDone</code> 有多个订阅者（分段存档 / RKS / 统计 / UI），<b>谁先跑没有保证</b>。游戏是先发 <code>win.done</code>、后跑 <code>UpdateTimer</code>，最后一段要靠 <code>FinalizeRunAtWin(总用时)</code> 补算；如果存档模块排在前面，提交出去的就是「最后一段还是 0、finished=false」的快照 ⇒ 通关页显示不全、差值列空白。</p>
+    <h3>改法</h3>
+    <ol>
+      <li>提交前<b>自己先结算一次</b>（<code>FinalizeRunAtWin</code> 幂等：已结算会直接返回 false），不再依赖订阅顺序；</li>
+      <li>结算拿不到总用时/计时器已不在时，打明确日志，方便下次定位；</li>
+      <li>通关页左上角第一行加 <code>版本：1.28.0-beta.xx</code>。</li>
+    </ol>
+    <h3>验证方式</h3>
+    <p>跑完一局 → 日志出现 <code>[RunSplits] 通关结算：总用时 … 补算最后一段=True</code>；通关页分段表 10 段都有时间、差值列有 ±。</p>
+  </div></section>
 
 <section id="v1280-beta31"><div class="wrap">
     <h2>1.28.0-beta.31 <span class="badge">正式频道 · 2026-11-16</span></h2>
