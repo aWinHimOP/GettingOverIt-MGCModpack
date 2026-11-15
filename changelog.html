@@ -23,11 +23,12 @@
 
 <header class="hero"><div class="wrap">
   <h1>更新<em>日志</em></h1>
-  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.24。</p>
+  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.25。</p>
 </div></header>
 
 <section class="noline"><div class="wrap">
   <div class="toc">
+    <a href="#v1280-beta25">1.28.0-beta.25<span>正式频道 · 2026-11-15 · 社区页下载按 MGCLoader 的下载器重写（多源 + 分块 + 停滞检测）</span></a>
     <a href="#v1280-beta24">1.28.0-beta.24<span>正式频道 · 2026-11-15 · 主页面板没图时改用装机内置的离线海报</span></a>
     <a href="#v1280-beta23">1.28.0-beta.23<span>正式频道 · 2026-11-15 · 下载：同一块最多重发 1 次（不做无限重试）</span></a>
     <a href="#v1280-beta22">1.28.0-beta.22<span>正式频道 · 2026-11-14 · 海报图改回由 loader 在加载页同步（取消懒加载）</span></a>
@@ -55,6 +56,27 @@
     <a href="#v1280-alpha">1.28.0 开发期间<span>alpha.232 ~ alpha.238 · 下载提速、加载页、公告、落盘隔离、推送工具</span></a>
     <a href="#toolchain">工具链<span>mgcpush：命令行 + 图形界面，发布/回滚/内容编辑</span></a>
   </div>
+</div></section>
+
+<section id="v1280-beta25"><div class="wrap">
+  <h2>1.28.0-beta.25 <span class="badge">正式频道 · 2026-11-15</span></h2>
+  <p class="lead">社区页的模组包 / 地图包下载，按 MGCLoader 那套下载器重写了一遍。</p>
+
+  <h3>为什么要重写</h3>
+  <p>这个下载器前后叠了三代补丁：「整包进内存 → 写 .part」→「2MB 分块」→「128KB 分块 + 流式 handler + 后台线程」。每一代都是为了绕开上一代的坑，结果没人说得清现在到底怎么下。真机症状就是：<b>下什么都下不完，内存还一直涨</b>。</p>
+
+  <h3>现在（和 loader 同一套思路）</h3>
+  <ul>
+    <li><b>多源依次尝试</b>：按「上次成功的源」排前面，坏源不会每次都先撞一遍；</li>
+    <li><b>一次一个 256KB 的 Range 请求</b>：收完立刻写 <code>.part</code>、立刻释放，内存里同时只有一个 256KB 响应 + 一个 256KB 写缓冲；</li>
+    <li><b>停滞检测</b>：一块没有新字节 → 按约定重发 1 次；连续 2 块没进展 → 判定这个源卡死，换下一个源；</li>
+    <li><b>不无限重试</b>：同一源最多 2 轮，失败保留 <code>.part</code>，下次启动接着下；</li>
+    <li><b>校验后才算成功</b>：sha256 对上才改名成正式文件；校验失败丢 <code>.part</code> 换源；</li>
+    <li><b>内存可观测</b>：下载期间每 5 秒一条 <code>已下 X / 总 Y 字节，RSS=Z MB</code>。</li>
+  </ul>
+
+  <h3>副作用（好的）</h3>
+  <p>断点续传没丢：<code>.part</code> 一直在，换源、重进游戏都从已下载的位置接着来；<code>Content-Range</code> 与期望大小对不上时会丢掉重下，不会把半截文件当成品。</p>
 </div></section>
 
 <section id="v1280-beta24"><div class="wrap">
