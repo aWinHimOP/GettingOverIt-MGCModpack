@@ -23,11 +23,12 @@
 
 <header class="hero"><div class="wrap">
   <h1>更新<em>日志</em></h1>
-  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.40。</p>
+  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.41。</p>
 </div></header>
 
 <section class="noline"><div class="wrap">
   <div class="toc">
+    <a href="#v1280-beta41">1.28.0-beta.41<span>正式频道 · 2026-11-16 · 插件端收尾：社区/版本条节流、文本写入去重</span></a>
     <a href="#v1280-beta40">1.28.0-beta.40<span>正式频道 · 2026-11-16 · 探针增强 + 真机卡顿测量结论</span></a>
     <a href="#v1280-beta39">1.28.0-beta.39<span>正式频道 · 2026-11-16 · 帧时间/GC 探针</span></a>
     <a href="#v1280-beta38">1.28.0-beta.38<span>正式频道 · 2026-11-16 · 性能第一批：缓存查找/反射改委托/去掉每帧 IO 与每帧布局重建</span></a>
@@ -71,6 +72,17 @@
   </div>
 </div></section>
 
+<section id="v1280-beta41"><div class="wrap">
+    <h2>1.28.0-beta.41 <span class="badge">正式频道 · 2026-11-16</span></h2>
+    <p class="lead">插件端收尾：把最后几处「每帧都在做、但没必要」的活按下去。</p>
+    <ul>
+      <li><b>社区列表</b>：行模板兜底检查（GuardTemplates）原来<b>每帧</b>跑，现在并入 0.5 秒的刷新节流；列表没行时直接返回；</li>
+      <li><b>版本条</b>：地图名复查 0.1 秒 → 0.5 秒（只有切场景才会变）；</li>
+      <li><b>文本写入去重</b>：<code>UiHelper.SetTextAt</code> / <code>SetAllTexts</code> 值没变就不写 —— <code>Text.text</code> 的 setter 会让整块 Canvas 标脏重排，这是 UGUI 最常见的隐性开销；</li>
+      <li>配合 beta.38~40 的缓存/委托/节流，插件端每帧固定开销实测 <b>0.00 ms/秒</b>（探针 <code>mgc</code> 指标）。</li>
+    </ul>
+    <p>下一阶段：<b>引擎侧（Assembly-CSharp）优化商讨</b>，方案见 <code>07_文档/引擎侧优化方案-商讨.md</code>。</p>
+  </div></section>
 <section id="v1280-beta40"><div class="wrap">
     <h2>1.28.0-beta.40 <span class="badge">正式频道 · 2026-11-16</span></h2>
     <p class="lead">加「帧时间 / GC / 我方耗时」探针，用真机数据定位「一顿一顿」。</p>
