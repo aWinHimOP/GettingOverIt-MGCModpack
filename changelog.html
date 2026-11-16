@@ -23,11 +23,12 @@
 
 <header class="hero"><div class="wrap">
   <h1>更新<em>日志</em></h1>
-  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.37。</p>
+  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.38。</p>
 </div></header>
 
 <section class="noline"><div class="wrap">
   <div class="toc">
+    <a href="#v1280-beta38">1.28.0-beta.38<span>正式频道 · 2026-11-16 · 性能第一批：缓存查找/反射改委托/去掉每帧 IO 与每帧布局重建</span></a>
     <a href="#v1280-beta37">1.28.0-beta.37<span>正式频道 · 2026-11-16 · 通关页分段表防御性重写（归一化+自检）；头像保持正方形</span></a>
     <a href="#v1280-beta36">1.28.0-beta.36<span>正式频道 · 2026-11-16 · 头像常驻内存；场景重置/重开一局后自动重贴自定义头像</span></a>
     <a href="#v1280-beta35">1.28.0-beta.35<span>正式频道 · 2026-11-16 · 自定义头像每帧解码导致显存爆炸（已改成缓存一次+裁圆）；通关页分段表用本局数据</span></a>
@@ -68,6 +69,24 @@
   </div>
 </div></section>
 
+<section id="v1280-beta38"><div class="wrap">
+    <h2>1.28.0-beta.38 <span class="badge">正式频道 · 2026-11-16</span></h2>
+    <p class="lead">性能第一批：把「每帧找对象 / 每帧反射 / 每帧 IO / 每帧写布局」四件事按住。</p>
+    <h3>改了什么</h3>
+    <ol>
+      <li><b>对象查找改缓存</b>：游戏原面板（<code>MainMenu(Clone)</code> 下的 userInfoPanel）存进静态字段，只有对象被销毁（换场景/重开一局）才重取；<code>Player</code> 也改成缓存（原来 Update/FixedUpdate/LateUpdate/OnGUI 每帧各查一次全场）；</li>
+      <li><b>反射改「方法指针」</b>：<code>Type.GetType</code>/<code>GetField</code>/<code>GetMethod</code> 结果只解析一次；读 RKS 用 <code>Delegate.CreateDelegate</code> 绑定成 <code>Func&lt;float&gt;</code>，之后就是普通委托调用（不再走 <code>MethodInfo.Invoke</code>）；只有管理器实例换了才重绑；</li>
+      <li><b>每帧 IO 干掉</b>：头像目录扫描结果按「目录 mtime」缓存，换头像时失效；头像缓存刷新从 60Hz 降到 2Hz；</li>
+      <li><b>信息栏刷新降频</b>：昵称/RKS 从「每帧抄一次」改成 10Hz，刚显示那一帧强制刷；</li>
+      <li><b>布局只在变化时写</b>：<code>AutoLayoutHeight</code> 原来每帧写 <code>sizeDelta</code>（触发 UGUI 整块重排），现在高度没变就不写；</li>
+      <li><b>IMGUI 少调</b>：<code>ModManager</code> 只对真正重写了 OnGUI 的 mod 派发（基类空实现直接跳过，按类型只反射一次）；</li>
+      <li><b>通关页不重复算</b>：分段表用「快照指纹」短路，数据没变就不归一化、不重绘（每帧省下十几组数组与几十个字符串）。</li>
+    </ol>
+    <h3>为什么</h3>
+    <p>真机每帧固定在做：约 8 次全场 <code>GameObject.Find</code>、6~10 次反射、1 次目录扫描、1 次布局重建。这些都不是业务必需，全部改成「一次缓存 + 失效重取 + 事件/节流触发」。</p>
+    <h3>回滚</h3>
+    <p>β.37 = 已验证可用基线，快照见 <code>08_缓存/backup/known-good-beta37.md</code>。</p>
+  </div></section>
 <section id="v1280-beta37"><div class="wrap">
     <h2>1.28.0-beta.37 <span class="badge">正式频道 · 2026-11-16</span></h2>
     <p class="lead">通关页分段表<b>防御性重写</b>：数据先归一化到"一定能渲染"，再交给 UI；顺手修头像被拉长。</p>
