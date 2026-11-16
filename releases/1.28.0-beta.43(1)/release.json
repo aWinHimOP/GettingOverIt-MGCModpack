@@ -1,7 +1,0 @@
-{
-  "version": "1.28.0-beta.43",
-  "build": 1,
-  "note": "探针：hideui 按对象名关闭 MGC 浮层（A/B 用）",
-  "createdAt": "2026-11-16T22:35:04",
-  "from": "1.28.0-beta.42(1)"
-}
