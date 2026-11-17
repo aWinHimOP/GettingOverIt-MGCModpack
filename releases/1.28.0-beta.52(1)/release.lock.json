@@ -1,10 +1,10 @@
 {
-  "version": "1.28.0-beta.51",
+  "version": "1.28.0-beta.52",
   "build": 1,
-  "createdAt": "2026-11-17 21:16:12",
+  "createdAt": "2026-11-17 21:26:26",
   "generatedBy": "mgcpush (lock v1)",
   "components": {
-    "loader": "1.28.0-beta.51",
+    "loader": "1.28.0-beta.52",
     "mod": "1.2.5",
     "map": "1.0.0",
     "bundles": "5"
