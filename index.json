@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 590,
-  "generatedAt": "2026-11-17T23:05:19",
+  "rev": 591,
+  "generatedAt": "2026-11-17T23:15:04",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,9 +9,9 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-beta.54(1)",
+      "release": "1.28.0-beta.55(1)",
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.54",
+        "loader:MGCModpack": "1.28.0-beta.55",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.2.5"
       }
@@ -117,9 +117,9 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-beta.54",
-          "file": "releases/1.28.0-beta.54(1)/dll/MGCModpack.dll",
-          "sha256": "ccc5b63320a1cb1f9a1be0e8cae8fb1630e6f0c65524d0e0bafd127bbfa14ae6",
+          "version": "1.28.0-beta.55",
+          "file": "releases/1.28.0-beta.55(1)/dll/MGCModpack.dll",
+          "sha256": "42938cf26b5d3f44890caf02f5332202101d1f2f62bc54bed30d7507a46ff921",
           "size": 707584
         },
         {
@@ -216,11 +216,11 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-beta.54(1)",
-      "version": "1.28.0-beta.54",
+      "id": "1.28.0-beta.55(1)",
+      "version": "1.28.0-beta.55",
       "build": 1,
-      "note": "主题系统修复：侧栏/主按钮接入主题、底图不透明度、还原原色补齐",
-      "createdAt": "2026-11-17T23:03:21",
+      "note": "主题系统：海报图不染色、公告面板/社区页签接入主题、默认主题白字、激活项黑字",
+      "createdAt": "2026-11-17T23:13:17",
       "totalSize": 44895996,
       "files": [
         {
@@ -270,7 +270,7 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "ccc5b63320a1cb1f9a1be0e8cae8fb1630e6f0c65524d0e0bafd127bbfa14ae6",
+          "sha256": "42938cf26b5d3f44890caf02f5332202101d1f2f62bc54bed30d7507a46ff921",
           "size": 707584
         },
         {
@@ -300,7 +300,7 @@
         },
         {
           "path": "release.lock.json",
-          "sha256": "051950c278b9ff00006f6fcf074d54bf21af07835cf7d3376c00fb98242880a5",
+          "sha256": "3a5466f8d817ffe09a088d4e8e8aec6caa7d4c47a7bd4a1d76acbf719224b888",
           "size": 2806
         }
       ]
