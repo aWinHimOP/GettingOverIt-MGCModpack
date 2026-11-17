@@ -1,10 +1,10 @@
 {
-  "version": "1.28.0-beta.52",
+  "version": "1.28.0-beta.53",
   "build": 1,
-  "createdAt": "2026-11-17 21:26:26",
+  "createdAt": "2026-11-17 21:34:01",
   "generatedBy": "mgcpush (lock v1)",
   "components": {
-    "loader": "1.28.0-beta.52",
+    "loader": "1.28.0-beta.53",
     "mod": "1.2.5",
     "map": "1.0.0",
     "bundles": "5"
@@ -57,8 +57,8 @@
     },
     {
       "path": "dll/MGCModpack.dll",
-      "size": 702976,
-      "sha256": "a628ddd32fa79f018b7377391b5f96ba8c68eb79f47a05fd869c5bbae2ac393c"
+      "size": 704000,
+      "sha256": "edf19354485c8883e60ec119f90f1d8df1e93d5d3410bffd77457b8f2e09091f"
     },
     {
       "path": "map/MGCModpack.mappack",
@@ -86,5 +86,5 @@
       "sha256": "14599cb985e7447dacf80de0b610d1e7ddaa91a5d5d14daf7824089d60c2357c"
     }
   ],
-  "digest": "77dfac667ee1a69a7f1a38e9ac2a1a69fbf778d4ba0387adabb9ed73f9b89637"
+  "digest": "5d3c6b5beea14c52f382f124b7b5a216faadd6252d2a867a78fd6f44169efe92"
 }
