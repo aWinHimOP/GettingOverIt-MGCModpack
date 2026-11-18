@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 598,
-  "generatedAt": "2026-11-18T20:14:44",
+  "rev": 599,
+  "generatedAt": "2026-11-18T23:01:38",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,7 +9,7 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-beta.1(56)",
+      "release": "1.28.0-beta.1(57)",
       "pin": {
         "loader:MGCModpack": "1.28.0-beta.1",
         "map:MGCModpack": "1.0.0",
@@ -118,8 +118,8 @@
       "versions": [
         {
           "version": "1.28.0-beta.1",
-          "file": "releases/1.28.0-beta.1(56)/dll/MGCModpack.dll",
-          "sha256": "d97ff6661d55168d6f9f1c0d0a65747e0a620f9318a5d30a58ab4c90f75b083f",
+          "file": "releases/1.28.0-beta.1(57)/dll/MGCModpack.dll",
+          "sha256": "d1e5f36e2a531ffd12ce929c5161c43669e5b38c544f26946dee400cb1f8e190",
           "size": 710656
         }
       ]
@@ -210,12 +210,12 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-beta.1(56)",
+      "id": "1.28.0-beta.1(57)",
       "version": "1.28.0-beta.1",
-      "build": 56,
-      "note": "主题系统：社区页卡片/公告面板接入主题",
-      "createdAt": "2026-11-18T10:24:05",
-      "totalSize": 44898979,
+      "build": 57,
+      "note": "社区页卡片文字：默认主题统一白色字体，已下载改实色蓝",
+      "createdAt": "2026-11-18T22:59:54",
+      "totalSize": 44899067,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -264,7 +264,7 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "d97ff6661d55168d6f9f1c0d0a65747e0a620f9318a5d30a58ab4c90f75b083f",
+          "sha256": "d1e5f36e2a531ffd12ce929c5161c43669e5b38c544f26946dee400cb1f8e190",
           "size": 710656
         },
         {
@@ -294,8 +294,8 @@
         },
         {
           "path": "release.lock.json",
-          "sha256": "decbca4117219f0a43f573f21367aa0fbdfda89882770ae60457a015a0379467",
-          "size": 2717
+          "sha256": "a3da4061f33e09344f7499766a79fefda766538f440e61ba52c913cd9ae4c0c6",
+          "size": 2805
         }
       ]
     },
