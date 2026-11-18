@@ -1,0 +1,7 @@
+{
+  "version": "1.28.0-beta.1",
+  "build": 59,
+  "note": "地图：除 Pogostuck 外统一打开树视角(ChangeTreeCamera)",
+  "createdAt": "2026-11-18T23:53:04",
+  "from": "1.28.0-beta.1(58)"
+}
