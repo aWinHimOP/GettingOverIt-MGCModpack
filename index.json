@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 599,
-  "generatedAt": "2026-11-18T23:01:38",
+  "rev": 600,
+  "generatedAt": "2026-11-18T23:11:34",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,7 +9,7 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-beta.1(57)",
+      "release": "1.28.0-beta.1(58)",
       "pin": {
         "loader:MGCModpack": "1.28.0-beta.1",
         "map:MGCModpack": "1.0.0",
@@ -118,8 +118,8 @@
       "versions": [
         {
           "version": "1.28.0-beta.1",
-          "file": "releases/1.28.0-beta.1(57)/dll/MGCModpack.dll",
-          "sha256": "d1e5f36e2a531ffd12ce929c5161c43669e5b38c544f26946dee400cb1f8e190",
+          "file": "releases/1.28.0-beta.1(58)/dll/MGCModpack.dll",
+          "sha256": "760701401b2567fefa09e9f7ad8f83cdc11d1f92e5afefa4a255548514177dfa",
           "size": 710656
         }
       ]
@@ -210,11 +210,11 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-beta.1(57)",
+      "id": "1.28.0-beta.1(58)",
       "version": "1.28.0-beta.1",
-      "build": 57,
-      "note": "社区页卡片文字：默认主题统一白色字体，已下载改实色蓝",
-      "createdAt": "2026-11-18T22:59:54",
+      "build": 58,
+      "note": "社区页：默认主题全部白字（含已下载），卡片不再刷蓝底",
+      "createdAt": "2026-11-18T23:09:54",
       "totalSize": 44899067,
       "files": [
         {
@@ -264,7 +264,7 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "d1e5f36e2a531ffd12ce929c5161c43669e5b38c544f26946dee400cb1f8e190",
+          "sha256": "760701401b2567fefa09e9f7ad8f83cdc11d1f92e5afefa4a255548514177dfa",
           "size": 710656
         },
         {
@@ -294,7 +294,7 @@
         },
         {
           "path": "release.lock.json",
-          "sha256": "a3da4061f33e09344f7499766a79fefda766538f440e61ba52c913cd9ae4c0c6",
+          "sha256": "98be67f4abf46a42c7bac4bf8be15daf3c078baa3e0097c6d7414e291d322021",
           "size": 2805
         }
       ]
