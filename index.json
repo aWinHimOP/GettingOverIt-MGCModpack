@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 617,
-  "generatedAt": "2026-11-20T04:12:12",
+  "rev": 618,
+  "generatedAt": "2026-11-20T04:22:32",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,9 +9,9 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-beta.1(70)",
+      "release": "1.28.0-beta.1(71)",
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.1(70)",
+        "loader:MGCModpack": "1.28.0-beta.1(71)",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.2.7"
       }
@@ -123,9 +123,9 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-beta.1(70)",
-          "file": "releases/1.28.0-beta.1(70)/dll/MGCModpack.dll",
-          "sha256": "7ab188d7dd22c3529a0b728a7d0bea32295254a73e7c60b56c89bf6dad5c5969",
+          "version": "1.28.0-beta.1(71)",
+          "file": "releases/1.28.0-beta.1(71)/dll/MGCModpack.dll",
+          "sha256": "bd4befbdfc52dfebd7464eda7ae8b10f1ebdf99e915fd09184603db7d0199da0",
           "size": 723456
         },
         {
@@ -222,11 +222,11 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-beta.1(70)",
+      "id": "1.28.0-beta.1(71)",
       "version": "1.28.0-beta.1",
-      "build": 70,
-      "note": "包版本门禁+修正UI显隐不误伤设置页",
-      "createdAt": "2026-11-20T04:10:21",
+      "build": 71,
+      "note": "通关页玩家信息栏加大边缘留白",
+      "createdAt": "2026-11-20T04:20:42",
       "totalSize": 44919277,
       "files": [
         {
@@ -276,7 +276,7 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "7ab188d7dd22c3529a0b728a7d0bea32295254a73e7c60b56c89bf6dad5c5969",
+          "sha256": "bd4befbdfc52dfebd7464eda7ae8b10f1ebdf99e915fd09184603db7d0199da0",
           "size": 723456
         },
         {
@@ -306,7 +306,7 @@
         },
         {
           "path": "release.lock.json",
-          "sha256": "7de14f01b6370832a332d2cab011677e58619fcd7f23ef9c2b0e8594cb761c10",
+          "sha256": "4f978d8991c51d87621331f0d88476a26c72c2c3757351356db8cfac23099b57",
           "size": 2805
         }
       ]
