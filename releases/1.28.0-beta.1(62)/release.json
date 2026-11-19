@@ -1,0 +1,7 @@
+{
+  "version": "1.28.0-beta.1",
+  "build": 62,
+  "note": "计时器去存档特化重构：通用RestartRun接口+存档mod自带位置判定",
+  "createdAt": "2026-11-19T14:00:19",
+  "from": "1.28.0-beta.1(61)"
+}
