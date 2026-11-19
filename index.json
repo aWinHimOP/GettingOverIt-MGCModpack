@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 616,
-  "generatedAt": "2026-11-20T03:59:49",
+  "rev": 617,
+  "generatedAt": "2026-11-20T04:12:12",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,9 +9,9 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-beta.1(69)",
+      "release": "1.28.0-beta.1(70)",
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.1(69)",
+        "loader:MGCModpack": "1.28.0-beta.1(70)",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.2.7"
       }
@@ -123,10 +123,10 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-beta.1(69)",
-          "file": "releases/1.28.0-beta.1(69)/dll/MGCModpack.dll",
-          "sha256": "6e625103c9fc1b772d47ae4d7c9c5dd6d9630fdc147412e827974040396d2356",
-          "size": 722432
+          "version": "1.28.0-beta.1(70)",
+          "file": "releases/1.28.0-beta.1(70)/dll/MGCModpack.dll",
+          "sha256": "7ab188d7dd22c3529a0b728a7d0bea32295254a73e7c60b56c89bf6dad5c5969",
+          "size": 723456
         },
         {
           "version": "1.28.0-beta.1(66)",
@@ -222,12 +222,12 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-beta.1(69)",
+      "id": "1.28.0-beta.1(70)",
       "version": "1.28.0-beta.1",
-      "build": 69,
-      "note": "通关页/菜单统一隐藏 mod UI",
-      "createdAt": "2026-11-20T03:57:59",
-      "totalSize": 44918253,
+      "build": 70,
+      "note": "包版本门禁+修正UI显隐不误伤设置页",
+      "createdAt": "2026-11-20T04:10:21",
+      "totalSize": 44919277,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -276,8 +276,8 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "6e625103c9fc1b772d47ae4d7c9c5dd6d9630fdc147412e827974040396d2356",
-          "size": 722432
+          "sha256": "7ab188d7dd22c3529a0b728a7d0bea32295254a73e7c60b56c89bf6dad5c5969",
+          "size": 723456
         },
         {
           "path": "map/MGCModpack.mappack",
@@ -306,7 +306,7 @@
         },
         {
           "path": "release.lock.json",
-          "sha256": "e900d7ed126233037ff17d963710aa56b401adc7ae3e8edc992680ecae69aad4",
+          "sha256": "7de14f01b6370832a332d2cab011677e58619fcd7f23ef9c2b0e8594cb761c10",
           "size": 2805
         }
       ]
