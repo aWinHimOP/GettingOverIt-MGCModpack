@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 612,
-  "generatedAt": "2026-11-20T02:18:07",
+  "rev": 613,
+  "generatedAt": "2026-11-20T02:22:20",
   "channels": {
     "stable": {
       "label": "正式",
@@ -121,7 +121,20 @@
       "id": "loader:MGCModpack",
       "kind": "loader",
       "name": "MGCModpack",
-      "versions": []
+      "versions": [
+        {
+          "version": "1.28.0-beta.1(66)",
+          "file": "releases/1.28.0-beta.1(66)/dll/MGCModpack.dll",
+          "sha256": "d56b9336890ff775bb06f1e01382e90741eddb1ccd9b743d87b3b973fd51b1e3",
+          "size": 718848
+        },
+        {
+          "version": "1.28.0-beta.1(65)",
+          "file": "releases/1.28.0-beta.1(65)/dll/MGCModpack.dll",
+          "sha256": "d1e627c4bc1525f5893deedac468103698d57ef52334caf4286bd49ca234b610",
+          "size": 714752
+        }
+      ]
     }
   ],
   "assets": [
