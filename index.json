@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 606,
-  "generatedAt": "2026-11-20T00:13:36",
+  "rev": 607,
+  "generatedAt": "2026-11-20T00:33:10",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,7 +9,7 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-beta.1(63)",
+      "release": "1.28.0-beta.1(64)",
       "pin": {
         "loader:MGCModpack": "1.28.0-beta.1",
         "map:MGCModpack": "1.0.0",
@@ -125,8 +125,8 @@
       "versions": [
         {
           "version": "1.28.0-beta.1",
-          "file": "releases/1.28.0-beta.1(63)/dll/MGCModpack.dll",
-          "sha256": "5479c98538fa553dac2e6637b7dcd206ec9f778d6da41399f22de07d95bfb944",
+          "file": "releases/1.28.0-beta.1(64)/dll/MGCModpack.dll",
+          "sha256": "95c155ea1716025da91fe3e49718a90f1612ab187547d7e107e5d22408177d4e",
           "size": 713216
         }
       ]
@@ -217,11 +217,11 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-beta.1(63)",
+      "id": "1.28.0-beta.1(64)",
       "version": "1.28.0-beta.1",
-      "build": 63,
-      "note": "从 1.28.0-beta.1(62) 全量复制，替换 1 个文件",
-      "createdAt": "2026-11-20T00:11:42",
+      "build": 64,
+      "note": "从 1.28.0-beta.1(63) 全量复制，替换 1 个文件",
+      "createdAt": "2026-11-20T00:29:25",
       "totalSize": 44908639,
       "files": [
         {
@@ -271,7 +271,7 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "5479c98538fa553dac2e6637b7dcd206ec9f778d6da41399f22de07d95bfb944",
+          "sha256": "95c155ea1716025da91fe3e49718a90f1612ab187547d7e107e5d22408177d4e",
           "size": 713216
         },
         {
@@ -301,7 +301,7 @@
         },
         {
           "path": "release.lock.json",
-          "sha256": "090a09bcd94b9bdccc47c02c2d91dee766b801d482aaac0022ddd8383c5f1110",
+          "sha256": "16198dbc6193784851d86048587d5ce7f908e783dceb38eff80be262d8e51814",
           "size": 2805
         }
       ]
