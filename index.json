@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 618,
-  "generatedAt": "2026-11-20T04:22:32",
+  "rev": 619,
+  "generatedAt": "2026-11-20T04:28:29",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,9 +9,9 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-beta.1(71)",
+      "release": "1.28.0-beta.1(72)",
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.1(71)",
+        "loader:MGCModpack": "1.28.0-beta.1(72)",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.2.7"
       }
@@ -123,9 +123,9 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-beta.1(71)",
-          "file": "releases/1.28.0-beta.1(71)/dll/MGCModpack.dll",
-          "sha256": "bd4befbdfc52dfebd7464eda7ae8b10f1ebdf99e915fd09184603db7d0199da0",
+          "version": "1.28.0-beta.1(72)",
+          "file": "releases/1.28.0-beta.1(72)/dll/MGCModpack.dll",
+          "sha256": "9b70b099e5439d41ad50d7ee9cf5b8a044bb6d2b8f8ed50f5be157e8fd050a85",
           "size": 723456
         },
         {
@@ -222,11 +222,11 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-beta.1(71)",
+      "id": "1.28.0-beta.1(72)",
       "version": "1.28.0-beta.1",
-      "build": 71,
-      "note": "通关页玩家信息栏加大边缘留白",
-      "createdAt": "2026-11-20T04:20:42",
+      "build": 72,
+      "note": "通关页左上角文字留白加大",
+      "createdAt": "2026-11-20T04:26:37",
       "totalSize": 44919277,
       "files": [
         {
@@ -276,7 +276,7 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "bd4befbdfc52dfebd7464eda7ae8b10f1ebdf99e915fd09184603db7d0199da0",
+          "sha256": "9b70b099e5439d41ad50d7ee9cf5b8a044bb6d2b8f8ed50f5be157e8fd050a85",
           "size": 723456
         },
         {
@@ -306,7 +306,7 @@
         },
         {
           "path": "release.lock.json",
-          "sha256": "4f978d8991c51d87621331f0d88476a26c72c2c3757351356db8cfac23099b57",
+          "sha256": "8699329c02fe8ea67c9cf1558b8822e661062da91a78e912d7ef623c1ff55d22",
           "size": 2805
         }
       ]
