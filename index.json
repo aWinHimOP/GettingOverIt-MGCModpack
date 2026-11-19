@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 610,
-  "generatedAt": "2026-11-20T01:25:45",
+  "rev": 611,
+  "generatedAt": "2026-11-20T02:07:40",
   "channels": {
     "stable": {
       "label": "正式",
@@ -22,7 +22,6 @@
       "target": {
         "type": "devices",
         "ids": [
-          "356af1dbbf94887360586c6bff2e8b7b",
           "14fd08c4b94dd59264a2d5eac7e6a28c"
         ]
       },
