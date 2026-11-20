@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 628,
-  "generatedAt": "2026-11-21T02:37:27",
+  "rev": 629,
+  "generatedAt": "2026-11-21T02:45:27",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,9 +9,9 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-beta.1(81)",
+      "release": "1.28.0-beta.1(82)",
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.1(81)",
+        "loader:MGCModpack": "1.28.0-beta.1(82)",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.2.9"
       }
@@ -123,9 +123,9 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-beta.1(81)",
-          "file": "releases/1.28.0-beta.1(81)/dll/MGCModpack.dll",
-          "sha256": "85f8ad43cf693d6220086ff8fbcd22de2db724d5a5867736730ee5b1a1833ca9",
+          "version": "1.28.0-beta.1(82)",
+          "file": "releases/1.28.0-beta.1(82)/dll/MGCModpack.dll",
+          "sha256": "e59e9dc08bac46e88e66d1f3ee0921e735ec7dfd314757d98cb4037fa94fa8d6",
           "size": 733184
         },
         {
@@ -222,11 +222,11 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-beta.1(81)",
+      "id": "1.28.0-beta.1(82)",
       "version": "1.28.0-beta.1",
-      "build": 81,
-      "note": "分段计时器:新局判据加回到起点兜底(防止表卡在上一局)",
-      "createdAt": "2026-11-21T02:35:34",
+      "build": 82,
+      "note": "分段表:PB参照只填未完成行,已完成行换本局实时+判金",
+      "createdAt": "2026-11-21T02:43:33",
       "totalSize": 44929427,
       "files": [
         {
@@ -276,7 +276,7 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "85f8ad43cf693d6220086ff8fbcd22de2db724d5a5867736730ee5b1a1833ca9",
+          "sha256": "e59e9dc08bac46e88e66d1f3ee0921e735ec7dfd314757d98cb4037fa94fa8d6",
           "size": 733184
         },
         {
@@ -306,7 +306,7 @@
         },
         {
           "path": "release.lock.json",
-          "sha256": "37142fb13c547303459e895d3a42bd633809480cd895477c91b724d560ab1dfc",
+          "sha256": "952e62555f178540ff804a82a84c258c507fd157d7f3a0a61c9f8a7ae7869dab",
           "size": 2805
         }
       ]
