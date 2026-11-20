@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 622,
-  "generatedAt": "2026-11-21T01:09:59",
+  "rev": 623,
+  "generatedAt": "2026-11-21T01:30:08",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,9 +9,9 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-beta.1(75)",
+      "release": "1.28.0-beta.1(76)",
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.1(75)",
+        "loader:MGCModpack": "1.28.0-beta.1(76)",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.2.7"
       }
@@ -123,10 +123,10 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-beta.1(75)",
-          "file": "releases/1.28.0-beta.1(75)/dll/MGCModpack.dll",
-          "sha256": "298bd8aadce1b7ff84dda1635bb404e3e50d4022050882358cab55dfc7e89a5c",
-          "size": 726528
+          "version": "1.28.0-beta.1(76)",
+          "file": "releases/1.28.0-beta.1(76)/dll/MGCModpack.dll",
+          "sha256": "203d4b09752020cf82c3fab9434f538d530040afc2b93b20f9cdbd914efe3484",
+          "size": 727552
         },
         {
           "version": "1.28.0-beta.1(66)",
@@ -222,12 +222,12 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-beta.1(75)",
+      "id": "1.28.0-beta.1(76)",
       "version": "1.28.0-beta.1",
-      "build": 75,
-      "note": "mod列表心跳重建加冷却防无限循环",
-      "createdAt": "2026-11-21T01:08:11",
-      "totalSize": 44922349,
+      "build": 76,
+      "note": "分段计时器按屏幕等比缩放(两张表同一类)",
+      "createdAt": "2026-11-21T01:28:17",
+      "totalSize": 44923373,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -276,8 +276,8 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "298bd8aadce1b7ff84dda1635bb404e3e50d4022050882358cab55dfc7e89a5c",
-          "size": 726528
+          "sha256": "203d4b09752020cf82c3fab9434f538d530040afc2b93b20f9cdbd914efe3484",
+          "size": 727552
         },
         {
           "path": "map/MGCModpack.mappack",
@@ -306,7 +306,7 @@
         },
         {
           "path": "release.lock.json",
-          "sha256": "3015b96f42439e736dad44dd5c00f2137f67ca58835e8d5aa5713767752d91aa",
+          "sha256": "29ff481de0fc255b180ecd68a29b6f31fdac8aa478ac60d3274e64852ea29f88",
           "size": 2805
         }
       ]
