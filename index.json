@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 630,
-  "generatedAt": "2026-11-21T02:56:46",
+  "rev": 631,
+  "generatedAt": "2026-11-21T03:04:43",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,9 +9,9 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-beta.1(83)",
+      "release": "1.28.0-beta.1(84)",
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.1(83)",
+        "loader:MGCModpack": "1.28.0-beta.1(84)",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.2.9"
       }
@@ -123,10 +123,10 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-beta.1(83)",
-          "file": "releases/1.28.0-beta.1(83)/dll/MGCModpack.dll",
-          "sha256": "293e86395c7dcd990e1c47fde2741474304d18a7af6221d772a4bec09b18f9e5",
-          "size": 733696
+          "version": "1.28.0-beta.1(84)",
+          "file": "releases/1.28.0-beta.1(84)/dll/MGCModpack.dll",
+          "sha256": "89f9db350d47d412b442280cb6069f5a2caadb47bbbeb4985c0ced1898414f18",
+          "size": 734208
         },
         {
           "version": "1.28.0-beta.1(66)",
@@ -222,12 +222,12 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-beta.1(83)",
+      "id": "1.28.0-beta.1(84)",
       "version": "1.28.0-beta.1",
-      "build": 83,
-      "note": "判金全局生效:回档局照样判金+通关页继承+日志颜色标记",
-      "createdAt": "2026-11-21T02:54:53",
-      "totalSize": 44929939,
+      "build": 84,
+      "note": "破分段PB立即落盘(回档局也存真实段耗时;累计时间仍只在计成绩局存)",
+      "createdAt": "2026-11-21T03:02:51",
+      "totalSize": 44930451,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -276,8 +276,8 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "293e86395c7dcd990e1c47fde2741474304d18a7af6221d772a4bec09b18f9e5",
-          "size": 733696
+          "sha256": "89f9db350d47d412b442280cb6069f5a2caadb47bbbeb4985c0ced1898414f18",
+          "size": 734208
         },
         {
           "path": "map/MGCModpack.mappack",
@@ -306,7 +306,7 @@
         },
         {
           "path": "release.lock.json",
-          "sha256": "0094e6bef96015f2f039b3c26924b6cb741bf7ad5f13d829e1aea4a6b9ae2034",
+          "sha256": "614a8c644e2de654dfc85f1b68a2d518eb417ed21062f302da874295797bbb71",
           "size": 2805
         }
       ]
