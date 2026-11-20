@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 627,
-  "generatedAt": "2026-11-21T02:34:28",
+  "rev": 628,
+  "generatedAt": "2026-11-21T02:37:27",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,9 +9,9 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-beta.1(80)",
+      "release": "1.28.0-beta.1(81)",
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.1(80)",
+        "loader:MGCModpack": "1.28.0-beta.1(81)",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.2.9"
       }
@@ -123,9 +123,9 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-beta.1(80)",
-          "file": "releases/1.28.0-beta.1(80)/dll/MGCModpack.dll",
-          "sha256": "b144aa090c848ed3202bbd73dc38aa1eadb9b05f77c87ead3c9a9f11a01897fd",
+          "version": "1.28.0-beta.1(81)",
+          "file": "releases/1.28.0-beta.1(81)/dll/MGCModpack.dll",
+          "sha256": "85f8ad43cf693d6220086ff8fbcd22de2db724d5a5867736730ee5b1a1833ca9",
           "size": 733184
         },
         {
@@ -222,11 +222,11 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-beta.1(80)",
+      "id": "1.28.0-beta.1(81)",
       "version": "1.28.0-beta.1",
-      "build": 80,
-      "note": "分段计时器全面修复:表生命周期/遮挡/首次空表/显示参数/每帧重建",
-      "createdAt": "2026-11-21T02:32:28",
+      "build": 81,
+      "note": "分段计时器:新局判据加回到起点兜底(防止表卡在上一局)",
+      "createdAt": "2026-11-21T02:35:34",
       "totalSize": 44929427,
       "files": [
         {
@@ -276,7 +276,7 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "b144aa090c848ed3202bbd73dc38aa1eadb9b05f77c87ead3c9a9f11a01897fd",
+          "sha256": "85f8ad43cf693d6220086ff8fbcd22de2db724d5a5867736730ee5b1a1833ca9",
           "size": 733184
         },
         {
@@ -306,7 +306,7 @@
         },
         {
           "path": "release.lock.json",
-          "sha256": "1c4b9b0827e555baba469d25a06a5317cd218eb2962b38b51539f6fc1c088655",
+          "sha256": "37142fb13c547303459e895d3a42bd633809480cd895477c91b724d560ab1dfc",
           "size": 2805
         }
       ]
