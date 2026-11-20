@@ -1,0 +1,7 @@
+{
+  "version": "1.28.0-beta.1",
+  "build": 85,
+  "note": "TNT mod 卡顿修复:爆炸只施力一次+NonAlloc+材质复用",
+  "createdAt": "2026-11-21T05:08:48",
+  "from": "1.28.0-beta.1(84)"
+}
