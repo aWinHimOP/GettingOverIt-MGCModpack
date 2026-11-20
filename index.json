@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 625,
-  "generatedAt": "2026-11-21T01:54:33",
+  "rev": 626,
+  "generatedAt": "2026-11-21T02:12:18",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,11 +9,11 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-beta.1(78)",
+      "release": "1.28.0-beta.1(79)",
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.1(78)",
+        "loader:MGCModpack": "1.28.0-beta.1(79)",
         "map:MGCModpack": "1.0.0",
-        "mod:MGCModpack": "1.2.7"
+        "mod:MGCModpack": "1.2.8"
       }
     },
     "test": {
@@ -90,10 +90,10 @@
           "category": "official"
         },
         {
-          "version": "1.2.7",
+          "version": "1.2.8",
           "file": "mod/official/MGCModpack.modpack",
-          "sha256": "df5f46b549cead05631910d7b998d09e0e8fd12e2ec2143185fc63f82d8a1d95",
-          "size": 138237,
+          "sha256": "7557fc17ec44d8d2e07a8fcda03c55c63c17a23020c63c5824c063f4dd0c2efa",
+          "size": 138411,
           "category": "official"
         }
       ],
@@ -123,10 +123,10 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-beta.1(78)",
-          "file": "releases/1.28.0-beta.1(78)/dll/MGCModpack.dll",
-          "sha256": "1bcf6c9c04ec2ebb826838932e404b77c0b3ba8d8507913c6129ee61ccdc0e40",
-          "size": 727552
+          "version": "1.28.0-beta.1(79)",
+          "file": "releases/1.28.0-beta.1(79)/dll/MGCModpack.dll",
+          "sha256": "52cd60f1ca266a4dda7158f40173105d39165de96200fd581110c0cd3035f1ea",
+          "size": 729088
         },
         {
           "version": "1.28.0-beta.1(66)",
@@ -222,12 +222,12 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-beta.1(78)",
+      "id": "1.28.0-beta.1(79)",
       "version": "1.28.0-beta.1",
-      "build": 78,
-      "note": "修通关页分段表空8行:强制摆本局时间+自检读UI实际文字",
-      "createdAt": "2026-11-21T01:52:40",
-      "totalSize": 44923373,
+      "build": 79,
+      "note": "全项目防御性加固:空引用/越界/除零/场景失效",
+      "createdAt": "2026-11-21T02:10:24",
+      "totalSize": 44925083,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -276,8 +276,8 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "1bcf6c9c04ec2ebb826838932e404b77c0b3ba8d8507913c6129ee61ccdc0e40",
-          "size": 727552
+          "sha256": "52cd60f1ca266a4dda7158f40173105d39165de96200fd581110c0cd3035f1ea",
+          "size": 729088
         },
         {
           "path": "map/MGCModpack.mappack",
@@ -286,8 +286,8 @@
         },
         {
           "path": "mod/MGCModpack.modpack",
-          "sha256": "df5f46b549cead05631910d7b998d09e0e8fd12e2ec2143185fc63f82d8a1d95",
-          "size": 138237
+          "sha256": "7557fc17ec44d8d2e07a8fcda03c55c63c17a23020c63c5824c063f4dd0c2efa",
+          "size": 138411
         },
         {
           "path": "picture/about-icon.png",
@@ -306,7 +306,7 @@
         },
         {
           "path": "release.lock.json",
-          "sha256": "a03fc67986589dc6f658f5a3cc976401bc05a3996e49d9a7c2fb4588cce05ce6",
+          "sha256": "ff4ec783b636dd2260a356aeeb7f8d4e0e2d11307b522d45f2ee5d7877b8828c",
           "size": 2805
         }
       ]
