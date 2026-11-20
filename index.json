@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 624,
-  "generatedAt": "2026-11-21T01:42:17",
+  "rev": 625,
+  "generatedAt": "2026-11-21T01:54:33",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,9 +9,9 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-beta.1(77)",
+      "release": "1.28.0-beta.1(78)",
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.1(77)",
+        "loader:MGCModpack": "1.28.0-beta.1(78)",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.2.7"
       }
@@ -123,10 +123,10 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-beta.1(77)",
-          "file": "releases/1.28.0-beta.1(77)/dll/MGCModpack.dll",
-          "sha256": "4511c7023a5779d3aa189b6acd59af582d807fe255d9ba81f90e6e6d7f27c006",
-          "size": 728064
+          "version": "1.28.0-beta.1(78)",
+          "file": "releases/1.28.0-beta.1(78)/dll/MGCModpack.dll",
+          "sha256": "1bcf6c9c04ec2ebb826838932e404b77c0b3ba8d8507913c6129ee61ccdc0e40",
+          "size": 727552
         },
         {
           "version": "1.28.0-beta.1(66)",
@@ -222,12 +222,12 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-beta.1(77)",
+      "id": "1.28.0-beta.1(78)",
       "version": "1.28.0-beta.1",
-      "build": 77,
-      "note": "分段收集核心自驱:不依赖游戏计时器mod+同帧去重",
-      "createdAt": "2026-11-21T01:40:24",
-      "totalSize": 44923885,
+      "build": 78,
+      "note": "修通关页分段表空8行:强制摆本局时间+自检读UI实际文字",
+      "createdAt": "2026-11-21T01:52:40",
+      "totalSize": 44923373,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -276,8 +276,8 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "4511c7023a5779d3aa189b6acd59af582d807fe255d9ba81f90e6e6d7f27c006",
-          "size": 728064
+          "sha256": "1bcf6c9c04ec2ebb826838932e404b77c0b3ba8d8507913c6129ee61ccdc0e40",
+          "size": 727552
         },
         {
           "path": "map/MGCModpack.mappack",
@@ -306,7 +306,7 @@
         },
         {
           "path": "release.lock.json",
-          "sha256": "645dfb5de30f16678122db30dee1b50b6e16689645e03bd1133830950d8a92a9",
+          "sha256": "a03fc67986589dc6f658f5a3cc976401bc05a3996e49d9a7c2fb4588cce05ce6",
           "size": 2805
         }
       ]
