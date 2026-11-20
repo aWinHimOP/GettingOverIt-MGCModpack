@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 621,
-  "generatedAt": "2026-11-21T01:07:00",
+  "rev": 622,
+  "generatedAt": "2026-11-21T01:09:59",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,9 +9,9 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-beta.1(74)",
+      "release": "1.28.0-beta.1(75)",
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.1(74)",
+        "loader:MGCModpack": "1.28.0-beta.1(75)",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.2.7"
       }
@@ -123,9 +123,9 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-beta.1(74)",
-          "file": "releases/1.28.0-beta.1(74)/dll/MGCModpack.dll",
-          "sha256": "f819482204c37217c1b738e0c1922f44d269a01dac1bb19ed02b02b573b705f8",
+          "version": "1.28.0-beta.1(75)",
+          "file": "releases/1.28.0-beta.1(75)/dll/MGCModpack.dll",
+          "sha256": "298bd8aadce1b7ff84dda1635bb404e3e50d4022050882358cab55dfc7e89a5c",
           "size": 726528
         },
         {
@@ -222,11 +222,11 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-beta.1(74)",
+      "id": "1.28.0-beta.1(75)",
       "version": "1.28.0-beta.1",
-      "build": 74,
-      "note": "重构mod列表刷新: 切页重绑+引用链自检+延迟销毁竞态修复",
-      "createdAt": "2026-11-21T01:05:03",
+      "build": 75,
+      "note": "mod列表心跳重建加冷却防无限循环",
+      "createdAt": "2026-11-21T01:08:11",
       "totalSize": 44922349,
       "files": [
         {
@@ -276,7 +276,7 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "f819482204c37217c1b738e0c1922f44d269a01dac1bb19ed02b02b573b705f8",
+          "sha256": "298bd8aadce1b7ff84dda1635bb404e3e50d4022050882358cab55dfc7e89a5c",
           "size": 726528
         },
         {
@@ -306,7 +306,7 @@
         },
         {
           "path": "release.lock.json",
-          "sha256": "099b921c155cc26ef4c0d5a9054e47fba87d315c445ee48ca7826a3c3aafeeb3",
+          "sha256": "3015b96f42439e736dad44dd5c00f2137f67ca58835e8d5aa5713767752d91aa",
           "size": 2805
         }
       ]
