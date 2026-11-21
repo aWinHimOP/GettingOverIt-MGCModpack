@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 634,
-  "generatedAt": "2026-11-21T13:57:18",
+  "rev": 635,
+  "generatedAt": "2026-11-21T14:03:17",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,9 +9,9 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-beta.1(87)",
+      "release": "1.28.0-beta.1(88)",
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.1(87)",
+        "loader:MGCModpack": "1.28.0-beta.1(88)",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.2.10"
       }
@@ -123,10 +123,10 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-beta.1(87)",
-          "file": "releases/1.28.0-beta.1(87)/dll/MGCModpack.dll",
-          "sha256": "c1096911379a91917459c23ab3daab4af290be4134702cf1bb36fd77cefa30ec",
-          "size": 739328
+          "version": "1.28.0-beta.1(88)",
+          "file": "releases/1.28.0-beta.1(88)/dll/MGCModpack.dll",
+          "sha256": "88460ec5a72c37fa8768a6d7cfddf345461c90a6ee46c5414a9d28e72736d3ed",
+          "size": 734208
         },
         {
           "version": "1.28.0-beta.1(66)",
@@ -222,12 +222,12 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-beta.1(87)",
+      "id": "1.28.0-beta.1(88)",
       "version": "1.28.0-beta.1",
-      "build": 87,
-      "note": "从 1.28.0-beta.1(86) 全量复制，替换 1 个文件",
-      "createdAt": "2026-11-21T13:55:18",
-      "totalSize": 44935763,
+      "build": 88,
+      "note": "从 1.28.0-beta.1(87) 全量复制，替换 1 个文件",
+      "createdAt": "2026-11-21T14:01:21",
+      "totalSize": 44930643,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -276,8 +276,8 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "c1096911379a91917459c23ab3daab4af290be4134702cf1bb36fd77cefa30ec",
-          "size": 739328
+          "sha256": "88460ec5a72c37fa8768a6d7cfddf345461c90a6ee46c5414a9d28e72736d3ed",
+          "size": 734208
         },
         {
           "path": "map/MGCModpack.mappack",
@@ -306,7 +306,7 @@
         },
         {
           "path": "release.lock.json",
-          "sha256": "80f8fed5b91a8bb3a729683147a9f9fca6e8444021fa17f211962d7b9973cb4c",
+          "sha256": "a3bc9ddc7f14c715f749dd897f8ec634c978e4506a3955e0801de94bc70a850a",
           "size": 2806
         }
       ]
