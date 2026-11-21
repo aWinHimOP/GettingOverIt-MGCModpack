@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 640,
-  "generatedAt": "2026-11-21T17:07:41",
+  "rev": 641,
+  "generatedAt": "2026-11-21T17:15:13",
   "channels": {
     "stable": {
       "label": "正式",
@@ -26,9 +26,9 @@
           "14fd08c4b94dd59264a2d5eac7e6a28c"
         ]
       },
-      "release": "1.28.0-beta.1(91)",
+      "release": "1.28.0-beta.1(92)",
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.1(91)",
+        "loader:MGCModpack": "1.28.0-beta.1(92)",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.2.10"
       }
@@ -124,9 +124,9 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-beta.1(91)",
-          "file": "releases/1.28.0-beta.1(91)/dll/MGCModpack.dll",
-          "sha256": "3df20b9fc9034420404d09b4c55a6cc7656fadd0c949b3d29a0966e0f3f65c4d",
+          "version": "1.28.0-beta.1(92)",
+          "file": "releases/1.28.0-beta.1(92)/dll/MGCModpack.dll",
+          "sha256": "cf8f7f4e378381cfb7748fa903e05f718ff1e4575b4eff187f11daddc0a1ff41",
           "size": 738304
         },
         {
@@ -223,11 +223,11 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-beta.1(91)",
+      "id": "1.28.0-beta.1(92)",
       "version": "1.28.0-beta.1",
-      "build": 91,
-      "note": "从 1.28.0-beta.1(90) 全量复制，替换 1 个文件",
-      "createdAt": "2026-11-21T17:07:01",
+      "build": 92,
+      "note": "从 1.28.0-beta.1(91) 全量复制，替换 1 个文件",
+      "createdAt": "2026-11-21T17:14:35",
       "totalSize": 44934739,
       "files": [
         {
@@ -277,7 +277,7 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "3df20b9fc9034420404d09b4c55a6cc7656fadd0c949b3d29a0966e0f3f65c4d",
+          "sha256": "cf8f7f4e378381cfb7748fa903e05f718ff1e4575b4eff187f11daddc0a1ff41",
           "size": 738304
         },
         {
@@ -307,7 +307,7 @@
         },
         {
           "path": "release.lock.json",
-          "sha256": "2c5ae3202ac3c5916edd98e7895e7b8e68a5d9b827b23cbee54dfbe202e6c29d",
+          "sha256": "a5f9d26e48943fb01060d91bc78094a7cc205cf14ad3b5a241f44b0dc4d96791",
           "size": 2806
         }
       ]
