@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 632,
-  "generatedAt": "2026-11-21T05:10:45",
+  "rev": 633,
+  "generatedAt": "2026-11-21T13:39:59",
   "channels": {
     "stable": {
       "label": "正式",
@@ -9,9 +9,9 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-beta.1(85)",
+      "release": "1.28.0-beta.1(86)",
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.1(85)",
+        "loader:MGCModpack": "1.28.0-beta.1(86)",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.2.10"
       }
@@ -123,9 +123,9 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-beta.1(85)",
-          "file": "releases/1.28.0-beta.1(85)/dll/MGCModpack.dll",
-          "sha256": "89f9db350d47d412b442280cb6069f5a2caadb47bbbeb4985c0ced1898414f18",
+          "version": "1.28.0-beta.1(86)",
+          "file": "releases/1.28.0-beta.1(86)/dll/MGCModpack.dll",
+          "sha256": "438f1c092f0d818c4857b7d199e379cc0d26db6100b5e444a8f30ca9ef285909",
           "size": 734208
         },
         {
@@ -222,12 +222,12 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-beta.1(85)",
+      "id": "1.28.0-beta.1(86)",
       "version": "1.28.0-beta.1",
-      "build": 85,
-      "note": "TNT mod 卡顿修复:爆炸只施力一次+NonAlloc+材质复用",
-      "createdAt": "2026-11-21T05:08:48",
-      "totalSize": 44930642,
+      "build": 86,
+      "note": "解锁帧率面板:最高档(等于屏幕刷新率)改名为无限制",
+      "createdAt": "2026-11-21T13:38:04",
+      "totalSize": 44930643,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -276,7 +276,7 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "89f9db350d47d412b442280cb6069f5a2caadb47bbbeb4985c0ced1898414f18",
+          "sha256": "438f1c092f0d818c4857b7d199e379cc0d26db6100b5e444a8f30ca9ef285909",
           "size": 734208
         },
         {
@@ -306,8 +306,8 @@
         },
         {
           "path": "release.lock.json",
-          "sha256": "5f0dc65e59f8037559f732273ca2ae195063ecc2bc5d4491e441ebeb89e76c6b",
-          "size": 2805
+          "sha256": "b4a79163744c9aee7b6480c3ac66174ed6f05575af7b1c2257411268d5742e9c",
+          "size": 2806
         }
       ]
     },
