@@ -19,14 +19,15 @@
       "target": {
         "type": "devices",
         "ids": [
+          "feab189157235ef0a455370f9f7b9785",
           "14fd08c4b94dd59264a2d5eac7e6a28c"
         ]
       },
-      "release": "1.28.0-beta.1(66)",
+      "release": "1.28.0-beta.1(88)",
       "pin": {
         "loader:MGCModpack": "1.28.0-beta.1",
         "map:MGCModpack": "1.0.0",
-        "mod:MGCModpack": "1.2.6"
+        "mod:MGCModpack": "1.2.10"
       }
     }
   }
