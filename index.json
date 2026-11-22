@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 645,
-  "generatedAt": "2026-11-22T01:17:28",
+  "rev": 646,
+  "generatedAt": "2026-11-22T19:06:59",
   "channels": {
     "stable": {
       "label": "正式",
@@ -26,9 +26,9 @@
           "14fd08c4b94dd59264a2d5eac7e6a28c"
         ]
       },
-      "release": "1.28.0-beta.1(96)",
+      "release": "1.28.0-beta.1(97)",
       "pin": {
-        "loader:MGCModpack": "1.28.0-beta.1(96)",
+        "loader:MGCModpack": "1.28.0-beta.1(97)",
         "map:MGCModpack": "1.0.0",
         "mod:MGCModpack": "1.2.10"
       }
@@ -124,10 +124,10 @@
       "name": "MGCModpack",
       "versions": [
         {
-          "version": "1.28.0-beta.1(96)",
-          "file": "releases/1.28.0-beta.1(96)/dll/MGCModpack.dll",
-          "sha256": "349b938579f14607f38e6658f68270e2a7cb963c555c03426a660781be3c5a65",
-          "size": 738816
+          "version": "1.28.0-beta.1(97)",
+          "file": "releases/1.28.0-beta.1(97)/dll/MGCModpack.dll",
+          "sha256": "e02dbba4cc18ee6cea2b4689e628a5755b5117574ec4c9b86214267e025b19ea",
+          "size": 739328
         },
         {
           "version": "1.28.0-beta.1(88)",
@@ -223,12 +223,12 @@
   ],
   "releases": [
     {
-      "id": "1.28.0-beta.1(96)",
+      "id": "1.28.0-beta.1(97)",
       "version": "1.28.0-beta.1",
-      "build": 96,
-      "note": "从 1.28.0-beta.1(95) 全量复制，替换 1 个文件",
-      "createdAt": "2026-11-22T01:16:43",
-      "totalSize": 44935251,
+      "build": 97,
+      "note": "从 1.28.0-beta.1(96) 全量复制，替换 1 个文件",
+      "createdAt": "2026-11-22T19:06:01",
+      "totalSize": 44935763,
       "files": [
         {
           "path": "bundles/ui_fpspanel.unity3d",
@@ -277,8 +277,8 @@
         },
         {
           "path": "dll/MGCModpack.dll",
-          "sha256": "349b938579f14607f38e6658f68270e2a7cb963c555c03426a660781be3c5a65",
-          "size": 738816
+          "sha256": "e02dbba4cc18ee6cea2b4689e628a5755b5117574ec4c9b86214267e025b19ea",
+          "size": 739328
         },
         {
           "path": "map/MGCModpack.mappack",
@@ -307,7 +307,7 @@
         },
         {
           "path": "release.lock.json",
-          "sha256": "bd63854946c415860f71750e945d3663f3d14bf5f118223d8241447b2d55279e",
+          "sha256": "51ac69a4e81ede9a9c12400c02ba8ce5ae05781e99c04b298b436ab247d274f5",
           "size": 2806
         }
       ]
