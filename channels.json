@@ -6,7 +6,7 @@
       "target": {
         "type": "all"
       },
-      "release": "1.28.0-beta.3(112)",
+      "release": "1.28.0-beta.3(113)",
       "pin": {
         "loader:MGCModpack": "1.28.0-beta.3",
         "map:MGCModpack": "1.0.0",
