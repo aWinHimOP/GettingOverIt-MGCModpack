@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "rev": 658,
-  "generatedAt": "2026-11-23T21:52:01",
+  "rev": 659,
+  "generatedAt": "2026-11-23T21:54:53",
   "channels": {
     "stable": {
       "label": "正式",
@@ -13,7 +13,7 @@
       "pin": {
         "loader:MGCModpack": "1.28.0-beta.2(103)",
         "map:MGCModpack": "1.0.0",
-        "mod:MGCModpack": "1.2.12"
+        "mod:MGCModpack": "1.2.13"
       }
     },
     "test": {
@@ -30,7 +30,7 @@
       "pin": {
         "loader:MGCModpack": "1.28.0-beta.2(103)",
         "map:MGCModpack": "1.0.0",
-        "mod:MGCModpack": "1.2.12"
+        "mod:MGCModpack": "1.2.13"
       }
     }
   },
@@ -109,6 +109,13 @@
           "file": "mod/official/versions/1.2.12/MGCModpack.modpack",
           "sha256": "3e7122c475d4c4f4db8030da71d0cbb064c23281e03c2185d94e47063dbe36b0",
           "size": 143185,
+          "category": "official"
+        },
+        {
+          "version": "1.2.13",
+          "file": "mod/official/versions/1.2.13/MGCModpack.modpack",
+          "sha256": "1249c4c1d0023f3a547378f46a9269f6b06eba1ca4dd6ee8d9538be29a545405",
+          "size": 143321,
           "category": "official"
         }
       ],
