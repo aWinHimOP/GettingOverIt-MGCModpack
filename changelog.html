@@ -23,11 +23,12 @@
 
 <header class="hero"><div class="wrap">
   <h1>更新<em>日志</em></h1>
-  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.41。</p>
+  <p class="sub">每个版本改了什么、为什么改。最新正式版：1.28.0-beta.2(102)。</p>
 </div></header>
 
 <section class="noline"><div class="wrap">
   <div class="toc">
+    <a href="#v1280-beta2-102">1.28.0-beta.2(102)<span>正式频道 · 2026-11-23 · 快捷键系统改进；修计时器/分段表开关掉帧；新游戏图标内置</span></a>
     <a href="#v1280-beta41">1.28.0-beta.41<span>正式频道 · 2026-11-16 · 插件端收尾：社区/版本条节流、文本写入去重</span></a>
     <a href="#v1280-beta40">1.28.0-beta.40<span>正式频道 · 2026-11-16 · 探针增强 + 真机卡顿测量结论</span></a>
     <a href="#v1280-beta39">1.28.0-beta.39<span>正式频道 · 2026-11-16 · 帧时间/GC 探针</span></a>
@@ -72,6 +73,22 @@
   </div>
 </div></section>
 
+<section id="v1280-beta2-102"><div class="wrap">
+    <h2>1.28.0-beta.2 <span class="badge">正式频道 · 2026-11-23</span></h2>
+    <p class="lead">快捷键整套收尾，顺手把「开关计时器 / 分段表」时的掉帧按住。</p>
+    <h3>快捷键</h3>
+    <ul>
+      <li><b>绑定位置</b>：按键绑定设置整体移到「快捷键」页，按编号选按键、选中即保存；</li>
+      <li><b>二次确认</b>：需要两次点击的按键（如「新游戏」）不再弹任何提示，两次点击的确认机制保留；未绑定的按键也不再弹 Toast；</li>
+      <li><b>外观</b>：按键默认 50% 透明度、白色图标；完成编辑后面板能正常关闭、不残留遮挡；空间不足时下拉列表自动向上展开；</li>
+      <li><b>图标分工</b>：「新游戏」等内置功能图标随安装包内置（<code>assets/Icons/</code>），mod 功能图标仍由 mod 包自己的 <code>assets/</code> 提供，运行时读取。</li>
+    </ul>
+    <h3>性能</h3>
+    <ul>
+      <li>修 <b>计时器 / 分段表开关掉帧</b>：根因是配置每改一个字段就整文件原子写并 fsync（一次操作 16 次），外加一次多余的保存；现改为批量合并后只落盘一次；</li>
+      <li>真机实测：开关动作耗时 <b>23~49ms → 2~5ms</b>，开关瞬间不再可见卡顿。</li>
+    </ul>
+  </div></section>
 <section id="v1280-beta41"><div class="wrap">
     <h2>1.28.0-beta.41 <span class="badge">正式频道 · 2026-11-16</span></h2>
     <p class="lead">插件端收尾：把最后几处「每帧都在做、但没必要」的活按下去。</p>
